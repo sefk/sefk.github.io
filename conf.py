@@ -194,7 +194,31 @@ COMPILERS = {
 # relative URL.
 #
 # If you don't need any of these, just set to []
-REDIRECTIONS = [(u'2012/05/i-absorb-uncertainty/index.html', u'/posts/201205i-absorb-uncertainty.html'), (u'2012/05/fizzbuzz-for-managers/index.html', u'/posts/201205fizzbuzz-for-managers.html'), (u'2012/04/measuring-an-engineering-manager/index.html', u'/posts/201204measuring-an-engineering-manager.html'), (u'2013/06/launch-day/index.html', u'/posts/201306launch-day.html'), (u'2012/06/two-things-at-once/index.html', u'/posts/201206two-things-at-once.html'), (u'2012/08/wip-folders-with-ls/index.html', u'/posts/201208wip-folders-with-ls.html'), (u'2013/12/airmail/index.html', u'/posts/201312airmail.html'), (u'2012/03/those-little-utilities/index.html', u'/posts/201203those-little-utilities.html'), (u'2012/05/danny-lewin-42nd-birthday/index.html', u'/posts/201205danny-lewin-42nd-birthday.html'), (u'2013/04/coding-on-a-flight/index.html', u'/posts/201304coding-on-a-flight.html'), (u'2012/03/too-many-clouds/index.html', u'/posts/201203too-many-clouds.html'), (u'2013/03/online-ed-retention/index.html', u'/posts/201303online-ed-retention.html'), (u'2013/11/halloween-2013/index.html', u'/posts/201311halloween-2013.html'), (u'2013/11/seven-things/index.html', u'/posts/201311seven-things.html'), (u'2012/07/on-line-education/index.html', u'/posts/201207on-line-education.html'), (u'2012/07/taking-down-100000-sites/index.html', u'/posts/201207taking-down-100000-sites.html'), (u'2013/09/knr-c-label/index.html', u'/posts/201309knr-c-label.html'), (u'2012/05/engineering-culture-litmus-tests/index.html', u'/posts/201205engineering-culture-litmus-tests.html'), (u'2012/04/browsers-for-web-apps/index.html', u'/posts/201204browsers-for-web-apps.html'), (u'2012/05/concentration/index.html', u'/posts/201205concentration.html'), (u'2012/10/halloween-candy-data/index.html', u'/posts/201210halloween-candy-data.html'), (u'2013/01/why-so-long/index.html', u'/posts/201301why-so-long.html'), (u'2012/04/my-sabbatical/index.html', u'/posts/201204my-sabbatical.html')]
+REDIRECTIONS = [
+    (u'2012/03/those-little-utilities/index.html', u'/posts/201203those-little-utilities.html'),
+    (u'2012/03/too-many-clouds/index.html', u'/posts/201203too-many-clouds.html'),
+    (u'2012/04/measuring-an-engineering-manager/index.html', u'/posts/201204measuring-an-engineering-manager.html'),
+    (u'2012/04/my-sabbatical/index.html', u'/posts/201204my-sabbatical.html')
+    (u'2012/04/browsers-for-web-apps/index.html', u'/posts/201204browsers-for-web-apps.html'),
+    (u'2012/05/danny-lewin-42nd-birthday/index.html', u'/posts/201205danny-lewin-42nd-birthday.html'),
+    (u'2012/05/i-absorb-uncertainty/index.html', u'/posts/201205i-absorb-uncertainty.html'),
+    (u'2012/05/fizzbuzz-for-managers/index.html', u'/posts/201205fizzbuzz-for-managers.html'),
+    (u'2012/05/engineering-culture-litmus-tests/index.html', u'/posts/201205engineering-culture-litmus-tests.html'),
+    (u'2012/05/concentration/index.html', u'/posts/201205concentration.html'),
+    (u'2012/06/two-things-at-once/index.html', u'/posts/201206two-things-at-once.html'),
+    (u'2012/07/on-line-education/index.html', u'/posts/201207on-line-education.html'),
+    (u'2012/07/taking-down-100000-sites/index.html', u'/posts/201207taking-down-100000-sites.html'),
+    (u'2012/08/wip-folders-with-ls/index.html', u'/posts/201208wip-folders-with-ls.html'),
+    (u'2012/10/halloween-candy-data/index.html', u'/posts/201210halloween-candy-data.html'),
+    (u'2013/01/why-so-long/index.html', u'/posts/201301why-so-long.html'),
+    (u'2013/03/online-ed-retention/index.html', u'/posts/201303online-ed-retention.html'),
+    (u'2013/04/coding-on-a-flight/index.html', u'/posts/201304coding-on-a-flight.html'),
+    (u'2013/06/launch-day/index.html', u'/posts/201306launch-day.html'),
+    (u'2013/09/knr-c-label/index.html', u'/posts/201309knr-c-label.html'),
+    (u'2013/11/halloween-2013/index.html', u'/posts/201311halloween-2013.html'),
+    (u'2013/11/seven-things/index.html', u'/posts/201311seven-things.html'),
+    (u'2013/12/airmail/index.html', u'/posts/201312airmail.html'),
+]
 
 # Commands to execute to deploy. Can be anything, for example,
 # you may use rsync:
