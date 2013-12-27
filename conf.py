@@ -10,7 +10,7 @@ BLOG_AUTHOR = "sef"
 BLOG_TITLE = "sef.kloninger.com"
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://sef.kloninger.com"
+SITE_URL = "http://sef.kloninger.com/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://sef.kloninger.com"
@@ -110,7 +110,6 @@ POSTS = (
     ("posts/*.rst", "posts", "post.tmpl"),
     ("posts/*.md", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
-            
 )
 PAGES = (
     ("stories/*.wp", "stories", "story.tmpl"),
@@ -198,7 +197,7 @@ REDIRECTIONS = [
     (u'2012/03/those-little-utilities/index.html', u'/posts/201203those-little-utilities.html'),
     (u'2012/03/too-many-clouds/index.html', u'/posts/201203too-many-clouds.html'),
     (u'2012/04/measuring-an-engineering-manager/index.html', u'/posts/201204measuring-an-engineering-manager.html'),
-    (u'2012/04/my-sabbatical/index.html', u'/posts/201204my-sabbatical.html')
+    (u'2012/04/my-sabbatical/index.html', u'/posts/201204my-sabbatical.html'),
     (u'2012/04/browsers-for-web-apps/index.html', u'/posts/201204browsers-for-web-apps.html'),
     (u'2012/05/danny-lewin-42nd-birthday/index.html', u'/posts/201205danny-lewin-42nd-birthday.html'),
     (u'2012/05/i-absorb-uncertainty/index.html', u'/posts/201205i-absorb-uncertainty.html'),
@@ -300,7 +299,7 @@ REDIRECTIONS = [
 # translated
 
 # Name of the theme to use.
-THEME = "bootstrap3"
+THEME = "bootstrap"
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
