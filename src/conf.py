@@ -558,6 +558,7 @@ SEARCH_FORM = """
 #</script>
 #"""
 
+# Google Analytics on every page
 BODY_END = """
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -38,9 +38,6 @@ lang="${lang}">
         <ul class="nav navbar-nav">
             ${bootstrap.html_navigation_links()}
         </ul>
-        %if search_form:
-            ${search_form}
-        %endif
 
         <ul class="nav navbar-nav navbar-right">
             <%block name="belowtitle">
@@ -67,6 +64,11 @@ lang="${lang}">
 
         <footer>
             ${content_footer}
+        %if search_form:
+            <p align=center>
+            ${search_form}
+            </p>
+        %endif
         </footer>
     </div>
 </div>
