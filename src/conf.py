@@ -64,11 +64,11 @@ TRANSLATIONS = {
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ('/archive.html', 'Archives'),
-        ('/categories/index.html', 'Tags'),
+#        ('/categories/index.html', 'Tags'),
         ('/rss.xml', 'RSS'),
-        ('https://twitter.com/sefk', 'Twitter'),
+        ('https://twitter.com/sefk', '@sefk'),
         ('https://github.com/sefk', 'GitHub'),
-        ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html', 'Resume HTML'),
+        ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html', 'Resume'),
         ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf',  'PDF'),
     ),
 }
@@ -526,14 +526,14 @@ COMMENT_SYSTEM_ID = "sefkloninger"
 #""" % SITE_URL
 #
 # If you prefer a google search form, here's an example that should just work:
-#SEARCH_FORM = """
-#<!-- Custom search with google-->
-#<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
-#<input type="hidden" name="q" value="site:%s" />
-#<input type="text" name="q" maxlength="255" results="0" placeholder="Search"/>
-#</form>
-#<!-- End of custom search -->
-#""" % SITE_URL
+SEARCH_FORM = """
+<!-- Custom search with google-->
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+<input type="hidden" name="q" value="site:%s" />
+<input type="text" name="q" maxlength="255" results="0" placeholder="Search"/>
+</form>
+<!-- End of custom search -->
+""" % SITE_URL
 
 # Also, there is a local search plugin you can use, based on Tipue, but it requires setting several
 # options:
@@ -541,28 +541,41 @@ COMMENT_SYSTEM_ID = "sefkloninger"
 # SEARCH_FORM = """
 # <span class="navbar-form pull-left">
 # <input type="text" id="tipue_search_input">
-# </span>"""
-#
-# BODY_END = """
-# <script type="text/javascript" src="/assets/js/tipuesearch_set.js"></script>
-# <script type="text/javascript" src="/assets/js/tipuesearch.js"></script>
-# <script type="text/javascript">
-# $(document).ready(function() {
-    # $('#tipue_search_input').tipuesearch({
-        # 'mode': 'json',
-        # 'contentLocation': '/assets/js/tipuesearch_content.json',
-        # 'showUrl': false
-    # });
-# });
-# </script>
+# </span>
 # """
 
-# EXTRA_HEAD_DATA = """
-# <link rel="stylesheet" type="text/css" href="/assets/css/tipuesearch.css">
-# <div id="tipue_search_content" style="margin-left: auto; margin-right: auto; padding: 20px;"></div>
-# """
-# ENABLED_EXTRAS = ['local_search']
-#
+#BODY_END = """
+#<script type="text/javascript" src="/assets/js/tipuesearch_set.js"></script>
+#<script type="text/javascript" src="/assets/js/tipuesearch.js"></script>
+#<script type="text/javascript">
+#$(document).ready(function() {
+#    $('#tipue_search_input').tipuesearch({
+#        'mode': 'json',
+#        'contentLocation': '/assets/js/tipuesearch_content.json',
+#        'showUrl': false
+#    });
+#});
+#</script>
+#"""
+
+BODY_END = """
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30366531-1', 'kloninger.com');
+  ga('send', 'pageview');
+</script>
+"""
+
+#EXTRA_HEAD_DATA = """
+#<link rel="stylesheet" type="text/css" href="/assets/css/tipuesearch.css">
+#<div id="tipue_search_content" style="margin-left: auto; margin-right: auto; padding: 20px;"></div>
+#"""
+
+#ENABLED_EXTRAS = ['local_search']
 
 
 # Use content distribution networks for jquery and twitter-bootstrap css and js
