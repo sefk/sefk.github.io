@@ -6,7 +6,7 @@ import time
 # Configuration, please edit
 
 # Data about this site
-BLOG_AUTHOR = "sef"
+BLOG_AUTHOR = "Sef Kloninger"
 BLOG_TITLE = "sef.kloninger.com"
 # This is the main URL for your site. It will be used
 # in a prominent link
