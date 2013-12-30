@@ -1,0 +1,192 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sef Kloninger">
+    <title>Why Is That Feature Taking So Long? | sef.kloninger.com</title>
+    
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+
+    
+
+
+
+    
+</head>
+<body>
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../">sef.kloninger.com</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            
+                <li><a href="../archive.html">Archives</a>
+                </li><li><a href="../categories/index.html">Tags</a>
+                </li><li><a href="../rss.xml">RSS</a>
+
+        </li></ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            
+            
+                
+    <li>
+    <a href="201301why-so-long.wp" id="sourcelink">Source</a>
+    </li>
+
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+
+<!-- End of Menubar -->
+
+<div class="container">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+    <div class="postbox">
+    
+    <h1 class="p-name" itemprop="headline name">Why Is That Feature Taking So Long?</h1>
+
+    <hr>
+    <small>
+        Posted: <time class="published" datetime="2013-01-25T01:24:48">2013-01-25 01:24</time>
+        
+
+        
+          |  More posts about
+        <span itemprop="keywords">
+            <a class="tag p-category" href="../categories/management.html"><span class="badge badge-info">Management</span></a>
+            <a class="tag p-category" href="../categories/technology.html"><span class="badge badge-info">Technology</span></a>
+        </span>
+
+    </small>
+    <hr>
+    <img class="alignright  wp-image-394" style="border: 0px;" alt="turd-polish" src="../f/turd-polish.png" width="191" height="182">
+
+<p>
+I've observed a recurring source of tension:  building things fast vs. do it the right way. Usually you're not lucky enough that you can do both.  This post explains a bit why we (engineers) care so much about building things right.  Even when things are overdue and our stakeholders (end-users, biz folks, product management) are pushing to just get it done.
+
+
+</p><p>
+You can describe the two poles here in pejorative terms.  Fast is slapdash, quick and dirty, bad software.  The right way is really just ivory-tower over-engineered turd polishing.  Is that fix really so important that we shouldn't ship it? Do you really need to refactor that now?
+
+
+
+</p><p>
+I see three things driving engineers to build it right.
+
+</p><p>
+</p><ol>
+	<li><strong>Wrong is insidious</strong>. A story: early on in Class2Go every page began with a fetch of some basic page data. If there was an error on lookup we would throw a 404. Not only is "not found" the wrong message, but it also isn't helpful. It covers up all kinds of other problems, in a way that is really difficult to debug.But for an engineer, these programming messes are <a href="http://en.wikipedia.org/wiki/Broken_windows_theory">broken windows</a>. Not only do they cheapen the project, they encourage others to take bad shortcuts. Heck, if they can't be bothered to handle exceptions correctly, then why should I?</li>
+	<li><strong>Wrong is the express train to support hell.</strong> Unless you leave the company or project, you'll be called upon to support your own crappy code. That is certain. And there is almost nothing worse than being dragged back to debug some old code that you never meant to become production, and is now breaking the world.</li>
+	<li><strong>Wrong hurts your reputation as an engineer</strong>. People see you taking shortcuts and infer that you are a sloppy programmer. And really they aren't wrong to do so. One habit of really good engineers is they don't leave a wake of messes behind them. They are able to do things (mostly) right even when they are moving fast.</li>
+</ol>
+
+<p>
+This last point is really the key one. Amongst engineers your reputation is your hard currency. It affects what projects you're invited to work on and what companies you'll be asked to join. Most importantly, good engineers only want to work with other good engineers, and they won't seek out someone sloppy. So I assume that any code I write will be looked at by a potential colleague or employer. This is especially true when working on an open-source project.
+
+
+
+</p><p>
+This doesn't mean you have to go slow -- indeed, on my current project, <a href="http://class2go.stanford.edu/" target="_blank">Class2Go</a>, we get a lot done every week. What it does mean is that sometimes I'd rather not do something than do something I know will come out poorly.
+
+
+
+</p><p>
+So, product manager waiting on a feature. What to do if you're waiting on an engineer and you think it's taking too damn long? The tactic **not** to use: tell them this won't matter and to just ship it. That will just piss him off. Better: get your senior engineer to convince the junior one why it's good enough to ship and reason about what really needs to get done. Exception: if the engineer you're waiting on is your senior engineer, then trust her judgment and wait.
+
+
+
+</p><p>
+And finally, to you product managers and biz folks who push. You are right do do so. That's all that matters to the customers, all matters at the end of the day. Keep it up.</p>
+    
+    <ul class="pager">
+        <li class="previous">
+            <a href="201210halloween-candy-data.html" rel="prev">← Previous post</a>
+        </li>
+        <li class="next">
+            <a href="201303online-ed-retention.html" rel="next">Next post →</a>
+        </li>
+    </ul>
+
+        
+        
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="sefkloninger";
+            var disqus_url="http://sef.kloninger.com/posts/201301why-so-long.html";
+        var disqus_title="Why Is That Feature Taking So Long?";
+        var disqus_identifier="cache/posts/201301why-so-long.html";
+        var disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    
+
+    </div>
+
+        </div>
+        <!--End of body content-->
+
+        <footer>
+            Contents © 2013         <a href="mailto:sefklon@gmail.com">Sef Kloninger</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+        </footer>
+    </div>
+</div>
+
+
+            <script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+
+
+	
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul><li><a class="addthis_button_facebook"></a>
+</li><li><a class="addthis_button_google_plusone_share"></a>
+</li><li><a class="addthis_button_linkedin"></a>
+</li><li><a class="addthis_button_twitter"></a>
+</li></ul>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
+    
+
+</body>
+</html>

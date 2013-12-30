@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Education)</title><link>http://sef.kloninger.com/</link><description></description><atom:link href="http://sef.kloninger.com/categories/education.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 30 Dec 2013 00:37:13 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Launch Day</title><link>http://sef.kloninger.com/posts/201306launch-day.html</link><description>&lt;img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="http://sef.kloninger.com/f/spaceshuttle-300x283.png" width="180" height="170"&gt;
+
+&lt;p&gt;
+Today was launch day. It went really well.  I wanted to capture what a good launch feels like and contrast that with a more exciting launch, just five months ago.
+
+
+&lt;/p&gt;&lt;p&gt;
+Today we turned on our first class on Stanford's instance the open-source &lt;a href="http://code.edx.org"&gt;edX platform&lt;/a&gt;, what we're calling &lt;a href="http://online.stanford.edu/openedx"&gt;OpenEdX&lt;/a&gt;. The class is &lt;a href="https://class.stanford.edu/courses/Medicine/HRP258/Statistics_in_Medicine"&gt;Statistics in Medicine&lt;/a&gt;, taught by Kristin Sainani of the Stanford School of Medicine. With over thirteen thousand students signed up it's a medium-sized MOOC (Massive Open Online Course).
+
+
+
+&lt;/p&gt;&lt;p&gt;
+We have launched MOOC's for Stanford before: two in &lt;a href="http://networking.class.stanford.edu/"&gt;Fall&lt;/a&gt; &lt;a href="http://solar.class.stanford.edu/"&gt;Quarter&lt;/a&gt;, and one in &lt;a href="http://db.class.stanford.edu/"&gt;Winter&lt;/a&gt;. Even though the classes were huge success, but the launch days weren't so smooth. We had written that platform, &lt;a href="http://class2go.stanford.edu/"&gt;Class2Go&lt;/a&gt;, from the ground up with a small team in a dozen weeks in Fall; in the weeks before the Winter launch we ripped out the whole evaluation system, about one-third of the code, and replaced it with a whole new engine. In both cases most of our code was fresh off the presses.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Those launches were rocky. I'll tell the story of the DB class launch in January. The first thing we do is a "soft launch," where you open the front door and some people find their way in. Those first visits give you a sense of how things will go.  Surprisingly, the servers were a bit busy.  But we wanted to keep going, so we scaled up capacity and moved on.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+The thing that drives real traffic is the announcement email. That gets people to the site. The announcements started going out, students started coming in, and the site lit up. We were in hot water. Servers were overloaded, and most surprising, the database was getting hammered. This was scary and unexpected. We control-C'ed the mail job and quickly hacked additional caching into the site.  We had to trickle out announcements over the next twelve hours.  We made it, but it was a long, stressful day.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+And then the days/weeks post-launch were spent watching graphs, triaging 500 errors (user-visible "we're sorry" pages), and installing daily hotfixes. But we got through it. The classes were a success and the team was proud.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+So, contrast that to today's launch.  Totally different.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Everyone came in early as usual. I bought bagels. We turned on the class (soft-launch) and the servers hardly noticed. We sent the announcement mails, people came and took their pre-course survey and watched the intro video. Hardly any load. This chart shows the average CPU on our four appservers from 8:00 AM PDT / 15:00 UTC until 10:45 AM or so.
+
+
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;img class="alignnone  wp-image-414" style="border: 0px;" alt="launch-app-cpu" src="http://sef.kloninger.com/f/launch-app-cpu1.png" width="1530" height="373"&gt;
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Those are happy servers. Other charts we watched (db connections, load, etc.) told the same story. The most impressive thing was not a single user visible error, no 500's!
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Those folks at edX made some solid software.  We're happy to be working with a strong group of engineers and a quality product.  We've had our hands on it only since April, and it was released open-source to the world on June 1.  I fully expect a lot of other universities and organizations are going to have a great time running classes on OpenEdX too.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+I just turned off half the appservers since we're fine on capacity. Now off to bed with a good feeling.
+
+&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201306launch-day.html</guid><pubDate>Tue, 11 Jun 2013 22:59:24 GMT</pubDate></item><item><title>"Low" Retention Rates in Online Education Isn't Necessarily A Bad Thing</title><link>http://sef.kloninger.com/posts/201303online-ed-retention.html</link><description>&lt;img class="alignright  wp-image-400" style="border: 0px;" alt="Evaluate-300x198" src="http://sef.kloninger.com/f/Evaluate-300x198.png" width="240" height="158"&gt;
+
+&lt;p&gt;
+I am of two minds about &lt;a title="Peter Reinhardt" href="http://rein.pk/online-educations-dirty-secret-awful-retention/" target="_blank"&gt;Peter Reinhardt post today&lt;/a&gt; calling out online education's poor retention rates.
+
+
+&lt;/p&gt;&lt;p&gt;
+I agree that retention rates are low. At Stanford we we just completed the Winter run of Jennifer Widom's &lt;a title="Introduction to Databases" href="http://db.class2go.stanford.edu/" target="_blank"&gt;Database Class&lt;/a&gt;, here are the course stats:
+
+&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;ul&gt;
+	&lt;li&gt;Registered: 64,127&lt;/li&gt;
+	&lt;li&gt;Turned in some work: 20,836&lt;/li&gt;
+	&lt;li&gt;Took the final exam: 4,771&lt;/li&gt;
+	&lt;li&gt;Received a Statement of Accomplishment: 4,854 (1,927 with distinction)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+How do I feel that 23% of students who started the class finished? Or that only 7.6% who enrolled finished? Mostly I'm fine with that. I think there's a lot of value in someone kicking the tires. Some were experimenting with on-line education, some didn't know before hand if the class would be right for them. I share &lt;a title="Curt Bonk, University of Indiana" href="http://php.indiana.edu/~cjbonk/" target="_blank"&gt;Curt Bonk&lt;/a&gt;'s view that this shouldn't be seen as a black mark but as another form of outreach.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+I consider this over forty thousand people who got some exposure to the topic, the platform, and what this MOOC thing is all about.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+But I totally agree that increasing retention is a worthwhile goal and a valuable metric.   Online education platforms (mine included) should do what we can to keep students engaged.  This article has many good suggestions.  And there's a lot of room for experimentation.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+(disclaimer: I'm the engineering manager on &lt;a title="Class2Go from Stanford" href="http://class2go.stanford.edu/" target="_blank"&gt;Class2Go&lt;/a&gt;, the open-source MOOC platform we've built at Stanford)&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201303online-ed-retention.html</guid><pubDate>Sun, 31 Mar 2013 12:23:15 GMT</pubDate></item><item><title>On-Line Education Is Really Interesting Right Now</title><link>http://sef.kloninger.com/posts/201207on-line-education.html</link><description>&lt;img class="alignright  wp-image-307" style="border: 0px;" title="lecture-hall" src="http://sef.kloninger.com/f/lecture-hall-300x199.jpeg" alt="" width="270" height="179"&gt;
+
+
+&lt;p&gt;
+I've joined a research project at Stanford University (my alma mater).  I am working with a small team to build a platform for on-line education. This post explains what we're building, my part in it, and why this is an interesting area right now.
+
+&lt;/p&gt;&lt;h2&gt;Class2Go&lt;/h2&gt;
+
+&lt;p&gt;
+We are building Class2Go, an application to put Stanford classes on line.  Envision a video-driven web site with exercises and tests.  It will run much like a class today (professors, TA's, lectures, homework, tests, schedules) but with everything happening on-line.  For some kinds of classes this could improve the classroom experience for enrolled students; the excitement comes when you can bring in the a much larger set of non-enrolled students.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+The professors who have expressed interest so far are those who want to &lt;a title="Flip teaching page on wikipedia" href="http://en.wikipedia.org/wiki/Flip_teaching" target="_blank"&gt;flip their classrooms&lt;/a&gt; or host a &lt;a title="Massive open online course page on wikipedia" href="http://en.wikipedia.org/wiki/Massive_open_online_course" target="_blank"&gt;Massive Open On-Line Course&lt;/a&gt; (MOOC). Others have ideas on experimentation with the learning process itself. For example, do students learn better when they see slides, a talking head, or both? A large enough student population makes meaningful studies possible and cheap.
+
+&lt;/p&gt;&lt;p&gt;
+There are a bunch of features needed over and above basic basic video.  First, can we devise a good system for students to grade each others work? This is an absolute must to do anything in the humanities at large scale.  We have some ideas of how to do peer evaluation, but it's an area that needs much more experimentation. A second important feature is enabling off-line use from laptops and tablets.  When we think of disconnected students we typically think of commuters, but we've heard it's just as important (or maybe more so) for students in developing countries where bandwidth is precious.
+
+&lt;/p&gt;&lt;p&gt;
+While there are &lt;a title="Link to Coursera site" href="https://www.coursera.org/" target="_blank"&gt;commercial&lt;/a&gt; &lt;a title="Link to Udacity site" href="http://www.udacity.com/" target="_blank"&gt;offerings&lt;/a&gt; to do this, and even things from other established &lt;a title="Link to Ed X site" href="http://www.edxonline.org/" target="_blank"&gt;universities&lt;/a&gt;, Class2Go will be different in three important ways:
+
+&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;ul&gt;
+	&lt;li&gt;Research will be first and foremost. Hey prof, you want to do a wacky experiment? We can help.&lt;/li&gt;
+	&lt;li&gt;Value produced by the course is retained and controlled by the professor and the university.  That value comes from the assets (video, homework) but even more so the community and technology.&lt;/li&gt;
+	&lt;li&gt;The professors will have quick and ready access to their data. No waiting in lines for reports.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Stanford Professor Rob Reich made a very coherent argument for this in a &lt;a title="Rob Reich blog post comparing Universities to Newspapers" href="http://www.stanford.edu/group/reichresearch/cgi-bin/site/2012/05/18/sending-universities-down-the-path-of-the-newspaper-industry/" target="_blank"&gt;recent blog post&lt;/a&gt;. (Getting to work with smart people like him is a major job perq, by the way.)
+
+&lt;/p&gt;&lt;p&gt;
+Part of what makes this doable is that there are so many great building blocks available.  We plan to use YouTube for video and the &lt;a href="https://github.com/khan/khan-exercises" target="_blank"&gt;Khan Academy&lt;/a&gt; framework for exercises.   &lt;a href="https://piazza.com/" target="_blank"&gt;Piazza&lt;/a&gt; has great discussions and forums to start with. Because of all this good stuff, we feel good about getting something strong out by the Fall for a couple of courses, and then expanding from there.
+
+&lt;/p&gt;&lt;p&gt;
+And me?  I'm the line manager. It's fun to work on a project of this size where I can keep my hands dirty. For example, this week I'll be working on authentication (oauth).
+
+&lt;/p&gt;&lt;h2&gt;Why Education, Why Now?&lt;/h2&gt;
+
+&lt;p&gt;
+Two things brought me to education.
+
+&lt;/p&gt;&lt;p&gt;
+Firstly, education is uniquely important. I challenge you to name another human pursuit that is as important, consumes so many resources (for good reason), and can be so transformative when done well.  The other two that come to mind are health and agriculture. But I'd say education is right up there.
+
+&lt;/p&gt;&lt;p&gt;
+And second, education is changing right now. Of the meetings I've had while &lt;a title="My Sabbatical" href="http://sef.kloninger.com/2012/04/my-sabbatical/" target="_blank"&gt;on sabbatical&lt;/a&gt;  some of the most interesting have been about education. Why can't information technology have as big an impact on how people learn as it has had on everything else? Technology could mean making it available to to many more students, in different places and of different means. Educators could spend less time lecturing (dry stuff, to be sure) and more time working with students. Better measurement and analysis and could give educators near-real-time feedback and students tailor-made homework. Those are just a few of the examples that I heard about that got me excited.
+
+&lt;/p&gt;&lt;p&gt;
+I look forward to doing something that will make even a little difference here. I'll blog about my experiences along the way.
+
+&lt;/p&gt;&lt;p&gt;
+PS - &lt;a title="Peter Norvig @ TED" href="http://fm.schmoller.net/2012/07/peter-norvigs-ted-talk-about-the-ai-course.html" target="_blank"&gt;Peter Norvig's TED Talk&lt;/a&gt; captured the reasons and potential nicely.  That seven minutes is worth your time.
+
+&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201207on-line-education.html</guid><pubDate>Mon, 09 Jul 2012 12:49:31 GMT</pubDate></item></channel></rss>

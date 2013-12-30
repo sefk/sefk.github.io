@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><atom:link href="http://sef.kloninger.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 30 Dec 2013 00:37:13 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Airmail FTW</title><link>http://sef.kloninger.com/posts/201312airmail.html</link><description>&lt;img class="alignright  wp-image-454" style="border: 0px;" alt="airmail" src="http://sef.kloninger.com/f/airmail.png" width="179" height="179"&gt;Finally a thick-client email program that seems to have stuck. So far I am really liking &lt;a href="http://airmailapp.com/"&gt;Airmail&lt;/a&gt;.
+
+&lt;p&gt;
+For years I've flipped between various Mac fat clients and the GMail web interface. The web interface keeps winning:
+
+&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;ul&gt;
+	&lt;li&gt;Outstanding search&lt;/li&gt;
+	&lt;li&gt;Great keyboard shortcuts (go Vi!)&lt;/li&gt;
+	&lt;li&gt;Very good use of screen real estate&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+But the killer is the reliance on a rock-solid Internet connection, and GMail's own slowdowns. Even though there is an offline mode, it is such a downgrade it's not worth using. So if you need to use offline you're in bad shape; same if you're on a slow or lossy connection, or if GMail is having a bad day.  Sadly, that's pretty often these days.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Airmail is cheap (&lt;a href="https://itunes.apple.com/us/app/airmail/id573171375?mt=12"&gt;$1.99 in the App Store&lt;/a&gt;) and super featureful. It coexists well with GMail's paradigm (archive vs. delete, threading includes sent items, drafts). Great configuration options. Visually pleasing. Robust.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+There are really only three places where it has fallen short for me:
+
+&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;ul&gt;
+	&lt;li&gt;I miss GMail's tabs. Those are still the best way to filter mail, and I was impressed with how well that feature worked and quickly became natural.&lt;/li&gt;
+	&lt;li&gt;Search. Airmail's isn't bad, but nothing is as good at this as Google's own.&lt;/li&gt;
+	&lt;li&gt;Gmail (with Chrome) has a great feature where you can drop in a picture and it is resized to look good.  Lacking that I now have to manually resize my giant retina-display screenshots.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+So-long to &lt;a href="http://sparrowmailapp.com/"&gt;Sparrow&lt;/a&gt; and &lt;a href="http://www.apple.com/osx/apps/#mail"&gt;Mail.app&lt;/a&gt; and &lt;a href="http://mailplaneapp.com/"&gt;Mailplane&lt;/a&gt;. Or until someone does really nails &lt;a href="https://www.mailpile.is/"&gt;self-hosting&lt;/a&gt;.&lt;/p&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/201312airmail.html</guid><pubDate>Mon, 02 Dec 2013 20:10:50 GMT</pubDate></item><item><title>The Seven Things You're Not Supposed to Talk About</title><link>http://sef.kloninger.com/posts/201311seven-things.html</link><description>&lt;img class="alignright size-full wp-image-448" style="border: 0px;" alt="lucy-charliebrown" src="http://sef.kloninger.com/f/lucy-charliebrown.jpeg" width="244" height="207"&gt;
+
+&lt;p&gt;
+I liked &lt;a href="http://www.thisamericanlife.org/radio-archives/episode/511/the-seven-things-youre-not-supposed-to-talk-about"&gt;this week's episode of This American Life&lt;/a&gt;. The idea is there are seven topics that you should avoid in conversation because they are always boring. &lt;strong&gt;I like this list! &lt;/strong&gt;
+
+&lt;/p&gt;&lt;p&gt;
+Here is the &lt;a href="http://www.thisamericanlife.org/radio-archives/episode/511/transcript"&gt;transcript&lt;/a&gt;.  I repeat the list here.
+
+&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;ol&gt;
+	&lt;li&gt;How you &lt;strong&gt;slept&lt;/strong&gt;.&lt;/li&gt;
+	&lt;li&gt;Your &lt;strong&gt;period&lt;/strong&gt;.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Health&lt;/strong&gt;. Of course if it's something serious, then that's conversation worthy, but normal sniffles, aches, and pains? No good.&lt;/li&gt;
+	&lt;li&gt;Your &lt;strong&gt;dreams&lt;/strong&gt;.  Not big aspirations, this is literally what you dreamt last night&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Money&lt;/strong&gt;.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Diet&lt;/strong&gt;. What you can and can't eat.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Route&lt;/strong&gt;. How you got here, what way you're going to get home.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+I will endeavor to not waste all of your time droning on about any of these topics.
+
+&lt;/p&gt;</description><category>Life</category><guid>http://sef.kloninger.com/posts/201311seven-things.html</guid><pubDate>Mon, 18 Nov 2013 19:57:53 GMT</pubDate></item><item><title>Halloween Down 20%, But Still Solid</title><link>http://sef.kloninger.com/posts/201311halloween-2013.html</link><description>&lt;img class="alignright  wp-image-440" style="border: 0px;" alt="halloween2013-ticker" src="http://sef.kloninger.com/f/halloween2013-ticker-300x300.jpg" width="126" height="126"&gt;
+
+
+&lt;p&gt;
+This year we had a sizable number of trick-or-treaters at our house in the Willows neighborhood of Menlo Park. The 303 we saw was down from our high last year, but abou the same as the year before that.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+So here are the totals:
+
+
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;img class="size-medium wp-image-441 alignnone" style="border: 0px;" alt="halloween2013-total" src="http://sef.kloninger.com/f/halloween2013-total-300x184.png" width="300" height="184"&gt;
+
+
+
+&lt;/p&gt;&lt;p&gt;
+The rate at peak was comparable to last year.
+
+
+&lt;/p&gt;&lt;div class="row-fluid"&gt;
+&lt;div class="span2" align="center"&gt;
+&lt;img class="size-medium wp-image-443 alignnone" style="border: 0px;" alt="halloween2013-rate" src="http://sef.kloninger.com/f/halloween2013-rate-300x160.png" width="300" height="160"&gt; 
+       
+&lt;img class="size-medium wp-image-442 alignnone" style="border: 0px;" alt="halloween2013-cumulative" src="http://sef.kloninger.com/f/halloween2013-cumulative-300x158.png" width="300" height="158"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+I don't have an explanation why we are down a bit. The weather was beautiful, indeed a little better than last year since rain started at 8:30 last year. Maybe the forecast rain coming last year got people out earlier who might have missed altogether?
+
+
+
+&lt;/p&gt;&lt;p&gt;
+It was outstanding having my friend &lt;a href="https://twitter.com/amylameyer"&gt;Amy LaMeyer&lt;/a&gt; helping out. She operated the clicker that was new this year, and so kept me company, which was a ton of fun.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+As always, the Google Spreadsheet with the graphs and raw data is publicly available &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;here&lt;/a&gt;. Check it out!
+
+
+&lt;/p&gt;</description><guid>http://sef.kloninger.com/posts/201311halloween-2013.html</guid><pubDate>Sat, 02 Nov 2013 22:25:17 GMT</pubDate></item><item><title>K&amp;R C Programming, Quantum Books, Cambridge, MA</title><link>http://sef.kloninger.com/posts/201309knr-c-label.html</link><description>&lt;p style="text-align: left;"&gt;&lt;img class="alignright  wp-image-433" style="border: 0px;" alt="IMG_4177" src="http://sef.kloninger.com/f/IMG_41771-231x300.jpg" width="139" height="180"&gt;
+
+&lt;/p&gt;&lt;p&gt;
+Today in a box I came across my old K&amp;amp;R. Probably the most valuable book I've owned. My copy has been heavily used.&lt;/p&gt;
+
+&lt;p&gt;
+But the unexpected, fun thing was finding an old label on the back cover.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+There is a lot in there.
+
+&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img class="aligncenter  wp-image-429" style="border: 0px;" alt="IMG_4179" src="http://sef.kloninger.com/f/IMG_4179-1024x393.jpg" width="584" height="224"&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;
+&lt;/p&gt;&lt;ul&gt;
+	&lt;li&gt;January 1994. I had just graduated college, driven cross country with my friend &lt;a href="http://sef.kloninger.com/posts/www.linkedin.com/pub/shigeru-tanaka/0/a27/917"&gt;Shig&lt;/a&gt;, and started my first post-college job. I would have been in that job four months or so and realized that I should just stop borrowing someone else's copy (probably &lt;a href="http://sef.kloninger.com/posts/www.linkedin.com/in/larryclaman/"&gt;Larry Claman&lt;/a&gt;'s) and buy my own.&lt;/li&gt;
+	&lt;li&gt;Purchased at Quantum Books, a great technical bookstore in the shadow of MIT in Cambridge, Massachusetts. It's no longer there. The bar that is there now (&lt;a style="font-style: normal;" href="http://www.themeadhall.com/"&gt;Meadhall&lt;/a&gt;) is a nice place, and I'm a big fan of beer, but it's not the same.&lt;/li&gt;
+	&lt;li&gt;According to an &lt;a style="font-style: normal;" href="http://www.bls.gov/data/inflation_calculator.htm"&gt;inflation calculator&lt;/a&gt;, $35 in 1994 is $55 today. That's expensive for a little book, especially to the twenty-two year old me.&lt;/li&gt;
+	&lt;li&gt;Note the email address: quanbook@world.std.com. This was back when mom and pop dialup ISP's where what we all used, people and businesses alike. This particular one, &lt;a style="font-style: normal;" href="http://world.std.com/"&gt;Software Tool &amp;amp; Die&lt;/a&gt;, was my private email address at the time too. (Aside: they claim to be the first public dialup ISP, and I have no reason to doubt them)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+It was fun being reminded of all this stuff. So the lesson of the story: it's still worth buying books, and when you do, don't remove the labels.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201309knr-c-label.html</guid><pubDate>Sat, 14 Sep 2013 17:41:20 GMT</pubDate></item><item><title>Launch Day</title><link>http://sef.kloninger.com/posts/201306launch-day.html</link><description>&lt;img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="http://sef.kloninger.com/f/spaceshuttle-300x283.png" width="180" height="170"&gt;
+
+&lt;p&gt;
+Today was launch day. It went really well.  I wanted to capture what a good launch feels like and contrast that with a more exciting launch, just five months ago.
+
+
+&lt;/p&gt;&lt;p&gt;
+Today we turned on our first class on Stanford's instance the open-source &lt;a href="http://code.edx.org"&gt;edX platform&lt;/a&gt;, what we're calling &lt;a href="http://online.stanford.edu/openedx"&gt;OpenEdX&lt;/a&gt;. The class is &lt;a href="https://class.stanford.edu/courses/Medicine/HRP258/Statistics_in_Medicine"&gt;Statistics in Medicine&lt;/a&gt;, taught by Kristin Sainani of the Stanford School of Medicine. With over thirteen thousand students signed up it's a medium-sized MOOC (Massive Open Online Course).
+
+
+
+&lt;/p&gt;&lt;p&gt;
+We have launched MOOC's for Stanford before: two in &lt;a href="http://networking.class.stanford.edu/"&gt;Fall&lt;/a&gt; &lt;a href="http://solar.class.stanford.edu/"&gt;Quarter&lt;/a&gt;, and one in &lt;a href="http://db.class.stanford.edu/"&gt;Winter&lt;/a&gt;. Even though the classes were huge success, but the launch days weren't so smooth. We had written that platform, &lt;a href="http://class2go.stanford.edu/"&gt;Class2Go&lt;/a&gt;, from the ground up with a small team in a dozen weeks in Fall; in the weeks before the Winter launch we ripped out the whole evaluation system, about one-third of the code, and replaced it with a whole new engine. In both cases most of our code was fresh off the presses.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Those launches were rocky. I'll tell the story of the DB class launch in January. The first thing we do is a "soft launch," where you open the front door and some people find their way in. Those first visits give you a sense of how things will go.  Surprisingly, the servers were a bit busy.  But we wanted to keep going, so we scaled up capacity and moved on.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+The thing that drives real traffic is the announcement email. That gets people to the site. The announcements started going out, students started coming in, and the site lit up. We were in hot water. Servers were overloaded, and most surprising, the database was getting hammered. This was scary and unexpected. We control-C'ed the mail job and quickly hacked additional caching into the site.  We had to trickle out announcements over the next twelve hours.  We made it, but it was a long, stressful day.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+And then the days/weeks post-launch were spent watching graphs, triaging 500 errors (user-visible "we're sorry" pages), and installing daily hotfixes. But we got through it. The classes were a success and the team was proud.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+So, contrast that to today's launch.  Totally different.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Everyone came in early as usual. I bought bagels. We turned on the class (soft-launch) and the servers hardly noticed. We sent the announcement mails, people came and took their pre-course survey and watched the intro video. Hardly any load. This chart shows the average CPU on our four appservers from 8:00 AM PDT / 15:00 UTC until 10:45 AM or so.
+
+
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;img class="alignnone  wp-image-414" style="border: 0px;" alt="launch-app-cpu" src="http://sef.kloninger.com/f/launch-app-cpu1.png" width="1530" height="373"&gt;
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Those are happy servers. Other charts we watched (db connections, load, etc.) told the same story. The most impressive thing was not a single user visible error, no 500's!
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Those folks at edX made some solid software.  We're happy to be working with a strong group of engineers and a quality product.  We've had our hands on it only since April, and it was released open-source to the world on June 1.  I fully expect a lot of other universities and organizations are going to have a great time running classes on OpenEdX too.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+I just turned off half the appservers since we're fine on capacity. Now off to bed with a good feeling.
+
+&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201306launch-day.html</guid><pubDate>Tue, 11 Jun 2013 22:59:24 GMT</pubDate></item><item><title>Coding on a Flight</title><link>http://sef.kloninger.com/posts/201304coding-on-a-flight.html</link><description>&lt;img class="alignright  wp-image-408" style="border: 0px;" alt="airplane" src="http://sef.kloninger.com/f/airplane-300x126.png" width="240" height="101"&gt;
+
+&lt;p&gt;
+I'm surprised that that I like coding on flights. It's surprising because airplanes are generally hostile environments for most things, but I've found it a good place to code.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+The obvious reason is the lack of interruptions and distractions. Usualy there is no wifi, or it is too spotty to count on. So no email or IRC or web. While I know that distractions kill flow, I never seem give myself license to unplug in normal life. I'm a manager, and being a manager means being interruptible.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+But there's another reason. When I code unplugged, I code differently. I have to be self-sufficient. Instead of just looking things up on StackOverflow, I take 20% more time to figure it out myself. That's much more satisfying! It's just not that hard to rummage through the Django code or try things out in iPython.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Also it just sounds cool to say you coded something up on the flight.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+But thre real question is should simulate "airplane mode" when grounded.  Hmm.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201304coding-on-a-flight.html</guid><pubDate>Mon, 08 Apr 2013 22:30:38 GMT</pubDate></item><item><title>"Low" Retention Rates in Online Education Isn't Necessarily A Bad Thing</title><link>http://sef.kloninger.com/posts/201303online-ed-retention.html</link><description>&lt;img class="alignright  wp-image-400" style="border: 0px;" alt="Evaluate-300x198" src="http://sef.kloninger.com/f/Evaluate-300x198.png" width="240" height="158"&gt;
+
+&lt;p&gt;
+I am of two minds about &lt;a title="Peter Reinhardt" href="http://rein.pk/online-educations-dirty-secret-awful-retention/" target="_blank"&gt;Peter Reinhardt post today&lt;/a&gt; calling out online education's poor retention rates.
+
+
+&lt;/p&gt;&lt;p&gt;
+I agree that retention rates are low. At Stanford we we just completed the Winter run of Jennifer Widom's &lt;a title="Introduction to Databases" href="http://db.class2go.stanford.edu/" target="_blank"&gt;Database Class&lt;/a&gt;, here are the course stats:
+
+&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;ul&gt;
+	&lt;li&gt;Registered: 64,127&lt;/li&gt;
+	&lt;li&gt;Turned in some work: 20,836&lt;/li&gt;
+	&lt;li&gt;Took the final exam: 4,771&lt;/li&gt;
+	&lt;li&gt;Received a Statement of Accomplishment: 4,854 (1,927 with distinction)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+How do I feel that 23% of students who started the class finished? Or that only 7.6% who enrolled finished? Mostly I'm fine with that. I think there's a lot of value in someone kicking the tires. Some were experimenting with on-line education, some didn't know before hand if the class would be right for them. I share &lt;a title="Curt Bonk, University of Indiana" href="http://php.indiana.edu/~cjbonk/" target="_blank"&gt;Curt Bonk&lt;/a&gt;'s view that this shouldn't be seen as a black mark but as another form of outreach.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+I consider this over forty thousand people who got some exposure to the topic, the platform, and what this MOOC thing is all about.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+But I totally agree that increasing retention is a worthwhile goal and a valuable metric.   Online education platforms (mine included) should do what we can to keep students engaged.  This article has many good suggestions.  And there's a lot of room for experimentation.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+(disclaimer: I'm the engineering manager on &lt;a title="Class2Go from Stanford" href="http://class2go.stanford.edu/" target="_blank"&gt;Class2Go&lt;/a&gt;, the open-source MOOC platform we've built at Stanford)&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201303online-ed-retention.html</guid><pubDate>Sun, 31 Mar 2013 12:23:15 GMT</pubDate></item><item><title>Why Is That Feature Taking So Long?</title><link>http://sef.kloninger.com/posts/201301why-so-long.html</link><description>&lt;img class="alignright  wp-image-394" style="border: 0px;" alt="turd-polish" src="http://sef.kloninger.com/f/turd-polish.png" width="191" height="182"&gt;
+
+&lt;p&gt;
+I've observed a recurring source of tension:  building things fast vs. do it the right way. Usually you're not lucky enough that you can do both.  This post explains a bit why we (engineers) care so much about building things right.  Even when things are overdue and our stakeholders (end-users, biz folks, product management) are pushing to just get it done.
+
+
+&lt;/p&gt;&lt;p&gt;
+You can describe the two poles here in pejorative terms.  Fast is slapdash, quick and dirty, bad software.  The right way is really just ivory-tower over-engineered turd polishing.  Is that fix really so important that we shouldn't ship it? Do you really need to refactor that now?
+
+
+
+&lt;/p&gt;&lt;p&gt;
+I see three things driving engineers to build it right.
+
+&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;ol&gt;
+	&lt;li&gt;&lt;strong&gt;Wrong is insidious&lt;/strong&gt;. A story: early on in Class2Go every page began with a fetch of some basic page data. If there was an error on lookup we would throw a 404. Not only is "not found" the wrong message, but it also isn't helpful. It covers up all kinds of other problems, in a way that is really difficult to debug.But for an engineer, these programming messes are &lt;a href="http://en.wikipedia.org/wiki/Broken_windows_theory"&gt;broken windows&lt;/a&gt;. Not only do they cheapen the project, they encourage others to take bad shortcuts. Heck, if they can't be bothered to handle exceptions correctly, then why should I?&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Wrong is the express train to support hell.&lt;/strong&gt; Unless you leave the company or project, you'll be called upon to support your own crappy code. That is certain. And there is almost nothing worse than being dragged back to debug some old code that you never meant to become production, and is now breaking the world.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Wrong hurts your reputation as an engineer&lt;/strong&gt;. People see you taking shortcuts and infer that you are a sloppy programmer. And really they aren't wrong to do so. One habit of really good engineers is they don't leave a wake of messes behind them. They are able to do things (mostly) right even when they are moving fast.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+This last point is really the key one. Amongst engineers your reputation is your hard currency. It affects what projects you're invited to work on and what companies you'll be asked to join. Most importantly, good engineers only want to work with other good engineers, and they won't seek out someone sloppy. So I assume that any code I write will be looked at by a potential colleague or employer. This is especially true when working on an open-source project.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+This doesn't mean you have to go slow -- indeed, on my current project, &lt;a href="http://class2go.stanford.edu/" target="_blank"&gt;Class2Go&lt;/a&gt;, we get a lot done every week. What it does mean is that sometimes I'd rather not do something than do something I know will come out poorly.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+So, product manager waiting on a feature. What to do if you're waiting on an engineer and you think it's taking too damn long? The tactic **not** to use: tell them this won't matter and to just ship it. That will just piss him off. Better: get your senior engineer to convince the junior one why it's good enough to ship and reason about what really needs to get done. Exception: if the engineer you're waiting on is your senior engineer, then trust her judgment and wait.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+And finally, to you product managers and biz folks who push. You are right do do so. That's all that matters to the customers, all matters at the end of the day. Keep it up.&lt;/p&gt;</description><category>Management</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201301why-so-long.html</guid><pubDate>Fri, 25 Jan 2013 01:24:48 GMT</pubDate></item><item><title>Halloween Candy Data</title><link>http://sef.kloninger.com/posts/201210halloween-candy-data.html</link><description>&lt;p&gt;Update with actuals from Halloween 2012:  It was a banner year.
+
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;img class="alignnone size-large wp-image-391" alt="halloween-2012" src="http://sef.kloninger.com/f/halloween-2012-1024x433.png" width="584" height="246"&gt;
+
+&lt;/p&gt;&lt;hr&gt;
+
+&lt;p&gt;
+You may be giving out candy later today. What can you expect? Let's look at some data.  This post summarizes the past three Halloweens.
+
+
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;img class="alignnone  wp-image-378" style="border: 0px;" title="cumulative" alt="Cumulative Trick or Treaters" src="http://sef.kloninger.com/f/cumulative-1024x441.png" width="584" height="251"&gt;
+
+
+
+&lt;/p&gt;&lt;p&gt;
+As you can see we live in a pretty popular neighborhood.  Each year has its own story.
+
+&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;2009&lt;/strong&gt; - our first year in our new neighborhood. We had no idea that this was such a popular trick-or-treating spot. I ran out of candy at 8:00, turned out the lights, and hid in the back of the house. Shameful.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;2010&lt;/strong&gt; - a fine year.  No complaints.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;2011&lt;/strong&gt; - we moved to a new house just around the corner.  I figured the quieter street would mean fewer kids -- not so! What I didn't appreciate was the attractive power of my next door neighbor's &lt;em&gt;insane&lt;/em&gt; decorations. Luckily my wife came back with emergency supplies just in time.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+And how busy do things get?  Darn busy.
+
+
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;img class="alignnone  wp-image-379" style="border: 0px;" title="rates" alt="Average and Max Trick or Treaters per Minute" src="http://sef.kloninger.com/f/rates-1024x412.png" width="584" height="234"&gt;
+
+
+
+&lt;/p&gt;&lt;p&gt;
+During the busiest 15 minute period last year I was serving a kid every twenty seconds or so.  When bursting this is close to my max current candy-dispensing throughput.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+If you come by my house this year you'll see me again, handing out candy with one hand and scribbling hash marks with the other.   I'll update the data in my &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;public spreadsheet&lt;/a&gt;.&lt;/p&gt;</description><category>Life</category><guid>http://sef.kloninger.com/posts/201210halloween-candy-data.html</guid><pubDate>Wed, 31 Oct 2012 00:19:35 GMT</pubDate></item><item><title>Managing Work-In-Progress Folders with "ls -ltr"</title><link>http://sef.kloninger.com/posts/201208wip-folders-with-ls.html</link><description>&lt;img class="size-full wp-image-353 alignright" style="border: 0px;" title="blog-folder-done" src="http://sef.kloninger.com/f/blog-folder-done.png" alt="" width="107" height="41"&gt;
+
+&lt;p&gt;
+I've developed a nice little way to manage my work in progress folders.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+I keep a bunch of folders around where I can stick things that are in-flight: one for home projects, one for blogs, etc. I like accumulating ideas in there, one idea per file, that I can come back to and fuss over until something is ready.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+The folder is flypaper for ideas and notes.  My blog folder has about twenty files right now.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Using "ls", and relying on file and directory modification times, is a useful way to keep track of all these files.  Here's how.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+As projects are finished I move them into a "done" folder. This gets them out of the way.  A useful side effect is the modification time of the done directly itself gets updated.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+The in-flight projects I care about most are the ones most recently updated: as an idea gets older it becomes less and less interesting.  When looking at this directory I use the "ls -ltr" command.  "l" means long (so you can see dates), "t" means sort by modification time, and "r" reverses that sort, so you see latest modified on the bottom.
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img class="aligncenter  wp-image-352" style="border: 0px;" title="blog-folder-detail" src="http://sef.kloninger.com/f/blog-folder-detail.png" alt="" width="719" height="275"&gt;&lt;/p&gt;
+
+&lt;p&gt;
+The old files are at the top where I don't worry about them.  Some even scroll off the top of the screen, that's fine.  The done folder is a nice visual line for when something was last completed (say, published).  Having a separate color for directories makes this visually apparent.  And the bottom of the list are those most recently modified. Generally I work on the bottom up. Sometimes I go back to an old idea and add some notes. That bumps it to the top of the line -- it is interesting again.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+I probably type "ls -ltr" at least 5 times an hour.  I've never aliased it since my muscle memory is so strong (but maybe I still should).
+
+
+
+ &lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201208wip-folders-with-ls.html</guid><pubDate>Tue, 07 Aug 2012 01:56:53 GMT</pubDate></item></channel></rss>

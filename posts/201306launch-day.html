@@ -1,0 +1,214 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sef Kloninger">
+    <title>Launch Day | sef.kloninger.com</title>
+    
+            <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+
+    
+
+
+
+    
+</head>
+<body>
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../">sef.kloninger.com</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            
+                <li><a href="../archive.html">Archives</a>
+                </li><li><a href="../categories/index.html">Tags</a>
+                </li><li><a href="../rss.xml">RSS</a>
+
+        </li></ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            
+            
+                
+    <li>
+    <a href="201306launch-day.wp" id="sourcelink">Source</a>
+    </li>
+
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+
+<!-- End of Menubar -->
+
+<div class="container">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+    <div class="postbox">
+    
+    <h1 class="p-name" itemprop="headline name">Launch Day</h1>
+
+    <hr>
+    <small>
+        Posted: <time class="published" datetime="2013-06-11T22:59:24">2013-06-11 22:59</time>
+        
+
+        
+          |  More posts about
+        <span itemprop="keywords">
+            <a class="tag p-category" href="../categories/education.html"><span class="badge badge-info">Education</span></a>
+            <a class="tag p-category" href="../categories/technology.html"><span class="badge badge-info">Technology</span></a>
+        </span>
+
+    </small>
+    <hr>
+    <img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="../f/spaceshuttle-300x283.png" width="180" height="170">
+
+<p>
+Today was launch day. It went really well.  I wanted to capture what a good launch feels like and contrast that with a more exciting launch, just five months ago.
+
+
+</p><p>
+Today we turned on our first class on Stanford's instance the open-source <a href="http://code.edx.org">edX platform</a>, what we're calling <a href="http://online.stanford.edu/openedx">OpenEdX</a>. The class is <a href="https://class.stanford.edu/courses/Medicine/HRP258/Statistics_in_Medicine">Statistics in Medicine</a>, taught by Kristin Sainani of the Stanford School of Medicine. With over thirteen thousand students signed up it's a medium-sized MOOC (Massive Open Online Course).
+
+
+
+</p><p>
+We have launched MOOC's for Stanford before: two in <a href="http://networking.class.stanford.edu/">Fall</a> <a href="http://solar.class.stanford.edu/">Quarter</a>, and one in <a href="http://db.class.stanford.edu/">Winter</a>. Even though the classes were huge success, but the launch days weren't so smooth. We had written that platform, <a href="http://class2go.stanford.edu/">Class2Go</a>, from the ground up with a small team in a dozen weeks in Fall; in the weeks before the Winter launch we ripped out the whole evaluation system, about one-third of the code, and replaced it with a whole new engine. In both cases most of our code was fresh off the presses.
+
+
+
+</p><p>
+Those launches were rocky. I'll tell the story of the DB class launch in January. The first thing we do is a "soft launch," where you open the front door and some people find their way in. Those first visits give you a sense of how things will go.  Surprisingly, the servers were a bit busy.  But we wanted to keep going, so we scaled up capacity and moved on.
+
+
+
+</p><p>
+The thing that drives real traffic is the announcement email. That gets people to the site. The announcements started going out, students started coming in, and the site lit up. We were in hot water. Servers were overloaded, and most surprising, the database was getting hammered. This was scary and unexpected. We control-C'ed the mail job and quickly hacked additional caching into the site.  We had to trickle out announcements over the next twelve hours.  We made it, but it was a long, stressful day.
+
+
+
+</p><p>
+And then the days/weeks post-launch were spent watching graphs, triaging 500 errors (user-visible "we're sorry" pages), and installing daily hotfixes. But we got through it. The classes were a success and the team was proud.
+
+
+
+</p><p>
+So, contrast that to today's launch.  Totally different.
+
+
+
+</p><p>
+Everyone came in early as usual. I bought bagels. We turned on the class (soft-launch) and the servers hardly noticed. We sent the announcement mails, people came and took their pre-course survey and watched the intro video. Hardly any load. This chart shows the average CPU on our four appservers from 8:00 AM PDT / 15:00 UTC until 10:45 AM or so.
+
+
+
+</p><p align="center">
+<img class="alignnone  wp-image-414" style="border: 0px;" alt="launch-app-cpu" src="../f/launch-app-cpu1.png" width="1530" height="373">
+
+
+
+</p><p>
+Those are happy servers. Other charts we watched (db connections, load, etc.) told the same story. The most impressive thing was not a single user visible error, no 500's!
+
+
+
+</p><p>
+Those folks at edX made some solid software.  We're happy to be working with a strong group of engineers and a quality product.  We've had our hands on it only since April, and it was released open-source to the world on June 1.  I fully expect a lot of other universities and organizations are going to have a great time running classes on OpenEdX too.
+
+
+
+</p><p>
+I just turned off half the appservers since we're fine on capacity. Now off to bed with a good feeling.
+
+</p>
+    
+    <ul class="pager">
+        <li class="previous">
+            <a href="201304coding-on-a-flight.html" rel="prev">← Previous post</a>
+        </li>
+        <li class="next">
+            <a href="201309knr-c-label.html" rel="next">Next post →</a>
+        </li>
+    </ul>
+
+        
+        
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname ="sefkloninger";
+            var disqus_url="http://sef.kloninger.com/posts/201306launch-day.html";
+        var disqus_title="Launch Day";
+        var disqus_identifier="cache/posts/201306launch-day.html";
+        var disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    
+
+    </div>
+
+        </div>
+        <!--End of body content-->
+
+        <footer>
+            Contents © 2013         <a href="mailto:sefklon@gmail.com">Sef Kloninger</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+        </footer>
+    </div>
+</div>
+
+
+            <script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+
+
+	
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul><li><a class="addthis_button_facebook"></a>
+</li><li><a class="addthis_button_google_plusone_share"></a>
+</li><li><a class="addthis_button_linkedin"></a>
+</li><li><a class="addthis_button_twitter"></a>
+</li></ul>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
+    
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html><body>
+
+<img class="size-full wp-image-272 alignleft" style="padding:20px; float:left" title="fizzbuzz" src="/f/fizzbuzz.png" alt="" width="116" height="166">
+
+<p>You probably wouldn't hire an engineer that you hadn't seen code. But people tend to hire  engineering managers without seeing them manage. I contend that's a big oversight: you should see them manage on their feet, at least a little.  But how?
+
+<p>
+I'm thinking along the lines of the "FizzBuzz" class of questions. I believe they got some fame with <a href="http://imranontech.com/2007/01/24/using-fizzbuzz-to-find-developers-who-grok-coding/" target="_blank">this article</a> in 2007, and Google <a href="http://www.google.com/trends/?q=fizzbuzz" target="_blank">seems to support this</a>. Anyway, they are simple programming problems that should be no-brainers for any decent engineer. But they are useful exactly because of the surprisingly large number of candidates who flame out on them. By some accounts, as high as 50%.
+
+
+
+<p>
+So what we want are something similar for engineering managers:  practical questions that can be done within the constraints of an interview. Here are a few that have been useful for me.
+
+</p><h2>Role Playing</h2>
+
+<p>
+Instead of asking them how they would do something, just ask them to do that thing in front of you. Role playing can be awkward if you've never done it before, but give it a try. Once you get over the hump and try it, it can be fun. Here are three good scenarios I've used.
+
+<p>
+<ul>
+	<li><em>"I'm a product manager. Customer Foo (say, one of our biggest customers) wants a feature right before the release is to go out. You're the VP of Engineering. You feel like this will destabilize your release.  How do you say no?"</em>  Sometimes it can be fun to play out the natural follow-up, when they go over your head to the CEO.</li>
+	<li><em>"I'm a slacking employee. I have the skills, but for some reason I haven't been productive lately. It's our weekly one-on-one time -- what do you say?"</em></li>
+	<li><em>"You have to lay someone off. How do you prepare? What do you say?"</em></li>
+</ul>
+
+<p>
+If they have follow up questions, or dispute the premise, then play it out. Usually those end up being the most insightful and fun interviews. Also, one warning: questions like these can take you far down the rabbit hole and use up the whole hour if you're not careful.  Remember that its your time.  You should cut them off and switch to the next question, abruptly if need be, to get to everything you need to cover.
+
+<h2>Nuts and Bolts</h2>
+
+<p>
+Ask candidates about the mechanics of how they do their job and you can get insight into their experience and values. What tools (wikis, bug tracking, source control, continuous testing) do they use? Do they run team meetings or daily standups? If so, how do these go?
+
+
+
+<p>
+What you're looking for are <em>thoughtful</em> answers. Anyone who has used these tools a lot should have opinions about the them. If they don't then they don't care (bad) or they haven't done the work (bad). Are they negative about everything? Are they flexible?
+
+<h2>Motivation</h2>
+
+<p>
+For me this often is the clincher. Why did you get into engineering management in the first place? Why are you doing it now? I won't say what I consider to be good answers, since this varies a lot and should be pretty personal. Again, what you're looking for is a thoughtful answer.
+
+
+
+<p>
+This can be most useful for turning up red-flag responses. You don't want the person who did it for power ("I wanted to boss people around") or ambition ("I wanted to make more money") or just fell into it.  Trust your gut for answers that don't sound genuine and ask probing follow-ups.
+
+
+
+<p>
+I find questions like these can lead to more insightful conversations and get the candidate off-script faster than the typical resume walkthrough.
+
+
+
+ </body></html>

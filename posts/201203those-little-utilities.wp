@@ -1,0 +1,51 @@
+<html><body>
+<p>I tend to obsess a bit about creating a nice work environment.  Software environment, that is.  This blog post focuses on the setup that I have that works for me, specifically those little glue utilities that are so helpful. So I won't cover the big local apps (email, browsers, productivity, dev/test) or web apps (todos, photos), that's for a future post.
+</p>
+
+
+<p><a href="http://manytricks.com/witch/" target="_blank">Witch</a> ($14, Many Tricks) - Maybe the one I use the most.  I find that the default OS X cmd-tab switching to be annoying by cycling through <em>apps</em> instead of <em>windows</em>. Maybe that's just because I spent so many years living in windows and this mimics the Windows behavior, I don't know, but this is what I consider natural.
+</p>
+
+
+
+<p>
+<a href="http://sef.kloninger.com/2012/03/those-little-utilities/witch-ss/" rel="attachment wp-att-36"><img class="aligncenter size-medium wp-image-36" title="witch screenshot" src="/f/witch-ss-300x202.png" alt="WItch Screenshot" width="300" height="202"></a>
+</p>
+
+
+
+<p>
+<a href="http://adium.im/" target="_blank">Adium</a> (free) - Best IM and IRC client I know of.
+</p>
+
+
+
+<p><a href="http://sites.google.com/site/iterm2home/" target="_blank">iTerm 2</a> (free) - Replacement for built in terminal.app. Terminal isn't bad, but the one feature this has which I miss from old terminal programs is auto copy selection contents when switching to another app. I do that all the time. Doesn't just save a few keystrokes -- seems every time I expect my selection to be in the clipboard, and when it's not, I find myself hunting around.
+</p>
+
+
+
+<p><a href="http://fluidapp.com/" target="_blank">Fluid</a> (free) - I like web apps I use a lot (gmail, Remember the Milk, Google Calendar) to function like real apps: own icon, startup and quit behavior distinct from other browser windows, etc.  I've now come to appreciate those as <a href="http://en.wikipedia.org/wiki/Site-specific_browser" target="_blank">Site Specific Browsers</a> (SSB's), and Fluid is the best way of doing those.  It's a little strange as that relies on Safari, and I use Chrome for everything else, so those SSB's don's share cookies or anything else, but that's not a big deal.  Fluid even has some nice little special cases, like adding unread mail badges to your gmail icon (neat!).
+</p>
+
+
+
+<p><a href="http://mxcl.github.com/homebrew/" target="_blank">Homebrew</a> (free) - the missing Mac command line package manager.  There are others (most notably <a href="http://www.macports.org/" target="_blank">MacPorts</a>) but I've tried both and this one seems cleaner and easier.
+</p>
+
+
+<p>My current package list is:
+
+</p><ul>
+	<li>autojump, multitail -- surprising gems</li>
+	<li>macvim -- worthy of its own blog</li>
+	<li>watch, wget, figlet, dos2unix/unix2dos, wget -- how can they not be included standard?</li>
+	<li>fping, wireshark -- network hacking</li>
+	<li>gnupg -- crypto</li>
+</ul>
+</p>
+
+
+
+
+</body></html>
