@@ -1,6 +1,0 @@
-nikola
-markdown
-html2text
-ipython
-requests
-livereload
