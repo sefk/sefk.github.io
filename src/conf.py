@@ -359,7 +359,7 @@ LICENSE = ""
 # Default is ''
 CONTENT_FOOTER = 'Contents &copy; {date} <a href="mailto:{email}">{author}</a> ' + \
         '- Powered by <a href="http://getnikola.com" rel="nofollow">Nikola</a> ' + \
-        '- Hosted By by <a href="http://github.com" rel="nofollow">GitHub</a> ' + \
+        '- Hosted by <a href="http://github.com" rel="nofollow">GitHub</a> ' + \
         '{license}'
 CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
                                        author=BLOG_AUTHOR,
