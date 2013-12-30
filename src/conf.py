@@ -66,6 +66,10 @@ NAVIGATION_LINKS = {
         ('/archive.html', 'Archives'),
         ('/categories/index.html', 'Tags'),
         ('/rss.xml', 'RSS'),
+        ('https://twitter.com/sefk', 'Twitter'),
+        ('https://github.com/sefk', 'GitHub'),
+        ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html', 'Resume HTML'),
+        ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf',  'PDF'),
     ),
 }
 
