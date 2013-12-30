@@ -1,0 +1,40 @@
+<html><body>
+
+<img class="alignright  wp-image-394" style="border: 0px;" alt="turd-polish" src="/f/turd-polish.png" width="191" height="182">
+
+<p>
+I've observed a recurring source of tension:  building things fast vs. do it the right way. Usually you're not lucky enough that you can do both.  This post explains a bit why we (engineers) care so much about building things right.  Even when things are overdue and our stakeholders (end-users, biz folks, product management) are pushing to just get it done.
+
+
+<p>
+You can describe the two poles here in pejorative terms.  Fast is slapdash, quick and dirty, bad software.  The right way is really just ivory-tower over-engineered turd polishing.  Is that fix really so important that we shouldn't ship it? Do you really need to refactor that now?
+
+
+
+<p>
+I see three things driving engineers to build it right.
+
+<p>
+<ol>
+	<li><strong>Wrong is insidious</strong>. A story: early on in Class2Go every page began with a fetch of some basic page data. If there was an error on lookup we would throw a 404. Not only is "not found" the wrong message, but it also isn't helpful. It covers up all kinds of other problems, in a way that is really difficult to debug.But for an engineer, these programming messes are <a href="http://en.wikipedia.org/wiki/Broken_windows_theory">broken windows</a>. Not only do they cheapen the project, they encourage others to take bad shortcuts. Heck, if they can't be bothered to handle exceptions correctly, then why should I?</li>
+	<li><strong>Wrong is the express train to support hell.</strong> Unless you leave the company or project, you'll be called upon to support your own crappy code. That is certain. And there is almost nothing worse than being dragged back to debug some old code that you never meant to become production, and is now breaking the world.</li>
+	<li><strong>Wrong hurts your reputation as an engineer</strong>. People see you taking shortcuts and infer that you are a sloppy programmer. And really they aren't wrong to do so. One habit of really good engineers is they don't leave a wake of messes behind them. They are able to do things (mostly) right even when they are moving fast.</li>
+</ol>
+
+<p>
+This last point is really the key one. Amongst engineers your reputation is your hard currency. It affects what projects you're invited to work on and what companies you'll be asked to join. Most importantly, good engineers only want to work with other good engineers, and they won't seek out someone sloppy. So I assume that any code I write will be looked at by a potential colleague or employer. This is especially true when working on an open-source project.
+
+
+
+<p>
+This doesn't mean you have to go slow -- indeed, on my current project, <a href="http://class2go.stanford.edu/" target="_blank">Class2Go</a>, we get a lot done every week. What it does mean is that sometimes I'd rather not do something than do something I know will come out poorly.
+
+
+
+<p>
+So, product manager waiting on a feature. What to do if you're waiting on an engineer and you think it's taking too damn long? The tactic **not** to use: tell them this won't matter and to just ship it. That will just piss him off. Better: get your senior engineer to convince the junior one why it's good enough to ship and reason about what really needs to get done. Exception: if the engineer you're waiting on is your senior engineer, then trust her judgment and wait.
+
+
+
+<p>
+And finally, to you product managers and biz folks who push. You are right do do so. That's all that matters to the customers, all matters at the end of the day. Keep it up.</body></html>
