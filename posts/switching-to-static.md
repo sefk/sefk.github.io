@@ -7,7 +7,7 @@
 .. date: 2013/12/30 01:35:23
 -->
 
-<img style="float:right" src="/f/tesla.jpg" alt="Nikola Tesla" width=145 height=178>
+<img style="float:right" class="postimage" src="/f/tesla.jpg" alt="Nikola Tesla" width=195 height=228>
 
 For those of you who frequently read this blog (n &asymp; 0) you'll
 notice that it looks a bit different. I've moved it from my own
