@@ -50,7 +50,7 @@ That is part of the reason why I [reworked my blog][nikola] over the
 holiday break, so I'd have a nicer platform for writing. Anything to
 lower the bar to produce.
 
-  [nikola]: http://127.0.0.1:8000/posts/switching-to-static.html
+  [nikola]: /posts/switching-to-static.html
 
 -------------
 
