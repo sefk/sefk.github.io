@@ -1,24 +1,26 @@
 <!-- 
-.. title: Consume &lt; Produce &lt; Produce Publicly
+.. title: Consume vs. Produce vs. Produce Publicly
 .. slug: consume-produce-public
 .. link: 
 .. description: 
 .. tags: Life
-.. date: 2014/01/08 1:00am
+.. date: 2014/01/09 10:51PM
 -->
 
 <p><img style="float:right" class="postimage" src="/f/make-asl.gif" alt="\"make\" in American Sign Language" width=50%></p>
 
 One of my goals for this year is to try to produce more and consume
 less. Not in the green, fixed-planetary-resources sense \[1\]. I
-mean produce more, create more. Things, ideas, whatever. [Rands][r]
-said it well in [this weeks blog post][builders]. If you
-haven't read it, go do so now, I'll wait. (and while you're at it,
-if you don't have him followed or bookmarked or whatever, do that
-too.)
+mean to make more things, ideas, contributions.  To be more creative.
+Creative in literal sense of that word: creating.
+
+[Rands][r] said it well in his post this week, 
+["The Builder's High'][bh]. If you haven't read it, go do so now.
+I'll wait.  (and while you're at it, if you don't have him followed
+or bookmarked or whatever, do that too.)
 
   [r]: https://twitter.com/rands
-  [builders]: http://randsinrepose.com/archives/the-builders-high/
+  [bh]: http://randsinrepose.com/archives/the-builders-high/
 
 I agree with pretty much everything he said in there. The good
 feeling that comes from actually making soemthing. How that's
