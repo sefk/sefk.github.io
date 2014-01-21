@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><atom:link href="http://sef.kloninger.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 09 Jan 2014 22:51:18 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Consume vs. Produce vs. Produce Publicly</title><link>http://sef.kloninger.com/posts/consume-produce-public.html</link><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/make-asl.gif" alt="\" make in american sign language width="50%"&gt;&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><atom:link href="http://sef.kloninger.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 20 Jan 2014 17:41:57 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Chicken Soup</title><link>http://sef.kloninger.com/posts/chicken_soup.html</link><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/chicken-noodle-soup.jpg" alt="Yummy Bowl of Chicken Noodle Soup" width="40%"&gt;&lt;/p&gt;
+
+&lt;p&gt;My family hasn't avoided the colds that are going around now. My
+way of fighting back is making chicken noodle soup.  It's not too
+hard, it's satisfying, and it tastes great. &lt;a href="http://sef.kloninger.com/f/chicken_soup.pdf"&gt;The recipe&lt;/a&gt; belongs
+to &lt;a href="http://peninsulaschool.org/"&gt;Peninsula School&lt;/a&gt; and gets used at our annual Craft Fair.
+It's benefited from years of refinement.&lt;/p&gt;
+&lt;p&gt;I add more salt. I don't do peas. I've tried with rice but it
+got starchy and weird, stick with egg noodles.&lt;/p&gt;</description><category>Family</category><category>Life</category><guid>http://sef.kloninger.com/posts/chicken_soup.html</guid><pubDate>Mon, 20 Jan 2014 17:16:00 GMT</pubDate></item><item><title>Consume vs. Produce vs. Produce Publicly</title><link>http://sef.kloninger.com/posts/consume-produce-public.html</link><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/make-asl.gif" alt="\" make in american sign language width="50%"&gt;&lt;/p&gt;
 
 &lt;p&gt;One of my goals for this year is to try to produce more and consume
 less. Not in the green, fixed-planetary-resources sense [1]. I
@@ -449,41 +457,4 @@ But I totally agree that increasing retention is a worthwhile goal and a valua
 
 
 &lt;/p&gt;&lt;p&gt;
-(disclaimer: I'm the engineering manager on &lt;a title="Class2Go from Stanford" href="http://class2go.stanford.edu/" target="_blank"&gt;Class2Go&lt;/a&gt;, the open-source MOOC platform we've built at Stanford)&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201303online-ed-retention.html</guid><pubDate>Sun, 31 Mar 2013 12:23:15 GMT</pubDate></item><item><title>Why Is That Feature Taking So Long?</title><link>http://sef.kloninger.com/posts/201301why-so-long.html</link><description>&lt;img class="alignright  wp-image-394" style="border: 0px;" alt="turd-polish" src="http://sef.kloninger.com/f/turd-polish.png" width="191" height="182"&gt;
-
-&lt;p&gt;
-I've observed a recurring source of tension:  building things fast vs. do it the right way. Usually you're not lucky enough that you can do both.  This post explains a bit why we (engineers) care so much about building things right.  Even when things are overdue and our stakeholders (end-users, biz folks, product management) are pushing to just get it done.
-
-
-&lt;/p&gt;&lt;p&gt;
-You can describe the two poles here in pejorative terms.  Fast is slapdash, quick and dirty, bad software.  The right way is really just ivory-tower over-engineered turd polishing.  Is that fix really so important that we shouldn't ship it? Do you really need to refactor that now?
-
-
-
-&lt;/p&gt;&lt;p&gt;
-I see three things driving engineers to build it right.
-
-&lt;/p&gt;&lt;p&gt;
-&lt;/p&gt;&lt;ol&gt;
-	&lt;li&gt;&lt;strong&gt;Wrong is insidious&lt;/strong&gt;. A story: early on in Class2Go every page began with a fetch of some basic page data. If there was an error on lookup we would throw a 404. Not only is "not found" the wrong message, but it also isn't helpful. It covers up all kinds of other problems, in a way that is really difficult to debug.But for an engineer, these programming messes are &lt;a href="http://en.wikipedia.org/wiki/Broken_windows_theory"&gt;broken windows&lt;/a&gt;. Not only do they cheapen the project, they encourage others to take bad shortcuts. Heck, if they can't be bothered to handle exceptions correctly, then why should I?&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Wrong is the express train to support hell.&lt;/strong&gt; Unless you leave the company or project, you'll be called upon to support your own crappy code. That is certain. And there is almost nothing worse than being dragged back to debug some old code that you never meant to become production, and is now breaking the world.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Wrong hurts your reputation as an engineer&lt;/strong&gt;. People see you taking shortcuts and infer that you are a sloppy programmer. And really they aren't wrong to do so. One habit of really good engineers is they don't leave a wake of messes behind them. They are able to do things (mostly) right even when they are moving fast.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;
-This last point is really the key one. Amongst engineers your reputation is your hard currency. It affects what projects you're invited to work on and what companies you'll be asked to join. Most importantly, good engineers only want to work with other good engineers, and they won't seek out someone sloppy. So I assume that any code I write will be looked at by a potential colleague or employer. This is especially true when working on an open-source project.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-This doesn't mean you have to go slow -- indeed, on my current project, &lt;a href="http://class2go.stanford.edu/" target="_blank"&gt;Class2Go&lt;/a&gt;, we get a lot done every week. What it does mean is that sometimes I'd rather not do something than do something I know will come out poorly.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-So, product manager waiting on a feature. What to do if you're waiting on an engineer and you think it's taking too damn long? The tactic **not** to use: tell them this won't matter and to just ship it. That will just piss him off. Better: get your senior engineer to convince the junior one why it's good enough to ship and reason about what really needs to get done. Exception: if the engineer you're waiting on is your senior engineer, then trust her judgment and wait.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-And finally, to you product managers and biz folks who push. You are right do do so. That's all that matters to the customers, all matters at the end of the day. Keep it up.&lt;/p&gt;</description><category>Management</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201301why-so-long.html</guid><pubDate>Fri, 25 Jan 2013 01:24:48 GMT</pubDate></item></channel></rss>
+(disclaimer: I'm the engineering manager on &lt;a title="Class2Go from Stanford" href="http://class2go.stanford.edu/" target="_blank"&gt;Class2Go&lt;/a&gt;, the open-source MOOC platform we've built at Stanford)&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201303online-ed-retention.html</guid><pubDate>Sun, 31 Mar 2013 12:23:15 GMT</pubDate></item></channel></rss>
