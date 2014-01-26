@@ -162,7 +162,7 @@
  </url>
  <url>
   <loc>http://sef.kloninger.com/categories/tech.xml</loc>
-  <lastmod>2014-01-20</lastmod>
+  <lastmod>2014-01-25</lastmod>
  </url>
  <url>
   <loc>http://sef.kloninger.com/categories/technology.html</loc>
@@ -298,6 +298,10 @@
  </url>
  <url>
   <loc>http://sef.kloninger.com/posts/consume-produce-public.html</loc>
+  <lastmod>2014-01-25</lastmod>
+ </url>
+ <url>
+  <loc>http://sef.kloninger.com/posts/learn-to-write.html</loc>
   <lastmod>2014-01-25</lastmod>
  </url>
  <url>
