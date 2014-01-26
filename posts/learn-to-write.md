@@ -20,10 +20,9 @@ way to go. I've learned that engineers spend much more time writing
 than you expect. And I appreciate how hard it is to write well.
 
 This came up just this past week. I came across a beautiful four
-page essay. It laid out the problem, described alternatives, lead
-you concisely to the conclusion, and tied it up in a great conclusion.
-Sure, it was about technology, but what carried the day was the
-good writing. Humbling!
+page essay. It laid out the problem, described alternatives, and
+lead you concisely to a well-reasoned conclusion. Sure, it was about
+technology, but what carried the day was the good writing. Humbling!
 
 You're saying: but wait, you're a [pointy-haired boss][phb] now
 Sef, one of those guys who doesn't do *Real Work* anymore. You write
