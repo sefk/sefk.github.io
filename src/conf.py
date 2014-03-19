@@ -68,6 +68,7 @@ NAVIGATION_LINKS = {
         ('/rss.xml', 'RSS'),
         ('https://twitter.com/sefk', '@sefk'),
         ('https://github.com/sefk', 'GitHub'),
+        ('http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x033C878CFC75532C', 'GPG'),
         ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html', 'Resume'),
         ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf',  'PDF'),
     ),
