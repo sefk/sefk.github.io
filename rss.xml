@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><atom:link href="http://sef.kloninger.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 25 Jan 2014 16:26:46 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>CS Students: Learn to Write</title><link>http://sef.kloninger.com/posts/learn-to-write.html</link><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/writing-hand.jpeg" alt="Writing Hand" width="40%"&gt;&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><atom:link href="http://sef.kloninger.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 28 Apr 2014 20:58:06 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Feedback Without Tips</title><link>http://sef.kloninger.com/posts/tips.html</link><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tip-oneill.jpg" alt="Tip O'Neill" width="30%"&gt;&lt;/p&gt;
+&lt;p&gt;I really don't like tipping. I'm not like &lt;a href="https://www.youtube.com/watch?v=Z-qV9wVGb38"&gt;Mr. Pink&lt;/a&gt;. It's
+not that I don't want my server or driver to get something extra.
+I just don't like the awkward social situation of deciding if this
+is a tipping situation, and if so, how much.&lt;/p&gt;
+&lt;p&gt;Two services have come up recently where I will happily pay a premium
+to not have to fret about too much or too little:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Uber&lt;/strong&gt;. Lots to like about this service but the act of just 
+  leaving out of my cab without paying is joyful. I always rate 
+  my drivers, good or bad. 98% of the time, it's good by the way.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;OrderAhead&lt;/strong&gt;. Are you supposed to tip when picking up takeout 
+  from a restaurant? I've never known. Neither way feels right, so 
+  I usually end up splitting the difference and rounding up to 
+  some amount, say leaving a 6% tip, which is the &lt;em&gt;worst&lt;/em&gt; choice. 
+  Either that's 6% that wasn't expected, or I'm inadvertently
+  shafting someone.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Both of these services decouple feedback from money. Both avoid
+awkwardly changing money. I'd definitely pay a premium for that.&lt;/p&gt;
+&lt;p&gt;I wonder what other service business would benefit from decoupling
+feedback from money?&lt;/p&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/tips.html</guid><pubDate>Mon, 28 Apr 2014 20:07:00 GMT</pubDate></item><item><title>CS Students: Learn to Write</title><link>http://sef.kloninger.com/posts/learn-to-write.html</link><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/writing-hand.jpeg" alt="Writing Hand" width="40%"&gt;&lt;/p&gt;
 &lt;p&gt;If I could do my college years over I would focus on writing. I
 would take courses that required a lot of writing, in the spirit
 of "learn by doing". I'd also take courses in the mechanics and
@@ -454,27 +479,4 @@ Those folks at edX made some solid software.  We're happy to be working with a 
 &lt;/p&gt;&lt;p&gt;
 I just turned off half the appservers since we're fine on capacity. Now off to bed with a good feeling.
 
-&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201306launch-day.html</guid><pubDate>Tue, 11 Jun 2013 22:59:24 GMT</pubDate></item><item><title>Coding on a Flight</title><link>http://sef.kloninger.com/posts/201304coding-on-a-flight.html</link><description>&lt;img class="alignright  wp-image-408" style="border: 0px;" alt="airplane" src="http://sef.kloninger.com/f/airplane-300x126.png" width="240" height="101"&gt;
-
-&lt;p&gt;
-I'm surprised that that I like coding on flights. It's surprising because airplanes are generally hostile environments for most things, but I've found it a good place to code.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-The obvious reason is the lack of interruptions and distractions. Usualy there is no wifi, or it is too spotty to count on. So no email or IRC or web. While I know that distractions kill flow, I never seem give myself license to unplug in normal life. I'm a manager, and being a manager means being interruptible.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-But there's another reason. When I code unplugged, I code differently. I have to be self-sufficient. Instead of just looking things up on StackOverflow, I take 20% more time to figure it out myself. That's much more satisfying! It's just not that hard to rummage through the Django code or try things out in iPython.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-Also it just sounds cool to say you coded something up on the flight.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-But thre real question is should simulate "airplane mode" when grounded.  Hmm.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201304coding-on-a-flight.html</guid><pubDate>Mon, 08 Apr 2013 22:30:38 GMT</pubDate></item></channel></rss>
+&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201306launch-day.html</guid><pubDate>Tue, 11 Jun 2013 22:59:24 GMT</pubDate></item></channel></rss>
