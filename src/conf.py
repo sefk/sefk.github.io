@@ -63,14 +63,15 @@ TRANSLATIONS = {
 # You should provide a key-value pair for each used language.
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('/archive.html', 'Archives'),
-#        ('/categories/index.html', 'Tags'),
-        ('/rss.xml', 'RSS'),
+#       ('/stories/about.html', 'About'),
+#       ('/categories/index.html', 'Tags'),
+#       ('/rss.xml', 'RSS'),
         ('https://twitter.com/sefk', '@sefk'),
         ('https://github.com/sefk', 'GitHub'),
         ('http://pgp.mit.edu/pks/lookup?op=vindex&search=0x1C97549F426D2123', 'GPG'),
         ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html', 'Resume'),
         ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf',  'PDF'),
+        ('/archive.html', 'Archives'),
     ),
 }
 
@@ -112,15 +113,11 @@ NAVIGATION_LINKS = {
 
 POSTS = (
     ("posts/*.wp", "posts", "post.tmpl"),
-    ("posts/*.rst", "posts", "post.tmpl"),
     ("posts/*.md", "posts", "post.tmpl"),
-    ("posts/*.txt", "posts", "post.tmpl"),
 )
 PAGES = (
     ("stories/*.wp", "stories", "story.tmpl"),
-    ("stories/*.rst", "stories", "story.tmpl"),
     ("stories/*.md", "stories", "story.tmpl"),
-    ("stories/*.txt", "stories", "story.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
@@ -347,21 +344,24 @@ THEME = "bootstrap3"
 # READ_MORE_LINK = '<p class="more"><a href="{link}">{read_more}…</a></p>'
 
 # A HTML fragment describing the license, for the sidebar.
-LICENSE = ""
+# LICENSE = ""
 # I recommend using the Creative Commons' wizard:
 # http://creativecommons.org/choose/
-# LICENSE = """
-# <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
-# <img alt="Creative Commons License BY-NC-SA"
-# style="border-width:0; margin-bottom:12px;"
-# src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
+LICENSE = """
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">
+<img alt="Creative Commons License BY-NC-SA"
+style="border-width:0; margin-bottom:12px;"
+src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
 
 # A small copyright notice for the page footer (in HTML).
 # Default is ''
-CONTENT_FOOTER = 'Contents &copy; {date} <a href="mailto:{email}">{author}</a> ' + \
-        '- Powered by <a href="http://getnikola.com" rel="nofollow">Nikola</a> ' + \
-        '- Hosted by <a href="http://github.com" rel="nofollow">GitHub</a> ' + \
-        '{license}'
+CONTENT_FOOTER = '<p align=center>Contents &copy; {date} <a href="mailto:{email}">{author}</a> ' + \
+        '&nbsp; &nbsp; ' + \
+        '{license}' + \
+        '&nbsp; &nbsp; ' + \
+        'Powered by <a href="http://getnikola.com" rel="nofollow">Nikola</a> ' + \
+        'and <a href="http://github.com" rel="nofollow">GitHub</a> ' + \
+        '</p>'
 CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
                                        author=BLOG_AUTHOR,
                                        date=time.gmtime().tm_year,
@@ -470,7 +470,7 @@ COMMENT_SYSTEM_ID = "sefkloninger"
 
 # Social buttons. This is sample code for AddThis (which was the default for a
 # long time). Insert anything you want here, or even make it empty.
-# SOCIAL_BUTTONS_CODE = """
+SOCIAL_BUTTONS_CODE = ""
 # <!-- Social buttons -->
 # <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
 # <a class="addthis_button_more">Share</a>
@@ -531,7 +531,7 @@ SEARCH_FORM = """
 <!-- Custom search with google-->
 <form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
 <input type="hidden" name="q" value="site:%s" />
-<input type="text" name="q" maxlength="255" results="0" placeholder="Search"/>
+<input type="text" name="q" size="60" maxlength="255" results="0" placeholder="Search on Google"/>
 </form>
 <!-- End of custom search -->
 """ % SITE_URL
@@ -585,7 +585,7 @@ BODY_END = """
 # is served from the NetDNA CDN
 # Set this to False if you want to host your site without requiring access to
 # external resources.
-# USE_CDN = False
+USE_CDN = True
 
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </HEAD>

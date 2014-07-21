@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Draft)</title><link>http://sef.kloninger.com/</link><description></description><atom:link href="http://sef.kloninger.com/categories/draft.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 18 Jan 2014 22:45:41 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>CS Students: Learn To Write</title><link>http://sef.kloninger.com/posts/learn-to-write.html</link><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/writing-hand.jpeg" alt="Writing Hand" width="40%"&gt;&lt;/p&gt;
-&lt;p&gt;If I could do my college years over, I'd take more writing courses.
-Especially ones tht involve a lot of writing, that focus on the
-skills and the craft of writing. I used to consider myself a decent
-writer. But now that I'm working, I've learned that engineers spend
-much more time writing than you expect. And I appreciate how hard
-it is to write well.&lt;/p&gt;
-&lt;p&gt;You're saying: but wait, you're a &lt;a href="http://en.wikipedia.org/wiki/Pointy-Haired_Boss"&gt;pointy-haired boss&lt;/a&gt;
-now, one of those guys who doesn't do Real Work anymore. You write
-mails and boss people around. Well, there's some truth to that. But
-I'd like to convince you that even monster coders, if they're any
-good, write a lot, write well, and value good writing in others.&lt;/p&gt;
-&lt;p&gt;I had a lunchtime conversation with &lt;a href="http://jacobian.org/writing/great-documentation/"&gt;Jacob Kaplan-Moss&lt;/a&gt;,
-Django's co-founder, at last year's PyCon. When asked why his
-project took off, he replied "because we wrote good docs." The
-Django team didn't treat documentation as an afterthought. They
-have lots of docs, and they are good.&lt;/p&gt;</description><category>Tech</category><category>Draft</category><guid>http://sef.kloninger.com/posts/learn-to-write.html</guid><pubDate>Sat, 18 Jan 2014 20:43:15 GMT</pubDate></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Draft)</title><link>http://sef.kloninger.com/</link><description></description><atom:link href="http://sef.kloninger.com/categories/draft.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 19 Jul 2014 21:31:16 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>S3 Is Outstanding</title><link>http://sef.kloninger.com/posts/s3.html</link><description>&lt;p&gt;Do you all appreciate how insanely cheap and easy-to-use S3 is?  I use
+it for home backups, and you should too.&lt;/p&gt;
+&lt;p&gt;S3 is Amazon's Simple Storage Service, part of Amazon Web Services.
+It's a document store.  It is reliable and has basically infinite
+capacity, enough for your and my needs.  The API has everyhing you need
+and is bound to &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;/ol&gt;</description><category>Tech</category><category>Draft</category><guid>http://sef.kloninger.com/posts/s3.html</guid><pubDate>Sat, 19 Jul 2014 17:00:00 GMT</pubDate></item></channel></rss>

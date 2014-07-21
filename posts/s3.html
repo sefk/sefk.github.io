@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sef Kloninger">
-    <title>Chicken Soup | sef.kloninger.com</title>
+    <title>Native S3 For Great Cheap Home Backup | sef.kloninger.com</title>
     
             <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
@@ -54,7 +54,7 @@
             
                 
     <li>
-    <a href="chicken_soup.md" id="sourcelink">Source</a>
+    <a href="s3.md" id="sourcelink">Source</a>
     </li>
 
         </ul>
@@ -70,39 +70,98 @@
             
     <div class="postbox">
     
-    <h1 class="p-name" itemprop="headline name">Chicken Soup</h1>
+    <h1 class="p-name" itemprop="headline name">Native S3 For Great Cheap Home Backup</h1>
 
     <hr>
     <small>
-        Posted: <time class="published" datetime="2014-01-20T17:16:00">2014-01-20 17:16</time>
+        Posted: <time class="published" datetime="2014-07-20T17:00:00">2014-07-20 17:00</time>
         
 
         
           |  More posts about
         <span itemprop="keywords">
-            <a class="tag p-category" href="../categories/family.html"><span class="badge badge-info">Family</span></a>
-            <a class="tag p-category" href="../categories/life.html"><span class="badge badge-info">Life</span></a>
+            <a class="tag p-category" href="../categories/tech.html"><span class="badge badge-info">Tech</span></a>
         </span>
 
     </small>
     <hr>
-    <p><img style="float:right" class="postimage" src="../f/chicken-noodle-soup.jpg" alt="Yummy Bowl of Chicken Noodle Soup" width="40%"></p>
-
-<p>My family hasn't avoided the colds that are going around now. My
-way of fighting back is making chicken noodle soup.  It's not too
-hard, it's satisfying, and it tastes great. <a href="../f/chicken_soup.pdf">The recipe</a> belongs
-to <a href="http://peninsulaschool.org/">Peninsula School</a> and gets used at our annual Craft Fair.
-It's benefited from years of refinement.</p>
-<p>I add more salt. I don't do peas. I've tried with rice but it
-got starchy and weird, stick with egg noodles.</p>
+    <p><img style="float:right" class="postimage" src="../f/s3.png" alt="AWS Bill" width="60%"></p>
+<p>Do you all appreciate how insanely cheap and easy-to-use S3 is? I
+use it for home backups, and you should too.  I have about 72,000
+photos and short home movies that are basically priceless to me.
+All told I need about 400 GB of online storage to back this up.
+Doing this cost-effectively with established online backup services
+(Mozy, Carbonite) is expensive, as is buying that much live storage
+from Google or Dropbox.  But using the method here, I only have to
+pay about $6/month to keep them safe and sound.</p>
+<p>S3 is Amazon's <a href="http://aws.amazon.com/s3/">Simple Storage Service</a>, part of Amazon Web
+Services.  It's a document store. It is reliable and has basically
+infinite capacity, enough for your and my needs. The GUI is pretty
+clunky, but that's fine, because the API is useful (I prefer the
+Python language binding via <a href="http://boto.readthedocs.org/en/latest/">Boto</a>) and the command line is
+decent. <a href="http://aws.amazon.com/glacier/">Glacier</a> is cold-storage well-integrated into S3. You
+specify a bucket policy, say move to glacier after 10 days, and it
+gets archived. Once archived it costs something to get out (at more
+than some rate). That's OK, this is just for backup. If you ever 
+need to get data out, you'll be happy to do it slowly or pay the 
+premium.</p>
+<p>There are good services out there (e.g. <a href="http://www.tarsnap.com/">Tarsnap</a>) that layer
+some management tools and encryption on top of S3 (and presumably
+Glacier). I wouldn't be surprised if they even simplify the management
+of policy, like Glacier rules or folder exclusions. I'm not using
+those because there's anything wrong with them, I just find the
+basic dumb way sufficient for my needs.</p>
+<p>OK, with that out of the way, this is how to do set it up yourself:</p>
+<ol>
+<li>
+<p>Sign up for AWS.  Assuming you have an account with Amazon 
+   already, just go <a href="http://aws.amazon.com/">here and sign up</a>.</p>
+</li>
+<li>
+<p>Download and install the command line tools for Amazon.  These
+   instructions are written to use the <a href="http://s3tools.org/s3cmd">s3cmd</a> utility 
+   just because that's what I've been using for a while.  The nicer
+   <a href="http://aws.amazon.com/cli/">Amazon command line tools</a> now support rsync, so that would
+   probably be nicer, so consider that.  Both tools have nice support 
+   for storing credentials in a dotfile, read the instructions for that.  </p>
+</li>
+<li>
+<p>Create a bucket, name it anything.  The namespace of buckets
+   is globally shared, so the name "pictures" is certainly already 
+   taken, but "jones-picture-vault" is likely fine.</p>
+<p>Set up bucket permissions to automatically send data to glacier. 
+I see no reason to have it live in S3 any longer than necessary, 
+so I just send it straight to the freezer. I guess you could have 
+it live in S3 limbo for a week for cheaper testing if you want.</p>
+</li>
+<li>
+<p>Sync you photo library.  From a shell:</p>
+<p></p><pre>
+cd ~
+s3cmd -v sync iPhoto\ Library/. s3://my-bucket-name
+</pre>
+<p>It's a quirk of my setup that I use s3cmd to do the sync, and not
+the aws cli that I asked you to install/run above.  Basically, I use
+the aws cli for works stuff, and s3cmd for personal.  That means I
+can store one set of credentials in my ~/.s3cmd file, and another in
+~/.boto.  They both work fine.</p>
+</li>
+<li>
+<p>It's easy enough to set up as a cron job to run weekly or so.  Me,
+   I just run by hand, usually after coming home from a trip with
+   a slew of new photos. Why not run more often? Because the sync
+   seems to touch many (all?) of the files in Glacier, and accesses
+   cost money.  I haven't calculated, but maybe it's $1.00 per
+   backup for me -- not too much, but would break the bank if yout
+   did it daily.</p>
+</li>
+</ol>
+<p>There are other articles describing this on sites like <a href="http://lifehacker.com/how-to-use-amazon-glacier-as-a-dirt-cheap-backup-solut-1460814873">LifeHacker</a>
+and <a href="http://www.technologyguide.com/howto/how-to-back-up-your-data-with-amazon-glacier/">such</a>. My instructions are pretty spare. If you get stuck
+try looking at those. I would just not bother with the fancy UI's
+and just do via the command line. But that's just me.</p>
     
     <ul class="pager">
-        <li class="previous">
-            <a href="consume-produce-public.html" rel="prev">← Previous post</a>
-        </li>
-        <li class="next">
-            <a href="learn-to-write.html" rel="next">Next post →</a>
-        </li>
     </ul>
 
         
@@ -110,9 +169,9 @@ got starchy and weird, stick with egg noodles.</p>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
         var disqus_shortname ="sefkloninger";
-            var disqus_url="http://sef.kloninger.com/posts/chicken_soup.html";
-        var disqus_title="Chicken Soup";
-        var disqus_identifier="cache/posts/chicken-soup.html";
+            var disqus_url="http://sef.kloninger.com/posts/s3.html";
+        var disqus_title="Native S3 For Great Cheap Home Backup";
+        var disqus_identifier="cache/posts/s3.html";
         var disqus_config = function () {
             this.language = "en";
         };
