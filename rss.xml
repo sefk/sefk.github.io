@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><atom:link href="http://sef.kloninger.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 16 Aug 2014 21:30:31 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>David Bowie To The Rescue</title><link>http://sef.kloninger.com/posts/earworm.html</link><description>&lt;p style="float:right; align:right; width:30%"&gt;&lt;a href="http://en.wikipedia.org/wiki/File:Bowie_JohnDancing1.jpg#mediaviewer/File:Bowie_JohnDancing1.jpg"&gt;&lt;img class="postimage" src="http://upload.wikimedia.org/wikipedia/en/b/bb/Bowie_JohnDancing1.jpg" alt="Bowie JohnDancing1.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><atom:link href="http://sef.kloninger.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 18 Aug 2014 22:38:59 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Arthroscopy Is Amazing</title><link>http://sef.kloninger.com/posts/arthroscopy.html</link><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/sef-left-knee.png" alt="My Left Knee" width="30%"&gt;&lt;/p&gt;
+&lt;p&gt;Three days ago I was hobbling around on a sore knee with a torn
+meniscus. But after just three days of icing and Ibuprofen and
+resting on the couch already my knee is almost better than it was
+before. This arthroscopic surgery stuff is amazing.&lt;/p&gt;
+&lt;p&gt;My knee had been getting progressively worse for the past few months.
+But the clincher was six weeks ago, when I was chasing around a dog that
+was loose in our front yard. A twist, pop, and I was down. The doctor
+I saw the next day confirmed that it wasn't anything "serious" like a
+torn ligament, but something was definitely wrong. When we went up to
+a week of family camping a few weeks back, I couldn't go on any hikes
+and could barely play ping pong. It was a real bummer.&lt;/p&gt;
+&lt;p&gt;So I met with a sports medicine doctor at Palo Alto Medical Foundation
+and got an MRI. He saw a few things wrong in there. A few days later, I
+was getting the procedure done. Viola. &lt;/p&gt;
+&lt;p&gt;Afterwards I was surprised that it didn't hurt. They did prescribe
+some pain medication (Hydrocodone plus Acetaminophen) that I've
+been taking when I go to bed, but haven't needed during the day.
+I've been using a &lt;a href="http://www.djoglobal.com/products/donjoy/donjoy-iceman-clear3"&gt;machine that pumps ice water through a pad&lt;/a&gt;
+around my knee all day to keep it cool, and that's worked really
+well. &lt;strong&gt;So much better&lt;/strong&gt; than ice packs. Totally recommend the ice
+machine.&lt;/p&gt;
+&lt;p&gt;Thanks to the good surgical team at &lt;a href="http://www.pamf.org/sports/"&gt;Palo Alto Medical Foundation&lt;/a&gt;
+especially &lt;a href="http://www.pamf.org/dr-colin-l-eakin.html"&gt;Dr. Colin Eakin&lt;/a&gt;. Their surgery center on Willow Road
+made the whole experience smooth and reassuring. &lt;/p&gt;
+&lt;p&gt;But one pro tip for you out there considering this. Don't read the
+&lt;a href="http://en.wikipedia.org/wiki/General_anaesthesia"&gt;wikipedia article on General Anesthesia&lt;/a&gt; the night before
+surgery. It's crazy stuff. Especially the parts about how we're
+still not really sure how it works, or the part about how the level
+of anesthesia where it is safe to operate is right between "excitement"
+where you vomit and twitch, and "overdose" where you stop breathing.
+Don't read that part.&lt;/p&gt;
+&lt;p&gt;I'm back to work tomorrow, and I expect to be back on my bike by next
+week!&lt;/p&gt;</description><category>Life</category><guid>http://sef.kloninger.com/posts/arthroscopy.html</guid><pubDate>Mon, 18 Aug 2014 22:20:00 GMT</pubDate></item><item><title>David Bowie To The Rescue</title><link>http://sef.kloninger.com/posts/earworm.html</link><description>&lt;p style="float:right; align:right; width:30%"&gt;&lt;a href="http://en.wikipedia.org/wiki/File:Bowie_JohnDancing1.jpg#mediaviewer/File:Bowie_JohnDancing1.jpg"&gt;&lt;img class="postimage" src="http://upload.wikimedia.org/wikipedia/en/b/bb/Bowie_JohnDancing1.jpg" alt="Bowie JohnDancing1.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I often wake up with a song going through my head. I don't know
 why this happens. The stranger thing the songs. Yesterday
@@ -409,30 +442,4 @@ It was outstanding having my friend &lt;a href="https://twitter.com/amylameyer"&
 As always, the Google Spreadsheet with the graphs and raw data is publicly available &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;here&lt;/a&gt;. Check it out!
 
 
-&lt;/p&gt;</description><guid>http://sef.kloninger.com/posts/201311halloween-2013.html</guid><pubDate>Sat, 02 Nov 2013 22:25:17 GMT</pubDate></item><item><title>K&amp;R C Programming, Quantum Books, Cambridge, MA</title><link>http://sef.kloninger.com/posts/201309knr-c-label.html</link><description>&lt;p style="text-align: left;"&gt;&lt;img class="alignright  wp-image-433" style="border: 0px;" alt="IMG_4177" src="http://sef.kloninger.com/f/IMG_41771-231x300.jpg" width="139" height="180"&gt;
-
-&lt;/p&gt;&lt;p&gt;
-Today in a box I came across my old K&amp;amp;R. Probably the most valuable book I've owned. My copy has been heavily used.&lt;/p&gt;
-
-&lt;p&gt;
-But the unexpected, fun thing was finding an old label on the back cover.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-There is a lot in there.
-
-&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img class="aligncenter  wp-image-429" style="border: 0px;" alt="IMG_4179" src="http://sef.kloninger.com/f/IMG_4179-1024x393.jpg" width="584" height="224"&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;
-&lt;/p&gt;&lt;ul&gt;
-	&lt;li&gt;January 1994. I had just graduated college, driven cross country with my friend &lt;a href="http://sef.kloninger.com/posts/www.linkedin.com/pub/shigeru-tanaka/0/a27/917"&gt;Shig&lt;/a&gt;, and started my first post-college job. I would have been in that job four months or so and realized that I should just stop borrowing someone else's copy (probably &lt;a href="http://sef.kloninger.com/posts/www.linkedin.com/in/larryclaman/"&gt;Larry Claman&lt;/a&gt;'s) and buy my own.&lt;/li&gt;
-	&lt;li&gt;Purchased at Quantum Books, a great technical bookstore in the shadow of MIT in Cambridge, Massachusetts. It's no longer there. The bar that is there now (&lt;a style="font-style: normal;" href="http://www.themeadhall.com/"&gt;Meadhall&lt;/a&gt;) is a nice place, and I'm a big fan of beer, but it's not the same.&lt;/li&gt;
-	&lt;li&gt;According to an &lt;a style="font-style: normal;" href="http://www.bls.gov/data/inflation_calculator.htm"&gt;inflation calculator&lt;/a&gt;, $35 in 1994 is $55 today. That's expensive for a little book, especially to the twenty-two year old me.&lt;/li&gt;
-	&lt;li&gt;Note the email address: quanbook@world.std.com. This was back when mom and pop dialup ISP's where what we all used, people and businesses alike. This particular one, &lt;a style="font-style: normal;" href="http://world.std.com/"&gt;Software Tool &amp;amp; Die&lt;/a&gt;, was my private email address at the time too. (Aside: they claim to be the first public dialup ISP, and I have no reason to doubt them)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-It was fun being reminded of all this stuff. So the lesson of the story: it's still worth buying books, and when you do, don't remove the labels.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201309knr-c-label.html</guid><pubDate>Sat, 14 Sep 2013 17:41:20 GMT</pubDate></item></channel></rss>
+&lt;/p&gt;</description><guid>http://sef.kloninger.com/posts/201311halloween-2013.html</guid><pubDate>Sat, 02 Nov 2013 22:25:17 GMT</pubDate></item></channel></rss>
