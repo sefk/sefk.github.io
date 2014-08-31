@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Technology)</title><link>http://sef.kloninger.com/</link><description></description><atom:link href="http://sef.kloninger.com/categories/technology.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 16 Aug 2014 21:29:07 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>K&amp;R C Programming, Quantum Books, Cambridge, MA</title><link>http://sef.kloninger.com/posts/201309knr-c-label.html</link><description>&lt;p style="text-align: left;"&gt;&lt;img class="alignright  wp-image-433" style="border: 0px;" alt="IMG_4177" src="http://sef.kloninger.com/f/IMG_41771-231x300.jpg" width="139" height="180"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Technology)</title><link>http://sef.kloninger.com/</link><description></description><language>en</language><lastBuildDate>Sun, 31 Aug 2014 12:08:31 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>K&amp;R C Programming, Quantum Books, Cambridge, MA</title><link>http://sef.kloninger.com/posts/201309knr-c-label.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p style="text-align: left;"&gt;&lt;img class="alignright  wp-image-433" style="border: 0px;" alt="IMG_4177" src="http://sef.kloninger.com/f/IMG_41771-231x300.jpg" width="139" height="180"&gt;
 
 &lt;/p&gt;&lt;p&gt;
 Today in a box I came across my old K&amp;amp;R. Probably the most valuable book I've owned. My copy has been heavily used.&lt;/p&gt;
@@ -25,7 +25,7 @@ There is a lot in there.
 &lt;/ul&gt;
 
 &lt;p&gt;
-It was fun being reminded of all this stuff. So the lesson of the story: it's still worth buying books, and when you do, don't remove the labels.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201309knr-c-label.html</guid><pubDate>Sat, 14 Sep 2013 17:41:20 GMT</pubDate></item><item><title>Launch Day</title><link>http://sef.kloninger.com/posts/201306launch-day.html</link><description>&lt;img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="http://sef.kloninger.com/f/spaceshuttle-300x283.png" width="180" height="170"&gt;
+It was fun being reminded of all this stuff. So the lesson of the story: it's still worth buying books, and when you do, don't remove the labels.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201309knr-c-label.html</guid><pubDate>Sun, 15 Sep 2013 00:41:20 GMT</pubDate></item><item><title>Launch Day</title><link>http://sef.kloninger.com/posts/201306launch-day.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="http://sef.kloninger.com/f/spaceshuttle-300x283.png" width="180" height="170"&gt;
 
 &lt;p&gt;
 Today was launch day. It went really well.  I wanted to capture what a good launch feels like and contrast that with a more exciting launch, just five months ago.
@@ -84,7 +84,7 @@ Those folks at edX made some solid software.  We're happy to be working with a 
 &lt;/p&gt;&lt;p&gt;
 I just turned off half the appservers since we're fine on capacity. Now off to bed with a good feeling.
 
-&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201306launch-day.html</guid><pubDate>Tue, 11 Jun 2013 22:59:24 GMT</pubDate></item><item><title>Coding on a Flight</title><link>http://sef.kloninger.com/posts/201304coding-on-a-flight.html</link><description>&lt;img class="alignright  wp-image-408" style="border: 0px;" alt="airplane" src="http://sef.kloninger.com/f/airplane-300x126.png" width="240" height="101"&gt;
+&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201306launch-day.html</guid><pubDate>Wed, 12 Jun 2013 05:59:24 GMT</pubDate></item><item><title>Coding on a Flight</title><link>http://sef.kloninger.com/posts/201304coding-on-a-flight.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-408" style="border: 0px;" alt="airplane" src="http://sef.kloninger.com/f/airplane-300x126.png" width="240" height="101"&gt;
 
 &lt;p&gt;
 I'm surprised that that I like coding on flights. It's surprising because airplanes are generally hostile environments for most things, but I've found it a good place to code.
@@ -107,7 +107,7 @@ Also it just sounds cool to say you coded something up on the flight.
 
 
 &lt;/p&gt;&lt;p&gt;
-But thre real question is should simulate "airplane mode" when grounded.  Hmm.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201304coding-on-a-flight.html</guid><pubDate>Mon, 08 Apr 2013 22:30:38 GMT</pubDate></item><item><title>"Low" Retention Rates in Online Education Isn't Necessarily A Bad Thing</title><link>http://sef.kloninger.com/posts/201303online-ed-retention.html</link><description>&lt;img class="alignright  wp-image-400" style="border: 0px;" alt="Evaluate-300x198" src="http://sef.kloninger.com/f/Evaluate-300x198.png" width="240" height="158"&gt;
+But thre real question is should simulate "airplane mode" when grounded.  Hmm.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201304coding-on-a-flight.html</guid><pubDate>Tue, 09 Apr 2013 05:30:38 GMT</pubDate></item><item><title>"Low" Retention Rates in Online Education Isn't Necessarily A Bad Thing</title><link>http://sef.kloninger.com/posts/201303online-ed-retention.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-400" style="border: 0px;" alt="Evaluate-300x198" src="http://sef.kloninger.com/f/Evaluate-300x198.png" width="240" height="158"&gt;
 
 &lt;p&gt;
 I am of two minds about &lt;a title="Peter Reinhardt" href="http://rein.pk/online-educations-dirty-secret-awful-retention/" target="_blank"&gt;Peter Reinhardt post today&lt;/a&gt; calling out online education's poor retention rates.
@@ -140,7 +140,7 @@ But I totally agree that increasing retention is a worthwhile goal and a valua
 
 
 &lt;/p&gt;&lt;p&gt;
-(disclaimer: I'm the engineering manager on &lt;a title="Class2Go from Stanford" href="http://class2go.stanford.edu/" target="_blank"&gt;Class2Go&lt;/a&gt;, the open-source MOOC platform we've built at Stanford)&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201303online-ed-retention.html</guid><pubDate>Sun, 31 Mar 2013 12:23:15 GMT</pubDate></item><item><title>Why Is That Feature Taking So Long?</title><link>http://sef.kloninger.com/posts/201301why-so-long.html</link><description>&lt;img class="alignright  wp-image-394" style="border: 0px;" alt="turd-polish" src="http://sef.kloninger.com/f/turd-polish.png" width="191" height="182"&gt;
+(disclaimer: I'm the engineering manager on &lt;a title="Class2Go from Stanford" href="http://class2go.stanford.edu/" target="_blank"&gt;Class2Go&lt;/a&gt;, the open-source MOOC platform we've built at Stanford)&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201303online-ed-retention.html</guid><pubDate>Sun, 31 Mar 2013 19:23:15 GMT</pubDate></item><item><title>Why Is That Feature Taking So Long?</title><link>http://sef.kloninger.com/posts/201301why-so-long.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-394" style="border: 0px;" alt="turd-polish" src="http://sef.kloninger.com/f/turd-polish.png" width="191" height="182"&gt;
 
 &lt;p&gt;
 I've observed a recurring source of tension:  building things fast vs. do it the right way. Usually you're not lucky enough that you can do both.  This post explains a bit why we (engineers) care so much about building things right.  Even when things are overdue and our stakeholders (end-users, biz folks, product management) are pushing to just get it done.
@@ -177,7 +177,7 @@ So, product manager waiting on a feature. What to do if you're waiting on an eng
 
 
 &lt;/p&gt;&lt;p&gt;
-And finally, to you product managers and biz folks who push. You are right do do so. That's all that matters to the customers, all matters at the end of the day. Keep it up.&lt;/p&gt;</description><category>Management</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201301why-so-long.html</guid><pubDate>Fri, 25 Jan 2013 01:24:48 GMT</pubDate></item><item><title>Managing Work-In-Progress Folders with "ls -ltr"</title><link>http://sef.kloninger.com/posts/201208wip-folders-with-ls.html</link><description>&lt;img class="size-full wp-image-353 alignright" style="border: 0px;" title="blog-folder-done" src="http://sef.kloninger.com/f/blog-folder-done.png" alt="" width="107" height="41"&gt;
+And finally, to you product managers and biz folks who push. You are right do do so. That's all that matters to the customers, all matters at the end of the day. Keep it up.&lt;/p&gt;</description><category>Management</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201301why-so-long.html</guid><pubDate>Fri, 25 Jan 2013 09:24:48 GMT</pubDate></item><item><title>Managing Work-In-Progress Folders with "ls -ltr"</title><link>http://sef.kloninger.com/posts/201208wip-folders-with-ls.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="size-full wp-image-353 alignright" style="border: 0px;" title="blog-folder-done" src="http://sef.kloninger.com/f/blog-folder-done.png" alt="" width="107" height="41"&gt;
 
 &lt;p&gt;
 I've developed a nice little way to manage my work in progress folders.
@@ -220,7 +220,7 @@ I probably type "ls -ltr" at least 5 times an hour.  I've never aliased it sinc
 
 
 
- &lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201208wip-folders-with-ls.html</guid><pubDate>Tue, 07 Aug 2012 01:56:53 GMT</pubDate></item><item><title>The Day I Took Down 100,000 Web Sites</title><link>http://sef.kloninger.com/posts/201207taking-down-100000-sites.html</link><description>&lt;img class="alignright size-full wp-image-343" style="border: 0px;" title="fire" src="http://sef.kloninger.com/f/fire.png" alt="fire alarm" width="300" height="240"&gt;
+ &lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201208wip-folders-with-ls.html</guid><pubDate>Tue, 07 Aug 2012 08:56:53 GMT</pubDate></item><item><title>The Day I Took Down 100,000 Web Sites</title><link>http://sef.kloninger.com/posts/201207taking-down-100000-sites.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright size-full wp-image-343" style="border: 0px;" title="fire" src="http://sef.kloninger.com/f/fire.png" alt="fire alarm" width="300" height="240"&gt;
 
 &lt;p&gt;
 Every engineer has their "the day I did something very very bad" story. This is mine.
@@ -297,7 +297,7 @@ My time at Akamai had prepared me well for managing a crisis. But it's nice to h
 
 
 
- &lt;/p&gt;</description><category>Technology</category><guid>http://sef.kloninger.com/posts/201207taking-down-100000-sites.html</guid><pubDate>Wed, 25 Jul 2012 10:56:57 GMT</pubDate></item><item><title>On-Line Education Is Really Interesting Right Now</title><link>http://sef.kloninger.com/posts/201207on-line-education.html</link><description>&lt;img class="alignright  wp-image-307" style="border: 0px;" title="lecture-hall" src="http://sef.kloninger.com/f/lecture-hall-300x199.jpeg" alt="" width="270" height="179"&gt;
+ &lt;/p&gt;</description><category>Technology</category><guid>http://sef.kloninger.com/posts/201207taking-down-100000-sites.html</guid><pubDate>Wed, 25 Jul 2012 17:56:57 GMT</pubDate></item><item><title>On-Line Education Is Really Interesting Right Now</title><link>http://sef.kloninger.com/posts/201207on-line-education.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-307" style="border: 0px;" title="lecture-hall" src="http://sef.kloninger.com/f/lecture-hall-300x199.jpeg" alt="" width="270" height="179"&gt;
 
 
 &lt;p&gt;
@@ -352,7 +352,7 @@ I look forward to doing something that will make even a little difference here. 
 &lt;/p&gt;&lt;p&gt;
 PS - &lt;a title="Peter Norvig @ TED" href="http://fm.schmoller.net/2012/07/peter-norvigs-ted-talk-about-the-ai-course.html" target="_blank"&gt;Peter Norvig's TED Talk&lt;/a&gt; captured the reasons and potential nicely.  That seven minutes is worth your time.
 
-&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201207on-line-education.html</guid><pubDate>Mon, 09 Jul 2012 12:49:31 GMT</pubDate></item><item><title>FizzBuzz Questions for Engineering Managers</title><link>http://sef.kloninger.com/posts/201205fizzbuzz-for-managers.html</link><description>&lt;img class="size-full wp-image-272 alignleft" style="padding:20px; float:left" title="fizzbuzz" src="http://sef.kloninger.com/f/fizzbuzz.png" alt="" width="116" height="166"&gt;
+&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201207on-line-education.html</guid><pubDate>Mon, 09 Jul 2012 19:49:31 GMT</pubDate></item><item><title>FizzBuzz Questions for Engineering Managers</title><link>http://sef.kloninger.com/posts/201205fizzbuzz-for-managers.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="size-full wp-image-272 alignleft" style="padding:20px; float:left" title="fizzbuzz" src="http://sef.kloninger.com/f/fizzbuzz.png" alt="" width="116" height="166"&gt;
 
 &lt;p&gt;You probably wouldn't hire an engineer that you hadn't seen code. But people tend to hire  engineering managers without seeing them manage. I contend that's a big oversight: you should see them manage on their feet, at least a little.  But how?
 
@@ -406,7 +406,7 @@ I find questions like these can lead to more insightful conversations and get th
 
 
 
- &lt;/p&gt;</description><category>Management</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201205fizzbuzz-for-managers.html</guid><pubDate>Wed, 23 May 2012 10:06:59 GMT</pubDate></item><item><title>Why Quit?  Because They Have Bigger Monitors</title><link>http://sef.kloninger.com/posts/201205engineering-culture-litmus-tests.html</link><description>&lt;p&gt;
+ &lt;/p&gt;</description><category>Management</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201205fizzbuzz-for-managers.html</guid><pubDate>Wed, 23 May 2012 17:06:59 GMT</pubDate></item><item><title>Why Quit?  Because They Have Bigger Monitors</title><link>http://sef.kloninger.com/posts/201205engineering-culture-litmus-tests.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;
 Good engineers are attracted to places with a strong engineering culture. But how can you see what the culture is really like from the outside? Here are my two quick-and-dirty indicators.
 
 &lt;img class="alignright size-full wp-image-230" style="border: 0px;" title="testtubes" src="http://sef.kloninger.com/f/testtubes.png" alt="" width="149" height="200"&gt;
@@ -473,4 +473,4 @@ This one is important for me personally since I have a weird first name. If you 
 &lt;/p&gt;&lt;p&gt;
 One final word: this isn't a slam on you hardworking IT guys and gals who keep important things running and have to enforce the rules you're given. Instead, I'm speaking to the bad policies (usually stemming from bad cultures) that can put you into bad positions. If you are at such a place, hunker down and pray for daylight.
 
- &lt;/p&gt;</description><category>Management</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201205engineering-culture-litmus-tests.html</guid><pubDate>Thu, 17 May 2012 16:01:44 GMT</pubDate></item></channel></rss>
+ &lt;/p&gt;</description><category>Management</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201205engineering-culture-litmus-tests.html</guid><pubDate>Thu, 17 May 2012 23:01:44 GMT</pubDate></item></channel></rss>

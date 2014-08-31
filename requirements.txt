@@ -1,0 +1,7 @@
+Nikola==7.0.1
+markdown
+html2text
+ipython
+requests
+livereload
+webassets

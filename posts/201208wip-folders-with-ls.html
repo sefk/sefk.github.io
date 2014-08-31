@@ -1,64 +1,106 @@
-<!DOCTYPE html><html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+    <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Sef Kloninger">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Managing Work-In-Progress Folders with "ls -ltr" | sef.kloninger.com</title>
+
     
-            <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
-        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]-->
+            <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+
+    
             <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 
-    
+      <link rel="canonical" href="http://sef.kloninger.com/posts/201208wip-folders-with-ls.html">
 
 
 
     
+        <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
+
+    
+
+
+    
+
+    <meta name="author" content="Sef Kloninger">
+    
+        <meta name="og:title" content='Managing Work-In-Progress Folders with "ls -ltr"'>
+        <meta name="og:url" content="http://sef.kloninger.com/posts/201208wip-folders-with-ls.html">
+            <meta name="og:description" content="I've developed a nice little way to manage my work in progress folders.
+
+
+
+
+I keep a bunch of folders around where I can stick things that are in-flight: one for home projects, one for blogs, etc. I l">
+        <meta name="og:site_name" content="sef.kloninger.com">
+        <meta name="og:type" content="article">
+
+    
+
+    
+
+
+
 </head>
 <body>
+
 <!-- Menubar -->
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="../">sef.kloninger.com</a>
-    </div>
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-            
-                <li><a href="https://twitter.com/sefk">@sefk</a>
-                </li><li><a href="https://github.com/sefk">GitHub</a>
-                </li><li><a href="http://pgp.mit.edu/pks/lookup?op=vindex&amp;search=0x1C97549F426D2123">GPG</a>
-                </li><li><a href="https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html">Resume</a>
-                </li><li><a href="https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf">PDF</a>
-                </li><li><a href="../archive.html">Archives</a>
+    <div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://sef.kloninger.com/">
 
-        </li></ul>
-
-        <ul class="nav navbar-nav navbar-right">
-            
-            
+                <span id="blog-title">sef.kloninger.com</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
                 
+                <li>
+<a href="https://twitter.com/sefk">@sefk</a>
+                </li>
+<li>
+<a href="https://github.com/sefk">GitHub</a>
+                </li>
+<li>
+<a href="http://pgp.mit.edu/pks/lookup?op=vindex&amp;search=0x1C97549F426D2123">GPG</a>
+                </li>
+<li>
+<a href="https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html">Resume</a>
+                </li>
+<li>
+<a href="https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf">PDF</a>
+                </li>
+<li>
+<a href="../archive.html">Archives</a>
+
+                
+            </li>
+</ul>
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                    
     <li>
-    <a href="201208wip-folders-with-ls.wp" id="sourcelink">Source</a>
+    <a href="#" id="sourcelink">Source</a>
     </li>
 
-        </ul>
-    </div><!-- /.navbar-collapse -->
+                
+            </ul>
+        </div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
 </nav>
 
 <!-- End of Menubar -->
@@ -68,24 +110,31 @@
         <!--Body content-->
         <div class="row">
             
-    <div class="postbox">
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article">
     
-    <h1 class="p-name" itemprop="headline name">Managing Work-In-Progress Folders with "ls -ltr"</h1>
+    <header>
+        
+    <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Managing Work-In-Progress Folders with "ls -ltr"</a></h1>
 
-    <hr>
-    <small>
-        Posted: <time class="published" datetime="2012-08-07T01:56:53">2012-08-07 01:56</time>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Sef Kloninger</span></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2012-08-07T01:56:53-07:00" itemprop="datePublished" title="Publication date">2012-08-07 01:56</time></a></p>
+                <p class="commentline">
+        
+    <a href="201208wip-folders-with-ls.html#disqus_thread" data-disqus-identifier="cache/posts/201208wip-folders-with-ls.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="#" id="sourcelink">Source</a></p>
+
+        </div>
         
 
-        
-          |  More posts about
-        <span itemprop="keywords">
-            <a class="tag p-category" href="../categories/life.html"><span class="badge badge-info">Life</span></a>
-            <a class="tag p-category" href="../categories/technology.html"><span class="badge badge-info">Technology</span></a>
-        </span>
+    </header>
 
-    </small>
-    <hr>
+    <div class="e-content entry-content" itemprop="articleBody text">
     <img class="size-full wp-image-353 alignright" style="border: 0px;" title="blog-folder-done" src="../f/blog-folder-done.png" alt="" width="107" height="41">
 
 <p>
@@ -93,77 +142,105 @@ I've developed a nice little way to manage my work in progress folders.
 
 
 
-</p><p>
+</p>
+<p>
 I keep a bunch of folders around where I can stick things that are in-flight: one for home projects, one for blogs, etc. I like accumulating ideas in there, one idea per file, that I can come back to and fuss over until something is ready.
 
 
 
-</p><p>
+</p>
+<p>
 The folder is flypaper for ideas and notes.  My blog folder has about twenty files right now.
 
 
 
-</p><p>
+</p>
+<p>
 Using "ls", and relying on file and directory modification times, is a useful way to keep track of all these files.  Here's how.
 
 
 
-</p><p>
+</p>
+<p>
 As projects are finished I move them into a "done" folder. This gets them out of the way.  A useful side effect is the modification time of the done directly itself gets updated.
 
 
 
-</p><p>
+</p>
+<p>
 The in-flight projects I care about most are the ones most recently updated: as an idea gets older it becomes less and less interesting.  When looking at this directory I use the "ls -ltr" command.  "l" means long (so you can see dates), "t" means sort by modification time, and "r" reverses that sort, so you see latest modified on the bottom.
 
-</p><p align="center">
-</p><p style="text-align: center;"><img class="aligncenter  wp-image-352" style="border: 0px;" title="blog-folder-detail" src="../f/blog-folder-detail.png" alt="" width="719" height="275"></p>
+</p>
+<p align="center">
+</p>
+<p style="text-align: center;"><img class="aligncenter  wp-image-352" style="border: 0px;" title="blog-folder-detail" src="../f/blog-folder-detail.png" alt="" width="719" height="275"></p>
 
 <p>
 The old files are at the top where I don't worry about them.  Some even scroll off the top of the screen, that's fine.  The done folder is a nice visual line for when something was last completed (say, published).  Having a separate color for directories makes this visually apparent.  And the bottom of the list are those most recently modified. Generally I work on the bottom up. Sometimes I go back to an old idea and add some notes. That bumps it to the top of the line -- it is interesting again.
 
 
 
-</p><p>
+</p>
+<p>
 I probably type "ls -ltr" at least 5 times an hour.  I've never aliased it since my muscle memory is so strong (but maybe I still should).
 
 
 
  </p>
+    </div>
+    <aside class="postpromonav">
+    <nav>
     
-    <ul class="pager">
-        <li class="previous">
-            <a href="201207taking-down-100000-sites.html" rel="prev">← Previous post</a>
-        </li>
-        <li class="next">
-            <a href="201210halloween-candy-data.html" rel="next">Next post →</a>
-        </li>
-    </ul>
+        <ul itemprop="keywords" class="tags">
+           <li><a class="tag p-category" href="../categories/life.html" rel="tag">Life</a></li>
+           <li><a class="tag p-category" href="../categories/technology.html" rel="tag">Technology</a></li>
+        </ul>
 
+    
+        <ul class="pager">
+            <li class="previous">
+                <a href="201207taking-down-100000-sites.html" rel="prev" title="The Day I Took Down 100,000 Web Sites">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="201210halloween-candy-data.html" rel="next" title="Halloween Candy Data">Next post</a>
+            </li>
+        </ul>
+
+    </nav>
+    </aside>
+        <section class="comments">
+        <h2>Comments</h2>
         
         
         <div id="disqus_thread"></div>
-        <script type="text/javascript">
-        var disqus_shortname ="sefkloninger";
-            var disqus_url="http://sef.kloninger.com/posts/201208wip-folders-with-ls.html";
-        var disqus_title="Managing Work-In-Progress Folders with \"ls -ltr\"";
-        var disqus_identifier="cache/posts/201208wip-folders-with-ls.html";
-        var disqus_config = function () {
+        <script>
+        var disqus_shortname ="sefkloninger",
+            disqus_url="http://sef.kloninger.com/posts/201208wip-folders-with-ls.html",
+        disqus_title="Managing Work-In-Progress Folders with \"ls -ltr\"",
+        disqus_identifier="cache/posts/201208wip-folders-with-ls.html",
+        disqus_config = function () {
             this.language = "en";
         };
         (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
+        </section>
     
 
-    </div>
+</article>
+
+        
+       <script>var disqus_shortname="sefkloninger";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+
+
 
         </div>
         <!--End of body content-->
@@ -172,29 +249,27 @@ I probably type "ls -ltr" at least 5 times an hour.  I've never aliased it sinc
             <p align="center">Contents © 2014 <a href="mailto:sefklon@gmail.com">Sef Kloninger</a>     
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">
 <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>    Powered by <a href="http://getnikola.com" rel="nofollow">Nikola</a> and <a href="http://github.com" rel="nofollow">GitHub</a> </p>
-            <p align="center">
-            
+                <p align="center">
+                
 <!-- Custom search with google-->
-</p><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+</p>
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
 <input type="hidden" name="q" value="site:http://sef.kloninger.com/">
 <input type="text" name="q" size="60" maxlength="255" results="0" placeholder="Search on Google">
 </form>
 <!-- End of custom search -->
 
+                
             
         </footer>
     </div>
 </div>
 
 
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
-            <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+            <script src="../assets/js/all-nocdn.js"></script>
+    
 
-
-	
-
-    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
+    <script>jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
     
 
 <script>

@@ -1,64 +1,105 @@
-<!DOCTYPE html><html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+    <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Sef Kloninger">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Day I Took Down 100,000 Web Sites | sef.kloninger.com</title>
+
     
-            <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
-        <link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/code.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]-->
+            <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+
+    
             <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 
-    
+      <link rel="canonical" href="http://sef.kloninger.com/posts/201207taking-down-100000-sites.html">
 
 
 
     
+        <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
+
+    
+
+
+    
+
+    <meta name="author" content="Sef Kloninger">
+    
+        <meta name="og:title" content="The Day I Took Down 100,000 Web Sites">
+        <meta name="og:url" content="http://sef.kloninger.com/posts/201207taking-down-100000-sites.html">
+            <meta name="og:description" content='Every engineer has their "the day I did something very very bad" story. This is mine.
+
+
+
+It was my last week at Ning. For about a year I ran the Infrastructure and Operations group. It was the end of '>
+        <meta name="og:site_name" content="sef.kloninger.com">
+        <meta name="og:type" content="article">
+
+    
+
+    
+
+
+
 </head>
 <body>
+
 <!-- Menubar -->
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="../">sef.kloninger.com</a>
-    </div>
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-            
-                <li><a href="https://twitter.com/sefk">@sefk</a>
-                </li><li><a href="https://github.com/sefk">GitHub</a>
-                </li><li><a href="http://pgp.mit.edu/pks/lookup?op=vindex&amp;search=0x1C97549F426D2123">GPG</a>
-                </li><li><a href="https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html">Resume</a>
-                </li><li><a href="https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf">PDF</a>
-                </li><li><a href="../archive.html">Archives</a>
+    <div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://sef.kloninger.com/">
 
-        </li></ul>
-
-        <ul class="nav navbar-nav navbar-right">
-            
-            
+                <span id="blog-title">sef.kloninger.com</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
                 
+                <li>
+<a href="https://twitter.com/sefk">@sefk</a>
+                </li>
+<li>
+<a href="https://github.com/sefk">GitHub</a>
+                </li>
+<li>
+<a href="http://pgp.mit.edu/pks/lookup?op=vindex&amp;search=0x1C97549F426D2123">GPG</a>
+                </li>
+<li>
+<a href="https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html">Resume</a>
+                </li>
+<li>
+<a href="https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf">PDF</a>
+                </li>
+<li>
+<a href="../archive.html">Archives</a>
+
+                
+            </li>
+</ul>
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                    
     <li>
-    <a href="201207taking-down-100000-sites.wp" id="sourcelink">Source</a>
+    <a href="#" id="sourcelink">Source</a>
     </li>
 
-        </ul>
-    </div><!-- /.navbar-collapse -->
+                
+            </ul>
+        </div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
 </nav>
 
 <!-- End of Menubar -->
@@ -68,93 +109,119 @@
         <!--Body content-->
         <div class="row">
             
-    <div class="postbox">
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article">
     
-    <h1 class="p-name" itemprop="headline name">The Day I Took Down 100,000 Web Sites</h1>
+    <header>
+        
+    <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">The Day I Took Down 100,000 Web Sites</a></h1>
 
-    <hr>
-    <small>
-        Posted: <time class="published" datetime="2012-07-25T10:56:57">2012-07-25 10:56</time>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Sef Kloninger</span></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2012-07-25T10:56:57-07:00" itemprop="datePublished" title="Publication date">2012-07-25 10:56</time></a></p>
+                <p class="commentline">
+        
+    <a href="201207taking-down-100000-sites.html#disqus_thread" data-disqus-identifier="cache/posts/201207taking-down-100000-sites.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="#" id="sourcelink">Source</a></p>
+
+        </div>
         
 
-        
-          |  More posts about
-        <span itemprop="keywords">
-            <a class="tag p-category" href="../categories/technology.html"><span class="badge badge-info">Technology</span></a>
-        </span>
+    </header>
 
-    </small>
-    <hr>
+    <div class="e-content entry-content" itemprop="articleBody text">
     <img class="alignright size-full wp-image-343" style="border: 0px;" title="fire" src="../f/fire.png" alt="fire alarm" width="300" height="240">
 
 <p>
 Every engineer has their "the day I did something very very bad" story. This is mine.
 
 
-</p><p>
+</p>
+<p>
 It was my last week at <a href="http://www.ning.com/">Ning</a>. For about a year I ran the Infrastructure and Operations group. It was the end of a good stretch, working with a strong team on hard problems.
 
 
 
-</p><p>
+</p>
+<p>
 In early 2010 (before I joined) Ning had successfully switched from a premium to paid model. Of Ning's two million social networks some were thriving onine communities, but many weren't. Trading those in for one hundred thousand good paying customers had been the right thing for the business. We kept around the 1.9M orphaned sites for some time in case someone wanted to assume ownership and start paying. By late 2011 the revival rate had dropped low enough that it was time to clear out the cruft.
 
 
 
-</p><p>
+</p>
+<p>
 I volunteered for the cleanup. I enjoyed little projects like this because it kept my hands in the code and took away a task that would be a chore and distraction for the engineers. The job was some SQL queries, scripting, load testing, checking, and double-checking. The hardest part was ensuring we had the right list of networks to delete.
 
 
 
-</p><p>
+</p>
+<p>
 It took about two months to write and run the scripts. I felt good that it had gone through uneventfully.
 
 
 
-</p><p>
+</p>
+<p>
 There was a legacy corner of our system that hadn't been included in my cleanup pass. I hadn't worried about it at first since it was just a few thousand networks. But now that I was leaving Ning I wanted to tie off my loose end projects, and this was one. I assembled the list of stragglers and ran my scripts. The 2,000 deletes went quickly. This was 11:00 AM on regular workday -- my last Wednesday on the job.
 
 
 
-</p><p>
+</p>
+<p>
 I immediately knew that I had done something very wrong. Since I sat close to the Customer Advocacy group I heard their IM clients and phones light up. Every Ning page was a "We're Sorry" 404 page. Oh crap.
 
 
 
-</p><p>
+</p>
+<p>
 It only took a couple of minutes to find the problem. One of the networks I had marked for deletion had core Javascript and CSS needed by every Ning network -- important stuff. The network, "socialnetworkmain" was known to everyone as being important, and if I had done my spot checks better, I would have seen it straight away. Instead, I had been sloppy.
 
 
 
-</p><p>
+</p>
+<p>
 The backdoor method I was using bypassed the safeties we had in place to protect our "really important" networks.
 
 
 
-</p><p>
+</p>
+<p>
 Luckily, <a href="https://twitter.com/myelin">Phil</a>, one of our top-notch infrastructure engineers was sitting close by and quickly restored the network through the backend. Things returned to normal almost immediately. That feeling of panic started to back off. The jokes started and we started to relax.
 
 
 
-</p><p>
+</p>
+<p>
 It took us another few hours to find and fix second and third order effects of my snafu. The network creation flow was broken -- fixed. An in-house monitoring system was dying silently -- fixed. And so on.
 
 
 
-</p><p align="center">
+</p>
+<p align="center">
 <a title="Dilbert strip where he screwed up big-time" href="http://dilbert.com/strips/comic/1995-08-18/"><img src="http://dilbert.com/dyn/str_strip/000000000/00000000/0000000/000000/20000/1000/000/21076/21076.strip.gif" alt="Dilbert.com" border="0"></a>
 
 
 
-</p><p>
+</p>
+<p>
 I learned four lessons:
 
-</p><p>
-</p><ol>
-	<li><strong>Undo is your friend.</strong> The tooling or features to revert your change will take time, but you will be happy to have it if you ever need it.</li>
-	<li><strong>Make changes during the day.</strong> Resolving a hairy problem is hard if you don't have the right people, and when the people you do have are tired and foggy. This incident might have taken hours to resolve instead of minutes in the middle of the night.</li>
-	<li><strong>It's not over until it's over.</strong> Once in crisis mode, you're eager to be get out of it. Once the main problem is solved it is tempting to exhale, go to lunch, go back to bed, whatever. But aftereffects might take a while to show up, or may just be harder to find.</li>
-	<li><strong>Disproportionate effects.</strong> We all know that our complex systems nonlinear failure modes. Incidents like these are reminders that small changes have big effects. Said another way, even small things should be taken seriously.</li>
+</p>
+<p>
+</p>
+<ol>
+	<li>
+<strong>Undo is your friend.</strong> The tooling or features to revert your change will take time, but you will be happy to have it if you ever need it.</li>
+	<li>
+<strong>Make changes during the day.</strong> Resolving a hairy problem is hard if you don't have the right people, and when the people you do have are tired and foggy. This incident might have taken hours to resolve instead of minutes in the middle of the night.</li>
+	<li>
+<strong>It's not over until it's over.</strong> Once in crisis mode, you're eager to be get out of it. Once the main problem is solved it is tempting to exhale, go to lunch, go back to bed, whatever. But aftereffects might take a while to show up, or may just be harder to find.</li>
+	<li>
+<strong>Disproportionate effects.</strong> We all know that our complex systems nonlinear failure modes. Incidents like these are reminders that small changes have big effects. Said another way, even small things should be taken seriously.</li>
 </ol>
 
 <p>
@@ -163,40 +230,59 @@ My time at Akamai had prepared me well for managing a crisis. But it's nice to h
 
 
  </p>
+    </div>
+    <aside class="postpromonav">
+    <nav>
     
-    <ul class="pager">
-        <li class="previous">
-            <a href="201207on-line-education.html" rel="prev">← Previous post</a>
-        </li>
-        <li class="next">
-            <a href="201208wip-folders-with-ls.html" rel="next">Next post →</a>
-        </li>
-    </ul>
+        <ul itemprop="keywords" class="tags">
+           <li><a class="tag p-category" href="../categories/technology.html" rel="tag">Technology</a></li>
+        </ul>
 
+    
+        <ul class="pager">
+            <li class="previous">
+                <a href="201207on-line-education.html" rel="prev" title="On-Line Education Is Really Interesting Right Now">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="201208wip-folders-with-ls.html" rel="next" title="Managing Work-In-Progress Folders with " ls>Next post</a>
+            </li>
+        </ul>
+
+    </nav>
+    </aside>
+        <section class="comments">
+        <h2>Comments</h2>
         
         
         <div id="disqus_thread"></div>
-        <script type="text/javascript">
-        var disqus_shortname ="sefkloninger";
-            var disqus_url="http://sef.kloninger.com/posts/201207taking-down-100000-sites.html";
-        var disqus_title="The Day I Took Down 100,000 Web Sites";
-        var disqus_identifier="cache/posts/201207taking-down-100000-sites.html";
-        var disqus_config = function () {
+        <script>
+        var disqus_shortname ="sefkloninger",
+            disqus_url="http://sef.kloninger.com/posts/201207taking-down-100000-sites.html",
+        disqus_title="The Day I Took Down 100,000 Web Sites",
+        disqus_identifier="cache/posts/201207taking-down-100000-sites.html",
+        disqus_config = function () {
             this.language = "en";
         };
         (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
+        </section>
     
 
-    </div>
+</article>
+
+        
+       <script>var disqus_shortname="sefkloninger";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+
+
 
         </div>
         <!--End of body content-->
@@ -205,29 +291,27 @@ My time at Akamai had prepared me well for managing a crisis. But it's nice to h
             <p align="center">Contents © 2014 <a href="mailto:sefklon@gmail.com">Sef Kloninger</a>     
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">
 <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>    Powered by <a href="http://getnikola.com" rel="nofollow">Nikola</a> and <a href="http://github.com" rel="nofollow">GitHub</a> </p>
-            <p align="center">
-            
+                <p align="center">
+                
 <!-- Custom search with google-->
-</p><form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+</p>
+<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
 <input type="hidden" name="q" value="site:http://sef.kloninger.com/">
 <input type="text" name="q" size="60" maxlength="255" results="0" placeholder="Search on Google">
 </form>
 <!-- End of custom search -->
 
+                
             
         </footer>
     </div>
 </div>
 
 
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
-            <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-        <script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script>
+            <script src="../assets/js/all-nocdn.js"></script>
+    
 
-
-	
-
-    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
+    <script>jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
     
 
 <script>
