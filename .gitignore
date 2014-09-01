@@ -3,3 +3,4 @@ output
 cache
 .doit.db.db
 .DS_Store
+*.swp
