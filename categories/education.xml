@@ -1,5 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Education)</title><link>http://sef.kloninger.com/</link><description></description><language>en</language><lastBuildDate>Sun, 31 Aug 2014 12:08:31 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Launch Day</title><link>http://sef.kloninger.com/posts/201306launch-day.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="http://sef.kloninger.com/f/spaceshuttle-300x283.png" width="180" height="170"&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Education)</title><link>http://sef.kloninger.com/</link><description></description><language>en</language><lastBuildDate>Mon, 01 Sep 2014 00:22:45 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Leaving Stanford Online Ed</title><link>http://sef.kloninger.com/posts/leaving-stanford.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p style="float:right; align:right; width:30%"&gt;&lt;img class="postimage" src="http://sef.kloninger.com/f/stanfordlogo.gif" alt="Stanford"&gt;&lt;/p&gt;
+
+&lt;p&gt;Friday was my last day building Stanford's &lt;a href="https://groups.google.com/d/msg/edx-code/DRqcLlMKhgs/KBvzBj13hQ8J"&gt;open-source online education
+platform&lt;/a&gt;.  What started as a lark turned out to be one of the most
+fun and rewarding times in my career.  So I'll use this opportunity to
+reflect back a bit on the project and what we accomplished.&lt;/p&gt;
+&lt;h3&gt;First a Little History&lt;/h3&gt;
+&lt;ul&gt;&lt;i&gt;
+    "MOOCs are just information technology happening to higher education."  
+    -- George Siemens
+&lt;/i&gt;&lt;/ul&gt;
+
+&lt;p&gt;I joined Stanford in 2012, coming off of my self-imposed &lt;a href="http://sef.kloninger.com/posts/201204my-sabbatical.html"&gt;sabbatical&lt;/a&gt;.
+My goal then had been to get hands-on again, to sharpen the technical
+tools.  I did a few online classes and hobby projects, but my friend Jane
+suggested I could do some good and have more fun working in a group back
+on the Stanford campus (I'm an alum, after all).  So I joined her and a
+small group of engineers in a conference room in the fourth floor of
+&lt;a href="http://www-cs.stanford.edu/info/gates"&gt;Gates&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Recall what was happening in &lt;a href="http://sef.kloninger.com/posts/201207on-line-education.html"&gt;education in 2012&lt;/a&gt;.  Stanford's first
+&lt;a href="https://www.udacity.com/course/cs271"&gt;three&lt;/a&gt; &lt;a href="https://www.coursera.org/course/ml"&gt;big&lt;/a&gt; &lt;a href="https://class.stanford.edu/courses/Home/Databases/Engineering/about"&gt;MOOCs&lt;/a&gt; had just made big splashes.  Later that
+year the New York Times would famously declare 2012 to be the &lt;a href="http://www.nytimes.com/2012/11/04/education/edlife/massive-open-online-courses-are-multiplying-at-a-rapid-pace.html"&gt;Year of the
+MOOC&lt;/a&gt;.  What could consumer-grade web tech could do for higher
+education?  Or even &lt;em&gt;do to&lt;/em&gt; higher ed?  The low cost and ease of cloud
+computing removed many of the barriers to trying new things out.  You
+approach experimentation completely differently when things get 100x or
+1000x cheaper.  Profs were literally getting out their credit cards and
+buying Wordpress blogs or throw up virtual machines for automated grading.
+Wild stuff.&lt;/p&gt;
+&lt;p&gt;So this was the environment when I joined Stanford.  That first summer we
+built &lt;a href="https://class2go.stanford.edu/"&gt;Class2Go&lt;/a&gt; to host free online courses.  We went from empty
+buffers to a live Python/Django site for hundreds of thousands of enrolled
+students in eleven weeks.  Man, that was a fun ride.&lt;/p&gt;
+&lt;p&gt;We built Class2Go for a few reasons.  First, we feel strongly that Stanford
+needs to control its destiny.  There is no "file format" for online ed
+content, so every course development online is a bet on a platform.  And
+we didn't want to be beholden to one platform vendor (still don't).  In
+2012 the technology that had powered the early MOOCs were becoming "platforms"
+and moving off-campus.  While we were happy with the success of Udacity,
+Coursera, and (a bit later) NovoEd, we were also a bit wary.  They were
+going to have to repay their investors at some point.  The last thing we
+wanted was for online education to look like textbook publishing or academic
+journals.  We know what happened there.&lt;/p&gt;
+&lt;p&gt;Second, we wanted to have a broad impact.  We were lucky enough to have
+an engineering team at Stanford, but it makes no sense for every school
+to develop their own platforms.  This kind of project is tailor made for
+open source development, and I've advocated strongly for that since the
+beginning.  Not only would this mean many others could benefit form the
+software, Stanford would benefit from many more developers and see many
+more use cases (and we have).&lt;/p&gt;
+&lt;p&gt;And the third reason is the need to modify the platform.  There are many
+reasons why you need to get hands dirty in the code.  It could be just
+developing a point feature, like &lt;a href="https://github.com/edx/edx-ora2/pull/620"&gt;tracking changes in peer evaluation&lt;/a&gt;.
+Or it could enable a whole new use case, like &lt;a href="https://github.com/edx/edx-platform/pull/67"&gt;authenticating
+on-campus students&lt;/a&gt;.  Our teachers and researchers want to do
+interesting work online, not just put up courses.  They have great ideas
+about using the things that make MOOCs unique (different cultures, scale,
+data-gathering, etc.) as powerful tools, not obstacles to overcome.  (To
+hear more about interesting online ed projects, follow the Stanford VPOL 
+&lt;a href="http://signalblog.stanford.edu/"&gt;Signal Blog&lt;/a&gt;).&lt;/p&gt;
+&lt;h3&gt;Scaling Up With EdX&lt;/h3&gt;
+&lt;p&gt;Come early 2013 we started seeing some interest from others to use Class2Go
+outside Stanford.  While exciting, we were concerned about the quality of
+the code.  There were giant missing features that were going to be hard
+to write (e.g. peer evaluation).  And the code was a bit quick and dirty,
+with nearly zero tests and other things a "real project" needs.  We could
+have backfilled all of that, but it sounded like a lot of work.&lt;/p&gt;
+&lt;p&gt;It's around that time that we started talking with edX.  Our academic ties
+to MIT, Harvard, and other edX consortium members are strong.  We liked
+their philosophy and approach.  And our technologies were similar: both
+Python/Django stacks running in Amazon, etc.  We decided to work together.
+&lt;a href="https://www.linkedin.com/in/robvrubin"&gt;Rob Rubin&lt;/a&gt; and I got the deal done quickly, mostly between sessions
+at PyCon.  In April 2013 we &lt;a href="http://news.stanford.edu/news/2013/april/edx-collaborate-platform-030313.html"&gt;announced&lt;/a&gt; that we'd shutter Class2Go
+and adopt the Open edX platform.&lt;/p&gt;
+&lt;p&gt;Stanford didn't join the XConsortium.  Rooted in our belief in the power
+of open source, we made open-sourcing their platform a condition of us
+working together.  EdX didn't need convincing.  But Stanford was a bit of
+a forcing function to do it then, and it was a bit of work.  They &lt;a href="http://ostatic.com/blog/edx-open-sources-its-super-influential-online-learning-platform"&gt;pushed
+the button&lt;/a&gt; on June 1 2013.&lt;/p&gt;
+&lt;p&gt;For the past year and a half the Stanford team has operated as a virtual
+member of the extended edX engineering team.  They've been a fun group to
+work with, generous with their time and good collaborators.  We've been
+running the platform successfully now for over a year, supporting dozens
+of courses for Stanford students, MOOCs, online high school students, and
+many other uses.  We've contributed back many features, like theming,
+course email, instructor analytics to name a few.&lt;/p&gt;
+&lt;p&gt;I've spent a lot of my own time helping to make sure the Open edX project
+a healthy open source project.  It's not enough to just open up the code,
+to have a thriving community you have to conduct your development out in
+the open.  Beyond helping other institutions get up and running I've worked
+to drive the open-source agenda overall.  With my friend &lt;a href="https://twitter.com/natea"&gt;Nate Aune&lt;/a&gt;
+last May we &lt;a href="https://groups.google.com/d/msg/edx-code/DRqcLlMKhgs/KBvzBj13hQ8J"&gt;published recommended changes&lt;/a&gt; to technology, governance,
+and community.  And with &lt;a href="https://twitter.com/podehaye"&gt;Paul-Olivier Dehaye&lt;/a&gt; this past June we
+hosted the first &lt;a href="https://groups.google.com/d/msg/edx-code/EqVUkvovq0k/e2Be2fo5QJUJ"&gt;Open edX workshop&lt;/a&gt;, in Zürich.  I think those efforts
+have made a difference.&lt;/p&gt;
+&lt;h3&gt;Moving On&lt;/h3&gt;
+&lt;p&gt;I've heard the siren's song of the startup.  Last Friday August 29th was
+my last day at Stanford.  I'll post about my &lt;a href="http://www.wavefront.com/"&gt;next gig&lt;/a&gt; when the time
+is right.&lt;/p&gt;
+&lt;p&gt;But I do feel good about moving on.  The Stanford engineering team is solid
+and productive.  The engineers work well with each other and have a good
+breadth of skills.  The course operations team is dedicated and strong.
+&lt;a href="https://twitter.com/jinpa1345"&gt;Jane Manning&lt;/a&gt; will do great running the team in addition to her day
+job as of product management -- she's done this before and knows the product
+inside and out.  And &lt;a href="https://github.com/jbau"&gt;Jason Bau&lt;/a&gt;, the Stanford Open edX tech lead,
+will continue to anchor eng and ops.&lt;/p&gt;
+&lt;p&gt;And what about the open source community?  I do feel like the flywheel is
+starting to spin up.  EdX is fostering this in several ways, I'll mention
+two.  First, they are in the process of opening up their bug tracking
+database and sprint planning (Jira).  That's a key step to doing true &lt;em&gt;open
+development&lt;/em&gt;.  And second, I'm really excited to see the first full-on
+&lt;a href="https://groups.google.com/d/msg/edx-code/bqASLi8FZjs/Eb6OQpHbevsJ"&gt;Open edX conference&lt;/a&gt; happening this upcoming November.  I expect
+that to be well attended.&lt;/p&gt;
+&lt;p&gt;EdX has asked me to continue on as a member of the Technical Advisory
+Board, which I am happy and honored to do.  I look forward to staying
+plugged into the project and working with my friends on the board (Armando,
+Ike, Jim, Phil, Ross...)&lt;/p&gt;
+&lt;p&gt;Thanks to my many friends on the project: the Open edX engineering team,
+especially Jason and Jane; the team in the Office of the Vice Provost for
+Online Learning, especially Professor &lt;a href="http://theory.stanford.edu/people/jcm/"&gt;John Mitchell&lt;/a&gt; who made this
+possible; and my many friends at edX.  There's a lot to be proud of over
+the past two years, and a lot of good work ahead.&lt;/p&gt;</description><category>Education</category><guid>http://sef.kloninger.com/posts/leaving-stanford.html</guid><pubDate>Mon, 01 Sep 2014 06:45:00 GMT</pubDate></item><item><title>Launch Day</title><link>http://sef.kloninger.com/posts/201306launch-day.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="http://sef.kloninger.com/f/spaceshuttle-300x283.png" width="180" height="170"&gt;
 
 &lt;p&gt;
 Today was launch day. It went really well.  I wanted to capture what a good launch feels like and contrast that with a more exciting launch, just five months ago.
