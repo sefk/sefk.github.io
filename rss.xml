@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><language>en</language><lastBuildDate>Mon, 01 Sep 2014 00:22:45 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Leaving Stanford Online Ed</title><link>http://sef.kloninger.com/posts/leaving-stanford.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p style="float:right; align:right; width:30%"&gt;&lt;img class="postimage" src="http://sef.kloninger.com/f/stanfordlogo.gif" alt="Stanford"&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><language>en</language><lastBuildDate>Tue, 02 Sep 2014 15:15:49 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Leaving Stanford Online Ed</title><link>http://sef.kloninger.com/posts/leaving-stanford.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p style="float:right; align:right; width:30%"&gt;&lt;img class="postimage" src="http://sef.kloninger.com/f/stanfordlogo.gif" alt="Stanford"&gt;&lt;/p&gt;
 
 &lt;p&gt;Friday was my last day building Stanford's &lt;a href="https://groups.google.com/d/msg/edx-code/DRqcLlMKhgs/KBvzBj13hQ8J"&gt;open-source online education
 platform&lt;/a&gt;.  What started as a lark turned out to be one of the most
 fun and rewarding times in my career.  So I'll use this opportunity to
-reflect back a bit on the project and what we accomplished.&lt;/p&gt;
+reflect back on the project and what we accomplished.&lt;/p&gt;
 &lt;h3&gt;First a Little History&lt;/h3&gt;
 &lt;ul&gt;&lt;i&gt;
     "MOOCs are just information technology happening to higher education."  
@@ -38,7 +38,7 @@ content, so every course development online is a bet on a platform.  And
 we didn't want to be beholden to one platform vendor (still don't).  In
 2012 the technology that had powered the early MOOCs were becoming "platforms"
 and moving off-campus.  While we were happy with the success of Udacity,
-Coursera, and (a bit later) NovoEd, we were also a bit wary.  They were
+Coursera, and (a year later later) NovoEd, we were also a bit wary.  They were
 going to have to repay their investors at some point.  The last thing we
 wanted was for online education to look like textbook publishing or academic
 journals.  We know what happened there.&lt;/p&gt;
@@ -63,7 +63,7 @@ hear more about interesting online ed projects, follow the Stanford VPOL
 &lt;p&gt;Come early 2013 we started seeing some interest from others to use Class2Go
 outside Stanford.  While exciting, we were concerned about the quality of
 the code.  There were giant missing features that were going to be hard
-to write (e.g. peer evaluation).  And the code was a bit quick and dirty,
+to write (e.g. peer evaluation).  And the code was quick and dirty,
 with nearly zero tests and other things a "real project" needs.  We could
 have backfilled all of that, but it sounded like a lot of work.&lt;/p&gt;
 &lt;p&gt;It's around that time that we started talking with edX.  Our academic ties
@@ -75,8 +75,8 @@ at PyCon.  In April 2013 we &lt;a href="http://news.stanford.edu/news/2013/april
 and adopt the Open edX platform.&lt;/p&gt;
 &lt;p&gt;Stanford didn't join the XConsortium.  Rooted in our belief in the power
 of open source, we made open-sourcing their platform a condition of us
-working together.  EdX didn't need convincing.  But Stanford was a bit of
-a forcing function to do it then, and it was a bit of work.  They &lt;a href="http://ostatic.com/blog/edx-open-sources-its-super-influential-online-learning-platform"&gt;pushed
+working together.  EdX didn't need convincing.  But Stanford was of
+a forcing function to do it then, and it did take some work.  They &lt;a href="http://ostatic.com/blog/edx-open-sources-its-super-influential-online-learning-platform"&gt;pushed
 the button&lt;/a&gt; on June 1 2013.&lt;/p&gt;
 &lt;p&gt;For the past year and a half the Stanford team has operated as a virtual
 member of the extended edX engineering team.  They've been a fun group to

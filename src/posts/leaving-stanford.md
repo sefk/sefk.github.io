@@ -12,7 +12,7 @@
 Friday was my last day building Stanford's [open-source online education
 platform][open].  What started as a lark turned out to be one of the most
 fun and rewarding times in my career.  So I'll use this opportunity to
-reflect back a bit on the project and what we accomplished.
+reflect back on the project and what we accomplished.
 
   [open]:  https://class.stanford.edu/
 
@@ -64,7 +64,7 @@ content, so every course development online is a bet on a platform.  And
 we didn't want to be beholden to one platform vendor (still don't).  In
 2012 the technology that had powered the early MOOCs were becoming "platforms"
 and moving off-campus.  While we were happy with the success of Udacity,
-Coursera, and (a bit later) NovoEd, we were also a bit wary.  They were
+Coursera, and (a year later later) NovoEd, we were also a bit wary.  They were
 going to have to repay their investors at some point.  The last thing we
 wanted was for online education to look like textbook publishing or academic
 journals.  We know what happened there.
@@ -98,7 +98,7 @@ hear more about interesting online ed projects, follow the Stanford VPOL
 Come early 2013 we started seeing some interest from others to use Class2Go
 outside Stanford.  While exciting, we were concerned about the quality of
 the code.  There were giant missing features that were going to be hard
-to write (e.g. peer evaluation).  And the code was a bit quick and dirty,
+to write (e.g. peer evaluation).  And the code was quick and dirty,
 with nearly zero tests and other things a "real project" needs.  We could
 have backfilled all of that, but it sounded like a lot of work.
 
@@ -115,8 +115,8 @@ and adopt the Open edX platform.
 
 Stanford didn't join the XConsortium.  Rooted in our belief in the power
 of open source, we made open-sourcing their platform a condition of us
-working together.  EdX didn't need convincing.  But Stanford was a bit of
-a forcing function to do it then, and it was a bit of work.  They [pushed
+working together.  EdX didn't need convincing.  But Stanford was of
+a forcing function to do it then, and it did take some work.  They [pushed
 the button][junenews] on June 1 2013.
 
   [junenews]: http://ostatic.com/blog/edx-open-sources-its-super-influential-online-learning-platform
