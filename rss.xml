@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><language>en</language><lastBuildDate>Tue, 02 Sep 2014 15:15:49 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Leaving Stanford Online Ed</title><link>http://sef.kloninger.com/posts/leaving-stanford.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p style="float:right; align:right; width:30%"&gt;&lt;img class="postimage" src="http://sef.kloninger.com/f/stanfordlogo.gif" alt="Stanford"&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><language>en</language><lastBuildDate>Thu, 04 Sep 2014 08:14:33 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Leaving Stanford Online Ed</title><link>http://sef.kloninger.com/posts/leaving-stanford.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p style="float:right; align:right; width:30%"&gt;&lt;img class="postimage" src="http://sef.kloninger.com/f/stanfordlogo.gif" alt="Stanford"&gt;&lt;/p&gt;
 
-&lt;p&gt;Friday was my last day building Stanford's &lt;a href="https://groups.google.com/d/msg/edx-code/DRqcLlMKhgs/KBvzBj13hQ8J"&gt;open-source online education
+&lt;p&gt;Friday was my last day building Stanford's &lt;a href="https://class.stanford.edu/"&gt;open-source online education
 platform&lt;/a&gt;.  What started as a lark turned out to be one of the most
 fun and rewarding times in my career.  So I'll use this opportunity to
 reflect back on the project and what we accomplished.&lt;/p&gt;

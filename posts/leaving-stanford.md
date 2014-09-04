@@ -134,12 +134,12 @@ a healthy open source project.  It's not enough to just open up the code,
 to have a thriving community you have to conduct your development out in
 the open.  Beyond helping other institutions get up and running I've worked
 to drive the open-source agenda overall.  With my friend [Nate Aune][aune]
-last May we [published recommended changes][open] to technology, governance,
+last May we [published recommended changes][rec] to technology, governance,
 and community.  And with [Paul-Olivier Dehaye][pod] this past June we
 hosted the first [Open edX workshop][zur], in Zürich.  I think those efforts
 have made a difference.
 
-  [open]: https://groups.google.com/d/msg/edx-code/DRqcLlMKhgs/KBvzBj13hQ8J
+  [rec]:  https://groups.google.com/d/msg/edx-code/DRqcLlMKhgs/KBvzBj13hQ8J
   [zur]:  https://groups.google.com/d/msg/edx-code/EqVUkvovq0k/e2Be2fo5QJUJ
   [aune]: https://twitter.com/natea
   [pod]:  https://twitter.com/podehaye
