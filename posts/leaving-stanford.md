@@ -34,16 +34,16 @@ small group of engineers in a conference room in the fourth floor of
   [sab]: http://sef.kloninger.com/posts/201204my-sabbatical.html
   [Gates]: http://www-cs.stanford.edu/info/gates
 
-Recall what was happening in [education in 2012][2012].  Stanford's first
-[three][ai] [big][ml] [MOOCs][db] had just made big splashes.  Later that
-year the New York Times would famously declare 2012 to be the [Year of the
-MOOC][nyt].  What could consumer-grade web tech could do for higher
-education?  Or even *do to* higher ed?  The low cost and ease of cloud
-computing removed many of the barriers to trying new things out.  You
-approach experimentation completely differently when things get 100x or
-1000x cheaper.  Profs were literally getting out their credit cards and
-buying Wordpress blogs or throw up virtual machines for automated grading.
-Wild stuff.
+Recall what was happening in [education in 2012][2012].  Stanford's
+[first][ai] [three][ml] [big][db] Massive Open Online Courses (MOOCs) had
+just made big splashes.  Later that year the New York Times would famously
+declare 2012 to be the [Year of the MOOC][nyt].  What could consumer-grade
+web tech could do for higher education?  Or even *do to* higher ed?  The
+low cost and ease of cloud computing removed many of the barriers to trying
+new things out.  You approach experimentation completely differently when
+things get 100x or 1000x cheaper.  Profs were literally getting out their
+credit cards and buying Wordpress blogs or throw up virtual machines for
+automated grading.  Wild stuff.
 
   [2012]: http://sef.kloninger.com/posts/201207on-line-education.html
   [ai]:   https://www.udacity.com/course/cs271

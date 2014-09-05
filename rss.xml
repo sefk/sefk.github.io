@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><language>en</language><lastBuildDate>Thu, 04 Sep 2014 08:14:33 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Leaving Stanford Online Ed</title><link>http://sef.kloninger.com/posts/leaving-stanford.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p style="float:right; align:right; width:30%"&gt;&lt;img class="postimage" src="http://sef.kloninger.com/f/stanfordlogo.gif" alt="Stanford"&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><language>en</language><lastBuildDate>Fri, 05 Sep 2014 08:05:48 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Leaving Stanford Online Ed</title><link>http://sef.kloninger.com/posts/leaving-stanford.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p style="float:right; align:right; width:30%"&gt;&lt;img class="postimage" src="http://sef.kloninger.com/f/stanfordlogo.gif" alt="Stanford"&gt;&lt;/p&gt;
 
 &lt;p&gt;Friday was my last day building Stanford's &lt;a href="https://class.stanford.edu/"&gt;open-source online education
 platform&lt;/a&gt;.  What started as a lark turned out to be one of the most
@@ -18,16 +18,16 @@ suggested I could do some good and have more fun working in a group back
 on the Stanford campus (I'm an alum, after all).  So I joined her and a
 small group of engineers in a conference room in the fourth floor of
 &lt;a href="http://www-cs.stanford.edu/info/gates"&gt;Gates&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Recall what was happening in &lt;a href="http://sef.kloninger.com/posts/201207on-line-education.html"&gt;education in 2012&lt;/a&gt;.  Stanford's first
-&lt;a href="https://www.udacity.com/course/cs271"&gt;three&lt;/a&gt; &lt;a href="https://www.coursera.org/course/ml"&gt;big&lt;/a&gt; &lt;a href="https://class.stanford.edu/courses/Home/Databases/Engineering/about"&gt;MOOCs&lt;/a&gt; had just made big splashes.  Later that
-year the New York Times would famously declare 2012 to be the &lt;a href="http://www.nytimes.com/2012/11/04/education/edlife/massive-open-online-courses-are-multiplying-at-a-rapid-pace.html"&gt;Year of the
-MOOC&lt;/a&gt;.  What could consumer-grade web tech could do for higher
-education?  Or even &lt;em&gt;do to&lt;/em&gt; higher ed?  The low cost and ease of cloud
-computing removed many of the barriers to trying new things out.  You
-approach experimentation completely differently when things get 100x or
-1000x cheaper.  Profs were literally getting out their credit cards and
-buying Wordpress blogs or throw up virtual machines for automated grading.
-Wild stuff.&lt;/p&gt;
+&lt;p&gt;Recall what was happening in &lt;a href="http://sef.kloninger.com/posts/201207on-line-education.html"&gt;education in 2012&lt;/a&gt;.  Stanford's
+&lt;a href="https://www.udacity.com/course/cs271"&gt;first&lt;/a&gt; &lt;a href="https://www.coursera.org/course/ml"&gt;three&lt;/a&gt; &lt;a href="https://class.stanford.edu/courses/Home/Databases/Engineering/about"&gt;big&lt;/a&gt; Massive Open Online Courses (MOOCs) had
+just made big splashes.  Later that year the New York Times would famously
+declare 2012 to be the &lt;a href="http://www.nytimes.com/2012/11/04/education/edlife/massive-open-online-courses-are-multiplying-at-a-rapid-pace.html"&gt;Year of the MOOC&lt;/a&gt;.  What could consumer-grade
+web tech could do for higher education?  Or even &lt;em&gt;do to&lt;/em&gt; higher ed?  The
+low cost and ease of cloud computing removed many of the barriers to trying
+new things out.  You approach experimentation completely differently when
+things get 100x or 1000x cheaper.  Profs were literally getting out their
+credit cards and buying Wordpress blogs or throw up virtual machines for
+automated grading.  Wild stuff.&lt;/p&gt;
 &lt;p&gt;So this was the environment when I joined Stanford.  That first summer we
 built &lt;a href="https://class2go.stanford.edu/"&gt;Class2Go&lt;/a&gt; to host free online courses.  We went from empty
 buffers to a live Python/Django site for hundreds of thousands of enrolled
