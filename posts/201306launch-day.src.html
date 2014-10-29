@@ -1,0 +1,60 @@
+<html><body><img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="/f/spaceshuttle-300x283.png" width="180" height="170">
+
+<p>
+Today was launch day. It went really well.  I wanted to capture what a good launch feels like and contrast that with a more exciting launch, just five months ago.
+
+
+<p>
+Today we turned on our first class on Stanford's instance the open-source <a href="http://code.edx.org">edX platform</a>, what we're calling <a href="http://online.stanford.edu/openedx">OpenEdX</a>. The class is <a href="https://class.stanford.edu/courses/Medicine/HRP258/Statistics_in_Medicine">Statistics in Medicine</a>, taught by Kristin Sainani of the Stanford School of Medicine. With over thirteen thousand students signed up it's a medium-sized MOOC (Massive Open Online Course).
+
+
+
+<p>
+We have launched MOOC's for Stanford before: two in <a href="http://networking.class.stanford.edu/">Fall</a> <a href="http://solar.class.stanford.edu/">Quarter</a>, and one in <a href="http://db.class.stanford.edu/">Winter</a>. Even though the classes were huge success, but the launch days weren't so smooth. We had written that platform, <a href="http://class2go.stanford.edu/">Class2Go</a>, from the ground up with a small team in a dozen weeks in Fall; in the weeks before the Winter launch we ripped out the whole evaluation system, about one-third of the code, and replaced it with a whole new engine. In both cases most of our code was fresh off the presses.
+
+
+
+<p>
+Those launches were rocky. I'll tell the story of the DB class launch in January. The first thing we do is a "soft launch," where you open the front door and some people find their way in. Those first visits give you a sense of how things will go.  Surprisingly, the servers were a bit busy.  But we wanted to keep going, so we scaled up capacity and moved on.
+
+
+
+<p>
+The thing that drives real traffic is the announcement email. That gets people to the site. The announcements started going out, students started coming in, and the site lit up. We were in hot water. Servers were overloaded, and most surprising, the database was getting hammered. This was scary and unexpected. We control-C'ed the mail job and quickly hacked additional caching into the site.  We had to trickle out announcements over the next twelve hours.  We made it, but it was a long, stressful day.
+
+
+
+<p>
+And then the days/weeks post-launch were spent watching graphs, triaging 500 errors (user-visible "we're sorry" pages), and installing daily hotfixes. But we got through it. The classes were a success and the team was proud.
+
+
+
+<p>
+So, contrast that to today's launch.  Totally different.
+
+
+
+<p>
+Everyone came in early as usual. I bought bagels. We turned on the class (soft-launch) and the servers hardly noticed. We sent the announcement mails, people came and took their pre-course survey and watched the intro video. Hardly any load. This chart shows the average CPU on our four appservers from 8:00 AM PDT / 15:00 UTC until 10:45 AM or so.
+
+
+
+<p align=center>
+<img class="alignnone  wp-image-414" style="border: 0px;" alt="launch-app-cpu" src="/f/launch-app-cpu1.png" width="1530" height=373>
+
+
+
+<p>
+Those are happy servers. Other charts we watched (db connections, load, etc.) told the same story. The most impressive thing was not a single user visible error, no 500's!
+
+
+
+<p>
+Those folks at edX made some solid software.  We're happy to be working with a strong group of engineers and a quality product.  We've had our hands on it only since April, and it was released open-source to the world on June 1.  I fully expect a lot of other universities and organizations are going to have a great time running classes on OpenEdX too.
+
+
+
+<p>
+I just turned off half the appservers since we're fine on capacity. Now off to bed with a good feeling.
+
+</body></html>

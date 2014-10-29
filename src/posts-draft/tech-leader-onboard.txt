@@ -1,0 +1,11 @@
+<!-- 
+.. title: Onboarding as a Tech Leader
+.. slug: tech-leader-onboard
+.. link: 
+.. description: 
+.. tags: Management,draft
+.. date: 
+-->
+
+<img style="float:right" class="postimage" src="/f/s3.png" alt="AWS Bill" width=60%>
+

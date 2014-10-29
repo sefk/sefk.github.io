@@ -1,0 +1,80 @@
+<html><body>
+
+<img class="alignright size-full wp-image-343" style="border: 0px;" title="fire" src="/f/fire.png" alt="fire alarm" width="300" height="240">
+
+<p>
+Every engineer has their "the day I did something very very bad" story. This is mine.
+
+
+<p>
+It was my last week at <a href="http://www.ning.com/">Ning</a>. For about a year I ran the Infrastructure and Operations group. It was the end of a good stretch, working with a strong team on hard problems.
+
+
+
+<p>
+In early 2010 (before I joined) Ning had successfully switched from a premium to paid model. Of Ning's two million social networks some were thriving onine communities, but many weren't. Trading those in for one hundred thousand good paying customers had been the right thing for the business. We kept around the 1.9M orphaned sites for some time in case someone wanted to assume ownership and start paying. By late 2011 the revival rate had dropped low enough that it was time to clear out the cruft.
+
+
+
+<p>
+I volunteered for the cleanup. I enjoyed little projects like this because it kept my hands in the code and took away a task that would be a chore and distraction for the engineers. The job was some SQL queries, scripting, load testing, checking, and double-checking. The hardest part was ensuring we had the right list of networks to delete.
+
+
+
+<p>
+It took about two months to write and run the scripts. I felt good that it had gone through uneventfully.
+
+
+
+<p>
+There was a legacy corner of our system that hadn't been included in my cleanup pass. I hadn't worried about it at first since it was just a few thousand networks. But now that I was leaving Ning I wanted to tie off my loose end projects, and this was one. I assembled the list of stragglers and ran my scripts. The 2,000 deletes went quickly. This was 11:00 AM on regular workday -- my last Wednesday on the job.
+
+
+
+<p>
+I immediately knew that I had done something very wrong. Since I sat close to the Customer Advocacy group I heard their IM clients and phones light up. Every Ning page was a "We're Sorry" 404 page. Oh crap.
+
+
+
+<p>
+It only took a couple of minutes to find the problem. One of the networks I had marked for deletion had core Javascript and CSS needed by every Ning network -- important stuff. The network, "socialnetworkmain" was known to everyone as being important, and if I had done my spot checks better, I would have seen it straight away. Instead, I had been sloppy.
+
+
+
+<p>
+The backdoor method I was using bypassed the safeties we had in place to protect our "really important" networks.
+
+
+
+<p>
+Luckily, <a href="https://twitter.com/myelin">Phil</a>, one of our top-notch infrastructure engineers was sitting close by and quickly restored the network through the backend. Things returned to normal almost immediately. That feeling of panic started to back off. The jokes started and we started to relax.
+
+
+
+<p>
+It took us another few hours to find and fix second and third order effects of my snafu. The network creation flow was broken -- fixed. An in-house monitoring system was dying silently -- fixed. And so on.
+
+
+
+<p align=center>
+<a title="Dilbert strip where he screwed up big-time" href="http://dilbert.com/strips/comic/1995-08-18/"><img src="http://dilbert.com/dyn/str_strip/000000000/00000000/0000000/000000/20000/1000/000/21076/21076.strip.gif" alt="Dilbert.com" border="0"></a>
+
+
+
+<p>
+I learned four lessons:
+
+<p>
+<ol>
+	<li><strong>Undo is your friend.</strong> The tooling or features to revert your change will take time, but you will be happy to have it if you ever need it.</li>
+	<li><strong>Make changes during the day.</strong> Resolving a hairy problem is hard if you don't have the right people, and when the people you do have are tired and foggy. This incident might have taken hours to resolve instead of minutes in the middle of the night.</li>
+	<li><strong>It's not over until it's over.</strong> Once in crisis mode, you're eager to be get out of it. Once the main problem is solved it is tempting to exhale, go to lunch, go back to bed, whatever. But aftereffects might take a while to show up, or may just be harder to find.</li>
+	<li><strong>Disproportionate effects.</strong> We all know that our complex systems nonlinear failure modes. Incidents like these are reminders that small changes have big effects. Said another way, even small things should be taken seriously.</li>
+</ol>
+
+<p>
+My time at Akamai had prepared me well for managing a crisis. But it's nice to have a refresher course every now and then.
+
+
+
+ </body></html>
