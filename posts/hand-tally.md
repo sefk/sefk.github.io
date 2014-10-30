@@ -54,13 +54,11 @@ will still be timely and accurate.
 
 For the curious few, check out my [Halloween Traffic Spreadsheet][sheet].
 
-Two postscripts.  First, Please stop spreading that [NASA Space Pen story][ww].
-I'm sure you've heard it: how do you write in zero G? Americans
-over-engineered it and commissioned a multi-million dollar space
-pen project; while those scrappy can-do Russians used pencils
-instead.  Well, this story has been 
-[debunked by the good people at Snopes][debunk] 
-and NASA's reputation is in good stead.
+Two postscripts.  First, Please stop spreading that
+[NASA Space Pen story][ww].  I'm sure you've heard it: how do you write in zero G?
+the wasteful Americans commissioned a multi-million dollar space
+pen project; the scrappy can-do Russians used pencils.  Well, this
+story has been [debunked by the good people at Snopes][debunk].
 
 And second, I'd like to plug Tony and Tom's "day job", [Stonehearth][].
 I think of it as Starcraft meets Minecraft.  I am so eager to play
