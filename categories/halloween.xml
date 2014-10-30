@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Halloween)</title><link>http://sef.kloninger.com/</link><description></description><language>en</language><lastBuildDate>Tue, 28 Oct 2014 22:56:52 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sometimes, Low Tech is the Best Tech</title><link>http://sef.kloninger.com/posts/low-tech.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tallies.jpg" alt="Tally Marks" width="289" height="174"&gt;&lt;/p&gt;
-&lt;p&gt;For the past five years I've gathered statistics on how many kids
-(and too-old teenagers) have come trick-or-treating on Halloween.
-But this blog post isn't about that.  If you want to read more about
-that, check out the posts from &lt;a href="http://localhost:8000/posts/201311halloween-2013.html"&gt;last year&lt;/a&gt; or 
-&lt;a href="http://localhost:8000/posts/201210halloween-candy-data.html"&gt;the year before&lt;/a&gt;.&lt;br&gt;
-This post is about how I actually track those stats, and how I don't.&lt;/p&gt;
-&lt;p&gt;Every year &lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><category>Tech</category><guid>http://sef.kloninger.com/posts/low-tech.html</guid><pubDate>Tue, 28 Oct 2014 08:35:23 GMT</pubDate></item></channel></rss>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Halloween)</title><link>http://sef.kloninger.com/</link><description></description><language>en</language><lastBuildDate>Thu, 30 Oct 2014 09:20:40 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>In Praise of the Hand Tally</title><link>http://sef.kloninger.com/posts/hand-tally.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tallies.jpg" alt="Tally Marks" width="height=174"&gt;&lt;/p&gt;
+&lt;p&gt;For the past five years I've gathered statistics on how many
+trick-or-treaters have come by on Halloween.  If you want to read
+about that, check out posts from &lt;a href="http://sef.kloninger.com/posts/201311halloween-2013.html"&gt;last year&lt;/a&gt; or &lt;a href="http://sef.kloninger.com/posts/201210halloween-candy-data.html"&gt;the year before&lt;/a&gt;.
+This post is about &lt;strong&gt;how&lt;/strong&gt; I track those stats, and how I don't.&lt;/p&gt;
+&lt;p&gt;Every year I'm tempted to build some fancy system to collect and
+manage these statistics.  Wouldn't it be fun, say, to wire up some
+Raspberry Pi sensor that automatically counts and tweets running
+totals?  It wouldn't be &lt;em&gt;that&lt;/em&gt; hard and sounds like fun.&lt;/p&gt;
+&lt;p&gt;The problem is making something like that reliable.  You'd have to
+do all the un-fun stuff, like testing and contingency planning.  If
+your baseline is a clipboard, paper, and a ball point pen, your bar
+for failure is basically "never".  Even if I did build something
+fancy I'd still end up doing backup tallies by hand.  At this human
+scale, the tech ends up being a fun gimmick, not required.&lt;/p&gt;
+&lt;p&gt;It reminds me of a story from friend [Tony].  Tony
+and his brother &lt;a href="https://twitter.com/ProtomCannon"&gt;Tom&lt;/a&gt; run an giant gaming convention every year,
+&lt;a href="http://evo.shoryuken.com/"&gt;Evolution Championship Series&lt;/a&gt; (Evo for short).  It's a
+multi-day convention in Las Vegas that attracts something like ten
+thousand participants.  They run the whole thing with their two
+other founders and some friends — I'm sure they have some
+paid help now, but the four guys are the main ones.  It's impressive.&lt;/p&gt;
+&lt;p align="center"&gt;&lt;img src="http://evo.shoryuken.com/wp-content/uploads/2014/02/9450177474_3d2e293e9d_b.jpg" width="400"&gt;&lt;/p&gt;
+
+&lt;p&gt;Given that Tony and Tom are strong engineers, I figured this would
+be a slick high-tech operation.  Not so.&lt;/p&gt;
+&lt;p&gt;Tony said they've tried tech at various points and it wasn't worth
+it.  It's easy to see why that is tempting: they have multiple
+mobile coordinators that need access to changing, shared information,
+like brackets and schedules.  But what they've tried has let them
+down.  Usually it's not the hard parts that fail, but the basics,
+like batteries and wireless connectivity.  So they still run this
+off of printouts and voice communications (cell phones/walkie-talkies)
+and periodic data dumps.&lt;/p&gt;
+&lt;p&gt;And so, this year I'll be gathering my Halloween stats like I always
+have: clipboard, pen, and a hand-held &lt;a href="http://www.amazon.com/STEELMASTER-Counter-Inches-Silver-200100492/dp/B0089KJSFQ/ref=sr_1_3"&gt;tally counter&lt;/a&gt;.  The data
+will still be timely and accurate.&lt;/p&gt;
+&lt;p&gt;For the curious few, check out my &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;Halloween Traffic Spreadsheet&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Two postscripts.  First, Please stop spreading that 
+&lt;a href="https://www.youtube.com/watch?v=LQy1DH38E5g"&gt;NASA Space Pen story&lt;/a&gt;.&lt;br&gt;
+You've heard it: how do you write in zero G? Americans
+over-engineered it and commissioned a multi-million dollar space
+pen project; while those scrappy can-do Russians used pencils
+instead.  Well, this story has been 
+&lt;a href="http://www.snopes.com/business/genius/spacepen.asp"&gt;debunked by the good people at Snopes&lt;/a&gt; 
+and NASA's reputation is in good stead.&lt;/p&gt;
+&lt;p&gt;And second, I'd like to plug Tony and Tom's "day job", &lt;a href="http://stonehearth.net/"&gt;Stonehearth&lt;/a&gt;.
+I think of it as Starcraft meets Minecraft.  I am so eager to play
+it when it lands.&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><category>Tech</category><guid>http://sef.kloninger.com/posts/hand-tally.html</guid><pubDate>Thu, 30 Oct 2014 16:20:00 GMT</pubDate></item></channel></rss>
