@@ -28,7 +28,7 @@ scale, the tech ends up being a fun gimmick, not required.
 
 It reminds me of a story from friend [Tony].  Tony
 and his brother [Tom] run a giant gaming convention every year,
-[Evolution Championship Series][evo] (Evo for short).  It's a
+the [Evolution Championship Series][evo] (Evo for short).  It's a
 multi-day convention in Las Vegas that attracts something like ten
 thousand participants.  They run the whole thing with their two
 other founders and some friends &mdash; I'm sure they have some
@@ -54,9 +54,8 @@ will still be timely and accurate.
 
 For the curious few, check out my [Halloween Traffic Spreadsheet][sheet].
 
-Two postscripts.  First, Please stop spreading that 
-[NASA Space Pen story][ww].  
-You've heard it: how do you write in zero G? Americans
+Two postscripts.  First, Please stop spreading that [NASA Space Pen story][ww].
+I'm sure you've heard it: how do you write in zero G? Americans
 over-engineered it and commissioned a multi-million dollar space
 pen project; while those scrappy can-do Russians used pencils
 instead.  Well, this story has been 
