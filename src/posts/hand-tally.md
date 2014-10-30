@@ -27,7 +27,7 @@ fancy I'd still end up doing backup tallies by hand.  At this human
 scale, the tech ends up being a fun gimmick, not required.
 
 It reminds me of a story from friend [Tony].  Tony
-and his brother [Tom] run an giant gaming convention every year,
+and his brother [Tom] run a giant gaming convention every year,
 [Evolution Championship Series][evo] (Evo for short).  It's a
 multi-day convention in Las Vegas that attracts something like ten
 thousand participants.  They run the whole thing with their two
