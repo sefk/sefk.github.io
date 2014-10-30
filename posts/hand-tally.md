@@ -34,7 +34,10 @@ thousand participants.  They run the whole thing with their two
 other founders and some friends &mdash; I'm sure they have some
 paid help now, but the four guys are the main ones.  It's impressive.
 
-<p align=center><img src="http://evo.shoryuken.com/wp-content/uploads/2014/02/9450177474_3d2e293e9d_b.jpg"</p>
+<p align=center>
+<img src="http://evo.shoryuken.com/wp-content/uploads/2014/02/9450177474_3d2e293e9d_b.jpg"
+style="padding-top:20px; padding-bottom:20px">
+</p>
 
 Given that Tony and Tom are strong engineers, I figured this would
 be a slick high-tech operation.  Not so.
