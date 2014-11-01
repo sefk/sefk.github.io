@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><language>en</language><lastBuildDate>Thu, 30 Oct 2014 09:33:52 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>In Praise of the Hand Tally</title><link>http://sef.kloninger.com/posts/hand-tally.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tallies.jpg" alt="Tally Marks" width="height=174"&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><language>en</language><lastBuildDate>Sat, 01 Nov 2014 02:36:00 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Fewer Trick or Treaters This Year</title><link>http://sef.kloninger.com/posts/halloween-2014.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;This year Halloween tally was 208.  I don't know why we have 32%
+fewer trick-or-treaters than we had last year, which was down 20%
+from the year before that.  Maybe the rain earlier in the day kept
+people home.  Maybe because it was Friday people opted for parties
+instead of going from door to door.  I don't know.&lt;/p&gt;
+&lt;script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"&gt;
+{"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE&amp;transpose=1&amp;headers=0&amp;range=C20%3AH21&amp;gid=9&amp;pub=1","options":{"titleTextStyle":{"bold":true,"color":"#000","fontSize":"24"},"series":{"0":{"color":"#b45f06"}},"animation":{"duration":500},"width":750,"hAxis":{"useFormatFromData":true,"title":"","minValue":null,"viewWindowMode":null,"textStyle":{"bold":true,"color":"#222","fontSize":"20"},"viewWindow":null,"maxValue":null},"vAxes":[{"useFormatFromData":true,"title":"","minValue":0,"viewWindowMode":"explicit","textStyle":{"bold":true,"color":"#222","fontSize":"20"},"logScale":false,"viewWindow":{"min":0,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"logScale":false,"viewWindow":{"min":null,"max":null},"maxValue":null}],"booleanRole":"certainty","title":"Trick or Treaters, Menlo Park, CA","height":300,"legend":"none","useFirstColumnAsDomain":true,"isStacked":false,"tooltip":{}},"state":{},"view":{},"isDefaultVisualization":false,"chartType":"ColumnChart","chartName":"Chart 4"}
+&lt;/script&gt;
+
+&lt;p&gt;Thanks to my friend Stuart for being on this year's data gathering
+crew.  As usual, the full story is 
+&lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;in the numbers&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><guid>http://sef.kloninger.com/posts/halloween-2014.html</guid><pubDate>Sat, 01 Nov 2014 09:30:00 GMT</pubDate></item><item><title>In Praise of the Hand Tally</title><link>http://sef.kloninger.com/posts/hand-tally.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tallies.jpg" alt="Tally Marks" width="height=174"&gt;&lt;/p&gt;
 &lt;p&gt;For the past five years I've gathered statistics on how many
 trick-or-treaters have come by on Halloween.  If you want to read
 about that, check out posts from &lt;a href="http://sef.kloninger.com/posts/201311halloween-2013.html"&gt;last year&lt;/a&gt; or &lt;a href="http://sef.kloninger.com/posts/201210halloween-candy-data.html"&gt;the year before&lt;/a&gt;.
@@ -510,37 +521,4 @@ environments, DNS, github repos, etc.) but for me that's no problem.&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;This &lt;a href="http://kushaldas.in/posts/importing-your-wordpress-blog-to-nikola.html#uploading-your-blog-site-as-github-pages"&gt;helpful post by Kaushal Das&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/switching-to-static.html</guid><pubDate>Mon, 30 Dec 2013 09:35:23 GMT</pubDate></item><item><title>Airmail FTW</title><link>http://sef.kloninger.com/posts/201312airmail.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-454" style="border: 0px;" alt="airmail" src="http://sef.kloninger.com/f/airmail.png" width="179" height="179"&gt;Finally a thick-client email program that seems to have stuck. So far I am really liking &lt;a href="http://airmailapp.com/"&gt;Airmail&lt;/a&gt;.
-
-&lt;p&gt;
-For years I've flipped between various Mac fat clients and the GMail web interface. The web interface keeps winning:
-
-&lt;/p&gt;&lt;p&gt;
-&lt;/p&gt;&lt;ul&gt;
-	&lt;li&gt;Outstanding search&lt;/li&gt;
-	&lt;li&gt;Great keyboard shortcuts (go Vi!)&lt;/li&gt;
-	&lt;li&gt;Very good use of screen real estate&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-But the killer is the reliance on a rock-solid Internet connection, and GMail's own slowdowns. Even though there is an offline mode, it is such a downgrade it's not worth using. So if you need to use offline you're in bad shape; same if you're on a slow or lossy connection, or if GMail is having a bad day.  Sadly, that's pretty often these days.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-Airmail is cheap (&lt;a href="https://itunes.apple.com/us/app/airmail/id573171375?mt=12"&gt;$1.99 in the App Store&lt;/a&gt;) and super featureful. It coexists well with GMail's paradigm (archive vs. delete, threading includes sent items, drafts). Great configuration options. Visually pleasing. Robust.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-There are really only three places where it has fallen short for me:
-
-&lt;/p&gt;&lt;p&gt;
-&lt;/p&gt;&lt;ul&gt;
-	&lt;li&gt;I miss GMail's tabs. Those are still the best way to filter mail, and I was impressed with how well that feature worked and quickly became natural.&lt;/li&gt;
-	&lt;li&gt;Search. Airmail's isn't bad, but nothing is as good at this as Google's own.&lt;/li&gt;
-	&lt;li&gt;Gmail (with Chrome) has a great feature where you can drop in a picture and it is resized to look good.  Lacking that I now have to manually resize my giant retina-display screenshots.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-So-long to &lt;a href="http://sparrowmailapp.com/"&gt;Sparrow&lt;/a&gt; and &lt;a href="http://www.apple.com/osx/apps/#mail"&gt;Mail.app&lt;/a&gt; and &lt;a href="http://mailplaneapp.com/"&gt;Mailplane&lt;/a&gt;. Or until someone does really nails &lt;a href="https://www.mailpile.is/"&gt;self-hosting&lt;/a&gt;.&lt;/p&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/201312airmail.html</guid><pubDate>Tue, 03 Dec 2013 04:10:50 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/switching-to-static.html</guid><pubDate>Mon, 30 Dec 2013 09:35:23 GMT</pubDate></item></channel></rss>
