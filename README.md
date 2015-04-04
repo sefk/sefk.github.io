@@ -1,9 +1,6 @@
 # sef.kloninger.com AKA sefk.github.io 
 
-This is my personal blog.  It is a Nikola static site hosted by Github
-pages.  This repo contains both the source files, in the ```src```
-subdirectory, as well as the resulting product itself, in the top level
-directory.
+This is my personal blog.  It is a Nikola static site hosted by Github pages.  This repo contains both the source files, in the ```src``` subdirectory, as well as the resulting product itself, in the top level directory.
 
 # Instructions
 
@@ -25,6 +22,25 @@ The general workflow is:
 
 4. **Repeat**
 
-Note: I used to use "livereload -b ..." to accomplish this same thing,
-and that works fine, but Nikola's built in feature for this is nicer.
+Note: I used to use "livereload -b ..." to accomplish this same thing, and that works fine, but Nikola's built in feature for this is nicer.
 
+
+## Install Notes
+
+### lxml error
+
+If you're seeing this:
+
+    fatal error: 'libxml/xmlversion.h' file not found
+    error: command 'cc' failed with exit status 1
+
+Then try this:
+
+    brew install libxml2
+    brew install libxslt
+    brew link libxml2 --force
+    brew link libxslt --force
+
+    CPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 CFLAGS=-Qunused-arguments CPPFLAGS=-Qunused-arguments pip install lxml
+
+Not sure the brew steps are req'd or not. That last step is what did it. From [this StackOverflow answer](http://stackoverflow.com/questions/19548011/cannot-install-lxml-on-mac-os-x-10-9) 

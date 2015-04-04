@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Tech)</title><link>http://sef.kloninger.com/</link><description></description><language>en</language><lastBuildDate>Thu, 30 Oct 2014 09:33:52 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>In Praise of the Hand Tally</title><link>http://sef.kloninger.com/posts/hand-tally.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tallies.jpg" alt="Tally Marks" width="height=174"&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Tech)</title><link>http://sef.kloninger.com/</link><description></description><language>en</language><lastBuildDate>Fri, 03 Apr 2015 17:42:47 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>In Praise of the Hand Tally</title><link>http://sef.kloninger.com/posts/hand-tally.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tallies.jpg" alt="Tally Marks" width="height=174"&gt;&lt;/p&gt;
 &lt;p&gt;For the past five years I've gathered statistics on how many
 trick-or-treaters have come by on Halloween.  If you want to read
 about that, check out posts from &lt;a href="http://sef.kloninger.com/posts/201311halloween-2013.html"&gt;last year&lt;/a&gt; or &lt;a href="http://sef.kloninger.com/posts/201210halloween-candy-data.html"&gt;the year before&lt;/a&gt;.
@@ -46,7 +46,7 @@ pen project; the scrappy can-do Russians used pencils.  Well, this
 story has been &lt;a href="http://www.snopes.com/business/genius/spacepen.asp"&gt;debunked by the good people at Snopes&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;And second, I'd like to plug Tony and Tom's "day job", &lt;a href="http://stonehearth.net/"&gt;Stonehearth&lt;/a&gt;.
 I think of it as Starcraft meets Minecraft.  I am so eager to play
-it when it lands.&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><category>Tech</category><guid>http://sef.kloninger.com/posts/hand-tally.html</guid><pubDate>Thu, 30 Oct 2014 16:20:00 GMT</pubDate></item><item><title>Feedback Without Tips</title><link>http://sef.kloninger.com/posts/tips.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tip-oneill.jpg" alt="Tip O'Neill" width="30%"&gt;&lt;/p&gt;
+it when it lands.&lt;/p&gt;</description><category>Halloween</category><category>Tech</category><guid>http://sef.kloninger.com/posts/hand-tally.html</guid><pubDate>Thu, 30 Oct 2014 16:20:00 GMT</pubDate></item><item><title>Feedback Without Tips</title><link>http://sef.kloninger.com/posts/tips.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tip-oneill.jpg" alt="Tip O'Neill" width="30%"&gt;&lt;/p&gt;
 &lt;p&gt;I really don't like tipping. I'm not like &lt;a href="https://www.youtube.com/watch?v=Z-qV9wVGb38"&gt;Mr. Pink&lt;/a&gt;. It's
 not that I don't want my server or driver to get something extra.
 I just don't like the awkward social situation of deciding if this
@@ -71,7 +71,7 @@ to not have to fret about too much or too little:&lt;/p&gt;
 &lt;p&gt;Both of these services decouple feedback from money. Both avoid
 awkwardly changing money. I'd definitely pay a premium for that.&lt;/p&gt;
 &lt;p&gt;I wonder what other service business would benefit from decoupling
-feedback from money?&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/tips.html</guid><pubDate>Tue, 29 Apr 2014 03:07:00 GMT</pubDate></item><item><title>CS Students: Learn to Write</title><link>http://sef.kloninger.com/posts/learn-to-write.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/writing-hand.jpeg" alt="Writing Hand" width="40%"&gt;&lt;/p&gt;
+feedback from money?&lt;/p&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/tips.html</guid><pubDate>Tue, 29 Apr 2014 03:07:00 GMT</pubDate></item><item><title>CS Students: Learn to Write</title><link>http://sef.kloninger.com/posts/learn-to-write.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/writing-hand.jpeg" alt="Writing Hand" width="40%"&gt;&lt;/p&gt;
 &lt;p&gt;If I could do my college years over I would focus on writing. I
 would take courses that required a lot of writing, in the spirit
 of "learn by doing". I'd also take courses in the mechanics and
@@ -124,7 +124,7 @@ in history, but secretly take CS courses on the side. If you're
 super smart like him, and can manage getting both degrees, then
 you're awesome. But don't sacrifice the BA for the BS. I would
 &lt;strong&gt;love&lt;/strong&gt; to talk to a candidate with with a History BA and a Computer
-Science MS.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/learn-to-write.html</guid><pubDate>Sun, 26 Jan 2014 00:17:00 GMT</pubDate></item><item><title>Switching to Static</title><link>http://sef.kloninger.com/posts/switching-to-static.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tesla.jpg" alt="Nikola Tesla" width="195" height="228"&gt;&lt;/p&gt;
+Science MS.&lt;/p&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/learn-to-write.html</guid><pubDate>Sun, 26 Jan 2014 00:17:00 GMT</pubDate></item><item><title>Switching to Static</title><link>http://sef.kloninger.com/posts/switching-to-static.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tesla.jpg" alt="Nikola Tesla" width="195" height="228"&gt;&lt;/p&gt;
 &lt;p&gt;For those of you who frequently read this blog (n ≈ 0) you'll
 notice that it looks a bit different. I've moved it from my own
 hosted Wordpress instance to static pages generated by &lt;a href="http://www.getnikola.com/"&gt;Nikola&lt;/a&gt;
@@ -288,7 +288,7 @@ environments, DNS, github repos, etc.) but for me that's no problem.&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;This &lt;a href="http://kushaldas.in/posts/importing-your-wordpress-blog-to-nikola.html#uploading-your-blog-site-as-github-pages"&gt;helpful post by Kaushal Das&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/switching-to-static.html</guid><pubDate>Mon, 30 Dec 2013 09:35:23 GMT</pubDate></item><item><title>Airmail FTW</title><link>http://sef.kloninger.com/posts/201312airmail.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-454" style="border: 0px;" alt="airmail" src="http://sef.kloninger.com/f/airmail.png" width="179" height="179"&gt;Finally a thick-client email program that seems to have stuck. So far I am really liking &lt;a href="http://airmailapp.com/"&gt;Airmail&lt;/a&gt;.
+&lt;/ul&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/switching-to-static.html</guid><pubDate>Mon, 30 Dec 2013 09:35:23 GMT</pubDate></item><item><title>Airmail FTW</title><link>http://sef.kloninger.com/posts/201312airmail.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-454" style="border: 0px;" alt="airmail" src="http://sef.kloninger.com/f/airmail.png" width="179" height="179"&gt;Finally a thick-client email program that seems to have stuck. So far I am really liking &lt;a href="http://airmailapp.com/"&gt;Airmail&lt;/a&gt;.
 
 &lt;p&gt;
 For years I've flipped between various Mac fat clients and the GMail web interface. The web interface keeps winning:
