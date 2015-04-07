@@ -1,5 +1,5 @@
 <!--
-.. title: About Sef Kloninger
+.. title: About Me
 .. slug: about
 .. date: 2015/04/06 12:00
 -->

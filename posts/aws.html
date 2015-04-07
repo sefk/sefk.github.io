@@ -27,8 +27,10 @@
     
         <meta name="og:title" content="Lessons from Three Years Living in AWS">
         <meta name="og:url" content="http://sef.kloninger.com/posts/aws.html">
-            <meta name="og:description" content="I've spent the last three years building and operating services that are all-in on Amazon Web Services. This long post is my brain dump on many of the lessons I've learned along the way. 
-I wouldn't n">
+            <meta name="og:description" content="I've spent the last three years building and operating services
+that are all-in on Amazon Web Services. This long post is my brain
+dump on many of the lessons I've learned along the way.
+I wouldn't ne">
         <meta name="og:site_name" content="sef.kloninger.com">
         <meta name="og:type" content="article">
 
@@ -132,19 +134,57 @@ I wouldn't n">
 
     <div class="e-content entry-content" itemprop="articleBody text">
     <p><img style="float:right" class="postimage" src="../f/aws.png" alt="AWS" width="30%"></p>
-<p>I've spent the last three years building and operating services that are all-in on Amazon Web Services. This long post is my brain dump on many of the lessons I've learned along the way. </p>
-<p>I wouldn't necessarily call myself an Amazon fanboy, but I am generally really happy with their service and would use them again to build my business on. </p>
-<h3>The Real Power Is On Demand</h3>
+<p>I've spent the last three years building and operating services
+that are all-in on Amazon Web Services. This long post is my brain
+dump on many of the lessons I've learned along the way.</p>
+<p>I wouldn't necessarily call myself an Amazon fanboy, but I am
+generally really happy with their service and would use them again
+to build my business on.</p>
 <h3>AZ's Aren't All That Decoupled</h3>
+<p>Amazon makes a big fuss about how their Availability Zones are
+independent. Separate physical infrastructure (power, cooling) and
+infrastructure should keep things, well, separate. But there was
+an <a href="http://www.networkworld.com/article/2202805/cloud-computing/amazon-ec2-outage-calls--availability-zones--into-question.html">infamous Amazon outage</a> in their Northern Virginia site
+in 2011 that called into question the whole AZ thing. But that was
+just a fluke, right?</p>
+<p>Well, it <a href="https://www.reddit.com/r/aws/comments/2zpag7/aws_internal_dns_outage/">happened again just last month</a>, albeit on a much
+smaller scale. This time it was internal DNS that affected some
+VPC's that spanned availability zones in Oregon (US-WEST-2). It was
+definitely noticeable at Wavefront, where I was working at the time,
+and we got through it OK. But it "wasn't supposed to happen."</p>
+<p>The lesson is that AZ's are a good idea but don't bet the farm on
+them having truly decoupled failure modes.</p>
 <h3>S3 Is Amazing</h3>
+<p>As an engineer you just have to marvel at something that is well
+built. Whatever compromises they had to make were the right ones.
+Because as a user of Amazon's Simple Storage Service (S3) it occupies
+a really nice space: cheap, practically infinitely scalable, pretty
+fast, with good availability. And did I mention it was cheap? At
+<strong>$0.03</strong> per GB/mo you can store a lot of logs and videos.</p>
+<p>The key thing they did right was to not build on a filesystem, but
+instead their own BLOB store, <a href="http://www.allthingsdistributed.com/2007/10/amazons_dynamo.html">Dynamo</a> (the famous paper
+is linked from that post).</p>
+<p>When I was at Akamai we operated a storage service that fell short
+of these marks. Originally built on NetApp filers, and later farms
+of JBOD's, it was complicated and never got to the
+price/performance/availability neighborhood of S3. Now, I left
+Akamai in 2008 and they've likely built something better by now,
+but at least back then, we struggled with storage.</p>
+<p>You'll be amazed how much you can stick in S3 for so cheap. It
+really changes the way you think of building a system having something
+like that around that you can count on.</p>
 <h3>Secondary Services Just Work</h3>
-<p>It's safe to say that Amazon makes its money from their Big Kahuna services, especially EC2. But what they've been good at over the last few years they've continued to roll out a </p>
+<p>It's safe to say that Amazon makes its money from their Big Kahuna
+services, especially EC2. But what they've been good at over the
+last few years they've continued to roll out a</p>
 <h3>Qualify Machines Before Using</h3>
 <h3>Start With Machine IAM Roles</h3>
 <h3>CloudFormation No, Boto Yes</h3>
 <h3>Managing Costs: Spot's No, Reserved Yes</h3>
 <h3>VPC Yes, NAT No</h3>
 <h3>Support Isn't Great Unless You're Big</h3>
+<h3>The Real Power Is From On Demand</h3>
+<p>Most people have drunk the Koolaid on cloud computing, so I won't beat that horse here. I just want to recount two stories </p>
     </div>
     <aside class="postpromonav">
     <nav>
