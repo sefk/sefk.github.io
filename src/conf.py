@@ -93,12 +93,11 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 # (the same way you would do with a (translatable) setting.)
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-#       ('/stories/about.html', 'About'),
+        ('/stories/about.html', 'About'),
 #       ('/categories/index.html', 'Tags'),
 #       ('/rss.xml', 'RSS'),
         ('https://twitter.com/sefk', '@sefk'),
         ('https://github.com/sefk', 'GitHub'),
-        ('http://pgp.mit.edu/pks/lookup?op=vindex&search=0x1C97549F426D2123', 'GPG'),
         ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html', 'Resume'),
         ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf',  'PDF'),
         ('/archive.html', 'Archives'),

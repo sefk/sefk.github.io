@@ -3,7 +3,7 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Seven Things You're Not Supposed to Talk About | sef.kloninger.com</title>
+    <title>Lessons from Three Years Living in AWS | sef.kloninger.com</title>
 
     
             <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
@@ -11,7 +11,7 @@
     
             <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 
-      <link rel="canonical" href="http://sef.kloninger.com/posts/201311seven-things.html">
+      <link rel="canonical" href="http://sef.kloninger.com/posts/aws.html">
 
 
 
@@ -25,12 +25,10 @@
 
     <meta name="author" content="Sef Kloninger">
     
-        <meta name="og:title" content="The Seven Things You're Not Supposed to Talk About">
-        <meta name="og:url" content="http://sef.kloninger.com/posts/201311seven-things.html">
-            <meta name="og:description" content="I liked this week's episode of This American Life. The idea is there are seven topics that you should avoid in conversation because they are always boring. I like this list! 
-
-
-Here is the transcript.">
+        <meta name="og:title" content="Lessons from Three Years Living in AWS">
+        <meta name="og:url" content="http://sef.kloninger.com/posts/aws.html">
+            <meta name="og:description" content="I've spent the last three years building and operating services that are all-in on Amazon Web Services. This long post is my brain dump on many of the lessons I've learned along the way. 
+I wouldn't n">
         <meta name="og:site_name" content="sef.kloninger.com">
         <meta name="og:type" content="article">
 
@@ -90,7 +88,7 @@ Here is the transcript.">
                 
                     
     <li>
-    <a href="#" id="sourcelink">Source</a>
+    <a href="aws.md" id="sourcelink">Source</a>
     </li>
 
                 
@@ -113,19 +111,19 @@ Here is the transcript.">
     
     <header>
         
-    <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">The Seven Things You're Not Supposed to Talk About</a></h1>
+    <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Lessons from Three Years Living in AWS</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Sef Kloninger</span></p>
-            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2013-11-18T19:57:53-08:00" itemprop="datePublished" title="Publication date">2013-11-18 19:57</time></a></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2015-04-06T20:07:00-07:00" itemprop="datePublished" title="Publication date">2015-04-06 20:07</time></a></p>
                 <p class="commentline">
         
-    <a href="201311seven-things.html#disqus_thread" data-disqus-identifier="cache/posts/201311seven-things.html">Comments</a>
+    <a href="aws.html#disqus_thread" data-disqus-identifier="cache/posts/aws.html">Comments</a>
 
 
             
         </p>
-<p class="sourceline"><a href="#" id="sourcelink">Source</a></p>
+<p class="sourceline"><a href="aws.md" id="sourcelink">Source</a></p>
 
         </div>
         
@@ -133,53 +131,29 @@ Here is the transcript.">
     </header>
 
     <div class="e-content entry-content" itemprop="articleBody text">
-    <img class="alignright size-full wp-image-448" style="border: 0px;" alt="lucy-charliebrown" src="../f/lucy-charliebrown.jpeg" width="244" height="207">
-
-<p>
-I liked <a href="http://www.thisamericanlife.org/radio-archives/episode/511/the-seven-things-youre-not-supposed-to-talk-about">this week's episode of This American Life</a>. The idea is there are seven topics that you should avoid in conversation because they are always boring. <strong>I like this list! </strong>
-
-</p>
-<p>
-Here is the <a href="http://www.thisamericanlife.org/radio-archives/episode/511/transcript">transcript</a>.  I repeat the list here.
-
-</p>
-<p>
-</p>
-<ol>
-	<li>How you <strong>slept</strong>.</li>
-	<li>Your <strong>period</strong>.</li>
-	<li>
-<strong>Health</strong>. Of course if it's something serious, then that's conversation worthy, but normal sniffles, aches, and pains? No good.</li>
-	<li>Your <strong>dreams</strong>.  Not big aspirations, this is literally what you dreamt last night</li>
-	<li>
-<strong>Money</strong>.</li>
-	<li>
-<strong>Diet</strong>. What you can and can't eat.</li>
-	<li>
-<strong>Route</strong>. How you got here, what way you're going to get home.</li>
-</ol>
-
-<p>
-I will endeavor to not waste all of your time droning on about any of these topics.
-
-</p>
+    <p><img style="float:right" class="postimage" src="../f/aws.png" alt="AWS" width="30%"></p>
+<p>I've spent the last three years building and operating services that are all-in on Amazon Web Services. This long post is my brain dump on many of the lessons I've learned along the way. </p>
+<p>I wouldn't necessarily call myself an Amazon fanboy, but I am generally really happy with their service and would use them again to build my business on. </p>
+<h3>The Real Power Is On Demand</h3>
+<h3>AZ's Aren't All That Decoupled</h3>
+<h3>S3 Is Amazing</h3>
+<h3>Secondary Services Just Work</h3>
+<p>It's safe to say that Amazon makes its money from their Big Kahuna services, especially EC2. But what they've been good at over the last few years they've continued to roll out a </p>
+<h3>Qualify Machines Before Using</h3>
+<h3>Start With Machine IAM Roles</h3>
+<h3>CloudFormation No, Boto Yes</h3>
+<h3>Managing Costs: Spot's No, Reserved Yes</h3>
+<h3>VPC Yes, NAT No</h3>
+<h3>Support Isn't Great Unless You're Big</h3>
     </div>
     <aside class="postpromonav">
     <nav>
     
         <ul itemprop="keywords" class="tags">
-           <li><a class="tag p-category" href="../categories/life.html" rel="tag">Life</a></li>
+           <li><a class="tag p-category" href="../categories/tech.html" rel="tag">Tech</a></li>
         </ul>
 
     
-        <ul class="pager">
-            <li class="previous">
-                <a href="201311halloween-2013.html" rel="prev" title="Halloween Down 20%, But Still Solid">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="201312airmail.html" rel="next" title="Airmail FTW">Next post</a>
-            </li>
-        </ul>
 
     </nav>
     </aside>
@@ -190,9 +164,9 @@ I will endeavor to not waste all of your time droning on about any of these topi
         <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="sefkloninger",
-            disqus_url="http://sef.kloninger.com/posts/201311seven-things.html",
-        disqus_title="The Seven Things You're Not Supposed to Talk About",
-        disqus_identifier="cache/posts/201311seven-things.html",
+            disqus_url="http://sef.kloninger.com/posts/aws.html",
+        disqus_title="Lessons from Three Years Living in AWS",
+        disqus_identifier="cache/posts/aws.html",
         disqus_config = function () {
             this.language = "en";
         };
