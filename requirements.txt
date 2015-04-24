@@ -1,4 +1,4 @@
-Nikola==7.0.1
+Nikola
 markdown
 html2text
 ipython
