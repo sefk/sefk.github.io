@@ -18,15 +18,15 @@ casual experience with other IAAS/PAAS platforms.
 **S3 Is Amazing**. They made the right engineering choices and
 compromises: cheap, practically infinitely scalable, fast enough,
 with good availability. $0.03/GB/mo covers up for a lot of sins.
-Knowing its there changes how you build systems.
+Knowing it's there changes how you build systems.
 
 **IAM Machine Roles From The Start**. IAM with [Instance Metadata][im]
-is a powerful way to manage access rights. Trouble is you can't add
+is a powerful way to manage secrets and rights. Trouble is you can't add
 to existing machines. Provision with machine roles in big categories
-(e.g. app servers, utility machines, databases) even if they're
+(e.g. app servers, utility machines, databases) at the start, even if 
 just placeholders.
 
-**Availability Zones's Are Only Mostly Decoupled**. After the 2011
+**Availability Zoness Are Only Mostly Decoupled**. After the 2011
 [us-east-1 outage][2011] we were reassured that a coordinated 
 outage wouldn't happen again, but it happened again just
 [last month][2015].
@@ -36,13 +36,13 @@ work well, are cheap, and are handy. I'm speaking of SQS, SES,
 Glacier, even Elastic Transcoder. Who *wants* to run a durable queue
 again?
 
-**CloudFormation No**. It's near impossible to get right. My
-objection isn't YAML, I don't mind writing Ansible plays, it's the
-complexity/structure of CloudFormation that is impenetrable.  Plus
+**CloudFormation No**. It's tough to get right. My
+objection isn't programming in YAML, I don't mind writing Ansible plays, it's the
+complexity/structure of CloudFormation that is impenetrable. Plus
 even if you get it working once, you'd never run it again on something
-that worked.
+that is running.
 
-**Boto Yes.** Powerful and expressive. Don't script the CLI, use
+**Boto Yes**. Powerful and expressive. Don't script the CLI, use
 Boto. Easy as pie.
 
 **Qualify Machines Before Use**. Some VMs have lousy networking,
@@ -59,7 +59,7 @@ hard.
 introduce SPOFS and capacity chokepoints. Give your machines publicly
 routable IP's and use security groups.
 
-**ACL's Are A Pain**. Try to get as far as you can with just security
+**Network ACLs Are A Pain**. Try to get as far as you can with just security
 groups.
 
 **You'll Peer VPC's Someday**. Choose non-overlapping subnet IP ranges
@@ -74,7 +74,7 @@ spend the money you save by using spot on swear jar fees.
 and forth. There's a little bit of extra Chef love w/ AWS but not enough to tip
 the scales in your decision I'd reckon. 
 
-**Tech Support Is Terrible Unless You're Big**. My [last little
+**Tech Support Is Terrible**. My [last little
 startup][wf] didn't get much out of the [business level tech
 support][sup] we bought. We needed it so we could call in to get
 help when we needed it, and we used that for escalating some problems.
@@ -82,13 +82,13 @@ It was nice to have a number to call when I urgently need to up a
 system limit, say. But debugging something real, like a networking
 problem? Pretty rough.
 
-Stanford, on the other hand, had a named rep who was responsive and
-helpful. I guess she was sales, but I used her freely on support
-issues and she worked the backchannels for us. Presumably this is
-what any big/important customer would get, that's just not you,
-sorry.
+**...Unless You Are Big**. Stanford, on the other hand, had a named
+rep who was responsive and helpful. I guess she was sales, but I
+used her freely on support issues and she worked the backchannels
+for us. Presumably this is what any big/important customer would
+get, that's just not you, sorry.
 
-**The Real Power Is Being On Demand**. I'm reaffirming cloud
+**The Real Power Is On Demand**. I'm reaffirming cloud
 koolaid here. Running this way lets you build and run systems
 differently, *much better*. I've relied on the cloud this to bring
 up emergency capacity. I've used it to convert a class of machines

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Tech)</title><link>http://sef.kloninger.com/</link><description></description><atom:link href="http://sef.kloninger.com/categories/tech.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 24 Apr 2015 07:10:20 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Lessons from Three Years in AWS</title><link>http://sef.kloninger.com/posts/aws.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/aws.png" alt="AWS Logo" width="30%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Tech)</title><link>http://sef.kloninger.com/</link><description></description><atom:link href="http://sef.kloninger.com/categories/tech.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 24 Apr 2015 20:49:37 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Lessons from Three Years in AWS</title><link>http://sef.kloninger.com/posts/aws.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/aws.png" alt="AWS Logo" width="30%"&gt;&lt;/p&gt;
 &lt;p&gt;I've spent the last three years building and operating web sites
 with Amazon Web Services and here are a few lessons I've learned. 
 But I first have to come clean that I'm a fan of AWS with only
@@ -7,13 +7,13 @@ casual experience with other IAAS/PAAS platforms.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;S3 Is Amazing&lt;/strong&gt;. They made the right engineering choices and
 compromises: cheap, practically infinitely scalable, fast enough,
 with good availability. $0.03/GB/mo covers up for a lot of sins.
-Knowing its there changes how you build systems.&lt;/p&gt;
+Knowing it's there changes how you build systems.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;IAM Machine Roles From The Start&lt;/strong&gt;. IAM with &lt;a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html"&gt;Instance Metadata&lt;/a&gt;
-is a powerful way to manage access rights. Trouble is you can't add
+is a powerful way to manage secrets and rights. Trouble is you can't add
 to existing machines. Provision with machine roles in big categories
-(e.g. app servers, utility machines, databases) even if they're
+(e.g. app servers, utility machines, databases) at the start, even if 
 just placeholders.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Availability Zones's Are Only Mostly Decoupled&lt;/strong&gt;. After the 2011
+&lt;p&gt;&lt;strong&gt;Availability Zoness Are Only Mostly Decoupled&lt;/strong&gt;. After the 2011
 &lt;a href="http://www.networkworld.com/article/2202805/cloud-computing/amazon-ec2-outage-calls--availability-zones--into-question.html"&gt;us-east-1 outage&lt;/a&gt; we were reassured that a coordinated 
 outage wouldn't happen again, but it happened again just
 &lt;a href="https://www.reddit.com/r/aws/comments/2zpag7/aws_internal_dns_outage/"&gt;last month&lt;/a&gt;.&lt;/p&gt;
@@ -21,12 +21,12 @@ outage wouldn't happen again, but it happened again just
 work well, are cheap, and are handy. I'm speaking of SQS, SES,
 Glacier, even Elastic Transcoder. Who &lt;em&gt;wants&lt;/em&gt; to run a durable queue
 again?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;CloudFormation No&lt;/strong&gt;. It's near impossible to get right. My
-objection isn't YAML, I don't mind writing Ansible plays, it's the
-complexity/structure of CloudFormation that is impenetrable.  Plus
+&lt;p&gt;&lt;strong&gt;CloudFormation No&lt;/strong&gt;. It's tough to get right. My
+objection isn't programming in YAML, I don't mind writing Ansible plays, it's the
+complexity/structure of CloudFormation that is impenetrable. Plus
 even if you get it working once, you'd never run it again on something
-that worked.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Boto Yes.&lt;/strong&gt; Powerful and expressive. Don't script the CLI, use
+that is running.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Boto Yes&lt;/strong&gt;. Powerful and expressive. Don't script the CLI, use
 Boto. Easy as pie.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Qualify Machines Before Use&lt;/strong&gt;. Some VMs have lousy networking,
 presumably due to a chatty same-host or same-rack neighbor. Test
@@ -39,7 +39,7 @@ hard.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;NAT No&lt;/strong&gt;. You think that'll improve security, but it will just
 introduce SPOFS and capacity chokepoints. Give your machines publicly
 routable IP's and use security groups.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;ACL's Are A Pain&lt;/strong&gt;. Try to get as far as you can with just security
+&lt;p&gt;&lt;strong&gt;Network ACLs Are A Pain&lt;/strong&gt;. Try to get as far as you can with just security
 groups.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;You'll Peer VPC's Someday&lt;/strong&gt;. Choose non-overlapping subnet IP ranges
 at the start. It's hard to change later.&lt;/p&gt;
@@ -50,19 +50,19 @@ spend the money you save by using spot on swear jar fees.&lt;/p&gt;
 &lt;em&gt;all&lt;/em&gt; that different when it comes down to it. Just don't dither back
 and forth. There's a little bit of extra Chef love w/ AWS but not enough to tip
 the scales in your decision I'd reckon. &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tech Support Is Terrible Unless You're Big&lt;/strong&gt;. My &lt;a href="http://www.wavefront.com/"&gt;last little
+&lt;p&gt;&lt;strong&gt;Tech Support Is Terrible&lt;/strong&gt;. My &lt;a href="http://www.wavefront.com/"&gt;last little
 startup&lt;/a&gt; didn't get much out of the &lt;a href="https://aws.amazon.com/premiumsupport/"&gt;business level tech
 support&lt;/a&gt; we bought. We needed it so we could call in to get
 help when we needed it, and we used that for escalating some problems.
 It was nice to have a number to call when I urgently need to up a
 system limit, say. But debugging something real, like a networking
 problem? Pretty rough.&lt;/p&gt;
-&lt;p&gt;Stanford, on the other hand, had a named rep who was responsive and
-helpful. I guess she was sales, but I used her freely on support
-issues and she worked the backchannels for us. Presumably this is
-what any big/important customer would get, that's just not you,
-sorry.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;The Real Power Is Being On Demand&lt;/strong&gt;. I'm reaffirming cloud
+&lt;p&gt;&lt;strong&gt;...Unless You Are Big&lt;/strong&gt;. Stanford, on the other hand, had a named
+rep who was responsive and helpful. I guess she was sales, but I
+used her freely on support issues and she worked the backchannels
+for us. Presumably this is what any big/important customer would
+get, that's just not you, sorry.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Real Power Is On Demand&lt;/strong&gt;. I'm reaffirming cloud
 koolaid here. Running this way lets you build and run systems
 differently, &lt;em&gt;much better&lt;/em&gt;. I've relied on the cloud this to bring
 up emergency capacity. I've used it to convert a class of machines

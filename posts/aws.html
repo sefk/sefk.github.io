@@ -145,13 +145,13 @@ casual experience with other IAAS/PAAS platforms.</p>
 <p><strong>S3 Is Amazing</strong>. They made the right engineering choices and
 compromises: cheap, practically infinitely scalable, fast enough,
 with good availability. $0.03/GB/mo covers up for a lot of sins.
-Knowing its there changes how you build systems.</p>
+Knowing it's there changes how you build systems.</p>
 <p><strong>IAM Machine Roles From The Start</strong>. IAM with <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html">Instance Metadata</a>
-is a powerful way to manage access rights. Trouble is you can't add
+is a powerful way to manage secrets and rights. Trouble is you can't add
 to existing machines. Provision with machine roles in big categories
-(e.g. app servers, utility machines, databases) even if they're
+(e.g. app servers, utility machines, databases) at the start, even if 
 just placeholders.</p>
-<p><strong>Availability Zones's Are Only Mostly Decoupled</strong>. After the 2011
+<p><strong>Availability Zoness Are Only Mostly Decoupled</strong>. After the 2011
 <a href="http://www.networkworld.com/article/2202805/cloud-computing/amazon-ec2-outage-calls--availability-zones--into-question.html">us-east-1 outage</a> we were reassured that a coordinated 
 outage wouldn't happen again, but it happened again just
 <a href="https://www.reddit.com/r/aws/comments/2zpag7/aws_internal_dns_outage/">last month</a>.</p>
@@ -159,12 +159,12 @@ outage wouldn't happen again, but it happened again just
 work well, are cheap, and are handy. I'm speaking of SQS, SES,
 Glacier, even Elastic Transcoder. Who <em>wants</em> to run a durable queue
 again?</p>
-<p><strong>CloudFormation No</strong>. It's near impossible to get right. My
-objection isn't YAML, I don't mind writing Ansible plays, it's the
-complexity/structure of CloudFormation that is impenetrable.  Plus
+<p><strong>CloudFormation No</strong>. It's tough to get right. My
+objection isn't programming in YAML, I don't mind writing Ansible plays, it's the
+complexity/structure of CloudFormation that is impenetrable. Plus
 even if you get it working once, you'd never run it again on something
-that worked.</p>
-<p><strong>Boto Yes.</strong> Powerful and expressive. Don't script the CLI, use
+that is running.</p>
+<p><strong>Boto Yes</strong>. Powerful and expressive. Don't script the CLI, use
 Boto. Easy as pie.</p>
 <p><strong>Qualify Machines Before Use</strong>. Some VMs have lousy networking,
 presumably due to a chatty same-host or same-rack neighbor. Test
@@ -177,7 +177,7 @@ hard.</p>
 <p><strong>NAT No</strong>. You think that'll improve security, but it will just
 introduce SPOFS and capacity chokepoints. Give your machines publicly
 routable IP's and use security groups.</p>
-<p><strong>ACL's Are A Pain</strong>. Try to get as far as you can with just security
+<p><strong>Network ACLs Are A Pain</strong>. Try to get as far as you can with just security
 groups.</p>
 <p><strong>You'll Peer VPC's Someday</strong>. Choose non-overlapping subnet IP ranges
 at the start. It's hard to change later.</p>
@@ -188,19 +188,19 @@ spend the money you save by using spot on swear jar fees.</p>
 <em>all</em> that different when it comes down to it. Just don't dither back
 and forth. There's a little bit of extra Chef love w/ AWS but not enough to tip
 the scales in your decision I'd reckon. </p>
-<p><strong>Tech Support Is Terrible Unless You're Big</strong>. My <a href="http://www.wavefront.com/">last little
+<p><strong>Tech Support Is Terrible</strong>. My <a href="http://www.wavefront.com/">last little
 startup</a> didn't get much out of the <a href="https://aws.amazon.com/premiumsupport/">business level tech
 support</a> we bought. We needed it so we could call in to get
 help when we needed it, and we used that for escalating some problems.
 It was nice to have a number to call when I urgently need to up a
 system limit, say. But debugging something real, like a networking
 problem? Pretty rough.</p>
-<p>Stanford, on the other hand, had a named rep who was responsive and
-helpful. I guess she was sales, but I used her freely on support
-issues and she worked the backchannels for us. Presumably this is
-what any big/important customer would get, that's just not you,
-sorry.</p>
-<p><strong>The Real Power Is Being On Demand</strong>. I'm reaffirming cloud
+<p><strong>...Unless You Are Big</strong>. Stanford, on the other hand, had a named
+rep who was responsive and helpful. I guess she was sales, but I
+used her freely on support issues and she worked the backchannels
+for us. Presumably this is what any big/important customer would
+get, that's just not you, sorry.</p>
+<p><strong>The Real Power Is On Demand</strong>. I'm reaffirming cloud
 koolaid here. Running this way lets you build and run systems
 differently, <em>much better</em>. I've relied on the cloud this to bring
 up emergency capacity. I've used it to convert a class of machines
