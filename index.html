@@ -92,10 +92,102 @@
 <div class="postindex">
     <article class="h-entry post-text">
     <header>
+        <h1 class="p-name entry-title"><a href="posts/aws.html" class="u-url">Lessons from Three Years in AWS</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Sef Kloninger</span></p>
+            <p class="dateline"><a href="posts/aws.html" rel="bookmark"><time class="published dt-published" datetime="2015-04-24T00:10:00-07:00" title="2015-04-24 00:10">2015-04-24 00:10</time></a></p>
+                <p class="commentline">
+        
+    <a href="posts/aws.html#disqus_thread" data-disqus-identifier="cache/posts/aws.html">Comments</a>
+
+
+        </p>
+</div>
+    </header>
+    <div class="e-content entry-content">
+    <div>
+<p><img style="float:right" class="postimage" src="f/aws.png" alt="AWS Logo" width="30%"></p>
+<p>I've spent the last three years building and operating web sites
+with Amazon Web Services and here are a few lessons I've learned. 
+But I first have to come clean that I'm a fan of AWS with only
+casual experience with other IAAS/PAAS platforms.</p>
+<p><strong>S3 Is Amazing</strong>. They made the right engineering choices and
+compromises: cheap, practically infinitely scalable, fast enough,
+with good availability. $0.03/GB/mo covers up for a lot of sins.
+Knowing its there changes how you build systems.</p>
+<p><strong>IAM Machine Roles From The Start</strong>. IAM with <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html">Instance Metadata</a>
+is a powerful way to manage access rights. Trouble is you can't add
+to existing machines. Provision with machine roles in big categories
+(e.g. app servers, utility machines, databases) even if they're
+just placeholders.</p>
+<p><strong>Availability Zones's Are Only Mostly Decoupled</strong>. After the 2011
+<a href="http://www.networkworld.com/article/2202805/cloud-computing/amazon-ec2-outage-calls--availability-zones--into-question.html">us-east-1 outage</a> we were reassured that a coordinated 
+outage wouldn't happen again, but it happened again just
+<a href="https://www.reddit.com/r/aws/comments/2zpag7/aws_internal_dns_outage/">last month</a>.</p>
+<p><strong>They Will Lock You In And You'll Like It</strong>. They secondary services
+work well, are cheap, and are handy. I'm speaking of SQS, SES,
+Glacier, even Elastic Transcoder. Who <em>wants</em> to run a durable queue
+again?</p>
+<p><strong>CloudFormation No</strong>. It's near impossible to get right. My
+objection isn't YAML, I don't mind writing Ansible plays, it's the
+complexity/structure of CloudFormation that is impenetrable.  Plus
+even if you get it working once, you'd never run it again on something
+that worked.</p>
+<p><strong>Boto Yes.</strong> Powerful and expressive. Don't script the CLI, use
+Boto. Easy as pie.</p>
+<p><strong>Qualify Machines Before Use</strong>. Some VMs have lousy networking,
+presumably due to a chatty same-host or same-rack neighbor. Test
+for loss and latency to other hosts you own and on EBS. (I've used
+home-grown scripts, don't know of a standard open-source widget,
+someone should write one).</p>
+<p><strong>VPC Yes</strong>. If you have machines talking to each other (i.e. not a
+lone machine doing something lonely) then put them in a VPC. It's not
+hard.</p>
+<p><strong>NAT No</strong>. You think that'll improve security, but it will just
+introduce SPOFS and capacity chokepoints. Give your machines publicly
+routable IP's and use security groups.</p>
+<p><strong>ACL's Are A Pain</strong>. Try to get as far as you can with just security
+groups.</p>
+<p><strong>You'll Peer VPC's Someday</strong>. Choose non-overlapping subnet IP ranges
+at the start. It's hard to change later.</p>
+<p><strong>Spot Instances Are Tricky</strong>. They're only For a very specific use
+case that likely isn't yours. Setting up a test network? You can
+spend the money you save by using spot on swear jar fees.</p>
+<p><strong>Pick a Management Toolset</strong>. Ansible, Chef, all those things aren't
+<em>all</em> that different when it comes down to it. Just don't dither back
+and forth. There's a little bit of extra Chef love w/ AWS but not enough to tip
+the scales in your decision I'd reckon. </p>
+<p><strong>Tech Support Is Terrible Unless You're Big</strong>. My <a href="http://www.wavefront.com/">last little
+startup</a> didn't get much out of the <a href="https://aws.amazon.com/premiumsupport/">business level tech
+support</a> we bought. We needed it so we could call in to get
+help when we needed it, and we used that for escalating some problems.
+It was nice to have a number to call when I urgently need to up a
+system limit, say. But debugging something real, like a networking
+problem? Pretty rough.</p>
+<p>Stanford, on the other hand, had a named rep who was responsive and
+helpful. I guess she was sales, but I used her freely on support
+issues and she worked the backchannels for us. Presumably this is
+what any big/important customer would get, that's just not you,
+sorry.</p>
+<p><strong>The Real Power Is Being On Demand</strong>. I'm reaffirming cloud
+koolaid here. Running this way lets you build and run systems
+differently, <em>much better</em>. I've relied on the cloud this to bring
+up emergency capacity. I've used it to convert a class of machines
+on the fly to the double-price double-RAM tier when hitting a
+surprising capacity crunch. There are a whole class of problems
+that get much easier when you can have 2x the machines for just a
+little while.  When someone comes to you with that cost/benefit
+spreadsheet arguing why you should self-host, that's when you need
+your file of "the cloud saved my bacon" stories at the ready.</p>
+</div>
+    </div>
+    </article>
+    <article class="h-entry post-text">
+    <header>
         <h1 class="p-name entry-title"><a href="posts/saying-no.html" class="u-url">Don't Say No By Email</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Sef Kloninger</span></p>
-            <p class="dateline"><a href="posts/saying-no.html" rel="bookmark"><time class="published dt-published" datetime="2015-04-03T18:08:00-07:00" itemprop="datePublished" title="Publication date">2015-04-03 18:08</time></a></p>
+            <p class="dateline"><a href="posts/saying-no.html" rel="bookmark"><time class="published dt-published" datetime="2015-04-03T18:08:00-07:00" title="2015-04-03 18:08">2015-04-03 18:08</time></a></p>
                 <p class="commentline">
         
     <a href="posts/saying-no.html#disqus_thread" data-disqus-identifier="cache/posts/saying-no-by-email.html">Comments</a>
@@ -105,10 +197,20 @@
 </div>
     </header>
     <div class="e-content entry-content">
-    <p><img style="float:right" class="postimage" src="f/frown.png" alt=":(" width="192" height="178"></p>
-<p>When I have to tell someone no, I pick up the phone. I <strong>hate</strong> talking on the phone, but I do it anyway.</p>
-<p>When you're answering no to someone, you're disappointing them even if just a little bit. So you owe it to them to talk instead of sending an email. It's the polite thing to do. </p>
-<p>But there are two other reasons, selfish reasons, for making the call. First, you get immediate feedback on how they took the news. If they're upset then you can do damage control straight away. And at least you know! And second, delivering bad news directly and respectfully is an important skill to develop. We can all use the practice. And it's never as bad as I think it will be. </p>
+    <div>
+<p><img style="float:right" class="postimage" src="f/frown.png" alt=":(" width="192" height="178"></p>
+<p>When I have to tell someone no, I pick up the phone. I <strong>hate</strong>
+talking on the phone, but I do it anyway.</p>
+<p>When you're answering no to someone, you're disappointing them even
+if just a little bit. So you owe it to them to talk instead of
+sending an email. It's the polite thing to do.</p>
+<p>But there are two other reasons, selfish reasons, for making the
+call. First, you get immediate feedback on how they took the news.
+If they're upset then you can do damage control straight away. And
+at least you know! And second, delivering bad news directly and
+respectfully is an important skill to develop. We can all use the
+practice. And it's never as bad as I think it will be.</p>
+</div>
     </div>
     </article>
     <article class="h-entry post-text">
@@ -116,7 +218,7 @@
         <h1 class="p-name entry-title"><a href="posts/halloween-2014.html" class="u-url">Fewer Trick or Treaters This Year</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Sef Kloninger</span></p>
-            <p class="dateline"><a href="posts/halloween-2014.html" rel="bookmark"><time class="published dt-published" datetime="2014-11-01T02:30:00-07:00" itemprop="datePublished" title="Publication date">2014-11-01 02:30</time></a></p>
+            <p class="dateline"><a href="posts/halloween-2014.html" rel="bookmark"><time class="published dt-published" datetime="2014-11-01T02:30:00-07:00" title="2014-11-01 02:30">2014-11-01 02:30</time></a></p>
                 <p class="commentline">
         
     <a href="posts/halloween-2014.html#disqus_thread" data-disqus-identifier="cache/posts/halloween-2014.html">Comments</a>
@@ -126,7 +228,8 @@
 </div>
     </header>
     <div class="e-content entry-content">
-    <p>This year's Halloween tally was 208.  I don't know why we have 32%
+    <div>
+<p>This year's Halloween tally was 208.  I don't know why we have 32%
 fewer trick-or-treaters than we had last year, which was down 20%
 from the year before that.  Maybe the rain earlier in the day kept
 people home.  Maybe because it was Friday people opted for parties
@@ -138,6 +241,7 @@ instead of going door to door.  I don't know.</p>
 <p>Thanks to my friend Stuart for being on this year's data gathering
 crew.  As usual, the full story is 
 <a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE">in the numbers</a>.</p>
+</div>
     </div>
     </article>
     <article class="h-entry post-text">
@@ -145,7 +249,7 @@ crew.  As usual, the full story is
         <h1 class="p-name entry-title"><a href="posts/hand-tally.html" class="u-url">In Praise of the Hand Tally</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Sef Kloninger</span></p>
-            <p class="dateline"><a href="posts/hand-tally.html" rel="bookmark"><time class="published dt-published" datetime="2014-10-30T09:20:00-07:00" itemprop="datePublished" title="Publication date">2014-10-30 09:20</time></a></p>
+            <p class="dateline"><a href="posts/hand-tally.html" rel="bookmark"><time class="published dt-published" datetime="2014-10-30T09:20:00-07:00" title="2014-10-30 09:20">2014-10-30 09:20</time></a></p>
                 <p class="commentline">
         
     <a href="posts/hand-tally.html#disqus_thread" data-disqus-identifier="cache/posts/hand-tally.html">Comments</a>
@@ -155,7 +259,8 @@ crew.  As usual, the full story is
 </div>
     </header>
     <div class="e-content entry-content">
-    <p><img style="float:right" class="postimage" src="f/tallies.jpg" alt="Tally Marks" width="height=174"></p>
+    <div>
+<p><img style="float:right" class="postimage" src="f/tallies.jpg" alt="Tally Marks" width="height=174"></p>
 <p>For the past five years I've gathered statistics on how many
 trick-or-treaters have come by on Halloween.  If you want to read
 about that, check out posts from <a href="posts/201311halloween-2013.html">last year</a> or <a href="posts/201210halloween-candy-data.html">the year before</a>.
@@ -203,6 +308,7 @@ story has been <a href="http://www.snopes.com/business/genius/spacepen.asp">debu
 <p>And second, I'd like to plug Tony and Tom's "day job", <a href="http://stonehearth.net/">Stonehearth</a>.
 I think of it as Starcraft meets Minecraft.  I am so eager to play
 it when it lands.</p>
+</div>
     </div>
     </article>
     <article class="h-entry post-text">
@@ -210,7 +316,7 @@ it when it lands.</p>
         <h1 class="p-name entry-title"><a href="posts/leaving-stanford.html" class="u-url">Leaving Stanford Online Ed</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Sef Kloninger</span></p>
-            <p class="dateline"><a href="posts/leaving-stanford.html" rel="bookmark"><time class="published dt-published" datetime="2014-08-31T23:45:00-07:00" itemprop="datePublished" title="Publication date">2014-08-31 23:45</time></a></p>
+            <p class="dateline"><a href="posts/leaving-stanford.html" rel="bookmark"><time class="published dt-published" datetime="2014-08-31T23:45:00-07:00" title="2014-08-31 23:45">2014-08-31 23:45</time></a></p>
                 <p class="commentline">
         
     <a href="posts/leaving-stanford.html#disqus_thread" data-disqus-identifier="cache/posts/leaving-stanford.html">Comments</a>
@@ -220,7 +326,8 @@ it when it lands.</p>
 </div>
     </header>
     <div class="e-content entry-content">
-    <p style="float:right; align:right; width:30%"><img class="postimage" src="f/stanfordlogo.gif" alt="Stanford"></p>
+    <div>
+<p style="float:right; align:right; width:30%"><img class="postimage" src="f/stanfordlogo.gif" alt="Stanford"></p>
 
 <p>Friday was my last day building Stanford's <a href="https://class.stanford.edu/">open-source online education
 platform</a>.  What started as a lark turned out to be one of the most
@@ -342,6 +449,7 @@ especially Jason and Jane; the team in the Office of the Vice Provost for
 Online Learning, especially Professor <a href="http://theory.stanford.edu/people/jcm/">John Mitchell</a> who made this
 possible; and my many friends at edX.  There's a lot to be proud of over
 the past two years, and a lot of good work ahead.</p>
+</div>
     </div>
     </article>
     <article class="h-entry post-text">
@@ -349,7 +457,7 @@ the past two years, and a lot of good work ahead.</p>
         <h1 class="p-name entry-title"><a href="posts/arthroscopy.html" class="u-url">Arthroscopy Is Amazing</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Sef Kloninger</span></p>
-            <p class="dateline"><a href="posts/arthroscopy.html" rel="bookmark"><time class="published dt-published" datetime="2014-08-18T22:20:00-07:00" itemprop="datePublished" title="Publication date">2014-08-18 22:20</time></a></p>
+            <p class="dateline"><a href="posts/arthroscopy.html" rel="bookmark"><time class="published dt-published" datetime="2014-08-18T22:20:00-07:00" title="2014-08-18 22:20">2014-08-18 22:20</time></a></p>
                 <p class="commentline">
         
     <a href="posts/arthroscopy.html#disqus_thread" data-disqus-identifier="cache/posts/arthroscopy.html">Comments</a>
@@ -359,7 +467,8 @@ the past two years, and a lot of good work ahead.</p>
 </div>
     </header>
     <div class="e-content entry-content">
-    <p><img style="float:right" class="postimage" src="f/sef-left-knee.png" alt="My Left Knee" width="30%"></p>
+    <div>
+<p><img style="float:right" class="postimage" src="f/sef-left-knee.png" alt="My Left Knee" width="30%"></p>
 <p>Three days ago I was hobbling around on a sore knee with a torn
 meniscus. But after just three days of icing and Ibuprofen and
 resting on the couch already my knee is almost better than it was
@@ -393,6 +502,7 @@ where you vomit and twitch, and "overdose" where you stop breathing.
 Don't read that part.</p>
 <p>I'm back to work tomorrow, and I expect to be back on my bike by next
 week!</p>
+</div>
     </div>
     </article>
     <article class="h-entry post-text">
@@ -400,7 +510,7 @@ week!</p>
         <h1 class="p-name entry-title"><a href="posts/earworm.html" class="u-url">David Bowie To The Rescue</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Sef Kloninger</span></p>
-            <p class="dateline"><a href="posts/earworm.html" rel="bookmark"><time class="published dt-published" datetime="2014-08-16T17:25:00-07:00" itemprop="datePublished" title="Publication date">2014-08-16 17:25</time></a></p>
+            <p class="dateline"><a href="posts/earworm.html" rel="bookmark"><time class="published dt-published" datetime="2014-08-16T17:25:00-07:00" title="2014-08-16 17:25">2014-08-16 17:25</time></a></p>
                 <p class="commentline">
         
     <a href="posts/earworm.html#disqus_thread" data-disqus-identifier="cache/posts/earworm.html">Comments</a>
@@ -410,7 +520,8 @@ week!</p>
 </div>
     </header>
     <div class="e-content entry-content">
-    <p style="float:right; align:right; width:30%"><a href="http://en.wikipedia.org/wiki/File:Bowie_JohnDancing1.jpg#mediaviewer/File:Bowie_JohnDancing1.jpg"><img class="postimage" src="http://upload.wikimedia.org/wikipedia/en/b/bb/Bowie_JohnDancing1.jpg" alt="Bowie JohnDancing1.jpg"></a></p>
+    <div>
+<p style="float:right; align:right; width:30%"><a href="http://en.wikipedia.org/wiki/File:Bowie_JohnDancing1.jpg#mediaviewer/File:Bowie_JohnDancing1.jpg"><img class="postimage" src="http://upload.wikimedia.org/wikipedia/en/b/bb/Bowie_JohnDancing1.jpg" alt="Bowie JohnDancing1.jpg"></a></p>
 
 <p>I often wake up with a song going through my head. I don't know
 why this happens. The stranger thing the songs. Yesterday
@@ -426,6 +537,7 @@ remarkably well suited to this. I believe it's because the
 melody is kind of odd and not all that pleasant, so it's not going
 to get stuck itself. You kind of remember the melody and lyrics,
 but not quite, so that keeps you busy. It always does the trick. </p>
+</div>
     </div>
     </article>
     <article class="h-entry post-text">
@@ -433,7 +545,7 @@ but not quite, so that keeps you busy. It always does the trick. </p>
         <h1 class="p-name entry-title"><a href="posts/tips.html" class="u-url">Feedback Without Tips</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Sef Kloninger</span></p>
-            <p class="dateline"><a href="posts/tips.html" rel="bookmark"><time class="published dt-published" datetime="2014-04-28T20:07:00-07:00" itemprop="datePublished" title="Publication date">2014-04-28 20:07</time></a></p>
+            <p class="dateline"><a href="posts/tips.html" rel="bookmark"><time class="published dt-published" datetime="2014-04-28T20:07:00-07:00" title="2014-04-28 20:07">2014-04-28 20:07</time></a></p>
                 <p class="commentline">
         
     <a href="posts/tips.html#disqus_thread" data-disqus-identifier="cache/posts/no-tip.html">Comments</a>
@@ -443,7 +555,8 @@ but not quite, so that keeps you busy. It always does the trick. </p>
 </div>
     </header>
     <div class="e-content entry-content">
-    <p><img style="float:right" class="postimage" src="f/tip-oneill.jpg" alt="Tip O'Neill" width="30%"></p>
+    <div>
+<p><img style="float:right" class="postimage" src="f/tip-oneill.jpg" alt="Tip O'Neill" width="30%"></p>
 <p>I really don't like tipping. I'm not like <a href="https://www.youtube.com/watch?v=Z-qV9wVGb38">Mr. Pink</a>. It's
 not that I don't want my server or driver to get something extra.
 I just don't like the awkward social situation of deciding if this
@@ -469,77 +582,7 @@ to not have to fret about too much or too little:</p>
 awkwardly changing money. I'd definitely pay a premium for that.</p>
 <p>I wonder what other service business would benefit from decoupling
 feedback from money?</p>
-    </div>
-    </article>
-    <article class="h-entry post-text">
-    <header>
-        <h1 class="p-name entry-title"><a href="posts/learn-to-write.html" class="u-url">CS Students: Learn to Write</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">Sef Kloninger</span></p>
-            <p class="dateline"><a href="posts/learn-to-write.html" rel="bookmark"><time class="published dt-published" datetime="2014-01-25T16:17:00-08:00" itemprop="datePublished" title="Publication date">2014-01-25 16:17</time></a></p>
-                <p class="commentline">
-        
-    <a href="posts/learn-to-write.html#disqus_thread" data-disqus-identifier="cache/posts/learn-to-write.html">Comments</a>
-
-
-        </p>
 </div>
-    </header>
-    <div class="e-content entry-content">
-    <p><img style="float:right" class="postimage" src="f/writing-hand.jpeg" alt="Writing Hand" width="40%"></p>
-<p>If I could do my college years over I would focus on writing. I
-would take courses that required a lot of writing, in the spirit
-of "learn by doing". I'd also take courses in the mechanics and
-craft: grammar, vocabulary, and rhetoric.</p>
-<p>I used to consider myself a competent writer. And certainly good
-enough for an engineer, right? But I've learned that I have a long
-way to go. I've learned that engineers spend much more time writing
-than you expect. And I appreciate how hard it is to write well.</p>
-<p>This came up just this past week. I came across a beautiful four
-page essay. It laid out the problem, described alternatives, and
-lead you concisely to a well-reasoned conclusion. Sure, it was about
-technology, but what carried the day was the good writing. Humbling!</p>
-<p>You're saying: but wait, you're a <a href="http://en.wikipedia.org/wiki/Pointy-Haired_Boss">pointy-haired boss</a> now
-Sef, one of those guys who doesn't do <em>Real Work</em> anymore. You write
-email and boss people around. I understand why managers like you
-need to write, I'm an engineer. I write code. Well, there's some
-truth to that. But I'd like to convince you that even monster coders,
-if they're any good, write a lot, write well, and value good writing
-in others.</p>
-<p>It is rare for someone to do their work in isolation and have it
-matter. Either you're working as part of a team, in a company or
-a community of developers, say on an open-source project. Sure, you
-build a great system or feature. But to have it matter to the world,
-for others to adopt it, you need to document, publicize, support,
-teach. 98% of that is writing.</p>
-<p>I had a lunchtime conversation with <a href="http://jacobian.org/writing/great-documentation/">Jacob Kaplan-Moss</a>,
-Django's co-founder, at last year's PyCon. I asked him why Django
-caught on and was adopted by so many of us (including <a href="http://class2go.stanford.edu/">my last
-project</a> and <a href="http://code.edx.org/">my current project</a>). I was expecting him
-to point to features or timing. Instead he said it was "because we
-wrote good docs". The Django team didn't treat documentation as an
-afterthought. They have lots of docs, and they are good.</p>
-<p>Consider that rare bird, the iconoclastic engineer working in
-isolation on their own project. I'm thinking of <a href="http://antirez.com/">Antirez</a> or
-<a href="http://www.marco.org/">Marco</a>. (Maybe they aren't even truly on their own so much.
-Humor me!) They are prolific and strong coders. But they also write
-a lot of words! They write a ton about their project; also tech
-landscape and their place in it. Would their software have as much
-of an impact if they didn't write so much (and well)? I say no.</p>
-<p>Case in point. Both Marco and I wrote blog posts riffing off the
-same topic two weeks ago. First, read <a href="http://sef.kloninger.com/posts/consume-produce-public.html">mine</a>, then
-<a href="http://www.marco.org/2014/01/03/the-builders-high">his</a>.  It takes me a ton of words to get something
-basic out.  His is concise and clear. Sheesh.</p>
-<p>So kids, don't shortchange those liberal arts classes. It's not
-fluffy stuff on the side. <strong>That is core</strong>. You need to write well
-to be a good engineer.</p>
-<p>Protip: the best way to do this is to major in the humanities. They
-write like crazy over there. Be like my friend Dan Chu and major
-in history, but secretly take CS courses on the side. If you're
-super smart like him, and can manage getting both degrees, then
-you're awesome. But don't sacrifice the BA for the BS. I would
-<strong>love</strong> to talk to a candidate with with a History BA and a Computer
-Science MS.</p>
     </div>
     </article>
 </div>

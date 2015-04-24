@@ -3,7 +3,7 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lessons from Three Years Living in AWS | sef.kloninger.com</title>
+    <title>Lessons from Three Years in AWS | sef.kloninger.com</title>
 
     
             <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
@@ -24,15 +24,18 @@
     
 
     <meta name="author" content="Sef Kloninger">
+        <link rel="prev" href="saying-no.html" title="Don't Say No By Email" type="text/html">
     
-        <meta name="og:title" content="Lessons from Three Years Living in AWS">
-        <meta name="og:url" content="http://sef.kloninger.com/posts/aws.html">
-            <meta name="og:description" content="I've spent the last three years building and operating services
-that are all-in on Amazon Web Services. This long post is my brain
-dump on many of the lessons I've learned along the way.
-I wouldn't ne">
-        <meta name="og:site_name" content="sef.kloninger.com">
-        <meta name="og:type" content="article">
+    <meta property="og:site_name" content="sef.kloninger.com">
+    <meta property="og:title" content="Lessons from Three Years in AWS">
+    <meta property="og:url" content="http://sef.kloninger.com/posts/aws.html">
+    <meta property="og:description" content="I've spent the last three years building and operating web sites
+with Amazon Web Services and here are a few lessons I've learned. 
+But I first have to come clean that I'm a fan of AWS with only
+casua">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2015-04-24T00:10:00-07:00">
+           <meta property="article:tag" content="Tech">
 
     
 
@@ -113,11 +116,11 @@ I wouldn't ne">
     
     <header>
         
-    <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Lessons from Three Years Living in AWS</a></h1>
+    <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Lessons from Three Years in AWS</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Sef Kloninger</span></p>
-            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2015-04-06T20:07:00-07:00" itemprop="datePublished" title="Publication date">2015-04-06 20:07</time></a></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2015-04-24T00:10:00-07:00" itemprop="datePublished" title="2015-04-24 00:10">2015-04-24 00:10</time></a></p>
                 <p class="commentline">
         
     <a href="aws.html#disqus_thread" data-disqus-identifier="cache/posts/aws.html">Comments</a>
@@ -133,58 +136,81 @@ I wouldn't ne">
     </header>
 
     <div class="e-content entry-content" itemprop="articleBody text">
-    <p><img style="float:right" class="postimage" src="../f/aws.png" alt="AWS" width="30%"></p>
-<p>I've spent the last three years building and operating services
-that are all-in on Amazon Web Services. This long post is my brain
-dump on many of the lessons I've learned along the way.</p>
-<p>I wouldn't necessarily call myself an Amazon fanboy, but I am
-generally really happy with their service and would use them again
-to build my business on.</p>
-<h3>AZ's Aren't All That Decoupled</h3>
-<p>Amazon makes a big fuss about how their Availability Zones are
-independent. Separate physical infrastructure (power, cooling) and
-infrastructure should keep things, well, separate. But there was
-an <a href="http://www.networkworld.com/article/2202805/cloud-computing/amazon-ec2-outage-calls--availability-zones--into-question.html">infamous Amazon outage</a> in their Northern Virginia site
-in 2011 that called into question the whole AZ thing. But that was
-just a fluke, right?</p>
-<p>Well, it <a href="https://www.reddit.com/r/aws/comments/2zpag7/aws_internal_dns_outage/">happened again just last month</a>, albeit on a much
-smaller scale. This time it was internal DNS that affected some
-VPC's that spanned availability zones in Oregon (US-WEST-2). It was
-definitely noticeable at Wavefront, where I was working at the time,
-and we got through it OK. But it "wasn't supposed to happen."</p>
-<p>The lesson is that AZ's are a good idea but don't bet the farm on
-them having truly decoupled failure modes.</p>
-<h3>S3 Is Amazing</h3>
-<p>As an engineer you just have to marvel at something that is well
-built. Whatever compromises they had to make were the right ones.
-Because as a user of Amazon's Simple Storage Service (S3) it occupies
-a really nice space: cheap, practically infinitely scalable, pretty
-fast, with good availability. And did I mention it was cheap? At
-<strong>$0.03</strong> per GB/mo you can store a lot of logs and videos.</p>
-<p>The key thing they did right was to not build on a filesystem, but
-instead their own BLOB store, <a href="http://www.allthingsdistributed.com/2007/10/amazons_dynamo.html">Dynamo</a> (the famous paper
-is linked from that post).</p>
-<p>When I was at Akamai we operated a storage service that fell short
-of these marks. Originally built on NetApp filers, and later farms
-of JBOD's, it was complicated and never got to the
-price/performance/availability neighborhood of S3. Now, I left
-Akamai in 2008 and they've likely built something better by now,
-but at least back then, we struggled with storage.</p>
-<p>You'll be amazed how much you can stick in S3 for so cheap. It
-really changes the way you think of building a system having something
-like that around that you can count on.</p>
-<h3>Secondary Services Just Work</h3>
-<p>It's safe to say that Amazon makes its money from their Big Kahuna
-services, especially EC2. But what they've been good at over the
-last few years they've continued to roll out a</p>
-<h3>Qualify Machines Before Using</h3>
-<h3>Start With Machine IAM Roles</h3>
-<h3>CloudFormation No, Boto Yes</h3>
-<h3>Managing Costs: Spot's No, Reserved Yes</h3>
-<h3>VPC Yes, NAT No</h3>
-<h3>Support Isn't Great Unless You're Big</h3>
-<h3>The Real Power Is From On Demand</h3>
-<p>Most people have drunk the Koolaid on cloud computing, so I won't beat that horse here. I just want to recount two stories </p>
+    <div>
+<p><img style="float:right" class="postimage" src="../f/aws.png" alt="AWS Logo" width="30%"></p>
+<p>I've spent the last three years building and operating web sites
+with Amazon Web Services and here are a few lessons I've learned. 
+But I first have to come clean that I'm a fan of AWS with only
+casual experience with other IAAS/PAAS platforms.</p>
+<p><strong>S3 Is Amazing</strong>. They made the right engineering choices and
+compromises: cheap, practically infinitely scalable, fast enough,
+with good availability. $0.03/GB/mo covers up for a lot of sins.
+Knowing its there changes how you build systems.</p>
+<p><strong>IAM Machine Roles From The Start</strong>. IAM with <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html">Instance Metadata</a>
+is a powerful way to manage access rights. Trouble is you can't add
+to existing machines. Provision with machine roles in big categories
+(e.g. app servers, utility machines, databases) even if they're
+just placeholders.</p>
+<p><strong>Availability Zones's Are Only Mostly Decoupled</strong>. After the 2011
+<a href="http://www.networkworld.com/article/2202805/cloud-computing/amazon-ec2-outage-calls--availability-zones--into-question.html">us-east-1 outage</a> we were reassured that a coordinated 
+outage wouldn't happen again, but it happened again just
+<a href="https://www.reddit.com/r/aws/comments/2zpag7/aws_internal_dns_outage/">last month</a>.</p>
+<p><strong>They Will Lock You In And You'll Like It</strong>. They secondary services
+work well, are cheap, and are handy. I'm speaking of SQS, SES,
+Glacier, even Elastic Transcoder. Who <em>wants</em> to run a durable queue
+again?</p>
+<p><strong>CloudFormation No</strong>. It's near impossible to get right. My
+objection isn't YAML, I don't mind writing Ansible plays, it's the
+complexity/structure of CloudFormation that is impenetrable.  Plus
+even if you get it working once, you'd never run it again on something
+that worked.</p>
+<p><strong>Boto Yes.</strong> Powerful and expressive. Don't script the CLI, use
+Boto. Easy as pie.</p>
+<p><strong>Qualify Machines Before Use</strong>. Some VMs have lousy networking,
+presumably due to a chatty same-host or same-rack neighbor. Test
+for loss and latency to other hosts you own and on EBS. (I've used
+home-grown scripts, don't know of a standard open-source widget,
+someone should write one).</p>
+<p><strong>VPC Yes</strong>. If you have machines talking to each other (i.e. not a
+lone machine doing something lonely) then put them in a VPC. It's not
+hard.</p>
+<p><strong>NAT No</strong>. You think that'll improve security, but it will just
+introduce SPOFS and capacity chokepoints. Give your machines publicly
+routable IP's and use security groups.</p>
+<p><strong>ACL's Are A Pain</strong>. Try to get as far as you can with just security
+groups.</p>
+<p><strong>You'll Peer VPC's Someday</strong>. Choose non-overlapping subnet IP ranges
+at the start. It's hard to change later.</p>
+<p><strong>Spot Instances Are Tricky</strong>. They're only For a very specific use
+case that likely isn't yours. Setting up a test network? You can
+spend the money you save by using spot on swear jar fees.</p>
+<p><strong>Pick a Management Toolset</strong>. Ansible, Chef, all those things aren't
+<em>all</em> that different when it comes down to it. Just don't dither back
+and forth. There's a little bit of extra Chef love w/ AWS but not enough to tip
+the scales in your decision I'd reckon. </p>
+<p><strong>Tech Support Is Terrible Unless You're Big</strong>. My <a href="http://www.wavefront.com/">last little
+startup</a> didn't get much out of the <a href="https://aws.amazon.com/premiumsupport/">business level tech
+support</a> we bought. We needed it so we could call in to get
+help when we needed it, and we used that for escalating some problems.
+It was nice to have a number to call when I urgently need to up a
+system limit, say. But debugging something real, like a networking
+problem? Pretty rough.</p>
+<p>Stanford, on the other hand, had a named rep who was responsive and
+helpful. I guess she was sales, but I used her freely on support
+issues and she worked the backchannels for us. Presumably this is
+what any big/important customer would get, that's just not you,
+sorry.</p>
+<p><strong>The Real Power Is Being On Demand</strong>. I'm reaffirming cloud
+koolaid here. Running this way lets you build and run systems
+differently, <em>much better</em>. I've relied on the cloud this to bring
+up emergency capacity. I've used it to convert a class of machines
+on the fly to the double-price double-RAM tier when hitting a
+surprising capacity crunch. There are a whole class of problems
+that get much easier when you can have 2x the machines for just a
+little while.  When someone comes to you with that cost/benefit
+spreadsheet arguing why you should self-host, that's when you need
+your file of "the cloud saved my bacon" stories at the ready.</p>
+</div>
     </div>
     <aside class="postpromonav">
     <nav>
@@ -194,6 +220,11 @@ last few years they've continued to roll out a</p>
         </ul>
 
     
+        <ul class="pager">
+            <li class="previous">
+                <a href="saying-no.html" rel="prev" title="Don't Say No By Email">Previous post</a>
+            </li>
+        </ul>
 
     </nav>
     </aside>
@@ -205,7 +236,7 @@ last few years they've continued to roll out a</p>
         <script>
         var disqus_shortname ="sefkloninger",
             disqus_url="http://sef.kloninger.com/posts/aws.html",
-        disqus_title="Lessons from Three Years Living in AWS",
+        disqus_title="Lessons from Three Years in AWS",
         disqus_identifier="cache/posts/aws.html",
         disqus_config = function () {
             this.language = "en";

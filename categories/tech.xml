@@ -1,5 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Tech)</title><link>http://sef.kloninger.com/</link><description></description><language>en</language><lastBuildDate>Tue, 07 Apr 2015 00:50:47 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>In Praise of the Hand Tally</title><link>http://sef.kloninger.com/posts/hand-tally.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tallies.jpg" alt="Tally Marks" width="height=174"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Tech)</title><link>http://sef.kloninger.com/</link><description></description><atom:link href="http://sef.kloninger.com/categories/tech.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 24 Apr 2015 07:10:20 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Lessons from Three Years in AWS</title><link>http://sef.kloninger.com/posts/aws.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/aws.png" alt="AWS Logo" width="30%"&gt;&lt;/p&gt;
+&lt;p&gt;I've spent the last three years building and operating web sites
+with Amazon Web Services and here are a few lessons I've learned. 
+But I first have to come clean that I'm a fan of AWS with only
+casual experience with other IAAS/PAAS platforms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;S3 Is Amazing&lt;/strong&gt;. They made the right engineering choices and
+compromises: cheap, practically infinitely scalable, fast enough,
+with good availability. $0.03/GB/mo covers up for a lot of sins.
+Knowing its there changes how you build systems.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;IAM Machine Roles From The Start&lt;/strong&gt;. IAM with &lt;a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html"&gt;Instance Metadata&lt;/a&gt;
+is a powerful way to manage access rights. Trouble is you can't add
+to existing machines. Provision with machine roles in big categories
+(e.g. app servers, utility machines, databases) even if they're
+just placeholders.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Availability Zones's Are Only Mostly Decoupled&lt;/strong&gt;. After the 2011
+&lt;a href="http://www.networkworld.com/article/2202805/cloud-computing/amazon-ec2-outage-calls--availability-zones--into-question.html"&gt;us-east-1 outage&lt;/a&gt; we were reassured that a coordinated 
+outage wouldn't happen again, but it happened again just
+&lt;a href="https://www.reddit.com/r/aws/comments/2zpag7/aws_internal_dns_outage/"&gt;last month&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;They Will Lock You In And You'll Like It&lt;/strong&gt;. They secondary services
+work well, are cheap, and are handy. I'm speaking of SQS, SES,
+Glacier, even Elastic Transcoder. Who &lt;em&gt;wants&lt;/em&gt; to run a durable queue
+again?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CloudFormation No&lt;/strong&gt;. It's near impossible to get right. My
+objection isn't YAML, I don't mind writing Ansible plays, it's the
+complexity/structure of CloudFormation that is impenetrable.  Plus
+even if you get it working once, you'd never run it again on something
+that worked.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Boto Yes.&lt;/strong&gt; Powerful and expressive. Don't script the CLI, use
+Boto. Easy as pie.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Qualify Machines Before Use&lt;/strong&gt;. Some VMs have lousy networking,
+presumably due to a chatty same-host or same-rack neighbor. Test
+for loss and latency to other hosts you own and on EBS. (I've used
+home-grown scripts, don't know of a standard open-source widget,
+someone should write one).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VPC Yes&lt;/strong&gt;. If you have machines talking to each other (i.e. not a
+lone machine doing something lonely) then put them in a VPC. It's not
+hard.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NAT No&lt;/strong&gt;. You think that'll improve security, but it will just
+introduce SPOFS and capacity chokepoints. Give your machines publicly
+routable IP's and use security groups.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ACL's Are A Pain&lt;/strong&gt;. Try to get as far as you can with just security
+groups.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You'll Peer VPC's Someday&lt;/strong&gt;. Choose non-overlapping subnet IP ranges
+at the start. It's hard to change later.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spot Instances Are Tricky&lt;/strong&gt;. They're only For a very specific use
+case that likely isn't yours. Setting up a test network? You can
+spend the money you save by using spot on swear jar fees.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pick a Management Toolset&lt;/strong&gt;. Ansible, Chef, all those things aren't
+&lt;em&gt;all&lt;/em&gt; that different when it comes down to it. Just don't dither back
+and forth. There's a little bit of extra Chef love w/ AWS but not enough to tip
+the scales in your decision I'd reckon. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tech Support Is Terrible Unless You're Big&lt;/strong&gt;. My &lt;a href="http://www.wavefront.com/"&gt;last little
+startup&lt;/a&gt; didn't get much out of the &lt;a href="https://aws.amazon.com/premiumsupport/"&gt;business level tech
+support&lt;/a&gt; we bought. We needed it so we could call in to get
+help when we needed it, and we used that for escalating some problems.
+It was nice to have a number to call when I urgently need to up a
+system limit, say. But debugging something real, like a networking
+problem? Pretty rough.&lt;/p&gt;
+&lt;p&gt;Stanford, on the other hand, had a named rep who was responsive and
+helpful. I guess she was sales, but I used her freely on support
+issues and she worked the backchannels for us. Presumably this is
+what any big/important customer would get, that's just not you,
+sorry.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Real Power Is Being On Demand&lt;/strong&gt;. I'm reaffirming cloud
+koolaid here. Running this way lets you build and run systems
+differently, &lt;em&gt;much better&lt;/em&gt;. I've relied on the cloud this to bring
+up emergency capacity. I've used it to convert a class of machines
+on the fly to the double-price double-RAM tier when hitting a
+surprising capacity crunch. There are a whole class of problems
+that get much easier when you can have 2x the machines for just a
+little while.  When someone comes to you with that cost/benefit
+spreadsheet arguing why you should self-host, that's when you need
+your file of "the cloud saved my bacon" stories at the ready.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/aws.html</guid><pubDate>Fri, 24 Apr 2015 07:10:00 GMT</pubDate></item><item><title>In Praise of the Hand Tally</title><link>http://sef.kloninger.com/posts/hand-tally.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tallies.jpg" alt="Tally Marks" width="height=174"&gt;&lt;/p&gt;
 &lt;p&gt;For the past five years I've gathered statistics on how many
 trick-or-treaters have come by on Halloween.  If you want to read
 about that, check out posts from &lt;a href="http://sef.kloninger.com/posts/201311halloween-2013.html"&gt;last year&lt;/a&gt; or &lt;a href="http://sef.kloninger.com/posts/201210halloween-candy-data.html"&gt;the year before&lt;/a&gt;.
@@ -46,7 +118,7 @@ pen project; the scrappy can-do Russians used pencils.  Well, this
 story has been &lt;a href="http://www.snopes.com/business/genius/spacepen.asp"&gt;debunked by the good people at Snopes&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;And second, I'd like to plug Tony and Tom's "day job", &lt;a href="http://stonehearth.net/"&gt;Stonehearth&lt;/a&gt;.
 I think of it as Starcraft meets Minecraft.  I am so eager to play
-it when it lands.&lt;/p&gt;</description><category>Halloween</category><category>Tech</category><guid>http://sef.kloninger.com/posts/hand-tally.html</guid><pubDate>Thu, 30 Oct 2014 16:20:00 GMT</pubDate></item><item><title>Feedback Without Tips</title><link>http://sef.kloninger.com/posts/tips.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tip-oneill.jpg" alt="Tip O'Neill" width="30%"&gt;&lt;/p&gt;
+it when it lands.&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><category>Tech</category><guid>http://sef.kloninger.com/posts/hand-tally.html</guid><pubDate>Thu, 30 Oct 2014 16:20:00 GMT</pubDate></item><item><title>Feedback Without Tips</title><link>http://sef.kloninger.com/posts/tips.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tip-oneill.jpg" alt="Tip O'Neill" width="30%"&gt;&lt;/p&gt;
 &lt;p&gt;I really don't like tipping. I'm not like &lt;a href="https://www.youtube.com/watch?v=Z-qV9wVGb38"&gt;Mr. Pink&lt;/a&gt;. It's
 not that I don't want my server or driver to get something extra.
 I just don't like the awkward social situation of deciding if this
@@ -71,7 +143,7 @@ to not have to fret about too much or too little:&lt;/p&gt;
 &lt;p&gt;Both of these services decouple feedback from money. Both avoid
 awkwardly changing money. I'd definitely pay a premium for that.&lt;/p&gt;
 &lt;p&gt;I wonder what other service business would benefit from decoupling
-feedback from money?&lt;/p&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/tips.html</guid><pubDate>Tue, 29 Apr 2014 03:07:00 GMT</pubDate></item><item><title>CS Students: Learn to Write</title><link>http://sef.kloninger.com/posts/learn-to-write.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/writing-hand.jpeg" alt="Writing Hand" width="40%"&gt;&lt;/p&gt;
+feedback from money?&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/tips.html</guid><pubDate>Tue, 29 Apr 2014 03:07:00 GMT</pubDate></item><item><title>CS Students: Learn to Write</title><link>http://sef.kloninger.com/posts/learn-to-write.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/writing-hand.jpeg" alt="Writing Hand" width="40%"&gt;&lt;/p&gt;
 &lt;p&gt;If I could do my college years over I would focus on writing. I
 would take courses that required a lot of writing, in the spirit
 of "learn by doing". I'd also take courses in the mechanics and
@@ -124,7 +196,7 @@ in history, but secretly take CS courses on the side. If you're
 super smart like him, and can manage getting both degrees, then
 you're awesome. But don't sacrifice the BA for the BS. I would
 &lt;strong&gt;love&lt;/strong&gt; to talk to a candidate with with a History BA and a Computer
-Science MS.&lt;/p&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/learn-to-write.html</guid><pubDate>Sun, 26 Jan 2014 00:17:00 GMT</pubDate></item><item><title>Switching to Static</title><link>http://sef.kloninger.com/posts/switching-to-static.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tesla.jpg" alt="Nikola Tesla" width="195" height="228"&gt;&lt;/p&gt;
+Science MS.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/learn-to-write.html</guid><pubDate>Sun, 26 Jan 2014 00:17:00 GMT</pubDate></item><item><title>Switching to Static</title><link>http://sef.kloninger.com/posts/switching-to-static.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tesla.jpg" alt="Nikola Tesla" width="195" height="228"&gt;&lt;/p&gt;
 &lt;p&gt;For those of you who frequently read this blog (n ≈ 0) you'll
 notice that it looks a bit different. I've moved it from my own
 hosted Wordpress instance to static pages generated by &lt;a href="http://www.getnikola.com/"&gt;Nikola&lt;/a&gt;
@@ -288,7 +360,7 @@ environments, DNS, github repos, etc.) but for me that's no problem.&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;This &lt;a href="http://kushaldas.in/posts/importing-your-wordpress-blog-to-nikola.html#uploading-your-blog-site-as-github-pages"&gt;helpful post by Kaushal Das&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/switching-to-static.html</guid><pubDate>Mon, 30 Dec 2013 09:35:23 GMT</pubDate></item><item><title>Airmail FTW</title><link>http://sef.kloninger.com/posts/201312airmail.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-454" style="border: 0px;" alt="airmail" src="http://sef.kloninger.com/f/airmail.png" width="179" height="179"&gt;Finally a thick-client email program that seems to have stuck. So far I am really liking &lt;a href="http://airmailapp.com/"&gt;Airmail&lt;/a&gt;.
+&lt;/ul&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/switching-to-static.html</guid><pubDate>Mon, 30 Dec 2013 09:35:23 GMT</pubDate></item><item><title>Airmail FTW</title><link>http://sef.kloninger.com/posts/201312airmail.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-454" style="border: 0px;" alt="airmail" src="http://sef.kloninger.com/f/airmail.png" width="179" height="179"&gt;Finally a thick-client email program that seems to have stuck. So far I am really liking &lt;a href="http://airmailapp.com/"&gt;Airmail&lt;/a&gt;.
 
 &lt;p&gt;
 For years I've flipped between various Mac fat clients and the GMail web interface. The web interface keeps winning:

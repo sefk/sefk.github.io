@@ -1,8 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><language>en</language><lastBuildDate>Tue, 07 Apr 2015 00:50:47 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Don't Say No By Email</title><link>http://sef.kloninger.com/posts/saying-no.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/frown.png" alt=":(" width="192" height="178"&gt;&lt;/p&gt;
-&lt;p&gt;When I have to tell someone no, I pick up the phone. I &lt;strong&gt;hate&lt;/strong&gt; talking on the phone, but I do it anyway.&lt;/p&gt;
-&lt;p&gt;When you're answering no to someone, you're disappointing them even if just a little bit. So you owe it to them to talk instead of sending an email. It's the polite thing to do. &lt;/p&gt;
-&lt;p&gt;But there are two other reasons, selfish reasons, for making the call. First, you get immediate feedback on how they took the news. If they're upset then you can do damage control straight away. And at least you know! And second, delivering bad news directly and respectfully is an important skill to develop. We can all use the practice. And it's never as bad as I think it will be. &lt;/p&gt;</description><category>Life</category><guid>http://sef.kloninger.com/posts/saying-no.html</guid><pubDate>Sat, 04 Apr 2015 01:08:00 GMT</pubDate></item><item><title>Fewer Trick or Treaters This Year</title><link>http://sef.kloninger.com/posts/halloween-2014.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;This year's Halloween tally was 208.  I don't know why we have 32%
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><atom:link href="http://sef.kloninger.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 24 Apr 2015 07:10:20 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Lessons from Three Years in AWS</title><link>http://sef.kloninger.com/posts/aws.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/aws.png" alt="AWS Logo" width="30%"&gt;&lt;/p&gt;
+&lt;p&gt;I've spent the last three years building and operating web sites
+with Amazon Web Services and here are a few lessons I've learned. 
+But I first have to come clean that I'm a fan of AWS with only
+casual experience with other IAAS/PAAS platforms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;S3 Is Amazing&lt;/strong&gt;. They made the right engineering choices and
+compromises: cheap, practically infinitely scalable, fast enough,
+with good availability. $0.03/GB/mo covers up for a lot of sins.
+Knowing its there changes how you build systems.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;IAM Machine Roles From The Start&lt;/strong&gt;. IAM with &lt;a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html"&gt;Instance Metadata&lt;/a&gt;
+is a powerful way to manage access rights. Trouble is you can't add
+to existing machines. Provision with machine roles in big categories
+(e.g. app servers, utility machines, databases) even if they're
+just placeholders.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Availability Zones's Are Only Mostly Decoupled&lt;/strong&gt;. After the 2011
+&lt;a href="http://www.networkworld.com/article/2202805/cloud-computing/amazon-ec2-outage-calls--availability-zones--into-question.html"&gt;us-east-1 outage&lt;/a&gt; we were reassured that a coordinated 
+outage wouldn't happen again, but it happened again just
+&lt;a href="https://www.reddit.com/r/aws/comments/2zpag7/aws_internal_dns_outage/"&gt;last month&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;They Will Lock You In And You'll Like It&lt;/strong&gt;. They secondary services
+work well, are cheap, and are handy. I'm speaking of SQS, SES,
+Glacier, even Elastic Transcoder. Who &lt;em&gt;wants&lt;/em&gt; to run a durable queue
+again?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CloudFormation No&lt;/strong&gt;. It's near impossible to get right. My
+objection isn't YAML, I don't mind writing Ansible plays, it's the
+complexity/structure of CloudFormation that is impenetrable.  Plus
+even if you get it working once, you'd never run it again on something
+that worked.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Boto Yes.&lt;/strong&gt; Powerful and expressive. Don't script the CLI, use
+Boto. Easy as pie.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Qualify Machines Before Use&lt;/strong&gt;. Some VMs have lousy networking,
+presumably due to a chatty same-host or same-rack neighbor. Test
+for loss and latency to other hosts you own and on EBS. (I've used
+home-grown scripts, don't know of a standard open-source widget,
+someone should write one).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VPC Yes&lt;/strong&gt;. If you have machines talking to each other (i.e. not a
+lone machine doing something lonely) then put them in a VPC. It's not
+hard.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NAT No&lt;/strong&gt;. You think that'll improve security, but it will just
+introduce SPOFS and capacity chokepoints. Give your machines publicly
+routable IP's and use security groups.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ACL's Are A Pain&lt;/strong&gt;. Try to get as far as you can with just security
+groups.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You'll Peer VPC's Someday&lt;/strong&gt;. Choose non-overlapping subnet IP ranges
+at the start. It's hard to change later.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spot Instances Are Tricky&lt;/strong&gt;. They're only For a very specific use
+case that likely isn't yours. Setting up a test network? You can
+spend the money you save by using spot on swear jar fees.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pick a Management Toolset&lt;/strong&gt;. Ansible, Chef, all those things aren't
+&lt;em&gt;all&lt;/em&gt; that different when it comes down to it. Just don't dither back
+and forth. There's a little bit of extra Chef love w/ AWS but not enough to tip
+the scales in your decision I'd reckon. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tech Support Is Terrible Unless You're Big&lt;/strong&gt;. My &lt;a href="http://www.wavefront.com/"&gt;last little
+startup&lt;/a&gt; didn't get much out of the &lt;a href="https://aws.amazon.com/premiumsupport/"&gt;business level tech
+support&lt;/a&gt; we bought. We needed it so we could call in to get
+help when we needed it, and we used that for escalating some problems.
+It was nice to have a number to call when I urgently need to up a
+system limit, say. But debugging something real, like a networking
+problem? Pretty rough.&lt;/p&gt;
+&lt;p&gt;Stanford, on the other hand, had a named rep who was responsive and
+helpful. I guess she was sales, but I used her freely on support
+issues and she worked the backchannels for us. Presumably this is
+what any big/important customer would get, that's just not you,
+sorry.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Real Power Is Being On Demand&lt;/strong&gt;. I'm reaffirming cloud
+koolaid here. Running this way lets you build and run systems
+differently, &lt;em&gt;much better&lt;/em&gt;. I've relied on the cloud this to bring
+up emergency capacity. I've used it to convert a class of machines
+on the fly to the double-price double-RAM tier when hitting a
+surprising capacity crunch. There are a whole class of problems
+that get much easier when you can have 2x the machines for just a
+little while.  When someone comes to you with that cost/benefit
+spreadsheet arguing why you should self-host, that's when you need
+your file of "the cloud saved my bacon" stories at the ready.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/aws.html</guid><pubDate>Fri, 24 Apr 2015 07:10:00 GMT</pubDate></item><item><title>Don't Say No By Email</title><link>http://sef.kloninger.com/posts/saying-no.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/frown.png" alt=":(" width="192" height="178"&gt;&lt;/p&gt;
+&lt;p&gt;When I have to tell someone no, I pick up the phone. I &lt;strong&gt;hate&lt;/strong&gt;
+talking on the phone, but I do it anyway.&lt;/p&gt;
+&lt;p&gt;When you're answering no to someone, you're disappointing them even
+if just a little bit. So you owe it to them to talk instead of
+sending an email. It's the polite thing to do.&lt;/p&gt;
+&lt;p&gt;But there are two other reasons, selfish reasons, for making the
+call. First, you get immediate feedback on how they took the news.
+If they're upset then you can do damage control straight away. And
+at least you know! And second, delivering bad news directly and
+respectfully is an important skill to develop. We can all use the
+practice. And it's never as bad as I think it will be.&lt;/p&gt;&lt;/div&gt;</description><category>Life</category><guid>http://sef.kloninger.com/posts/saying-no.html</guid><pubDate>Sat, 04 Apr 2015 01:08:00 GMT</pubDate></item><item><title>Fewer Trick or Treaters This Year</title><link>http://sef.kloninger.com/posts/halloween-2014.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;This year's Halloween tally was 208.  I don't know why we have 32%
 fewer trick-or-treaters than we had last year, which was down 20%
 from the year before that.  Maybe the rain earlier in the day kept
 people home.  Maybe because it was Friday people opted for parties
@@ -13,7 +93,7 @@ instead of going door to door.  I don't know.&lt;/p&gt;
 
 &lt;p&gt;Thanks to my friend Stuart for being on this year's data gathering
 crew.  As usual, the full story is 
-&lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;in the numbers&lt;/a&gt;.&lt;/p&gt;</description><category>Halloween</category><guid>http://sef.kloninger.com/posts/halloween-2014.html</guid><pubDate>Sat, 01 Nov 2014 09:30:00 GMT</pubDate></item><item><title>In Praise of the Hand Tally</title><link>http://sef.kloninger.com/posts/hand-tally.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tallies.jpg" alt="Tally Marks" width="height=174"&gt;&lt;/p&gt;
+&lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;in the numbers&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><guid>http://sef.kloninger.com/posts/halloween-2014.html</guid><pubDate>Sat, 01 Nov 2014 09:30:00 GMT</pubDate></item><item><title>In Praise of the Hand Tally</title><link>http://sef.kloninger.com/posts/hand-tally.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tallies.jpg" alt="Tally Marks" width="height=174"&gt;&lt;/p&gt;
 &lt;p&gt;For the past five years I've gathered statistics on how many
 trick-or-treaters have come by on Halloween.  If you want to read
 about that, check out posts from &lt;a href="http://sef.kloninger.com/posts/201311halloween-2013.html"&gt;last year&lt;/a&gt; or &lt;a href="http://sef.kloninger.com/posts/201210halloween-candy-data.html"&gt;the year before&lt;/a&gt;.
@@ -60,7 +140,7 @@ pen project; the scrappy can-do Russians used pencils.  Well, this
 story has been &lt;a href="http://www.snopes.com/business/genius/spacepen.asp"&gt;debunked by the good people at Snopes&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;And second, I'd like to plug Tony and Tom's "day job", &lt;a href="http://stonehearth.net/"&gt;Stonehearth&lt;/a&gt;.
 I think of it as Starcraft meets Minecraft.  I am so eager to play
-it when it lands.&lt;/p&gt;</description><category>Halloween</category><category>Tech</category><guid>http://sef.kloninger.com/posts/hand-tally.html</guid><pubDate>Thu, 30 Oct 2014 16:20:00 GMT</pubDate></item><item><title>Leaving Stanford Online Ed</title><link>http://sef.kloninger.com/posts/leaving-stanford.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p style="float:right; align:right; width:30%"&gt;&lt;img class="postimage" src="http://sef.kloninger.com/f/stanfordlogo.gif" alt="Stanford"&gt;&lt;/p&gt;
+it when it lands.&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><category>Tech</category><guid>http://sef.kloninger.com/posts/hand-tally.html</guid><pubDate>Thu, 30 Oct 2014 16:20:00 GMT</pubDate></item><item><title>Leaving Stanford Online Ed</title><link>http://sef.kloninger.com/posts/leaving-stanford.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p style="float:right; align:right; width:30%"&gt;&lt;img class="postimage" src="http://sef.kloninger.com/f/stanfordlogo.gif" alt="Stanford"&gt;&lt;/p&gt;
 
 &lt;p&gt;Friday was my last day building Stanford's &lt;a href="https://class.stanford.edu/"&gt;open-source online education
 platform&lt;/a&gt;.  What started as a lark turned out to be one of the most
@@ -181,7 +261,7 @@ Ike, Jim, Phil, Ross...)&lt;/p&gt;
 especially Jason and Jane; the team in the Office of the Vice Provost for
 Online Learning, especially Professor &lt;a href="http://theory.stanford.edu/people/jcm/"&gt;John Mitchell&lt;/a&gt; who made this
 possible; and my many friends at edX.  There's a lot to be proud of over
-the past two years, and a lot of good work ahead.&lt;/p&gt;</description><category>Education</category><guid>http://sef.kloninger.com/posts/leaving-stanford.html</guid><pubDate>Mon, 01 Sep 2014 06:45:00 GMT</pubDate></item><item><title>Arthroscopy Is Amazing</title><link>http://sef.kloninger.com/posts/arthroscopy.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/sef-left-knee.png" alt="My Left Knee" width="30%"&gt;&lt;/p&gt;
+the past two years, and a lot of good work ahead.&lt;/p&gt;&lt;/div&gt;</description><category>Education</category><guid>http://sef.kloninger.com/posts/leaving-stanford.html</guid><pubDate>Mon, 01 Sep 2014 06:45:00 GMT</pubDate></item><item><title>Arthroscopy Is Amazing</title><link>http://sef.kloninger.com/posts/arthroscopy.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/sef-left-knee.png" alt="My Left Knee" width="30%"&gt;&lt;/p&gt;
 &lt;p&gt;Three days ago I was hobbling around on a sore knee with a torn
 meniscus. But after just three days of icing and Ibuprofen and
 resting on the couch already my knee is almost better than it was
@@ -214,7 +294,7 @@ of anesthesia where it is safe to operate is right between "excitement"
 where you vomit and twitch, and "overdose" where you stop breathing.
 Don't read that part.&lt;/p&gt;
 &lt;p&gt;I'm back to work tomorrow, and I expect to be back on my bike by next
-week!&lt;/p&gt;</description><category>Life</category><guid>http://sef.kloninger.com/posts/arthroscopy.html</guid><pubDate>Tue, 19 Aug 2014 05:20:00 GMT</pubDate></item><item><title>David Bowie To The Rescue</title><link>http://sef.kloninger.com/posts/earworm.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p style="float:right; align:right; width:30%"&gt;&lt;a href="http://en.wikipedia.org/wiki/File:Bowie_JohnDancing1.jpg#mediaviewer/File:Bowie_JohnDancing1.jpg"&gt;&lt;img class="postimage" src="http://upload.wikimedia.org/wikipedia/en/b/bb/Bowie_JohnDancing1.jpg" alt="Bowie JohnDancing1.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+week!&lt;/p&gt;&lt;/div&gt;</description><category>Life</category><guid>http://sef.kloninger.com/posts/arthroscopy.html</guid><pubDate>Tue, 19 Aug 2014 05:20:00 GMT</pubDate></item><item><title>David Bowie To The Rescue</title><link>http://sef.kloninger.com/posts/earworm.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p style="float:right; align:right; width:30%"&gt;&lt;a href="http://en.wikipedia.org/wiki/File:Bowie_JohnDancing1.jpg#mediaviewer/File:Bowie_JohnDancing1.jpg"&gt;&lt;img class="postimage" src="http://upload.wikimedia.org/wikipedia/en/b/bb/Bowie_JohnDancing1.jpg" alt="Bowie JohnDancing1.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I often wake up with a song going through my head. I don't know
 why this happens. The stranger thing the songs. Yesterday
@@ -229,7 +309,7 @@ Not one of Bowie's better known songs, nor even one of his best, but
 remarkably well suited to this. I believe it's because the
 melody is kind of odd and not all that pleasant, so it's not going
 to get stuck itself. You kind of remember the melody and lyrics,
-but not quite, so that keeps you busy. It always does the trick. &lt;/p&gt;</description><category>Life</category><guid>http://sef.kloninger.com/posts/earworm.html</guid><pubDate>Sun, 17 Aug 2014 00:25:00 GMT</pubDate></item><item><title>Feedback Without Tips</title><link>http://sef.kloninger.com/posts/tips.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tip-oneill.jpg" alt="Tip O'Neill" width="30%"&gt;&lt;/p&gt;
+but not quite, so that keeps you busy. It always does the trick. &lt;/p&gt;&lt;/div&gt;</description><category>Life</category><guid>http://sef.kloninger.com/posts/earworm.html</guid><pubDate>Sun, 17 Aug 2014 00:25:00 GMT</pubDate></item><item><title>Feedback Without Tips</title><link>http://sef.kloninger.com/posts/tips.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tip-oneill.jpg" alt="Tip O'Neill" width="30%"&gt;&lt;/p&gt;
 &lt;p&gt;I really don't like tipping. I'm not like &lt;a href="https://www.youtube.com/watch?v=Z-qV9wVGb38"&gt;Mr. Pink&lt;/a&gt;. It's
 not that I don't want my server or driver to get something extra.
 I just don't like the awkward social situation of deciding if this
@@ -254,7 +334,7 @@ to not have to fret about too much or too little:&lt;/p&gt;
 &lt;p&gt;Both of these services decouple feedback from money. Both avoid
 awkwardly changing money. I'd definitely pay a premium for that.&lt;/p&gt;
 &lt;p&gt;I wonder what other service business would benefit from decoupling
-feedback from money?&lt;/p&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/tips.html</guid><pubDate>Tue, 29 Apr 2014 03:07:00 GMT</pubDate></item><item><title>CS Students: Learn to Write</title><link>http://sef.kloninger.com/posts/learn-to-write.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/writing-hand.jpeg" alt="Writing Hand" width="40%"&gt;&lt;/p&gt;
+feedback from money?&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/tips.html</guid><pubDate>Tue, 29 Apr 2014 03:07:00 GMT</pubDate></item><item><title>CS Students: Learn to Write</title><link>http://sef.kloninger.com/posts/learn-to-write.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/writing-hand.jpeg" alt="Writing Hand" width="40%"&gt;&lt;/p&gt;
 &lt;p&gt;If I could do my college years over I would focus on writing. I
 would take courses that required a lot of writing, in the spirit
 of "learn by doing". I'd also take courses in the mechanics and
@@ -307,7 +387,7 @@ in history, but secretly take CS courses on the side. If you're
 super smart like him, and can manage getting both degrees, then
 you're awesome. But don't sacrifice the BA for the BS. I would
 &lt;strong&gt;love&lt;/strong&gt; to talk to a candidate with with a History BA and a Computer
-Science MS.&lt;/p&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/learn-to-write.html</guid><pubDate>Sun, 26 Jan 2014 00:17:00 GMT</pubDate></item><item><title>Chicken Soup</title><link>http://sef.kloninger.com/posts/chicken_soup.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/chicken-noodle-soup.jpg" alt="Yummy Bowl of Chicken Noodle Soup" width="40%"&gt;&lt;/p&gt;
+Science MS.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/learn-to-write.html</guid><pubDate>Sun, 26 Jan 2014 00:17:00 GMT</pubDate></item><item><title>Chicken Soup</title><link>http://sef.kloninger.com/posts/chicken_soup.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/chicken-noodle-soup.jpg" alt="Yummy Bowl of Chicken Noodle Soup" width="40%"&gt;&lt;/p&gt;
 
 &lt;p&gt;My family hasn't avoided the colds that are going around now. My
 way of fighting back is making chicken noodle soup.  It's not too
@@ -315,49 +395,4 @@ hard, it's satisfying, and it tastes great. &lt;a href="http://sef.kloninger.com
 to &lt;a href="http://peninsulaschool.org/"&gt;Peninsula School&lt;/a&gt; and gets used at our annual Craft Fair.
 It's benefited from years of refinement.&lt;/p&gt;
 &lt;p&gt;I add more salt. I don't do peas. I've tried with rice but it
-got starchy and weird, stick with egg noodles.&lt;/p&gt;</description><category>Family</category><category>Life</category><guid>http://sef.kloninger.com/posts/chicken_soup.html</guid><pubDate>Tue, 21 Jan 2014 01:16:00 GMT</pubDate></item><item><title>Consume vs. Produce vs. Produce Publicly</title><link>http://sef.kloninger.com/posts/consume-produce-public.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/make-asl.gif" alt="\" make in american sign language width="50%"&gt;&lt;/p&gt;
-
-&lt;p&gt;One of my goals for this year is to try to produce more and consume
-less. Not in the green, fixed-planetary-resources sense [1]. I
-mean to make more things, ideas, contributions.  To be more creative.
-Creative in literal sense of that word: creating.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://twitter.com/rands"&gt;Rands&lt;/a&gt; said it well in his post this week, 
-&lt;a href="http://randsinrepose.com/archives/the-builders-high/"&gt;"The Builder's High'&lt;/a&gt;. If you haven't read it, go do so now.
-I'll wait.  (and while you're at it, if you don't have him followed
-or bookmarked or whatever, do that too.)&lt;/p&gt;
-&lt;p&gt;I agree with pretty much everything he said in there. The good
-feeling that comes from actually making soemthing. How that's
-especially true now in light of the constant crush of everyone
-else's creations (he called them "moments"). &lt;/p&gt;
-&lt;p&gt;Making takes many forms. Since I stink at woodworking and gardening
-and painting, I'll stick to the things I do enjoy, like writing and
-coding and cooking. Those fit less into the traditional mold of
-"building" or "making" but that's OK.&lt;/p&gt;
-&lt;p&gt;I want to take it one step further. Here are my three categories
-in value order. Numbers 1 and 2 we just spoke of, but 3 is new.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Consume&lt;/strong&gt;. This is watching TV, playing video games, trashy
-   reading. Sure I'm going to keep doing that, but it's not energizing.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Produce&lt;/strong&gt;. Cooking a meal, learning something interesting. Maybe
-   even reading something intellectually challenging, but that's pushing
-   it.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Produce, In Public&lt;/strong&gt;. Now, this is the toughie. It's one thing to 
-   do something creative, another to put yourself out there and tell 
-   poeple what you did, and why. By sharing the product, by talking
-   people through the choices you made to get there, you're opening
-   yourself up to criticism. But why not!&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;That is part of the reason why I &lt;a href="http://sef.kloninger.com/posts/switching-to-static.html"&gt;reworked my blog&lt;/a&gt; over the
-holiday break, so I'd have a nicer platform for writing. Anything to
-lower the bar to produce.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;[1] I'm not anti-green. I really appreciate the environmental
-warriors out there who walk the walk with real life choices to
-consume less. That's just not my bailiwick, for now at least.&lt;/p&gt;
-&lt;!-- vim set fo+=awn ai tw=72 --&gt;</description><category>Life</category><guid>http://sef.kloninger.com/posts/consume-produce-public.html</guid><pubDate>Fri, 10 Jan 2014 06:51:00 GMT</pubDate></item></channel></rss>
+got starchy and weird, stick with egg noodles.&lt;/p&gt;&lt;/div&gt;</description><category>Family</category><category>Life</category><guid>http://sef.kloninger.com/posts/chicken_soup.html</guid><pubDate>Tue, 21 Jan 2014 01:16:00 GMT</pubDate></item></channel></rss>

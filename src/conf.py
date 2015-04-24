@@ -33,9 +33,11 @@ BLOG_DESCRIPTION = "None"
 # Currently supported languages are:
 #
 # en     English
+# ar     Arabic
 # bg     Bulgarian
 # ca     Catalan
 # cs     Czech [ALTERNATIVELY cz]
+# da     Danish
 # de     German
 # el     Greek [NOT gr]
 # eo     Esperanto
@@ -47,8 +49,10 @@ BLOG_DESCRIPTION = "None"
 # fr     French
 # hi     Hindi
 # hr     Croatian
+# id     Indonesian
 # it     Italian
 # ja     Japanese [NOT jp]
+# ko     Korean
 # nb     Norwegian Bokmål
 # nl     Dutch
 # pl     Polish
@@ -56,6 +60,8 @@ BLOG_DESCRIPTION = "None"
 # ru     Russian
 # sk     Slovak
 # sl     Slovene
+# sr     Serbian (Cyrillic)
+# sv     Swedish
 # tr     Turkish [NOT tr_TR]
 # ur     Urdu
 # zh_cn  Chinese (Simplified)
@@ -88,9 +94,31 @@ TRANSLATIONS = {
 
 TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
-# Links for the sidebar / navigation bar.
-# You should provide a key-value pair for each used language.
-# (the same way you would do with a (translatable) setting.)
+# Links for the sidebar / navigation bar.  (translatable)
+# This is a dict.  The keys are languages, and values are tuples.
+#
+# For regular links:
+#     ('http://getnikola.com/', 'Nikola Homepage')
+#
+# For submenus:
+#     (
+#         (
+#             ('http://apple.com/', 'Apple'),
+#             ('http://orange.com/', 'Orange'),
+#         ),
+#         'Fruits'
+#     )
+#
+# WARNING: Support for submenus is theme-dependent.
+#          Only one level of submenus is supported.
+# WARNING: Some themes, including the default Bootstrap 3 theme,
+#          may present issues if the menu is too large.
+#          (in bootstrap3, the navbar can grow too large and cover contents.)
+# WARNING: If you link to directories, make sure to follow
+#          ``STRIP_INDEXES``.  If it’s set to ``True``, end your links
+#          with a ``/``, otherwise end them with ``/index.html`` — or
+#          else they won’t be highlighted when active.
+
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ('/stories/about.html', 'About'),
@@ -113,7 +141,7 @@ THEME = "bootstrap3"
 # another time zone, please set TIMEZONE to match. Check the available
 # list from Wikipedia:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-# (eg. 'Europe/Zurich')
+# (e.g. 'Europe/Zurich')
 # Also, if you want to use a different time zone in some of your posts,
 # you can use the ISO 8601/RFC 3339 format (ex. 2012-03-30T23:00:00+02:00)
 TIMEZONE = "America/Los_Angeles"
@@ -127,13 +155,26 @@ TIMEZONE = "America/Los_Angeles"
 # (str used by datetime.datetime.strftime)
 # DATE_FORMAT = '%Y-%m-%d %H:%M'
 
-# While nikola can select a sensible locale for each language,
+# Date format used to display post dates, if local dates are used.
+# (str used by moment.js)
+# JS_DATE_FORMAT = 'YYYY-MM-DD HH:mm'
+
+# Date fanciness.
+#
+# 0 = using DATE_FORMAT and TIMEZONE
+# 1 = using JS_DATE_FORMAT and local user time (via moment.js)
+# 2 = using a string like “2 days ago”
+#
+# Your theme must support it, bootstrap and bootstrap3 already do.
+DATE_FANCINESS = 2
+
+# While Nikola can select a sensible locale for each language,
 # sometimes explicit control can come handy.
 # In this file we express locales in the string form that
 # python's locales will accept in your OS, by example
-# "en_US.utf8" in unix-like OS, "English_United States" in Windows.
+# "en_US.utf8" in Unix-like OS, "English_United States" in Windows.
 # LOCALES = dict mapping language --> explicit locale for the languages
-# in TRANSLATIONS. You can ommit one or more keys.
+# in TRANSLATIONS. You can omit one or more keys.
 # LOCALE_FALLBACK = locale to use when an explicit locale is unavailable
 # LOCALE_DEFAULT = locale to use for languages not mentioned in LOCALES; if
 # not set the default Nikola mapping is used.
@@ -144,7 +185,7 @@ TIMEZONE = "America/Los_Angeles"
 # (whatever/thing.txt).
 #
 # That fragment could have an associated metadata file (whatever/thing.meta),
-# and optionally translated files (example for spanish, with code "es"):
+# and optionally translated files (example for Spanish, with code "es"):
 #     whatever/thing.es.txt and whatever/thing.es.meta
 #
 #     This assumes you use the default TRANSLATIONS_PATTERN.
@@ -152,7 +193,7 @@ TIMEZONE = "America/Los_Angeles"
 # From those files, a set of HTML fragment files will be generated:
 # cache/whatever/thing.html (and maybe cache/whatever/thing.html.es)
 #
-# These files are combinated with the template to produce rendered
+# These files are combined with the template to produce rendered
 # pages, which will be placed at
 # output / TRANSLATIONS[lang] / destination / pagename.html
 #
@@ -173,10 +214,16 @@ PAGES = (
 )
 
 # One or more folders containing files to be copied as-is into the output.
-# The format is a dictionary of "source" "relative destination".
+# The format is a dictionary of {source: relative destination}.
 # Default is:
-# FILES_FOLDERS = {'files': '' }
+# FILES_FOLDERS = {'files': ''}
 # Which means copy 'files' into 'output'
+
+# One or more folders containing listings to be processed and stored into
+# the output. The format is a dictionary of {source: relative destination}.
+# Default is:
+# LISTINGS_FOLDERS = {'listings': 'listings'}
+# Which means process listings from 'listings' into 'output/listings'
 
 # A mapping of languages to file-extensions that represent that language.
 # Feel free to add or delete extensions to any list, but don't add any new
@@ -241,6 +288,43 @@ WRITE_TAG_CLOUD = False
 # the posts themselves. If set to False, it will be just a list of links.
 # TAG_PAGES_ARE_INDEXES = False
 
+# Set descriptions for tag pages to make them more interesting. The
+# default is no description. The value is used in the meta description
+# and displayed underneath the tag list or index page’s title.
+# TAG_PAGES_DESCRIPTIONS = {
+#    DEFAULT_LANG: {
+#        "blogging": "Meta-blog posts about blogging about blogging.",
+#        "open source": "My contributions to my many, varied, ever-changing, and eternal libre software projects."
+#    },
+#}
+
+# Only include tags on the tag list/overview page if there are at least
+# TAGLIST_MINIMUM_POSTS number of posts or more with every tag. Every tag
+# page is still generated, linked from posts, and included in the sitemap.
+# However, more obscure tags can be hidden from the tag index page.
+# TAGLIST_MINIMUM_POSTS = 1
+
+# Final locations are:
+# output / TRANSLATION[lang] / CATEGORY_PATH / index.html (list of categories)
+# output / TRANSLATION[lang] / CATEGORY_PATH / CATEGORY_PREFIX category.html (list of posts for a category)
+# output / TRANSLATION[lang] / CATEGORY_PATH / CATEGORY_PREFIX category.xml (RSS feed for a category)
+# CATEGORY_PATH = "categories"
+# CATEGORY_PREFIX = "cat_"
+
+# If CATEGORY_PAGES_ARE_INDEXES is set to True, each category's page will contain
+# the posts themselves. If set to False, it will be just a list of links.
+# CATEGORY_PAGES_ARE_INDEXES = False
+
+# Set descriptions for category pages to make them more interesting. The
+# default is no description. The value is used in the meta description
+# and displayed underneath the category list or index page’s title.
+# CATEGORY_PAGES_DESCRIPTIONS = {
+#    DEFAULT_LANG: {
+#        "blogging": "Meta-blog posts about blogging about blogging.",
+#        "open source": "My contributions to my many, varied, ever-changing, and eternal libre software projects."
+#    },
+#}
+
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
 # INDEX_PATH = ""
@@ -249,12 +333,23 @@ WRITE_TAG_CLOUD = False
 # CREATE_MONTHLY_ARCHIVE = False
 # Create one large archive instead of per-year
 CREATE_SINGLE_ARCHIVE = True
+# Create year, month, and day archives each with a (long) list of posts
+# (overrides both CREATE_MONTHLY_ARCHIVE and CREATE_SINGLE_ARCHIVE)
+# CREATE_FULL_ARCHIVES = False
+# If monthly archives or full archives are created, adds also one archive per day
+# CREATE_DAILY_ARCHIVE = False
 # Final locations for the archives are:
 # output / TRANSLATION[lang] / ARCHIVE_PATH / ARCHIVE_FILENAME
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / index.html
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / MONTH / index.html
+# output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / MONTH / DAY / index.html
 # ARCHIVE_PATH = ""
 # ARCHIVE_FILENAME = "archive.html"
+
+# If ARCHIVES_ARE_INDEXES is set to True, each archive page which contains a list
+# of posts will contain the posts themselves. If set to False, it will be just a
+# list of links.
+# ARCHIVES_ARE_INDEXES = False
 
 # URLs to other posts/pages can take 3 forms:
 # rel_path: a relative URL to the current page/post (default)
@@ -306,15 +401,23 @@ REDIRECTIONS = [
     (u'2013/12/airmail/index.html', u'/posts/201312airmail.html'),
 ]
 
-# Commands to execute to deploy. Can be anything, for example,
-# you may use rsync:
+# Presets of commands to execute to deploy. Can be anything, for
+# example, you may use rsync:
 # "rsync -rav --delete output/ joe@my.site:/srv/www/site"
 # And then do a backup, or run `nikola ping` from the `ping`
-# plugin (`nikola install_plugin ping`).
-# To do manual deployment, set it to []
-# DEPLOY_COMMANDS = []
+# plugin (`nikola plugin -i ping`).  Or run `nikola check -l`.
+# You may also want to use github_deploy (see below).
+# You can define multiple presets and specify them as arguments
+# to `nikola deploy`.  If no arguments are specified, a preset
+# named `default` will be executed.  You can use as many presets
+# in a `nikola deploy` command as you like.
+# DEPLOY_COMMANDS = {
+#     'default': [
+#         "rsync -rav --delete output/ joe@my.site:/srv/www/site",
+#     ]
+# }
 
-# For user.github.io/organization.github.io pages, the DEPLOY branch
+# For user.github.io OR organization.github.io pages, the DEPLOY branch
 # MUST be 'master', and 'gh-pages' for other repositories.
 # GITHUB_SOURCE_BRANCH = 'master'
 # GITHUB_DEPLOY_BRANCH = 'gh-pages'
@@ -348,11 +451,16 @@ OUTPUT_FOLDER = '..'
 # A python callable, which will be called with the filename as
 # argument.
 #
-# By default, there are no filters.
+# By default, only .php files uses filters to inject PHP into
+# Nikola’s templates. All other filters must be enabled through FILTERS.
 #
-# Many filters are shipped with Nikola.  A list is available in the manual:
+# Many filters are shipped with Nikola. A list is available in the manual:
 # <http://getnikola.com/handbook.html#post-processing-filters>
+#
+# from nikola import filters
 # FILTERS = {
+#    ".html": [filters.typogrify],
+#    ".js": [filters.closure_compiler],
 #    ".jpg": ["jpegoptim --strip-all -m75 -v %s"],
 # }
 
@@ -387,9 +495,13 @@ OUTPUT_FOLDER = '..'
 # Image Gallery Options
 # #############################################################################
 
-# Galleries are folders in galleries/
-# Final location of galleries will be output / GALLERY_PATH / gallery_name
-# GALLERY_PATH = "galleries"
+# One or more folders containing galleries. The format is a dictionary of
+# {"source": "relative_destination"}, where galleries are looked for in
+# "source/" and the results will be located in
+# "OUTPUT_PATH/relative_destination/gallery_name"
+# Default is:
+# GALLERY_FOLDERS = {"galleries": "galleries"}
+# More gallery options:
 # THUMBNAIL_SIZE = 180
 # MAX_IMAGE_SIZE = 1280
 # USE_FILENAME_AS_TITLE = True
@@ -397,18 +509,62 @@ OUTPUT_FOLDER = '..'
 #
 # If set to False, it will sort by filename instead. Defaults to True
 # GALLERY_SORT_BY_DATE = True
+#
+# Folders containing images to be used in normal posts or
+# pages. Images will be scaled down according to IMAGE_THUMBNAIL_SIZE
+# and MAX_IMAGE_SIZE options, but will have to be referenced manually
+# to be visible on the site. The format is a dictionary of {source:
+# relative destination}.
+#
+# IMAGE_FOLDERS = {'images': ''}
+# IMAGE_THUMBNAIL_SIZE = 400
 
 # #############################################################################
 # HTML fragments and diverse things that are used by the templates
 # #############################################################################
 
 # Data about post-per-page indexes.
-# INDEXES_PAGES defaults to 'old posts, page %d' or 'page %d' (translated),
+# INDEXES_PAGES defaults to ' old posts, page %d' or ' page %d' (translated),
 # depending on the value of INDEXES_PAGES_MAIN.
-# INDEXES_TITLE = ""         # If this is empty, defaults to BLOG_TITLE
-# INDEXES_PAGES = ""         # If this is empty, defaults to '[old posts,] page %d' (see above)
-# INDEXES_PAGES_MAIN = False # If True, INDEXES_PAGES is also displayed on
-#                            # the main (the newest) index page (index.html)
+#
+# (translatable) If the following is empty, defaults to BLOG_TITLE:
+# INDEXES_TITLE = ""
+#
+# (translatable) If the following is empty, defaults to ' [old posts,] page %d' (see above):
+# INDEXES_PAGES = ""
+#
+# If the following is True, INDEXES_PAGES is also displayed on the main (the
+# newest) index page (index.html):
+# INDEXES_PAGES_MAIN = False
+#
+# If the following is True, index-1.html has the oldest posts, index-2.html the
+# second-oldest posts, etc., and index.html has the newest posts. This ensures
+# that all posts on index-x.html will forever stay on that page, now matter how
+# many new posts are added.
+# If False, index-1.html has the second-newest posts, index-2.html the third-newest,
+# and index-n.html the oldest posts. When this is active, old posts can be moved
+# to other index pages when new posts are added.
+# INDEXES_STATIC = True
+#
+# (translatable) If PRETTY_URLS is set to True, this setting will be used to create
+# more pretty URLs for index pages, such as page/2/index.html instead of index-2.html.
+# Valid values for this settings are:
+#   * False,
+#   * a list or tuple, specifying the path to be generated,
+#   * a dictionary mapping languages to lists or tuples.
+# Every list or tuple must consist of strings which are used to combine the path;
+# for example:
+#     ['page', '{number}', '{index_file}']
+# The replacements
+#     {number}     --> (logical) page number;
+#     {old_number} --> the page number inserted into index-n.html before (zero for
+#                      the main page);
+#     {index_file} --> value of option INDEX_FILE
+# are made.
+# Note that in case INDEXES_PAGES_MAIN is set to True, a redirection will be created
+# for the full URL with the page number of the main page to the normal (shorter) main
+# page URL.
+# INDEXES_PRETTY_PAGE_URL = False
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
@@ -452,6 +608,12 @@ OUTPUT_FOLDER = '..'
 INDEX_READ_MORE_LINK = '<p class="more"><a href="{link}">{read_more}…</a></p>'
 # 'Read more...' for the RSS_FEED, if RSS_TEASERS is True (translatable)
 RSS_READ_MORE_LINK = '<p><a href="{link}">{read_more}…</a> ({min_remaining_read})</p>'
+
+# Append a URL query to the RSS_READ_MORE_LINK and the //rss/item/link in
+# RSS feeds. Minimum example for Piwik "pk_campaign=rss" and Google Analytics
+# "utm_source=rss&utm_medium=rss&utm_campaign=rss". Advanced option used for
+# traffic source tracking.
+RSS_LINKS_APPEND_QUERY = False
 
 # A HTML fragment describing the license, for the sidebar.
 # (translatable)
@@ -629,10 +791,10 @@ SOCIAL_BUTTONS_CODE = ""
 
 # Show link to source for the posts?
 # Formerly known as HIDE_SOURCELINK (inverse)
-# SHOW_SOURCELINK = True
+SHOW_SOURCELINK = True
 # Copy the source files for your pages?
 # Setting it to False implies SHOW_SOURCELINK = False
-# COPY_SOURCES = True
+COPY_SOURCES = True
 
 # Modify the number of Post per Index Page
 # Defaults to 10

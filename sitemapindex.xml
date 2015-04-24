@@ -10,31 +10,31 @@
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/categories/education.xml</loc>
-  <lastmod>2015-04-06</lastmod>
+  <lastmod>2015-04-23</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/categories/family.xml</loc>
-  <lastmod>2015-04-06</lastmod>
+  <lastmod>2015-04-23</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/categories/halloween.xml</loc>
-  <lastmod>2015-04-06</lastmod>
+  <lastmod>2015-04-23</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/categories/life.xml</loc>
-  <lastmod>2015-04-06</lastmod>
+  <lastmod>2015-04-23</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/categories/management.xml</loc>
-  <lastmod>2015-04-06</lastmod>
+  <lastmod>2015-04-23</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/categories/tech.xml</loc>
-  <lastmod>2015-04-06</lastmod>
+  <lastmod>2015-04-24</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/categories/technology.xml</loc>
-  <lastmod>2015-04-06</lastmod>
+  <lastmod>2015-04-23</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/galleries/rss.xml</loc>
@@ -42,14 +42,10 @@
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/rss.xml</loc>
-  <lastmod>2015-04-06</lastmod>
+  <lastmod>2015-04-24</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/sitemap.xml</loc>
-  <lastmod>2015-04-06</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://sef.kloninger.com/sitemapindex.xml</loc>
-  <lastmod>2015-04-06</lastmod>
+  <lastmod>2015-04-24</lastmod>
  </sitemap>
 </sitemapindex>

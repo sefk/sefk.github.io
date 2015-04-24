@@ -1,91 +1,106 @@
 <!-- 
-.. title: Lessons from Three Years Living in AWS
+.. title: Lessons from Three Years in AWS
 .. slug: aws
 .. link: 
 .. description: 
-.. tags: Tech,draft
-.. date: 2015/04/06 20:07
+.. tags: Tech
+.. date: 2015/04/24 00:10
 -->
 
-<img style="float:right" class="postimage" src="/f/aws.png" alt="AWS" width=30%>
+<img style="float:right" class="postimage" src="/f/aws.png" 
+     alt="AWS Logo" width=30%>
 
-I've spent the last three years building and operating services
-that are all-in on Amazon Web Services. This long post is my brain
-dump on many of the lessons I've learned along the way.
+I've spent the last three years building and operating web sites
+with Amazon Web Services and here are a few lessons I've learned. 
+But I first have to come clean that I'm a fan of AWS with only
+casual experience with other IAAS/PAAS platforms.
 
-I wouldn't necessarily call myself an Amazon fanboy, but I am
-generally really happy with their service and would use them again
-to build my business on.
+**S3 Is Amazing**. They made the right engineering choices and
+compromises: cheap, practically infinitely scalable, fast enough,
+with good availability. $0.03/GB/mo covers up for a lot of sins.
+Knowing its there changes how you build systems.
 
+**IAM Machine Roles From The Start**. IAM with [Instance Metadata][im]
+is a powerful way to manage access rights. Trouble is you can't add
+to existing machines. Provision with machine roles in big categories
+(e.g. app servers, utility machines, databases) even if they're
+just placeholders.
 
-## AZ's Aren't All That Decoupled
+**Availability Zones's Are Only Mostly Decoupled**. After the 2011
+[us-east-1 outage][2011] we were reassured that a coordinated 
+outage wouldn't happen again, but it happened again just
+[last month][2015].
 
-Amazon makes a big fuss about how their Availability Zones are
-independent. Separate physical infrastructure (power, cooling) and
-infrastructure should keep things, well, separate. But there was
-an [infamous Amazon outage][2011] in their Northern Virginia site
-in 2011 that called into question the whole AZ thing. But that was
-just a fluke, right?
+**They Will Lock You In And You'll Like It**. They secondary services
+work well, are cheap, and are handy. I'm speaking of SQS, SES,
+Glacier, even Elastic Transcoder. Who *wants* to run a durable queue
+again?
 
-Well, it [happened again just last month][2015], albeit on a much
-smaller scale. This time it was internal DNS that affected some
-VPC's that spanned availability zones in Oregon (US-WEST-2). It was
-definitely noticeable at Wavefront, where I was working at the time,
-and we got through it OK. But it "wasn't supposed to happen."
+**CloudFormation No**. It's near impossible to get right. My
+objection isn't YAML, I don't mind writing Ansible plays, it's the
+complexity/structure of CloudFormation that is impenetrable.  Plus
+even if you get it working once, you'd never run it again on something
+that worked.
 
-The lesson is that AZ's are a good idea but don't bet the farm on
-them having truly decoupled failure modes.
+**Boto Yes.** Powerful and expressive. Don't script the CLI, use
+Boto. Easy as pie.
 
+**Qualify Machines Before Use**. Some VMs have lousy networking,
+presumably due to a chatty same-host or same-rack neighbor. Test
+for loss and latency to other hosts you own and on EBS. (I've used
+home-grown scripts, don't know of a standard open-source widget,
+someone should write one).
 
-## S3 Is Amazing
+**VPC Yes**. If you have machines talking to each other (i.e. not a
+lone machine doing something lonely) then put them in a VPC. It's not
+hard.
 
-As an engineer you just have to marvel at something that is well
-built. Whatever compromises they had to make were the right ones.
-Because as a user of Amazon's Simple Storage Service (S3) it occupies
-a really nice space: cheap, practically infinitely scalable, pretty
-fast, with good availability. And did I mention it was cheap? At
-**$0.03** per GB/mo you can store a lot of logs and videos.
+**NAT No**. You think that'll improve security, but it will just
+introduce SPOFS and capacity chokepoints. Give your machines publicly
+routable IP's and use security groups.
 
-The key thing they did right was to not build on a filesystem, but
-instead their own BLOB store, [Dynamo][dynamo] (the famous paper
-is linked from that post).
+**ACL's Are A Pain**. Try to get as far as you can with just security
+groups.
 
-When I was at Akamai we operated a storage service that fell short
-of these marks. Originally built on NetApp filers, and later farms
-of JBOD's, it was complicated and never got to the
-price/performance/availability neighborhood of S3. Now, I left
-Akamai in 2008 and they've likely built something better by now,
-but at least back then, we struggled with storage.
+**You'll Peer VPC's Someday**. Choose non-overlapping subnet IP ranges
+at the start. It's hard to change later.
 
-You'll be amazed how much you can stick in S3 for so cheap. It
-really changes the way you think of building a system having something
-like that around that you can count on.
+**Spot Instances Are Tricky**. They're only For a very specific use
+case that likely isn't yours. Setting up a test network? You can
+spend the money you save by using spot on swear jar fees.
 
+**Pick a Management Toolset**. Ansible, Chef, all those things aren't
+*all* that different when it comes down to it. Just don't dither back
+and forth. There's a little bit of extra Chef love w/ AWS but not enough to tip
+the scales in your decision I'd reckon. 
 
-## Secondary Services Just Work
+**Tech Support Is Terrible Unless You're Big**. My [last little
+startup][wf] didn't get much out of the [business level tech
+support][sup] we bought. We needed it so we could call in to get
+help when we needed it, and we used that for escalating some problems.
+It was nice to have a number to call when I urgently need to up a
+system limit, say. But debugging something real, like a networking
+problem? Pretty rough.
 
-It's safe to say that Amazon makes its money from their Big Kahuna
-services, especially EC2. But what they've been good at over the
-last few years they've continued to roll out a
+Stanford, on the other hand, had a named rep who was responsive and
+helpful. I guess she was sales, but I used her freely on support
+issues and she worked the backchannels for us. Presumably this is
+what any big/important customer would get, that's just not you,
+sorry.
 
-## Qualify Machines Before Using
-
-## Start With Machine IAM Roles
-
-## CloudFormation No, Boto Yes
-
-## Managing Costs: Spot's No, Reserved Yes
-
-## VPC Yes, NAT No
-
-## Support Isn't Great Unless You're Big
-
-## The Real Power Is From On Demand
-
-Most people have drunk the Koolaid on cloud computing, so I won't beat that horse here. I just want to recount two stories 
-
-
+**The Real Power Is Being On Demand**. I'm reaffirming cloud
+koolaid here. Running this way lets you build and run systems
+differently, *much better*. I've relied on the cloud this to bring
+up emergency capacity. I've used it to convert a class of machines
+on the fly to the double-price double-RAM tier when hitting a
+surprising capacity crunch. There are a whole class of problems
+that get much easier when you can have 2x the machines for just a
+little while.  When someone comes to you with that cost/benefit
+spreadsheet arguing why you should self-host, that's when you need
+your file of "the cloud saved my bacon" stories at the ready.
 
   [2011]: http://www.networkworld.com/article/2202805/cloud-computing/amazon-ec2-outage-calls--availability-zones--into-question.html
   [2015]: https://www.reddit.com/r/aws/comments/2zpag7/aws_internal_dns_outage/
-  [dynamo]: http://www.allthingsdistributed.com/2007/10/amazons_dynamo.html
+  [sup]: https://aws.amazon.com/premiumsupport/
+  [wf]: http://www.wavefront.com/
+  [im]: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html
