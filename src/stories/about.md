@@ -7,8 +7,8 @@
 I wrote my first computer program when I was twelve years old on
 an Apple //e. It was a simple [robots game][] handwritten 6502
 assembly. It took all summer to write. That's when I caught the
-programming bug and I've still got it. Still it's a fun day when I
-get to write some code.
+programming bug and I've still got it. Still it's a good day when
+I get to write some code.
 
   [robots game]: http://en.wikipedia.org/wiki/Robots_%28BSD_game%29
 
@@ -26,7 +26,7 @@ I used to be more of a backend guy -- distributed systems, scalability,
 operations, things like that. As I've gotten further along I've
 moved further and further up the stack and lately have been spending
 more time with client frameworks and mobile. Those spaces are
-technically intersting now and you can have a big impact you can
+technically interesting now and you can have a big impact you can
 *see*. And there is so much [great][s3] [backend][sqs] [stuff][heroku]
 that you can just *buy* now! But that doesn't mean that I don't
 like getting my hands into ops. In particular I've spent a fair bit
@@ -43,23 +43,39 @@ at [Peninsula School][].
 
   [Peninsula School]: http://peninsulaschool.org/
 
-<hr>
 
-I store my [my PGP key][gpg] on the MIT keyserver.
 
-This blog is written using the Nikola static site generator. For
-information about why I chose Nikola, and how that works, I wrote
-a [blog post][static] about that in Dec 2013.
 
-This site is served by GitHub. There's currently not a way for you
-to serve HTTPS on a vanity domain from their service, but when that
-comes, I'll gladly switch to that! 
+<h2>Links To More "Me" Stuff</h2>
+
+I store my [my PGP key][gpg] on the MIT key server.
+
+You can see what I've been up to lately by looking on [GitHub][].
+
+I've maintained [my resume][cv] as hard-coded simple HTML since somewhere
+around 1998. It's formatted the way you would format something back
+then: tables with colspans / divs only for CSS, etc. I use [make][]
+to generate a [PDF][] version. Yes, I know, super old school, but
+there it is.
+
+Check out the "[Tools][]" page to see how this site is built and my 
+day-to-day toolchain.
+
+<br>
+<br>
+
 
   [gpg]: http://pgp.mit.edu/pks/lookup?op=vindex&search=0x1C97549F426D2123
-  [static]: http://sef.kloninger.com/posts/switching-to-static.html
+  [GitHub]: https://github.com/sefk
+  [cv]: https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.html
+  [make]: https://github.com/sefk/sef-resume
+  [PDF]: https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.pdf
+  [Tools]: /stories/tools.html
 
 
 
-<hr>
+
+
+
 
 

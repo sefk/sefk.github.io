@@ -42,9 +42,11 @@ ${template_hooks['extra_head']()}
                     <li>${base.html_translations()}</li>
                 %endif
                 </%block>
+                <!-- SEF REMOVE
                 % if show_sourcelink:
                     <%block name="sourcelink"></%block>
                 %endif
+                -->
                 ${template_hooks['menu_alt']()}
             </ul>
         </div><!-- /.navbar-collapse -->
