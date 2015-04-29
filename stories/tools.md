@@ -12,16 +12,14 @@ Here's a rundown of the tools that I use day in and day out.
 very complex), simple lists, meeting minutes. I love modal editing.
 I love its extensibility. I love how fast it starts up and runs.
 I love how it is on every machine I need it to be on. I love how
-rarely I have to use control key sequences, and even when I do, 
-since I remap caps-lock to control even that isn't so onerous.
+rarely I have to use control key sequences, and even when I do,
+since I remap caps-lock to control even that isn't so onerous.  I
+<strike>spend</strike> waste time fiddling with my
+<tt>.vimrc</tt> and plugins.
 
-I spend a ton of time fiddling with my .vimrc and plugins.
-I'll write a blog post about all that nonsense sometime.
-
-**Google Docs**. I have *completely* drunk the koolaid on Google
-Docs. The collaboration is fantastic, the feature set is well done.
-It is very rare that I have to crack open Excel to do some weird
-data munging.
+**Google Docs**. I have drunk the koolaid on Google Docs. The
+collaboration is fantastic. If its missing a features that's usually
+a good thing vs. PowerPoint or Excel or Word.
 
 
 <h2>Development</h2>
@@ -37,28 +35,21 @@ know, that thing that Sublime Text has that every other editor
 covets.
 
 **Chrome**. The developer tools are outstanding. The **Postman** Chrome App 
-(now also a standalone tool) is handy for driving API's, and it's interception 
-capabilities are quire nice.
+(now also a standalone tool) is useful for driving API's and intercepting
+traffic.
 
 **Vagrant**. I used to work at VMware, so I appreciate virtualization.
 What the Vagrant team did that is so impressive, is all the unglamorous
 work to make it usable: error handling, integration, packaging,
-etc. I've tried using it with the Fusion plugin, due to my allegiance 
-to VMware, but the additional cost and complexity solved problems that
-I didn't have. I've gone back to VirtualBox and that's fine.
-
-**XCode**. No getting around that.
-
+etc. I've tried using it with the Fusion plugin, due to my allegiance
+to VMware, but the additional cost and complexity solved problems
+that I didn't have. I've gone back to VirtualBox and that's fine.
 
 
 <h2>Mac Things</h2>
 
-**Moom**. I've tried a bunch of Mac things for moving windows around
-and this one is the best. The hotkey I've assigned is easy to type
-(ctrl-shift-semicolon), pushing once gets me to some nice instant 
-macros (top, right, full screen) but the best thing is pushing 
-*twice* to bring up this nice little micro-manager where I can place
-windows manually. Well done and works.
+**ITerm2**. Totally worth replacing Terminal.app with and it's worked
+very well for me. 
 
 **Hyperswitch**. My key requirement is I need to quickly switch
 between windows with alt-tab. I prefer lots of windows to tabs, and 
@@ -67,11 +58,14 @@ And the Mac has never done this right, differentiating between
 windows and apps (why!?). I was a longtime user of Witch for this, 
 but found it got flaky.
 
-**ITerm2**. Totally worth replacing Terminal.app with and it's worked
-very well for me. 
+**Moom**. I've tried a bunch of Mac things for moving windows around
+and this one is the best. The hotkey I've assigned is easy to type
+(ctrl-shift-semicolon), pushing once gets me to some nice instant 
+macros (top, right, full screen) but the best thing is pushing 
+*twice* to bring up this nice little micro-manager where I can place
+windows manually. Well done and works.
 
 **Flux**. Easy on the eyes, especially for us night owls.
-
 
 <h2>Productivity and Apps</h2>
 
