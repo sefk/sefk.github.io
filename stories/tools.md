@@ -4,7 +4,7 @@
 .. date: 2015/04/28 1:00
 -->
 
-Here's a rundown of the tools that I use day in and day out.
+Here's a rundown of what I use all the live-long day.
 
 <h2>Editors</h2>
 
