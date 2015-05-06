@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><atom:link href="http://sef.kloninger.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 28 Apr 2015 06:56:40 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Lessons from Three Years in AWS</title><link>http://sef.kloninger.com/posts/aws.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/aws.png" alt="AWS Logo" width="30%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><atom:link href="http://sef.kloninger.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 06 May 2015 07:34:27 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Perspective</title><link>http://sef.kloninger.com/posts/petrol-car.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;div style="float:right; padding-left:15px;"&gt;
+    &lt;blockquote class="twitter-tweet" lang="en"&gt;
+        &lt;p lang="en" dir="ltr"&gt;Test drive of a petrol car - &lt;a href="http://t.co/lPQ0xcs7uU"&gt;http://t.co/lPQ0xcs7uU&lt;/a&gt;&lt;/p&gt;— sefk (@sefk) &lt;a href="https://twitter.com/sefk/status/595318498894553088"&gt;May 4, 2015&lt;/a&gt;
+    &lt;/blockquote&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Right when I was thinking about writing a post about much we overlook
+the sins of the status quo, some Swedes
+&lt;a href="http://teslaclubsweden.se/test-drive-of-a-petrol-car/"&gt;took care of it for me&lt;/a&gt;. Tack vänner!&lt;/p&gt;
+&lt;p&gt;Tear around town carrying gallons of incendiary liquid just inches
+beneath my beloved family? 
+In a mode of transport that &lt;a href="http://en.wikipedia.org/wiki/List_of_motor_vehicle_deaths_in_U.S._by_year"&gt;kills upwards of thirty thousand Americans every year&lt;/a&gt;? 
+Sure, that's fine.&lt;/p&gt;&lt;/div&gt;</description><guid>http://sef.kloninger.com/posts/petrol-car.html</guid><pubDate>Wed, 06 May 2015 07:05:37 GMT</pubDate></item><item><title>Lessons from Three Years in AWS</title><link>http://sef.kloninger.com/posts/aws.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/aws.png" alt="AWS Logo" width="30%"&gt;&lt;/p&gt;
 &lt;p&gt;I've spent the last three years building and operating web sites
 with Amazon Web Services and here are a few lessons I've learned. 
 But I first have to come clean that I'm a fan of AWS with only
@@ -387,12 +399,4 @@ in history, but secretly take CS courses on the side. If you're
 super smart like him, and can manage getting both degrees, then
 you're awesome. But don't sacrifice the BA for the BS. I would
 &lt;strong&gt;love&lt;/strong&gt; to talk to a candidate with with a History BA and a Computer
-Science MS.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/learn-to-write.html</guid><pubDate>Sun, 26 Jan 2014 00:17:00 GMT</pubDate></item><item><title>Chicken Soup</title><link>http://sef.kloninger.com/posts/chicken_soup.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/chicken-noodle-soup.jpg" alt="Yummy Bowl of Chicken Noodle Soup" width="40%"&gt;&lt;/p&gt;
-
-&lt;p&gt;My family hasn't avoided the colds that are going around now. My
-way of fighting back is making chicken noodle soup.  It's not too
-hard, it's satisfying, and it tastes great. &lt;a href="http://sef.kloninger.com/f/chicken_soup.pdf"&gt;The recipe&lt;/a&gt; belongs
-to &lt;a href="http://peninsulaschool.org/"&gt;Peninsula School&lt;/a&gt; and gets used at our annual Craft Fair.
-It's benefited from years of refinement.&lt;/p&gt;
-&lt;p&gt;I add more salt. I don't do peas. I've tried with rice but it
-got starchy and weird, stick with egg noodles.&lt;/p&gt;&lt;/div&gt;</description><category>Family</category><category>Life</category><guid>http://sef.kloninger.com/posts/chicken_soup.html</guid><pubDate>Tue, 21 Jan 2014 01:16:00 GMT</pubDate></item></channel></rss>
+Science MS.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/learn-to-write.html</guid><pubDate>Sun, 26 Jan 2014 00:17:00 GMT</pubDate></item></channel></rss>

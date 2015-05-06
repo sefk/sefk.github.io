@@ -206,12 +206,12 @@ DATE_FANCINESS = 2
 #
 
 POSTS = (
-    ("posts/*.html", "posts", "post.tmpl"),
     ("posts/*.md", "posts", "post.tmpl"),
+    ("posts/*.html", "posts", "post.tmpl"),
 )
 PAGES = (
-    ("stories/*.html", "stories", "story.tmpl"),
     ("stories/*.md", "stories", "story.tmpl"),
+    ("stories/*.html", "stories", "story.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
@@ -886,6 +886,7 @@ BODY_END = """
   ga('create', 'UA-30366531-1', 'kloninger.com');
   ga('send', 'pageview');
 </script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 """
 
 #EXTRA_HEAD_DATA = """
