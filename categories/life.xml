@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Life)</title><link>http://sef.kloninger.com/</link><description></description><atom:link href="http://sef.kloninger.com/categories/life.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 24 Apr 2015 00:12:19 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Don't Say No By Email</title><link>http://sef.kloninger.com/posts/saying-no.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/frown.png" alt=":(" width="192" height="178"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Life)</title><link>http://sef.kloninger.com/</link><description></description><atom:link href="http://sef.kloninger.com/categories/life.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 06 May 2015 07:46:03 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Perspective</title><link>http://sef.kloninger.com/posts/petrol-car.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;div style="float:right; padding-left:15px;"&gt;
+    &lt;blockquote class="twitter-tweet" lang="en"&gt;
+        &lt;p lang="en" dir="ltr"&gt;Test drive of a petrol car - &lt;a href="http://t.co/lPQ0xcs7uU"&gt;http://t.co/lPQ0xcs7uU&lt;/a&gt;&lt;/p&gt;— sefk (@sefk) &lt;a href="https://twitter.com/sefk/status/595318498894553088"&gt;May 4, 2015&lt;/a&gt;
+    &lt;/blockquote&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Right when I was thinking about writing a post about much we overlook
+the sins of the status quo, some Swedes
+&lt;a href="http://teslaclubsweden.se/test-drive-of-a-petrol-car/"&gt;took care of it for me&lt;/a&gt;. Tack vänner!&lt;/p&gt;
+&lt;p&gt;Tear around town carrying gallons of incendiary liquid just inches
+beneath my beloved family? 
+In a mode of transport that &lt;a href="http://en.wikipedia.org/wiki/List_of_motor_vehicle_deaths_in_U.S._by_year"&gt;kills upwards of thirty thousand Americans every year&lt;/a&gt;? 
+Sure, that's fine.&lt;/p&gt;&lt;/div&gt;</description><category>Life</category><category>Tweets</category><guid>http://sef.kloninger.com/posts/petrol-car.html</guid><pubDate>Wed, 06 May 2015 07:05:37 GMT</pubDate></item><item><title>Don't Say No By Email</title><link>http://sef.kloninger.com/posts/saying-no.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/frown.png" alt=":(" width="192" height="178"&gt;&lt;/p&gt;
 &lt;p&gt;When I have to tell someone no, I pick up the phone. I &lt;strong&gt;hate&lt;/strong&gt;
 talking on the phone, but I do it anyway.&lt;/p&gt;
 &lt;p&gt;When you're answering no to someone, you're disappointing them even
@@ -226,47 +238,4 @@ During the busiest 15 minute period last year I was serving a kid every twenty s
 
 
 &lt;/p&gt;&lt;p&gt;
-If you come by my house this year you'll see me again, handing out candy with one hand and scribbling hash marks with the other.   I'll update the data in my &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;public spreadsheet&lt;/a&gt;.&lt;/p&gt;</description><category>Life</category><guid>http://sef.kloninger.com/posts/201210halloween-candy-data.html</guid><pubDate>Wed, 31 Oct 2012 07:19:35 GMT</pubDate></item><item><title>Managing Work-In-Progress Folders with "ls -ltr"</title><link>http://sef.kloninger.com/posts/201208wip-folders-with-ls.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="size-full wp-image-353 alignright" style="border: 0px;" title="blog-folder-done" src="http://sef.kloninger.com/f/blog-folder-done.png" alt="" width="107" height="41"&gt;
-
-&lt;p&gt;
-I've developed a nice little way to manage my work in progress folders.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-I keep a bunch of folders around where I can stick things that are in-flight: one for home projects, one for blogs, etc. I like accumulating ideas in there, one idea per file, that I can come back to and fuss over until something is ready.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-The folder is flypaper for ideas and notes.  My blog folder has about twenty files right now.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-Using "ls", and relying on file and directory modification times, is a useful way to keep track of all these files.  Here's how.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-As projects are finished I move them into a "done" folder. This gets them out of the way.  A useful side effect is the modification time of the done directly itself gets updated.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-The in-flight projects I care about most are the ones most recently updated: as an idea gets older it becomes less and less interesting.  When looking at this directory I use the "ls -ltr" command.  "l" means long (so you can see dates), "t" means sort by modification time, and "r" reverses that sort, so you see latest modified on the bottom.
-
-&lt;/p&gt;&lt;p align="center"&gt;
-&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img class="aligncenter  wp-image-352" style="border: 0px;" title="blog-folder-detail" src="http://sef.kloninger.com/f/blog-folder-detail.png" alt="" width="719" height="275"&gt;&lt;/p&gt;
-
-&lt;p&gt;
-The old files are at the top where I don't worry about them.  Some even scroll off the top of the screen, that's fine.  The done folder is a nice visual line for when something was last completed (say, published).  Having a separate color for directories makes this visually apparent.  And the bottom of the list are those most recently modified. Generally I work on the bottom up. Sometimes I go back to an old idea and add some notes. That bumps it to the top of the line -- it is interesting again.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-I probably type "ls -ltr" at least 5 times an hour.  I've never aliased it since my muscle memory is so strong (but maybe I still should).
-
-
-
- &lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>http://sef.kloninger.com/posts/201208wip-folders-with-ls.html</guid><pubDate>Tue, 07 Aug 2012 08:56:53 GMT</pubDate></item></channel></rss>
+If you come by my house this year you'll see me again, handing out candy with one hand and scribbling hash marks with the other.   I'll update the data in my &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;public spreadsheet&lt;/a&gt;.&lt;/p&gt;</description><category>Life</category><guid>http://sef.kloninger.com/posts/201210halloween-candy-data.html</guid><pubDate>Wed, 31 Oct 2012 07:19:35 GMT</pubDate></item></channel></rss>

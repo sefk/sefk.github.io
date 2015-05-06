@@ -2,10 +2,7 @@
 .. title: Perspective
 .. slug: petrol-car
 .. date: 2015-05-06 00:05:37 UTC-07:00
-.. tags: 
-.. category: 
-.. link: tweets,thoughts
-.. description: 
+.. tags: Tweets, Life
 .. type: text
 -->
 
