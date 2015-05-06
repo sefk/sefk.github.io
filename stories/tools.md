@@ -46,11 +46,24 @@ to VMware, but the additional cost and complexity solved problems
 that I didn't have. I've gone back to VirtualBox and that's fine.
 
 
-<h2>Mac Things</h2>
+<h2>The Command Line</h2>
 
 **ITerm2**. Totally worth replacing Terminal.app with and it's worked
 very well for me. 
 
+**Autojump**. Watches what you <tt>cd</tt> to and then you can quickly
+jump back there. <tt>j posts</tt> takes me to my "posts" directory. 
+Magic.
+
+**bash**. I keep thinking I'm going to try some new shell hotness but
+this one keeps working. Still my go-to scripting tool like
+[this little gem][diary].
+
+  [diary]: https://github.com/sefk/sef-dotfiles/blob/master/bash_startup/diary.sh
+
+
+
+<h2>Mac Things</h2>
 **Hyperswitch**. My key requirement is I need to quickly switch
 between windows with alt-tab. I prefer lots of windows to tabs, and 
 alt-tab is hard-wired into my fingers from so many years on Windows.
@@ -82,7 +95,6 @@ one, especially how it exposes the tabs.
 **Google Calendar**. Is there a better way to share calendars amongst
 a family? If so I haven't seen it. Pretty solid integration with
 my iPhone built-in calendar.
-
 
 
 <h2>This Site</h2>
