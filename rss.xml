@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><atom:link href="http://sef.kloninger.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 06 May 2015 07:46:03 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Perspective</title><link>http://sef.kloninger.com/posts/petrol-car.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;div style="float:right; padding-left:15px;"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><atom:link href="http://sef.kloninger.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 11 May 2015 08:41:08 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>My Next Job</title><link>http://sef.kloninger.com/posts/job-15.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/snowflake.png" alt="Snowflake" width="25%"&gt;&lt;/p&gt;
+&lt;p&gt;I left &lt;a href="http://www.wavefront.com/"&gt;my last job&lt;/a&gt; a few weeks back and it's high time to look for a new
+one. If you're working on something interesting and think I could help, &lt;a href="mailto:sefklon@gmail.com"&gt;let
+me know&lt;/a&gt;! &lt;/p&gt;
+&lt;p&gt;It's nice to not have a day job while looking for another. I was lucky enough
+to do this &lt;a href="http://sef.kloninger.com/posts/201204my-sabbatical.html"&gt;once before in 2012&lt;/a&gt; which turned out great. I learned then
+that time and flexibility buys you depth in your network. I heard about a lot
+of interesting projects. I found a fun project in a new domain (&lt;a href="http://sef.kloninger.com/posts/201207on-line-education.html"&gt;online
+education&lt;/a&gt;), something I doubt I would have found the normal way. &lt;/p&gt;
+&lt;p&gt;Maybe I'll get lucky again.&lt;/p&gt;
+&lt;p&gt;Enough small talk, let's get down to it. What am I lookin for?&lt;/p&gt;
+&lt;p&gt;I'm looking for some flavor of &lt;strong&gt;line manager&lt;/strong&gt;. I'm a good senior manager and
+code-every-day engineer; but I'm exceptional leading a team and running a
+project. That's what line managers do: lead engineers, not other managers or
+departments or matrix-anything. Also, if you're some kind of executive then
+coding is an indulgence, and I'd rather it just be part of my job. Mostly I'm
+talking to &lt;strong&gt;small companies&lt;/strong&gt;, say 10-100 people (fun-size).&lt;/p&gt;
+&lt;p&gt;I want to &lt;strong&gt;build on my experience&lt;/strong&gt;. I know infrastructure and cloud, SaaS
+and enterprise, and online education. I'm probably not the best person for
+your storage, security, gaming, e-commerce, or cryptocurrency company. I want
+to stay working on &lt;strong&gt;Internet technology&lt;/strong&gt;. I like the (micro)services model.
+For my own projects I choose Python, JavaScript (frontend and backend), and
+Java. I know web operations, especially the &lt;a href="http://sef.kloninger.com/posts/aws.html"&gt;Amazon stack&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Location&lt;/strong&gt; is important: I don't want to do a daily Menlo Park to San
+Francisco round-trip. I'd like to &lt;strong&gt;work with friends&lt;/strong&gt; if possible. And I
+want to do something &lt;strong&gt;worthwhile&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;You can always get to my resume from the header here, or via this &lt;a href="http://bit.ly/sef-resume"&gt;short
+link&lt;/a&gt;. I'm open to a bunch of things, just no &lt;a href="https://www.youtube.com/watch?v=VEgu7jdc_fs"&gt;kick boxing&lt;/a&gt;.  Let's
+have coffee/drink or take a walk.&lt;/p&gt;&lt;/div&gt;</description><category>Life</category><category>Tech</category><guid>http://sef.kloninger.com/posts/job-15.html</guid><pubDate>Sun, 10 May 2015 16:30:00 GMT</pubDate></item><item><title>Perspective</title><link>http://sef.kloninger.com/posts/petrol-car.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;div style="float:right; padding-left:15px;"&gt;
     &lt;blockquote class="twitter-tweet" lang="en"&gt;
         &lt;p lang="en" dir="ltr"&gt;Test drive of a petrol car - &lt;a href="http://t.co/lPQ0xcs7uU"&gt;http://t.co/lPQ0xcs7uU&lt;/a&gt;&lt;/p&gt;— sefk (@sefk) &lt;a href="https://twitter.com/sefk/status/595318498894553088"&gt;May 4, 2015&lt;/a&gt;
     &lt;/blockquote&gt;
@@ -346,57 +374,4 @@ to not have to fret about too much or too little:&lt;/p&gt;
 &lt;p&gt;Both of these services decouple feedback from money. Both avoid
 awkwardly changing money. I'd definitely pay a premium for that.&lt;/p&gt;
 &lt;p&gt;I wonder what other service business would benefit from decoupling
-feedback from money?&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/tips.html</guid><pubDate>Tue, 29 Apr 2014 03:07:00 GMT</pubDate></item><item><title>CS Students: Learn to Write</title><link>http://sef.kloninger.com/posts/learn-to-write.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/writing-hand.jpeg" alt="Writing Hand" width="40%"&gt;&lt;/p&gt;
-&lt;p&gt;If I could do my college years over I would focus on writing. I
-would take courses that required a lot of writing, in the spirit
-of "learn by doing". I'd also take courses in the mechanics and
-craft: grammar, vocabulary, and rhetoric.&lt;/p&gt;
-&lt;p&gt;I used to consider myself a competent writer. And certainly good
-enough for an engineer, right? But I've learned that I have a long
-way to go. I've learned that engineers spend much more time writing
-than you expect. And I appreciate how hard it is to write well.&lt;/p&gt;
-&lt;p&gt;This came up just this past week. I came across a beautiful four
-page essay. It laid out the problem, described alternatives, and
-lead you concisely to a well-reasoned conclusion. Sure, it was about
-technology, but what carried the day was the good writing. Humbling!&lt;/p&gt;
-&lt;p&gt;You're saying: but wait, you're a &lt;a href="http://en.wikipedia.org/wiki/Pointy-Haired_Boss"&gt;pointy-haired boss&lt;/a&gt; now
-Sef, one of those guys who doesn't do &lt;em&gt;Real Work&lt;/em&gt; anymore. You write
-email and boss people around. I understand why managers like you
-need to write, I'm an engineer. I write code. Well, there's some
-truth to that. But I'd like to convince you that even monster coders,
-if they're any good, write a lot, write well, and value good writing
-in others.&lt;/p&gt;
-&lt;p&gt;It is rare for someone to do their work in isolation and have it
-matter. Either you're working as part of a team, in a company or
-a community of developers, say on an open-source project. Sure, you
-build a great system or feature. But to have it matter to the world,
-for others to adopt it, you need to document, publicize, support,
-teach. 98% of that is writing.&lt;/p&gt;
-&lt;p&gt;I had a lunchtime conversation with &lt;a href="http://jacobian.org/writing/great-documentation/"&gt;Jacob Kaplan-Moss&lt;/a&gt;,
-Django's co-founder, at last year's PyCon. I asked him why Django
-caught on and was adopted by so many of us (including &lt;a href="http://class2go.stanford.edu/"&gt;my last
-project&lt;/a&gt; and &lt;a href="http://code.edx.org/"&gt;my current project&lt;/a&gt;). I was expecting him
-to point to features or timing. Instead he said it was "because we
-wrote good docs". The Django team didn't treat documentation as an
-afterthought. They have lots of docs, and they are good.&lt;/p&gt;
-&lt;p&gt;Consider that rare bird, the iconoclastic engineer working in
-isolation on their own project. I'm thinking of &lt;a href="http://antirez.com/"&gt;Antirez&lt;/a&gt; or
-&lt;a href="http://www.marco.org/"&gt;Marco&lt;/a&gt;. (Maybe they aren't even truly on their own so much.
-Humor me!) They are prolific and strong coders. But they also write
-a lot of words! They write a ton about their project; also tech
-landscape and their place in it. Would their software have as much
-of an impact if they didn't write so much (and well)? I say no.&lt;/p&gt;
-&lt;p&gt;Case in point. Both Marco and I wrote blog posts riffing off the
-same topic two weeks ago. First, read &lt;a href="http://sef.kloninger.com/posts/consume-produce-public.html"&gt;mine&lt;/a&gt;, then
-&lt;a href="http://www.marco.org/2014/01/03/the-builders-high"&gt;his&lt;/a&gt;.  It takes me a ton of words to get something
-basic out.  His is concise and clear. Sheesh.&lt;/p&gt;
-&lt;p&gt;So kids, don't shortchange those liberal arts classes. It's not
-fluffy stuff on the side. &lt;strong&gt;That is core&lt;/strong&gt;. You need to write well
-to be a good engineer.&lt;/p&gt;
-&lt;p&gt;Protip: the best way to do this is to major in the humanities. They
-write like crazy over there. Be like my friend Dan Chu and major
-in history, but secretly take CS courses on the side. If you're
-super smart like him, and can manage getting both degrees, then
-you're awesome. But don't sacrifice the BA for the BS. I would
-&lt;strong&gt;love&lt;/strong&gt; to talk to a candidate with with a History BA and a Computer
-Science MS.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/learn-to-write.html</guid><pubDate>Sun, 26 Jan 2014 00:17:00 GMT</pubDate></item></channel></rss>
+feedback from money?&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/tips.html</guid><pubDate>Tue, 29 Apr 2014 03:07:00 GMT</pubDate></item></channel></rss>
