@@ -21,7 +21,7 @@ education][ed]), something I doubt I would have found the normal way.
 
 Maybe I'll get lucky again.
 
-Enough small talk, let's get down to it. What am I lookin for?
+Enough small talk, what am I looking for?
 
 I'm looking for some flavor of **line manager**. I'm a good senior manager and
 code-every-day engineer; but I'm exceptional leading a team and running a
