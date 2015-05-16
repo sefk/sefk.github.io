@@ -15,9 +15,9 @@ me know][email]!
 
 It's nice to not have a day job while looking for another. I was lucky enough
 to do this [once before in 2012][sab] which turned out great. I learned then
-that time and flexibility buys you depth in your network. I heard about a lot
-of interesting projects. I found a fun project in a new domain ([online
-education][ed]), something I doubt I would have found the normal way. 
+that time and flexibility lets you talk to lots of friends and learn about a
+breadth of projects. I found a fun project in a new domain ([online
+education][ed]), something I doubt I'd have found the normal way.
 
 Maybe I'll get lucky again.
 
