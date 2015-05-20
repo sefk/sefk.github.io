@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Draft)</title><link>http://sef.kloninger.com/</link><description></description><atom:link href="http://sef.kloninger.com/categories/cat_draft.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 19 May 2015 22:27:44 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Things to Overcome to Write Good Server Side Python</title><link>http://sef.kloninger.com/posts/server-python.md.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;Everything is doable in anything, sure. But there are some things that are
+harder in one language vs. another. Having spent some time in NodeJS ...&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;asynch, callbacks, sure Twisted&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;built in web server vs. guniocorn and wsgi&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;JIT vs cpython, sure PyPy&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description><guid>http://sef.kloninger.com/posts/server-python.md.html</guid><pubDate>Tue, 19 May 2015 21:07:52 GMT</pubDate></item></channel></rss>

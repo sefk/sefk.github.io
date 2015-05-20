@@ -299,6 +299,11 @@ WRITE_TAG_CLOUD = False
 #    },
 #}
 
+# If you do not want to display a tag publicly, you can mark it as hidden.
+# The tag will not be displayed on the tag list page, the tag cloud and posts.
+# Tag pages will still be generated.
+HIDDEN_TAGS = ['mathjax']
+
 # Only include tags on the tag list/overview page if there are at least
 # TAGLIST_MINIMUM_POSTS number of posts or more with every tag. Every tag
 # page is still generated, linked from posts, and included in the sitemap.
@@ -315,6 +320,11 @@ WRITE_TAG_CLOUD = False
 # If CATEGORY_PAGES_ARE_INDEXES is set to True, each category's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
 # CATEGORY_PAGES_ARE_INDEXES = False
+
+# If you do not want to display a category publicly, you can mark it as hidden.
+# The category will not be displayed on the category list page.
+# Category pages will still be generated.
+# HIDDEN_CATEGORIES = []
 
 # Set descriptions for category pages to make them more interesting. The
 # default is no description. The value is used in the meta description
