@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/2012" />
+      <excludeFolder url="file://$MODULE_DIR$/2013" />
+      <excludeFolder url="file://$MODULE_DIR$/2014" />
+      <excludeFolder url="file://$MODULE_DIR$/2015" />
+      <excludeFolder url="file://$MODULE_DIR$/assets" />
+      <excludeFolder url="file://$MODULE_DIR$/categories" />
+      <excludeFolder url="file://$MODULE_DIR$/f" />
+      <excludeFolder url="file://$MODULE_DIR$/galleries" />
+      <excludeFolder url="file://$MODULE_DIR$/listings" />
+      <excludeFolder url="file://$MODULE_DIR$/posts" />
+      <excludeFolder url="file://$MODULE_DIR$/src/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/stories" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
