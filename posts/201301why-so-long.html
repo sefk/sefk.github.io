@@ -1,171 +1,24 @@
-<!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Why Is That Feature Taking So Long? | sef.kloninger.com</title>
+<html><body>
 
-    
-            <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-
-    
-            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
-
-      <link rel="canonical" href="http://sef.kloninger.com/posts/201301why-so-long.html">
-
-
-
-    
-        <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
-
-    
-
-
-    
-
-    <meta name="author" content="Sef Kloninger">
-        <link rel="prev" href="201210halloween-candy-data.html" title="Halloween Candy Data" type="text/html">
-        <link rel="next" href="201303online-ed-retention.html" title="&quot;Low&quot; Retention Rates in Online Education Isn't Necessarily A Bad Thing" type="text/html">
-    
-    <meta property="og:site_name" content="sef.kloninger.com">
-    <meta property="og:title" content="Why Is That Feature Taking So Long?">
-    <meta property="og:url" content="http://sef.kloninger.com/posts/201301why-so-long.html">
-    <meta property="og:description" content="I've observed a recurring source of tension:  building things fast vs. do it the right way. Usually you're not lucky enough that you can do both.  This post explains a bit why we (engineers) care so m">
-    <meta property="og:type" content="article">
-    <meta property="article:published_time" content="2013-01-25T01:24:48-08:00">
-           <meta property="article:tag" content="Management">
-           <meta property="article:tag" content="Technology">
-
-    
-
-    
-
-
-
-</head>
-<body>
-
-<!-- Menubar -->
-
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-<!-- This keeps the margins nice -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="http://sef.kloninger.com/">
-
-                <span id="blog-title">sef.kloninger.com</span>
-            </a>
-        </div>
-<!-- /.navbar-header -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                
-                <li>
-<a href="../stories/about.html">About</a>
-                </li>
-<li>
-<a href="https://twitter.com/sefk">@sefk</a>
-                </li>
-<li>
-<a href="https://github.com/sefk">GitHub</a>
-                </li>
-<li>
-<a href="https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html">Resume</a>
-                </li>
-<li>
-<a href="https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf">PDF</a>
-                </li>
-<li>
-<a href="../stories/tools.html">Tools</a>
-                </li>
-<li>
-<a href="../archive.html">Archives</a>
-
-                
-            </li>
-</ul>
-            <ul class="nav navbar-nav navbar-right">
-                
-                
-                <!-- SEF REMOVE
-                    
-    <li>
-    <a href="/posts/201301why-so-long.src.html" id="sourcelink">Source</a>
-    </li>
-
-                -->
-                
-            </ul>
-        </div>
-<!-- /.navbar-collapse -->
-    </div>
-<!-- /.container -->
-</nav>
-
-<!-- End of Menubar -->
-
-<div class="container">
-    <div class="body-content">
-        <!--Body content-->
-        <div class="row">
-            
-            
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article">
-    
-    <header>
-        
-    <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Why Is That Feature Taking So Long?</a></h1>
-
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">Sef Kloninger</span></p>
-            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2013-01-25T01:24:48-08:00" itemprop="datePublished" title="2013-01-25 01:24">2013-01-25 01:24</time></a></p>
-                <p class="commentline">
-        
-    <a href="201301why-so-long.html#disqus_thread" data-disqus-identifier="cache/posts/201301why-so-long.html">Comments</a>
-
-
-            
-        </p>
-<p class="sourceline"><a href="201301why-so-long.src.html" id="sourcelink">Source</a></p>
-
-        </div>
-        
-
-    </header>
-
-    <div class="e-content entry-content" itemprop="articleBody text">
-    <img class="alignright  wp-image-394" style="border: 0px;" alt="turd-polish" src="../f/turd-polish.png" width="191" height="182">
+<img class="alignright  wp-image-394" style="border: 0px;" alt="turd-polish" src="/f/turd-polish.png" width="191" height="182">
 
 <p>
 I've observed a recurring source of tension:  building things fast vs. do it the right way. Usually you're not lucky enough that you can do both.  This post explains a bit why we (engineers) care so much about building things right.  Even when things are overdue and our stakeholders (end-users, biz folks, product management) are pushing to just get it done.
 
 
-</p>
 <p>
 You can describe the two poles here in pejorative terms.  Fast is slapdash, quick and dirty, bad software.  The right way is really just ivory-tower over-engineered turd polishing.  Is that fix really so important that we shouldn't ship it? Do you really need to refactor that now?
 
 
 
-</p>
 <p>
 I see three things driving engineers to build it right.
 
-</p>
 <p>
-</p>
 <ol>
-	<li>
-<strong>Wrong is insidious</strong>. A story: early on in Class2Go every page began with a fetch of some basic page data. If there was an error on lookup we would throw a 404. Not only is "not found" the wrong message, but it also isn't helpful. It covers up all kinds of other problems, in a way that is really difficult to debug.But for an engineer, these programming messes are <a href="http://en.wikipedia.org/wiki/Broken_windows_theory">broken windows</a>. Not only do they cheapen the project, they encourage others to take bad shortcuts. Heck, if they can't be bothered to handle exceptions correctly, then why should I?</li>
-	<li>
-<strong>Wrong is the express train to support hell.</strong> Unless you leave the company or project, you'll be called upon to support your own crappy code. That is certain. And there is almost nothing worse than being dragged back to debug some old code that you never meant to become production, and is now breaking the world.</li>
-	<li>
-<strong>Wrong hurts your reputation as an engineer</strong>. People see you taking shortcuts and infer that you are a sloppy programmer. And really they aren't wrong to do so. One habit of really good engineers is they don't leave a wake of messes behind them. They are able to do things (mostly) right even when they are moving fast.</li>
+	<li><strong>Wrong is insidious</strong>. A story: early on in Class2Go every page began with a fetch of some basic page data. If there was an error on lookup we would throw a 404. Not only is "not found" the wrong message, but it also isn't helpful. It covers up all kinds of other problems, in a way that is really difficult to debug.But for an engineer, these programming messes are <a href="http://en.wikipedia.org/wiki/Broken_windows_theory">broken windows</a>. Not only do they cheapen the project, they encourage others to take bad shortcuts. Heck, if they can't be bothered to handle exceptions correctly, then why should I?</li>
+	<li><strong>Wrong is the express train to support hell.</strong> Unless you leave the company or project, you'll be called upon to support your own crappy code. That is certain. And there is almost nothing worse than being dragged back to debug some old code that you never meant to become production, and is now breaking the world.</li>
+	<li><strong>Wrong hurts your reputation as an engineer</strong>. People see you taking shortcuts and infer that you are a sloppy programmer. And really they aren't wrong to do so. One habit of really good engineers is they don't leave a wake of messes behind them. They are able to do things (mostly) right even when they are moving fast.</li>
 </ol>
 
 <p>
@@ -173,117 +26,15 @@ This last point is really the key one. Amongst engineers your reputation is your
 
 
 
-</p>
 <p>
 This doesn't mean you have to go slow -- indeed, on my current project, <a href="http://class2go.stanford.edu/" target="_blank">Class2Go</a>, we get a lot done every week. What it does mean is that sometimes I'd rather not do something than do something I know will come out poorly.
 
 
 
-</p>
 <p>
 So, product manager waiting on a feature. What to do if you're waiting on an engineer and you think it's taking too damn long? The tactic **not** to use: tell them this won't matter and to just ship it. That will just piss him off. Better: get your senior engineer to convince the junior one why it's good enough to ship and reason about what really needs to get done. Exception: if the engineer you're waiting on is your senior engineer, then trust her judgment and wait.
 
 
 
-</p>
 <p>
-And finally, to you product managers and biz folks who push. You are right do do so. That's all that matters to the customers, all matters at the end of the day. Keep it up.</p>
-    </div>
-    <aside class="postpromonav">
-    <nav>
-    
-        <ul itemprop="keywords" class="tags">
-            <li><a class="tag p-category" href="../categories/management.html" rel="tag">Management</a></li>
-            <li><a class="tag p-category" href="../categories/technology.html" rel="tag">Technology</a></li>
-        </ul>
-
-    
-        <ul class="pager">
-            <li class="previous">
-                <a href="201210halloween-candy-data.html" rel="prev" title="Halloween Candy Data">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="201303online-ed-retention.html" rel="next" title="&quot;Low&quot; Retention Rates in Online Education Isn't Necessarily A Bad Thing">Next post</a>
-            </li>
-        </ul>
-
-    </nav>
-    </aside>
-        <section class="comments">
-        <h2>Comments</h2>
-        
-        
-        <div id="disqus_thread"></div>
-        <script>
-        var disqus_shortname ="sefkloninger",
-            disqus_url="http://sef.kloninger.com/posts/201301why-so-long.html",
-        disqus_title="Why Is That Feature Taking So Long?",
-        disqus_identifier="cache/posts/201301why-so-long.html",
-        disqus_config = function () {
-            this.language = "en";
-        };
-        (function() {
-            var dsq = document.createElement('script'); dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
-</noscript>
-    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
-
-
-        </section>
-    
-
-</article>
-
-        
-       <script>var disqus_shortname="sefkloninger";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
-
-
-
-        </div>
-        <!--End of body content-->
-
-        <footer>
-            <p align="center">Contents © 2015 <a href="mailto:sefklon@gmail.com">Sef Kloninger</a>     
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">
-<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>    Powered by <a href="http://getnikola.com" rel="nofollow">Nikola</a> and <a href="http://github.com" rel="nofollow">GitHub</a> </p>
-                <p align="center">
-                
-<!-- Custom search with google-->
-</p>
-<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
-<input type="hidden" name="q" value="site:http://sef.kloninger.com/">
-<input type="text" name="q" size="60" maxlength="255" results="0" placeholder="Search on Google">
-</form>
-<!-- End of custom search -->
-
-                
-            
-        </footer>
-    </div>
-</div>
-
-
-            <script src="../assets/js/all-nocdn.js"></script>
-    
-
-    <script>jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
-    
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-30366531-1', 'kloninger.com');
-  ga('send', 'pageview');
-</script>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-</body>
-</html>
+And finally, to you product managers and biz folks who push. You are right do do so. That's all that matters to the customers, all matters at the end of the day. Keep it up.</body></html>
