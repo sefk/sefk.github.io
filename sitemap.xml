@@ -65,10 +65,6 @@
   <lastmod>2015-05-26</lastmod>
  </url>
  <url>
-  <loc>http://sef.kloninger.com/2012/index.html</loc>
-  <lastmod>2015-05-26</lastmod>
- </url>
- <url>
   <loc>http://sef.kloninger.com/2013/01/why-so-long/index.html</loc>
   <lastmod>2015-05-26</lastmod>
  </url>
@@ -101,31 +97,7 @@
   <lastmod>2015-05-26</lastmod>
  </url>
  <url>
-  <loc>http://sef.kloninger.com/2013/index.html</loc>
-  <lastmod>2015-05-26</lastmod>
- </url>
- <url>
-  <loc>http://sef.kloninger.com/2014/index.html</loc>
-  <lastmod>2015-05-26</lastmod>
- </url>
- <url>
-  <loc>http://sef.kloninger.com/2015/index.html</loc>
-  <lastmod>2015-05-26</lastmod>
- </url>
- <url>
   <loc>http://sef.kloninger.com/archive.html</loc>
-  <lastmod>2015-05-26</lastmod>
- </url>
- <url>
-  <loc>http://sef.kloninger.com/categories/cat_draft.html</loc>
-  <lastmod>2015-05-26</lastmod>
- </url>
- <url>
-  <loc>http://sef.kloninger.com/categories/cat_preview.html</loc>
-  <lastmod>2015-05-26</lastmod>
- </url>
- <url>
-  <loc>http://sef.kloninger.com/categories/draft.html</loc>
   <lastmod>2015-05-26</lastmod>
  </url>
  <url>
@@ -153,10 +125,6 @@
   <lastmod>2015-05-26</lastmod>
  </url>
  <url>
-  <loc>http://sef.kloninger.com/categories/preview.html</loc>
-  <lastmod>2015-05-26</lastmod>
- </url>
- <url>
   <loc>http://sef.kloninger.com/categories/tech.html</loc>
   <lastmod>2015-05-26</lastmod>
  </url>
@@ -166,14 +134,6 @@
  </url>
  <url>
   <loc>http://sef.kloninger.com/categories/tweets.html</loc>
-  <lastmod>2015-05-26</lastmod>
- </url>
- <url>
-  <loc>http://sef.kloninger.com/f/sk-resume.html</loc>
-  <lastmod>2015-05-26</lastmod>
- </url>
- <url>
-  <loc>http://sef.kloninger.com/galleries/index.html</loc>
   <lastmod>2015-05-26</lastmod>
  </url>
  <url>
@@ -194,10 +154,6 @@
  </url>
  <url>
   <loc>http://sef.kloninger.com/index.html</loc>
-  <lastmod>2015-05-26</lastmod>
- </url>
- <url>
-  <loc>http://sef.kloninger.com/listings/index.html</loc>
   <lastmod>2015-05-26</lastmod>
  </url>
  <url>
@@ -350,6 +306,10 @@
  </url>
  <url>
   <loc>http://sef.kloninger.com/stories/about.html</loc>
+  <lastmod>2015-05-26</lastmod>
+ </url>
+ <url>
+  <loc>http://sef.kloninger.com/stories/index.html</loc>
   <lastmod>2015-05-26</lastmod>
  </url>
  <url>
