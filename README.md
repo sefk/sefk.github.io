@@ -1,6 +1,7 @@
 # sef.kloninger.com AKA sefk.github.io 
 
-This is my personal blog.  It is a Nikola static site hosted by Github pages.  This repo contains both the source files, in the ```src``` subdirectory, as well as the resulting product itself, in the top level directory.
+This is my personal blog.  It is a Nikola static site hosted by Github pages.  This repo contains both the source files: the source files are
+in the "dev" branch (the default for this repo) and the build products are on "master". 
 
 # Instructions
 
@@ -16,13 +17,13 @@ The general workflow is:
    because the default, 8000, usually collides with my dev environment or
    something similar.
 
-3. **Publish**.  Check the whole thing into Github.  The ```src```
-   subdirectory has the markdown and the top directory has the generated
-   static site.  Push the whole thing.
+3. **Publish**.  Check the changes to the dev branch and push that branch. 
+   Then run the command ```nikola github_deploy``` to build and publish the
+   build product to the master branch. github_deploy builds, commits, and
+   pushes in one fell swoop.
 
 4. **Repeat**
 
-Note: I used to use "livereload -b ..." to accomplish this same thing, and that works fine, but Nikola's built in feature for this is nicer.
 
 
 ## Install Notes
