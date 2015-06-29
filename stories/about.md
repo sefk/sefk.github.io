@@ -48,15 +48,16 @@ at [Peninsula School][].
 
 <h2>Links To More "Me" Stuff</h2>
 
-I store my [my PGP key][gpg] on the MIT key server.
+My GPG key: <a href="../f/sef-public-gpg-key-2015-06.asc">
+<tt>4C79 48F2 2057 0647 D573  937B AFD1 2F02 88AC 23B2</tt>
+</a>
 
 You can see what I've been up to lately by looking on [GitHub][].
 
 I've maintained [my resume][cv] as hard-coded simple HTML since somewhere
 around 1998. It's formatted the way you would format something back
 then: tables with colspans / divs only for CSS, etc. I use [make][]
-to generate a [PDF][] version. Yes, I know, super old school, but
-there it is.
+to generate a [PDF][] version. Yes, I know, super clunky.
 
 Check out the "[Tools][]" page to see how this site is built and my 
 day-to-day toolchain.
