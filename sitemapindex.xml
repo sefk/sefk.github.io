@@ -5,6 +5,14 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>http://sef.kloninger.com/categories/cat_draft.xml</loc>
+  <lastmod>2015-06-11</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://sef.kloninger.com/categories/draft.xml</loc>
+  <lastmod>2015-06-11</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://sef.kloninger.com/categories/education.xml</loc>
   <lastmod>2015-05-26</lastmod>
  </sitemap>
@@ -18,7 +26,7 @@
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/categories/life.xml</loc>
-  <lastmod>2015-05-26</lastmod>
+  <lastmod>2015-06-29</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/categories/management.xml</loc>
@@ -38,10 +46,10 @@
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/rss.xml</loc>
-  <lastmod>2015-05-26</lastmod>
+  <lastmod>2015-06-29</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/sitemap.xml</loc>
-  <lastmod>2015-05-26</lastmod>
+  <lastmod>2015-06-29</lastmod>
  </sitemap>
 </sitemapindex>
