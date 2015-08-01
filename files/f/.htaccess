@@ -1,0 +1,3 @@
+<FilesMatch "\.(asc)$">
+  ForceType plain/text
+</FilesMatch>
