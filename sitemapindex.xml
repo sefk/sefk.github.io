@@ -6,11 +6,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://sef.kloninger.com/categories/cat_draft.xml</loc>
-  <lastmod>2015-06-11</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://sef.kloninger.com/categories/draft.xml</loc>
-  <lastmod>2015-06-11</lastmod>
+  <lastmod>2015-08-02</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/categories/education.xml</loc>
@@ -34,7 +30,7 @@
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/categories/tech.xml</loc>
-  <lastmod>2015-05-26</lastmod>
+  <lastmod>2015-08-19</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/categories/technology.xml</loc>
@@ -46,10 +42,10 @@
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/rss.xml</loc>
-  <lastmod>2015-06-29</lastmod>
+  <lastmod>2015-08-19</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://sef.kloninger.com/sitemap.xml</loc>
-  <lastmod>2015-06-29</lastmod>
+  <lastmod>2015-08-19</lastmod>
  </sitemap>
 </sitemapindex>

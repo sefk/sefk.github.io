@@ -1,5 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Tech)</title><link>http://sef.kloninger.com/</link><description></description><atom:link href="http://sef.kloninger.com/categories/tech.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 27 May 2015 05:46:33 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>My Next Job</title><link>http://sef.kloninger.com/posts/job-15.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/snowflake.png" alt="Snowflake" width="25%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Tech)</title><link>http://sef.kloninger.com/</link><description></description><atom:link href="http://sef.kloninger.com/categories/tech.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 19 Aug 2015 20:23:49 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Thick Apps Still Lose</title><link>http://sef.kloninger.com/posts/thick-apps.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/online-required.png" alt="Microsoft Excel 2016 Error Message" width="60%"&gt;&lt;/p&gt;
+&lt;p&gt;Thick apps won mobile. Fine. &lt;/p&gt;
+&lt;p&gt;On laptop (and desktop) it's not so clear. What is better, thick or thin?
+I tend to live mostly in thin land, although I use some thick apps
+regularly, like Twitter's Mac client and Apple Photos.&lt;/p&gt;
+&lt;p&gt;Every so often I give a big native app a try: &lt;strong&gt;Excel&lt;/strong&gt; instead of
+&lt;strong&gt;Google Sheets&lt;/strong&gt;, &lt;strong&gt;Mail.app&lt;/strong&gt; instead of &lt;strong&gt;Gmail&lt;/strong&gt;, &lt;strong&gt;Reminders&lt;/strong&gt;
+instead of the barebones &lt;strong&gt;Tasks&lt;/strong&gt; built into Gmail. But its disappointing
+to see how those fancy apps keep shooting themselves in the foot! &lt;/p&gt;
+&lt;p&gt;Take for example this Excel error message. Excel is whining that it
+can't verify my subscription the first time I ran Excel untethered
+(version 15.11.2, for what its worth). Sure you can click through the
+warning, but would a newbie know to do that? At best off-putting, at worst
+downright disorienting. Why warn me of this at all? And why in a modal
+that stops me dead in my tracks?&lt;/p&gt;
+&lt;p&gt;It seems thick apps should win. They rock the unplugged use case. An even
+better situation is flaky networks -- tethered, conference WiFi,
+travelling. UI's deal notoriously poorly with intermittent or partial
+outages. A thick client, relying on that connection only for hitting
+API's, can hide the network.&lt;/p&gt;
+&lt;p&gt;Another place they should shine is the UI itself. They should be fast,
+beautiful, and featureful. Too often they're not. For example I find
+Mail.app to be clunky, difficult to customize, and its keyboard shortcuts
+few and poorly done. Gmail is pretty good!&lt;/p&gt;
+&lt;p&gt;Finally there's the upgrade problem. Thick apps need conscious effort from
+their users before their work sees user time and they get feedback. And
+that's what drives innovation. Long cycles means slower (less) invention.
+One example I love is Gmail's "undo send" feature. Boy, you sure do miss
+that when you need it and it's not there! That should be on every thick
+client by now, but I don't think it is. I do know that Gmail has it and
+Mail.app still doesn't.&lt;/p&gt;
+&lt;p&gt;Maybe the Internet can help. Look at &lt;strong&gt;&lt;a href="https://www.getchrome.com/"&gt;Chrome&lt;/a&gt;&lt;/strong&gt; with its awesome auto
+updates. What makes this work is solid engineering and exceptional quality
+control. I've never seen behind the Google curtain, but I bet there's no
+magic, just a lot of good engineering that leads to good software. Like:
+good design and code reviews, tons of test coverage across many scenarios,
+diverse and well-instrumented canaries, and thorough performance and
+resource use testing. If Google didn't all of that so well, then we
+wouldn't accept frequent pushes. Without the frequent upgrade cycle,
+Chromes feature cycle would languish.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.getelectron.com/"&gt;Electron&lt;/a&gt;&lt;/strong&gt; is another bright spot. This is the framework that gives
+Slack and GitHub's thick clients their fit and finish. It makes these feel
+like true native apps, even though they are mostly web controls with
+JavaScript the covers. Right-clicking still doesn't do what I want, and
+text controls are finicky, but it's close. But what those rough edges buy
+you, and the software producer, are frequent, reliable, and clean
+upgrades.&lt;/p&gt;
+&lt;p&gt;My natural mode is for thick apps. If done well, I'd use 'em.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/thick-apps.html</guid><pubDate>Wed, 19 Aug 2015 20:20:00 GMT</pubDate></item><item><title>My Next Job</title><link>http://sef.kloninger.com/posts/job-15.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/snowflake.png" alt="Snowflake" width="25%"&gt;&lt;/p&gt;
 &lt;p&gt;I left &lt;a href="http://www.wavefront.com/"&gt;my last job&lt;/a&gt; a few weeks back and it's high time to look for a new
 one. If you're working on something interesting and think I could help, &lt;a href="mailto:sefklon@gmail.com"&gt;let
 me know&lt;/a&gt;! &lt;/p&gt;
