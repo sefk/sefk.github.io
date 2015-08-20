@@ -68,7 +68,7 @@ text controls are finicky, but it's close. But what those rough edges buy
 you, and the software producer, are frequent, reliable, and clean
 upgrades.
 
-My natural preference would be for thick apps. If they were well done,
+My natural preference would be for thick apps. If they were done well,
 I'd use them.
 
   [Chrome]: https://www.getchrome.com/
