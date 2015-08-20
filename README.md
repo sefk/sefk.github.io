@@ -28,6 +28,16 @@ The general workflow is:
 
 ## Install Notes
 
+### Python
+
+Nikola seems to require python 3 now. So start with that
+
+    brew install python3
+    mkvirtualenv -p `which python3` sefk.github.io
+    pip install --upgrade pip
+
+(note the backticks in the code above
+
 ### lxml error
 
 If you're seeing this:

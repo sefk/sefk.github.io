@@ -1,10 +1,5 @@
 Nikola
-markdown
-html2text
-ipython
-requests
-livereload
 webassets
-ghp-import
-ws4py
 watchdog
+ws4py
+markdown

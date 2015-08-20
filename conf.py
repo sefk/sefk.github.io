@@ -802,10 +802,10 @@ SOCIAL_BUTTONS_CODE = ""
 
 # Show link to source for the posts?
 # Formerly known as HIDE_SOURCELINK (inverse)
-SHOW_SOURCELINK = True
+SHOW_SOURCELINK = False
 # Copy the source files for your pages?
 # Setting it to False implies SHOW_SOURCELINK = False
-COPY_SOURCES = True
+COPY_SOURCES = False
 
 # Modify the number of Post per Index Page
 # Defaults to 10
@@ -853,14 +853,14 @@ INDEX_DISPLAY_POST_COUNT = 8
 # """ % SITE_URL
 #
 # If you prefer a google search form, here's an example that should just work:
-SEARCH_FORM = """
-<!-- Custom search with google-->
-<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
-<input type="hidden" name="q" value="site:%s" />
-<input type="text" name="q" size="60" maxlength="255" results="0" placeholder="Search on Google"/>
-</form>
-<!-- End of custom search -->
-""" % SITE_URL
+#SEARCH_FORM = """
+#<!-- Custom search with google-->
+#<form id="search" action="http://google.com/search" method="get" class="navbar-form pull-left">
+#<input type="hidden" name="q" value="site:%s" />
+#<input type="text" name="q" size="60" maxlength="255" results="0" placeholder="Search on Google"/>
+#</form>
+#<!-- End of custom search -->
+#""" % SITE_URL
 
 # Also, there is a local search plugin you can use, based on Tipue, but it requires setting several
 # options:
