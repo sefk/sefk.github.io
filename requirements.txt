@@ -6,3 +6,5 @@ requests
 livereload
 webassets
 ghp-import
+ws4py
+watchdog
