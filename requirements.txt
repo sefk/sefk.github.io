@@ -3,3 +3,4 @@ webassets
 watchdog
 ws4py
 markdown
+ghp-import
