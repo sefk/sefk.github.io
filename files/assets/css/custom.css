@@ -1,0 +1,35 @@
+/* ------------- SEF ------------- */
+
+h1 small {
+    font-size: 50%;
+}
+
+article {
+    border-bottom: 2px solid darkgrey;
+}
+
+img.alignright {
+    float: right;
+    padding: 0 0 10px 10px;
+}
+
+img.postimage {
+    padding: 0 0 25px 25px;
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+.container {
+    padding: 0 30px;
+}
+
