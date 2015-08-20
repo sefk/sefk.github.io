@@ -20,8 +20,9 @@ regularly, like Twitter's Mac client and Apple Photos.
 
 Every so often I give a big native app a try: **Excel** instead of
 **Google Sheets**, **Mail.app** instead of **Gmail**, **Reminders**
-instead of the barebones **Tasks** built into Gmail. But its disappointing
-to see how those fancy apps keep shooting themselves in the foot! 
+instead of the barebones **Tasks** built into Gmail. (I can't bring myself
+to try Word). But it's disappointing to see how those fancy apps keep
+shooting themselves in the foot!
 
 Take for example this Excel error message. Excel is whining that it
 can't verify my subscription the first time I ran Excel untethered
@@ -67,7 +68,8 @@ text controls are finicky, but it's close. But what those rough edges buy
 you, and the software producer, are frequent, reliable, and clean
 upgrades.
 
-My natural mode is for thick apps. If done well, I'd use 'em.
+My natural preference would be for thick apps. If they were well done,
+I'd use them.
 
   [Chrome]: https://www.getchrome.com/
   [Electron]: https://www.getelectron.com/
