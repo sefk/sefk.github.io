@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><atom:link href="http://sef.kloninger.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 19 Aug 2015 20:23:49 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Thick Apps Still Lose</title><link>http://sef.kloninger.com/posts/thick-apps.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/online-required.png" alt="Microsoft Excel 2016 Error Message" width="60%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>http://sef.kloninger.com/</link><description>None</description><atom:link href="http://sef.kloninger.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 20 Aug 2015 14:20:36 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Thick Apps Still Lose</title><link>http://sef.kloninger.com/posts/thick-apps.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/online-required.png" alt="Microsoft Excel 2016 Error Message" width="60%"&gt;&lt;/p&gt;
 &lt;p&gt;Thick apps won mobile. Fine. &lt;/p&gt;
 &lt;p&gt;On laptop (and desktop) it's not so clear. What is better, thick or thin?
 I tend to live mostly in thin land, although I use some thick apps
 regularly, like Twitter's Mac client and Apple Photos.&lt;/p&gt;
 &lt;p&gt;Every so often I give a big native app a try: &lt;strong&gt;Excel&lt;/strong&gt; instead of
 &lt;strong&gt;Google Sheets&lt;/strong&gt;, &lt;strong&gt;Mail.app&lt;/strong&gt; instead of &lt;strong&gt;Gmail&lt;/strong&gt;, &lt;strong&gt;Reminders&lt;/strong&gt;
-instead of the barebones &lt;strong&gt;Tasks&lt;/strong&gt; built into Gmail. But its disappointing
-to see how those fancy apps keep shooting themselves in the foot! &lt;/p&gt;
+instead of the barebones &lt;strong&gt;Tasks&lt;/strong&gt; built into Gmail. (I can't bring myself
+to try Word). But it's disappointing to see how those fancy apps keep
+shooting themselves in the foot!&lt;/p&gt;
 &lt;p&gt;Take for example this Excel error message. Excel is whining that it
 can't verify my subscription the first time I ran Excel untethered
 (version 15.11.2, for what its worth). Sure you can click through the
@@ -46,7 +47,8 @@ JavaScript the covers. Right-clicking still doesn't do what I want, and
 text controls are finicky, but it's close. But what those rough edges buy
 you, and the software producer, are frequent, reliable, and clean
 upgrades.&lt;/p&gt;
-&lt;p&gt;My natural mode is for thick apps. If done well, I'd use 'em.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/thick-apps.html</guid><pubDate>Wed, 19 Aug 2015 20:20:00 GMT</pubDate></item><item><title>My Next Job</title><link>http://sef.kloninger.com/posts/job-15.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/snowflake.png" alt="Snowflake" width="25%"&gt;&lt;/p&gt;
+&lt;p&gt;My natural preference would be for thick apps. If they were well done,
+I'd use them.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>http://sef.kloninger.com/posts/thick-apps.html</guid><pubDate>Wed, 19 Aug 2015 20:20:00 GMT</pubDate></item><item><title>My Next Job</title><link>http://sef.kloninger.com/posts/job-15.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/snowflake.png" alt="Snowflake" width="25%"&gt;&lt;/p&gt;
 &lt;p&gt;I left &lt;a href="http://www.wavefront.com/"&gt;my last job&lt;/a&gt; a few weeks back and it's high time to look for a new
 one. If you're working on something interesting and think I could help, &lt;a href="mailto:sefklon@gmail.com"&gt;let
 me know&lt;/a&gt;! &lt;/p&gt;
