@@ -16,12 +16,14 @@
 I'm excited to start my new job at YouTube in a few weeks. I'll manage the
 engineering team building the data warehouse for usage metrics.
 
-I like that YouTube is **important**, as seen in their [statistics][s].
-You don't see usage like that without a bunch of **hard problems**, and
-hard problems attract **bright people**. Indeed that's the clincher for
-why I'm looking forward to working there. People vote with their feet, and
-I have a lot of friends who have opted for Google, and YouTube
-specifically. They tell me that it's a great place to work.
+I like that YouTube is **important**. It's firmly a part of our culture
+and I'm sure it will be how my kids watch video. YouTube's impressive
+[statistics][s] are the result. You don't see usage like that without a
+bunch of **hard problems**, and hard problems attract **bright people**.
+Indeed that's the clincher for why I'm looking forward to working there.
+People vote with their feet, and I have a lot of friends who have opted
+for Google, and YouTube specifically. They tell me that it's a great place
+to work.
 
 YouTube is one of the worlds foremost platforms for social commentary,
 education, and free speech. And it's plenty of [entertainment][e] too. Sounds
