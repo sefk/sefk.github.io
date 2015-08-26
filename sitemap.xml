@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://sef.kloninger.com/archive.html</loc>
-  <lastmod>2015-08-20T21:12:00Z</lastmod>
+  <lastmod>2015-08-26T06:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://sef.kloninger.com/categories/education.html</loc>
@@ -59,11 +59,11 @@
  </url>
  <url>
   <loc>http://sef.kloninger.com/index-4.html</loc>
-  <lastmod>2015-08-20T21:12:00Z</lastmod>
+  <lastmod>2015-08-26T06:27:00Z</lastmod>
  </url>
  <url>
   <loc>http://sef.kloninger.com/index.html</loc>
-  <lastmod>2015-08-20T21:12:00Z</lastmod>
+  <lastmod>2015-08-26T06:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://sef.kloninger.com/posts/201203those-little-utilities.html</loc>
@@ -211,11 +211,15 @@
  </url>
  <url>
   <loc>http://sef.kloninger.com/posts/thick-apps.html</loc>
-  <lastmod>2015-08-20T21:12:00Z</lastmod>
+  <lastmod>2015-08-26T06:27:00Z</lastmod>
  </url>
  <url>
   <loc>http://sef.kloninger.com/posts/tips.html</loc>
   <lastmod>2015-08-20T21:12:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://sef.kloninger.com/posts/youtube.html</loc>
+  <lastmod>2015-08-26T06:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://sef.kloninger.com/stories/about.html</loc>
