@@ -21,10 +21,10 @@ BLOG_AUTHOR = "Sef Kloninger"  # (translatable)
 BLOG_TITLE = "sef.kloninger.com"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://sef.kloninger.com/"
+SITE_URL = "https://sef.kloninger.com/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "http://sef.kloninger.com"
+# BASE_URL = "https://sef.kloninger.com"
 BLOG_EMAIL = "sefklon@gmail.com"
 BLOG_DESCRIPTION = "None"
 
