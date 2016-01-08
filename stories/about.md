@@ -61,16 +61,6 @@ to generate a [PDF][] version. Yes, I know, kind of clunky.
 Check out the [Tools][] page to see how this site is built and my
 day-to-day toolchain.
 
-<h2>Colophon</h2>
-
-This site is generated using [Nikola][]. I recommend it. The folks who build and
-maintain Nikola produce good software and are responsive. I like that it's in
-Python. I wish it had more themes.
-
-This site is hosted on [GitHub Pages][Pages] and delivered over [CloudFlare][].
-Thanks to them for providing free hosting and delivery &mdash; over
-https!
-
 <br>
 <br>
 
@@ -81,8 +71,5 @@ https!
   [make]:       https://github.com/sefk/sef-resume
   [PDF]:        https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.pdf
   [Tools]:      /stories/tools.html
-  [Nikola]:     https://getnikola.com/
-  [Pages]:      https://pages.github.com/
-  [CloudFlare]: https://www.cloudflare.com/
 
 

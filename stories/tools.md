@@ -99,24 +99,30 @@ my iPhone built-in calendar.
 
 <h2>This Site</h2>
 
-**Nikola**. This blog is written using the [Nikola static site generator][nikola].
+This site is generated using the **[Nikola][]** static site generator.
 For information about why I chose Nikola, and how that works, I
 wrote a [blog post][static] about that in Dec 2013. I wish the
 themes were more customizable, for now I'm using it pretty stock.
+My site [README][] shows the authoring/publish workflow. It's pretty
+slick when you set up the branches and GitHub correctly.
 
-**GitHub Pages**. This site is served by GitHub Pages. They do a
-good job and even give me basic CDN integration. The only big
-downside of such low-rent hosting is now SSL, at least as long as
-I want to use my own domain.  Once they support HTTPS I'll gladly
-use it!
+This site is hosted on **[GitHub Pages][Pages]** and delivered over
+**[CloudFlare][]**.  Thanks to them for providing free hosting and
+delivery &mdash; over https!
 
-So far I've been pleased with moving my comments to **Disqus**, but
-my comment volume isn't much. But it does what it claims to on the
-tin. And **Google Analytics** is more than enough visibility for me.
-
+So far I've been pleased with moving my comments to **[Disqus][]**.
+My comment volume isn't much. It does what it claims to on the tin.
+And **[Google Analytics][ga]** is more than enough visibility for
+me.
 
 
 
-  [nikola]: http://getnikola.com/
-  [static]: http://sef.kloninger.com/posts/switching-to-static.html
-  [airmail]: http://sef.kloninger.com/posts/201312airmail.html
+
+  [Nikola]:     http://getnikola.com/
+  [static]:     http://sef.kloninger.com/posts/switching-to-static.html
+  [airmail]:    http://sef.kloninger.com/posts/201312airmail.html
+  [Pages]:      https://pages.github.com/
+  [CloudFlare]: https://www.cloudflare.com/
+  [Disqus]:     https://disqus.com/
+  [ga]:         https://analytics.google.com/
+  [README]:     https://raw.githubusercontent.com/sefk/sefk.github.io/dev/README.md
