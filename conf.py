@@ -635,7 +635,7 @@ LICENSE = """
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">
 <img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
+src="https://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
 
 # A small copyright notice for the page footer (in HTML).
 # Default is ''
