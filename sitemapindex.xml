@@ -6,43 +6,43 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>http://sef.kloninger.com/categories/education.xml</loc>
-  <lastmod>2015-08-20T21:11:00Z</lastmod>
+  <loc>https://sef.kloninger.com/categories/education.xml</loc>
+  <lastmod>2016-01-08T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://sef.kloninger.com/categories/family.xml</loc>
-  <lastmod>2015-08-20T21:11:00Z</lastmod>
+  <loc>https://sef.kloninger.com/categories/family.xml</loc>
+  <lastmod>2016-01-08T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://sef.kloninger.com/categories/halloween.xml</loc>
-  <lastmod>2015-11-01T08:57:00Z</lastmod>
+  <loc>https://sef.kloninger.com/categories/halloween.xml</loc>
+  <lastmod>2016-01-08T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://sef.kloninger.com/categories/life.xml</loc>
-  <lastmod>2015-08-20T21:11:00Z</lastmod>
+  <loc>https://sef.kloninger.com/categories/life.xml</loc>
+  <lastmod>2016-01-08T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://sef.kloninger.com/categories/management.xml</loc>
-  <lastmod>2015-08-20T21:11:00Z</lastmod>
+  <loc>https://sef.kloninger.com/categories/management.xml</loc>
+  <lastmod>2016-01-08T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://sef.kloninger.com/categories/tech.xml</loc>
-  <lastmod>2015-08-20T21:11:00Z</lastmod>
+  <loc>https://sef.kloninger.com/categories/tech.xml</loc>
+  <lastmod>2016-01-08T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://sef.kloninger.com/categories/technology.xml</loc>
-  <lastmod>2015-11-01T08:32:00Z</lastmod>
+  <loc>https://sef.kloninger.com/categories/technology.xml</loc>
+  <lastmod>2016-01-08T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://sef.kloninger.com/categories/tweets.xml</loc>
-  <lastmod>2015-08-20T21:11:00Z</lastmod>
+  <loc>https://sef.kloninger.com/categories/tweets.xml</loc>
+  <lastmod>2016-01-08T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://sef.kloninger.com/rss.xml</loc>
-  <lastmod>2015-11-01T08:57:00Z</lastmod>
+  <loc>https://sef.kloninger.com/rss.xml</loc>
+  <lastmod>2016-01-08T08:52:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://sef.kloninger.com/sitemap.xml</loc>
-  <lastmod>2015-11-01T08:57:00Z</lastmod>
+  <loc>https://sef.kloninger.com/sitemap.xml</loc>
+  <lastmod>2016-01-08T08:52:00Z</lastmod>
  </sitemap>
 </sitemapindex>

@@ -1,2 +1,4 @@
-Sitemap: http://sef.kloninger.com/sitemapindex.xml
+Sitemap: https://sef.kloninger.com/sitemapindex.xml
 
+User-Agent: *
+Host: sef.kloninger.com

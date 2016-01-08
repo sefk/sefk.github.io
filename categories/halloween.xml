@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Halloween)</title><link>http://sef.kloninger.com/</link><description></description><atom:link rel="self" href="http://sef.kloninger.com/categories/halloween.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 01 Nov 2015 08:57:48 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Flat</title><link>http://sef.kloninger.com/posts/halloween-2015.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;Trick-or-treater volume was basically flat compared to last Halloween. Last year we had 208, this year
-211. We remain down quite a bit from our 2012 peak. Maybe this is the new norm?&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Halloween)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/halloween.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 08 Jan 2016 08:52:36 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Flat</title><link>https://sef.kloninger.com/posts/halloween-2015.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;Trick-or-treaters volume at our Menlo Park house this Halloween was basically flat compared to last
+year. Last year we had 208 trick-or-treaters, this year 211. We remain down quite a bit from our 2012
+peak. Maybe this is the new norm?&lt;/p&gt;
 &lt;iframe width="690" height="380" frameborder="0" src="https://docs.google.com/spreadsheets/d/1w-7ftYzue_VQl4lt-QNFU_UfeDAROg47-1tlOzIw5Vk/pubchart?oid=17&amp;amp;format=interactive"&gt;&lt;/iframe&gt;
 
-&lt;p&gt;One thing that was striking was that everything happened later this year. Our first trick-or-treater
-didn't show up until 6:30, and peak wasn't until 8:45. That's thirty minutes or more later than prior
-years. I speculate it's because it was a warm weekend night. Why not stay out a bit later, no school
-tomorrow. And with the fall-back DST change everyone would be looking foward to a "free" hour of sleep.&lt;/p&gt;
-&lt;p&gt;As usual, the full story can be seen
+&lt;p&gt;Everything happened later this year. Our first trick-or-treater didn't show up until 6:30, and
+peak wasn't until 8:45. That's thirty minutes or more later than prior years. I speculate it's because
+it was a warm weekend night. Why not stay out a bit later, no school tomorrow. And with the fall-back
+DST change everyone would be looking foward to a "free" hour of sleep.&lt;/p&gt;
+&lt;p&gt;As usual, the full story can be seen 
 &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;
-in the numbers&lt;/a&gt;. Check it out!&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><guid>http://sef.kloninger.com/posts/halloween-2015.html</guid><pubDate>Sun, 01 Nov 2015 09:15:00 GMT</pubDate></item><item><title>Fewer Trick or Treaters This Year</title><link>http://sef.kloninger.com/posts/halloween-2014.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;This year's Halloween tally was 208.  I don't know why we have 32%
+in the numbers&lt;/a&gt;. Check it out!&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><guid>https://sef.kloninger.com/posts/halloween-2015.html</guid><pubDate>Sun, 01 Nov 2015 09:15:00 GMT</pubDate></item><item><title>Fewer Trick or Treaters This Year</title><link>https://sef.kloninger.com/posts/halloween-2014.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;This year's Halloween tally was 208.  I don't know why we have 32%
 fewer trick-or-treaters than we had last year, which was down 20%
 from the year before that.  Maybe the rain earlier in the day kept
 people home.  Maybe because it was Friday people opted for parties
@@ -20,10 +21,10 @@ instead of going door to door.  I don't know.&lt;/p&gt;
 
 &lt;p&gt;Thanks to my friend Stuart for being on this year's data gathering
 crew.  As usual, the full story is 
-&lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;in the numbers&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><guid>http://sef.kloninger.com/posts/halloween-2014.html</guid><pubDate>Sat, 01 Nov 2014 09:30:00 GMT</pubDate></item><item><title>In Praise of the Hand Tally</title><link>http://sef.kloninger.com/posts/hand-tally.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="http://sef.kloninger.com/f/tallies.jpg" alt="Tally Marks" width="height=174"&gt;&lt;/p&gt;
+&lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;in the numbers&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><guid>https://sef.kloninger.com/posts/halloween-2014.html</guid><pubDate>Sat, 01 Nov 2014 09:30:00 GMT</pubDate></item><item><title>In Praise of the Hand Tally</title><link>https://sef.kloninger.com/posts/hand-tally.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/tallies.jpg" alt="Tally Marks" width="height=174"&gt;&lt;/p&gt;
 &lt;p&gt;For the past five years I've gathered statistics on how many
 trick-or-treaters have come by on Halloween.  If you want to read
-about that, check out posts from &lt;a href="http://sef.kloninger.com/posts/201311halloween-2013.html"&gt;last year&lt;/a&gt; or &lt;a href="http://sef.kloninger.com/posts/201210halloween-candy-data.html"&gt;the year before&lt;/a&gt;.
+about that, check out posts from &lt;a href="https://sef.kloninger.com/posts/201311halloween-2013.html"&gt;last year&lt;/a&gt; or &lt;a href="https://sef.kloninger.com/posts/201210halloween-candy-data.html"&gt;the year before&lt;/a&gt;.
 This post is about &lt;strong&gt;how&lt;/strong&gt; I track those stats, and how I don't.&lt;/p&gt;
 &lt;p&gt;Every year I'm tempted to build some fancy system to collect and
 manage these statistics.  Wouldn't it be fun, say, to wire up some
@@ -67,4 +68,4 @@ pen project; the scrappy can-do Russians used pencils.  Well, this
 story has been &lt;a href="http://www.snopes.com/business/genius/spacepen.asp"&gt;debunked by the good people at Snopes&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;And second, I'd like to plug Tony and Tom's "day job", &lt;a href="http://stonehearth.net/"&gt;Stonehearth&lt;/a&gt;.
 I think of it as Starcraft meets Minecraft.  I am so eager to play
-it when it lands.&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><category>Tech</category><guid>http://sef.kloninger.com/posts/hand-tally.html</guid><pubDate>Thu, 30 Oct 2014 16:20:00 GMT</pubDate></item></channel></rss>
+it when it lands.&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><category>Tech</category><guid>https://sef.kloninger.com/posts/hand-tally.html</guid><pubDate>Thu, 30 Oct 2014 16:20:00 GMT</pubDate></item></channel></rss>
