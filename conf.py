@@ -640,11 +640,8 @@ src="https://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
 # A small copyright notice for the page footer (in HTML).
 # Default is ''
 CONTENT_FOOTER = '<p align=center>Contents &copy; {date} <a href="mailto:{email}">{author}</a> ' + \
-        '&nbsp; &nbsp; ' + \
+        '&nbsp; &nbsp; &nbsp; ' + \
         '{license}' + \
-        '&nbsp; &nbsp; ' + \
-        'Powered by <a href="http://getnikola.com" rel="nofollow">Nikola</a> ' + \
-        'and <a href="http://github.com" rel="nofollow">GitHub</a> ' + \
         '</p>'
 CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
                                        author=BLOG_AUTHOR,
