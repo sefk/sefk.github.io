@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com (Tech)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/tech.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 08 Jan 2016 08:52:36 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Thick Apps Still Lose</title><link>https://sef.kloninger.com/posts/thick-apps.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/online-required.png" alt="Microsoft Excel 2016 Error Message" width="60%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Tech)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/tech.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 18 Mar 2019 05:51:57 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Thick Apps Still Lose </title><link>https://sef.kloninger.com/posts/thick-apps%20/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/online-required.png" alt="Microsoft Excel 2016 Error Message" width="60%"&gt;&lt;/p&gt;
 &lt;p&gt;Thick apps won mobile. Fine. &lt;/p&gt;
 &lt;p&gt;On laptop (and desktop) it's not so clear. What is better, thick or thin?
 I tend to live mostly in thin land, although I use some thick apps
@@ -48,7 +48,7 @@ text controls are finicky, but it's close. But what those rough edges buy
 you, and the software producer, are frequent, reliable, and clean
 upgrades.&lt;/p&gt;
 &lt;p&gt;My natural preference would be for thick apps. If they were done well,
-I'd use them.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/thick-apps.html</guid><pubDate>Wed, 19 Aug 2015 20:20:00 GMT</pubDate></item><item><title>My Next Job</title><link>https://sef.kloninger.com/posts/job-15.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/snowflake.png" alt="Snowflake" width="25%"&gt;&lt;/p&gt;
+I'd use them.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/thick-apps%20/</guid><pubDate>Wed, 19 Aug 2015 20:20:00 GMT</pubDate></item><item><title>My Next Job</title><link>https://sef.kloninger.com/posts/job-15/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/snowflake.png" alt="Snowflake" width="25%"&gt;&lt;/p&gt;
 &lt;p&gt;I left &lt;a href="http://www.wavefront.com/"&gt;my last job&lt;/a&gt; a few weeks back and it's high time to look for a new
 one. If you're working on something interesting and think I could help, &lt;a href="mailto:sefklon@gmail.com"&gt;let
 me know&lt;/a&gt;! &lt;/p&gt;
@@ -76,7 +76,7 @@ Francisco round-trip. I'd like to &lt;strong&gt;work with friends&lt;/strong&gt;
 want to do something &lt;strong&gt;worthwhile&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;You can always get to my resume from the header here, or via this &lt;a href="http://bit.ly/sef-resume"&gt;short
 link&lt;/a&gt;. I'm open to a bunch of things, just no &lt;a href="https://www.youtube.com/watch?v=VEgu7jdc_fs"&gt;kick boxing&lt;/a&gt;.  Let's
-have coffee/drink or take a walk.&lt;/p&gt;&lt;/div&gt;</description><category>Life</category><category>Tech</category><guid>https://sef.kloninger.com/posts/job-15.html</guid><pubDate>Sun, 10 May 2015 16:30:00 GMT</pubDate></item><item><title>Lessons from Three Years in AWS</title><link>https://sef.kloninger.com/posts/aws.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/aws.png" alt="AWS Logo" width="30%"&gt;&lt;/p&gt;
+have coffee/drink or take a walk.&lt;/p&gt;&lt;/div&gt;</description><category>Life</category><category>Tech</category><guid>https://sef.kloninger.com/posts/job-15/</guid><pubDate>Sun, 10 May 2015 16:30:00 GMT</pubDate></item><item><title>Lessons from Three Years in AWS</title><link>https://sef.kloninger.com/posts/aws/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/aws.png" alt="AWS Logo" width="30%"&gt;&lt;/p&gt;
 &lt;p&gt;I've spent the last three years building and operating web sites
 with Amazon Web Services and here are a few lessons I've learned. 
 But I first have to come clean that I'm a fan of AWS with only
@@ -148,7 +148,7 @@ surprising capacity crunch. There are a whole class of problems
 that get much easier when you can have 2x the machines for just a
 little while.  When someone comes to you with that cost/benefit
 spreadsheet arguing why you should self-host, that's when you need
-your file of "the cloud saved my bacon" stories at the ready.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/aws.html</guid><pubDate>Fri, 24 Apr 2015 07:10:00 GMT</pubDate></item><item><title>In Praise of the Hand Tally</title><link>https://sef.kloninger.com/posts/hand-tally.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/tallies.jpg" alt="Tally Marks" width="height=174"&gt;&lt;/p&gt;
+your file of "the cloud saved my bacon" stories at the ready.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/aws/</guid><pubDate>Fri, 24 Apr 2015 07:10:00 GMT</pubDate></item><item><title>In Praise of the Hand Tally</title><link>https://sef.kloninger.com/posts/hand-tally/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/tallies.jpg" alt="Tally Marks" width="height=174"&gt;&lt;/p&gt;
 &lt;p&gt;For the past five years I've gathered statistics on how many
 trick-or-treaters have come by on Halloween.  If you want to read
 about that, check out posts from &lt;a href="https://sef.kloninger.com/posts/201311halloween-2013.html"&gt;last year&lt;/a&gt; or &lt;a href="https://sef.kloninger.com/posts/201210halloween-candy-data.html"&gt;the year before&lt;/a&gt;.
@@ -195,7 +195,7 @@ pen project; the scrappy can-do Russians used pencils.  Well, this
 story has been &lt;a href="http://www.snopes.com/business/genius/spacepen.asp"&gt;debunked by the good people at Snopes&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;And second, I'd like to plug Tony and Tom's "day job", &lt;a href="http://stonehearth.net/"&gt;Stonehearth&lt;/a&gt;.
 I think of it as Starcraft meets Minecraft.  I am so eager to play
-it when it lands.&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><category>Tech</category><guid>https://sef.kloninger.com/posts/hand-tally.html</guid><pubDate>Thu, 30 Oct 2014 16:20:00 GMT</pubDate></item><item><title>Feedback Without Tips</title><link>https://sef.kloninger.com/posts/tips.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/tip-oneill.jpg" alt="Tip O'Neill" width="30%"&gt;&lt;/p&gt;
+it when it lands.&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><category>Tech</category><guid>https://sef.kloninger.com/posts/hand-tally/</guid><pubDate>Thu, 30 Oct 2014 16:20:00 GMT</pubDate></item><item><title>Feedback Without Tips</title><link>https://sef.kloninger.com/posts/tips/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/tip-oneill.jpg" alt="Tip O'Neill" width="30%"&gt;&lt;/p&gt;
 &lt;p&gt;I really don't like tipping. I'm not like &lt;a href="https://www.youtube.com/watch?v=Z-qV9wVGb38"&gt;Mr. Pink&lt;/a&gt;. It's
 not that I don't want my server or driver to get something extra.
 I just don't like the awkward social situation of deciding if this
@@ -220,7 +220,7 @@ to not have to fret about too much or too little:&lt;/p&gt;
 &lt;p&gt;Both of these services decouple feedback from money. Both avoid
 awkwardly changing money. I'd definitely pay a premium for that.&lt;/p&gt;
 &lt;p&gt;I wonder what other service business would benefit from decoupling
-feedback from money?&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/tips.html</guid><pubDate>Tue, 29 Apr 2014 03:07:00 GMT</pubDate></item><item><title>CS Students: Learn to Write</title><link>https://sef.kloninger.com/posts/learn-to-write.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/writing-hand.jpeg" alt="Writing Hand" width="40%"&gt;&lt;/p&gt;
+feedback from money?&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/tips/</guid><pubDate>Tue, 29 Apr 2014 03:07:00 GMT</pubDate></item><item><title>CS Students: Learn to Write</title><link>https://sef.kloninger.com/posts/learn-to-write/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/writing-hand.jpeg" alt="Writing Hand" width="40%"&gt;&lt;/p&gt;
 &lt;p&gt;If I could do my college years over I would focus on writing. I
 would take courses that required a lot of writing, in the spirit
 of "learn by doing". I'd also take courses in the mechanics and
@@ -273,7 +273,7 @@ in history, but secretly take CS courses on the side. If you're
 super smart like him, and can manage getting both degrees, then
 you're awesome. But don't sacrifice the BA for the BS. I would
 &lt;strong&gt;love&lt;/strong&gt; to talk to a candidate with with a History BA and a Computer
-Science MS.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/learn-to-write.html</guid><pubDate>Sun, 26 Jan 2014 00:17:00 GMT</pubDate></item><item><title>Switching to Static</title><link>https://sef.kloninger.com/posts/switching-to-static.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/tesla.jpg" alt="Nikola Tesla" width="195" height="228"&gt;&lt;/p&gt;
+Science MS.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/learn-to-write/</guid><pubDate>Sun, 26 Jan 2014 00:17:00 GMT</pubDate></item><item><title>Switching to Static</title><link>https://sef.kloninger.com/posts/switching-to-static/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/tesla.jpg" alt="Nikola Tesla" width="195" height="228"&gt;&lt;/p&gt;
 &lt;p&gt;For those of you who frequently read this blog (n ≈ 0) you'll
 notice that it looks a bit different. I've moved it from my own
 hosted Wordpress instance to static pages generated by &lt;a href="http://www.getnikola.com/"&gt;Nikola&lt;/a&gt;
@@ -437,7 +437,7 @@ environments, DNS, github repos, etc.) but for me that's no problem.&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;This &lt;a href="http://kushaldas.in/posts/importing-your-wordpress-blog-to-nikola.html#uploading-your-blog-site-as-github-pages"&gt;helpful post by Kaushal Das&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/switching-to-static.html</guid><pubDate>Mon, 30 Dec 2013 09:35:23 GMT</pubDate></item><item><title>Airmail FTW</title><link>https://sef.kloninger.com/posts/201312airmail.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-454" style="border: 0px;" alt="airmail" src="https://sef.kloninger.com/f/airmail.png" width="179" height="179"&gt;Finally a thick-client email program that seems to have stuck. So far I am really liking &lt;a href="http://airmailapp.com/"&gt;Airmail&lt;/a&gt;.
+&lt;/ul&gt;&lt;/div&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/switching-to-static/</guid><pubDate>Mon, 30 Dec 2013 09:35:23 GMT</pubDate></item><item><title>Airmail FTW</title><link>https://sef.kloninger.com/posts/201312airmail/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-454" style="border: 0px;" alt="airmail" src="https://sef.kloninger.com/f/airmail.png" width="179" height="179"&gt;Finally a thick-client email program that seems to have stuck. So far I am really liking &lt;a href="http://airmailapp.com/"&gt;Airmail&lt;/a&gt;.
 
 &lt;p&gt;
 For years I've flipped between various Mac fat clients and the GMail web interface. The web interface keeps winning:
@@ -470,4 +470,4 @@ There are really only three places where it has fallen short for me:
 &lt;/ul&gt;
 
 &lt;p&gt;
-So-long to &lt;a href="http://sparrowmailapp.com/"&gt;Sparrow&lt;/a&gt; and &lt;a href="http://www.apple.com/osx/apps/#mail"&gt;Mail.app&lt;/a&gt; and &lt;a href="http://mailplaneapp.com/"&gt;Mailplane&lt;/a&gt;. Or until someone does really nails &lt;a href="https://www.mailpile.is/"&gt;self-hosting&lt;/a&gt;.&lt;/p&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/201312airmail.html</guid><pubDate>Tue, 03 Dec 2013 04:10:50 GMT</pubDate></item></channel></rss>
+So-long to &lt;a href="http://sparrowmailapp.com/"&gt;Sparrow&lt;/a&gt; and &lt;a href="http://www.apple.com/osx/apps/#mail"&gt;Mail.app&lt;/a&gt; and &lt;a href="http://mailplaneapp.com/"&gt;Mailplane&lt;/a&gt;. Or until someone does really nails &lt;a href="https://www.mailpile.is/"&gt;self-hosting&lt;/a&gt;.&lt;/p&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/201312airmail/</guid><pubDate>Tue, 03 Dec 2013 04:10:50 GMT</pubDate></item></channel></rss>

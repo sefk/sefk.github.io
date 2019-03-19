@@ -6,239 +6,331 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
+  <loc>https://sef.kloninger.com/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2012/03/those-little-utilities/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2012/03/too-many-clouds/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2012/04/browsers-for-web-apps/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2012/04/measuring-an-engineering-manager/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2012/04/my-sabbatical/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2012/05/concentration/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2012/05/danny-lewin-42nd-birthday/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2012/05/engineering-culture-litmus-tests/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2012/05/fizzbuzz-for-managers/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2012/05/i-absorb-uncertainty/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2012/06/two-things-at-once/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2012/07/on-line-education/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2012/07/taking-down-100000-sites/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2012/08/wip-folders-with-ls/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2012/10/halloween-candy-data/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2013/01/why-so-long/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2013/03/online-ed-retention/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2013/04/coding-on-a-flight/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2013/06/launch-day/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2013/09/knr-c-label/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2013/11/halloween-2013/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2013/11/seven-things/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/2013/12/airmail/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://sef.kloninger.com/archive.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <lastmod>2019-03-18T06:30:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/categories/education.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/categories/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/categories/family.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/categories/education/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/categories/halloween.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/categories/family/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/categories/index.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/categories/halloween/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/categories/life.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/categories/life/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/categories/management.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/categories/management/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/categories/tech.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/categories/tech/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/categories/technology.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/categories/technology/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/categories/tweets.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/categories/tweets/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/index-1.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <lastmod>2019-03-18T06:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/index-2.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <lastmod>2019-03-18T06:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/index-3.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <lastmod>2019-03-18T06:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/index-4.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <lastmod>2019-03-18T06:30:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/index.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201203those-little-utilities/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201203those-little-utilities.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201203too-many-clouds/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201203too-many-clouds.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201204browsers-for-web-apps/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201204browsers-for-web-apps.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201204measuring-an-engineering-manager/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201204measuring-an-engineering-manager.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201204my-sabbatical/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201204my-sabbatical.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201205concentration/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201205concentration.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201205danny-lewin-42nd-birthday/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201205danny-lewin-42nd-birthday.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201205engineering-culture-litmus-tests/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201205engineering-culture-litmus-tests.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201205fizzbuzz-for-managers/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201205fizzbuzz-for-managers.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201205i-absorb-uncertainty/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201205i-absorb-uncertainty.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201206two-things-at-once/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201206two-things-at-once.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201207on-line-education/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201207on-line-education.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201207taking-down-100000-sites/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201207taking-down-100000-sites.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201208wip-folders-with-ls/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201208wip-folders-with-ls.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201210halloween-candy-data/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201210halloween-candy-data.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201301why-so-long/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201301why-so-long.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201303online-ed-retention/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201303online-ed-retention.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201304coding-on-a-flight/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201304coding-on-a-flight.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201306launch-day/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201306launch-day.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201309knr-c-label/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201309knr-c-label.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201311halloween-2013/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201311halloween-2013.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201311seven-things/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201311seven-things.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/201312airmail/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/201312airmail.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/arthroscopy/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/arthroscopy.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/aws/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/aws.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/chicken_soup/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/chicken_soup.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/consume-produce-public/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/consume-produce-public.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/earworm/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/earworm.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/halloween-2014/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/halloween-2014.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/halloween-2015/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/halloween-2015.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/hand-tally/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/hand-tally.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/job-15/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/job-15.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/learn-to-write/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/learn-to-write.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/leaving-stanford/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/leaving-stanford.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/petrol-car/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/petrol-car.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/saying-no/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/saying-no.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/switching-to-static/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/switching-to-static.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/thick-apps%20/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/thick-apps.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/tips/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/tips.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/posts/youtube/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/posts/youtube.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/stories/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/stories/about.html</loc>
-  <lastmod>2016-01-08T10:17:00Z</lastmod>
+  <loc>https://sef.kloninger.com/stories/about/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/stories/index.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/stories/tools/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
  <url>
-  <loc>https://sef.kloninger.com/stories/tools.html</loc>
-  <lastmod>2016-01-08T10:21:00Z</lastmod>
- </url>
- <url>
-  <loc>https://sef.kloninger.com/stories/whatever-file.html</loc>
-  <lastmod>2016-01-08T09:20:00Z</lastmod>
+  <loc>https://sef.kloninger.com/stories/whatever-file/</loc>
+  <lastmod>2019-03-18T05:51:00Z</lastmod>
  </url>
 </urlset>

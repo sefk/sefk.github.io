@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 08 Jan 2016 08:52:36 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Flat</title><link>https://sef.kloninger.com/posts/halloween-2015.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;Trick-or-treaters volume at our Menlo Park house this Halloween was basically flat compared to last
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 18 Mar 2019 05:51:57 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Flat</title><link>https://sef.kloninger.com/posts/halloween-2015/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;Trick-or-treaters volume at our Menlo Park house this Halloween was basically flat compared to last
 year. Last year we had 208 trick-or-treaters, this year 211. We remain down quite a bit from our 2012
 peak. Maybe this is the new norm?&lt;/p&gt;
 &lt;iframe width="690" height="380" frameborder="0" src="https://docs.google.com/spreadsheets/d/1w-7ftYzue_VQl4lt-QNFU_UfeDAROg47-1tlOzIw5Vk/pubchart?oid=17&amp;amp;format=interactive"&gt;&lt;/iframe&gt;
@@ -10,7 +10,7 @@ it was a warm weekend night. Why not stay out a bit later, no school tomorrow. A
 DST change everyone would be looking foward to a "free" hour of sleep.&lt;/p&gt;
 &lt;p&gt;As usual, the full story can be seen 
 &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;
-in the numbers&lt;/a&gt;. Check it out!&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><guid>https://sef.kloninger.com/posts/halloween-2015.html</guid><pubDate>Sun, 01 Nov 2015 09:15:00 GMT</pubDate></item><item><title>YouTube</title><link>https://sef.kloninger.com/posts/youtube.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/YouTube-icon-full_color.png" alt="YouTube" width="200px" height="148px"&gt;&lt;/p&gt;
+in the numbers&lt;/a&gt;. Check it out!&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><guid>https://sef.kloninger.com/posts/halloween-2015/</guid><pubDate>Sun, 01 Nov 2015 08:15:00 GMT</pubDate></item><item><title>YouTube</title><link>https://sef.kloninger.com/posts/youtube/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/YouTube-icon-full_color.png" alt="YouTube" width="200px" height="148px"&gt;&lt;/p&gt;
 &lt;p&gt;I'm excited to start my new job at YouTube in a few weeks. I'll manage the
 engineering team building the data warehouse for usage metrics.&lt;/p&gt;
 &lt;p&gt;I like that YouTube is &lt;strong&gt;important&lt;/strong&gt;. It's firmly a part of our culture
@@ -23,7 +23,7 @@ for Google, and YouTube specifically. They tell me that it's a great place
 to work.&lt;/p&gt;
 &lt;p&gt;YouTube is one of the worlds foremost platforms for social commentary,
 education, and free speech. And it's plenty of &lt;a href="https://www.youtube.com/watch?v=9bZkp7q19f0"&gt;entertainment&lt;/a&gt; too. Sounds
-like fun.&lt;/p&gt;&lt;/div&gt;</description><guid>https://sef.kloninger.com/posts/youtube.html</guid><pubDate>Wed, 26 Aug 2015 06:25:00 GMT</pubDate></item><item><title>Thick Apps Still Lose</title><link>https://sef.kloninger.com/posts/thick-apps.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/online-required.png" alt="Microsoft Excel 2016 Error Message" width="60%"&gt;&lt;/p&gt;
+like fun.&lt;/p&gt;&lt;/div&gt;</description><guid>https://sef.kloninger.com/posts/youtube/</guid><pubDate>Wed, 26 Aug 2015 06:25:00 GMT</pubDate></item><item><title>Thick Apps Still Lose </title><link>https://sef.kloninger.com/posts/thick-apps%20/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/online-required.png" alt="Microsoft Excel 2016 Error Message" width="60%"&gt;&lt;/p&gt;
 &lt;p&gt;Thick apps won mobile. Fine. &lt;/p&gt;
 &lt;p&gt;On laptop (and desktop) it's not so clear. What is better, thick or thin?
 I tend to live mostly in thin land, although I use some thick apps
@@ -72,7 +72,7 @@ text controls are finicky, but it's close. But what those rough edges buy
 you, and the software producer, are frequent, reliable, and clean
 upgrades.&lt;/p&gt;
 &lt;p&gt;My natural preference would be for thick apps. If they were done well,
-I'd use them.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/thick-apps.html</guid><pubDate>Wed, 19 Aug 2015 20:20:00 GMT</pubDate></item><item><title>My Next Job</title><link>https://sef.kloninger.com/posts/job-15.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/snowflake.png" alt="Snowflake" width="25%"&gt;&lt;/p&gt;
+I'd use them.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/thick-apps%20/</guid><pubDate>Wed, 19 Aug 2015 20:20:00 GMT</pubDate></item><item><title>My Next Job</title><link>https://sef.kloninger.com/posts/job-15/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/snowflake.png" alt="Snowflake" width="25%"&gt;&lt;/p&gt;
 &lt;p&gt;I left &lt;a href="http://www.wavefront.com/"&gt;my last job&lt;/a&gt; a few weeks back and it's high time to look for a new
 one. If you're working on something interesting and think I could help, &lt;a href="mailto:sefklon@gmail.com"&gt;let
 me know&lt;/a&gt;! &lt;/p&gt;
@@ -100,7 +100,7 @@ Francisco round-trip. I'd like to &lt;strong&gt;work with friends&lt;/strong&gt;
 want to do something &lt;strong&gt;worthwhile&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;You can always get to my resume from the header here, or via this &lt;a href="http://bit.ly/sef-resume"&gt;short
 link&lt;/a&gt;. I'm open to a bunch of things, just no &lt;a href="https://www.youtube.com/watch?v=VEgu7jdc_fs"&gt;kick boxing&lt;/a&gt;.  Let's
-have coffee/drink or take a walk.&lt;/p&gt;&lt;/div&gt;</description><category>Life</category><category>Tech</category><guid>https://sef.kloninger.com/posts/job-15.html</guid><pubDate>Sun, 10 May 2015 16:30:00 GMT</pubDate></item><item><title>Perspective</title><link>https://sef.kloninger.com/posts/petrol-car.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;div style="float:right; padding-left:15px;"&gt;
+have coffee/drink or take a walk.&lt;/p&gt;&lt;/div&gt;</description><category>Life</category><category>Tech</category><guid>https://sef.kloninger.com/posts/job-15/</guid><pubDate>Sun, 10 May 2015 16:30:00 GMT</pubDate></item><item><title>Perspective</title><link>https://sef.kloninger.com/posts/petrol-car/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;div style="float:right; padding-left:15px;"&gt;
     &lt;blockquote class="twitter-tweet" lang="en"&gt;
         &lt;p lang="en" dir="ltr"&gt;Test drive of a petrol car - &lt;a href="http://t.co/lPQ0xcs7uU"&gt;http://t.co/lPQ0xcs7uU&lt;/a&gt;&lt;/p&gt;— sefk (@sefk) &lt;a href="https://twitter.com/sefk/status/595318498894553088"&gt;May 4, 2015&lt;/a&gt;
     &lt;/blockquote&gt;
@@ -112,7 +112,7 @@ the sins of the status quo, some Swedes
 &lt;p&gt;Tear around town carrying gallons of incendiary liquid just inches
 beneath my beloved family? 
 In a mode of transport that &lt;a href="http://en.wikipedia.org/wiki/List_of_motor_vehicle_deaths_in_U.S._by_year"&gt;kills upwards of thirty thousand Americans every year&lt;/a&gt;? 
-Sure, that's fine.&lt;/p&gt;&lt;/div&gt;</description><category>Life</category><category>Tweets</category><guid>https://sef.kloninger.com/posts/petrol-car.html</guid><pubDate>Wed, 06 May 2015 07:05:37 GMT</pubDate></item><item><title>Lessons from Three Years in AWS</title><link>https://sef.kloninger.com/posts/aws.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/aws.png" alt="AWS Logo" width="30%"&gt;&lt;/p&gt;
+Sure, that's fine.&lt;/p&gt;&lt;/div&gt;</description><category>Life</category><category>Tweets</category><guid>https://sef.kloninger.com/posts/petrol-car/</guid><pubDate>Wed, 06 May 2015 07:05:37 GMT</pubDate></item><item><title>Lessons from Three Years in AWS</title><link>https://sef.kloninger.com/posts/aws/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/aws.png" alt="AWS Logo" width="30%"&gt;&lt;/p&gt;
 &lt;p&gt;I've spent the last three years building and operating web sites
 with Amazon Web Services and here are a few lessons I've learned. 
 But I first have to come clean that I'm a fan of AWS with only
@@ -184,7 +184,7 @@ surprising capacity crunch. There are a whole class of problems
 that get much easier when you can have 2x the machines for just a
 little while.  When someone comes to you with that cost/benefit
 spreadsheet arguing why you should self-host, that's when you need
-your file of "the cloud saved my bacon" stories at the ready.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/aws.html</guid><pubDate>Fri, 24 Apr 2015 07:10:00 GMT</pubDate></item><item><title>Don't Say No By Email</title><link>https://sef.kloninger.com/posts/saying-no.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/frown.png" alt=":(" width="192" height="178"&gt;&lt;/p&gt;
+your file of "the cloud saved my bacon" stories at the ready.&lt;/p&gt;&lt;/div&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/aws/</guid><pubDate>Fri, 24 Apr 2015 07:10:00 GMT</pubDate></item><item><title>Don't Say No By Email</title><link>https://sef.kloninger.com/posts/saying-no/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/frown.png" alt=":(" width="192" height="178"&gt;&lt;/p&gt;
 &lt;p&gt;When I have to tell someone no, I pick up the phone. I &lt;strong&gt;hate&lt;/strong&gt;
 talking on the phone, but I do it anyway.&lt;/p&gt;
 &lt;p&gt;When you're answering no to someone, you're disappointing them even
@@ -195,7 +195,7 @@ call. First, you get immediate feedback on how they took the news.
 If they're upset then you can do damage control straight away. And
 at least you know! And second, delivering bad news directly and
 respectfully is an important skill to develop. We can all use the
-practice. And it's never as bad as I think it will be.&lt;/p&gt;&lt;/div&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/saying-no.html</guid><pubDate>Sat, 04 Apr 2015 01:08:00 GMT</pubDate></item><item><title>Fewer Trick or Treaters This Year</title><link>https://sef.kloninger.com/posts/halloween-2014.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;This year's Halloween tally was 208.  I don't know why we have 32%
+practice. And it's never as bad as I think it will be.&lt;/p&gt;&lt;/div&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/saying-no/</guid><pubDate>Sat, 04 Apr 2015 01:08:00 GMT</pubDate></item><item><title>Fewer Trick or Treaters This Year</title><link>https://sef.kloninger.com/posts/halloween-2014/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;This year's Halloween tally was 208.  I don't know why we have 32%
 fewer trick-or-treaters than we had last year, which was down 20%
 from the year before that.  Maybe the rain earlier in the day kept
 people home.  Maybe because it was Friday people opted for parties
@@ -206,7 +206,7 @@ instead of going door to door.  I don't know.&lt;/p&gt;
 
 &lt;p&gt;Thanks to my friend Stuart for being on this year's data gathering
 crew.  As usual, the full story is 
-&lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;in the numbers&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><guid>https://sef.kloninger.com/posts/halloween-2014.html</guid><pubDate>Sat, 01 Nov 2014 09:30:00 GMT</pubDate></item><item><title>In Praise of the Hand Tally</title><link>https://sef.kloninger.com/posts/hand-tally.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/tallies.jpg" alt="Tally Marks" width="height=174"&gt;&lt;/p&gt;
+&lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;in the numbers&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><guid>https://sef.kloninger.com/posts/halloween-2014/</guid><pubDate>Sat, 01 Nov 2014 09:30:00 GMT</pubDate></item><item><title>In Praise of the Hand Tally</title><link>https://sef.kloninger.com/posts/hand-tally/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/tallies.jpg" alt="Tally Marks" width="height=174"&gt;&lt;/p&gt;
 &lt;p&gt;For the past five years I've gathered statistics on how many
 trick-or-treaters have come by on Halloween.  If you want to read
 about that, check out posts from &lt;a href="https://sef.kloninger.com/posts/201311halloween-2013.html"&gt;last year&lt;/a&gt; or &lt;a href="https://sef.kloninger.com/posts/201210halloween-candy-data.html"&gt;the year before&lt;/a&gt;.
@@ -253,7 +253,7 @@ pen project; the scrappy can-do Russians used pencils.  Well, this
 story has been &lt;a href="http://www.snopes.com/business/genius/spacepen.asp"&gt;debunked by the good people at Snopes&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;And second, I'd like to plug Tony and Tom's "day job", &lt;a href="http://stonehearth.net/"&gt;Stonehearth&lt;/a&gt;.
 I think of it as Starcraft meets Minecraft.  I am so eager to play
-it when it lands.&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><category>Tech</category><guid>https://sef.kloninger.com/posts/hand-tally.html</guid><pubDate>Thu, 30 Oct 2014 16:20:00 GMT</pubDate></item><item><title>Leaving Stanford Online Ed</title><link>https://sef.kloninger.com/posts/leaving-stanford.html</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p style="float:right; align:right; width:30%"&gt;&lt;img class="postimage" src="https://sef.kloninger.com/f/stanfordlogo.gif" alt="Stanford"&gt;&lt;/p&gt;
+it when it lands.&lt;/p&gt;&lt;/div&gt;</description><category>Halloween</category><category>Tech</category><guid>https://sef.kloninger.com/posts/hand-tally/</guid><pubDate>Thu, 30 Oct 2014 16:20:00 GMT</pubDate></item><item><title>Leaving Stanford Online Ed</title><link>https://sef.kloninger.com/posts/leaving-stanford/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p style="float:right; align:right; width:30%"&gt;&lt;img class="postimage" src="https://sef.kloninger.com/f/stanfordlogo.gif" alt="Stanford"&gt;&lt;/p&gt;
 
 &lt;p&gt;Friday was my last day building Stanford's &lt;a href="https://class.stanford.edu/"&gt;open-source online education
 platform&lt;/a&gt;.  What started as a lark turned out to be one of the most
@@ -374,4 +374,4 @@ Ike, Jim, Phil, Ross...)&lt;/p&gt;
 especially Jason and Jane; the team in the Office of the Vice Provost for
 Online Learning, especially Professor &lt;a href="http://theory.stanford.edu/people/jcm/"&gt;John Mitchell&lt;/a&gt; who made this
 possible; and my many friends at edX.  There's a lot to be proud of over
-the past two years, and a lot of good work ahead.&lt;/p&gt;&lt;/div&gt;</description><category>Education</category><guid>https://sef.kloninger.com/posts/leaving-stanford.html</guid><pubDate>Mon, 01 Sep 2014 06:45:00 GMT</pubDate></item></channel></rss>
+the past two years, and a lot of good work ahead.&lt;/p&gt;&lt;/div&gt;</description><category>Education</category><guid>https://sef.kloninger.com/posts/leaving-stanford/</guid><pubDate>Mon, 01 Sep 2014 06:45:00 GMT</pubDate></item></channel></rss>
