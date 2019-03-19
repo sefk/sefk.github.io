@@ -4,3 +4,8 @@ cache
 .doit.db.db
 .DS_Store
 *.swp
+# python virtual environment artifacts
+lib
+bin
+pyvenv.cfg
+themes
