@@ -122,13 +122,10 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ('/stories/about/', 'About'),
-#       ('/categories/index.html', 'Tags'),
-#       ('/rss.xml', 'RSS'),
         ('https://twitter.com/sefk', '@sefk'),
         ('https://github.com/sefk', 'GitHub'),
         ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html', 'Resume'),
-        ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf',  'PDF'),
-        ('/stories/tools/', 'Tools'),
+        ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf', 'PDF'),
         ('/archive.html', 'Archives'),
     ),
 }
