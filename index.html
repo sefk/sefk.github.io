@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="description" content="None">
@@ -8,55 +9,52 @@
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://sef.kloninger.com/">
-<link rel="next" href="index-4.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/halloween-2015/" type="text/html">
+<link rel="next" href="index-5.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/timesbee/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
 
 <!-- Menubar -->
 
-<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark bg-dark
+"><div class="container">
 <!-- This keeps the margins nice -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://sef.kloninger.com/">
+        <a class="navbar-brand" href="https://sef.kloninger.com/">
 
-                <span id="blog-title">sef.kloninger.com</span>
-            </a>
-        </div>
-<!-- /.navbar-header -->
-        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
-            <ul class="nav navbar-nav">
-<li>
-<a href="stories/about/">About</a>
+            <span id="blog-title">sef.kloninger.com</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="stories/about/" class="nav-link">About</a>
                 </li>
-<li>
-<a href="https://twitter.com/sefk">@sefk</a>
+<li class="nav-item">
+<a href="https://twitter.com/sefk" class="nav-link">@sefk</a>
                 </li>
-<li>
-<a href="https://github.com/sefk">GitHub</a>
+<li class="nav-item">
+<a href="https://github.com/sefk" class="nav-link">GitHub</a>
                 </li>
-<li>
-<a href="https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html">Resume</a>
+<li class="nav-item">
+<a href="https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html" class="nav-link">Resume</a>
                 </li>
-<li>
-<a href="https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf">PDF</a>
+<li class="nav-item">
+<a href="https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf" class="nav-link">PDF</a>
                 </li>
-<li>
-<a href="archive.html">Archives</a>
+<li class="nav-item">
+<a href="archive.html" class="nav-link">Archives</a>
 
                 
             </li>
 </ul>
-<ul class="nav navbar-nav navbar-right"></ul>
+<ul class="navbar-nav navbar-right"></ul>
 </div>
 <!-- /.navbar-collapse -->
     </div>
@@ -64,16 +62,98 @@
 </nav><!-- End of Menubar --><div class="container" id="content" role="main">
     <div class="body-content">
         <!--Body content-->
-        <div class="row">
-            
-            
+        
+        
+        
 
     
 
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/halloween-2015/" class="u-url">Flat</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/timesbee/" class="u-url">The NY Times Bee Puzzle</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="posts/timesbee/" rel="bookmark">
+            <time class="published dt-published" datetime="2020-05-23T10:00:00-07:00" itemprop="datePublished" title="2020-05-23 10:00">2020-05-23 10:00</time></a>
+            </p>
+                <p class="commentline">
+        
+    <a href="posts/timesbee/#disqus_thread" data-disqus-identifier="cache/posts/timesbee.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>How many different New York Times Spelling Bee puzzles are there? Or more
+precisely, how many combinations of seven letters can be used to build Bee-type
+puzzles?</p>
+<p>I wrote <a href="https://github.com/sefk/timesbee">a little program</a> to find out. I found <strong>7,742 different seven
+letters combinations</strong> that could be used to generate Bee-style puzzles. There
+are more puzzles themseves based on what letter is chosen for the middle spot.</p>
+<p>The majority of letter choices, about 62%, have just one pangram. That's lower
+than I expected, actually. It's not that uncommon to have two or three pangrams,
+which happens about about 25% of the time, and nearly four out of ten puzzles
+will have more than one pangram. The full output is <a href="https://raw.githubusercontent.com/sefk/timesbee/master/timesbee.out">here</a>.</p>
+<p>Watch out for the combination <code>einprst</code>. If this one ever comes up, good
+luck finding all twenty-seven of its pangrams. </p>
+<h4>The Bee</h4>
+<p><img style="float:right" class="postimage" src="f/timesbee.png" alt="Example Times Bee Puzzle" width="40%"></p>
+<p>The Bee is a puzzle consisting of seven letters with one "special" letter in the
+middle. Make as many words as you can find with at least four letters, using only
+the letters given, but it has to use the special letter. one <strong>pangram</strong>, a word
+that uses all letters. The puzzle here has one pangram, <em>amphibian</em>. Wikipedia
+cites <a href="https://en.wikipedia.org/wiki/Frank_Longo">Frank Longo</a> as the puzzle's creator.</p>
+<p><a href="https://nytbee.com/">nytbee.com</a> has more today's puzzle and some interesting stats about these
+puzzles in general. They don't seem to be affiliated with the NY Times but they
+seem cool letting them be, and the site is nicely done.</p>
+<h4>Counts of Pangrams</h4>
+<p>The <a href="https://raw.githubusercontent.com/sefk/timesbee/master/timesbee.out">program output</a> is written with one line for each set of letters, with
+separators splitting the count of pangrams in sections. This makes it easy to get an
+idea of the sizes each group by just searching for those separators with their
+position (line number) in the output. <code>grep -n</code> does that nicely.</p>
+<pre class="code literal-block"><span></span><code>1:---- 1 pangram ----
+4975:---- 2 pangrams ----
+6342:---- 3 pangrams ----
+6936:---- 4 pangrams ----
+7230:---- 5 pangrams ----
+7418:---- 6 pangrams ----
+7516:---- 7 pangrams ----
+7589:---- 8 pangrams ----
+7632:---- 9 pangrams ----
+7660:---- 10 pangrams ----
+7679:---- 11 pangrams ----
+7695:---- 12 pangrams ----
+7708:---- 13 pangrams ----
+7722:---- 14 pangrams ----
+7734:---- 15 pangrams ----
+7738:---- 16 pangrams ----
+7744:---- 17 pangrams ----
+7748:---- 18 pangrams ----
+7750:---- 19 pangrams ----
+7753:---- 20 pangrams ----
+7757:---- 22 pangrams ----
+7761:---- 23 pangrams ----
+7763:---- 26 pangrams ----
+7765:---- 27 pangrams ----
+7767:---- found: 7742 puzzles, 14502 pangrams, of 235886 words considered
+7768:---- words rejected because: {'proper noun': 25199, 'not seven letters': 190537, 'too many vowels': 157574}
+</code></pre>
+
+
+<h4>Future Work</h4>
+<ul>
+<li>What are the distributions of number of words?</li>
+<li>How does that change when arranged with a different center letter?</li>
+<li>Graph histograms of the different number of pangrams, number of answers</li>
+</ul>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/halloween-2015/" class="u-url">Flat</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Sef Kloninger
@@ -416,60 +496,26 @@ respectfully is an important skill to develop. We can all use the
 practice. And it's never as bad as I think it will be.</p>
 </div>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/halloween-2014/" class="u-url">Fewer Trick or Treaters This Year</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Sef Kloninger
-            </span></p>
-            <p class="dateline">
-            <a href="posts/halloween-2014/" rel="bookmark">
-            <time class="published dt-published" datetime="2014-11-01T02:30:00-07:00" itemprop="datePublished" title="2014-11-01 02:30">2014-11-01 02:30</time></a>
-            </p>
-                <p class="commentline">
-        
-    <a href="posts/halloween-2014/#disqus_thread" data-disqus-identifier="cache/posts/halloween-2014.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div>
-<p>This year's Halloween tally was 208.  I don't know why we have 32%
-fewer trick-or-treaters than we had last year, which was down 20%
-from the year before that.  Maybe the rain earlier in the day kept
-people home.  Maybe because it was Friday people opted for parties
-instead of going door to door.  I don't know.</p>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js">
-{"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE&transpose=1&headers=0&range=C20%3AH21&gid=9&pub=1","options":{"titleTextStyle":{"bold":true,"color":"#000","fontSize":"24"},"series":{"0":{"color":"#b45f06"}},"animation":{"duration":500},"width":600,"hAxis":{"useFormatFromData":true,"title":"","minValue":null,"viewWindowMode":null,"textStyle":{"bold":true,"color":"#222","fontSize":"20"},"viewWindow":null,"maxValue":null},"vAxes":[{"useFormatFromData":true,"title":"","minValue":0,"viewWindowMode":"explicit","textStyle":{"bold":true,"color":"#222","fontSize":"20"},"logScale":false,"viewWindow":{"min":0,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"logScale":false,"viewWindow":{"min":null,"max":null},"maxValue":null}],"booleanRole":"certainty","title":"Trick or Treaters, Menlo Park, CA","height":240,"legend":"none","useFirstColumnAsDomain":true,"isStacked":false,"tooltip":{}},"state":{},"view":{},"isDefaultVisualization":false,"chartType":"ColumnChart","chartName":"Chart 4"}
-</script><p>Thanks to my friend Stuart for being on this year's data gathering
-crew.  As usual, the full story is 
-<a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE">in the numbers</a>.</p>
-</div>
-    </div>
     </article>
 </div>
 
-        <nav class="postindexpager"><ul class="pager">
-<li class="next">
-                <a href="index-4.html" rel="next">Older posts</a>
-            </li>
-        </ul></nav><script>var disqus_shortname="sefkloninger";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
-</div>
-        <!--End of body content-->
-
-        <footer id="footer"><p align="center">Contents © 2019 <a href="mailto:sefklon@gmail.com">Sef Kloninger</a>       
+        <ul class="pager postindexpager clearfix">
+<li class="next"><a href="index-5.html" rel="next">Older posts</a></li>
+        </ul>
+<script>var disqus_shortname="sefkloninger";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer"><p align="center">Contents © 2020 <a href="mailto:sefklon@gmail.com">Sef Kloninger</a>       
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">
 <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="https://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a></p>
+            
             
         </footer>
 </div>
 </div>
 
 
-            <script src="assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
-    moment.locale("en");
-    fancydates(2, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates --><script>
+        <script src="assets/js/all-nocdn.js"></script><script src="assets/js/moment-with-locales.min.js"></script><!-- fancy dates --><script>
+        moment.locale("en");
+        fancydates(2, "YYYY-MM-DD HH:mm");
+        </script><!-- end fancy dates --><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
         captions: function(element) {
