@@ -22,22 +22,20 @@ will have more than one pangram. The full output is [here][out], the output of
 this [little program][src].
 
 Watch out for the combination ```einprst```. If this one ever comes up, good
-luck finding all twenty-seven of its pangrams. 
+luck finding all twenty-seven of its pangrams.
 
 [src]: https://github.com/sefk/timesbee
 [out]: https://raw.githubusercontent.com/sefk/timesbee/master/timesbee.out
 
+### The Bee Puzzle
 
-### The Puzzle Itself
+<img style="float:right" class="postimage" src="/f/timesbee.png" alt="Example Times Bee Puzzle" width=40%>
 
-<img style="float:right" class="postimage" src="/f/timesbee.png"
-alt="Example Times Bee Puzzle" width=40%>
-
-The Bee is a puzzle consisting of seven letters with one "special" letter in the
-middle. Make as many words as you can find with at least four letters, using only
-the letters given, but it has to use the special letter. one **pangram**, a word
-that uses all letters. The puzzle here has one pangram, *amphibian*. Wikipedia
-cites [Frank Longo][] as the puzzle's creator.
+The Bee consists of seven letters with one "special" letter in the middle. Make
+as many words as you can find with at least four letters, using only the
+letters given, but it has to use the center letter. Every puzzle has at least
+one **pangram**, a word that uses all letters; this example's pangram is
+*amphibian*. Wikipedia cites [Frank Longo][] as the creator of the Bee.
 
 [nytbee.com][] has more today's puzzle and some interesting stats about these
 puzzles in general. They don't seem to be affiliated with the NY Times but they
