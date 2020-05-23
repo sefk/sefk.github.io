@@ -38,8 +38,8 @@ one **pangram**, a word that uses all letters; this example's pangram is
 *amphibian*. Wikipedia cites [Frank Longo][] as the creator of the Bee.
 
 [nytbee.com][] has more today's puzzle and some interesting stats about these
-puzzles in general. They don't seem to be affiliated with the NY Times but they
-seem cool letting them be, and the site is nicely done.
+puzzles in general. They don't seem to be affiliated with the NY Times but that
+seem to be OK and is's a nice site.
 
 [Frank Longo]: https://en.wikipedia.org/wiki/Frank_Longo
 [nytbee.com]: https://nytbee.com/
