@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Games)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/games.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 23 May 2020 23:47:46 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The NY Times Bee Puzzle</title><link>https://sef.kloninger.com/posts/timesbee/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div&gt;&lt;p&gt;How many different New York Times Spelling Bee puzzles are there? Or more
+precisely, how many combinations of seven letters can be used to build Bee-type
+puzzles?&lt;/p&gt;
+&lt;p&gt;It turns out &lt;strong&gt;7,742 different seven letter combinations&lt;/strong&gt; can be used to
+generate Bee-style puzzles. There are more puzzles themseves based on what
+letter is chosen for the middle spot.&lt;/p&gt;
+&lt;p&gt;The majority of letter choices, about 62%, have just one pangram. That's lower
+than I expected, actually. It's not that uncommon to have two or three pangrams,
+which happens about about 25% of the time, and nearly four out of ten puzzles
+will have more than one pangram. The full output is &lt;a href="https://raw.githubusercontent.com/sefk/timesbee/master/timesbee.out"&gt;here&lt;/a&gt;, the output of this
+&lt;a href="https://github.com/sefk/timesbee"&gt;program&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Watch out for the combination &lt;code&gt;einprst&lt;/code&gt;. If this one ever comes up, good
+luck finding all twenty-seven of its pangrams.&lt;/p&gt;
+&lt;h4&gt;The Bee Puzzle&lt;/h4&gt;
+&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/timesbee.png" alt="Example Times Bee Puzzle" width="40%"&gt;&lt;/p&gt;
+&lt;p&gt;A Bee puzzle has seven letters with one "special" letter in the middle. Make as
+many words as You can find with at least four letters, using only the letters
+given, but it has to use the center letter. Proper nouns aren't allowed. Every
+puzzle has at least one &lt;strong&gt;pangram&lt;/strong&gt;, a word that uses all letters — this
+example's is &lt;em&gt;amphibian&lt;/em&gt;. Wikipedia cites &lt;a href="https://en.wikipedia.org/wiki/Frank_Longo"&gt;Frank Longo&lt;/a&gt; as the Bee's creator.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://nytbee.com/"&gt;nytbee.com&lt;/a&gt; has more today's puzzle and some interesting stats about these
+puzzles in general. They don't seem to be affiliated with the NY Times but that
+seem to be OK and is's a nice site.&lt;/p&gt;&lt;/div&gt;</description><category>Family</category><category>Games</category><guid>https://sef.kloninger.com/posts/timesbee/</guid><pubDate>Sat, 23 May 2020 22:00:00 GMT</pubDate></item></channel></rss>
