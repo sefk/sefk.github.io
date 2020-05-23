@@ -1,12 +1,10 @@
-<!-- 
+<!--
 .. title: Google Apps, Apple Devices
 .. slug: tribes
 .. date: 2015-09-11 10:05:19 UTC-07:00
-.. tags: draft
-.. category: 
-.. link: 
-.. description: 
+.. tags: 
 .. type: text
+.. status: draft
 -->
 
 There are a few personal technology tribes -- the main ones I can think of

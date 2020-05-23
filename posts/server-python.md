@@ -1,12 +1,10 @@
-<!-- 
+<!--
 .. title: Things to Overcome to Write Good Server Side Python
 .. slug: server-python
 .. date: 2015-05-19 14:07:52 UTC-07:00
-.. tags: draft
-.. category:
-.. link: 
-.. description: 
+.. tags: 
 .. type: text
+.. status: draft
 -->
 
 Everything is doable in anything, sure. But there are some things that are

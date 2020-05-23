@@ -1,12 +1,10 @@
-<!-- 
+<!--
 .. title: Contribute to a Good Open Source Project
 .. slug: good-proj
 .. date: 2015-05-17 20:12:05 UTC-07:00
-.. tags: Tech, draft
-.. category: 
-.. link: 
-.. description: 
+.. tags: Tech
 .. type: text
+.. status: draft
 -->
 
 If you find yourself with some extra time, find a good open source project to
