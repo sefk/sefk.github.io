@@ -3,8 +3,8 @@
 .. slug: timesbee
 .. link: 
 .. description: 
-.. tags: 
-.. date: 2020/05/23 10:00
+.. tags: Family,Games
+.. date: 2020/05/23 15:00
 -->
 
 How many different New York Times Spelling Bee puzzles are there? Or more
