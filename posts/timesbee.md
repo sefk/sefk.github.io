@@ -1,5 +1,5 @@
 <!-- 
-.. title: The Times Bee Puzzle
+.. title: The NY Times Bee Puzzle
 .. slug: timesbee
 .. link: 
 .. description: 
@@ -8,7 +8,7 @@
 -->
 
 How many different New York Times Spelling Bee puzzles are there? Or more
-precisely, how many combinations of seven letters can be used to build bee
+precisely, how many combinations of seven letters can be used to build Bee-type
 puzzles?
 
 I wrote [a little program][src] to find out. I found **7,742 different seven
@@ -17,11 +17,11 @@ are more puzzles themseves based on what letter is chosen for the middle spot.
 
 The majority of letter choices, about 62%, have just one pangram. That's lower
 than I expected, actually. It's not that uncommon to have two or three pangrams,
-which happens about about 25% of the time, and nearly 4 out of 10 puzzles will
-have more than one pangram. The full output is [here][out].
+which happens about about 25% of the time, and nearly four out of ten puzzles
+will have more than one pangram. The full output is [here][out].
 
-And watch out for the combination ```einprst```. If this one ever comes up, good
-luck finding all 27 pangrams. 
+Watch out for the combination ```einprst```. If this one ever comes up, good
+luck finding all twenty-seven of its pangrams. 
 
 [src]: https://github.com/sefk/timesbee
 [out]: https://raw.githubusercontent.com/sefk/timesbee/master/timesbee.out
@@ -32,14 +32,18 @@ luck finding all 27 pangrams.
 <img style="float:right" class="postimage" src="/f/timesbee.png"
 alt="Example Times Bee Puzzle" width=40%>
 
-The Bee is a puzzle consisting of seven letters, with one central "special" letter.
-The center letter has to be used in all answers. Letters can be used any number
-of times to make up words of four letters or more. Every puzzles has at least
-one pangram, a word that uses all letters. A puzzle to have multiple pangrams.
+The Bee is a puzzle consisting of seven letters with one "special" letter in the
+middle. Make as many words as you can find with at least four letters, using only
+the letters given, but it has to use the special letter. one **pangram**, a word
+that uses all letters. The puzzle here has one pangram, *amphibian*. Wikipedia
+cites [Frank Longo][] as the puzzle's creator.
 
-[nytbee.com](https://nytbee.com/) has more info and all the current puzzles. This
-site isn't affiliated with the NY Times but is well done and the Times seems OK with
-it.
+[nytbee.com][] has more today's puzzle and some interesting stats about these
+puzzles in general. They don't seem to be affiliated with the NY Times but they
+seem cool letting them be, and the site is nicely done.
+
+[Frank Longo]: https://en.wikipedia.org/wiki/Frank_Longo
+[nytbee.com]: https://nytbee.com/
 
 
 ### Counts of Pangrams
