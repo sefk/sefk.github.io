@@ -31,10 +31,8 @@ The general workflow is:
 Now that Nikola has moved over to Python 3 we have a little bit more to set things up:
 
 ```bash
-brew install python3
 cd ./sefk.github.io
 python3 -m venv .
-pip3 install --upgrade pip
 ```
 
 ### Nikola
@@ -43,7 +41,7 @@ I chose not to check in my theme. I figure maybe it'd be better to have that ver
 elsewhere. This will install the requirements to run Nikola and then start it going.
 
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 nikola theme -i bootstrap3
 nikola auto
 ```
