@@ -2,6 +2,7 @@ output
 *.pyc
 cache
 .doit.db.db
+.doit.db
 .DS_Store
 *.swp
 # python virtual environment artifacts
