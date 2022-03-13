@@ -23,7 +23,7 @@ and/or Operations (less fun). While I can do the bigger job, I've
 been tending to do more hands-on work and managing smaller teams
 lately.
 
-I'm a father of two great girls and enjoy card and board games.
+I'm a father of two great kids and enjoy card and board games.
 
 My GPG key is [`4C79 48F2 2057 0647 D573  937B AFD1 2F02 88AC 23B2`](../../f/sef-public-gpg-key-2015-06.asc)
 
