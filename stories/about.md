@@ -55,7 +55,7 @@ and to me that means PyCharm and WebStorm and of course IntelliJ.
 They are impressive pieces of software and a great value.
 
 If you don't know about the **CodeGlance** plugin, check it out.
-It gives you a pretty little view of your code on the right -- you
+It gives you a pretty little view of your code on the right &mdash; you
 know, that thing that Sublime Text has that every other editor
 covets.
 
@@ -78,29 +78,41 @@ very well for me.
 **Autojump**. Watches what you `cd` to and then you can quickly
 jump back there. `j posts` takes me to my "posts" directory. Magic.
 
-**bash**. I keep thinking I'm going to try some new shell hotness but
-this one keeps working. Still my go-to scripting tool like
-[this little gem][diary].
-
-[diary]: https://github.com/sefk/sef-dotfiles/blob/master/bash_startup/diary.sh
+**Zsh**. I finally switched over to Zsh when MacOS switched the
+default shell to Zsh in Catalina. I've found
+**<a href="https://ohmyz.sh/">Oh My Zsh</a>** to be a helpful way
+to manage themes and plugins. I expected it's trick of updating every
+time you open a window to be more onerous, but it hasn't troubled
+me yet.
 
 ## Mac Things
 
-**Hyperswitch**. My key requirement is I need to quickly switch
-between windows with alt-tab. I prefer lots of windows to tabs, and
-alt-tab is hard-wired into my fingers from so many years on Windows.
-And the Mac has never done this right, differentiating between
-windows and apps (why!?). I was a longtime user of Witch for this,
-but found it got flaky.
+**<a href="https://github.com/lwouis/alt-tab-macos">Alt-tab</a>**.
+My key requirement is I need to quickly switch between windows with
+alt-tab. I prefer lots of windows to tabs, and alt-tab is hard-wired
+into my fingers from so many years on Windows.  And the Mac has
+never done this right, differentiating between windows and apps
+(why?). Prior apps I tried for this were Witch and Hyperswitch,
+but it's hard to find one that's reliable.
 
-**Moom**. I've tried a bunch of Mac things for moving windows around
-and this one is the best. The hotkey I've assigned is easy to type
+**<a href="https://manytricks.com/moom/">Moom</a>**.
+I've tried a bunch of Mac things for moving windows around and this
+one is the best. The hotkey I've assigned is easy to type
 (ctrl-shift-semicolon), pushing once gets me to some nice instant
 macros (top, right, full screen) but the best thing is pushing
 *twice* to bring up this nice little micro-manager where I can place
 windows manually. Well done and works.
 
-**CopyClip**. Does the job.
+**<a href="https://fiplab.com/apps/copyclip-for-mac">CopyClip</a>**.
+I've come to rely on a clipboar manager quite a bit and it's one of the
+things I miss most when moving to another OS like Linux or Chrome. This
+one has always done the job for me.
+
+**<a href="https://brew.sh/">Homebrew</a>**.
+The missing package manager for the mac has proven remarkably durable. I'm
+especially impressed how well it's proven to be usale on systems where
+I have full control, and others where parts are locked down by an IT
+dept and I have to compile everything locally.
 
 ## Productivity and Apps
 
