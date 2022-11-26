@@ -12,7 +12,7 @@ I get to write some code.
 
 [robots game]: http://en.wikipedia.org/wiki/Robots_%28BSD_game%29
 
-<img src="/f/sefface-soxhat-big.png" 
+<img src="/f/sef-squint.jpeg" 
      style="float:right; padding-left:20px;"
      alt="Sef in baseball hat" width=280px>
 
