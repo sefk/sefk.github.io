@@ -122,7 +122,8 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ('/stories/about/', 'About'),
-        ('https://twitter.com/sefk', '@sefk'),
+        ('https://twitter.com/sefk', 'Twitter'),
+        ('https://hachyderm.io/@sefk', 'Mastodon'),
         ('https://github.com/sefk', 'GitHub'),
         ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html', 'Resume'),
         ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf', 'PDF'),
@@ -636,14 +637,20 @@ src="https://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
 
 # A small copyright notice for the page footer (in HTML).
 # Default is ''
+FOOTER_SPACER='&nbsp; &nbsp; &nbsp; '
 CONTENT_FOOTER = '<p align=center>Contents &copy; {date} <a href="mailto:{email}">{author}</a> ' + \
-        '&nbsp; &nbsp; &nbsp; ' + \
+        FOOTER_SPACER + \
         '{license}' + \
+        FOOTER_SPACER + \
+        '{other}' + \
         '</p>'
+FOOTER_MASTODON='<a rel="me" href="https://hachyderm.io/@sefk">Mastodon</a>'
 CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
                                        author=BLOG_AUTHOR,
                                        date=time.gmtime().tm_year,
-                                       license=LICENSE)
+                                       license=LICENSE,
+                                       other=FOOTER_MASTODON,
+                                       )
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
