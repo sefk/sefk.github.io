@@ -1,9 +1,13 @@
 # Sef Kloninger's Personal Blog (sefk.github.io)
 
-This is my personal blog.  It is a Nikola static site hosted by Github pages.
-This repo contains both the source files for the blog and the rendered pages.
-The source files are in the "dev" branch (the default for this repo) and the
-build products are on "master".
+This is the content hosted at [sef.kloninger.com][]. It's a [Nikola][]
+static site hosted by Github pages. This repo contains both the
+source files for the blog and the rendered pages. The source files
+are in the ```dev``` branch (default for this repo) and the build
+products are pushed to ```master```.
+
+[sef.kloninger.com]: https://sef.kloninger.com/
+[Nikola]: https://getnikola.com
 
 ## Instructions
 
@@ -65,5 +69,7 @@ brew link libxslt --force
 CPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 CFLAGS=-Qunused-arguments CPPFLAGS=-Qunused-arguments pip install lxml
 ```
 
-Not sure the brew steps are req'd or not. That last step is what did it. From
-[this StackOverflow answer](http://stackoverflow.com/questions/19548011/cannot-install-lxml-on-mac-os-x-10-9)
+Not sure the brew steps are req'd or not. That last step is what
+did it. From [this answer][] on StackOverflow.
+
+[this answer]: http://stackoverflow.com/questions/19548011/cannot-install-lxml-on-mac-os-x-10-9
