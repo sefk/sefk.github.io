@@ -1,6 +1,6 @@
 <!-- 
 .. title: Thick Apps Still Lose 
-.. slug: thick-apps 
+.. slug: thick-apps
 .. date: 2015-08-19 13:20 UTC-07:00 
 .. tags: Tech 
 .. category: 
