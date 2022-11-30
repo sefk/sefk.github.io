@@ -5,9 +5,13 @@ import time
 import re
 from nikola.filters import apply_to_text_file
 
+# SEF: to debug, use this
+#   import doit
+#   doit.tools.set_trace()
+#   nikola build -a --pdb
+
 # !! This is the configuration of Nikola. !! #
 # !!  You should edit it to your liking.  !! #
-
 
 # ! Some settings can be different in different languages.
 # ! A comment stating (translatable) is used to denote those.
@@ -476,12 +480,13 @@ OUTPUT_FOLDER = 'output'
 # }
 #
 
-# Use a postprocessing sed command to add the requisite ref="me" attribute to the 
-# Mastodon link in the header to identify my web site.
-# TODO: use python directly, sed post-processing seems to confuse the "nikola auto"
-# command and that sure is handy.
+# Use a postprocessor to add the requisite ref="me" attribute to the Mastodon
+# backlink in the header. This is how Mastodon verifies that I'm the actual
+# site owner (clever).
+def authorize_mastodon(src):
+    return re.sub(r'<a (?=[^>]+>Mastodon</a>)', '<a rel="me" ', src)
 FILTERS = {
-    ".html": ["sed -E -i '' 's/<a (href=[^>]+>Mastodon<\/a>)/<a ref=\"me\" \\1/' '%s'"]
+    ".html": [apply_to_text_file(authorize_mastodon)]
 }
 
 # Expert setting! Create a gzipped copy of each generated file. Cheap server-
