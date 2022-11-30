@@ -2,6 +2,8 @@
 
 from __future__ import unicode_literals
 import time
+import re
+from nikola.filters import apply_to_text_file
 
 # !! This is the configuration of Nikola. !! #
 # !!  You should edit it to your liking.  !! #
@@ -472,6 +474,15 @@ OUTPUT_FOLDER = 'output'
 #    ".js": [filters.closure_compiler],
 #    ".jpg": ["jpegoptim --strip-all -m75 -v %s"],
 # }
+#
+
+# Use a postprocessing sed command to add the requisite ref="me" attribute to the 
+# Mastodon link in the header to identify my web site.
+# TODO: use python directly, sed post-processing seems to confuse the "nikola auto"
+# command and that sure is handy.
+FILTERS = {
+    ".html": ["sed -E -i '' 's/<a (href=[^>]+>Mastodon<\/a>)/<a ref=\"me\" \\1/' '%s'"]
+}
 
 # Expert setting! Create a gzipped copy of each generated file. Cheap server-
 # side optimization for very high traffic sites or low memory servers.
@@ -637,19 +648,14 @@ src="https://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
 
 # A small copyright notice for the page footer (in HTML).
 # Default is ''
-FOOTER_SPACER='&nbsp; &nbsp; &nbsp; '
 CONTENT_FOOTER = '<p align=center>Contents &copy; {date} <a href="mailto:{email}">{author}</a> ' + \
-        FOOTER_SPACER + \
+        '&nbsp; &nbsp; &nbsp; ' + \
         '{license}' + \
-        FOOTER_SPACER + \
-        '{other}' + \
         '</p>'
-FOOTER_MASTODON='<a rel="me" href="https://hachyderm.io/@sefk">Mastodon</a>'
 CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
                                        author=BLOG_AUTHOR,
                                        date=time.gmtime().tm_year,
                                        license=LICENSE,
-                                       other=FOOTER_MASTODON,
                                        )
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
