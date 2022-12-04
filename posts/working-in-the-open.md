@@ -17,9 +17,9 @@ footsteps, which is fine, but I still want her to see my field.
 
 I've always found this question hard to answer. I've been an engineering
 manager for a long time, and I'm happy to describe that job (emails,
-1:1's, PRD reviews),but I don't think that's the heart of it. Plus these
-days I work for Google, and things there are proprietary and layered,
-making it not great for answering questions like these.
+1:1's, PRD reviews), but I don't think that's the heart of it. Plus
+these days I work for Google where things there are proprietary and
+deeply layered, not much help for answering questions like these.
 
 Recently I've found my way to Mastodon for [obvious reasons][r]. I
 chose the [Hachyderm][] instance because it was well run by people who
