@@ -128,8 +128,8 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ('/stories/about/', 'About'),
-        ('https://twitter.com/sefk', 'Twitter'),
         ('https://hachyderm.io/@sefk', 'Mastodon'),
+        ('https://twitter.com/sefk', 'Twitter'),
         ('https://github.com/sefk', 'GitHub'),
         ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html', 'Resume'),
         ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf', 'PDF'),
