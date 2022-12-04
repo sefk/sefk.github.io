@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 04 Dec 2022 21:06:52 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Working In The Open</title><link>https://sef.kloninger.com/posts/working-in-the-open/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/hachyderm-debugging.png" alt="screenshot of @nova live-debugging Hachyderm on Twitch" width="50%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 04 Dec 2022 21:21:03 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Working In The Open</title><link>https://sef.kloninger.com/posts/working-in-the-open/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/hachyderm-debugging.png" alt="screenshot of @nova live-debugging Hachyderm on Twitch" width="50%"&gt;&lt;/p&gt;
 
 &lt;p&gt;The other day my daughter asked me about Software Engineering -- what do
 we &lt;em&gt;actually do&lt;/em&gt;? She's eighteen and probably won't follow in my
 footsteps, which is fine, but I still want her to see my field.&lt;/p&gt;
 &lt;p&gt;I've always found this question hard to answer. I've been an engineering
 manager for a long time, and I'm happy to describe that job (emails,
-1:1's, PRD reviews),but I don't think that's the heart of it. Plus these
-days I work for Google, and things there are proprietary and layered,
-making it not great for answering questions like these.&lt;/p&gt;
+1:1's, PRD reviews), but I don't think that's the heart of it. Plus
+these days I work for Google where things there are proprietary and
+deeply layered, not much help for answering questions like these.&lt;/p&gt;
 &lt;p&gt;Recently I've found my way to Mastodon for &lt;a href="https://hachyderm.io/@sefk/109456480817920873"&gt;obvious reasons&lt;/a&gt;. I
 chose the &lt;a href="https://hachyderm.io/"&gt;Hachyderm&lt;/a&gt; instance because it was well run by people who
 shared my values. It turns out that the values of the owners and
