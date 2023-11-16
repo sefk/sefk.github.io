@@ -2,12 +2,15 @@
 .. title: Bring Me {Problem,Solution} Bosses
 .. slug: problem-or-solution-boss
 .. date: 2023-10-07 12:16:34 UTC-07:00
-.. tags:
+.. tags: draft
 .. category: 
 .. link: 
 .. description: 
 .. type: text
 -->
+
+<img class="alignright" title="Pointy-Haired-Boss" src="/f/Pointy-Haired_Boss.png" alt="Pointy Haired Boss">
+
 
 Some bosses want you to bring them problems, so you can unscramble
 the Rubik's cube together. Sure it's great to have figured out some
