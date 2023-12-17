@@ -1,8 +1,8 @@
 <!--
 .. title: Bring Me {Problem,Solution} Bosses
 .. slug: problem-or-solution-boss
-.. date: 2023-10-07 12:16:34 UTC-07:00
-.. tags: draft
+.. date: 2023-12-16 15:00
+.. tags:
 .. category: 
 .. link: 
 .. description: 
@@ -11,12 +11,11 @@
 
 <img class="alignright" title="Pointy-Haired-Boss" src="/f/Pointy-Haired_Boss.png" alt="Pointy Haired Boss">
 
+Some bosses want you to *bring them problems*. They like to unscramble
+Rubik's cubes and are happy to work through it with you. Sure it's great if you have a proposal or recommendation,
+but be prepared to show your homework.
 
-Some bosses want you to bring them problems, so you can unscramble
-the Rubik's cube together. Sure it's great to have figured out some
-of the problem first, but be prepared to show your homework.
-
-Other bosses want you to bring them solutions or proposals. If you
+Other bosses want you to *bring them solutions*. If you
 bring them a problem, you'll get annoyance and "what do you want
 me to do about it?"
 
