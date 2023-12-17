@@ -1,37 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 17 Dec 2023 02:39:37 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Podcast Recommendation: The Big Dig</title><link>https://sef.kloninger.com/posts/big-dig/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;a href="https://www.wgbh.org/podcasts/the-big-dig"&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/bigdig.png" alt="Big Dig podcast title art (WGBH)" width="50%"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I just finished listening to the &lt;a href="https://www.wgbh.org/podcasts/the-big-dig"&gt;Big Dig podcast&lt;/a&gt; and it's worth
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 17 Dec 2023 16:46:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The Big Dig</title><link>https://sef.kloninger.com/posts/big-dig/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;a href="https://www.wgbh.org/podcasts/the-big-dig"&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/bigdig.png" alt="Big Dig podcast title art (WGBH)" width="50%"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I just finished the &lt;a href="https://www.wgbh.org/podcasts/the-big-dig"&gt;Big Dig podcast&lt;/a&gt; and it's worth
 a listen. It's about Boston's &lt;a href="https://en.wikipedia.org/wiki/Big_Dig"&gt;Central Artery/Tunnel Project&lt;/a&gt;,
-the most expensive highway project in US history. It covers the
+the most expensive highway project in US history. They cover the
 whole story, from conception, to getting it approved, to years of
 execution, and then the fallout from cost overruns and mismanagement.
 The podcast is well produced and has a lot of primary-source
 interviews.&lt;/p&gt;
 &lt;p&gt;I have a little bit of a personal connection, since I lived in
-Boston during those later years and it was on the news &lt;em&gt;all the
-time&lt;/em&gt;. I even got a tour of a part when it was under construction.&lt;/p&gt;
-&lt;p&gt;I like how they use this story to speak to something larger: can
-America build big infrastructure anymore? It's something I think
+Boston during the project's later years when it was on the news &lt;em&gt;all the
+time&lt;/em&gt;. I even toured &lt;a href="https://en.wikipedia.org/wiki/Leonard_P._Zakim_Bunker_Hill_Memorial_Bridge"&gt;a part&lt;/a&gt; under construction. &lt;/p&gt;
+&lt;p&gt;But what I find most compelling is trying to connect to the question,
+can America build big infrastructure anymore? It's something I think
 lot about. We benefit from by the giant projects from the past
-(dams, bridges, interstates) but struggle to maintain them properly today.
-We struggle to do new things like proper &lt;a href="https://en.wikipedia.org/wiki/California_High-Speed_Rail"&gt;high-speed rail&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Their claim is this is partially due to headwinds that didn't exist
-in the public-works heydey in the twentieth century. Leaders are
-under much more scrutiny; projects fall under many new regulations
-protecting the environment and worker safety. While the old way was
-faster and cheaper, it also caused a lot of harm. Public works
-projects are so big and disruptive that high cost and long times
-are likely unavoidable.&lt;/p&gt;
+(dams, bridges, interstates) but can't maintain them properly; we
+struggle to take on new things like &lt;a href="https://en.wikipedia.org/wiki/California_High-Speed_Rail"&gt;high-speed rail&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;They place most of the blame on headwinds that didn't exist in the
+public-works heyday of the twentieth century. Leaders are under
+more scrutiny; projects fall under a bunch of regulations intended
+to protect the environment and workers. Public commentary slows
+things down.&lt;/p&gt;
+&lt;p&gt;The problem is, while the old way was easier, it also caused a lot
+of harm. I learned the story of the Cambridge and East Boston
+families that stopped interstate projects that would have leveled
+their homes and neighborhoods. I know those places well. I used to
+own a home right where &lt;a href="https://en.wikipedia.org/wiki/Interstate_695_(Massachusetts)"&gt;one of those roads was supposed to have
+been&lt;/a&gt;. I sure am grateful to those protesters who won!&lt;/p&gt;
 &lt;p&gt;It ends on a hopeful note. Not that it's easy, nor are we necessarily
 that much better managing big projects now. But there are success
 stories.&lt;/p&gt;
-&lt;p&gt;I especially liked an interview &lt;a href="https://overcast.fm/+BDdBHAXcVU/20:47"&gt;20 minutes into the final episode&lt;/a&gt;
-with &lt;a href="https://en.wikipedia.org/wiki/Frederick_P._Salvucci"&gt;Fred Salvucci&lt;/a&gt;. He tells the story Saint Francis. God tells
-Francis to build a cathedral, but then keeps tears it down. Why?
-because it's not enough to build a physical cathedral, but you also
-have to build the support for it in the hearts and minds of the
-people. Maybe that's the part that we're not doing well enough these
-days and is blocking our ability to build big things.&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/big-dig/</guid><pubDate>Sun, 17 Dec 2023 00:00:00 GMT</pubDate></item><item><title>Bring Me {Problem,Solution} Bosses</title><link>https://sef.kloninger.com/posts/problem-or-solution-boss/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img class="alignright" title="Pointy-Haired-Boss" src="https://sef.kloninger.com/f/Pointy-Haired_Boss.png" alt="Pointy Haired Boss"&gt;&lt;/p&gt;
+&lt;p&gt;One part I especially liked was &lt;a href="https://overcast.fm/+BDdBHAXcVU/20:47"&gt;20 minutes into the final episode&lt;/a&gt;,
+in the final interview with &lt;a href="https://en.wikipedia.org/wiki/Frederick_P._Salvucci"&gt;Fred Salvucci&lt;/a&gt;, where he told the
+story Saint Francis. God tells Francis to build a cathedral, but
+then tears it down. Francis builds another, God destroys it again.
+Why, Francis asks. Because it's not enough to build a physical
+cathedral, but you also have to build the support for it in the
+hearts and minds of the people. Maybe that's the part we're not
+doing well enough now.&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/big-dig/</guid><pubDate>Sun, 17 Dec 2023 16:00:00 GMT</pubDate></item><item><title>Bring Me {Problem,Solution} Bosses</title><link>https://sef.kloninger.com/posts/problem-or-solution-boss/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img class="alignright" title="Pointy-Haired-Boss" src="https://sef.kloninger.com/f/Pointy-Haired_Boss.png" alt="Pointy Haired Boss"&gt;&lt;/p&gt;
 &lt;p&gt;Some bosses want you to &lt;em&gt;bring them problems&lt;/em&gt;. They like to unscramble
 Rubik's cubes and are happy to work through it with you. Sure it's great if you have a proposal or recommendation,
 but be prepared to show your homework.&lt;/p&gt;
