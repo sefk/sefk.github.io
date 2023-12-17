@@ -1,5 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 04 Dec 2022 21:21:03 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Working In The Open</title><link>https://sef.kloninger.com/posts/working-in-the-open/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/hachyderm-debugging.png" alt="screenshot of @nova live-debugging Hachyderm on Twitch" width="50%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 17 Dec 2023 00:06:07 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Podcast Recommendation: The Big Dig</title><link>https://sef.kloninger.com/posts/big-dig/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;a href="https://www.wgbh.org/podcasts/the-big-dig"&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/bigdig.png" alt="Big Dig podcast title art (WGBH)" width="50%"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I just finished listening to the &lt;a href="https://www.wgbh.org/podcasts/the-big-dig"&gt;Big Dig podcast&lt;/a&gt; and it's worth
+a listen. It's about Boston's &lt;a href="https://en.wikipedia.org/wiki/Big_Dig"&gt;Central Artery/Tunnel Project&lt;/a&gt;,
+the most expensive highway project in US history. It covers the
+whole story, from conception, to getting it approved, to years of
+execution, and then the fallout from cost overruns and mismanagement.
+The podcast is well produced and has a lot of primary-source
+interviews.&lt;/p&gt;
+&lt;p&gt;I have a little bit of a personal connection, since I lived in
+Boston during those later years and it was on the news &lt;em&gt;all the
+time&lt;/em&gt;. I even got a tour of a part when it was under construction.&lt;/p&gt;
+&lt;p&gt;I like how they use this story to speak to something larger: can
+America build big infrastructure anymore? It's something I think
+lot about. We benefit from by the giant projects from the past
+(dams, bridges, interstates) but struggle to maintain them properly today.
+We struggle to do new things like proper &lt;a href="https://en.wikipedia.org/wiki/California_High-Speed_Rail"&gt;high-speed rail&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Their claim is this is partially due to headwinds that didn't exist
+in the public-works heydey in the twentieth century. Leaders are
+under much more scrutiny; projects fall under many new regulations
+protecting the environment and worker safety. While the old way was
+faster and cheaper, it also caused a lot of harm. Public works
+projects are so big and disruptive that high cost and long times
+are likely unavoidable.&lt;/p&gt;
+&lt;p&gt;It ends on a hopeful note. Not that it's easy, nor are we necessarily
+that much better managing big projects now. But there are success
+stories.&lt;/p&gt;
+&lt;p&gt;I especially liked an interview &lt;a href="https://overcast.fm/+BDdBHAXcVU/20:47"&gt;20 minutes into the final episode&lt;/a&gt;
+with &lt;a href="https://en.wikipedia.org/wiki/Frederick_P._Salvucci"&gt;Fred Salvucci&lt;/a&gt;. He tells the story Saint Francis. God tells
+Francis to build a cathedral, but then keeps tears it down. Why?
+because it's not enough to build a physical cathedral, but you also
+have to build the support for it in the hearts and minds of the
+people. Maybe that's the part that we're not doing well enough these
+days and is blocking our ability to build big things.&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/big-dig/</guid><pubDate>Sun, 17 Dec 2023 00:00:00 GMT</pubDate></item><item><title>Bring Me {Problem,Solution} Bosses</title><link>https://sef.kloninger.com/posts/problem-or-solution-boss/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img class="alignright" title="Pointy-Haired-Boss" src="https://sef.kloninger.com/f/Pointy-Haired_Boss.png" alt="Pointy Haired Boss"&gt;&lt;/p&gt;
+&lt;p&gt;Some bosses want you to &lt;em&gt;bring them problems&lt;/em&gt;. They like to unscramble
+Rubik's cubes and are happy to work through it with you. Sure it's great if you have a proposal or recommendation,
+but be prepared to show your homework.&lt;/p&gt;
+&lt;p&gt;Other bosses want you to &lt;em&gt;bring them solutions&lt;/em&gt;. If you
+bring them a problem, you'll get annoyance and "what do you want
+me to do about it?"&lt;/p&gt;
+&lt;p&gt;Most bosses have exceptions by domain. A common patter there is the
+techie bring-me-problems boss who'll want to dig in on capacity
+planning, say, but hope you can solve messy people conflicts yourself.&lt;/p&gt;
+&lt;p&gt;I've worked with both and each has their virtues. When you have a new
+boss, figure out what type they are and adjust.&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/problem-or-solution-boss/</guid><pubDate>Sat, 16 Dec 2023 23:00:00 GMT</pubDate></item><item><title>Working In The Open</title><link>https://sef.kloninger.com/posts/working-in-the-open/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/hachyderm-debugging.png" alt="screenshot of @nova live-debugging Hachyderm on Twitch" width="50%"&gt;&lt;/p&gt;
 
 &lt;p&gt;The other day my daughter asked me about Software Engineering -- what do
 we &lt;em&gt;actually do&lt;/em&gt;? She's eighteen and probably won't follow in my
@@ -229,26 +272,4 @@ surprising capacity crunch. There are a whole class of problems
 that get much easier when you can have 2x the machines for just a
 little while.  When someone comes to you with that cost/benefit
 spreadsheet arguing why you should self-host, that's when you need
-your file of "the cloud saved my bacon" stories at the ready.&lt;/p&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/aws/</guid><pubDate>Fri, 24 Apr 2015 07:10:00 GMT</pubDate></item><item><title>Don't Say No By Email</title><link>https://sef.kloninger.com/posts/saying-no/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/frown.png" alt=":(" width="192" height="178"&gt;&lt;/p&gt;
-&lt;p&gt;When I have to tell someone no, I pick up the phone. I &lt;strong&gt;hate&lt;/strong&gt;
-talking on the phone, but I do it anyway.&lt;/p&gt;
-&lt;p&gt;When you're answering no to someone, you're disappointing them even
-if just a little bit. So you owe it to them to talk instead of
-sending an email. It's the polite thing to do.&lt;/p&gt;
-&lt;p&gt;But there are two other reasons, selfish reasons, for making the
-call. First, you get immediate feedback on how they took the news.
-If they're upset then you can do damage control straight away. And
-at least you know! And second, delivering bad news directly and
-respectfully is an important skill to develop. We can all use the
-practice. And it's never as bad as I think it will be.&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/saying-no/</guid><pubDate>Sat, 04 Apr 2015 01:08:00 GMT</pubDate></item><item><title>Fewer Trick or Treaters This Year</title><link>https://sef.kloninger.com/posts/halloween-2014/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;This year's Halloween tally was 208.  I don't know why we have 32%
-fewer trick-or-treaters than we had last year, which was down 20%
-from the year before that.  Maybe the rain earlier in the day kept
-people home.  Maybe because it was Friday people opted for parties
-instead of going door to door.  I don't know.&lt;/p&gt;
-&lt;script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"&gt;
-{"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE&amp;transpose=1&amp;headers=0&amp;range=C20%3AH21&amp;gid=9&amp;pub=1","options":{"titleTextStyle":{"bold":true,"color":"#000","fontSize":"24"},"series":{"0":{"color":"#b45f06"}},"animation":{"duration":500},"width":600,"hAxis":{"useFormatFromData":true,"title":"","minValue":null,"viewWindowMode":null,"textStyle":{"bold":true,"color":"#222","fontSize":"20"},"viewWindow":null,"maxValue":null},"vAxes":[{"useFormatFromData":true,"title":"","minValue":0,"viewWindowMode":"explicit","textStyle":{"bold":true,"color":"#222","fontSize":"20"},"logScale":false,"viewWindow":{"min":0,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"logScale":false,"viewWindow":{"min":null,"max":null},"maxValue":null}],"booleanRole":"certainty","title":"Trick or Treaters, Menlo Park, CA","height":240,"legend":"none","useFirstColumnAsDomain":true,"isStacked":false,"tooltip":{}},"state":{},"view":{},"isDefaultVisualization":false,"chartType":"ColumnChart","chartName":"Chart 4"}
-&lt;/script&gt;
-
-&lt;p&gt;Thanks to my friend Stuart for being on this year's data gathering
-crew.  As usual, the full story is 
-&lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;in the numbers&lt;/a&gt;.&lt;/p&gt;</description><category>Halloween</category><guid>https://sef.kloninger.com/posts/halloween-2014/</guid><pubDate>Sat, 01 Nov 2014 09:30:00 GMT</pubDate></item></channel></rss>
+your file of "the cloud saved my bacon" stories at the ready.&lt;/p&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/aws/</guid><pubDate>Fri, 24 Apr 2015 07:10:00 GMT</pubDate></item></channel></rss>
