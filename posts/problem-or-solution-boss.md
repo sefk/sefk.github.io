@@ -1,5 +1,5 @@
 <!--
-.. title: Bring Me {Problem,Solution} Bosses
+.. title: Bring Me {Problems,Solutions} Bosses
 .. slug: problem-or-solution-boss
 .. date: 2023-12-16 15:00
 .. tags:
