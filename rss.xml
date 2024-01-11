@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 11 Jan 2024 02:19:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The iPhone's SIM Tray Went Away Too Soon</title><link>https://sef.kloninger.com/posts/esim/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/sim.png" alt="SIM" width="25%"&gt;&lt;/p&gt;
-&lt;p&gt;If you're traveling, you're probably used to buying a SIM card for
-local data and calls. There's a nice ecosystem with a wealth of
-easy and affordable Pay As You Go (PAYG) options.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 11 Jan 2024 03:37:20 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The iPhone's SIM Tray Went Away Too Soon</title><link>https://sef.kloninger.com/posts/esim/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/sim.png" alt="SIM" width="25%"&gt;&lt;/p&gt;
+&lt;p&gt;If you've traveled internationally, likely you've used a SIM card
+for local data and calls. There is a nice ecosystem around SIMs
+with a wealth of easy and affordable Pay As You Go (PAYG) options.&lt;/p&gt;
 &lt;p&gt;But the newer iPhones did away with the SIM slot if favor of some new
 eSIM hotness. Apple has all kinds of &lt;a href="https://support.apple.com/en-gb/HT209096"&gt;info&lt;/a&gt; claiming they have good
 international support, but I found reality falls short.&lt;/p&gt;
