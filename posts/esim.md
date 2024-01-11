@@ -11,9 +11,9 @@
 
 <img style="float:right" class="postimage" src="/f/sim.png" alt="SIM" width=25%>
 
-If you're traveling, you're probably used to buying a SIM card for
-local data and calls. There's a nice ecosystem with a wealth of
-easy and affordable Pay As You Go (PAYG) options.
+If you've traveled internationally, likely you've used a SIM card
+for local data and calls. There is a nice ecosystem around SIMs
+with a wealth of easy and affordable Pay As You Go (PAYG) options.
 
 But the newer iPhones did away with the SIM slot if favor of some new
 eSIM hotness. Apple has all kinds of [info][] claiming they have good
