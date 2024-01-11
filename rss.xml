@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 05 Jan 2024 11:53:55 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The iPhone's SIM Tray Went Away Too Soon</title><link>https://sef.kloninger.com/posts/esim/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/sim.png" alt="SIM" width="25%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 11 Jan 2024 02:19:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The iPhone's SIM Tray Went Away Too Soon</title><link>https://sef.kloninger.com/posts/esim/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/sim.png" alt="SIM" width="25%"&gt;&lt;/p&gt;
 &lt;p&gt;If you're traveling, you're probably used to buying a SIM card for
 local data and calls. There's a nice ecosystem with a wealth of
 easy and affordable Pay As You Go (PAYG) options.&lt;/p&gt;
@@ -64,11 +64,12 @@ but be prepared to show your homework.&lt;/p&gt;
 &lt;p&gt;Other bosses want you to &lt;em&gt;bring them solutions&lt;/em&gt;. If you
 bring them a problem, you'll get annoyance and "what do you want
 me to do about it?"&lt;/p&gt;
-&lt;p&gt;Most bosses have exceptions by domain. A common patter there is the
-techie bring-me-problems boss who'll want to dig in on capacity
-planning, say, but hope you can solve messy people conflicts yourself.&lt;/p&gt;
+&lt;p&gt;Most bosses have exceptions by domain. A common pattern there is
+the bring-me-problems boss who is also a techie -- they'll want to
+dig in planning, say, but prefer you to solve messy people conflicts
+yourself.&lt;/p&gt;
 &lt;p&gt;I've worked with both and each has their virtues. When you have a new
-boss, figure out what type they are and adjust.&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/problem-or-solution-boss/</guid><pubDate>Sat, 16 Dec 2023 23:00:00 GMT</pubDate></item><item><title>Working In The Open</title><link>https://sef.kloninger.com/posts/working-in-the-open/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/hachyderm-debugging.png" alt="screenshot of @nova live-debugging Hachyderm on Twitch" width="50%"&gt;&lt;/p&gt;
+boss, figure out their style and adjust.&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/problem-or-solution-boss/</guid><pubDate>Sat, 16 Dec 2023 23:00:00 GMT</pubDate></item><item><title>Working In The Open</title><link>https://sef.kloninger.com/posts/working-in-the-open/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/hachyderm-debugging.png" alt="screenshot of @nova live-debugging Hachyderm on Twitch" width="50%"&gt;&lt;/p&gt;
 
 &lt;p&gt;The other day my daughter asked me about Software Engineering -- what do
 we &lt;em&gt;actually do&lt;/em&gt;? She's eighteen and probably won't follow in my
