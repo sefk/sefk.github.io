@@ -19,9 +19,10 @@ Other bosses want you to *bring them solutions*. If you
 bring them a problem, you'll get annoyance and "what do you want
 me to do about it?"
 
-Most bosses have exceptions by domain. A common patter there is the
-techie bring-me-problems boss who'll want to dig in on capacity
-planning, say, but hope you can solve messy people conflicts yourself.
+Most bosses have exceptions by domain. A common pattern there is
+the bring-me-problems boss who is also a techie -- they'll want to
+dig in planning, say, but prefer you to solve messy people conflicts
+yourself.
 
 I've worked with both and each has their virtues. When you have a new
-boss, figure out what type they are and adjust.
+boss, figure out their style and adjust.
