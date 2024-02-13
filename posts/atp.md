@@ -39,15 +39,15 @@ particular to me and my tastes.
   home automation, and gaming.
 
 But what I appreciate more than the content of ATP are the
-hosts and the care and they take to produce a good show.
+hosts and the care they take to produce a good show.
 
 - They are **friends**. It's nice hanging out with people
   who like each other. It's kind of like we have permission
   to eavesdrop and be a part of that.
 - They're not afraid to discuss **their lives**.
   Stuff like families and work/life stress.
-  This is good stuff for me because I'm in that the same life
-  situation as them, middle-aged tech dads.
+  This is good stuff for me because I'm in the same life
+  situation as them: middle-aged tech dads.
   But bringing their whole selves
   to the show is a bit of vulnerability that I appreciate.
 - ATP is **exceptionally well produced**. I didn't
@@ -67,14 +67,15 @@ hosts and the care and they take to produce a good show.
   mean.  When they kid each other it's in good fun.
 - When (rarely) they wade into social justice or
   world events, they do so respectfully and thoughtfully.
-  They understand that as three three cis-gendered white guys,
+  They understand that as three three cisgender white guys,
   it's good to have views to share, but also right to listen
   and help others.
 - Their show is **reliable**. It's great that they keep to a
-  regular format schedule. It fits into the rest of your life
+  regular format and schedule. It fits into the rest of your life
   and becomes something you count on.
 - Finally, some small things: Yay for proper use of
-  **chapter markers**, hardly anybody else does. And I like their
+  **chapter markers**, hardly anybody else uses them properly.
+  And I like their
   their occasional forays into **car talk**, just because I like car
   stuff too.
 
@@ -89,7 +90,7 @@ Fascinating!
 I like the members-only specials. It's OK with me that these are
 only available to members. They've been candid lately about ad
 revenue drying up and they could use the extra revenue channel.
-These episodes are a nice way to reward members.  They've managed
+These episodes are a nice way to reward members. They've managed
 to do these without compromising the core show.
 
 The best thing they ever did on ATP was getting a sponsor to send John
