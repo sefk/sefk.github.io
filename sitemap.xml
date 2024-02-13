@@ -103,15 +103,19 @@
  </url>
  <url>
   <loc>https://sef.kloninger.com/archive.html</loc>
-  <lastmod>2024-01-11T03:37:00Z</lastmod>
+  <lastmod>2024-02-13T03:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/</loc>
-  <lastmod>2023-12-17T16:45:00Z</lastmod>
+  <lastmod>2024-02-09T06:28:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/cat_civics/</loc>
   <lastmod>2023-12-17T16:45:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/categories/cat_podcasts/</loc>
+  <lastmod>2024-02-09T06:28:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/education/</loc>
@@ -167,7 +171,7 @@
  </url>
  <url>
   <loc>https://sef.kloninger.com/index-5.html</loc>
-  <lastmod>2024-01-05T10:40:00Z</lastmod>
+  <lastmod>2024-02-10T00:09:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/201203those-little-utilities/</loc>
@@ -266,6 +270,10 @@
   <lastmod>2023-09-28T18:25:00Z</lastmod>
  </url>
  <url>
+  <loc>https://sef.kloninger.com/posts/atp/</loc>
+  <lastmod>2024-02-09T05:10:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://sef.kloninger.com/posts/aws/</loc>
   <lastmod>2023-09-28T18:25:00Z</lastmod>
  </url>
@@ -312,6 +320,10 @@
  <url>
   <loc>https://sef.kloninger.com/posts/leaving-stanford/</loc>
   <lastmod>2023-09-28T18:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/posts/my-love-letter-to-the-accidental-tech-podcast/</loc>
+  <lastmod>2024-02-09T05:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/petrol-car/</loc>
