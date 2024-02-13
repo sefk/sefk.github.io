@@ -86,12 +86,11 @@ how home power battery systems, when full, signal this by changing
 _the frequency of AC power_ as a signal to solar panels to back off.
 Fascinating!
 
-I like the members-only specials. It's OK with me that these are only
-available to members.
-I like how candid they've been talking about ad revenue drying up
-recently and they could use the extra revenue channel. these
-episodes are a nice way to reward members. They've managed to
-do these without compromising the core show.
+I like the members-only specials. It's OK with me that these are
+only available to members. They've been candid lately about ad
+revenue drying up and they could use the extra revenue channel.
+These episodes are a nice way to reward members.  They've managed
+to do these without compromising the core show.
 
 The best thing they ever did on ATP was getting a sponsor to send John
 toasters to review. And [review he did][t]! I didn't appreciate how
