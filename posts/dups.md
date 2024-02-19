@@ -1,7 +1,7 @@
 <!--
 .. title: Cleaning Up Photo Duplicates
-.. slug: dups
-.. date: 2024-02-18 09:26:26 UTC-08:00
+.. slug: photo-dups
+.. date: 2024-02-19 13:00:00 UTC-08:00
 .. tags: 
 .. category: 
 .. link: 
@@ -14,10 +14,10 @@
 I did a data cleanup over the weekend. I doubt this is interesting
 for anyone else, I just wanted to capture my own notes.
 
-Our family photos are stored up in Google Photos. We have over 100k
-photos that take up >0.5TB. I wanted to back up to [local storage][s],
-but also I liked the idea of trying the [mdisc][md] format for
-long-term storage.
+Our family photos are stored up in Google Photos. We have about
+100k photos and short movies that take up 0.5TB. I wanted to back
+up to [local storage][s], but also I liked the idea of trying the
+[mdisc][md] format for long-term storage.
 
 I ran [Takeout][t] and unzipped everything. I was surprised to see
 so many duplicates. Some are copies in the same folders with suffixes
