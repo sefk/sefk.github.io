@@ -32,7 +32,7 @@ Oppenheimer's most famous line, was gratuitous and super weird.
 **Strauss**. I'm not invested at all in the conflict with Admiral
 Strauss. Paraphrasing the commentary on this by the good folks at
 [The Incomparable][i], "I don't care if some guy becomes Commerce
-Secretary in Eisenhower Cabinet."
+Secretary in the Eisenhower Cabinet."
 
 Given how much I like the [history and the science][m] of this
 period, I really pulling for this movie. Dang.
