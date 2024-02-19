@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 19 Feb 2024 21:22:58 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Oppenheimer -- A Miss</title><link>https://sef.kloninger.com/posts/oppenheimer/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/stetson.png" alt="Stetson Hat" width="40%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 19 Feb 2024 21:30:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Oppenheimer -- A Miss</title><link>https://sef.kloninger.com/posts/oppenheimer/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/stetson.png" alt="Stetson Hat" width="40%"&gt;&lt;/p&gt;
 &lt;p&gt;I was so disappointed in Oppenheimer. It wasn't terrible, but what
 a missed opportunity.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Mystifying&lt;/strong&gt;. Part of the job of a movie like this is to give you
@@ -8,20 +8,19 @@ in this case -- what would it be like to be the person who made
 these terrible weapons? That's really what I wanted to get from
 this movie.  I understand he's complicated, and &lt;em&gt;it's&lt;/em&gt; complicated.
 But instead of dialog, or even some outright explaining, this movie
-instead has a lot of closeups of Cillian Murphy staring into the
-distance, or adjusting his hat.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Women&lt;/strong&gt;. There were plenty of interesting women around -- in
+leans on of Cillian Murphy staring into the distance or adjusting his hat.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Women&lt;/strong&gt;. There were plenty of interesting women around  -- in
 academia, in the Manhattan project, in relationships. There are
 only two women in the movie: one is a sex object with mental health
-issues (Pugh); the other is a mother/lush, with a surprisingly sharp
-tongue and wit but only for a minute (Blunt). The sex scene, and
-quoting the famous line, was gratuitous and super weird.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Strauss&lt;/strong&gt;. I'm not invested at all in the conflict
-with Admiral Strauss. Paraphrasing the commentary on this by the good
-folks at &lt;a href="https://www.theincomparable.com/theincomparable/703/"&gt;The Incomparable&lt;/a&gt;, "I don't care if some guy
-becomes Commerce Secretary in Eisenhower Cabinet."&lt;/p&gt;
-&lt;p&gt;Given how much I like the &lt;a href="https://www.amazon.com/Making-Atomic-Bomb-Richard-Rhodes/dp/1451677618"&gt;history and the science&lt;/a&gt; of all
-of this, I really pulling for this movie. Dang.&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/oppenheimer/</guid><pubDate>Mon, 19 Feb 2024 21:20:00 GMT</pubDate></item><item><title>Cleaning Up Photo Duplicates</title><link>https://sef.kloninger.com/posts/photo-dups/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/dups-pie.png" alt="Pie Chart" width="30%"&gt;&lt;/p&gt;
+issues (Pugh); the other is a mother/lush with a surprisingly sharp
+tongue and wit, but only for a minute (Blunt). The sex scene, quoting
+Oppenheimer's most famous line, was gratuitous and super weird.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Strauss&lt;/strong&gt;. I'm not invested at all in the conflict with Admiral
+Strauss. Paraphrasing the commentary on this by the good folks at
+&lt;a href="https://www.theincomparable.com/theincomparable/703/"&gt;The Incomparable&lt;/a&gt;, "I don't care if some guy becomes Commerce
+Secretary in Eisenhower Cabinet."&lt;/p&gt;
+&lt;p&gt;Given how much I like the &lt;a href="https://www.amazon.com/Making-Atomic-Bomb-Richard-Rhodes/dp/1451677618"&gt;history and the science&lt;/a&gt; of this
+period, I really pulling for this movie. Dang.&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/oppenheimer/</guid><pubDate>Mon, 19 Feb 2024 21:20:00 GMT</pubDate></item><item><title>Cleaning Up Photo Duplicates</title><link>https://sef.kloninger.com/posts/photo-dups/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/dups-pie.png" alt="Pie Chart" width="30%"&gt;&lt;/p&gt;
 &lt;p&gt;I did a data cleanup over the weekend. I doubt this is interesting
 for anyone else, I just wanted to capture my own notes.&lt;/p&gt;
 &lt;p&gt;Our family photos are stored up in Google Photos. We have about
@@ -247,7 +246,7 @@ then tears it down. Francis builds another, God destroys it again.
 Why, Francis asks. Because it's not enough to build a physical
 cathedral, but you also have to build the support for it in the
 hearts and minds of the people. Maybe that's the part we're not
-doing well enough now.&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/big-dig/</guid><pubDate>Sun, 17 Dec 2023 16:00:00 GMT</pubDate></item><item><title>Bring Me {Problems,Solutions} Bosses</title><link>https://sef.kloninger.com/posts/problem-or-solution-boss/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img class="alignright" title="Pointy-Haired-Boss" src="https://sef.kloninger.com/f/Pointy-Haired_Boss.png" alt="Pointy Haired Boss"&gt;&lt;/p&gt;
+doing well enough now.&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/big-dig/</guid><pubDate>Sun, 17 Dec 2023 16:00:00 GMT</pubDate></item><item><title>Bring Me {Problems,Solutions} Bosses</title><link>https://sef.kloninger.com/posts/problem-or-solution-boss/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img class="alignright" title="Pointy-Haired-Boss" src="https://sef.kloninger.com/f/Pointy-Haired_Boss.png" alt="Pointy Haired Boss" width="40%"&gt;&lt;/p&gt;
 &lt;p&gt;Some bosses want you to &lt;em&gt;bring them problems&lt;/em&gt;. They like to unscramble
 Rubik's cubes and are happy to work through it with you. Sure it's great if you have a proposal or recommendation,
 but be prepared to show your homework.&lt;/p&gt;
