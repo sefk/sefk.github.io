@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-<img class="alignright" title="Pointy-Haired-Boss" src="/f/Pointy-Haired_Boss.png" alt="Pointy Haired Boss">
+<img class="alignright" title="Pointy-Haired-Boss" src="/f/Pointy-Haired_Boss.png" alt="Pointy Haired Boss" width=40%>
 
 Some bosses want you to *bring them problems*. They like to unscramble
 Rubik's cubes and are happy to work through it with you. Sure it's great if you have a proposal or recommendation,
