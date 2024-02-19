@@ -1,5 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 13 Feb 2024 20:26:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>My Love Letter to ATP</title><link>https://sef.kloninger.com/posts/atp/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/atp.png" alt="ATP Podcast Art" width="50%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 19 Feb 2024 21:22:58 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Oppenheimer -- A Miss</title><link>https://sef.kloninger.com/posts/oppenheimer/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/stetson.png" alt="Stetson Hat" width="40%"&gt;&lt;/p&gt;
+&lt;p&gt;I was so disappointed in Oppenheimer. It wasn't terrible, but what
+a missed opportunity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mystifying&lt;/strong&gt;. Part of the job of a movie like this is to give you
+insight into what the person is thinking and feeling.  Especially
+in this case -- what would it be like to be the person who made
+these terrible weapons? That's really what I wanted to get from
+this movie.  I understand he's complicated, and &lt;em&gt;it's&lt;/em&gt; complicated.
+But instead of dialog, or even some outright explaining, this movie
+instead has a lot of closeups of Cillian Murphy staring into the
+distance, or adjusting his hat.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Women&lt;/strong&gt;. There were plenty of interesting women around -- in
+academia, in the Manhattan project, in relationships. There are
+only two women in the movie: one is a sex object with mental health
+issues (Pugh); the other is a mother/lush, with a surprisingly sharp
+tongue and wit but only for a minute (Blunt). The sex scene, and
+quoting the famous line, was gratuitous and super weird.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Strauss&lt;/strong&gt;. I'm not invested at all in the conflict
+with Admiral Strauss. Paraphrasing the commentary on this by the good
+folks at &lt;a href="https://www.theincomparable.com/theincomparable/703/"&gt;The Incomparable&lt;/a&gt;, "I don't care if some guy
+becomes Commerce Secretary in Eisenhower Cabinet."&lt;/p&gt;
+&lt;p&gt;Given how much I like the &lt;a href="https://www.amazon.com/Making-Atomic-Bomb-Richard-Rhodes/dp/1451677618"&gt;history and the science&lt;/a&gt; of all
+of this, I really pulling for this movie. Dang.&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/oppenheimer/</guid><pubDate>Mon, 19 Feb 2024 21:20:00 GMT</pubDate></item><item><title>Cleaning Up Photo Duplicates</title><link>https://sef.kloninger.com/posts/photo-dups/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/dups-pie.png" alt="Pie Chart" width="30%"&gt;&lt;/p&gt;
+&lt;p&gt;I did a data cleanup over the weekend. I doubt this is interesting
+for anyone else, I just wanted to capture my own notes.&lt;/p&gt;
+&lt;p&gt;Our family photos are stored up in Google Photos. We have about
+100k photos and short movies that take up 0.5TB. I wanted to back
+up to &lt;a href="https://www.synology.com/en-us/products?product_line=ds_plus"&gt;local storage&lt;/a&gt;, but also I liked the idea of trying the
+&lt;a href="https://www.mdisc.com/"&gt;mdisc&lt;/a&gt; format for long-term storage.&lt;/p&gt;
+&lt;p&gt;I ran &lt;a href="https://takeout.google.com/"&gt;Takeout&lt;/a&gt; and unzipped everything. I was surprised to see
+so many duplicates. Some are copies in the same folders with suffixes
+like "(1)", most are multiple copies in different folders.
+Takeout seems to just store a copy for each album a photo is in.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.google.com/spreadsheets/d/10pRVc1_6u0G2z62uEJSHHZ0yzf43Zoa9yx0D2bpICmE/edit?usp=sharing"&gt;Some poking at the data&lt;/a&gt; shows 88% of 302,755 files / 72% of
+the bytes were unique (histogram at the bottom of the post).  Removing
+dups can save 200+GB. Sure not really worth the trouble but why
+not.&lt;/p&gt;
+&lt;h4&gt;Steps&lt;/h4&gt;
+&lt;p&gt;1. On the NAS, gather file checksums (&lt;code&gt;md5sum&lt;/code&gt;) and sizes for all
+the files under &lt;code&gt;Takeout/Google Files&lt;/code&gt;. Mostly variations on
+of &lt;code&gt;find -print0 | xargs -0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;2. Data cleanup to get into nice file paths and clean delimiters,
+mostly interactively with &lt;code&gt;vi&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;3. Insert into &lt;code&gt;sqlite&lt;/code&gt; using &lt;code&gt;.separator&lt;/code&gt; and &lt;code&gt;.import&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here's what the database ended up looking like: &lt;code&gt;Photos&lt;/code&gt; and &lt;code&gt;Sizes&lt;/code&gt;
+are inputs, &lt;code&gt;HashCounts&lt;/code&gt;, &lt;code&gt;Duplicates&lt;/code&gt;, and &lt;code&gt;Candidates&lt;/code&gt; are
+outputs.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="k"&gt;CREATE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;TABLE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;TEXT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;TEXT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="k"&gt;CREATE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;TABLE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Sizes&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;size&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;TEXT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="k"&gt;CREATE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;TABLE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HashCounts&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;TEXT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="k"&gt;found&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="k"&gt;CREATE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;TABLE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Duplicates&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STRING&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STRING&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="k"&gt;found&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="k"&gt;size&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="k"&gt;CREATE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;TABLE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Candidates&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STRING&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STRING&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="k"&gt;size&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;4. Find the dups. I'm surprised to find some with 50 or more copies,
+but it out some family favorites end up in lots of albums.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="k"&gt;insert&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;into&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HashCounts&lt;/span&gt;
+&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;found&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;group&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;by&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;5. Figure out candidates for deletion&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="k"&gt;insert&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;into&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Duplicates&lt;/span&gt;
+&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HashCounts&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;found&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Sizes&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;size&lt;/span&gt;
+&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HashCounts&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Sizes&lt;/span&gt;
+&lt;span class="k"&gt;where&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HashCounts&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;and&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;Sizes&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;
+&lt;span class="k"&gt;and&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HashCounts&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;found&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The first of each set is the one we'll keep.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="k"&gt;insert&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;into&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Candidates&lt;/span&gt;
+&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;
+&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;size&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;row_number&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;over&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;partition&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;by&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;row_number&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Duplicates&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;order&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;by&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;desc&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;where&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;row_number&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I was surprised that sqlplus supports window functions, nice.&lt;/p&gt;
+&lt;p&gt;The inner reverse-alpha sort on "path" takes care of two cases.
+I tend to prefer keeping photos with names that start with
+years, and Those come first alphabetically (nice). Also within
+folders often there are many copies with "(1)" and "(2)" suffixes
+that are generally cruft and most worthy of removing, and those
+also sort last alphabetically (nice).&lt;/p&gt;
+&lt;p&gt;5. Dump out the "Candidates" using &lt;code&gt;.output&lt;/code&gt;. Copy back to the NAS.
+Do lots of spot checks. Convert to a bash script of &lt;code&gt;rm&lt;/code&gt; commands,
+run very carefully.&lt;/p&gt;
+&lt;h4&gt;Tools&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Sqlite&lt;/strong&gt; is my go-to tool for ad-hoc work like this.  It's fast
+and simple, but only for small jobs -- this one is MB-scale.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pgsize&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;dbstat&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;group&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;by&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="w"&gt;           &lt;/span&gt;&lt;span class="k"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pgsize&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;-------------  -----------&lt;/span&gt;
+&lt;span class="n"&gt;Candidates&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="mi"&gt;3006464&lt;/span&gt;
+&lt;span class="n"&gt;Duplicates&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="mi"&gt;5541888&lt;/span&gt;
+&lt;span class="n"&gt;HashCounts&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="mi"&gt;11051008&lt;/span&gt;
+&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="mi"&gt;23240704&lt;/span&gt;
+&lt;span class="n"&gt;Sizes&lt;/span&gt;&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="mi"&gt;13807616&lt;/span&gt;
+&lt;span class="n"&gt;sqlite_schema&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="mi"&gt;4096&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;My &lt;strong&gt;Synology&lt;/strong&gt; is a pretty good place for storage with ability to
+ssh in and run local commands.  But if I had to do this again,
+though, I should have just bought a large locally-connected SSD.
+All the transfers to-from the NAS were a hassle. Looking now I'm
+stunned that you can get a 4 TB external SSD for under $300.&lt;/p&gt;
+&lt;p&gt;Some &lt;a href="https://docs.google.com/spreadsheets/d/1O4gzeTn8GNeL1X4DrBUprcEqpK6jKbQrtEfBNdJF-Pw/edit#gid=810787524"&gt;private notes&lt;/a&gt; here.&lt;/p&gt;
+&lt;p&gt;&lt;img class="postimage" src="https://sef.kloninger.com/f/dups-histo.png" alt="Histogram" width="100%"&gt;
+(&lt;a href="https://docs.google.com/spreadsheets/d/10pRVc1_6u0G2z62uEJSHHZ0yzf43Zoa9yx0D2bpICmE/edit?usp=sharing"&gt;source&lt;/a&gt;)&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/photo-dups/</guid><pubDate>Mon, 19 Feb 2024 20:00:00 GMT</pubDate></item><item><title>My Love Letter to ATP</title><link>https://sef.kloninger.com/posts/atp/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/atp.png" alt="ATP Podcast Art" width="50%"&gt;&lt;/p&gt;
 &lt;p&gt;I listen to a fair number of podcasts. The &lt;a href="https://atp.fm/"&gt;Accidental Tech
 Podcast&lt;/a&gt; is my favorite by a mile.&lt;/p&gt;
 &lt;p&gt;It's the one that I look forward to every week. It comes out on
@@ -221,81 +328,4 @@ for Google, and YouTube specifically. They tell me that it's a great place
 to work.&lt;/p&gt;
 &lt;p&gt;YouTube is one of the worlds foremost platforms for social commentary,
 education, and free speech. And it's plenty of &lt;a href="https://www.youtube.com/watch?v=9bZkp7q19f0"&gt;entertainment&lt;/a&gt; too. Sounds
-like fun.&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/youtube/</guid><pubDate>Wed, 26 Aug 2015 06:25:00 GMT</pubDate></item><item><title>Thick Apps Still Lose </title><link>https://sef.kloninger.com/posts/thick-apps/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/online-required.png" alt="Microsoft Excel 2016 Error Message" width="60%"&gt;&lt;/p&gt;
-&lt;p&gt;Thick apps won mobile. Fine. &lt;/p&gt;
-&lt;p&gt;On laptop (and desktop) it's not so clear. What is better, thick or thin?
-I tend to live mostly in thin land, although I use some thick apps
-regularly, like Twitter's Mac client and Apple Photos.&lt;/p&gt;
-&lt;p&gt;Every so often I give a big native app a try: &lt;strong&gt;Excel&lt;/strong&gt; instead of
-&lt;strong&gt;Google Sheets&lt;/strong&gt;, &lt;strong&gt;Mail.app&lt;/strong&gt; instead of &lt;strong&gt;Gmail&lt;/strong&gt;, &lt;strong&gt;Reminders&lt;/strong&gt;
-instead of the barebones &lt;strong&gt;Tasks&lt;/strong&gt; built into Gmail. (I can't bring myself
-to try Word). But it's disappointing to see how those fancy apps keep
-shooting themselves in the foot!&lt;/p&gt;
-&lt;p&gt;Take for example this Excel error message. Excel is whining that it
-can't verify my subscription the first time I ran Excel untethered
-(version 15.11.2, for what its worth). Sure you can click through the
-warning, but would a newbie know to do that? At best off-putting, at worst
-downright disorienting. Why warn me of this at all? And why in a modal
-that stops me dead in my tracks?&lt;/p&gt;
-&lt;p&gt;It seems thick apps should win. They rock the unplugged use case. An even
-better situation is flaky networks -- tethered, conference WiFi,
-travelling. UI's deal notoriously poorly with intermittent or partial
-outages. A thick client, relying on that connection only for hitting
-API's, can hide the network.&lt;/p&gt;
-&lt;p&gt;Another place they should shine is the UI itself. They should be fast,
-beautiful, and featureful. Too often they're not. For example I find
-Mail.app to be clunky, difficult to customize, and its keyboard shortcuts
-few and poorly done. Gmail is pretty good!&lt;/p&gt;
-&lt;p&gt;Finally there's the upgrade problem. Thick apps need conscious effort from
-their users before their work sees user time and they get feedback. And
-that's what drives innovation. Long cycles means slower (less) invention.
-One example I love is Gmail's "undo send" feature. Boy, you sure do miss
-that when you need it and it's not there! That should be on every thick
-client by now, but I don't think it is. I do know that Gmail has it and
-Mail.app still doesn't.&lt;/p&gt;
-&lt;p&gt;Maybe the Internet can help. Look at &lt;strong&gt;&lt;a href="https://www.getchrome.com/"&gt;Chrome&lt;/a&gt;&lt;/strong&gt; with its awesome auto
-updates. What makes this work is solid engineering and exceptional quality
-control. I've never seen behind the Google curtain, but I bet there's no
-magic, just a lot of good engineering that leads to good software. Like:
-good design and code reviews, tons of test coverage across many scenarios,
-diverse and well-instrumented canaries, and thorough performance and
-resource use testing. If Google didn't all of that so well, then we
-wouldn't accept frequent pushes. Without the frequent upgrade cycle,
-Chromes feature cycle would languish.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.getelectron.com/"&gt;Electron&lt;/a&gt;&lt;/strong&gt; is another bright spot. This is the framework that gives
-Slack and GitHub's thick clients their fit and finish. It makes these feel
-like true native apps, even though they are mostly web controls with
-JavaScript the covers. Right-clicking still doesn't do what I want, and
-text controls are finicky, but it's close. But what those rough edges buy
-you, and the software producer, are frequent, reliable, and clean
-upgrades.&lt;/p&gt;
-&lt;p&gt;My natural preference would be for thick apps. If they were done well,
-I'd use them.&lt;/p&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/thick-apps/</guid><pubDate>Wed, 19 Aug 2015 20:20:00 GMT</pubDate></item><item><title>My Next Job</title><link>https://sef.kloninger.com/posts/job-15/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/snowflake.png" alt="Snowflake" width="25%"&gt;&lt;/p&gt;
-&lt;p&gt;I left &lt;a href="http://www.wavefront.com/"&gt;my last job&lt;/a&gt; a few weeks back and it's high time to look for a new
-one. If you're working on something interesting and think I could help, &lt;a href="mailto:sefklon@gmail.com"&gt;let
-me know&lt;/a&gt;! &lt;/p&gt;
-&lt;p&gt;It's nice to not have a day job while looking for another. I was lucky enough
-to do this &lt;a href="https://sef.kloninger.com/posts/201204my-sabbatical.html"&gt;once before in 2012&lt;/a&gt; which turned out great. I learned then
-that time and flexibility lets you talk to lots of friends and learn about a
-breadth of projects. I found a fun project in a new domain (&lt;a href="https://sef.kloninger.com/posts/201207on-line-education.html"&gt;online
-education&lt;/a&gt;), something I doubt I'd have found the normal way.&lt;/p&gt;
-&lt;p&gt;Maybe I'll get lucky again.&lt;/p&gt;
-&lt;p&gt;Enough small talk, what am I looking for?&lt;/p&gt;
-&lt;p&gt;I'm looking for some flavor of &lt;strong&gt;line manager&lt;/strong&gt;. I'm a good senior manager and
-code-every-day engineer; but I'm exceptional leading a team and running a
-project. That's what line managers do: lead engineers, not other managers or
-departments or matrix-anything. Also, if you're some kind of executive then
-coding is an indulgence, and I'd rather it just be part of my job. Mostly I'm
-talking to &lt;strong&gt;small companies&lt;/strong&gt;, say 10-100 people (fun-size).&lt;/p&gt;
-&lt;p&gt;I want to &lt;strong&gt;build on my experience&lt;/strong&gt;. I know infrastructure and cloud, SaaS
-and enterprise, and online education. I'm probably not the best person for
-your storage, security, gaming, e-commerce, or cryptocurrency company. I want
-to stay working on &lt;strong&gt;Internet technology&lt;/strong&gt;. I like the (micro)services model.
-For my own projects I choose Python, JavaScript (frontend and backend), and
-Java. I know web operations, especially the &lt;a href="https://sef.kloninger.com/posts/aws.html"&gt;Amazon stack&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Location&lt;/strong&gt; is important: I don't want to do a daily Menlo Park to San
-Francisco round-trip. I'd like to &lt;strong&gt;work with friends&lt;/strong&gt; if possible. And I
-want to do something &lt;strong&gt;worthwhile&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;You can always get to my resume from the header here, or via this &lt;a href="http://bit.ly/sef-resume"&gt;short
-link&lt;/a&gt;. I'm open to a bunch of things, just no &lt;a href="https://www.youtube.com/watch?v=VEgu7jdc_fs"&gt;kick boxing&lt;/a&gt;.  Let's
-have coffee/drink or take a walk.&lt;/p&gt;</description><category>Life</category><category>Tech</category><guid>https://sef.kloninger.com/posts/job-15/</guid><pubDate>Sun, 10 May 2015 16:30:00 GMT</pubDate></item></channel></rss>
+like fun.&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/youtube/</guid><pubDate>Wed, 26 Aug 2015 06:25:00 GMT</pubDate></item></channel></rss>

@@ -12,7 +12,7 @@
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="rss.xml">
 <link rel="canonical" href="https://sef.kloninger.com/">
 <link rel="next" href="index-5.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/atp/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/oppenheimer/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -75,7 +75,152 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/atp/" class="u-url">My Love Letter to ATP</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/oppenheimer/" class="u-url">Oppenheimer -- A Miss</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="posts/oppenheimer/" rel="bookmark">
+            <time class="published dt-published" datetime="2024-02-19T13:20:00-08:00" itemprop="datePublished" title="2024-02-19 13:20">2024-02-19 13:20</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="posts/oppenheimer/#disqus_thread" data-disqus-identifier="cache/posts/oppenheimer.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p><img style="float:right" class="postimage" src="f/stetson.png" alt="Stetson Hat" width="40%"></p>
+<p>I was so disappointed in Oppenheimer. It wasn't terrible, but what
+a missed opportunity.</p>
+<p><strong>Mystifying</strong>. Part of the job of a movie like this is to give you
+insight into what the person is thinking and feeling.  Especially
+in this case -- what would it be like to be the person who made
+these terrible weapons? That's really what I wanted to get from
+this movie.  I understand he's complicated, and <em>it's</em> complicated.
+But instead of dialog, or even some outright explaining, this movie
+instead has a lot of closeups of Cillian Murphy staring into the
+distance, or adjusting his hat.</p>
+<p><strong>Women</strong>. There were plenty of interesting women around -- in
+academia, in the Manhattan project, in relationships. There are
+only two women in the movie: one is a sex object with mental health
+issues (Pugh); the other is a mother/lush, with a surprisingly sharp
+tongue and wit but only for a minute (Blunt). The sex scene, and
+quoting the famous line, was gratuitous and super weird.</p>
+<p><strong>Strauss</strong>. I'm not invested at all in the conflict
+with Admiral Strauss. Paraphrasing the commentary on this by the good
+folks at <a href="https://www.theincomparable.com/theincomparable/703/">The Incomparable</a>, "I don't care if some guy
+becomes Commerce Secretary in Eisenhower Cabinet."</p>
+<p>Given how much I like the <a href="https://www.amazon.com/Making-Atomic-Bomb-Richard-Rhodes/dp/1451677618">history and the science</a> of all
+of this, I really pulling for this movie. Dang.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/photo-dups/" class="u-url">Cleaning Up Photo Duplicates</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="posts/photo-dups/" rel="bookmark">
+            <time class="published dt-published" datetime="2024-02-19T12:00:00-08:00" itemprop="datePublished" title="2024-02-19 12:00">2024-02-19 12:00</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="posts/photo-dups/#disqus_thread" data-disqus-identifier="cache/posts/dups.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p><img style="float:right" class="postimage" src="f/dups-pie.png" alt="Pie Chart" width="30%"></p>
+<p>I did a data cleanup over the weekend. I doubt this is interesting
+for anyone else, I just wanted to capture my own notes.</p>
+<p>Our family photos are stored up in Google Photos. We have about
+100k photos and short movies that take up 0.5TB. I wanted to back
+up to <a href="https://www.synology.com/en-us/products?product_line=ds_plus">local storage</a>, but also I liked the idea of trying the
+<a href="https://www.mdisc.com/">mdisc</a> format for long-term storage.</p>
+<p>I ran <a href="https://takeout.google.com/">Takeout</a> and unzipped everything. I was surprised to see
+so many duplicates. Some are copies in the same folders with suffixes
+like "(1)", most are multiple copies in different folders.
+Takeout seems to just store a copy for each album a photo is in.</p>
+<p><a href="https://docs.google.com/spreadsheets/d/10pRVc1_6u0G2z62uEJSHHZ0yzf43Zoa9yx0D2bpICmE/edit?usp=sharing">Some poking at the data</a> shows 88% of 302,755 files / 72% of
+the bytes were unique (histogram at the bottom of the post).  Removing
+dups can save 200+GB. Sure not really worth the trouble but why
+not.</p>
+<h4>Steps</h4>
+<p>1. On the NAS, gather file checksums (<code>md5sum</code>) and sizes for all
+the files under <code>Takeout/Google Files</code>. Mostly variations on
+of <code>find -print0 | xargs -0</code>.</p>
+<p>2. Data cleanup to get into nice file paths and clean delimiters,
+mostly interactively with <code>vi</code>.</p>
+<p>3. Insert into <code>sqlite</code> using <code>.separator</code> and <code>.import</code>.</p>
+<p>Here's what the database ended up looking like: <code>Photos</code> and <code>Sizes</code>
+are inputs, <code>HashCounts</code>, <code>Duplicates</code>, and <code>Candidates</code> are
+outputs.</p>
+<div class="code"><pre class="code literal-block"><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Photos</span><span class="p">(</span><span class="n">hash</span><span class="w"> </span><span class="nb">TEXT</span><span class="p">,</span><span class="n">path</span><span class="w"> </span><span class="nb">TEXT</span><span class="p">);</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Sizes</span><span class="p">(</span><span class="k">size</span><span class="w"> </span><span class="nb">INT</span><span class="p">,</span><span class="n">path</span><span class="w"> </span><span class="nb">TEXT</span><span class="p">);</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">HashCounts</span><span class="p">(</span><span class="n">hash</span><span class="w"> </span><span class="nb">TEXT</span><span class="p">,</span><span class="k">found</span><span class="w"> </span><span class="nb">INT</span><span class="p">);</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Duplicates</span><span class="p">(</span><span class="n">path</span><span class="w"> </span><span class="n">STRING</span><span class="p">,</span><span class="n">hash</span><span class="w"> </span><span class="n">STRING</span><span class="p">,</span><span class="k">found</span><span class="w"> </span><span class="nb">INT</span><span class="p">,</span><span class="k">size</span><span class="w"> </span><span class="nb">INT</span><span class="p">);</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Candidates</span><span class="p">(</span><span class="n">path</span><span class="w"> </span><span class="n">STRING</span><span class="p">,</span><span class="n">hash</span><span class="w"> </span><span class="n">STRING</span><span class="p">,</span><span class="k">size</span><span class="w"> </span><span class="nb">INT</span><span class="p">,</span><span class="n">pos</span><span class="w"> </span><span class="nb">INT</span><span class="p">);</span>
+</pre></div>
+
+<p>4. Find the dups. I'm surprised to find some with 50 or more copies,
+but it out some family favorites end up in lots of albums.</p>
+<div class="code"><pre class="code literal-block"><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">HashCounts</span>
+<span class="k">select</span><span class="w"> </span><span class="n">hash</span><span class="p">,</span><span class="w"> </span><span class="k">sum</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">found</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Photos</span><span class="w"> </span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">hash</span><span class="p">;</span>
+</pre></div>
+
+<p>5. Figure out candidates for deletion</p>
+<div class="code"><pre class="code literal-block"><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">Duplicates</span>
+<span class="k">select</span><span class="w"> </span><span class="n">Photos</span><span class="p">.</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">Photos</span><span class="p">.</span><span class="n">hash</span><span class="p">,</span><span class="w"> </span><span class="n">HashCounts</span><span class="p">.</span><span class="k">found</span><span class="p">,</span><span class="w"> </span><span class="n">Sizes</span><span class="p">.</span><span class="k">size</span>
+<span class="k">from</span><span class="w"> </span><span class="n">Photos</span><span class="p">,</span><span class="w"> </span><span class="n">HashCounts</span><span class="p">,</span><span class="w"> </span><span class="n">Sizes</span>
+<span class="k">where</span><span class="w"> </span><span class="n">HashCounts</span><span class="p">.</span><span class="n">hash</span><span class="o">=</span><span class="n">Photos</span><span class="p">.</span><span class="n">hash</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">Photos</span><span class="p">.</span><span class="n">path</span><span class="o">=</span><span class="n">Sizes</span><span class="p">.</span><span class="n">path</span>
+<span class="k">and</span><span class="w"> </span><span class="n">HashCounts</span><span class="p">.</span><span class="k">found</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</pre></div>
+
+<p>The first of each set is the one we'll keep.</p>
+<div class="code"><pre class="code literal-block"><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">Candidates</span>
+<span class="k">select</span><span class="w"> </span><span class="o">*</span>
+<span class="k">from</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">hash</span><span class="p">,</span><span class="w"> </span><span class="k">size</span><span class="p">,</span><span class="w"> </span><span class="n">row_number</span><span class="p">()</span><span class="w"> </span><span class="n">over</span><span class="w"> </span><span class="p">(</span><span class="n">partition</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">hash</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">row_number</span>
+<span class="w">    </span><span class="k">from</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Duplicates</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">hash</span><span class="p">,</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="k">desc</span><span class="p">)</span>
+<span class="p">)</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">row_number</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</pre></div>
+
+<p>I was surprised that sqlplus supports window functions, nice.</p>
+<p>The inner reverse-alpha sort on "path" takes care of two cases.
+I tend to prefer keeping photos with names that start with
+years, and Those come first alphabetically (nice). Also within
+folders often there are many copies with "(1)" and "(2)" suffixes
+that are generally cruft and most worthy of removing, and those
+also sort last alphabetically (nice).</p>
+<p>5. Dump out the "Candidates" using <code>.output</code>. Copy back to the NAS.
+Do lots of spot checks. Convert to a bash script of <code>rm</code> commands,
+run very carefully.</p>
+<h4>Tools</h4>
+<p><strong>Sqlite</strong> is my go-to tool for ad-hoc work like this.  It's fast
+and simple, but only for small jobs -- this one is MB-scale.</p>
+<div class="code"><pre class="code literal-block"><span class="k">select</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="k">sum</span><span class="p">(</span><span class="n">pgsize</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">dbstat</span><span class="w"> </span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="n">name</span><span class="w">           </span><span class="k">sum</span><span class="p">(</span><span class="n">pgsize</span><span class="p">)</span>
+<span class="c1">-------------  -----------</span>
+<span class="n">Candidates</span><span class="w">     </span><span class="mi">3006464</span>
+<span class="n">Duplicates</span><span class="w">     </span><span class="mi">5541888</span>
+<span class="n">HashCounts</span><span class="w">     </span><span class="mi">11051008</span>
+<span class="n">Photos</span><span class="w">         </span><span class="mi">23240704</span>
+<span class="n">Sizes</span><span class="w">          </span><span class="mi">13807616</span>
+<span class="n">sqlite_schema</span><span class="w">  </span><span class="mi">4096</span>
+</pre></div>
+
+<p>My <strong>Synology</strong> is a pretty good place for storage with ability to
+ssh in and run local commands.  But if I had to do this again,
+though, I should have just bought a large locally-connected SSD.
+All the transfers to-from the NAS were a hassle. Looking now I'm
+stunned that you can get a 4 TB external SSD for under $300.</p>
+<p>Some <a href="https://docs.google.com/spreadsheets/d/1O4gzeTn8GNeL1X4DrBUprcEqpK6jKbQrtEfBNdJF-Pw/edit#gid=810787524">private notes</a> here.</p>
+<p><img class="postimage" src="f/dups-histo.png" alt="Histogram" width="100%">
+(<a href="https://docs.google.com/spreadsheets/d/10pRVc1_6u0G2z62uEJSHHZ0yzf43Zoa9yx0D2bpICmE/edit?usp=sharing">source</a>)</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/atp/" class="u-url">My Love Letter to ATP</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Sef Kloninger
@@ -386,68 +531,6 @@ example's is <em>amphibian</em>. Wikipedia cites <a href="https://en.wikipedia.o
 <p><a href="https://nytbee.com/">nytbee.com</a> has more today's puzzle and some interesting stats about these
 puzzles in general. They don't seem to be affiliated with the NY Times but that
 seem to be OK and is's a nice site.</p>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/halloween-2015/" class="u-url">Flat</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Sef Kloninger
-            </span></p>
-            <p class="dateline">
-            <a href="posts/halloween-2015/" rel="bookmark">
-            <time class="published dt-published" datetime="2015-11-01T01:15:00-07:00" itemprop="datePublished" title="2015-11-01 01:15">2015-11-01 01:15</time></a>
-            </p>
-                <p class="commentline">
-    
-    <a href="posts/halloween-2015/#disqus_thread" data-disqus-identifier="cache/posts/halloween-2015.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <p>Trick-or-treaters volume at our Menlo Park house this Halloween was basically flat compared to last
-year. Last year we had 208 trick-or-treaters, this year 211. We remain down quite a bit from our 2012
-peak. Maybe this is the new norm?</p>
-<iframe width="100%" height="400" frameborder="0" src="https://docs.google.com/spreadsheets/d/1w-7ftYzue_VQl4lt-QNFU_UfeDAROg47-1tlOzIw5Vk/pubchart?oid=17&amp;format=interactive"></iframe>
-
-<p>Everything happened later this year. Our first trick-or-treater didn't show up until 6:30, and
-peak wasn't until 8:45. That's thirty minutes or more later than prior years. I speculate it's because
-it was a warm weekend night. Why not stay out a bit later, no school tomorrow. And with the fall-back
-DST change everyone would be looking foward to a "free" hour of sleep.</p>
-<p>As usual, the full story can be seen 
-<a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE">
-in the numbers</a>. Check it out!</p>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/youtube/" class="u-url">YouTube</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Sef Kloninger
-            </span></p>
-            <p class="dateline">
-            <a href="posts/youtube/" rel="bookmark">
-            <time class="published dt-published" datetime="2015-08-26T08:25:00+02:00" itemprop="datePublished" title="2015-08-26 08:25">2015-08-26 08:25</time></a>
-            </p>
-                <p class="commentline">
-    
-    <a href="posts/youtube/#disqus_thread" data-disqus-identifier="cache/posts/youtube.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <p><img style="float:right" class="postimage" src="f/YouTube-icon-full_color.png" alt="YouTube" width="200px" height="148px"></p>
-<p>I'm excited to start my new job at YouTube in a few weeks. I'll manage the
-engineering team building the data warehouse for usage metrics.</p>
-<p>I like that YouTube is <strong>important</strong>. It's firmly a part of our culture
-and I'm sure it will be how my kids watch video. YouTube's impressive
-<a href="https://www.youtube.com/yt/press/statistics.html">statistics</a> are the result. You don't see usage like that without a
-bunch of <strong>hard problems</strong>, and hard problems attract <strong>bright people</strong>.
-Indeed that's the clincher for why I'm looking forward to working there.
-People vote with their feet, and I have a lot of friends who have opted
-for Google, and YouTube specifically. They tell me that it's a great place
-to work.</p>
-<p>YouTube is one of the worlds foremost platforms for social commentary,
-education, and free speech. And it's plenty of <a href="https://www.youtube.com/watch?v=9bZkp7q19f0">entertainment</a> too. Sounds
-like fun.</p>
     </div>
     </article>
 </div>
