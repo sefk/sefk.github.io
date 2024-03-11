@@ -29,6 +29,10 @@ Leslie Twiggy Lawson
 his nickname. He was a jazz musician who lived from 1917-88 &mdash;
 I think I'll check him out. And TIL Twiggy's real name.
 
+Also: Thank you, [George Takei][gt], for finding worthwhile things
+on X and crossposting to Mastodon. You are a national treasure.
+
 [s]: https://opendata.stackexchange.com/questions/1577/famous-people-dataset
 [l]: https://artofmemory.com/files/forum/947/initials.txt?_ga=2.42526565.1147344043.1569555157-1984831696.1569555157
 [e]: https://en.wikipedia.org/wiki/Eddie_Vinson
+[gt]: https://hachyderm.io/@georgetakei@universeodon.com
