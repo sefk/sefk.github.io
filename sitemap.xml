@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://sef.kloninger.com/</loc>
-  <lastmod>2023-09-28T18:25:00Z</lastmod>
+  <lastmod>2024-03-11T00:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/2012/03/those-little-utilities/</loc>
@@ -103,7 +103,7 @@
  </url>
  <url>
   <loc>https://sef.kloninger.com/archive.html</loc>
-  <lastmod>2024-02-19T21:39:00Z</lastmod>
+  <lastmod>2024-03-11T01:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/</loc>
@@ -179,7 +179,11 @@
  </url>
  <url>
   <loc>https://sef.kloninger.com/index-5.html</loc>
-  <lastmod>2024-02-19T21:20:00Z</lastmod>
+  <lastmod>2024-03-11T01:02:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/index-6.html</loc>
+  <lastmod>2024-03-11T00:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/201203those-little-utilities/</loc>
@@ -328,6 +332,10 @@
  <url>
   <loc>https://sef.kloninger.com/posts/leaving-stanford/</loc>
   <lastmod>2023-09-28T18:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/posts/old-mcdonald/</loc>
+  <lastmod>2024-03-11T00:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/oppenheimer/</loc>
