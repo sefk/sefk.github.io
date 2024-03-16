@@ -16,7 +16,7 @@ This tweet got me wondering: how many others meet the same critera?
 Googling around found a [stack overflow question][s] where someone
 helpfully harvested a [list][l] of about 4,000 people that's good
 enough for this. Grepping turned up four candidates with the vowels
-in the right order, but some with confounding vowels.
+in the right order, but with confounding ones.
 
 ```
 Celine Dion
