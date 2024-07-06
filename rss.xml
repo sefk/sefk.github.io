@@ -1,23 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 16 Mar 2024 16:28:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Old McDonald Celebrities</title><link>https://sef.kloninger.com/posts/old-mcdonald/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;This tweet got me wondering: how many others meet the same critera?&lt;/p&gt;
-&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Fun fact: If Celine Dion sang only the vowels in her name, it would be in the lyrics to Old McDonalds Farm.&lt;/p&gt;— Fran (@whingewine) &lt;a href="https://twitter.com/whingewine/status/1764970794625515667?ref_src=twsrc%5Etfw"&gt;March 5, 2024&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-
-&lt;p&gt;Googling around found a &lt;a href="https://opendata.stackexchange.com/questions/1577/famous-people-dataset"&gt;stack overflow question&lt;/a&gt; where someone
-helpfully harvested a &lt;a href="https://artofmemory.com/files/forum/947/initials.txt?_ga=2.42526565.1147344043.1569555157-1984831696.1569555157"&gt;list&lt;/a&gt; of about 4,000 people that's good
-enough for this. Grepping turned up four candidates with the vowels
-in the right order, but with confounding ones.&lt;/p&gt;
-&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;Celine Dion
-Eddie Cleanhead Vinson
-Jennifer Aniston
-Leslie Twiggy Lawson
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Eddie_Vinson"&gt;Eddie "Cleanhead" Vinson&lt;/a&gt; meets the bill if we don't consider
-his nickname. He was a jazz musician who lived from 1917-88 —
-I think I'll check him out. And TIL Twiggy's real name.&lt;/p&gt;
-&lt;p&gt;Also: Thank you, &lt;a href="https://hachyderm.io/@georgetakei@universeodon.com"&gt;George Takei&lt;/a&gt;, for finding worthwhile things
-on X and crossposting to Mastodon. You are a national treasure.&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/old-mcdonald/</guid><pubDate>Mon, 11 Mar 2024 01:00:00 GMT</pubDate></item><item><title>Oppenheimer -- A Miss</title><link>https://sef.kloninger.com/posts/oppenheimer/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/stetson.png" alt="Stetson Hat" width="40%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 06 Jul 2024 20:00:14 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Oppenheimer -- A Miss</title><link>https://sef.kloninger.com/posts/oppenheimer/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/stetson.png" alt="Stetson Hat" width="40%"&gt;&lt;/p&gt;
 &lt;p&gt;I was so disappointed in Oppenheimer. It wasn't terrible, but what
 a missed opportunity.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Mystifying&lt;/strong&gt;. Part of the job of a biopic is to give you insight
@@ -333,4 +315,17 @@ it was a warm weekend night. Why not stay out a bit later, no school tomorrow. A
 DST change everyone would be looking foward to a "free" hour of sleep.&lt;/p&gt;
 &lt;p&gt;As usual, the full story can be seen 
 &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;
-in the numbers&lt;/a&gt;. Check it out!&lt;/p&gt;</description><category>Halloween</category><guid>https://sef.kloninger.com/posts/halloween-2015/</guid><pubDate>Sun, 01 Nov 2015 08:15:00 GMT</pubDate></item></channel></rss>
+in the numbers&lt;/a&gt;. Check it out!&lt;/p&gt;</description><category>Halloween</category><guid>https://sef.kloninger.com/posts/halloween-2015/</guid><pubDate>Sun, 01 Nov 2015 08:15:00 GMT</pubDate></item><item><title>YouTube</title><link>https://sef.kloninger.com/posts/youtube/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/YouTube-icon-full_color.png" alt="YouTube" width="200px" height="148px"&gt;&lt;/p&gt;
+&lt;p&gt;I'm excited to start my new job at YouTube in a few weeks. I'll manage the
+engineering team building the data warehouse for usage metrics.&lt;/p&gt;
+&lt;p&gt;I like that YouTube is &lt;strong&gt;important&lt;/strong&gt;. It's firmly a part of our culture
+and I'm sure it will be how my kids watch video. YouTube's impressive
+&lt;a href="https://www.youtube.com/yt/press/statistics.html"&gt;statistics&lt;/a&gt; are the result. You don't see usage like that without a
+bunch of &lt;strong&gt;hard problems&lt;/strong&gt;, and hard problems attract &lt;strong&gt;bright people&lt;/strong&gt;.
+Indeed that's the clincher for why I'm looking forward to working there.
+People vote with their feet, and I have a lot of friends who have opted
+for Google, and YouTube specifically. They tell me that it's a great place
+to work.&lt;/p&gt;
+&lt;p&gt;YouTube is one of the worlds foremost platforms for social commentary,
+education, and free speech. And it's plenty of &lt;a href="https://www.youtube.com/watch?v=9bZkp7q19f0"&gt;entertainment&lt;/a&gt; too. Sounds
+like fun.&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/youtube/</guid><pubDate>Wed, 26 Aug 2015 06:25:00 GMT</pubDate></item></channel></rss>
