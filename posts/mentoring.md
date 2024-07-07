@@ -1,8 +1,8 @@
 <!--
 .. title: Mentoring
 .. slug: mentoring
-.. date: 2024-07-06 12:00 UTC-07:00
-.. tags:
+.. date: 2024-07-07 13:00 UTC-07:00
+.. tags: Management
 .. category: 
 .. link: 
 .. description: 
@@ -11,89 +11,82 @@
 
 <img style="float:right" class="postimage" src="/f/mentoring.png" alt="Meeting with a mentor" width=30%>
 
-So you're looking for a mentor, that's great! It's something that's
-helped me a lot in career, and I'm sure it'll be valuable for you
-both. This post is about how to find a good mentor, ask them, and
-then keep that relationship positive.
+So you're looking for a mentor, that's great! I've benefitted a lot
+from mentors in my career. It'll be a valuable experience for
+both you and your mentor. This post has my tips for finding a good
+mentor, asking them, and maintaining a good ongoing relationship.
 
 ### Choosing
 
-These three rules have held true across many companies and many years.
+These are my three go-to rules for finding a mentor. They've held
+up across many companies and years.
 
 1\. Your mentor should be **someone you admire**. The best choice
 is usually someone the same career path as you, but further along
-by some years. They don't have to be super far along, it could just
-be the next step, but they've shown that they're willing and able
-to take on more responsibility and have bigger roles. Or maybe
-they're just someone super interesting and inspirational.
+by some years. They don't have to be so much more senior than you,
+it could just be the next step, but they've shown that they're
+willing and able to take on more responsibility. Ideally they're
+someone interesting and inspirational.
 
-This is easiest to judge in a big company, where the levels and
-roles are usually written up and assigned to everyone.  In a small
-company it can be the person who is a leader, even if they don't
-have the title.
+Another type of relationship is to help you make a change -- from
+Engineer to Eng Manager, or Eng Manager to Product Manager, say.
+Then it's not so much about further along as finding someone who
+has made the switch. Often they're the most eager to talk about how
+they did it.
 
-Another way this cane come about is if you're thinking about making
-a change -- from Engineer to Eng Manager, or Eng Manager to Product
-Manager, say. Then it's not so much about further along the path,
-as finding someone who has made the switch. Often they're the most
-eager to talk about how they did it.
+2\. Organizationally close-by is OK, but they **shouldn't be one
+of your leaders**. I've gotten the most out of mentors outside my
+chain of command. That way, I never had to worry about choosing my
+words (or topics) carefully. I could problem solve or just vent.
+Sometimes the person you need to discuss is your own
+[boss](/posts/problem-or-solution-boss).
 
-2\. They can be organizationally close by, but **not one of your
-leaders**. I've gotten the most out of mentors outside my chain of
-command. That way, I never had to worry about choosing my words (or
-topics) carefully. I could problem solve or just vent. Sometimes
-the person you need to sort out is your [own
-boss](/posts/problem-or-solution-boss). Sorting that out can be a
-lot easier if the person you're working with doesn't have a stake
-in the outcome, or word might get back to the person you're discussing.
+3\. **Rapport is super important**. Maybe the most important thing
+of all. Your meetings can't feel like a chore for either of you.
+Even if you've gotten along fine in the past, maybe you'll hit it
+off in this new relationship, maybe now.
 
-3\. **Rapport** is super important. Your meetings can't feel like
-a chore for either of you. Even if you've gotten along fine in the
-past, maybe you'll hit it off in this new relationship, maybe now.
-
-A lot of big companies have formal mentoring programs that help
-with matchmaking, and that can be a great way to do it. If you don't
-have someone natural in mind, try that.
+How to find the right person if it's not obvious who to ask? Use
+your network, talk to people, ask for referrals. Big companies often
+have mentoring programs to help with matchmaking.
 
 ### Asking
 
-You'll be the one getting most of the value out of this relationship.
-So when you ask, ask nicely. Understand that they're likely busy
-and make sure they know it's OK to say no.
+While your mentor will benefit a bit, you'll be the one getting
+most of the value out of this deal.  So it's up to you to ask.
+Understand that they're likely busy and how much you'd appreciate
+some of theri time.  Make sure they know it's OK to say no.
 
-I've always asked for a trial run first. Let's to three or four
-meetings and then re-evaluate. That way you can make sure that it's
-clicking -- the "rapport" criteria above. If it's not feeling great
-_on both sides_ then stop them and go with someone else, no harm
-no foul.
+When I've asked in the past I've pitched it as a trial to start
+with, three or four meetings and then re-evaluate. That way you can
+make sure that it's clicking, see the "rapport" criteria above. If
+it's not feeling great _on both sides_ then it's best to try again
+with someone else, no harm no foul.
 
 ### Being A Good Mentee
 
-So you've found someone, great. To make it through probation and
-onward, these are the things you should do.
+So you've found someone, great. During probation and onward be a good
+mentee.
 
-1\. **Respect their time**. Be prompt. Ask them what kinds of
-meetings work best for them (30 min? over a meal?) and work around
-their schedule.
+1\. **Respect their time**. Be prompt. Work around their schedule
+and in a way that works best for them (30 min? over a meal?).
 
-2\. **Come prepared** with a topic or two, keep a backlog. It can
+2\. **Come prepared with a topic or two**, keep a backlog. It can
 be something specific, like problem solving a particular situation
 or relationship. Or it could be getting just-in-time feedback on a
-proposed email or document. Or it could be open-ended, e.g. if you
+draft email or document. Or it could be open-ended, e.g. "if you
 could advise your former self 10 years ago, what would you have
-said?
+said?"
 
 3\. **Check in** from time to time. Make sure this is still working
 out for them: the style of meeting, duration, etc.
 
 4\. Find an appropriate way to **thank them**. Nothing big but it's
 important to show that you appreciate their time. For example at
-my current employer (Google) we have a little system to give
-shout-outs to peers that usually come up during performance review
-time.
+my current employer (Google) we have a system to give shout-outs
+to peers that come up at performance review time.
 
-If you're like me and you've been working for a long time, find a
-way to **pay it forward**. Introduce mentors and mentees; volunteer
-in your company's matchmaking service; find people who appear to
-stranded and offer to help them out. Sending them this post is a fine
-icebreaker.
+Finally, find a way to **pay it forward**. Introduce mentors and
+mentees; volunteer in your company's matchmaking service; find
+people who appear to stranded and offer to help them out. Sending
+this post might be a fine icebreaker.
