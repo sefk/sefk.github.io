@@ -2,7 +2,7 @@
 .. title: Bring Me {Problems,Solutions} Bosses
 .. slug: problem-or-solution-boss
 .. date: 2023-12-16 15:00
-.. tags:
+.. tags: Management
 .. category: 
 .. link: 
 .. description: 
