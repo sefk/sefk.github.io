@@ -1,5 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Management)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/management.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 06 Jul 2024 17:01:19 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Why Is That Feature Taking So Long?</title><link>https://sef.kloninger.com/posts/201301why-so-long/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-394" style="border: 0px;" alt="turd-polish" src="https://sef.kloninger.com/f/turd-polish.png" width="191" height="182"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Management)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/management.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 07 Jul 2024 20:30:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Mentoring</title><link>https://sef.kloninger.com/posts/mentoring/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/mentoring.png" alt="Meeting with a mentor" width="30%"&gt;&lt;/p&gt;
+&lt;p&gt;So you're looking for a mentor, that's great! I've benefitted a lot
+from mentors in my career. It'll be a valuable experience for
+both you and your mentor. This post has my tips for finding a good
+mentor, asking them, and maintaining a good ongoing relationship.&lt;/p&gt;
+&lt;h4&gt;Choosing&lt;/h4&gt;
+&lt;p&gt;These are my three go-to rules for finding a mentor. They've held
+up across many companies and years.&lt;/p&gt;
+&lt;p&gt;1. Your mentor should be &lt;strong&gt;someone you admire&lt;/strong&gt;. The best choice
+is usually someone the same career path as you, but further along
+by some years. They don't have to be so much more senior than you,
+it could just be the next step, but they've shown that they're
+willing and able to take on more responsibility. Ideally they're
+someone interesting and inspirational.&lt;/p&gt;
+&lt;p&gt;Another type of relationship is to help you make a change -- from
+Engineer to Eng Manager, or Eng Manager to Product Manager, say.
+Then it's not so much about further along as finding someone who
+has made the switch. Often they're the most eager to talk about how
+they did it.&lt;/p&gt;
+&lt;p&gt;2. Organizationally close-by is OK, but they &lt;strong&gt;shouldn't be one
+of your leaders&lt;/strong&gt;. I've gotten the most out of mentors outside my
+chain of command. That way, I never had to worry about choosing my
+words (or topics) carefully. I could problem solve or just vent.
+Sometimes the person you need to discuss is your own
+&lt;a href="https://sef.kloninger.com/posts/problem-or-solution-boss"&gt;boss&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;3. &lt;strong&gt;Rapport is super important&lt;/strong&gt;. Maybe the most important thing
+of all. Your meetings can't feel like a chore for either of you.
+Even if you've gotten along fine in the past, maybe you'll hit it
+off in this new relationship, maybe now.&lt;/p&gt;
+&lt;p&gt;How to find the right person if it's not obvious who to ask? Use
+your network, talk to people, ask for referrals. Big companies often
+have mentoring programs to help with matchmaking.&lt;/p&gt;
+&lt;h4&gt;Asking&lt;/h4&gt;
+&lt;p&gt;While your mentor will benefit a bit, you'll be the one getting
+most of the value out of this deal.  So it's up to you to ask.
+Understand that they're likely busy and how much you'd appreciate
+some of theri time.  Make sure they know it's OK to say no.&lt;/p&gt;
+&lt;p&gt;When I've asked in the past I've pitched it as a trial to start
+with, three or four meetings and then re-evaluate. That way you can
+make sure that it's clicking, see the "rapport" criteria above. If
+it's not feeling great &lt;em&gt;on both sides&lt;/em&gt; then it's best to try again
+with someone else, no harm no foul.&lt;/p&gt;
+&lt;h4&gt;Being A Good Mentee&lt;/h4&gt;
+&lt;p&gt;So you've found someone, great. During probation and onward be a good
+mentee.&lt;/p&gt;
+&lt;p&gt;1. &lt;strong&gt;Respect their time&lt;/strong&gt;. Be prompt. Work around their schedule
+and in a way that works best for them (30 min? over a meal?).&lt;/p&gt;
+&lt;p&gt;2. &lt;strong&gt;Come prepared with a topic or two&lt;/strong&gt;, keep a backlog. It can
+be something specific, like problem solving a particular situation
+or relationship. Or it could be getting just-in-time feedback on a
+draft email or document. Or it could be open-ended, e.g. "if you
+could advise your former self 10 years ago, what would you have
+said?"&lt;/p&gt;
+&lt;p&gt;3. &lt;strong&gt;Check in&lt;/strong&gt; from time to time. Make sure this is still working
+out for them: the style of meeting, duration, etc.&lt;/p&gt;
+&lt;p&gt;4. Find an appropriate way to &lt;strong&gt;thank them&lt;/strong&gt;. Nothing big but it's
+important to show that you appreciate their time. For example at
+my current employer (Google) we have a system to give shout-outs
+to peers that come up at performance review time.&lt;/p&gt;
+&lt;p&gt;Finally, find a way to &lt;strong&gt;pay it forward&lt;/strong&gt;. Introduce mentors and
+mentees; volunteer in your company's matchmaking service; find
+people who appear to stranded and offer to help them out. Sending
+this post might be a fine icebreaker.&lt;/p&gt;</description><category>Management</category><guid>https://sef.kloninger.com/posts/mentoring/</guid><pubDate>Sun, 07 Jul 2024 20:00:00 GMT</pubDate></item><item><title>Bring Me {Problems,Solutions} Bosses</title><link>https://sef.kloninger.com/posts/problem-or-solution-boss/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img class="alignright" title="Pointy-Haired-Boss" src="https://sef.kloninger.com/f/Pointy-Haired_Boss.png" alt="Pointy Haired Boss" width="40%"&gt;&lt;/p&gt;
+&lt;p&gt;Some bosses want you to &lt;em&gt;bring them problems&lt;/em&gt;. They like to unscramble
+Rubik's cubes and are happy to work through it with you. Sure it's great if you have a proposal or recommendation,
+but be prepared to show your homework.&lt;/p&gt;
+&lt;p&gt;Other bosses want you to &lt;em&gt;bring them solutions&lt;/em&gt;. If you
+bring them a problem, you'll get annoyance and "what do you want
+me to do about it?"&lt;/p&gt;
+&lt;p&gt;Most bosses have exceptions by domain. A common pattern there is
+the bring-me-problems boss who is also a techie -- they'll want to
+dig in planning, say, but prefer you to solve messy people conflicts
+yourself.&lt;/p&gt;
+&lt;p&gt;I've worked with both and each has their virtues. When you have a new
+boss, figure out their style and adjust.&lt;/p&gt;</description><category>Management</category><guid>https://sef.kloninger.com/posts/problem-or-solution-boss/</guid><pubDate>Sat, 16 Dec 2023 23:00:00 GMT</pubDate></item><item><title>Why Is That Feature Taking So Long?</title><link>https://sef.kloninger.com/posts/201301why-so-long/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-394" style="border: 0px;" alt="turd-polish" src="https://sef.kloninger.com/f/turd-polish.png" width="191" height="182"&gt;
 
 &lt;p&gt;
 I've observed a recurring source of tension:  building things fast vs. do it the right way. Usually you're not lucky enough that you can do both.  This post explains a bit why we (engineers) care so much about building things right.  Even when things are overdue and our stakeholders (end-users, biz folks, product management) are pushing to just get it done.
