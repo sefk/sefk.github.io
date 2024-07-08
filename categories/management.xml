@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Management)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/management.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 07 Jul 2024 20:30:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Mentoring</title><link>https://sef.kloninger.com/posts/mentoring/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/mentoring.png" alt="Meeting with a mentor" width="30%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Management)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/management.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 08 Jul 2024 01:54:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Mentoring</title><link>https://sef.kloninger.com/posts/mentoring/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/mentoring.png" alt="Meeting with a mentor" width="30%"&gt;&lt;/p&gt;
 &lt;p&gt;So you're looking for a mentor, that's great! I've benefitted a lot
 from mentors in my career. It'll be a valuable experience for
 both you and your mentor. This post has my tips for finding a good
@@ -9,15 +9,15 @@ mentor, asking them, and maintaining a good ongoing relationship.&lt;/p&gt;
 up across many companies and years.&lt;/p&gt;
 &lt;p&gt;1. Your mentor should be &lt;strong&gt;someone you admire&lt;/strong&gt;. The best choice
 is usually someone the same career path as you, but further along
-by some years. They don't have to be so much more senior than you,
-it could just be the next step, but they've shown that they're
-willing and able to take on more responsibility. Ideally they're
-someone interesting and inspirational.&lt;/p&gt;
-&lt;p&gt;Another type of relationship is to help you make a change -- from
-Engineer to Eng Manager, or Eng Manager to Product Manager, say.
-Then it's not so much about further along as finding someone who
-has made the switch. Often they're the most eager to talk about how
-they did it.&lt;/p&gt;
+by some years. They don't have to be so much more senior, it could
+just be the next step, but they've shown that they're willing and
+able to take on more responsibility and how to do it at your company.
+Ideally they're someone interesting, inspirational, and relateable.&lt;/p&gt;
+&lt;p&gt;Another type of mentoring relationship is when you're looking to
+make a change -- from Engineer to Eng Manager, or Eng Manager to
+Product Manager, say. Then you're looking for someone who made the
+switch. I find they're often the most eager to talk about how and
+why they did it.&lt;/p&gt;
 &lt;p&gt;2. Organizationally close-by is OK, but they &lt;strong&gt;shouldn't be one
 of your leaders&lt;/strong&gt;. I've gotten the most out of mentors outside my
 chain of command. That way, I never had to worry about choosing my
@@ -28,22 +28,22 @@ Sometimes the person you need to discuss is your own
 of all. Your meetings can't feel like a chore for either of you.
 Even if you've gotten along fine in the past, maybe you'll hit it
 off in this new relationship, maybe now.&lt;/p&gt;
-&lt;p&gt;How to find the right person if it's not obvious who to ask? Use
+&lt;p&gt;How can you find the right person if it's not obvious who to ask? Use
 your network, talk to people, ask for referrals. Big companies often
-have mentoring programs to help with matchmaking.&lt;/p&gt;
+have mentoring programs for matchmaking.&lt;/p&gt;
 &lt;h4&gt;Asking&lt;/h4&gt;
-&lt;p&gt;While your mentor will benefit a bit, you'll be the one getting
-most of the value out of this deal.  So it's up to you to ask.
-Understand that they're likely busy and how much you'd appreciate
-some of theri time.  Make sure they know it's OK to say no.&lt;/p&gt;
-&lt;p&gt;When I've asked in the past I've pitched it as a trial to start
-with, three or four meetings and then re-evaluate. That way you can
-make sure that it's clicking, see the "rapport" criteria above. If
-it's not feeling great &lt;em&gt;on both sides&lt;/em&gt; then it's best to try again
-with someone else, no harm no foul.&lt;/p&gt;
+&lt;p&gt;While your mentor will benefit a bit, you'll be the one getting the
+most out of this deal. So it's up to you to ask. Understand that
+they're likely busy, so say how much you'd appreciate some of their
+time. Make sure they know it's OK to say no.&lt;/p&gt;
+&lt;p&gt;I recommend asking for a trial run to start with: "Let's do three
+or four meetings and then re-evaluate." That way you can make sure
+that it's clicking, see the "rapport" criteria above. If it's not
+feeling great &lt;em&gt;on both sides&lt;/em&gt; then it's best to try again with
+someone else, no harm no foul.&lt;/p&gt;
 &lt;h4&gt;Being A Good Mentee&lt;/h4&gt;
-&lt;p&gt;So you've found someone, great. During probation and onward be a good
-mentee.&lt;/p&gt;
+&lt;p&gt;So you've found someone, great. Here's some things you should do
+during probation and onward.&lt;/p&gt;
 &lt;p&gt;1. &lt;strong&gt;Respect their time&lt;/strong&gt;. Be prompt. Work around their schedule
 and in a way that works best for them (30 min? over a meal?).&lt;/p&gt;
 &lt;p&gt;2. &lt;strong&gt;Come prepared with a topic or two&lt;/strong&gt;, keep a backlog. It can
