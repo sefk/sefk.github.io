@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 08 Jul 2024 01:54:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Mentoring</title><link>https://sef.kloninger.com/posts/mentoring/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/mentoring.png" alt="Meeting with a mentor" width="30%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 06 Oct 2024 15:26:00 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>My Susan Wojcicki Story</title><link>https://sef.kloninger.com/posts/susan/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/susan/</guid><pubDate>Sun, 18 Aug 2024 05:20:54 GMT</pubDate></item><item><title>Mentoring</title><link>https://sef.kloninger.com/posts/mentoring/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/mentoring.png" alt="Meeting with a mentor" width="30%"&gt;&lt;/p&gt;
 &lt;p&gt;So you're looking for a mentor, that's great! I've benefitted a lot
 from mentors in my career. It'll be a valuable experience for
 both you and your mentor. This post has my tips for finding a good
@@ -366,15 +366,4 @@ puzzle has at least one &lt;strong&gt;pangram&lt;/strong&gt;, a word that uses a
 example's is &lt;em&gt;amphibian&lt;/em&gt;. Wikipedia cites &lt;a href="https://en.wikipedia.org/wiki/Frank_Longo"&gt;Frank Longo&lt;/a&gt; as the Bee's creator.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://nytbee.com/"&gt;nytbee.com&lt;/a&gt; has more today's puzzle and some interesting stats about these
 puzzles in general. They don't seem to be affiliated with the NY Times but that
-seem to be OK and is's a nice site.&lt;/p&gt;</description><category>Family</category><category>Games</category><guid>https://sef.kloninger.com/posts/timesbee/</guid><pubDate>Sat, 23 May 2020 22:00:00 GMT</pubDate></item><item><title>Flat</title><link>https://sef.kloninger.com/posts/halloween-2015/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;Trick-or-treaters volume at our Menlo Park house this Halloween was basically flat compared to last
-year. Last year we had 208 trick-or-treaters, this year 211. We remain down quite a bit from our 2012
-peak. Maybe this is the new norm?&lt;/p&gt;
-&lt;iframe width="100%" height="400" frameborder="0" src="https://docs.google.com/spreadsheets/d/1w-7ftYzue_VQl4lt-QNFU_UfeDAROg47-1tlOzIw5Vk/pubchart?oid=17&amp;amp;format=interactive"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Everything happened later this year. Our first trick-or-treater didn't show up until 6:30, and
-peak wasn't until 8:45. That's thirty minutes or more later than prior years. I speculate it's because
-it was a warm weekend night. Why not stay out a bit later, no school tomorrow. And with the fall-back
-DST change everyone would be looking foward to a "free" hour of sleep.&lt;/p&gt;
-&lt;p&gt;As usual, the full story can be seen 
-&lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;
-in the numbers&lt;/a&gt;. Check it out!&lt;/p&gt;</description><category>Halloween</category><guid>https://sef.kloninger.com/posts/halloween-2015/</guid><pubDate>Sun, 01 Nov 2015 08:15:00 GMT</pubDate></item></channel></rss>
+seem to be OK and is's a nice site.&lt;/p&gt;</description><category>Family</category><category>Games</category><guid>https://sef.kloninger.com/posts/timesbee/</guid><pubDate>Sat, 23 May 2020 22:00:00 GMT</pubDate></item></channel></rss>
