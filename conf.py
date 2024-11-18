@@ -129,7 +129,8 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ('/stories/about/', 'About'),
         ('https://hachyderm.io/@sefk', 'Mastodon'),
-        ('https://twitter.com/sefk', 'Twitter'),
+        ('https://bsky.app/profile/sefk.bsky.social', 'Bsky'),
+        ('https://twitter.com/sefk', 'X'),
         ('https://github.com/sefk', 'GitHub'),
         ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html', 'Resume'),
         ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf', 'PDF'),

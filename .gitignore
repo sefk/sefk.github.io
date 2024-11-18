@@ -11,3 +11,4 @@ bin
 pyvenv.cfg
 themes
 plugins/**
+share/**
