@@ -29,10 +29,10 @@ able to take on more responsibility and how to do it at your company.
 Ideally they're someone interesting, inspirational, and relateable.
 
 Another type of mentoring relationship is when you're looking to
-make a change -- from Engineer to Eng Manager, or Eng Manager to
-Product Manager, say. Then you're looking for someone who made the
-switch. I find they're often the most eager to talk about how and
-why they did it.
+make a change &mdash; say from Engineer to Engineering Manager, or
+Engineering Manager to Product Manager. Then you're looking for
+someone who made the switch. I find they're often the most eager
+to talk about how and why they did it.
 
 2\. Organizationally close-by is OK, but they **shouldn't be one
 of your leaders**. I've gotten the most out of mentors outside my
