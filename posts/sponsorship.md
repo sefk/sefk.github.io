@@ -12,12 +12,12 @@
 
 <img style="float:right" class="postimage" src="/f/sponsor.png" alt="One person helping another while at being graded" width=30%>
 
-Sponsorship is a about advocacy. You're using your position and influence
-(candidly, your _power_) to help someone get ahead. Or, if you're on the
+Sponsorship is about advocacy. A sponsor uses their position and influence
+(candidly, their _power_) to help someone get ahead. Or, if you're on the
 receiving end of this, you're asking someone powerful to speak up for you when
-it matters.
+and where it matters.
 
-Sponsorship is distinct from [Mentorship](/posts/mentoring) in that its much
+Sponsorship is distinct from [Mentorship](/posts/mentoring) in that it's much
 less engaged. You're not working through problems together or even forming a
 deep and meaningful relationship. A sponsor is more of an advocate. They can
 even be a point-in-time advocate, just for some particular upcoming decision.
