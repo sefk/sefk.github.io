@@ -31,8 +31,8 @@ thoughtful about how decisions are actually made.
 [Carla Harris](https://www.carlaspearls.com/) writes and speaks well on this
 topic. She gave a talk at Google in 2022 that made an impression on me. (Here's
 a [2019 TED Talk](https://www.youtube.com/watch?v=gpE_W50OTUc) that hits a lot
-of the same points.) Her own candid way of talking about this consider it much
-more actively myself, and willing to talk about with others.
+of the same points.) Her own candid way of talking about this helped me consider
+it much more myself, and think of ways that it might be useful to others.
 
 ### Maybe You're Going Up For Promotion
 
@@ -67,8 +67,8 @@ hard to get an honest answer, so you may need to push a little. Reassure them
 you'd much rather know now if you have their support or not and you're not going
 to hold it against them.
 
-If you don't have their support yet, that's OK. Think about work you can do that
-to change that.
+If you don't have their support yet, that's OK. Think about work you can do
+to change that over time.
 
 ### Day-To-Day Decisions
 
