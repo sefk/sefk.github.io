@@ -17,14 +17,19 @@ Sponsorship is about advocacy. A sponsor uses their position and influence
 receiving end of this, you're asking someone powerful to speak up for you when
 and where it matters.
 
+In some ways, Sponsorship acknowledges and even co-opts the "you have to know
+somebody" way that things usually work. Underrepresented groups can use
+sponsorship to wedge into that system. And if you're in a traditionally dominant
+group group, consider sponsoring people who aren't like you.
+
 Sponsorship is distinct from [Mentorship](/posts/mentoring) in that it's not
 nearly the same level of involvement. There's not an expectation that you'll
-work through problems together over a long timeframe. But you are asking for a
+work through problems together over a long timeframe. But you are asking a
 sponsor for their time to engage with you and your work. More importantly,
 you're asking them to put their reputation on the line for you, even if just a
 little bit, by being your advocate.
 
-Does asking sponsorship feel a little unseemly? I admit it used to feel that way
+Does asking for sponsorship feel a little unseemly? I admit it used to feel that way
 to me, like grubbing for grades or "being political." Now I see it as being
 thoughtful about how decisions are actually made.
 
@@ -77,4 +82,5 @@ the time, like whom to trust to lead a project or run a meeting. I like to think
 about these small-but-important decisions too in the context of sponsorship. Is
 your manager your sponsor? What about your TL?
 
-_Thanks to [Josh Loftus](https://www.linkedin.com/in/joshualoftus/) for reviews._
+_Thanks to [Josh Loftus](https://www.linkedin.com/in/joshualoftus/) and [Jane
+Manning](https://www.linkedin.com/in/janemanning/) for reviews._
