@@ -10,8 +10,7 @@
 .. status: draft
 -->
 
-<img style="float:right" class="postimage" src="/f/sponsor.png" alt="One person
-helping another while at being graded" width=30%>
+<img style="float:right" class="postimage" src="/f/sponsor.png" alt="One person helping another while at being graded" width=30%>
 
 Sponsorship is using one's position and influence to help someone get ahead.
 It's similar in many ways to mentorship which I [wrote about](/posts/mentoring)
@@ -32,8 +31,8 @@ decisions are actually made.
 
 Sponsorship is similar to mentoring in that it is about investing in someone,
 but the mechanism is very different. Mentoring involves time together teaching
-and problem solving. Sponsoring takes some time too, to undersanding that
-person's goals and strengths. But the real investment is the sponsor _putting
+and problem solving. Sponsoring takes some time too to understand their
+goals and strengths. But the real investment is the sponsor _putting
 their reputation on the line_ to help someone more junior achieve their goals.
 Some examples are vouching for someone during a staffing conversations, or
 actively putting their name forward when an opportunity comes up.
