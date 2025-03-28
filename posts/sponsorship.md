@@ -1,7 +1,7 @@
 <!--
 .. title: Sponsorship
 .. slug: sponsorship
-.. date: 2025-02-07 12:00:00 UTC-08:00
+.. date: 2025-03-28 12:00:00 UTC-08:00
 .. tags: Management
 .. category: 
 .. link: 
@@ -10,33 +10,43 @@
 .. status: draft
 -->
 
-<img style="float:right" class="postimage" src="/f/sponsor.png" alt="One person helping another while at being graded" width=30%>
+<img style="float:right" class="postimage" src="/f/sponsor.png" alt="One person
+helping another while at being graded" width=30%>
 
-Sponsorship is about advocacy. A sponsor uses their position and influence
-(candidly, their _power_) to help someone get ahead. Or, if you're on the
-receiving end of this, you're asking someone powerful to speak up for you when
-and where it matters.
+Sponsorship is using one's position and influence to help someone get ahead.
+It's similar in many ways to mentorship which I [wrote about](/posts/mentoring)
+last year. But sponsorship is a bit tricker. Most people understand mentorship
+and have default feelings about it. Sponsorship is at best a bit less famiiar,
+but maybe even can feel a bit unseemly.
 
-Sponsorship is distinct from [Mentorship](/posts/mentoring) in that it's not
-nearly the same level of involvement. There's not an expectation that you'll
-work through problems together or build a relationship that lasts a while. But
-you are asking a sponsor for their time to engage with you and your work. More
-importantly, you're asking them to put their reputation on the line for you,
-even if just a little bit, by being your advocate.
+I got turned onto this by a talk [Carla Harris][] gave at Google in 2022 &mdash;
+her [2019 TED Talk][vid] hits a lot of the same points. She spoke about the
+value of sponsorship in her career and how rewarding it's been to seek out and
+sponsor others. More than just the description, what I most appreciated was her
+candor. It gave me a permission structure consider sponsorship more openly. I
+started using the word and concept more frequently with people that I work with
+and to consider sponsors (or lack of sponsors) when debugging how a decision
+played out. It's not a new concept, but it used to feel to me like
+grade-grubbing or "being political," now I see it as being thoughtful about how
+decisions are actually made.
 
-Does asking for sponsorship feel a little unseemly? I admit it used to feel that
-way to me, like grubbing for grades or "being political." Now I see it as being
-thoughtful about how decisions are actually made.
+Sponsorship is similar to mentoring in that it is about investing in someone,
+but the mechanism is very different. Mentoring involves time together teaching
+and problem solving. Sponsoring takes some time too, to undersanding that
+person's goals and strengths. But the real investment is the sponsor _putting
+their reputation on the line_ to help someone more junior achieve their goals.
+Some examples are vouching for someone during a staffing conversations, or
+actively putting their name forward when an opportunity comes up.
 
 In some ways, sponsorship acknowledges and even co-opts the "you have to know
-somebody" way that things usually work. Underrepresented groups can use
-sponsorship to wedge into that system. And if you're in a traditionally dominant
-group, consider sponsoring people who aren't like you.
+somebody" way that things actually work. Underrepresented groups can benefit
+from sponsorship as a way to wedge into existing power structures. If that
+describes you, consider asking for someone to explicitly sponsor you; if you're
+in a traditionally priveleged group, consider sponsoring someone who isn't so
+much.
 
-[Carla Harris][] gave a talk at Google in 2022 on sponsorship that made an
-impression on me. (Here's a [2019 TED Talk][vid] that hits a lot of the same
-points.) Her own candid way of talking about this helped me consider it much
-more myself, and think of ways that it might be useful to others.
+While reviewing piece, my Google peer [Rachel][] pointed me to a great phrase
+that captures this nicely: "women are often over-mentored and under-sponsored."
 
 ### Maybe You're Going Up For Promotion
 
@@ -82,7 +92,9 @@ the time, like whom to trust to lead a project or run a meeting. I like to think
 about these small-but-important decisions too in the context of sponsorship. Is
 your manager your sponsor? What about your TL?
 
-_Thanks to Josh Loftus, Maren Stever, and Jane Manning for reviewing drafts._
+_Thanks to Josh Loftus, Maren Stever, Jane Manning, and Rachel Grey for their
+reviews._
 
 [Carla Harris]: https://www.carlaspearls.com/
 [vid]: https://www.youtube.com/watch?v=gpE_W50OTUc
+[Rachel]: https://www.linkedin.com/in/rachel-grey-b69319/
