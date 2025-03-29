@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-<img style="float:right" class="postimage" src="/f/mentoring.png" alt="Meeting with a mentor" width=30%>
+<img style="float:right" class="postimage" src="/f/mentoring.png" alt="Meeting with a mentor" width=40%>
 
 So you're looking for a mentor, that's great! I've benefitted a lot
 from mentors in my career. It'll be a valuable experience for

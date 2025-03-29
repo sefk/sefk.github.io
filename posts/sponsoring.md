@@ -10,7 +10,7 @@
 .. status: draft
 -->
 
-<img style="float:right" class="postimage" src="/f/sponsor.png" alt="One person helping another while at being graded" width=30%>
+<img style="float:right" class="postimage" src="/f/sponsor.png" alt="One person helping another while at being graded" width=40%>
 
 Sponsorship is using one's position and influence to help someone get ahead.
 It's similar in many ways to mentorship which I [wrote about](/posts/mentoring)
