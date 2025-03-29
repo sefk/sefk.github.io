@@ -12,40 +12,42 @@
 
 <img style="float:right" class="postimage" src="/f/sponsor.png" alt="One person helping another while at being graded" width=40%>
 
-Sponsorship is using one's position and influence to help someone get ahead.
+Sponsorship is using your position and influence to help someone get ahead.
 It's similar in many ways to mentorship which I [wrote about](/posts/mentoring)
 last year. But sponsorship is a bit tricker. Most people understand mentorship
-and have default feelings about it. Sponsorship is at best a bit less famiiar,
-but maybe even can feel a bit unseemly.
+and have good feelings about it. Sponsorship is a bit less familiar and might
+even feel a bit unseemly, at least it used to feel that way to me.
 
-I got turned onto this by a talk [Carla Harris][] gave at Google in 2022 &mdash;
-her [2019 TED Talk][vid] hits a lot of the same points. She spoke about the
-value of sponsorship in her career and how rewarding it's been to seek out and
-sponsor others. More than just the description, what I most appreciated was her
-candor. It gave me a permission structure consider sponsorship more openly. I
-started using the word and concept more frequently with people that I work with
-and to consider sponsors (or lack of sponsors) when debugging how a decision
-played out. It's not a new concept, but it used to feel to me like
-grade-grubbing or "being political," now I see it as being thoughtful about how
-decisions are actually made.
+Although I'd heard the concept before, a talk [Carla Harris][] gave at Google in
+2022 made an impression on me and brought it to the forefront for me. (She has a
+[2019 TED Talk][vid] that hits a lot of the same points). She spoke about the
+value of sponsorship, both on the receiving end early in her career, how
+rewarding it's been to sponsor others later on. More than just her description,
+what I most appreciated was her candor. It gave me a permission structure talk
+about sponsorship more openly. I started using the word and concept more
+frequently with junior engineers I work with; I thought about it more when
+debugging how some decision played out. It used to feel kind of like
+grade-grubbing or "being political," but I've come around. Now I see it as being
+thoughtful about how decisions are actually made.
 
-Sponsorship is similar to mentoring in that it is about investing in someone,
-but the mechanism is very different. Mentoring involves time together teaching
-and problem solving. Sponsoring takes some time too to understand their
-goals and strengths. But the real investment is the sponsor _putting
-their reputation on the line_ to help someone more junior achieve their goals.
-Some examples are vouching for someone during a staffing conversations, or
-actively putting their name forward when an opportunity comes up.
+Sponsoring is similar to mentoring in that it's an investment in someone. The
+mechanism is different though. Mentoring is a commitment to spend time and problem
+solving. Sponsoring is more strategic, less about issues as they come up and
+more understanding a person's goals and strengths. While maybe it's a little
+less time, but the commitment is more, in that the  sponsor is _putting their
+reputation on the line_ to help someone achieve their goals. Some examples would
+be vouching for the sponsor during a staffing conversations or seeking out and
+advocating for them when opportunities comes up. 
 
 In some ways, sponsorship acknowledges and even co-opts the "you have to know
-somebody" way that things actually work. Underrepresented groups can benefit
+somebody" way that the world actually works. Underrepresented groups can benefit
 from sponsorship as a way to wedge into existing power structures. If that
 describes you, consider asking for someone to explicitly sponsor you; if you're
-in a traditionally priveleged group, consider sponsoring someone who isn't so
+in a traditionally privileged group, consider sponsoring someone who isn't so
 much.
 
-While reviewing piece, my Google peer [Rachel][] pointed me to a great phrase
-that captures this nicely: "women are often over-mentored and under-sponsored."
+My Google peer [Rachel][] captured it succinctly: "women are often
+over-mentored and under-sponsored."
 
 ### Maybe You're Going Up For Promotion
 
