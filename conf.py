@@ -416,6 +416,8 @@ REDIRECTIONS = [
     (u'2013/11/halloween-2013/index.html', u'/posts/201311halloween-2013.html'),
     (u'2013/11/seven-things/index.html', u'/posts/201311seven-things.html'),
     (u'2013/12/airmail/index.html', u'/posts/201312airmail.html'),
+    (u'/posts/sponsorship.html', u'/posts/sponsoring.html'),
+    (u'/posts/mentorship.html', u'/posts/mentoring.html'),
 ]
 
 # Presets of commands to execute to deploy. Can be anything, for
