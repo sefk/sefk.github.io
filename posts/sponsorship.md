@@ -1,6 +1,6 @@
 <!--
-.. title: Sponsorship
-.. slug: sponsorship
+.. title: Sponsoring
+.. slug: sponsoring
 .. date: 2025-03-28 12:00:00 UTC-08:00
 .. tags: Management
 .. category: 
