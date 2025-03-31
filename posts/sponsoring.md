@@ -1,13 +1,13 @@
 <!--
 .. title: Sponsoring
 .. slug: sponsoring
-.. date: 2025-03-28 12:00:00 UTC-08:00
+.. date: 2025-03-30 12:00:00 UTC-08:00
 .. tags: Management
 .. category: 
 .. link: 
 .. description: 
 .. type: text
-.. status: draft
+.. status:
 -->
 
 <img style="float:right" class="postimage" src="/f/sponsor.png" alt="One person helping another while at being graded" width=40%>
