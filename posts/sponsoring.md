@@ -12,9 +12,9 @@
 
 <img style="float:right" class="postimage" src="/f/sponsor.png" alt="One person helping another while at being graded" width=40%>
 
-Sponsorship is using your position and influence to help someone get ahead.
-It's similar in many ways to mentorship which I [wrote about](/posts/mentoring)
-last year. But sponsorship is a bit tricker. Most people understand mentorship
+Sponsorship is using your position and influence to help someone get ahead. It's
+similar in many ways to mentorship, the topic of my [last post](/posts/mentoring).
+But sponsorship is a bit tricker. Most people understand mentorship
 and have good feelings about it. Sponsorship is a bit less familiar and might
 even feel a bit unseemly &mdash; at least it used to feel that way to me.
 
