@@ -10,7 +10,7 @@
 -->
 
 <img style="float:right" class="postimage" src="/f/atp.png"
-     alt="ATP Podcast Art" width=50%>
+     alt="ATP Podcast Art" width=40%>
 
 I listen to a fair number of podcasts. The [Accidental Tech
 Podcast][a] is my favorite by a mile.
