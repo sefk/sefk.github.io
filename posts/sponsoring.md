@@ -16,45 +16,45 @@ Sponsorship is using your position and influence to help someone get ahead.
 It's similar in many ways to mentorship which I [wrote about](/posts/mentoring)
 last year. But sponsorship is a bit tricker. Most people understand mentorship
 and have good feelings about it. Sponsorship is a bit less familiar and might
-even feel a bit unseemly, at least it used to feel that way to me.
+even feel a bit unseemly &mdash; at least it used to feel that way to me.
 
 Although I'd heard the concept before, a talk [Carla Harris][] gave at Google in
-2022 made an impression on me and brought it to the forefront for me. (She has a
-[2019 TED Talk][vid] that hits a lot of the same points). She spoke about the
-value of sponsorship, both on the receiving end early in her career, how
-rewarding it's been to sponsor others later on. More than just her description,
-what I most appreciated was her candor. It gave me a permission structure talk
-about sponsorship more openly. I started using the word and concept more
-frequently with junior engineers I work with; I thought about it more when
-debugging how some decision played out. It used to feel kind of like
-grade-grubbing or "being political," but I've come around. Now I see it as being
-thoughtful about how decisions are actually made.
+2022 made an impression on me and brought it to the forefront. (She has a [2019
+TED Talk][vid] that hits a lot of the same points). She spoke about the value of
+sponsorship, both on the receiving end early in her career and now as a sponsor
+herself. More than just her description, what I most appreciated was her candor.
+It gave me a permission structure to use this concept myself. I started using it
+with junior engineers when thinking about their careers; I thought about it
+myself when debugging how some decision played out. It also helped me to think
+of it less judgmentally. Now I see it as being thoughtful and pragmatic about
+how decisions are made.
 
-Sponsoring is similar to mentoring in that it's an investment in someone. The
-mechanism is different though. Mentoring is a commitment to spend time and problem
-solving. Sponsoring is more strategic, less about issues as they come up and
-more understanding a person's goals and strengths. While maybe it's a little
-less time, but the commitment is more, in that the  sponsor is _putting their
-reputation on the line_ to help someone achieve their goals. Some examples would
-be vouching for the sponsor during a staffing conversations or seeking out and
-advocating for them when opportunities comes up. 
+So what it it? Sponsoring is similar to mentoring in that it's an investment in
+someone, but the mechanism is different. Mentoring is a commitment to
+problem-solve issues as they come up, teach skills, and serve as a sounding
+board, amongst other things. Sponsoring is more strategic. The sponsor is
+committing to understand the sponsored's goals and strengths, and (here's the
+important part) help them get ahead. The time commitment isn't as large, but the
+_actual commitment_ is greater. Assuming they see eye-to-eye, the sponsor
+commits to _putting their reputation on the line_ to help the their person
+achieve their goals. Some examples would be vouching for the sponsored during a
+staffing conversations or seeking out and advocating for them when opportunities
+comes up.
 
 In some ways, sponsorship acknowledges and even co-opts the "you have to know
 somebody" way that the world actually works. Underrepresented groups can benefit
 from sponsorship as a way to wedge into existing power structures. If that
 describes you, consider asking for someone to explicitly sponsor you; if you're
 in a traditionally privileged group, consider sponsoring someone who isn't so
-much.
-
-My Google peer [Rachel][] captured it succinctly: "women are often
-over-mentored and under-sponsored."
+much.  My Google peer [Rachel][] observed: "women are often over-mentored and
+under-sponsored."
 
 ### Maybe You're Going Up For Promotion
 
 With this in mind, let's apply this to promotions.
 
 Try as we might to bring rigor and de-bias these decisions, they are complicated
-and are made by real-world humans. Organizations look to their senior people to
+and are made by real-world humans. Organizations rely on their senior people to
 bring their experience, knowledge, and judgment to bear.
 
 Consider how the promotion decision will be made for your case. One key question
@@ -63,15 +63,17 @@ attend, but more who will be **influential** in the discussion and decision
 making process, and **for what** kinds of questions. Not everyone has an equal
 voice.
 
-Say you're an engineer going up for promotion to senior engineer. Then likely a senior
-tech lead (not necessarily _your_ tech lead!) will be asked to speak to the
-quality of your work (e.g. good code, considered alternatives, future-proofing).
-A senior manager will likely be asked to assess how well you worked with others
-and made good decisions. And these are just two of the factors &mdash; there
-will be many others depending on your role and level. You need to work down the
-rubric and think through all the levers.
+Say you're an engineer going up for promotion to senior engineer. Then likely a
+senior tech lead (not necessarily _your_ tech lead!) will be asked to speak to
+the quality of your work (e.g. good code, considered alternatives,
+future-proofing). A senior manager will likely be asked to assess how well you
+worked with others and made good decisions. And these are just two of the
+factors &mdash; there will be many others depending on your role and level. You
+need to work down the rubric and think through who'll be asked to attest to each
+area as it comes up. Who will be asked to speak to concerns when they're raised
+("was that _really_ that hard?")?
 
-Sometimes you might know who the key person will be but often you won't. Enlist
+Sometimes you might know who the key person will be, but often you won't. Enlist
 your manager or other senior leaders to think it through with you. Game plan the
 decision out.
 
