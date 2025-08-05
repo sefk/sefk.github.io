@@ -127,7 +127,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('/stories/about/', 'About'),
+        ('/posts/', 'Blog'),
         ('https://hachyderm.io/@sefk', 'Mastodon'),
         ('https://bsky.app/profile/sefk.bsky.social', 'Bsky'),
         ('https://twitter.com/sefk', 'X'),
@@ -215,8 +215,8 @@ POSTS = (
     ("posts/*.html", "posts", "post.tmpl"),
 )
 PAGES = (
-    ("stories/*.md", "stories", "story.tmpl"),
-    ("stories/*.html", "stories", "story.tmpl"),
+    ("stories/*.md", "", "story.tmpl"),
+    ("stories/*.html", "", "story.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
@@ -292,7 +292,7 @@ WRITE_TAG_CLOUD = False
 
 # If TAG_PAGES_ARE_INDEXES is set to True, each tag's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
-# TAG_PAGES_ARE_INDEXES = False
+TAG_PAGES_ARE_INDEXES = True
 
 # Set descriptions for tag pages to make them more interesting. The
 # default is no description. The value is used in the meta description
@@ -343,7 +343,7 @@ HIDDEN_TAGS = ['mathjax']
 
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
-# INDEX_PATH = ""
+INDEX_PATH = "posts"
 
 # Create per-month archives instead of per-year
 # CREATE_MONTHLY_ARCHIVE = False
@@ -416,6 +416,8 @@ REDIRECTIONS = [
     (u'2013/11/halloween-2013/index.html', u'/posts/201311halloween-2013.html'),
     (u'2013/11/seven-things/index.html', u'/posts/201311seven-things.html'),
     (u'2013/12/airmail/index.html', u'/posts/201312airmail.html'),
+    (u'posts/sponsorship', u'/posts/sponsoring'),
+    (u'posts/mentorship', u'/posts/mentoring'),
 ]
 
 # Presets of commands to execute to deploy. Can be anything, for
