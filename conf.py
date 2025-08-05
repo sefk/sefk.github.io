@@ -128,13 +128,14 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ('/posts/', 'Blog'),
+        ('mailto:sefklon@gmail.com', 'Mail'),
         ('https://hachyderm.io/@sefk', 'Mastodon'),
         ('https://bsky.app/profile/sefk.bsky.social', 'Bsky'),
         ('https://twitter.com/sefk', 'X'),
+        ('https://www.linkedin.com/in/sefkloninger/', "LinkedIn"),
         ('https://github.com/sefk', 'GitHub'),
         ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html', 'Resume'),
         ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf', 'PDF'),
-        ('/archive.html', 'Archives'),
     ),
 }
 
