@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tools | sef.kloninger.com</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../rss.xml">
+<link rel="canonical" href="https://sef.kloninger.com/tools/">
+<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><meta name="author" content="Sef Kloninger">
+<meta property="og:site_name" content="sef.kloninger.com">
+<meta property="og:title" content="Tools">
+<meta property="og:url" content="https://sef.kloninger.com/tools/">
+<meta property="og:description" content="This Site
+This site is generated using the Nikola static site generator. For
+information about why I chose Nikola, and how that works, I wrote a blog
+post about that a long time ago in Dec 2013. I wis">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2025-08-04T00:00:00-07:00">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../">
+
+            <span id="blog-title">sef.kloninger.com</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../posts/" class="nav-link">Blog</a>
+                </li>
+<li class="nav-item">
+<a rel="me" href="https://hachyderm.io/@sefk" class="nav-link">Mastodon</a>
+                </li>
+<li class="nav-item">
+<a href="https://bsky.app/profile/sefk.bsky.social" class="nav-link">Bsky</a>
+                </li>
+<li class="nav-item">
+<a href="https://twitter.com/sefk" class="nav-link">X</a>
+                </li>
+<li class="nav-item">
+<a href="https://github.com/sefk" class="nav-link">GitHub</a>
+                </li>
+<li class="nav-item">
+<a href="https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html" class="nav-link">Resume</a>
+                </li>
+<li class="nav-item">
+<a href="https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf" class="nav-link">PDF</a>
+                </li>
+<li class="nav-item">
+<a href="../archive.html" class="nav-link">Archives</a>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Tools</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <h3>This Site</h3>
+<p>This site is generated using the <strong><a href="http://getnikola.com/">Nikola</a></strong> static site generator. For
+information about why I chose Nikola, and how that works, I wrote a <a href="http://sef.kloninger.com/posts/switching-to-static.html">blog
+post</a> about that a long time ago in Dec 2013. I wish the themes were
+more customizable, for now I'm using it stock. My site <a href="https://raw.githubusercontent.com/sefk/sefk.github.io/dev/README.md">README</a> shows the
+authoring/publish workflow. The workflow isn't bad once you set up the branches
+and GitHub correctly.</p>
+<p>This site is hosted on <strong><a href="https://pages.github.com/">GitHub Pages</a></strong> and delivered over
+<strong><a href="https://www.cloudflare.com/">CloudFlare</a></strong>. I'm happy with what they give me for free, thanks!</p>
+<p>I moved comments to <strong><a href="https://disqus.com/">Disqus</a></strong> years ago and I'm surprised they're still in
+business. At some point if that become enshittified I'll move them away, or turn
+them off altogether. And <strong><a href="https://analytics.google.com/">Google Analytics</a></strong> is more than enough
+visibility for me.</p>
+<p><strong><a href="https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.html">My resume</a></strong> is hard-coded simple HTML. It's formatted the way you would
+format something back in 1998: just barely css, tables with colspans for layout.
+I use <code>wkhtmltopdf</code> to render that HTML into a <a href="https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.pdf">PDF</a>, all managed by good old
+fashioned <a href="https://github.com/sefk/sef-resume">make</a>. I know there are way better ways to do it now.</p>
+<h3>Editors</h3>
+<p><strong>vim</strong>. Still my go-to tool for writing: text, code (unless it's
+very complex), simple lists, meeting minutes. Lots to like about it: ubiquity,
+speed, easy on the fingers.</p>
+<p><strong>VS Code</strong> with VI keybindings.</p>
+<p><strong>Google Docs</strong>.</p>
+<h3>The Command Line</h3>
+<p><strong>ITerm2</strong>. A nice replacement for the mac's built-in Terminal.app. It's always
+worked well and seems to be maintained well.</p>
+<p><strong>Autojump</strong>. Watches what you <code>cd</code> to and then you can quickly jump back there.
+<code>j posts</code> takes me to my "posts" directory. Magic.</p>
+<p><strong>Zsh</strong>. I finally switched over to Zsh when MacOS switched the default shell to
+Zsh several years ago (Catalina). I've found <strong><a href="https://ohmyz.sh/">Oh My Zsh</a></strong> to be
+a helpful way to manage themes and plugins. I expected it's trick of updating
+every time you open a window to be more onerous, but it hasn't troubled me yet.</p>
+<h3>Mac Things</h3>
+<p><strong><a href="https://github.com/lwouis/alt-tab-macos">Alt-tab</a></strong>. My key
+requirement is I need to quickly switch between windows with alt-tab. I prefer
+lots of windows to tabs, and alt-tab is hard-wired into my fingers from so many
+years on Windows.  And the Mac has never done this right, differentiating
+between windows and apps (why?). Prior apps I tried for this were Witch and
+Hyperswitch, but it's hard to find one that's reliable.</p>
+<p><strong><a href="https://manytricks.com/moom/">Moom</a></strong>. I've tried a bunch of Mac
+things for moving windows around and this one is the best. The hotkey I've
+assigned is easy to type (ctrl-shift-semicolon), pushing once gets me to some
+nice instant macros (top, right, full screen) but the best thing is pushing
+<em>twice</em> to bring up this nice little micro-manager where I can place windows
+manually. Well done and works.</p>
+<p><strong><a href="https://fiplab.com/apps/copyclip-for-mac">CopyClip</a></strong>. I've come
+to rely on a clipbar manager quite a bit and it's one of the things I miss most
+when moving to another OS like Linux or Chrome. This one has always done the job
+for me.</p>
+<p><strong><a href="https://brew.sh/">Homebrew</a></strong>. The missing package manager for the
+mac has proven remarkably durable.</p>
+<h3>Productivity and Apps</h3>
+<p><strong>Gmail</strong>. Keep trying other things but keep coming back. </p>
+<p>My GPG key is <a href="f/sef-public-gpg-key-2015-06.asc"><code>4C79 48F2 2057 0647 D573  937B AFD1 2F02 88AC 23B2</code></a>.
+Don't really use anymore.</p>
+<p><strong>Google Calendar and Tasks</strong>. I use my calendar as my journal and todos too.
+There are much fancier systems for keeping and managing task lists but I keep
+coming back to the basic one.</p>
+    </div>
+    
+
+</article><!--End of body content--><footer id="footer"><p align="center">Contents © 2025 <a href="mailto:sefklon@gmail.com">Sef Kloninger</a>       
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="https://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a></p>
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../assets/js/all-nocdn.js"></script><script src="../assets/js/luxon.min.js"></script><!-- fancy dates --><script>
+        luxon.Settings.defaultLocale = "en";
+        fancydates(2, {"preset": false, "format": "yyyy-MM-dd HH:mm"});
+        </script><!-- end fancy dates --><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-30366531-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-30366531-1');
+</script>
+</body>
+</html>

@@ -33,7 +33,7 @@ bg-dark
         <div class="collapse navbar-collapse" id="bs-navbar">
             <ul class="navbar-nav mr-auto">
 <li class="nav-item">
-<a href="../../stories/about/" class="nav-link">About</a>
+<a href="../../posts/" class="nav-link">Blog</a>
                 </li>
 <li class="nav-item">
 <a rel="me" href="https://hachyderm.io/@sefk" class="nav-link">Mastodon</a>
@@ -70,7 +70,8 @@ bg-dark
         
         
         
-<article class="tagpage"><header><h1>Posts about Education</h1>
+
+    <header><h1>Posts about Education</h1>
         <div class="metadata">
             
                 <p class="feedlink">
@@ -79,23 +80,377 @@ bg-dark
 
                 </p>
 
-        </div>
-        
+            
 
-    </header><ul class="postlist">
-<li>
-<time class="listdate" datetime="2014-08-31T23:45:00-07:00" title="2014-08-31 23:45">2014-08-31 23:45</time><a href="../../posts/leaving-stanford/" class="listtitle">Leaving Stanford Online Ed</a><a></a>
-</li>
-            <li>
-<time class="listdate" datetime="2013-06-11T22:59:24-07:00" title="2013-06-11 22:59">2013-06-11 22:59</time><a href="../../posts/201306launch-day/" class="listtitle">Launch Day</a><a></a>
-</li>
-            <li>
-<time class="listdate" datetime="2013-03-31T12:23:15-07:00" title="2013-03-31 12:23">2013-03-31 12:23</time><a href="../../posts/201303online-ed-retention/" class="listtitle">"Low" Retention Rates in Online Education Isn't Necessarily A Bad Thing</a><a></a>
-</li>
-            <li>
-<time class="listdate" datetime="2012-07-09T12:49:31-07:00" title="2012-07-09 12:49">2012-07-09 12:49</time><a href="../../posts/201207on-line-education/" class="listtitle">On-Line Education Is Really Interesting Right Now</a><a></a>
-</li>
-        </ul></article><!--End of body content--><footer id="footer"><p align="center">Contents © 2025 <a href="mailto:sefklon@gmail.com">Sef Kloninger</a>       
+        </div>
+    </header><div class="postindex">
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/leaving-stanford/" class="u-url">Leaving Stanford Online Ed</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="../../posts/leaving-stanford/" rel="bookmark">
+            <time class="published dt-published" datetime="2014-08-31T23:45:00-07:00" itemprop="datePublished" title="2014-08-31 23:45">2014-08-31 23:45</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="../../posts/leaving-stanford/#disqus_thread" data-disqus-identifier="cache/posts/leaving-stanford.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p style="float:right; align:right; width:30%"><img class="postimage" src="../../f/stanfordlogo.gif" alt="Stanford"></p>
+
+<p>Friday was my last day building Stanford's <a href="https://class.stanford.edu/">open-source online education
+platform</a>.  What started as a lark turned out to be one of the most
+fun and rewarding times in my career.  So I'll use this opportunity to
+reflect back on the project and what we accomplished.</p>
+<h3>First a Little History</h3>
+<ul><i>
+    "MOOCs are just information technology happening to higher education."  
+    -- George Siemens
+</i></ul>
+<p>I joined Stanford in 2012, coming off of my self-imposed <a href="http://sef.kloninger.com/posts/201204my-sabbatical.html">sabbatical</a>.
+My goal then had been to get hands-on again, to sharpen the technical
+tools.  I did a few online classes and hobby projects, but my friend Jane
+suggested I could do some good and have more fun working in a group back
+on the Stanford campus (I'm an alum, after all).  So I joined her and a
+small group of engineers in a conference room in the fourth floor of
+<a href="http://www-cs.stanford.edu/info/gates">Gates</a>.</p>
+<p>Recall what was happening in <a href="http://sef.kloninger.com/posts/201207on-line-education.html">education in 2012</a>.  Stanford's
+<a href="https://www.udacity.com/course/cs271">first</a> <a href="https://www.coursera.org/course/ml">three</a> <a href="https://class.stanford.edu/courses/Home/Databases/Engineering/about">big</a> Massive Open Online Courses (MOOCs) had
+just made big splashes.  Later that year the New York Times would famously
+declare 2012 to be the <a href="http://www.nytimes.com/2012/11/04/education/edlife/massive-open-online-courses-are-multiplying-at-a-rapid-pace.html">Year of the MOOC</a>.  What could consumer-grade
+web tech could do for higher education?  Or even <em>do to</em> higher ed?  The
+low cost and ease of cloud computing removed many of the barriers to trying
+new things out.  You approach experimentation completely differently when
+things get 100x or 1000x cheaper.  Profs were literally getting out their
+credit cards and buying Wordpress blogs or throw up virtual machines for
+automated grading.  Wild stuff.</p>
+<p>So this was the environment when I joined Stanford.  That first summer we
+built <a href="https://class2go.stanford.edu/">Class2Go</a> to host free online courses.  We went from empty
+buffers to a live Python/Django site for hundreds of thousands of enrolled
+students in eleven weeks.  Man, that was a fun ride.</p>
+<p>We built Class2Go for a few reasons.  First, we feel strongly that Stanford
+needs to control its destiny.  There is no "file format" for online ed
+content, so every course development online is a bet on a platform.  And
+we didn't want to be beholden to one platform vendor (still don't).  In
+2012 the technology that had powered the early MOOCs were becoming "platforms"
+and moving off-campus.  While we were happy with the success of Udacity,
+Coursera, and (a year later later) NovoEd, we were also a bit wary.  They were
+going to have to repay their investors at some point.  The last thing we
+wanted was for online education to look like textbook publishing or academic
+journals.  We know what happened there.</p>
+<p>Second, we wanted to have a broad impact.  We were lucky enough to have
+an engineering team at Stanford, but it makes no sense for every school
+to develop their own platforms.  This kind of project is tailor made for
+open source development, and I've advocated strongly for that since the
+beginning.  Not only would this mean many others could benefit form the
+software, Stanford would benefit from many more developers and see many
+more use cases (and we have).</p>
+<p>And the third reason is the need to modify the platform.  There are many
+reasons why you need to get hands dirty in the code.  It could be just
+developing a point feature, like <a href="https://github.com/edx/edx-ora2/pull/620">tracking changes in peer evaluation</a>.
+Or it could enable a whole new use case, like <a href="https://github.com/edx/edx-platform/pull/67">authenticating
+on-campus students</a>.  Our teachers and researchers want to do
+interesting work online, not just put up courses.  They have great ideas
+about using the things that make MOOCs unique (different cultures, scale,
+data-gathering, etc.) as powerful tools, not obstacles to overcome.  (To
+hear more about interesting online ed projects, follow the Stanford VPOL 
+<a href="http://signalblog.stanford.edu/">Signal Blog</a>).</p>
+<h3>Scaling Up With EdX</h3>
+<p>Come early 2013 we started seeing some interest from others to use Class2Go
+outside Stanford.  While exciting, we were concerned about the quality of
+the code.  There were giant missing features that were going to be hard
+to write (e.g. peer evaluation).  And the code was quick and dirty,
+with nearly zero tests and other things a "real project" needs.  We could
+have backfilled all of that, but it sounded like a lot of work.</p>
+<p>It's around that time that we started talking with edX.  Our academic ties
+to MIT, Harvard, and other edX consortium members are strong.  We liked
+their philosophy and approach.  And our technologies were similar: both
+Python/Django stacks running in Amazon, etc.  We decided to work together.
+<a href="https://www.linkedin.com/in/robvrubin">Rob Rubin</a> and I got the deal done quickly, mostly between sessions
+at PyCon.  In April 2013 we <a href="http://news.stanford.edu/news/2013/april/edx-collaborate-platform-030313.html">announced</a> that we'd shutter Class2Go
+and adopt the Open edX platform.</p>
+<p>Stanford didn't join the XConsortium.  Rooted in our belief in the power
+of open source, we made open-sourcing their platform a condition of us
+working together.  EdX didn't need convincing.  But Stanford was of
+a forcing function to do it then, and it did take some work.  They <a href="http://ostatic.com/blog/edx-open-sources-its-super-influential-online-learning-platform">pushed
+the button</a> on June 1 2013.</p>
+<p>For the past year and a half the Stanford team has operated as a virtual
+member of the extended edX engineering team.  They've been a fun group to
+work with, generous with their time and good collaborators.  We've been
+running the platform successfully now for over a year, supporting dozens
+of courses for Stanford students, MOOCs, online high school students, and
+many other uses.  We've contributed back many features, like theming,
+course email, instructor analytics to name a few.</p>
+<p>I've spent a lot of my own time helping to make sure the Open edX project
+a healthy open source project.  It's not enough to just open up the code,
+to have a thriving community you have to conduct your development out in
+the open.  Beyond helping other institutions get up and running I've worked
+to drive the open-source agenda overall.  With my friend <a href="https://twitter.com/natea">Nate Aune</a>
+last May we <a href="https://groups.google.com/d/msg/edx-code/DRqcLlMKhgs/KBvzBj13hQ8J">published recommended changes</a> to technology, governance,
+and community.  And with <a href="https://twitter.com/podehaye">Paul-Olivier Dehaye</a> this past June we
+hosted the first <a href="https://groups.google.com/d/msg/edx-code/EqVUkvovq0k/e2Be2fo5QJUJ">Open edX workshop</a>, in Zürich.  I think those efforts
+have made a difference.</p>
+<h3>Moving On</h3>
+<p>I've heard the siren's song of the startup.  Last Friday August 29th was
+my last day at Stanford.  I'll post about my <a href="http://www.wavefront.com/">next gig</a> when the time
+is right.</p>
+<p>But I do feel good about moving on.  The Stanford engineering team is solid
+and productive.  The engineers work well with each other and have a good
+breadth of skills.  The course operations team is dedicated and strong.
+<a href="https://twitter.com/jinpa1345">Jane Manning</a> will do great running the team in addition to her day
+job as of product management -- she's done this before and knows the product
+inside and out.  And <a href="https://github.com/jbau">Jason Bau</a>, the Stanford Open edX tech lead,
+will continue to anchor eng and ops.</p>
+<p>And what about the open source community?  I do feel like the flywheel is
+starting to spin up.  EdX is fostering this in several ways, I'll mention
+two.  First, they are in the process of opening up their bug tracking
+database and sprint planning (Jira).  That's a key step to doing true <em>open
+development</em>.  And second, I'm really excited to see the first full-on
+<a href="https://groups.google.com/d/msg/edx-code/bqASLi8FZjs/Eb6OQpHbevsJ">Open edX conference</a> happening this upcoming November.  I expect
+that to be well attended.</p>
+<p>EdX has asked me to continue on as a member of the Technical Advisory
+Board, which I am happy and honored to do.  I look forward to staying
+plugged into the project and working with my friends on the board (Armando,
+Ike, Jim, Phil, Ross...)</p>
+<p>Thanks to my many friends on the project: the Open edX engineering team,
+especially Jason and Jane; the team in the Office of the Vice Provost for
+Online Learning, especially Professor <a href="http://theory.stanford.edu/people/jcm/">John Mitchell</a> who made this
+possible; and my many friends at edX.  There's a lot to be proud of over
+the past two years, and a lot of good work ahead.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201306launch-day/" class="u-url">Launch Day</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="../../posts/201306launch-day/" rel="bookmark">
+            <time class="published dt-published" datetime="2013-06-11T22:59:24-07:00" itemprop="datePublished" title="2013-06-11 22:59">2013-06-11 22:59</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="../../posts/201306launch-day/#disqus_thread" data-disqus-identifier="cache/posts/201306launch-day.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="../../f/spaceshuttle-300x283.png" width="180" height="170"><p>
+Today was launch day. It went really well.  I wanted to capture what a good launch feels like and contrast that with a more exciting launch, just five months ago.
+
+
+</p>
+<p>
+Today we turned on our first class on Stanford's instance the open-source <a href="http://code.edx.org">edX platform</a>, what we're calling <a href="http://online.stanford.edu/openedx">OpenEdX</a>. The class is <a href="https://class.stanford.edu/courses/Medicine/HRP258/Statistics_in_Medicine">Statistics in Medicine</a>, taught by Kristin Sainani of the Stanford School of Medicine. With over thirteen thousand students signed up it's a medium-sized MOOC (Massive Open Online Course).
+
+
+
+</p>
+<p>
+We have launched MOOC's for Stanford before: two in <a href="http://networking.class.stanford.edu/">Fall</a> <a href="http://solar.class.stanford.edu/">Quarter</a>, and one in <a href="http://db.class.stanford.edu/">Winter</a>. Even though the classes were huge success, but the launch days weren't so smooth. We had written that platform, <a href="http://class2go.stanford.edu/">Class2Go</a>, from the ground up with a small team in a dozen weeks in Fall; in the weeks before the Winter launch we ripped out the whole evaluation system, about one-third of the code, and replaced it with a whole new engine. In both cases most of our code was fresh off the presses.
+
+
+
+</p>
+<p>
+Those launches were rocky. I'll tell the story of the DB class launch in January. The first thing we do is a "soft launch," where you open the front door and some people find their way in. Those first visits give you a sense of how things will go.  Surprisingly, the servers were a bit busy.  But we wanted to keep going, so we scaled up capacity and moved on.
+
+
+
+</p>
+<p>
+The thing that drives real traffic is the announcement email. That gets people to the site. The announcements started going out, students started coming in, and the site lit up. We were in hot water. Servers were overloaded, and most surprising, the database was getting hammered. This was scary and unexpected. We control-C'ed the mail job and quickly hacked additional caching into the site.  We had to trickle out announcements over the next twelve hours.  We made it, but it was a long, stressful day.
+
+
+
+</p>
+<p>
+And then the days/weeks post-launch were spent watching graphs, triaging 500 errors (user-visible "we're sorry" pages), and installing daily hotfixes. But we got through it. The classes were a success and the team was proud.
+
+
+
+</p>
+<p>
+So, contrast that to today's launch.  Totally different.
+
+
+
+</p>
+<p>
+Everyone came in early as usual. I bought bagels. We turned on the class (soft-launch) and the servers hardly noticed. We sent the announcement mails, people came and took their pre-course survey and watched the intro video. Hardly any load. This chart shows the average CPU on our four appservers from 8:00 AM PDT / 15:00 UTC until 10:45 AM or so.
+
+
+
+</p>
+<p align="center">
+<img class="alignnone  wp-image-414" style="border: 0px;" alt="launch-app-cpu" src="../../f/launch-app-cpu1.png" width="1530" height="373"></p>
+<p>
+Those are happy servers. Other charts we watched (db connections, load, etc.) told the same story. The most impressive thing was not a single user visible error, no 500's!
+
+
+
+</p>
+<p>
+Those folks at edX made some solid software.  We're happy to be working with a strong group of engineers and a quality product.  We've had our hands on it only since April, and it was released open-source to the world on June 1.  I fully expect a lot of other universities and organizations are going to have a great time running classes on OpenEdX too.
+
+
+
+</p>
+<p>
+I just turned off half the appservers since we're fine on capacity. Now off to bed with a good feeling.
+
+</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201303online-ed-retention/" class="u-url">"Low" Retention Rates in Online Education Isn't Necessarily A Bad Thing</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="../../posts/201303online-ed-retention/" rel="bookmark">
+            <time class="published dt-published" datetime="2013-03-31T12:23:15-07:00" itemprop="datePublished" title="2013-03-31 12:23">2013-03-31 12:23</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="../../posts/201303online-ed-retention/#disqus_thread" data-disqus-identifier="cache/posts/201303online-ed-retention.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <img class="alignright  wp-image-400" style="border: 0px;" alt="Evaluate-300x198" src="../../f/Evaluate-300x198.png" width="240" height="158"><p>
+I am of two minds about <a title="Peter Reinhardt" href="http://rein.pk/online-educations-dirty-secret-awful-retention/" target="_blank">Peter Reinhardt post today</a> calling out online education's poor retention rates.
+
+
+</p>
+<p>
+I agree that retention rates are low. At Stanford we we just completed the Winter run of Jennifer Widom's <a title="Introduction to Databases" href="http://db.class2go.stanford.edu/" target="_blank">Database Class</a>, here are the course stats:
+
+</p>
+<p>
+</p>
+<ul>
+<li>Registered: 64,127</li>
+	<li>Turned in some work: 20,836</li>
+	<li>Took the final exam: 4,771</li>
+	<li>Received a Statement of Accomplishment: 4,854 (1,927 with distinction)</li>
+</ul>
+<p>
+How do I feel that 23% of students who started the class finished? Or that only 7.6% who enrolled finished? Mostly I'm fine with that. I think there's a lot of value in someone kicking the tires. Some were experimenting with on-line education, some didn't know before hand if the class would be right for them. I share <a title="Curt Bonk, University of Indiana" href="http://php.indiana.edu/~cjbonk/" target="_blank">Curt Bonk</a>'s view that this shouldn't be seen as a black mark but as another form of outreach.
+
+
+
+</p>
+<p>
+I consider this over forty thousand people who got some exposure to the topic, the platform, and what this MOOC thing is all about.
+
+
+
+</p>
+<p>
+But I totally agree that increasing retention is a worthwhile goal and a valuable metric.   Online education platforms (mine included) should do what we can to keep students engaged.  This article has many good suggestions.  And there's a lot of room for experimentation.
+
+
+
+</p>
+<p>
+(disclaimer: I'm the engineering manager on <a title="Class2Go from Stanford" href="http://class2go.stanford.edu/" target="_blank">Class2Go</a>, the open-source MOOC platform we've built at Stanford)</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201207on-line-education/" class="u-url">On-Line Education Is Really Interesting Right Now</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="../../posts/201207on-line-education/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-07-09T12:49:31-07:00" itemprop="datePublished" title="2012-07-09 12:49">2012-07-09 12:49</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="../../posts/201207on-line-education/#disqus_thread" data-disqus-identifier="cache/posts/201207on-line-education.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <img class="alignright  wp-image-307" style="border: 0px;" title="lecture-hall" src="../../f/lecture-hall-300x199.jpeg" alt="" width="270" height="179"><p>
+I've joined a research project at Stanford University (my alma mater).  I am working with a small team to build a platform for on-line education. This post explains what we're building, my part in it, and why this is an interesting area right now.
+
+</p>
+<h2>Class2Go</h2>
+
+<p>
+We are building Class2Go, an application to put Stanford classes on line.  Envision a video-driven web site with exercises and tests.  It will run much like a class today (professors, TA's, lectures, homework, tests, schedules) but with everything happening on-line.  For some kinds of classes this could improve the classroom experience for enrolled students; the excitement comes when you can bring in the a much larger set of non-enrolled students.
+
+
+
+</p>
+<p>
+The professors who have expressed interest so far are those who want to <a title="Flip teaching page on wikipedia" href="http://en.wikipedia.org/wiki/Flip_teaching" target="_blank">flip their classrooms</a> or host a <a title="Massive open online course page on wikipedia" href="http://en.wikipedia.org/wiki/Massive_open_online_course" target="_blank">Massive Open On-Line Course</a> (MOOC). Others have ideas on experimentation with the learning process itself. For example, do students learn better when they see slides, a talking head, or both? A large enough student population makes meaningful studies possible and cheap.
+
+</p>
+<p>
+There are a bunch of features needed over and above basic basic video.  First, can we devise a good system for students to grade each others work? This is an absolute must to do anything in the humanities at large scale.  We have some ideas of how to do peer evaluation, but it's an area that needs much more experimentation. A second important feature is enabling off-line use from laptops and tablets.  When we think of disconnected students we typically think of commuters, but we've heard it's just as important (or maybe more so) for students in developing countries where bandwidth is precious.
+
+</p>
+<p>
+While there are <a title="Link to Coursera site" href="https://www.coursera.org/" target="_blank">commercial</a> <a title="Link to Udacity site" href="http://www.udacity.com/" target="_blank">offerings</a> to do this, and even things from other established <a title="Link to Ed X site" href="http://www.edxonline.org/" target="_blank">universities</a>, Class2Go will be different in three important ways:
+
+</p>
+<p>
+</p>
+<ul>
+<li>Research will be first and foremost. Hey prof, you want to do a wacky experiment? We can help.</li>
+	<li>Value produced by the course is retained and controlled by the professor and the university.  That value comes from the assets (video, homework) but even more so the community and technology.</li>
+	<li>The professors will have quick and ready access to their data. No waiting in lines for reports.</li>
+</ul>
+<p>
+Stanford Professor Rob Reich made a very coherent argument for this in a <a title="Rob Reich blog post comparing Universities to Newspapers" href="http://www.stanford.edu/group/reichresearch/cgi-bin/site/2012/05/18/sending-universities-down-the-path-of-the-newspaper-industry/" target="_blank">recent blog post</a>. (Getting to work with smart people like him is a major job perq, by the way.)
+
+</p>
+<p>
+Part of what makes this doable is that there are so many great building blocks available.  We plan to use YouTube for video and the <a href="https://github.com/khan/khan-exercises" target="_blank">Khan Academy</a> framework for exercises.   <a href="https://piazza.com/" target="_blank">Piazza</a> has great discussions and forums to start with. Because of all this good stuff, we feel good about getting something strong out by the Fall for a couple of courses, and then expanding from there.
+
+</p>
+<p>
+And me?  I'm the line manager. It's fun to work on a project of this size where I can keep my hands dirty. For example, this week I'll be working on authentication (oauth).
+
+</p>
+<h2>Why Education, Why Now?</h2>
+
+<p>
+Two things brought me to education.
+
+</p>
+<p>
+Firstly, education is uniquely important. I challenge you to name another human pursuit that is as important, consumes so many resources (for good reason), and can be so transformative when done well.  The other two that come to mind are health and agriculture. But I'd say education is right up there.
+
+</p>
+<p>
+And second, education is changing right now. Of the meetings I've had while <a title="My Sabbatical" href="http://sef.kloninger.com/2012/04/my-sabbatical/" target="_blank">on sabbatical</a>  some of the most interesting have been about education. Why can't information technology have as big an impact on how people learn as it has had on everything else? Technology could mean making it available to to many more students, in different places and of different means. Educators could spend less time lecturing (dry stuff, to be sure) and more time working with students. Better measurement and analysis and could give educators near-real-time feedback and students tailor-made homework. Those are just a few of the examples that I heard about that got me excited.
+
+</p>
+<p>
+I look forward to doing something that will make even a little difference here. I'll blog about my experiences along the way.
+
+</p>
+<p>
+PS - <a title="Peter Norvig @ TED" href="http://fm.schmoller.net/2012/07/peter-norvigs-ted-talk-about-the-ai-course.html" target="_blank">Peter Norvig's TED Talk</a> captured the reasons and potential nicely.  That seven minutes is worth your time.
+
+</p>
+    </div>
+    </article>
+</div>
+
+
+
+    
+       <script>var disqus_shortname="sefkloninger";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer"><p align="center">Contents © 2025 <a href="mailto:sefklon@gmail.com">Sef Kloninger</a>       
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">
 <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="https://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a></p>
             
@@ -105,7 +460,7 @@ bg-dark
 </div>
 
 
-        <script src="../../assets/js/all-nocdn.js"></script><script src="https://polyfill.io/v3/polyfill.js?features=Intl.RelativeTimeFormat.%7Elocale.en"></script><script src="../../assets/js/luxon.min.js"></script><!-- fancy dates --><script>
+        <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/luxon.min.js"></script><!-- fancy dates --><script>
         luxon.Settings.defaultLocale = "en";
         fancydates(2, {"preset": false, "format": "yyyy-MM-dd HH:mm"});
         </script><!-- end fancy dates --><script>
