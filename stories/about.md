@@ -16,22 +16,27 @@ posts are about [management](categories/management),
 [technology](categories/technology), or [life in general](categories/life). I
 hope you check it out.
 
-My career has been working for tech companies like Google, VMware, and
-Akamai, as well as some startups. My [resume][] has the whole story. The best gig was building a site
-for online education for Stanford during the MOOC boom of 2012.
+My career has been working for tech companies like Google, VMware, and Akamai,
+as well as some startups. My [resume][] has the whole story. The most fun was
+building a site for online education for Stanford during the MOOC boom of 2012.
 
-These days I'm spending more time playing board games and learning bridge. But I
-always come back to tech. I've been doing computer stuff since getting an Apple
-//e when I was twelve years old. I spent that summer writing a [robots game][]
-in 6502 assembly.
+Lately I've become concerned by America's slouch toward authoritarianism. I like
+the work being done by [my local Indivisible chapter][imp] and the national [No
+Kings][] movement.
 
-Contact me at [sefklon@gmail.com](mailto:sefklon@gamil.com) (preferred) or
-[@sefk](https://hachyderm.io/@sefk) on Mastodon.
+I'm also playing board games, video games, and learning bridge. But I keep
+coming back to tech projects. I got my first computer, an Apple //e, and spent a
+whole summer hand-coding a [robots game][] in 6502 assembly. I've always found
+that stuff *fun*.
 
-For information about this site and the tools use for this and other projects
-see my [tools page](tools).
+If any of this interests you too, reach me via [email](mailto:sefklon@gamil.com)
+(preferred) or [@sefk](https://hachyderm.io/@sefk) on Mastodon.
+
+For information about this site and the tools use I see my [tools page](tools).
 <br>
 <br>
 
+[imp]: https://indivisiblemp.org/
+[No Kings]: https://www.nokings.org/
 [resume]: https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html
 [robots game]: http://en.wikipedia.org/wiki/Robots_%28BSD_game%29
