@@ -128,7 +128,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ('/posts/', 'Blog'),
-        ('mailto:sefklon@gmail.com', 'Mail'),
+        ('mailto:sefklon@gmail.com', 'Email'),
         ('https://hachyderm.io/@sefk', 'Mastodon'),
         ('https://bsky.app/profile/sefk.bsky.social', 'Bsky'),
         ('https://twitter.com/sefk', 'X'),
