@@ -20,9 +20,9 @@ My career has been working for tech companies like Google, VMware, and Akamai,
 as well as some startups. My [resume][] has the whole story. The most fun was
 building a site for online education for Stanford during the MOOC boom of 2012.
 
-Lately I've become concerned by America's slouch toward authoritarianism. I like
-the work being done by [my local Indivisible chapter][imp] and the national [No
-Kings][] movement.
+Lately I've become concerned by America's movement toward authoritarianism. I
+support the work being done by [my local Indivisible chapter][imp] and the
+national [No Kings][] movement and aim to do more.
 
 I'm also playing board games, video games, and learning bridge. But I keep
 coming back to tech projects. I got my first computer, an Apple //e, and spent a
