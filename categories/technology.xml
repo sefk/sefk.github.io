@@ -1,5 +1,523 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Technology)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/technology.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 05 Aug 2025 14:50:21 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>K&amp;R C Programming, Quantum Books, Cambridge, MA</title><link>https://sef.kloninger.com/posts/201309knr-c-label/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p style="text-align: left;"&gt;&lt;img class="alignright  wp-image-433" style="border: 0px;" alt="IMG_4177" src="https://sef.kloninger.com/f/IMG_41771-231x300.jpg" width="139" height="180"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Technology)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/technology.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 06 Aug 2025 01:32:33 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Cleaning Up Photo Duplicates</title><link>https://sef.kloninger.com/posts/photo-dups/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/dups-pie.png" alt="Pie Chart" width="30%"&gt;&lt;/p&gt;
+&lt;p&gt;I did a data cleanup over the weekend. I doubt this is interesting
+for anyone else, I just wanted to capture my own notes.&lt;/p&gt;
+&lt;p&gt;Our family photos are stored up in Google Photos. We have about
+100k photos and short movies that take up 0.5TB. I wanted to back
+up to &lt;a href="https://www.synology.com/en-us/products?product_line=ds_plus"&gt;local storage&lt;/a&gt;, but also I liked the idea of trying the
+&lt;a href="https://www.mdisc.com/"&gt;mdisc&lt;/a&gt; format for long-term storage.&lt;/p&gt;
+&lt;p&gt;I ran &lt;a href="https://takeout.google.com/"&gt;Takeout&lt;/a&gt; and unzipped everything. I was surprised to see
+so many duplicates. Some are copies in the same folders with suffixes
+like "(1)", most are multiple copies in different folders.
+Takeout seems to just store a copy for each album a photo is in.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.google.com/spreadsheets/d/10pRVc1_6u0G2z62uEJSHHZ0yzf43Zoa9yx0D2bpICmE/edit?usp=sharing"&gt;Some poking at the data&lt;/a&gt; shows 88% of 302,755 files / 72% of
+the bytes were unique (histogram at the bottom of the post).  Removing
+dups can save 200+GB. Sure not really worth the trouble but why
+not.&lt;/p&gt;
+&lt;h4&gt;Steps&lt;/h4&gt;
+&lt;p&gt;1. On the NAS, gather file checksums (&lt;code&gt;md5sum&lt;/code&gt;) and sizes for all
+the files under &lt;code&gt;Takeout/Google Files&lt;/code&gt;. Mostly variations on
+of &lt;code&gt;find -print0 | xargs -0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;2. Data cleanup to get into nice file paths and clean delimiters,
+mostly interactively with &lt;code&gt;vi&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;3. Insert into &lt;code&gt;sqlite&lt;/code&gt; using &lt;code&gt;.separator&lt;/code&gt; and &lt;code&gt;.import&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here's what the database ended up looking like: &lt;code&gt;Photos&lt;/code&gt; and &lt;code&gt;Sizes&lt;/code&gt;
+are inputs, &lt;code&gt;HashCounts&lt;/code&gt;, &lt;code&gt;Duplicates&lt;/code&gt;, and &lt;code&gt;Candidates&lt;/code&gt; are
+outputs.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="k"&gt;CREATE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;TABLE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;TEXT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;TEXT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="k"&gt;CREATE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;TABLE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Sizes&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;size&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;TEXT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="k"&gt;CREATE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;TABLE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HashCounts&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;TEXT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="k"&gt;found&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="k"&gt;CREATE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;TABLE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Duplicates&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STRING&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STRING&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="k"&gt;found&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="k"&gt;size&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="k"&gt;CREATE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;TABLE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Candidates&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STRING&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STRING&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="k"&gt;size&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;4. Find the dups. I'm surprised to find some with 50 or more copies,
+but it out some family favorites end up in lots of albums.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="k"&gt;insert&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;into&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HashCounts&lt;/span&gt;
+&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;found&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;group&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;by&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;5. Figure out candidates for deletion&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="k"&gt;insert&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;into&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Duplicates&lt;/span&gt;
+&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HashCounts&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;found&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Sizes&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;size&lt;/span&gt;
+&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HashCounts&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Sizes&lt;/span&gt;
+&lt;span class="k"&gt;where&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HashCounts&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;and&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;Sizes&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;
+&lt;span class="k"&gt;and&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HashCounts&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;found&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The first of each set is the one we'll keep.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="k"&gt;insert&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;into&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Candidates&lt;/span&gt;
+&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;
+&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;size&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;row_number&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;over&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;partition&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;by&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;row_number&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Duplicates&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;order&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;by&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;desc&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;where&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;row_number&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I was surprised that sqlplus supports window functions, nice.&lt;/p&gt;
+&lt;p&gt;The inner reverse-alpha sort on "path" takes care of two cases.
+I tend to prefer keeping photos with names that start with
+years, and Those come first alphabetically (nice). Also within
+folders often there are many copies with "(1)" and "(2)" suffixes
+that are generally cruft and most worthy of removing, and those
+also sort last alphabetically (nice).&lt;/p&gt;
+&lt;p&gt;5. Dump out the "Candidates" using &lt;code&gt;.output&lt;/code&gt;. Copy back to the NAS.
+Do lots of spot checks. Convert to a bash script of &lt;code&gt;rm&lt;/code&gt; commands,
+run very carefully.&lt;/p&gt;
+&lt;h4&gt;Tools&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Sqlite&lt;/strong&gt; is my go-to tool for ad-hoc work like this.  It's fast
+and simple, but only for small jobs -- this one is MB-scale.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pgsize&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;dbstat&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;group&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;by&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="w"&gt;           &lt;/span&gt;&lt;span class="k"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pgsize&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;-------------  -----------&lt;/span&gt;
+&lt;span class="n"&gt;Candidates&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="mi"&gt;3006464&lt;/span&gt;
+&lt;span class="n"&gt;Duplicates&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="mi"&gt;5541888&lt;/span&gt;
+&lt;span class="n"&gt;HashCounts&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="mi"&gt;11051008&lt;/span&gt;
+&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="mi"&gt;23240704&lt;/span&gt;
+&lt;span class="n"&gt;Sizes&lt;/span&gt;&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="mi"&gt;13807616&lt;/span&gt;
+&lt;span class="n"&gt;sqlite_schema&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="mi"&gt;4096&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;My &lt;strong&gt;Synology&lt;/strong&gt; is a pretty good place for storage with ability to
+ssh in and run local commands.  But if I had to do this again,
+though, I should have just bought a large locally-connected SSD.
+All the transfers to-from the NAS were a hassle. Looking now I'm
+stunned that you can get a 4 TB external SSD for under $300.&lt;/p&gt;
+&lt;p&gt;Some &lt;a href="https://docs.google.com/spreadsheets/d/1O4gzeTn8GNeL1X4DrBUprcEqpK6jKbQrtEfBNdJF-Pw/edit#gid=810787524"&gt;private notes&lt;/a&gt; here.&lt;/p&gt;
+&lt;p&gt;&lt;img class="postimage" src="https://sef.kloninger.com/f/dups-histo.png" alt="Histogram" width="100%"&gt;
+(&lt;a href="https://docs.google.com/spreadsheets/d/10pRVc1_6u0G2z62uEJSHHZ0yzf43Zoa9yx0D2bpICmE/edit?usp=sharing"&gt;source&lt;/a&gt;)&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/photo-dups/</guid><pubDate>Mon, 19 Feb 2024 20:00:00 GMT</pubDate></item><item><title>The iPhone's SIM Tray Went Away Too Soon</title><link>https://sef.kloninger.com/posts/esim/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/sim.png" alt="SIM" width="25%"&gt;&lt;/p&gt;
+&lt;p&gt;If you've traveled internationally, likely you've used a SIM card
+for local data and calls. There is a nice ecosystem around SIMs
+with a wealth of easy and affordable Pay As You Go (PAYG) options.&lt;/p&gt;
+&lt;p&gt;But the newer iPhones did away with the SIM slot if favor of some new
+eSIM hotness. Apple has all kinds of &lt;a href="https://support.apple.com/en-gb/HT209096"&gt;info&lt;/a&gt; claiming they have good
+international support, but I found reality falls short.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Only a few carriers support eSIM's,&lt;/li&gt;
+&lt;li&gt;The few that do require a contract. A tourist or student
+   studying abroad is better served by a PAYG plan, and&lt;/li&gt;
+&lt;li&gt;Even if you can stomach a contract, that would require a UK bank
+   account; no way to easily pull that off.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We ended up falling back to &lt;a href="https://www.att.com/international/day-pass/"&gt;international roaming&lt;/a&gt;. It works but
+is expensive.&lt;/p&gt;
+&lt;p&gt;I think Apple made the wrong call removing the trusty old SIM tray.
+Clearly the new models can be made to work well with it, since how
+they are sold in the UK.  If you're unlucky enough to have bought
+your recent iPhone in the US, you're out of luck. &lt;/p&gt;
+&lt;p&gt;I this is an example of Apple bad tendency sometimes choose form
+over function, "&lt;a href="https://www.theringer.com/2016/9/7/16038622/why-did-apple-remove-the-headphone-jack-courage"&gt;courage&lt;/a&gt;" over usability.&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/esim/</guid><pubDate>Fri, 05 Jan 2024 10:34:49 GMT</pubDate></item><item><title>YouTube</title><link>https://sef.kloninger.com/posts/youtube/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/YouTube-icon-full_color.png" alt="YouTube" width="200px" height="148px"&gt;&lt;/p&gt;
+&lt;p&gt;I'm excited to start my new job at YouTube in a few weeks. I'll manage the
+engineering team building the data warehouse for usage metrics.&lt;/p&gt;
+&lt;p&gt;I like that YouTube is &lt;strong&gt;important&lt;/strong&gt;. It's firmly a part of our culture
+and I'm sure it will be how my kids watch video. YouTube's impressive
+&lt;a href="https://www.youtube.com/yt/press/statistics.html"&gt;statistics&lt;/a&gt; are the result. You don't see usage like that without a
+bunch of &lt;strong&gt;hard problems&lt;/strong&gt;, and hard problems attract &lt;strong&gt;bright people&lt;/strong&gt;.
+Indeed that's the clincher for why I'm looking forward to working there.
+People vote with their feet, and I have a lot of friends who have opted
+for Google, and YouTube specifically. They tell me that it's a great place
+to work.&lt;/p&gt;
+&lt;p&gt;YouTube is one of the worlds foremost platforms for social commentary,
+education, and free speech. And it's plenty of &lt;a href="https://www.youtube.com/watch?v=9bZkp7q19f0"&gt;entertainment&lt;/a&gt; too. Sounds
+like fun.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>https://sef.kloninger.com/posts/youtube/</guid><pubDate>Wed, 26 Aug 2015 06:25:00 GMT</pubDate></item><item><title>Thick Apps Still Lose </title><link>https://sef.kloninger.com/posts/thick-apps/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/online-required.png" alt="Microsoft Excel 2016 Error Message" width="60%"&gt;&lt;/p&gt;
+&lt;p&gt;Thick apps won mobile. Fine. &lt;/p&gt;
+&lt;p&gt;On laptop (and desktop) it's not so clear. What is better, thick or thin?
+I tend to live mostly in thin land, although I use some thick apps
+regularly, like Twitter's Mac client and Apple Photos.&lt;/p&gt;
+&lt;p&gt;Every so often I give a big native app a try: &lt;strong&gt;Excel&lt;/strong&gt; instead of
+&lt;strong&gt;Google Sheets&lt;/strong&gt;, &lt;strong&gt;Mail.app&lt;/strong&gt; instead of &lt;strong&gt;Gmail&lt;/strong&gt;, &lt;strong&gt;Reminders&lt;/strong&gt;
+instead of the barebones &lt;strong&gt;Tasks&lt;/strong&gt; built into Gmail. (I can't bring myself
+to try Word). But it's disappointing to see how those fancy apps keep
+shooting themselves in the foot!&lt;/p&gt;
+&lt;p&gt;Take for example this Excel error message. Excel is whining that it
+can't verify my subscription the first time I ran Excel untethered
+(version 15.11.2, for what its worth). Sure you can click through the
+warning, but would a newbie know to do that? At best off-putting, at worst
+downright disorienting. Why warn me of this at all? And why in a modal
+that stops me dead in my tracks?&lt;/p&gt;
+&lt;p&gt;It seems thick apps should win. They rock the unplugged use case. An even
+better situation is flaky networks -- tethered, conference WiFi,
+travelling. UI's deal notoriously poorly with intermittent or partial
+outages. A thick client, relying on that connection only for hitting
+API's, can hide the network.&lt;/p&gt;
+&lt;p&gt;Another place they should shine is the UI itself. They should be fast,
+beautiful, and featureful. Too often they're not. For example I find
+Mail.app to be clunky, difficult to customize, and its keyboard shortcuts
+few and poorly done. Gmail is pretty good!&lt;/p&gt;
+&lt;p&gt;Finally there's the upgrade problem. Thick apps need conscious effort from
+their users before their work sees user time and they get feedback. And
+that's what drives innovation. Long cycles means slower (less) invention.
+One example I love is Gmail's "undo send" feature. Boy, you sure do miss
+that when you need it and it's not there! That should be on every thick
+client by now, but I don't think it is. I do know that Gmail has it and
+Mail.app still doesn't.&lt;/p&gt;
+&lt;p&gt;Maybe the Internet can help. Look at &lt;strong&gt;&lt;a href="https://www.getchrome.com/"&gt;Chrome&lt;/a&gt;&lt;/strong&gt; with its awesome auto
+updates. What makes this work is solid engineering and exceptional quality
+control. I've never seen behind the Google curtain, but I bet there's no
+magic, just a lot of good engineering that leads to good software. Like:
+good design and code reviews, tons of test coverage across many scenarios,
+diverse and well-instrumented canaries, and thorough performance and
+resource use testing. If Google didn't all of that so well, then we
+wouldn't accept frequent pushes. Without the frequent upgrade cycle,
+Chromes feature cycle would languish.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://www.getelectron.com/"&gt;Electron&lt;/a&gt;&lt;/strong&gt; is another bright spot. This is the framework that gives
+Slack and GitHub's thick clients their fit and finish. It makes these feel
+like true native apps, even though they are mostly web controls with
+JavaScript the covers. Right-clicking still doesn't do what I want, and
+text controls are finicky, but it's close. But what those rough edges buy
+you, and the software producer, are frequent, reliable, and clean
+upgrades.&lt;/p&gt;
+&lt;p&gt;My natural preference would be for thick apps. If they were done well,
+I'd use them.&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/thick-apps/</guid><pubDate>Wed, 19 Aug 2015 20:20:00 GMT</pubDate></item><item><title>My Next Job</title><link>https://sef.kloninger.com/posts/job-15/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/snowflake.png" alt="Snowflake" width="25%"&gt;&lt;/p&gt;
+&lt;p&gt;I left &lt;a href="http://www.wavefront.com/"&gt;my last job&lt;/a&gt; a few weeks back and it's high time to look for a new
+one. If you're working on something interesting and think I could help, &lt;a href="mailto:sefklon@gmail.com"&gt;let
+me know&lt;/a&gt;! &lt;/p&gt;
+&lt;p&gt;It's nice to not have a day job while looking for another. I was lucky enough
+to do this &lt;a href="https://sef.kloninger.com/posts/201204my-sabbatical.html"&gt;once before in 2012&lt;/a&gt; which turned out great. I learned then
+that time and flexibility lets you talk to lots of friends and learn about a
+breadth of projects. I found a fun project in a new domain (&lt;a href="https://sef.kloninger.com/posts/201207on-line-education.html"&gt;online
+education&lt;/a&gt;), something I doubt I'd have found the normal way.&lt;/p&gt;
+&lt;p&gt;Maybe I'll get lucky again.&lt;/p&gt;
+&lt;p&gt;Enough small talk, what am I looking for?&lt;/p&gt;
+&lt;p&gt;I'm looking for some flavor of &lt;strong&gt;line manager&lt;/strong&gt;. I'm a good senior manager and
+code-every-day engineer; but I'm exceptional leading a team and running a
+project. That's what line managers do: lead engineers, not other managers or
+departments or matrix-anything. Also, if you're some kind of executive then
+coding is an indulgence, and I'd rather it just be part of my job. Mostly I'm
+talking to &lt;strong&gt;small companies&lt;/strong&gt;, say 10-100 people (fun-size).&lt;/p&gt;
+&lt;p&gt;I want to &lt;strong&gt;build on my experience&lt;/strong&gt;. I know infrastructure and cloud, SaaS
+and enterprise, and online education. I'm probably not the best person for
+your storage, security, gaming, e-commerce, or cryptocurrency company. I want
+to stay working on &lt;strong&gt;Internet technology&lt;/strong&gt;. I like the (micro)services model.
+For my own projects I choose Python, JavaScript (frontend and backend), and
+Java. I know web operations, especially the &lt;a href="https://sef.kloninger.com/posts/aws.html"&gt;Amazon stack&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Location&lt;/strong&gt; is important: I don't want to do a daily Menlo Park to San
+Francisco round-trip. I'd like to &lt;strong&gt;work with friends&lt;/strong&gt; if possible. And I
+want to do something &lt;strong&gt;worthwhile&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;You can always get to my resume from the header here, or via this &lt;a href="http://bit.ly/sef-resume"&gt;short
+link&lt;/a&gt;. I'm open to a bunch of things, just no &lt;a href="https://www.youtube.com/watch?v=VEgu7jdc_fs"&gt;kick boxing&lt;/a&gt;.  Let's
+have coffee/drink or take a walk.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>https://sef.kloninger.com/posts/job-15/</guid><pubDate>Sun, 10 May 2015 16:30:00 GMT</pubDate></item><item><title>Lessons from Three Years in AWS</title><link>https://sef.kloninger.com/posts/aws/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/aws.png" alt="AWS Logo" width="30%"&gt;&lt;/p&gt;
+&lt;p&gt;I've spent the last three years building and operating web sites
+with Amazon Web Services and here are a few lessons I've learned. 
+But I first have to come clean that I'm a fan of AWS with only
+casual experience with other IAAS/PAAS platforms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;S3 Is Amazing&lt;/strong&gt;. They made the right engineering choices and
+compromises: cheap, practically infinitely scalable, fast enough,
+with good availability. $0.03/GB/mo covers up for a lot of sins.
+Knowing it's there changes how you build systems.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;IAM Machine Roles From The Start&lt;/strong&gt;. IAM with &lt;a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html"&gt;Instance Metadata&lt;/a&gt;
+is a powerful way to manage secrets and rights. Trouble is you can't add
+to existing machines. Provision with machine roles in big categories
+(e.g. app servers, utility machines, databases) at the start, even if 
+just placeholders.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Availability Zoness Are Only Mostly Decoupled&lt;/strong&gt;. After the 2011
+&lt;a href="http://www.networkworld.com/article/2202805/cloud-computing/amazon-ec2-outage-calls--availability-zones--into-question.html"&gt;us-east-1 outage&lt;/a&gt; we were reassured that a coordinated 
+outage wouldn't happen again, but it happened again just
+&lt;a href="https://www.reddit.com/r/aws/comments/2zpag7/aws_internal_dns_outage/"&gt;last month&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;They Will Lock You In And You'll Like It&lt;/strong&gt;. They secondary services
+work well, are cheap, and are handy. I'm speaking of SQS, SES,
+Glacier, even Elastic Transcoder. Who &lt;em&gt;wants&lt;/em&gt; to run a durable queue
+again?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CloudFormation No&lt;/strong&gt;. It's tough to get right. My
+objection isn't programming in YAML, I don't mind writing Ansible plays, it's the
+complexity/structure of CloudFormation that is impenetrable. Plus
+even if you get it working once, you'd never run it again on something
+that is running.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Boto Yes&lt;/strong&gt;. Powerful and expressive. Don't script the CLI, use
+Boto. Easy as pie.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Qualify Machines Before Use&lt;/strong&gt;. Some VMs have lousy networking,
+presumably due to a chatty same-host or same-rack neighbor. Test
+for loss and latency to other hosts you own and on EBS. (I've used
+home-grown scripts, don't know of a standard open-source widget,
+someone should write one).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VPC Yes&lt;/strong&gt;. If you have machines talking to each other (i.e. not a
+lone machine doing something lonely) then put them in a VPC. It's not
+hard.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NAT No&lt;/strong&gt;. You think that'll improve security, but it will just
+introduce SPOFS and capacity chokepoints. Give your machines publicly
+routable IP's and use security groups.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Network ACLs Are A Pain&lt;/strong&gt;. Try to get as far as you can with just security
+groups.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You'll Peer VPC's Someday&lt;/strong&gt;. Choose non-overlapping subnet IP ranges
+at the start. It's hard to change later.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spot Instances Are Tricky&lt;/strong&gt;. They're only For a very specific use
+case that likely isn't yours. Setting up a test network? You can
+spend the money you save by using spot on swear jar fees.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pick a Management Toolset&lt;/strong&gt;. Ansible, Chef, all those things aren't
+&lt;em&gt;all&lt;/em&gt; that different when it comes down to it. Just don't dither back
+and forth. There's a little bit of extra Chef love w/ AWS but not enough to tip
+the scales in your decision I'd reckon. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tech Support Is Terrible&lt;/strong&gt;. My &lt;a href="http://www.wavefront.com/"&gt;last little
+startup&lt;/a&gt; didn't get much out of the &lt;a href="https://aws.amazon.com/premiumsupport/"&gt;business level tech
+support&lt;/a&gt; we bought. We needed it so we could call in to get
+help when we needed it, and we used that for escalating some problems.
+It was nice to have a number to call when I urgently need to up a
+system limit, say. But debugging something real, like a networking
+problem? Pretty rough.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;...Unless You Are Big&lt;/strong&gt;. Stanford, on the other hand, had a named
+rep who was responsive and helpful. I guess she was sales, but I
+used her freely on support issues and she worked the backchannels
+for us. Presumably this is what any big/important customer would
+get, that's just not you, sorry.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Real Power Is On Demand&lt;/strong&gt;. I'm reaffirming cloud
+koolaid here. Running this way lets you build and run systems
+differently, &lt;em&gt;much better&lt;/em&gt;. I've relied on the cloud this to bring
+up emergency capacity. I've used it to convert a class of machines
+on the fly to the double-price double-RAM tier when hitting a
+surprising capacity crunch. There are a whole class of problems
+that get much easier when you can have 2x the machines for just a
+little while.  When someone comes to you with that cost/benefit
+spreadsheet arguing why you should self-host, that's when you need
+your file of "the cloud saved my bacon" stories at the ready.&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/aws/</guid><pubDate>Fri, 24 Apr 2015 07:10:00 GMT</pubDate></item><item><title>CS Students: Learn to Write</title><link>https://sef.kloninger.com/posts/learn-to-write/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/writing-hand.jpeg" alt="Writing Hand" width="40%"&gt;&lt;/p&gt;
+&lt;p&gt;If I could do my college years over I would focus on writing. I
+would take courses that required a lot of writing, in the spirit
+of "learn by doing". I'd also take courses in the mechanics and
+craft: grammar, vocabulary, and rhetoric.&lt;/p&gt;
+&lt;p&gt;I used to consider myself a competent writer. And certainly good
+enough for an engineer, right? But I've learned that I have a long
+way to go. I've learned that engineers spend much more time writing
+than you expect. And I appreciate how hard it is to write well.&lt;/p&gt;
+&lt;p&gt;This came up just this past week. I came across a beautiful four
+page essay. It laid out the problem, described alternatives, and
+lead you concisely to a well-reasoned conclusion. Sure, it was about
+technology, but what carried the day was the good writing. Humbling!&lt;/p&gt;
+&lt;p&gt;You're saying: but wait, you're a &lt;a href="http://en.wikipedia.org/wiki/Pointy-Haired_Boss"&gt;pointy-haired boss&lt;/a&gt; now
+Sef, one of those guys who doesn't do &lt;em&gt;Real Work&lt;/em&gt; anymore. You write
+email and boss people around. I understand why managers like you
+need to write, I'm an engineer. I write code. Well, there's some
+truth to that. But I'd like to convince you that even monster coders,
+if they're any good, write a lot, write well, and value good writing
+in others.&lt;/p&gt;
+&lt;p&gt;It is rare for someone to do their work in isolation and have it
+matter. Either you're working as part of a team, in a company or
+a community of developers, say on an open-source project. Sure, you
+build a great system or feature. But to have it matter to the world,
+for others to adopt it, you need to document, publicize, support,
+teach. 98% of that is writing.&lt;/p&gt;
+&lt;p&gt;I had a lunchtime conversation with &lt;a href="http://jacobian.org/writing/great-documentation/"&gt;Jacob Kaplan-Moss&lt;/a&gt;,
+Django's co-founder, at last year's PyCon. I asked him why Django
+caught on and was adopted by so many of us (including &lt;a href="http://class2go.stanford.edu/"&gt;my last
+project&lt;/a&gt; and &lt;a href="http://code.edx.org/"&gt;my current project&lt;/a&gt;). I was expecting him
+to point to features or timing. Instead he said it was "because we
+wrote good docs". The Django team didn't treat documentation as an
+afterthought. They have lots of docs, and they are good.&lt;/p&gt;
+&lt;p&gt;Consider that rare bird, the iconoclastic engineer working in
+isolation on their own project. I'm thinking of &lt;a href="http://antirez.com/"&gt;Antirez&lt;/a&gt; or
+&lt;a href="http://www.marco.org/"&gt;Marco&lt;/a&gt;. (Maybe they aren't even truly on their own so much.
+Humor me!) They are prolific and strong coders. But they also write
+a lot of words! They write a ton about their project; also tech
+landscape and their place in it. Would their software have as much
+of an impact if they didn't write so much (and well)? I say no.&lt;/p&gt;
+&lt;p&gt;Case in point. Both Marco and I wrote blog posts riffing off the
+same topic two weeks ago. First, read &lt;a href="http://sef.kloninger.com/posts/consume-produce-public.html"&gt;mine&lt;/a&gt;, then
+&lt;a href="http://www.marco.org/2014/01/03/the-builders-high"&gt;his&lt;/a&gt;.  It takes me a ton of words to get something
+basic out.  His is concise and clear. Sheesh.&lt;/p&gt;
+&lt;p&gt;So kids, don't shortchange those liberal arts classes. It's not
+fluffy stuff on the side. &lt;strong&gt;That is core&lt;/strong&gt;. You need to write well
+to be a good engineer.&lt;/p&gt;
+&lt;p&gt;Protip: the best way to do this is to major in the humanities. They
+write like crazy over there. Be like my friend Dan Chu and major
+in history, but secretly take CS courses on the side. If you're
+super smart like him, and can manage getting both degrees, then
+you're awesome. But don't sacrifice the BA for the BS. I would
+&lt;strong&gt;love&lt;/strong&gt; to talk to a candidate with with a History BA and a Computer
+Science MS.&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/learn-to-write/</guid><pubDate>Sun, 26 Jan 2014 00:17:00 GMT</pubDate></item><item><title>Switching to Static</title><link>https://sef.kloninger.com/posts/switching-to-static/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/tesla.jpg" alt="Nikola Tesla" width="195" height="228"&gt;&lt;/p&gt;
+&lt;p&gt;For those of you who frequently read this blog (n ≈ 0) you'll
+notice that it looks a bit different. I've moved it from my own
+hosted Wordpress instance to static pages generated by &lt;a href="http://www.getnikola.com/"&gt;Nikola&lt;/a&gt;
+and hosted up on &lt;a href="http://www.github.com/"&gt;Github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Why bother?  I didn't like my blog being something I wouldn't be
+proud to write or operate myself.  Wordpress was overkill and
+not worth the trouble:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Wordpress is database driven for dynamic sites. My little blog isn't
+  dynamic at all. Once you buy into the static idea, lots of otehr
+  things fall into place.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Comments and account spam are still is a nuisance. The nice
+  people at &lt;a href="http://akismet.com/"&gt;Akismet&lt;/a&gt; have done a great job holding back the tide, 
+  but I still get at least one bogus registration a day. I expect a 
+  service like Disqus or Facebook or Google+ will be more likely
+  to keep pace with the spammers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I want to author in markdown; maybe even ReST someday. All this
+  wysiwyg-ish stuff in browsers is for the birds.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I don't actually need to host anything. I'm not running my own IRC
+  server or anything. Even though &lt;a href="http://dreamhost.com/"&gt;Dreamhost&lt;/a&gt; has been a perfectly
+  good service, I just want something... well, less Wordpress-ey.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Choosing&lt;/h3&gt;
+&lt;p&gt;So I need to pick a static web site hosting package, specifically
+one that is good for blogs.  The big things I was looking for:
+static site generation, Markdown/ReST support, and ability
+to host on free services like Github Pages.&lt;/p&gt;
+&lt;p&gt;In additon I wanted these things (in no particular order):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;active development&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;in real use on real sites&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;easy customization, ideally by theming&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ability to move over posts and comments, probably via Wordpress's
+  export function.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;python, what I program in for fun&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;a bit extensible&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I considered three options before settling on Nikola.  There are a
+ton of static site generators, even when you limit them to Python.
+But the only alternatives I seriously looked at were &lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt; and
+&lt;a href="http://ringce.com/hyde"&gt;Hyde&lt;/a&gt;.  Of these Nikola seems to have the most active development
+and the richest set of features.  I ease especially drawn by their
+good documentation and theming.&lt;/p&gt;
+&lt;h3&gt;Up and Running&lt;/h3&gt;
+&lt;p&gt;Here are my notes of what it took.  This isn't a nicely-written howto,
+but if you want to see the blow-by-blow, read on.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The software was easy to set up and get started&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;pip install nikola&lt;/code&gt; did the right thing.  Of course
+  within a virtual environment, you have to keep the lab clean!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Along the way I found a few other requirements, like request,
+  phpserialize, and markdown. These were easy to find/fix because of
+  helpful error messages.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This is all now captured in the project's &lt;code&gt;requirements.txt&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Initial import from wordpress XML dump went &lt;em&gt;ok&lt;/em&gt; but a fair bit of
+   manual HTML prettification took some time.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The slugs aren't how I like them: &lt;code&gt;201311seven-things.wp&lt;/code&gt; 
+  instead of &lt;code&gt;seven-things.wp&lt;/code&gt;.  I tried a bit to do mass
+  rewrite of those, but couldn't easily do that without breaking
+  everything, so just decided to let this go for now.  I'll just do
+  slugs without dates going forward.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I considered &lt;a href="http://www.aaronsw.com/2002/html2text/"&gt;html2text&lt;/a&gt; but figured I'd just let the HTML 
+  slide for now. Too much trouble to go back and clean all that
+  up now.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The "wp" extension, by default, is mapped to markdown instead of
+  html.  Odd but easy to change.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nikola has a nice simple redirect facility that the importer
+  pre-populated for me.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Migrate threads to &lt;a href="http://disqus.com/"&gt;Disqus&lt;/a&gt; - clean and simple,
+   worked right out of the box.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;wordpress plugin has a nice import facility.  Said it'd take a
+  day, but didn't take that long at all.  Aside from one thread with 
+  75 comments, not much else that should cause them much heartache.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;nice simple URL mapping utility&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Publishing to github. Again, easy peasy. The way to make this work
+   is to put all your static files in a repo titled
+   &lt;code&gt;USERNAME.github.io&lt;/code&gt;.  In my case: 
+   &lt;code&gt;&lt;a href="https://github.com/sefk/sefk.github.io"&gt;sefk.github.io&lt;/a&gt;&lt;/code&gt;.  Just 
+   a couple of "tricks" were needed to make this work smoothly:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;So that it would correctly serve my own domain, you have to put a
+     CNAME file in the root of the repo&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I put my nikola themes and source files in the "src" subdirectory,
+     and changed the &lt;code&gt;OUTPUT_DIR&lt;/code&gt; configuration option to
+     &lt;code&gt;..&lt;/code&gt;.  Github Pages wants things in the root.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The final swich.  I moved my domain from Dreamhost over to
+   &lt;a href="http://gandi.fr/"&gt;Gandi&lt;/a&gt;, which is the registrar I like to use.  They throw in
+   basic DNS with registration, which is sufficient for me.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;So There You Have It&lt;/h3&gt;
+&lt;p&gt;So far I am really pleased with the result. It's a bit more work to
+publish, but for me that's natural and what I want. I guess I wouldn't
+recommend this to someone who isn't adept with all these bits (virtual
+environments, DNS, github repos, etc.) but for me that's no problem.&lt;/p&gt;
+&lt;p&gt;Thanks to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Using livereload with Nikola makes for a very nice workflow. Check
+  out &lt;a href="http://serialized.net/2013/04/nikola-and-livereload-ftw/"&gt;this blog post&lt;/a&gt; that describes how. Very helpful post,
+  thanks to Joshua Barratt for sharing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This &lt;a href="http://kushaldas.in/posts/importing-your-wordpress-blog-to-nikola.html#uploading-your-blog-site-as-github-pages"&gt;helpful post by Kaushal Das&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/switching-to-static/</guid><pubDate>Mon, 30 Dec 2013 09:35:23 GMT</pubDate></item><item><title>Airmail FTW</title><link>https://sef.kloninger.com/posts/201312airmail/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-454" style="border: 0px;" alt="airmail" src="https://sef.kloninger.com/f/airmail.png" width="179" height="179"&gt;Finally a thick-client email program that seems to have stuck. So far I am really liking &lt;a href="http://airmailapp.com/"&gt;Airmail&lt;/a&gt;.
+
+&lt;p&gt;
+For years I've flipped between various Mac fat clients and the GMail web interface. The web interface keeps winning:
+
+&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;ul&gt;
+	&lt;li&gt;Outstanding search&lt;/li&gt;
+	&lt;li&gt;Great keyboard shortcuts (go Vi!)&lt;/li&gt;
+	&lt;li&gt;Very good use of screen real estate&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+But the killer is the reliance on a rock-solid Internet connection, and GMail's own slowdowns. Even though there is an offline mode, it is such a downgrade it's not worth using. So if you need to use offline you're in bad shape; same if you're on a slow or lossy connection, or if GMail is having a bad day.  Sadly, that's pretty often these days.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Airmail is cheap (&lt;a href="https://itunes.apple.com/us/app/airmail/id573171375?mt=12"&gt;$1.99 in the App Store&lt;/a&gt;) and super featureful. It coexists well with GMail's paradigm (archive vs. delete, threading includes sent items, drafts). Great configuration options. Visually pleasing. Robust.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+There are really only three places where it has fallen short for me:
+
+&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;ul&gt;
+	&lt;li&gt;I miss GMail's tabs. Those are still the best way to filter mail, and I was impressed with how well that feature worked and quickly became natural.&lt;/li&gt;
+	&lt;li&gt;Search. Airmail's isn't bad, but nothing is as good at this as Google's own.&lt;/li&gt;
+	&lt;li&gt;Gmail (with Chrome) has a great feature where you can drop in a picture and it is resized to look good.  Lacking that I now have to manually resize my giant retina-display screenshots.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+So-long to &lt;a href="http://sparrowmailapp.com/"&gt;Sparrow&lt;/a&gt; and &lt;a href="http://www.apple.com/osx/apps/#mail"&gt;Mail.app&lt;/a&gt; and &lt;a href="http://mailplaneapp.com/"&gt;Mailplane&lt;/a&gt;. Or until someone does really nails &lt;a href="https://www.mailpile.is/"&gt;self-hosting&lt;/a&gt;.&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/201312airmail/</guid><pubDate>Tue, 03 Dec 2013 04:10:50 GMT</pubDate></item><item><title>K&amp;R C Programming, Quantum Books, Cambridge, MA</title><link>https://sef.kloninger.com/posts/201309knr-c-label/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p style="text-align: left;"&gt;&lt;img class="alignright  wp-image-433" style="border: 0px;" alt="IMG_4177" src="https://sef.kloninger.com/f/IMG_41771-231x300.jpg" width="139" height="180"&gt;
 
 &lt;/p&gt;&lt;p&gt;
 Today in a box I came across my old K&amp;amp;R. Probably the most valuable book I've owned. My copy has been heavily used.&lt;/p&gt;
@@ -25,453 +543,4 @@ There is a lot in there.
 &lt;/ul&gt;
 
 &lt;p&gt;
-It was fun being reminded of all this stuff. So the lesson of the story: it's still worth buying books, and when you do, don't remove the labels.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>https://sef.kloninger.com/posts/201309knr-c-label/</guid><pubDate>Sun, 15 Sep 2013 00:41:20 GMT</pubDate></item><item><title>Launch Day</title><link>https://sef.kloninger.com/posts/201306launch-day/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="https://sef.kloninger.com/f/spaceshuttle-300x283.png" width="180" height="170"&gt;
-
-&lt;p&gt;
-Today was launch day. It went really well.  I wanted to capture what a good launch feels like and contrast that with a more exciting launch, just five months ago.
-
-
-&lt;/p&gt;&lt;p&gt;
-Today we turned on our first class on Stanford's instance the open-source &lt;a href="http://code.edx.org"&gt;edX platform&lt;/a&gt;, what we're calling &lt;a href="http://online.stanford.edu/openedx"&gt;OpenEdX&lt;/a&gt;. The class is &lt;a href="https://class.stanford.edu/courses/Medicine/HRP258/Statistics_in_Medicine"&gt;Statistics in Medicine&lt;/a&gt;, taught by Kristin Sainani of the Stanford School of Medicine. With over thirteen thousand students signed up it's a medium-sized MOOC (Massive Open Online Course).
-
-
-
-&lt;/p&gt;&lt;p&gt;
-We have launched MOOC's for Stanford before: two in &lt;a href="http://networking.class.stanford.edu/"&gt;Fall&lt;/a&gt; &lt;a href="http://solar.class.stanford.edu/"&gt;Quarter&lt;/a&gt;, and one in &lt;a href="http://db.class.stanford.edu/"&gt;Winter&lt;/a&gt;. Even though the classes were huge success, but the launch days weren't so smooth. We had written that platform, &lt;a href="http://class2go.stanford.edu/"&gt;Class2Go&lt;/a&gt;, from the ground up with a small team in a dozen weeks in Fall; in the weeks before the Winter launch we ripped out the whole evaluation system, about one-third of the code, and replaced it with a whole new engine. In both cases most of our code was fresh off the presses.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-Those launches were rocky. I'll tell the story of the DB class launch in January. The first thing we do is a "soft launch," where you open the front door and some people find their way in. Those first visits give you a sense of how things will go.  Surprisingly, the servers were a bit busy.  But we wanted to keep going, so we scaled up capacity and moved on.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-The thing that drives real traffic is the announcement email. That gets people to the site. The announcements started going out, students started coming in, and the site lit up. We were in hot water. Servers were overloaded, and most surprising, the database was getting hammered. This was scary and unexpected. We control-C'ed the mail job and quickly hacked additional caching into the site.  We had to trickle out announcements over the next twelve hours.  We made it, but it was a long, stressful day.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-And then the days/weeks post-launch were spent watching graphs, triaging 500 errors (user-visible "we're sorry" pages), and installing daily hotfixes. But we got through it. The classes were a success and the team was proud.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-So, contrast that to today's launch.  Totally different.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-Everyone came in early as usual. I bought bagels. We turned on the class (soft-launch) and the servers hardly noticed. We sent the announcement mails, people came and took their pre-course survey and watched the intro video. Hardly any load. This chart shows the average CPU on our four appservers from 8:00 AM PDT / 15:00 UTC until 10:45 AM or so.
-
-
-
-&lt;/p&gt;&lt;p align="center"&gt;
-&lt;img class="alignnone  wp-image-414" style="border: 0px;" alt="launch-app-cpu" src="https://sef.kloninger.com/f/launch-app-cpu1.png" width="1530" height="373"&gt;
-
-
-
-&lt;/p&gt;&lt;p&gt;
-Those are happy servers. Other charts we watched (db connections, load, etc.) told the same story. The most impressive thing was not a single user visible error, no 500's!
-
-
-
-&lt;/p&gt;&lt;p&gt;
-Those folks at edX made some solid software.  We're happy to be working with a strong group of engineers and a quality product.  We've had our hands on it only since April, and it was released open-source to the world on June 1.  I fully expect a lot of other universities and organizations are going to have a great time running classes on OpenEdX too.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-I just turned off half the appservers since we're fine on capacity. Now off to bed with a good feeling.
-
-&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>https://sef.kloninger.com/posts/201306launch-day/</guid><pubDate>Wed, 12 Jun 2013 05:59:24 GMT</pubDate></item><item><title>Coding on a Flight</title><link>https://sef.kloninger.com/posts/201304coding-on-a-flight/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-408" style="border: 0px;" alt="airplane" src="https://sef.kloninger.com/f/airplane-300x126.png" width="240" height="101"&gt;
-
-&lt;p&gt;
-I'm surprised that that I like coding on flights. It's surprising because airplanes are generally hostile environments for most things, but I've found it a good place to code.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-The obvious reason is the lack of interruptions and distractions. Usualy there is no wifi, or it is too spotty to count on. So no email or IRC or web. While I know that distractions kill flow, I never seem give myself license to unplug in normal life. I'm a manager, and being a manager means being interruptible.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-But there's another reason. When I code unplugged, I code differently. I have to be self-sufficient. Instead of just looking things up on StackOverflow, I take 20% more time to figure it out myself. That's much more satisfying! It's just not that hard to rummage through the Django code or try things out in iPython.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-Also it just sounds cool to say you coded something up on the flight.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-But thre real question is should simulate "airplane mode" when grounded.  Hmm.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>https://sef.kloninger.com/posts/201304coding-on-a-flight/</guid><pubDate>Tue, 09 Apr 2013 05:30:38 GMT</pubDate></item><item><title>"Low" Retention Rates in Online Education Isn't Necessarily A Bad Thing</title><link>https://sef.kloninger.com/posts/201303online-ed-retention/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-400" style="border: 0px;" alt="Evaluate-300x198" src="https://sef.kloninger.com/f/Evaluate-300x198.png" width="240" height="158"&gt;
-
-&lt;p&gt;
-I am of two minds about &lt;a title="Peter Reinhardt" href="http://rein.pk/online-educations-dirty-secret-awful-retention/" target="_blank"&gt;Peter Reinhardt post today&lt;/a&gt; calling out online education's poor retention rates.
-
-
-&lt;/p&gt;&lt;p&gt;
-I agree that retention rates are low. At Stanford we we just completed the Winter run of Jennifer Widom's &lt;a title="Introduction to Databases" href="http://db.class2go.stanford.edu/" target="_blank"&gt;Database Class&lt;/a&gt;, here are the course stats:
-
-&lt;/p&gt;&lt;p&gt;
-&lt;/p&gt;&lt;ul&gt;
-	&lt;li&gt;Registered: 64,127&lt;/li&gt;
-	&lt;li&gt;Turned in some work: 20,836&lt;/li&gt;
-	&lt;li&gt;Took the final exam: 4,771&lt;/li&gt;
-	&lt;li&gt;Received a Statement of Accomplishment: 4,854 (1,927 with distinction)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-How do I feel that 23% of students who started the class finished? Or that only 7.6% who enrolled finished? Mostly I'm fine with that. I think there's a lot of value in someone kicking the tires. Some were experimenting with on-line education, some didn't know before hand if the class would be right for them. I share &lt;a title="Curt Bonk, University of Indiana" href="http://php.indiana.edu/~cjbonk/" target="_blank"&gt;Curt Bonk&lt;/a&gt;'s view that this shouldn't be seen as a black mark but as another form of outreach.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-I consider this over forty thousand people who got some exposure to the topic, the platform, and what this MOOC thing is all about.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-But I totally agree that increasing retention is a worthwhile goal and a valuable metric.   Online education platforms (mine included) should do what we can to keep students engaged.  This article has many good suggestions.  And there's a lot of room for experimentation.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-(disclaimer: I'm the engineering manager on &lt;a title="Class2Go from Stanford" href="http://class2go.stanford.edu/" target="_blank"&gt;Class2Go&lt;/a&gt;, the open-source MOOC platform we've built at Stanford)&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>https://sef.kloninger.com/posts/201303online-ed-retention/</guid><pubDate>Sun, 31 Mar 2013 19:23:15 GMT</pubDate></item><item><title>Why Is That Feature Taking So Long?</title><link>https://sef.kloninger.com/posts/201301why-so-long/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-394" style="border: 0px;" alt="turd-polish" src="https://sef.kloninger.com/f/turd-polish.png" width="191" height="182"&gt;
-
-&lt;p&gt;
-I've observed a recurring source of tension:  building things fast vs. do it the right way. Usually you're not lucky enough that you can do both.  This post explains a bit why we (engineers) care so much about building things right.  Even when things are overdue and our stakeholders (end-users, biz folks, product management) are pushing to just get it done.
-
-
-&lt;/p&gt;&lt;p&gt;
-You can describe the two poles here in pejorative terms.  Fast is slapdash, quick and dirty, bad software.  The right way is really just ivory-tower over-engineered turd polishing.  Is that fix really so important that we shouldn't ship it? Do you really need to refactor that now?
-
-
-
-&lt;/p&gt;&lt;p&gt;
-I see three things driving engineers to build it right.
-
-&lt;/p&gt;&lt;p&gt;
-&lt;/p&gt;&lt;ol&gt;
-	&lt;li&gt;&lt;strong&gt;Wrong is insidious&lt;/strong&gt;. A story: early on in Class2Go every page began with a fetch of some basic page data. If there was an error on lookup we would throw a 404. Not only is "not found" the wrong message, but it also isn't helpful. It covers up all kinds of other problems, in a way that is really difficult to debug.But for an engineer, these programming messes are &lt;a href="http://en.wikipedia.org/wiki/Broken_windows_theory"&gt;broken windows&lt;/a&gt;. Not only do they cheapen the project, they encourage others to take bad shortcuts. Heck, if they can't be bothered to handle exceptions correctly, then why should I?&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Wrong is the express train to support hell.&lt;/strong&gt; Unless you leave the company or project, you'll be called upon to support your own crappy code. That is certain. And there is almost nothing worse than being dragged back to debug some old code that you never meant to become production, and is now breaking the world.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Wrong hurts your reputation as an engineer&lt;/strong&gt;. People see you taking shortcuts and infer that you are a sloppy programmer. And really they aren't wrong to do so. One habit of really good engineers is they don't leave a wake of messes behind them. They are able to do things (mostly) right even when they are moving fast.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;
-This last point is really the key one. Amongst engineers your reputation is your hard currency. It affects what projects you're invited to work on and what companies you'll be asked to join. Most importantly, good engineers only want to work with other good engineers, and they won't seek out someone sloppy. So I assume that any code I write will be looked at by a potential colleague or employer. This is especially true when working on an open-source project.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-This doesn't mean you have to go slow -- indeed, on my current project, &lt;a href="http://class2go.stanford.edu/" target="_blank"&gt;Class2Go&lt;/a&gt;, we get a lot done every week. What it does mean is that sometimes I'd rather not do something than do something I know will come out poorly.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-So, product manager waiting on a feature. What to do if you're waiting on an engineer and you think it's taking too damn long? The tactic **not** to use: tell them this won't matter and to just ship it. That will just piss him off. Better: get your senior engineer to convince the junior one why it's good enough to ship and reason about what really needs to get done. Exception: if the engineer you're waiting on is your senior engineer, then trust her judgment and wait.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-And finally, to you product managers and biz folks who push. You are right do do so. That's all that matters to the customers, all matters at the end of the day. Keep it up.&lt;/p&gt;</description><category>Management</category><category>Technology</category><guid>https://sef.kloninger.com/posts/201301why-so-long/</guid><pubDate>Fri, 25 Jan 2013 09:24:48 GMT</pubDate></item><item><title>Managing Work-In-Progress Folders with "ls -ltr"</title><link>https://sef.kloninger.com/posts/201208wip-folders-with-ls/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="size-full wp-image-353 alignright" style="border: 0px;" title="blog-folder-done" src="https://sef.kloninger.com/f/blog-folder-done.png" alt="" width="107" height="41"&gt;
-
-&lt;p&gt;
-I've developed a nice little way to manage my work in progress folders.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-I keep a bunch of folders around where I can stick things that are in-flight: one for home projects, one for blogs, etc. I like accumulating ideas in there, one idea per file, that I can come back to and fuss over until something is ready.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-The folder is flypaper for ideas and notes.  My blog folder has about twenty files right now.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-Using "ls", and relying on file and directory modification times, is a useful way to keep track of all these files.  Here's how.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-As projects are finished I move them into a "done" folder. This gets them out of the way.  A useful side effect is the modification time of the done directly itself gets updated.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-The in-flight projects I care about most are the ones most recently updated: as an idea gets older it becomes less and less interesting.  When looking at this directory I use the "ls -ltr" command.  "l" means long (so you can see dates), "t" means sort by modification time, and "r" reverses that sort, so you see latest modified on the bottom.
-
-&lt;/p&gt;&lt;p align="center"&gt;
-&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img class="aligncenter  wp-image-352" style="border: 0px;" title="blog-folder-detail" src="https://sef.kloninger.com/f/blog-folder-detail.png" alt="" width="719" height="275"&gt;&lt;/p&gt;
-
-&lt;p&gt;
-The old files are at the top where I don't worry about them.  Some even scroll off the top of the screen, that's fine.  The done folder is a nice visual line for when something was last completed (say, published).  Having a separate color for directories makes this visually apparent.  And the bottom of the list are those most recently modified. Generally I work on the bottom up. Sometimes I go back to an old idea and add some notes. That bumps it to the top of the line -- it is interesting again.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-I probably type "ls -ltr" at least 5 times an hour.  I've never aliased it since my muscle memory is so strong (but maybe I still should).
-
-
-
- &lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>https://sef.kloninger.com/posts/201208wip-folders-with-ls/</guid><pubDate>Tue, 07 Aug 2012 08:56:53 GMT</pubDate></item><item><title>The Day I Took Down 100,000 Web Sites</title><link>https://sef.kloninger.com/posts/201207taking-down-100000-sites/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright size-full wp-image-343" style="border: 0px;" title="fire" src="https://sef.kloninger.com/f/fire.png" alt="fire alarm" width="300" height="240"&gt;
-
-&lt;p&gt;
-Every engineer has their "the day I did something very very bad" story. This is mine.
-
-
-&lt;/p&gt;&lt;p&gt;
-It was my last week at &lt;a href="http://www.ning.com/"&gt;Ning&lt;/a&gt;. For about a year I ran the Infrastructure and Operations group. It was the end of a good stretch, working with a strong team on hard problems.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-In early 2010 (before I joined) Ning had successfully switched from a premium to paid model. Of Ning's two million social networks some were thriving onine communities, but many weren't. Trading those in for one hundred thousand good paying customers had been the right thing for the business. We kept around the 1.9M orphaned sites for some time in case someone wanted to assume ownership and start paying. By late 2011 the revival rate had dropped low enough that it was time to clear out the cruft.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-I volunteered for the cleanup. I enjoyed little projects like this because it kept my hands in the code and took away a task that would be a chore and distraction for the engineers. The job was some SQL queries, scripting, load testing, checking, and double-checking. The hardest part was ensuring we had the right list of networks to delete.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-It took about two months to write and run the scripts. I felt good that it had gone through uneventfully.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-There was a legacy corner of our system that hadn't been included in my cleanup pass. I hadn't worried about it at first since it was just a few thousand networks. But now that I was leaving Ning I wanted to tie off my loose end projects, and this was one. I assembled the list of stragglers and ran my scripts. The 2,000 deletes went quickly. This was 11:00 AM on regular workday -- my last Wednesday on the job.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-I immediately knew that I had done something very wrong. Since I sat close to the Customer Advocacy group I heard their IM clients and phones light up. Every Ning page was a "We're Sorry" 404 page. Oh crap.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-It only took a couple of minutes to find the problem. One of the networks I had marked for deletion had core Javascript and CSS needed by every Ning network -- important stuff. The network, "socialnetworkmain" was known to everyone as being important, and if I had done my spot checks better, I would have seen it straight away. Instead, I had been sloppy.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-The backdoor method I was using bypassed the safeties we had in place to protect our "really important" networks.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-Luckily, &lt;a href="https://twitter.com/myelin"&gt;Phil&lt;/a&gt;, one of our top-notch infrastructure engineers was sitting close by and quickly restored the network through the backend. Things returned to normal almost immediately. That feeling of panic started to back off. The jokes started and we started to relax.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-It took us another few hours to find and fix second and third order effects of my snafu. The network creation flow was broken -- fixed. An in-house monitoring system was dying silently -- fixed. And so on.
-
-
-
-&lt;!-- Friday, August 18, 1995 --&gt;
-&lt;/p&gt;&lt;p align="center"&gt;
-&lt;a title="Dilbert strip where he screwed up big-time" href="http://dilbert.com/strips/comic/1995-08-18/"&gt;&lt;img src="https://sef.kloninger.com/f/dilbert-screwed-up.gif" alt="Dilbert.com" border="0"&gt;&lt;/a&gt;
-
-
-
-&lt;/p&gt;&lt;p&gt;
-I learned four lessons:
-
-&lt;/p&gt;&lt;p&gt;
-&lt;/p&gt;&lt;ol&gt;
-	&lt;li&gt;&lt;strong&gt;Undo is your friend.&lt;/strong&gt; The tooling or features to revert your change will take time, but you will be happy to have it if you ever need it.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Make changes during the day.&lt;/strong&gt; Resolving a hairy problem is hard if you don't have the right people, and when the people you do have are tired and foggy. This incident might have taken hours to resolve instead of minutes in the middle of the night.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;It's not over until it's over.&lt;/strong&gt; Once in crisis mode, you're eager to be get out of it. Once the main problem is solved it is tempting to exhale, go to lunch, go back to bed, whatever. But aftereffects might take a while to show up, or may just be harder to find.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Disproportionate effects.&lt;/strong&gt; We all know that our complex systems nonlinear failure modes. Incidents like these are reminders that small changes have big effects. Said another way, even small things should be taken seriously.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;
-My time at Akamai had prepared me well for managing a crisis. But it's nice to have a refresher course every now and then.
-
-
-
- &lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/201207taking-down-100000-sites/</guid><pubDate>Wed, 25 Jul 2012 17:56:57 GMT</pubDate></item><item><title>On-Line Education Is Really Interesting Right Now</title><link>https://sef.kloninger.com/posts/201207on-line-education/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-307" style="border: 0px;" title="lecture-hall" src="https://sef.kloninger.com/f/lecture-hall-300x199.jpeg" alt="" width="270" height="179"&gt;
-
-
-&lt;p&gt;
-I've joined a research project at Stanford University (my alma mater).  I am working with a small team to build a platform for on-line education. This post explains what we're building, my part in it, and why this is an interesting area right now.
-
-&lt;/p&gt;&lt;h2&gt;Class2Go&lt;/h2&gt;
-
-&lt;p&gt;
-We are building Class2Go, an application to put Stanford classes on line.  Envision a video-driven web site with exercises and tests.  It will run much like a class today (professors, TA's, lectures, homework, tests, schedules) but with everything happening on-line.  For some kinds of classes this could improve the classroom experience for enrolled students; the excitement comes when you can bring in the a much larger set of non-enrolled students.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-The professors who have expressed interest so far are those who want to &lt;a title="Flip teaching page on wikipedia" href="http://en.wikipedia.org/wiki/Flip_teaching" target="_blank"&gt;flip their classrooms&lt;/a&gt; or host a &lt;a title="Massive open online course page on wikipedia" href="http://en.wikipedia.org/wiki/Massive_open_online_course" target="_blank"&gt;Massive Open On-Line Course&lt;/a&gt; (MOOC). Others have ideas on experimentation with the learning process itself. For example, do students learn better when they see slides, a talking head, or both? A large enough student population makes meaningful studies possible and cheap.
-
-&lt;/p&gt;&lt;p&gt;
-There are a bunch of features needed over and above basic basic video.  First, can we devise a good system for students to grade each others work? This is an absolute must to do anything in the humanities at large scale.  We have some ideas of how to do peer evaluation, but it's an area that needs much more experimentation. A second important feature is enabling off-line use from laptops and tablets.  When we think of disconnected students we typically think of commuters, but we've heard it's just as important (or maybe more so) for students in developing countries where bandwidth is precious.
-
-&lt;/p&gt;&lt;p&gt;
-While there are &lt;a title="Link to Coursera site" href="https://www.coursera.org/" target="_blank"&gt;commercial&lt;/a&gt; &lt;a title="Link to Udacity site" href="http://www.udacity.com/" target="_blank"&gt;offerings&lt;/a&gt; to do this, and even things from other established &lt;a title="Link to Ed X site" href="http://www.edxonline.org/" target="_blank"&gt;universities&lt;/a&gt;, Class2Go will be different in three important ways:
-
-&lt;/p&gt;&lt;p&gt;
-&lt;/p&gt;&lt;ul&gt;
-	&lt;li&gt;Research will be first and foremost. Hey prof, you want to do a wacky experiment? We can help.&lt;/li&gt;
-	&lt;li&gt;Value produced by the course is retained and controlled by the professor and the university.  That value comes from the assets (video, homework) but even more so the community and technology.&lt;/li&gt;
-	&lt;li&gt;The professors will have quick and ready access to their data. No waiting in lines for reports.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-Stanford Professor Rob Reich made a very coherent argument for this in a &lt;a title="Rob Reich blog post comparing Universities to Newspapers" href="http://www.stanford.edu/group/reichresearch/cgi-bin/site/2012/05/18/sending-universities-down-the-path-of-the-newspaper-industry/" target="_blank"&gt;recent blog post&lt;/a&gt;. (Getting to work with smart people like him is a major job perq, by the way.)
-
-&lt;/p&gt;&lt;p&gt;
-Part of what makes this doable is that there are so many great building blocks available.  We plan to use YouTube for video and the &lt;a href="https://github.com/khan/khan-exercises" target="_blank"&gt;Khan Academy&lt;/a&gt; framework for exercises.   &lt;a href="https://piazza.com/" target="_blank"&gt;Piazza&lt;/a&gt; has great discussions and forums to start with. Because of all this good stuff, we feel good about getting something strong out by the Fall for a couple of courses, and then expanding from there.
-
-&lt;/p&gt;&lt;p&gt;
-And me?  I'm the line manager. It's fun to work on a project of this size where I can keep my hands dirty. For example, this week I'll be working on authentication (oauth).
-
-&lt;/p&gt;&lt;h2&gt;Why Education, Why Now?&lt;/h2&gt;
-
-&lt;p&gt;
-Two things brought me to education.
-
-&lt;/p&gt;&lt;p&gt;
-Firstly, education is uniquely important. I challenge you to name another human pursuit that is as important, consumes so many resources (for good reason), and can be so transformative when done well.  The other two that come to mind are health and agriculture. But I'd say education is right up there.
-
-&lt;/p&gt;&lt;p&gt;
-And second, education is changing right now. Of the meetings I've had while &lt;a title="My Sabbatical" href="http://sef.kloninger.com/2012/04/my-sabbatical/" target="_blank"&gt;on sabbatical&lt;/a&gt;  some of the most interesting have been about education. Why can't information technology have as big an impact on how people learn as it has had on everything else? Technology could mean making it available to to many more students, in different places and of different means. Educators could spend less time lecturing (dry stuff, to be sure) and more time working with students. Better measurement and analysis and could give educators near-real-time feedback and students tailor-made homework. Those are just a few of the examples that I heard about that got me excited.
-
-&lt;/p&gt;&lt;p&gt;
-I look forward to doing something that will make even a little difference here. I'll blog about my experiences along the way.
-
-&lt;/p&gt;&lt;p&gt;
-PS - &lt;a title="Peter Norvig @ TED" href="http://fm.schmoller.net/2012/07/peter-norvigs-ted-talk-about-the-ai-course.html" target="_blank"&gt;Peter Norvig's TED Talk&lt;/a&gt; captured the reasons and potential nicely.  That seven minutes is worth your time.
-
-&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>https://sef.kloninger.com/posts/201207on-line-education/</guid><pubDate>Mon, 09 Jul 2012 19:49:31 GMT</pubDate></item><item><title>FizzBuzz Questions for Engineering Managers </title><link>https://sef.kloninger.com/posts/201205fizzbuzz-for-managers/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="size-full wp-image-272 alignleft" style="padding:20px; float:left" title="fizzbuzz" src="https://sef.kloninger.com/f/fizzbuzz.png" alt="" width="116" height="166"&gt;
-
-&lt;p&gt;You probably wouldn't hire an engineer that you hadn't seen code. But people tend to hire  engineering managers without seeing them manage. I contend that's a big oversight: you should see them manage on their feet, at least a little.  But how?
-
-&lt;/p&gt;&lt;p&gt;
-I'm thinking along the lines of the "FizzBuzz" class of questions. I believe they got some fame with &lt;a href="http://imranontech.com/2007/01/24/using-fizzbuzz-to-find-developers-who-grok-coding/" target="_blank"&gt;this article&lt;/a&gt; in 2007, and Google &lt;a href="http://www.google.com/trends/?q=fizzbuzz" target="_blank"&gt;seems to support this&lt;/a&gt;. Anyway, they are simple programming problems that should be no-brainers for any decent engineer. But they are useful exactly because of the surprisingly large number of candidates who flame out on them. By some accounts, as high as 50%.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-So what we want are something similar for engineering managers:  practical questions that can be done within the constraints of an interview. Here are a few that have been useful for me.
-
-&lt;/p&gt;&lt;h2&gt;Role Playing&lt;/h2&gt;
-
-&lt;p&gt;
-Instead of asking them how they would do something, just ask them to do that thing in front of you. Role playing can be awkward if you've never done it before, but give it a try. Once you get over the hump and try it, it can be fun. Here are three good scenarios I've used.
-
-&lt;/p&gt;&lt;p&gt;
-&lt;/p&gt;&lt;ul&gt;
-	&lt;li&gt;&lt;em&gt;"I'm a product manager. Customer Foo (say, one of our biggest customers) wants a feature right before the release is to go out. You're the VP of Engineering. You feel like this will destabilize your release.  How do you say no?"&lt;/em&gt;  Sometimes it can be fun to play out the natural follow-up, when they go over your head to the CEO.&lt;/li&gt;
-	&lt;li&gt;&lt;em&gt;"I'm a slacking employee. I have the skills, but for some reason I haven't been productive lately. It's our weekly one-on-one time -- what do you say?"&lt;/em&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;em&gt;"You have to lay someone off. How do you prepare? What do you say?"&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-If they have follow up questions, or dispute the premise, then play it out. Usually those end up being the most insightful and fun interviews. Also, one warning: questions like these can take you far down the rabbit hole and use up the whole hour if you're not careful.  Remember that its your time.  You should cut them off and switch to the next question, abruptly if need be, to get to everything you need to cover.
-
-&lt;/p&gt;&lt;h2&gt;Nuts and Bolts&lt;/h2&gt;
-
-&lt;p&gt;
-Ask candidates about the mechanics of how they do their job and you can get insight into their experience and values. What tools (wikis, bug tracking, source control, continuous testing) do they use? Do they run team meetings or daily standups? If so, how do these go?
-
-
-
-&lt;/p&gt;&lt;p&gt;
-What you're looking for are &lt;em&gt;thoughtful&lt;/em&gt; answers. Anyone who has used these tools a lot should have opinions about the them. If they don't then they don't care (bad) or they haven't done the work (bad). Are they negative about everything? Are they flexible?
-
-&lt;/p&gt;&lt;h2&gt;Motivation&lt;/h2&gt;
-
-&lt;p&gt;
-For me this often is the clincher. Why did you get into engineering management in the first place? Why are you doing it now? I won't say what I consider to be good answers, since this varies a lot and should be pretty personal. Again, what you're looking for is a thoughtful answer.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-This can be most useful for turning up red-flag responses. You don't want the person who did it for power ("I wanted to boss people around") or ambition ("I wanted to make more money") or just fell into it.  Trust your gut for answers that don't sound genuine and ask probing follow-ups.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-I find questions like these can lead to more insightful conversations and get the candidate off-script faster than the typical resume walkthrough.
-
-
-
- &lt;/p&gt;</description><category>Management</category><category>Technology</category><guid>https://sef.kloninger.com/posts/201205fizzbuzz-for-managers/</guid><pubDate>Wed, 23 May 2012 17:06:59 GMT</pubDate></item><item><title>Why Quit?  Because They Have Bigger Monitors</title><link>https://sef.kloninger.com/posts/201205engineering-culture-litmus-tests/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;
-Good engineers are attracted to places with a strong engineering culture. But how can you see what the culture is really like from the outside? Here are my two quick-and-dirty indicators.
-
-&lt;img class="alignright size-full wp-image-230" style="border: 0px;" title="testtubes" src="https://sef.kloninger.com/f/testtubes.png" alt="" width="149" height="200"&gt;
-
-
-&lt;/p&gt;&lt;p&gt;
-First a word about what I mean by an engineering culture. It means engineers are valued and important. Some implications:
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;/p&gt;&lt;ul&gt;
-	&lt;li&gt;How are decisions made? In an engineering culture, technical people have input into what gets built, when, and by whom.  Not signoff, but a real say.&lt;/li&gt;
-	&lt;li&gt;Is there respect for the craft of making software? Coding is still creative work that requires the right time and space. Some projets are tough to predict how long they will take, and that's needs to be OK.&lt;/li&gt;
-	&lt;li&gt;Infrastructure. How hard is it for the people who know (engineers, managers) to justify to their bosses when work is needed on non-feature driven stuff? This could be in the runtime system (like scaling work on the message queue) or back office (like build systems or version control).&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;
-Unfortunately, teasing this out in an interview can be tricky unless you have someone you really know and trust on the inside.
-
-&lt;/p&gt;&lt;p&gt;
-&lt;/p&gt;&lt;h2&gt;How big are the monitors?&lt;/h2&gt;
-
-A story from a prior company. I was an engineering manager that had a retention problem. One of the engineers on my team quit to go to a smaller, hipper company. This was from my exit interview:
-
-&lt;p&gt;
-&lt;/p&gt;&lt;blockquote&gt;
-
-&lt;p&gt;
-&lt;strong&gt;Me&lt;/strong&gt;: why are you leaving?
-
-&lt;/p&gt;&lt;p&gt;
-&lt;strong&gt;Him&lt;/strong&gt;: because they have bigger monitors.
-
-&lt;/p&gt;&lt;p&gt;
-&lt;strong&gt;Me&lt;/strong&gt;: (incredulous) are you kidding? we can get you a bigger monitor.
-
-&lt;/p&gt;&lt;p&gt;
-&lt;strong&gt;Him&lt;/strong&gt;: it's not just me -- everyone has big monitors.
-
-&lt;/p&gt;&lt;p&gt;
-&lt;strong&gt;Me&lt;/strong&gt;: why is that so important?
-
-&lt;/p&gt;&lt;p&gt;
-&lt;strong&gt;Him&lt;/strong&gt;: because it shows how much they value my time. The extra money to cram that many more pixels into my retina must be worth it to them.
-
-&lt;/p&gt;&lt;/blockquote&gt;
-
-And now I understand that this is totally true. Places that value their people consider equipment expenses small compared to the productivity (and happiness) of their people.  The best engineers are given the best tools to do their jobs. Big monitors are a very visible sign of this.
-
-&lt;h2&gt;Can people choose their own email addresses?&lt;/h2&gt;
-
-Non-engineers sometimes don't appreciate how important an email address is. It's your identity on line. A strict naming convention (first name last initial, or worse, last name first initial) indicates place that values conformity over engineer happiness. Worse, its a great way to make their people feel like cogs or "human resources," not the cool individuals that they are.
-
-&lt;p&gt;
-(Aside: let's do away with the term Human Resources.  It's horrible.)
-
-&lt;/p&gt;&lt;p&gt;
-This one is important for me personally since I have a weird first name. If you don't let me be &lt;code&gt;sef@company.com&lt;/code&gt; then you get major demerits in my book. And no, clunky alias tricks, like a mailing list with one member in it, doesn't count. It's what you see on your shell prompt that matters; it's what &lt;code&gt;whoami&lt;/code&gt; returns that matters.
-
-&lt;/p&gt;&lt;p align="center"&gt;
-&lt;img class="alignnone size-full wp-image-235" style="border: 0px;" title="whoami" src="https://sef.kloninger.com/f/whoami.png" alt="" width="556" height="226"&gt;
-
-&lt;/p&gt;&lt;p&gt;
-One final word: this isn't a slam on you hardworking IT guys and gals who keep important things running and have to enforce the rules you're given. Instead, I'm speaking to the bad policies (usually stemming from bad cultures) that can put you into bad positions. If you are at such a place, hunker down and pray for daylight.
-
- &lt;/p&gt;</description><category>Management</category><category>Technology</category><guid>https://sef.kloninger.com/posts/201205engineering-culture-litmus-tests/</guid><pubDate>Thu, 17 May 2012 23:01:44 GMT</pubDate></item></channel></rss>
+It was fun being reminded of all this stuff. So the lesson of the story: it's still worth buying books, and when you do, don't remove the labels.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>https://sef.kloninger.com/posts/201309knr-c-label/</guid><pubDate>Sun, 15 Sep 2013 00:41:20 GMT</pubDate></item></channel></rss>

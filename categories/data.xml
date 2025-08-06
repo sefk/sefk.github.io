@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Data)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/data.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 06 Aug 2025 01:32:33 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Halloween Down 20%, But Still Solid</title><link>https://sef.kloninger.com/posts/201311halloween-2013/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-440" style="border: 0px;" alt="halloween2013-ticker" src="https://sef.kloninger.com/f/halloween2013-ticker-300x300.jpg" width="126" height="126"&gt;
+
+
+&lt;p&gt;
+This year we had a sizable number of trick-or-treaters at our house in the Willows neighborhood of Menlo Park. The 303 we saw was down from our high last year, but abou the same as the year before that.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+So here are the totals:
+
+
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;img class="size-medium wp-image-441 alignnone" style="border: 0px;" alt="halloween2013-total" src="https://sef.kloninger.com/f/halloween2013-total-300x184.png" width="300" height="184"&gt;
+
+
+
+&lt;/p&gt;&lt;p&gt;
+The rate at peak was comparable to last year.
+
+
+&lt;/p&gt;&lt;div class="row-fluid"&gt;
+&lt;div class="span2" align="center"&gt;
+&lt;img class="size-medium wp-image-443 alignnone" style="border: 0px;" alt="halloween2013-rate" src="https://sef.kloninger.com/f/halloween2013-rate-300x160.png" width="300" height="160"&gt; 
+       
+&lt;img class="size-medium wp-image-442 alignnone" style="border: 0px;" alt="halloween2013-cumulative" src="https://sef.kloninger.com/f/halloween2013-cumulative-300x158.png" width="300" height="158"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+I don't have an explanation why we are down a bit. The weather was beautiful, indeed a little better than last year since rain started at 8:30 last year. Maybe the forecast rain coming last year got people out earlier who might have missed altogether?
+
+
+
+&lt;/p&gt;&lt;p&gt;
+It was outstanding having my friend &lt;a href="https://twitter.com/amylameyer"&gt;Amy LaMeyer&lt;/a&gt; helping out. She operated the clicker that was new this year, and so kept me company, which was a ton of fun.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+As always, the Google Spreadsheet with the graphs and raw data is publicly available &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;here&lt;/a&gt;. Check it out!
+
+
+&lt;/p&gt;</description><category>Data</category><guid>https://sef.kloninger.com/posts/201311halloween-2013/</guid><pubDate>Sun, 03 Nov 2013 05:25:17 GMT</pubDate></item><item><title>Halloween Candy Data</title><link>https://sef.kloninger.com/posts/201210halloween-candy-data/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;Update with actuals from Halloween 2012:  It was a banner year.
+
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;img class="alignnone size-large wp-image-391" alt="halloween-2012" src="https://sef.kloninger.com/f/halloween-2012-1024x433.png" width="584" height="246"&gt;
+
+&lt;/p&gt;&lt;hr&gt;
+
+&lt;p&gt;
+You may be giving out candy later today. What can you expect? Let's look at some data.  This post summarizes the past three Halloweens.
+
+
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;img class="alignnone  wp-image-378" style="border: 0px;" title="cumulative" alt="Cumulative Trick or Treaters" src="https://sef.kloninger.com/f/cumulative-1024x441.png" width="584" height="251"&gt;
+
+
+
+&lt;/p&gt;&lt;p&gt;
+As you can see we live in a pretty popular neighborhood.  Each year has its own story.
+
+&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;2009&lt;/strong&gt; - our first year in our new neighborhood. We had no idea that this was such a popular trick-or-treating spot. I ran out of candy at 8:00, turned out the lights, and hid in the back of the house. Shameful.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;2010&lt;/strong&gt; - a fine year.  No complaints.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;2011&lt;/strong&gt; - we moved to a new house just around the corner.  I figured the quieter street would mean fewer kids -- not so! What I didn't appreciate was the attractive power of my next door neighbor's &lt;em&gt;insane&lt;/em&gt; decorations. Luckily my wife came back with emergency supplies just in time.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+And how busy do things get?  Darn busy.
+
+
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;img class="alignnone  wp-image-379" style="border: 0px;" title="rates" alt="Average and Max Trick or Treaters per Minute" src="https://sef.kloninger.com/f/rates-1024x412.png" width="584" height="234"&gt;
+
+
+
+&lt;/p&gt;&lt;p&gt;
+During the busiest 15 minute period last year I was serving a kid every twenty seconds or so.  When bursting this is close to my max current candy-dispensing throughput.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+If you come by my house this year you'll see me again, handing out candy with one hand and scribbling hash marks with the other.   I'll update the data in my &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;public spreadsheet&lt;/a&gt;.&lt;/p&gt;</description><category>Data</category><category>Life</category><guid>https://sef.kloninger.com/posts/201210halloween-candy-data/</guid><pubDate>Wed, 31 Oct 2012 07:19:35 GMT</pubDate></item></channel></rss>

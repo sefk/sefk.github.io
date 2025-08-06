@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Life)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/life.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 05 Aug 2025 14:50:21 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>My Next Job</title><link>https://sef.kloninger.com/posts/job-15/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/snowflake.png" alt="Snowflake" width="25%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Life)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/life.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 06 Aug 2025 01:32:33 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Working In The Open</title><link>https://sef.kloninger.com/posts/working-in-the-open/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/hachyderm-debugging.png" alt="screenshot of @nova live-debugging Hachyderm on Twitch" width="50%"&gt;&lt;/p&gt;
+
+&lt;p&gt;The other day my daughter asked me about Software Engineering -- what do
+we &lt;em&gt;actually do&lt;/em&gt;? She's eighteen and probably won't follow in my
+footsteps, which is fine, but I still want her to see my field.&lt;/p&gt;
+&lt;p&gt;I've always found this question hard to answer. I've been an engineering
+manager for a long time, and I'm happy to describe that job (emails,
+1:1's, PRD reviews), but I don't think that's the heart of it. Plus
+these days I work for Google where things there are proprietary and
+deeply layered, not much help for answering questions like these.&lt;/p&gt;
+&lt;p&gt;Recently I've found my way to Mastodon for &lt;a href="https://hachyderm.io/@sefk/109456480817920873"&gt;obvious reasons&lt;/a&gt;. I
+chose the &lt;a href="https://hachyderm.io/"&gt;Hachyderm&lt;/a&gt; instance because it was well run by people who
+shared my values. It turns out that the values of the owners and
+operators of the things we use matter, huh.&lt;/p&gt;
+&lt;p&gt;I then learned a cool thing, that the Hachyderm admins do much of their
+work publicly. They livestream debugging sessions on &lt;a href="https://www.twitch.tv/krisnova"&gt;Twitch&lt;/a&gt;, they write
+postmortems, they share live &lt;a href="https://grafana.hachyderm.io/public-dashboards/445bbb0e169f4e86b1d1eeee7e50c92a"&gt;graphs&lt;/a&gt;. &lt;a href="https://hachyderm.io/@nova"&gt;@nova&lt;/a&gt; happened to be
+live-streaming at that moment, not surprising since the team's been busy
+absorbing thousands of new users and fending off attacks. My daughter
+and I watched a bit together.&lt;/p&gt;
+&lt;p&gt;Team Hachyderm (&lt;a href="https://hachyderm.io/@nova"&gt;@nova&lt;/a&gt; &lt;a href="https://hachyderm.io/@dma"&gt;@dma&lt;/a&gt; &lt;a href="https://hachyderm.io/@quintessence"&gt;@quintessence&lt;/a&gt; &lt;a href="https://hachyderm.io/@Taniwha"&gt;@Taniwha&lt;/a&gt;
+&lt;a href="https://hachyderm.io/@hazelweakly"&gt;@hazelweakly&lt;/a&gt; &lt;a href="https://hachyderm.io/@malte"&gt;@malte&lt;/a&gt;): thank you for running this service well.
+But also thank you for giving me something I'm proud to use and proud to
+show my kid.&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/working-in-the-open/</guid><pubDate>Sun, 04 Dec 2022 17:47:54 GMT</pubDate></item><item><title>YouTube</title><link>https://sef.kloninger.com/posts/youtube/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/YouTube-icon-full_color.png" alt="YouTube" width="200px" height="148px"&gt;&lt;/p&gt;
+&lt;p&gt;I'm excited to start my new job at YouTube in a few weeks. I'll manage the
+engineering team building the data warehouse for usage metrics.&lt;/p&gt;
+&lt;p&gt;I like that YouTube is &lt;strong&gt;important&lt;/strong&gt;. It's firmly a part of our culture
+and I'm sure it will be how my kids watch video. YouTube's impressive
+&lt;a href="https://www.youtube.com/yt/press/statistics.html"&gt;statistics&lt;/a&gt; are the result. You don't see usage like that without a
+bunch of &lt;strong&gt;hard problems&lt;/strong&gt;, and hard problems attract &lt;strong&gt;bright people&lt;/strong&gt;.
+Indeed that's the clincher for why I'm looking forward to working there.
+People vote with their feet, and I have a lot of friends who have opted
+for Google, and YouTube specifically. They tell me that it's a great place
+to work.&lt;/p&gt;
+&lt;p&gt;YouTube is one of the worlds foremost platforms for social commentary,
+education, and free speech. And it's plenty of &lt;a href="https://www.youtube.com/watch?v=9bZkp7q19f0"&gt;entertainment&lt;/a&gt; too. Sounds
+like fun.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>https://sef.kloninger.com/posts/youtube/</guid><pubDate>Wed, 26 Aug 2015 06:25:00 GMT</pubDate></item><item><title>My Next Job</title><link>https://sef.kloninger.com/posts/job-15/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/snowflake.png" alt="Snowflake" width="25%"&gt;&lt;/p&gt;
 &lt;p&gt;I left &lt;a href="http://www.wavefront.com/"&gt;my last job&lt;/a&gt; a few weeks back and it's high time to look for a new
 one. If you're working on something interesting and think I could help, &lt;a href="mailto:sefklon@gmail.com"&gt;let
 me know&lt;/a&gt;! &lt;/p&gt;
@@ -27,7 +63,7 @@ Francisco round-trip. I'd like to &lt;strong&gt;work with friends&lt;/strong&gt;
 want to do something &lt;strong&gt;worthwhile&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;You can always get to my resume from the header here, or via this &lt;a href="http://bit.ly/sef-resume"&gt;short
 link&lt;/a&gt;. I'm open to a bunch of things, just no &lt;a href="https://www.youtube.com/watch?v=VEgu7jdc_fs"&gt;kick boxing&lt;/a&gt;.  Let's
-have coffee/drink or take a walk.&lt;/p&gt;</description><category>Life</category><category>Tech</category><guid>https://sef.kloninger.com/posts/job-15/</guid><pubDate>Sun, 10 May 2015 16:30:00 GMT</pubDate></item><item><title>Perspective</title><link>https://sef.kloninger.com/posts/petrol-car/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div style="float:right; padding-left:15px;"&gt;
+have coffee/drink or take a walk.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>https://sef.kloninger.com/posts/job-15/</guid><pubDate>Sun, 10 May 2015 16:30:00 GMT</pubDate></item><item><title>Perspective</title><link>https://sef.kloninger.com/posts/petrol-car/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div style="float:right; padding-left:15px;"&gt;
     &lt;blockquote class="twitter-tweet" lang="en"&gt;
         &lt;p lang="en" dir="ltr"&gt;Test drive of a petrol car - &lt;a href="http://t.co/lPQ0xcs7uU"&gt;http://t.co/lPQ0xcs7uU&lt;/a&gt;&lt;/p&gt;— sefk (@sefk) &lt;a href="https://twitter.com/sefk/status/595318498894553088"&gt;May 4, 2015&lt;/a&gt;
     &lt;/blockquote&gt;
@@ -83,7 +119,7 @@ of anesthesia where it is safe to operate is right between "excitement"
 where you vomit and twitch, and "overdose" where you stop breathing.
 Don't read that part.&lt;/p&gt;
 &lt;p&gt;I'm back to work tomorrow, and I expect to be back on my bike by next
-week!&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/arthroscopy/</guid><pubDate>Tue, 19 Aug 2014 05:20:00 GMT</pubDate></item><item><title>David Bowie To The Rescue</title><link>https://sef.kloninger.com/posts/earworm/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p style="float:right; align:right; width:30%"&gt;&lt;a href="http://en.wikipedia.org/wiki/File:Bowie_JohnDancing1.jpg#mediaviewer/File:Bowie_JohnDancing1.jpg"&gt;&lt;img class="postimage" src="http://upload.wikimedia.org/wikipedia/en/b/bb/Bowie_JohnDancing1.jpg" alt="Bowie JohnDancing1.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+week!&lt;/p&gt;</description><category>Health</category><category>Life</category><guid>https://sef.kloninger.com/posts/arthroscopy/</guid><pubDate>Tue, 19 Aug 2014 05:20:00 GMT</pubDate></item><item><title>David Bowie To The Rescue</title><link>https://sef.kloninger.com/posts/earworm/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p style="float:right; align:right; width:30%"&gt;&lt;a href="http://en.wikipedia.org/wiki/File:Bowie_JohnDancing1.jpg#mediaviewer/File:Bowie_JohnDancing1.jpg"&gt;&lt;img class="postimage" src="http://upload.wikimedia.org/wikipedia/en/b/bb/Bowie_JohnDancing1.jpg" alt="Bowie JohnDancing1.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I often wake up with a song going through my head. I don't know
 why this happens. The stranger thing the songs. Yesterday
@@ -98,7 +134,32 @@ Not one of Bowie's better known songs, nor even one of his best, but
 remarkably well suited to this. I believe it's because the
 melody is kind of odd and not all that pleasant, so it's not going
 to get stuck itself. You kind of remember the melody and lyrics,
-but not quite, so that keeps you busy. It always does the trick. &lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/earworm/</guid><pubDate>Sun, 17 Aug 2014 00:25:00 GMT</pubDate></item><item><title>Chicken Soup</title><link>https://sef.kloninger.com/posts/chicken_soup/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/chicken-noodle-soup.jpg" alt="Yummy Bowl of Chicken Noodle Soup" width="40%"&gt;&lt;/p&gt;
+but not quite, so that keeps you busy. It always does the trick. &lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/earworm/</guid><pubDate>Sun, 17 Aug 2014 00:25:00 GMT</pubDate></item><item><title>Feedback Without Tips</title><link>https://sef.kloninger.com/posts/tips/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/tip-oneill.jpg" alt="Tip O'Neill" width="30%"&gt;&lt;/p&gt;
+&lt;p&gt;I really don't like tipping. I'm not like &lt;a href="https://www.youtube.com/watch?v=Z-qV9wVGb38"&gt;Mr. Pink&lt;/a&gt;. It's
+not that I don't want my server or driver to get something extra.
+I just don't like the awkward social situation of deciding if this
+is a tipping situation, and if so, how much.&lt;/p&gt;
+&lt;p&gt;Two services have come up recently where I will happily pay a premium
+to not have to fret about too much or too little:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Uber&lt;/strong&gt;. Lots to like about this service but the act of just 
+  leaving out of my cab without paying is joyful. I always rate 
+  my drivers, good or bad. 98% of the time, it's good by the way.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;OrderAhead&lt;/strong&gt;. Are you supposed to tip when picking up takeout 
+  from a restaurant? I've never known. Neither way feels right, so 
+  I usually end up splitting the difference and rounding up to 
+  some amount, say leaving a 6% tip, which is the &lt;em&gt;worst&lt;/em&gt; choice. 
+  Either that's 6% that wasn't expected, or I'm inadvertently
+  shafting someone.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Both of these services decouple feedback from money. Both avoid
+awkwardly changing money. I'd definitely pay a premium for that.&lt;/p&gt;
+&lt;p&gt;I wonder what other service business would benefit from decoupling
+feedback from money?&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/tips/</guid><pubDate>Tue, 29 Apr 2014 03:07:00 GMT</pubDate></item><item><title>Chicken Soup</title><link>https://sef.kloninger.com/posts/chicken_soup/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/chicken-noodle-soup.jpg" alt="Yummy Bowl of Chicken Noodle Soup" width="40%"&gt;&lt;/p&gt;
 
 &lt;p&gt;My family hasn't avoided the colds that are going around now. My
 way of fighting back is making chicken noodle soup.  It's not too
@@ -106,7 +167,7 @@ hard, it's satisfying, and it tastes great. &lt;a href="https://sef.kloninger.co
 to &lt;a href="http://peninsulaschool.org/"&gt;Peninsula School&lt;/a&gt; and gets used at our annual Craft Fair.
 It's benefited from years of refinement.&lt;/p&gt;
 &lt;p&gt;I add more salt. I don't do peas. I've tried with rice but it
-got starchy and weird, stick with egg noodles.&lt;/p&gt;</description><category>Family</category><category>Life</category><guid>https://sef.kloninger.com/posts/chicken_soup/</guid><pubDate>Tue, 21 Jan 2014 01:16:00 GMT</pubDate></item><item><title>Consume vs. Produce vs. Produce Publicly</title><link>https://sef.kloninger.com/posts/consume-produce-public/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/make-asl.gif" alt="\" make in american sign language width="50%"&gt;&lt;/p&gt;
+got starchy and weird, stick with egg noodles.&lt;/p&gt;</description><category>Family</category><category>Health</category><category>Life</category><guid>https://sef.kloninger.com/posts/chicken_soup/</guid><pubDate>Tue, 21 Jan 2014 01:16:00 GMT</pubDate></item><item><title>Consume vs. Produce vs. Produce Publicly</title><link>https://sef.kloninger.com/posts/consume-produce-public/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/make-asl.gif" alt="\" make in american sign language width="50%"&gt;&lt;/p&gt;
 
 &lt;p&gt;One of my goals for this year is to try to produce more and consume
 less. Not in the green, fixed-planetary-resources sense [1]. I
@@ -151,75 +212,4 @@ lower the bar to produce.&lt;/p&gt;
 &lt;p&gt;[1] I'm not anti-green. I really appreciate the environmental
 warriors out there who walk the walk with real life choices to
 consume less. That's just not my bailiwick, for now at least.&lt;/p&gt;
-&lt;!-- vim set fo+=awn ai tw=72 --&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/consume-produce-public/</guid><pubDate>Fri, 10 Jan 2014 06:51:00 GMT</pubDate></item><item><title>The Seven Things You're Not Supposed to Talk About</title><link>https://sef.kloninger.com/posts/201311seven-things/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright size-full wp-image-448" style="border: 0px;" alt="lucy-charliebrown" src="https://sef.kloninger.com/f/lucy-charliebrown.jpeg" width="244" height="207"&gt;
-
-&lt;p&gt;
-I liked &lt;a href="http://www.thisamericanlife.org/radio-archives/episode/511/the-seven-things-youre-not-supposed-to-talk-about"&gt;this week's episode of This American Life&lt;/a&gt;. The idea is there are seven topics that you should avoid in conversation because they are always boring. &lt;strong&gt;I like this list! &lt;/strong&gt;
-
-&lt;/p&gt;&lt;p&gt;
-Here is the &lt;a href="http://www.thisamericanlife.org/radio-archives/episode/511/transcript"&gt;transcript&lt;/a&gt;.  I repeat the list here.
-
-&lt;/p&gt;&lt;p&gt;
-&lt;/p&gt;&lt;ol&gt;
-	&lt;li&gt;How you &lt;strong&gt;slept&lt;/strong&gt;.&lt;/li&gt;
-	&lt;li&gt;Your &lt;strong&gt;period&lt;/strong&gt;.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Health&lt;/strong&gt;. Of course if it's something serious, then that's conversation worthy, but normal sniffles, aches, and pains? No good.&lt;/li&gt;
-	&lt;li&gt;Your &lt;strong&gt;dreams&lt;/strong&gt;.  Not big aspirations, this is literally what you dreamt last night&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Money&lt;/strong&gt;.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Diet&lt;/strong&gt;. What you can and can't eat.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Route&lt;/strong&gt;. How you got here, what way you're going to get home.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;
-I will endeavor to not waste all of your time droning on about any of these topics.
-
-&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/201311seven-things/</guid><pubDate>Tue, 19 Nov 2013 03:57:53 GMT</pubDate></item><item><title>K&amp;R C Programming, Quantum Books, Cambridge, MA</title><link>https://sef.kloninger.com/posts/201309knr-c-label/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p style="text-align: left;"&gt;&lt;img class="alignright  wp-image-433" style="border: 0px;" alt="IMG_4177" src="https://sef.kloninger.com/f/IMG_41771-231x300.jpg" width="139" height="180"&gt;
-
-&lt;/p&gt;&lt;p&gt;
-Today in a box I came across my old K&amp;amp;R. Probably the most valuable book I've owned. My copy has been heavily used.&lt;/p&gt;
-
-&lt;p&gt;
-But the unexpected, fun thing was finding an old label on the back cover.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-There is a lot in there.
-
-&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img class="aligncenter  wp-image-429" style="border: 0px;" alt="IMG_4179" src="https://sef.kloninger.com/f/IMG_4179-1024x393.jpg" width="584" height="224"&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;
-&lt;/p&gt;&lt;ul&gt;
-	&lt;li&gt;January 1994. I had just graduated college, driven cross country with my friend &lt;a href="http://www.linkedin.com/pub/shigeru-tanaka/0/a27/917"&gt;Shig&lt;/a&gt;, and started my first post-college job. I would have been in that job four months or so and realized that I should just stop borrowing someone else's copy (probably &lt;a href="http://www.linkedin.com/in/larryclaman/"&gt;Larry Claman&lt;/a&gt;'s) and buy my own.&lt;/li&gt;
-	&lt;li&gt;Purchased at Quantum Books, a great technical bookstore in the shadow of MIT in Cambridge, Massachusetts. It's no longer there. The bar that is there now (&lt;a style="font-style: normal;" href="http://www.themeadhall.com/"&gt;Meadhall&lt;/a&gt;) is a nice place, and I'm a big fan of beer, but it's not the same.&lt;/li&gt;
-	&lt;li&gt;According to an &lt;a style="font-style: normal;" href="http://www.bls.gov/data/inflation_calculator.htm"&gt;inflation calculator&lt;/a&gt;, $35 in 1994 is $55 today. That's expensive for a little book, especially to the twenty-two year old me.&lt;/li&gt;
-	&lt;li&gt;Note the email address: quanbook@world.std.com. This was back when mom and pop dialup ISP's where what we all used, people and businesses alike. This particular one, &lt;a style="font-style: normal;" href="http://world.std.com/"&gt;Software Tool &amp;amp; Die&lt;/a&gt;, was my private email address at the time too. (Aside: they claim to be the first public dialup ISP, and I have no reason to doubt them)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-It was fun being reminded of all this stuff. So the lesson of the story: it's still worth buying books, and when you do, don't remove the labels.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>https://sef.kloninger.com/posts/201309knr-c-label/</guid><pubDate>Sun, 15 Sep 2013 00:41:20 GMT</pubDate></item><item><title>Coding on a Flight</title><link>https://sef.kloninger.com/posts/201304coding-on-a-flight/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-408" style="border: 0px;" alt="airplane" src="https://sef.kloninger.com/f/airplane-300x126.png" width="240" height="101"&gt;
-
-&lt;p&gt;
-I'm surprised that that I like coding on flights. It's surprising because airplanes are generally hostile environments for most things, but I've found it a good place to code.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-The obvious reason is the lack of interruptions and distractions. Usualy there is no wifi, or it is too spotty to count on. So no email or IRC or web. While I know that distractions kill flow, I never seem give myself license to unplug in normal life. I'm a manager, and being a manager means being interruptible.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-But there's another reason. When I code unplugged, I code differently. I have to be self-sufficient. Instead of just looking things up on StackOverflow, I take 20% more time to figure it out myself. That's much more satisfying! It's just not that hard to rummage through the Django code or try things out in iPython.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-Also it just sounds cool to say you coded something up on the flight.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-But thre real question is should simulate "airplane mode" when grounded.  Hmm.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>https://sef.kloninger.com/posts/201304coding-on-a-flight/</guid><pubDate>Tue, 09 Apr 2013 05:30:38 GMT</pubDate></item></channel></rss>
+&lt;!-- vim set fo+=awn ai tw=72 --&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/consume-produce-public/</guid><pubDate>Fri, 10 Jan 2014 06:51:00 GMT</pubDate></item></channel></rss>

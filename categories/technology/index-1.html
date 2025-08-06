@@ -10,7 +10,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
 <link rel="canonical" href="https://sef.kloninger.com/categories/technology/index-1.html">
-<link rel="prev" href="." type="text/html">
+<link rel="prev" href="index-2.html" type="text/html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link rel="alternate" type="application/rss+xml" title="RSS for tag Technology" hreflang="en" href="../technology.xml">
 </head>
 <body>
@@ -88,7 +88,270 @@ bg-dark
 
         </div>
     </header><div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201205fizzbuzz-for-managers/" class="u-url">FizzBuzz Questions for Engineering Managers </a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201208wip-folders-with-ls/" class="u-url">Managing Work-In-Progress Folders with "ls -ltr"</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="../../posts/201208wip-folders-with-ls/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-08-07T01:56:53-07:00" itemprop="datePublished" title="2012-08-07 01:56">2012-08-07 01:56</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="../../posts/201208wip-folders-with-ls/#disqus_thread" data-disqus-identifier="cache/posts/201208wip-folders-with-ls.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <img class="size-full wp-image-353 alignright" style="border: 0px;" title="blog-folder-done" src="../../f/blog-folder-done.png" alt="" width="107" height="41"><p>
+I've developed a nice little way to manage my work in progress folders.
+
+
+
+</p>
+<p>
+I keep a bunch of folders around where I can stick things that are in-flight: one for home projects, one for blogs, etc. I like accumulating ideas in there, one idea per file, that I can come back to and fuss over until something is ready.
+
+
+
+</p>
+<p>
+The folder is flypaper for ideas and notes.  My blog folder has about twenty files right now.
+
+
+
+</p>
+<p>
+Using "ls", and relying on file and directory modification times, is a useful way to keep track of all these files.  Here's how.
+
+
+
+</p>
+<p>
+As projects are finished I move them into a "done" folder. This gets them out of the way.  A useful side effect is the modification time of the done directly itself gets updated.
+
+
+
+</p>
+<p>
+The in-flight projects I care about most are the ones most recently updated: as an idea gets older it becomes less and less interesting.  When looking at this directory I use the "ls -ltr" command.  "l" means long (so you can see dates), "t" means sort by modification time, and "r" reverses that sort, so you see latest modified on the bottom.
+
+</p>
+<p align="center">
+</p>
+<p style="text-align: center;"><img class="aligncenter  wp-image-352" style="border: 0px;" title="blog-folder-detail" src="../../f/blog-folder-detail.png" alt="" width="719" height="275"></p>
+
+<p>
+The old files are at the top where I don't worry about them.  Some even scroll off the top of the screen, that's fine.  The done folder is a nice visual line for when something was last completed (say, published).  Having a separate color for directories makes this visually apparent.  And the bottom of the list are those most recently modified. Generally I work on the bottom up. Sometimes I go back to an old idea and add some notes. That bumps it to the top of the line -- it is interesting again.
+
+
+
+</p>
+<p>
+I probably type "ls -ltr" at least 5 times an hour.  I've never aliased it since my muscle memory is so strong (but maybe I still should).
+
+
+
+ </p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201207taking-down-100000-sites/" class="u-url">The Day I Took Down 100,000 Web Sites</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="../../posts/201207taking-down-100000-sites/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-07-25T10:56:57-07:00" itemprop="datePublished" title="2012-07-25 10:56">2012-07-25 10:56</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="../../posts/201207taking-down-100000-sites/#disqus_thread" data-disqus-identifier="cache/posts/201207taking-down-100000-sites.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <img class="alignright size-full wp-image-343" style="border: 0px;" title="fire" src="../../f/fire.png" alt="fire alarm" width="300" height="240"><p>
+Every engineer has their "the day I did something very very bad" story. This is mine.
+
+
+</p>
+<p>
+It was my last week at <a href="http://www.ning.com/">Ning</a>. For about a year I ran the Infrastructure and Operations group. It was the end of a good stretch, working with a strong team on hard problems.
+
+
+
+</p>
+<p>
+In early 2010 (before I joined) Ning had successfully switched from a premium to paid model. Of Ning's two million social networks some were thriving onine communities, but many weren't. Trading those in for one hundred thousand good paying customers had been the right thing for the business. We kept around the 1.9M orphaned sites for some time in case someone wanted to assume ownership and start paying. By late 2011 the revival rate had dropped low enough that it was time to clear out the cruft.
+
+
+
+</p>
+<p>
+I volunteered for the cleanup. I enjoyed little projects like this because it kept my hands in the code and took away a task that would be a chore and distraction for the engineers. The job was some SQL queries, scripting, load testing, checking, and double-checking. The hardest part was ensuring we had the right list of networks to delete.
+
+
+
+</p>
+<p>
+It took about two months to write and run the scripts. I felt good that it had gone through uneventfully.
+
+
+
+</p>
+<p>
+There was a legacy corner of our system that hadn't been included in my cleanup pass. I hadn't worried about it at first since it was just a few thousand networks. But now that I was leaving Ning I wanted to tie off my loose end projects, and this was one. I assembled the list of stragglers and ran my scripts. The 2,000 deletes went quickly. This was 11:00 AM on regular workday -- my last Wednesday on the job.
+
+
+
+</p>
+<p>
+I immediately knew that I had done something very wrong. Since I sat close to the Customer Advocacy group I heard their IM clients and phones light up. Every Ning page was a "We're Sorry" 404 page. Oh crap.
+
+
+
+</p>
+<p>
+It only took a couple of minutes to find the problem. One of the networks I had marked for deletion had core Javascript and CSS needed by every Ning network -- important stuff. The network, "socialnetworkmain" was known to everyone as being important, and if I had done my spot checks better, I would have seen it straight away. Instead, I had been sloppy.
+
+
+
+</p>
+<p>
+The backdoor method I was using bypassed the safeties we had in place to protect our "really important" networks.
+
+
+
+</p>
+<p>
+Luckily, <a href="https://twitter.com/myelin">Phil</a>, one of our top-notch infrastructure engineers was sitting close by and quickly restored the network through the backend. Things returned to normal almost immediately. That feeling of panic started to back off. The jokes started and we started to relax.
+
+
+
+</p>
+<p>
+It took us another few hours to find and fix second and third order effects of my snafu. The network creation flow was broken -- fixed. An in-house monitoring system was dying silently -- fixed. And so on.
+
+
+
+<!-- Friday, August 18, 1995 -->
+</p>
+<p align="center">
+<a title="Dilbert strip where he screwed up big-time" href="http://dilbert.com/strips/comic/1995-08-18/"><img src="../../f/dilbert-screwed-up.gif" alt="Dilbert.com" border="0"></a>
+
+
+
+</p>
+<p>
+I learned four lessons:
+
+</p>
+<p>
+</p>
+<ol>
+<li>
+<strong>Undo is your friend.</strong> The tooling or features to revert your change will take time, but you will be happy to have it if you ever need it.</li>
+	<li>
+<strong>Make changes during the day.</strong> Resolving a hairy problem is hard if you don't have the right people, and when the people you do have are tired and foggy. This incident might have taken hours to resolve instead of minutes in the middle of the night.</li>
+	<li>
+<strong>It's not over until it's over.</strong> Once in crisis mode, you're eager to be get out of it. Once the main problem is solved it is tempting to exhale, go to lunch, go back to bed, whatever. But aftereffects might take a while to show up, or may just be harder to find.</li>
+	<li>
+<strong>Disproportionate effects.</strong> We all know that our complex systems nonlinear failure modes. Incidents like these are reminders that small changes have big effects. Said another way, even small things should be taken seriously.</li>
+</ol>
+<p>
+My time at Akamai had prepared me well for managing a crisis. But it's nice to have a refresher course every now and then.
+
+
+
+ </p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201207on-line-education/" class="u-url">On-Line Education Is Really Interesting Right Now</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="../../posts/201207on-line-education/" rel="bookmark">
+            <time class="published dt-published" datetime="2012-07-09T12:49:31-07:00" itemprop="datePublished" title="2012-07-09 12:49">2012-07-09 12:49</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="../../posts/201207on-line-education/#disqus_thread" data-disqus-identifier="cache/posts/201207on-line-education.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <img class="alignright  wp-image-307" style="border: 0px;" title="lecture-hall" src="../../f/lecture-hall-300x199.jpeg" alt="" width="270" height="179"><p>
+I've joined a research project at Stanford University (my alma mater).  I am working with a small team to build a platform for on-line education. This post explains what we're building, my part in it, and why this is an interesting area right now.
+
+</p>
+<h2>Class2Go</h2>
+
+<p>
+We are building Class2Go, an application to put Stanford classes on line.  Envision a video-driven web site with exercises and tests.  It will run much like a class today (professors, TA's, lectures, homework, tests, schedules) but with everything happening on-line.  For some kinds of classes this could improve the classroom experience for enrolled students; the excitement comes when you can bring in the a much larger set of non-enrolled students.
+
+
+
+</p>
+<p>
+The professors who have expressed interest so far are those who want to <a title="Flip teaching page on wikipedia" href="http://en.wikipedia.org/wiki/Flip_teaching" target="_blank">flip their classrooms</a> or host a <a title="Massive open online course page on wikipedia" href="http://en.wikipedia.org/wiki/Massive_open_online_course" target="_blank">Massive Open On-Line Course</a> (MOOC). Others have ideas on experimentation with the learning process itself. For example, do students learn better when they see slides, a talking head, or both? A large enough student population makes meaningful studies possible and cheap.
+
+</p>
+<p>
+There are a bunch of features needed over and above basic basic video.  First, can we devise a good system for students to grade each others work? This is an absolute must to do anything in the humanities at large scale.  We have some ideas of how to do peer evaluation, but it's an area that needs much more experimentation. A second important feature is enabling off-line use from laptops and tablets.  When we think of disconnected students we typically think of commuters, but we've heard it's just as important (or maybe more so) for students in developing countries where bandwidth is precious.
+
+</p>
+<p>
+While there are <a title="Link to Coursera site" href="https://www.coursera.org/" target="_blank">commercial</a> <a title="Link to Udacity site" href="http://www.udacity.com/" target="_blank">offerings</a> to do this, and even things from other established <a title="Link to Ed X site" href="http://www.edxonline.org/" target="_blank">universities</a>, Class2Go will be different in three important ways:
+
+</p>
+<p>
+</p>
+<ul>
+<li>Research will be first and foremost. Hey prof, you want to do a wacky experiment? We can help.</li>
+	<li>Value produced by the course is retained and controlled by the professor and the university.  That value comes from the assets (video, homework) but even more so the community and technology.</li>
+	<li>The professors will have quick and ready access to their data. No waiting in lines for reports.</li>
+</ul>
+<p>
+Stanford Professor Rob Reich made a very coherent argument for this in a <a title="Rob Reich blog post comparing Universities to Newspapers" href="http://www.stanford.edu/group/reichresearch/cgi-bin/site/2012/05/18/sending-universities-down-the-path-of-the-newspaper-industry/" target="_blank">recent blog post</a>. (Getting to work with smart people like him is a major job perq, by the way.)
+
+</p>
+<p>
+Part of what makes this doable is that there are so many great building blocks available.  We plan to use YouTube for video and the <a href="https://github.com/khan/khan-exercises" target="_blank">Khan Academy</a> framework for exercises.   <a href="https://piazza.com/" target="_blank">Piazza</a> has great discussions and forums to start with. Because of all this good stuff, we feel good about getting something strong out by the Fall for a couple of courses, and then expanding from there.
+
+</p>
+<p>
+And me?  I'm the line manager. It's fun to work on a project of this size where I can keep my hands dirty. For example, this week I'll be working on authentication (oauth).
+
+</p>
+<h2>Why Education, Why Now?</h2>
+
+<p>
+Two things brought me to education.
+
+</p>
+<p>
+Firstly, education is uniquely important. I challenge you to name another human pursuit that is as important, consumes so many resources (for good reason), and can be so transformative when done well.  The other two that come to mind are health and agriculture. But I'd say education is right up there.
+
+</p>
+<p>
+And second, education is changing right now. Of the meetings I've had while <a title="My Sabbatical" href="http://sef.kloninger.com/2012/04/my-sabbatical/" target="_blank">on sabbatical</a>  some of the most interesting have been about education. Why can't information technology have as big an impact on how people learn as it has had on everything else? Technology could mean making it available to to many more students, in different places and of different means. Educators could spend less time lecturing (dry stuff, to be sure) and more time working with students. Better measurement and analysis and could give educators near-real-time feedback and students tailor-made homework. Those are just a few of the examples that I heard about that got me excited.
+
+</p>
+<p>
+I look forward to doing something that will make even a little difference here. I'll blog about my experiences along the way.
+
+</p>
+<p>
+PS - <a title="Peter Norvig @ TED" href="http://fm.schmoller.net/2012/07/peter-norvigs-ted-talk-about-the-ai-course.html" target="_blank">Peter Norvig's TED Talk</a> captured the reasons and potential nicely.  That seven minutes is worth your time.
+
+</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201205fizzbuzz-for-managers/" class="u-url">FizzBuzz Questions for Engineering Managers </a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Sef Kloninger
@@ -262,77 +525,6 @@ One final word: this isn't a slam on you hardworking IT guys and gals who keep i
 
  </p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/absorb-uncertainty/" class="u-url">"I Absorb Uncertainty"</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Sef Kloninger
-            </span></p>
-            <p class="dateline">
-            <a href="../../posts/absorb-uncertainty/" rel="bookmark">
-            <time class="published dt-published" datetime="2012-05-03T12:41:28-07:00" itemprop="datePublished" title="2012-05-03 12:41">2012-05-03 12:41</time></a>
-            </p>
-                <p class="commentline">
-    
-    <a href="../../posts/absorb-uncertainty/#disqus_thread" data-disqus-identifier="cache/posts/absorb-uncertainty.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <p>
-It was my first day at Akamai.  They were still small enough that the all new employees had group lunch with the CEO, George Conrades.
-
-
-</p>
-<p>
-For those who don't know him, George is flat out impressive. Partially that comes from being smart, thoughtful, and well spoken. But it also comes from being comfortable in <strong>big</strong> jobs. Prior to Akamai, George was CEO of BBN and GM of IBM United States, part of his thirty year career at IBM.
-
-
-
-</p>
-<p>
-Somoene asked George what he did as CEO, and George unpacked his stock answer. Something about products, people, and finances.
-
-
-
-</p>
-<p>
-The new hire followed up: "No, George, what do <strong>you</strong> actually <strong>do</strong>?" It was a pointed question, and a bit smart-alecky. But it was also genuine, and George took it seriously. His answer stuck with me.
-
-
-
-</p>
-<p>
-"I absorb uncertainty," George said.
-
-
-
-</p>
-<p>
-He explained: If you get this many bright people together you're bound to have differences of opinion. Those can escalate into a real disagreement. Soon it gets heated and feelings and reputations are at stake. When this happens, the CEO's job is to hear and follow the discussion, know when forward progress isn't being made, and then make a decision. And then communicate that decision clearly so everyone can move on.
-
-
-
-</p>
-<p>
-Making a decision absorbs uncertainty. Uncertainty disempowers your people and paralyzes your organization. A good CEO doesn't let that happen.
-
-
-
-</p>
-<p>
-Now that's a good leader.  Thanks, George.
-
-
-
-</p>
-<p>
-PS - Googling around for this phrase, I see others might have used it too.  One is Vittorio Cassoni, reported by Esther Dyson (<a href="http://online.wsj.com/article/00FE1687-EE39-415D-A5C7-CA9948ED3CF6.html" target="_blank">video</a>). But in my book, credit goes to GHC.
-
-
-
- </p>
-    </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201204browsers-for-web-apps/" class="u-url">Making Browsers Better for Web Apps</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
@@ -423,151 +615,6 @@ Here's a neat idea: a crowdsourced recipes database for Fluid that would encapsu
 <p>
 Hmm, maybe I'll see if the Fluid guys want to work on something together on this.</p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201204measuring-an-engineering-manager/" class="u-url">Working Hard, On The Right Stuff, and In The Right Way  </a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Sef Kloninger
-            </span></p>
-            <p class="dateline">
-            <a href="../../posts/201204measuring-an-engineering-manager/" rel="bookmark">
-            <time class="published dt-published" datetime="2012-04-25T01:39:34-07:00" itemprop="datePublished" title="2012-04-25 01:39">2012-04-25 01:39</time></a>
-            </p>
-                <p class="commentline">
-    
-    <a href="../../posts/201204measuring-an-engineering-manager/#disqus_thread" data-disqus-identifier="cache/posts/201204measuring-an-engineering-manager.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <a href="http://sef.kloninger.com/2012/04/measuring-an-engineering-manager/pointy-haired_boss/" rel="attachment wp-att-147"><img class="alignright size-full wp-image-147" style="border-style: initial; border-color: initial; border-image: initial; border-width: 0px;" title="Pointy-Haired-Boss" src="../../f/Pointy-Haired_Boss.png" alt="Pointy Haired Boss" width="196" height="204"></a>
-
-<p>
-So now you're an engineering manager. How do you know if you're doing a good job?
-</p>
-
-
-<p>
-This was an important question for me about thirteen years ago, when I moved from a code-every-day software engineer into my first management job. In the decade-plus I've been an engineering manager (<a href="http://sef.kloninger.com/2012/04/my-sabbatical/">up until recently</a>) I've relied on three measures for myself and engineering managers under me.  It's the title of this post.
-</p>
-
-
-
-<p>
-The problem is that managers enable their people to produce. An engineer's contribution is measurable, more or less. Even when the scale and units are slippery (is that 95% or 50% done?) at least you can see forward progress: releases, bugs closed, API users. But an engineering manager? At best it feels squishy; at worst it feels like overhead, and nobody wants to be overhead.
-</p>
-
-
-
-<p>
-The question of "am I doing a good job?" came up when I was a first-time engineering manager at Akamai Technologies.  This was 1999 and Akamai was still small-ish (30 engineers).  Us first-time managers were learning on the job. That's when I distilled down my three rules.  They are:
-</p>
-
-<p>
-</p>
-<blockquote>
-A good engineering manager's team should be
-<ol>
-<li>working hard,</li>
-<li>working on the right stuff, and</li>
-<li>doing it the right way.</li>
-</ol>
-</blockquote>
-
-
-<p>
-The key insight here is that you don't measure the manager herself, since management done well just enables the creative work of the team. Judge the team and you judge the manager.
-</p>
-
-<h2>Working Hard</h2>
-
-<p>
-Of course a high-performing team is inherently good. But it's also the best indicator if the manager is doing their job right. A productive team is a motivated team. In my experience, teams don't work hard unless they have all the wonderful qualities that we want in a team: empowerment, alignment with company goals, feeling of camaraderie, trust in management. They should be equipped to do their work and know why they're doing it. A manager should try to give their teams these things, or at least not get in the way.
-</p>
-
-
-
-<p>
-Let's consider the alternative. If your engineers are demotivated or bored then long before they quit (<a href="http://www.randsinrepose.com/archives/2011/07/12/bored_people_quit.html">and they will</a>) they will check out.
-</p>
-
-
-
-<p>
-One caution: working hard is often confused with long hours and face time. It's not. And there are few things more demotivating to a team than a manager demanding more hours. (Some places are really productive and <a href="http://ryanleecarson.tumblr.com/post/21708810513/4-day-week">only work four days a week</a>.)
-</p>
-
-
-
-<p>
-Hiring and firing figures into this too. An under-staffed team can't do what it needs to do or can get burnt out. Worse, lowering the bar to hire someone beneath the team, or not firing the low performer, is hugely demotivating.
-</p>
-
-
-
-
-<h2>Working On The Right Stuff</h2>
-
-<p>
-This is where the manager can have a more direct and immediate impact. You have to set up a few good processes (not too many) and enforce them.  Your goal is maximize useful work.  One way is to prevent work on stuff that will be wasted.  Another is to reduce thrashing by finishing one thing before starting another. This is where delivery comes in: it's one thing to be busy, but how much makes it into real customers' hands?
-</p>
-
-
-<p>
-Some of this sounds like product management, especially prioritization and product definition. But it doesn't happen well without the engineering manager communicating well, working closely with those product managers, pushing back constructively when needed.  So actually read that spec!
-</p>
-
-
-<p>
-Much of my career has been in backend systems. Infrastructure projects to enable features are the exceptions. Most aim to improve reliability by doing things like removing bottlenecks (scaling) or bulletproofing systems. Unfortunately I think the only way to judge these projects qualitatively.  Measuring how often it <em>would</em> have broken is so hard. Just make sure you get a techie who you trust to evaluate projects impersonally and critically. And be careful of pet projects.
-</p>
-
-<h2>Doing It The Right Way</h2>
-
-<p>
-For many years I only had the first two measures. But I've come to value this one more over time.
-</p>
-
-
-
-<p>
-This criteria captures quality and culture. Are the manager's engineers working well together? Best judge of this is if other engineers want to be in this group. Do the engineers have a culture of quality? They should speak with pride of their work. If they feel their products are slipshod, through lack of care or lack of room to do the job right, then it will show.
-
-</p>
-
-
-<p>
-It also means that they aren't leaving scorched earth behind them. Their systems are maintainable and usable by others; the ops guys don't hate them because of missing tools or crappy logs; they've done code reviews and actually listened to the feedback.
-</p>
-
-<h2>Anti-Patterns</h2>
-
-<p>
-There are a couple of other things that I <strong>haven't</strong> mentioned as being important. They're probably on others' lists, but not on mine.
-</p>
-
-<p>
-</p>
-<ol>
-<li>"Leadership." To some people this means that you know how to tell people what to do. To others it means just doing a lot of the things above well, like communication. I'm not disagreeing that it's not important, I just don't know how to define or measure it. It feels like one of those "you know it when you see it" things.</li>
-	<li>Well-triaged bug lists; great status reports; well-run team meetings. If any of these things help you accomplish the three things above, then do them, if not then they're paperwork.</li>
-</ol>
-<p>
-For example, when I managed a large team at VMware I spent a lot of time triaging bugs. That's the VMware's engineering culture, but it's also what you need for a large, distributed team delivering enterprise software. By contrast, at Ning I spent very little time in the bug database. That team was much smaller (6 vs 100), and our releases were less complicated and less scary. And that was the right way to manage that team.
-</p>
-
-
-
-<p>
-Finally, I want to credit some of those early managers in those Akamai days that I learned with/from:
-
-</p>
-<ul>
-<li>Experienced managers like George Conrades, Danny Lewin, Tom Leighton and Ross Seider</li>
-	<li>Fellow newcomers like Joel Wein, Ravi Sundaram, Harald Prokop, Marty Kagan, Jay Parikh, Julia Austin, and Bobby Blumofe</li>
-	<li>Thoughtful techies like Danner Stodolsky, Bill Weihl, Erik Nygren, and Chris Joerg.</li>
-</ul>
-</div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201203too-many-clouds/" class="u-url">Too Many Clouds (or: Why I Don't Use Evernote)</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
@@ -716,7 +763,7 @@ An interesting corollary.  The consumer backup problem is becoming simpler by de
 </div>
 
         <ul class="pager postindexpager clearfix">
-<li class="previous"><a href="." rel="prev">Newer posts</a></li>
+<li class="previous"><a href="index-2.html" rel="prev">Newer posts</a></li>
         </ul>
 <script>var disqus_shortname="sefkloninger";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer"><p align="center">Contents © 2025 <a href="mailto:sefklon@gmail.com">Sef Kloninger</a>       
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">

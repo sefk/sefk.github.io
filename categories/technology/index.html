@@ -10,7 +10,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
 <link rel="canonical" href="https://sef.kloninger.com/categories/technology/">
-<link rel="next" href="index-1.html" type="text/html">
+<link rel="next" href="index-2.html" type="text/html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link rel="alternate" type="application/rss+xml" title="RSS for tag Technology" hreflang="en" href="../technology.xml">
 </head>
 <body>
@@ -88,565 +88,648 @@ bg-dark
 
         </div>
     </header><div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201309knr-c-label/" class="u-url">K&amp;R C Programming, Quantum Books, Cambridge, MA</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/photo-dups/" class="u-url">Cleaning Up Photo Duplicates</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Sef Kloninger
             </span></p>
             <p class="dateline">
-            <a href="../../posts/201309knr-c-label/" rel="bookmark">
-            <time class="published dt-published" datetime="2013-09-14T17:41:20-07:00" itemprop="datePublished" title="2013-09-14 17:41">2013-09-14 17:41</time></a>
+            <a href="../../posts/photo-dups/" rel="bookmark">
+            <time class="published dt-published" datetime="2024-02-19T12:00:00-08:00" itemprop="datePublished" title="2024-02-19 12:00">2024-02-19 12:00</time></a>
             </p>
                 <p class="commentline">
     
-    <a href="../../posts/201309knr-c-label/#disqus_thread" data-disqus-identifier="cache/posts/201309knr-c-label.html">Comments</a>
+    <a href="../../posts/photo-dups/#disqus_thread" data-disqus-identifier="cache/posts/dups.html">Comments</a>
 
 
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <p style="text-align: left;"><img class="alignright  wp-image-433" style="border: 0px;" alt="IMG_4177" src="../../f/IMG_41771-231x300.jpg" width="139" height="180"></p>
-<p>
-Today in a box I came across my old K&amp;R. Probably the most valuable book I've owned. My copy has been heavily used.</p>
+    <p><img style="float:right" class="postimage" src="../../f/dups-pie.png" alt="Pie Chart" width="30%"></p>
+<p>I did a data cleanup over the weekend. I doubt this is interesting
+for anyone else, I just wanted to capture my own notes.</p>
+<p>Our family photos are stored up in Google Photos. We have about
+100k photos and short movies that take up 0.5TB. I wanted to back
+up to <a href="https://www.synology.com/en-us/products?product_line=ds_plus">local storage</a>, but also I liked the idea of trying the
+<a href="https://www.mdisc.com/">mdisc</a> format for long-term storage.</p>
+<p>I ran <a href="https://takeout.google.com/">Takeout</a> and unzipped everything. I was surprised to see
+so many duplicates. Some are copies in the same folders with suffixes
+like "(1)", most are multiple copies in different folders.
+Takeout seems to just store a copy for each album a photo is in.</p>
+<p><a href="https://docs.google.com/spreadsheets/d/10pRVc1_6u0G2z62uEJSHHZ0yzf43Zoa9yx0D2bpICmE/edit?usp=sharing">Some poking at the data</a> shows 88% of 302,755 files / 72% of
+the bytes were unique (histogram at the bottom of the post).  Removing
+dups can save 200+GB. Sure not really worth the trouble but why
+not.</p>
+<h4>Steps</h4>
+<p>1. On the NAS, gather file checksums (<code>md5sum</code>) and sizes for all
+the files under <code>Takeout/Google Files</code>. Mostly variations on
+of <code>find -print0 | xargs -0</code>.</p>
+<p>2. Data cleanup to get into nice file paths and clean delimiters,
+mostly interactively with <code>vi</code>.</p>
+<p>3. Insert into <code>sqlite</code> using <code>.separator</code> and <code>.import</code>.</p>
+<p>Here's what the database ended up looking like: <code>Photos</code> and <code>Sizes</code>
+are inputs, <code>HashCounts</code>, <code>Duplicates</code>, and <code>Candidates</code> are
+outputs.</p>
+<div class="code"><pre class="code literal-block"><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Photos</span><span class="p">(</span><span class="n">hash</span><span class="w"> </span><span class="nb">TEXT</span><span class="p">,</span><span class="n">path</span><span class="w"> </span><span class="nb">TEXT</span><span class="p">);</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Sizes</span><span class="p">(</span><span class="k">size</span><span class="w"> </span><span class="nb">INT</span><span class="p">,</span><span class="n">path</span><span class="w"> </span><span class="nb">TEXT</span><span class="p">);</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">HashCounts</span><span class="p">(</span><span class="n">hash</span><span class="w"> </span><span class="nb">TEXT</span><span class="p">,</span><span class="k">found</span><span class="w"> </span><span class="nb">INT</span><span class="p">);</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Duplicates</span><span class="p">(</span><span class="n">path</span><span class="w"> </span><span class="n">STRING</span><span class="p">,</span><span class="n">hash</span><span class="w"> </span><span class="n">STRING</span><span class="p">,</span><span class="k">found</span><span class="w"> </span><span class="nb">INT</span><span class="p">,</span><span class="k">size</span><span class="w"> </span><span class="nb">INT</span><span class="p">);</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Candidates</span><span class="p">(</span><span class="n">path</span><span class="w"> </span><span class="n">STRING</span><span class="p">,</span><span class="n">hash</span><span class="w"> </span><span class="n">STRING</span><span class="p">,</span><span class="k">size</span><span class="w"> </span><span class="nb">INT</span><span class="p">,</span><span class="n">pos</span><span class="w"> </span><span class="nb">INT</span><span class="p">);</span>
+</pre></div>
 
-<p>
-But the unexpected, fun thing was finding an old label on the back cover.
+<p>4. Find the dups. I'm surprised to find some with 50 or more copies,
+but it out some family favorites end up in lots of albums.</p>
+<div class="code"><pre class="code literal-block"><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">HashCounts</span>
+<span class="k">select</span><span class="w"> </span><span class="n">hash</span><span class="p">,</span><span class="w"> </span><span class="k">sum</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">found</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Photos</span><span class="w"> </span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">hash</span><span class="p">;</span>
+</pre></div>
+
+<p>5. Figure out candidates for deletion</p>
+<div class="code"><pre class="code literal-block"><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">Duplicates</span>
+<span class="k">select</span><span class="w"> </span><span class="n">Photos</span><span class="p">.</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">Photos</span><span class="p">.</span><span class="n">hash</span><span class="p">,</span><span class="w"> </span><span class="n">HashCounts</span><span class="p">.</span><span class="k">found</span><span class="p">,</span><span class="w"> </span><span class="n">Sizes</span><span class="p">.</span><span class="k">size</span>
+<span class="k">from</span><span class="w"> </span><span class="n">Photos</span><span class="p">,</span><span class="w"> </span><span class="n">HashCounts</span><span class="p">,</span><span class="w"> </span><span class="n">Sizes</span>
+<span class="k">where</span><span class="w"> </span><span class="n">HashCounts</span><span class="p">.</span><span class="n">hash</span><span class="o">=</span><span class="n">Photos</span><span class="p">.</span><span class="n">hash</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">Photos</span><span class="p">.</span><span class="n">path</span><span class="o">=</span><span class="n">Sizes</span><span class="p">.</span><span class="n">path</span>
+<span class="k">and</span><span class="w"> </span><span class="n">HashCounts</span><span class="p">.</span><span class="k">found</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</pre></div>
+
+<p>The first of each set is the one we'll keep.</p>
+<div class="code"><pre class="code literal-block"><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">Candidates</span>
+<span class="k">select</span><span class="w"> </span><span class="o">*</span>
+<span class="k">from</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">hash</span><span class="p">,</span><span class="w"> </span><span class="k">size</span><span class="p">,</span><span class="w"> </span><span class="n">row_number</span><span class="p">()</span><span class="w"> </span><span class="n">over</span><span class="w"> </span><span class="p">(</span><span class="n">partition</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">hash</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">row_number</span>
+<span class="w">    </span><span class="k">from</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Duplicates</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">hash</span><span class="p">,</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="k">desc</span><span class="p">)</span>
+<span class="p">)</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">row_number</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</pre></div>
+
+<p>I was surprised that sqlplus supports window functions, nice.</p>
+<p>The inner reverse-alpha sort on "path" takes care of two cases.
+I tend to prefer keeping photos with names that start with
+years, and Those come first alphabetically (nice). Also within
+folders often there are many copies with "(1)" and "(2)" suffixes
+that are generally cruft and most worthy of removing, and those
+also sort last alphabetically (nice).</p>
+<p>5. Dump out the "Candidates" using <code>.output</code>. Copy back to the NAS.
+Do lots of spot checks. Convert to a bash script of <code>rm</code> commands,
+run very carefully.</p>
+<h4>Tools</h4>
+<p><strong>Sqlite</strong> is my go-to tool for ad-hoc work like this.  It's fast
+and simple, but only for small jobs -- this one is MB-scale.</p>
+<div class="code"><pre class="code literal-block"><span class="k">select</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="k">sum</span><span class="p">(</span><span class="n">pgsize</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">dbstat</span><span class="w"> </span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="n">name</span><span class="w">           </span><span class="k">sum</span><span class="p">(</span><span class="n">pgsize</span><span class="p">)</span>
+<span class="c1">-------------  -----------</span>
+<span class="n">Candidates</span><span class="w">     </span><span class="mi">3006464</span>
+<span class="n">Duplicates</span><span class="w">     </span><span class="mi">5541888</span>
+<span class="n">HashCounts</span><span class="w">     </span><span class="mi">11051008</span>
+<span class="n">Photos</span><span class="w">         </span><span class="mi">23240704</span>
+<span class="n">Sizes</span><span class="w">          </span><span class="mi">13807616</span>
+<span class="n">sqlite_schema</span><span class="w">  </span><span class="mi">4096</span>
+</pre></div>
+
+<p>My <strong>Synology</strong> is a pretty good place for storage with ability to
+ssh in and run local commands.  But if I had to do this again,
+though, I should have just bought a large locally-connected SSD.
+All the transfers to-from the NAS were a hassle. Looking now I'm
+stunned that you can get a 4 TB external SSD for under $300.</p>
+<p>Some <a href="https://docs.google.com/spreadsheets/d/1O4gzeTn8GNeL1X4DrBUprcEqpK6jKbQrtEfBNdJF-Pw/edit#gid=810787524">private notes</a> here.</p>
+<p><img class="postimage" src="../../f/dups-histo.png" alt="Histogram" width="100%">
+(<a href="https://docs.google.com/spreadsheets/d/10pRVc1_6u0G2z62uEJSHHZ0yzf43Zoa9yx0D2bpICmE/edit?usp=sharing">source</a>)</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/esim/" class="u-url">The iPhone's SIM Tray Went Away Too Soon</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="../../posts/esim/" rel="bookmark">
+            <time class="published dt-published" datetime="2024-01-05T02:34:49-08:00" itemprop="datePublished" title="2024-01-05 02:34">2024-01-05 02:34</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="../../posts/esim/#disqus_thread" data-disqus-identifier="cache/posts/esim.html">Comments</a>
 
 
-
-</p>
-<p>
-There is a lot in there.
-
-</p>
-<p style="text-align: center;"><img class="aligncenter  wp-image-429" style="border: 0px;" alt="IMG_4179" src="../../f/IMG_4179-1024x393.jpg" width="584" height="224"></p>
-
-
-
-<p>
-</p>
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p><img style="float:right" class="postimage" src="../../f/sim.png" alt="SIM" width="25%"></p>
+<p>If you've traveled internationally, likely you've used a SIM card
+for local data and calls. There is a nice ecosystem around SIMs
+with a wealth of easy and affordable Pay As You Go (PAYG) options.</p>
+<p>But the newer iPhones did away with the SIM slot if favor of some new
+eSIM hotness. Apple has all kinds of <a href="https://support.apple.com/en-gb/HT209096">info</a> claiming they have good
+international support, but I found reality falls short.</p>
 <ul>
-<li>January 1994. I had just graduated college, driven cross country with my friend <a href="http://www.linkedin.com/pub/shigeru-tanaka/0/a27/917">Shig</a>, and started my first post-college job. I would have been in that job four months or so and realized that I should just stop borrowing someone else's copy (probably <a href="http://www.linkedin.com/in/larryclaman/">Larry Claman</a>'s) and buy my own.</li>
-	<li>Purchased at Quantum Books, a great technical bookstore in the shadow of MIT in Cambridge, Massachusetts. It's no longer there. The bar that is there now (<a style="font-style: normal;" href="http://www.themeadhall.com/">Meadhall</a>) is a nice place, and I'm a big fan of beer, but it's not the same.</li>
-	<li>According to an <a style="font-style: normal;" href="http://www.bls.gov/data/inflation_calculator.htm">inflation calculator</a>, $35 in 1994 is $55 today. That's expensive for a little book, especially to the twenty-two year old me.</li>
-	<li>Note the email address: quanbook@world.std.com. This was back when mom and pop dialup ISP's where what we all used, people and businesses alike. This particular one, <a style="font-style: normal;" href="http://world.std.com/">Software Tool &amp; Die</a>, was my private email address at the time too. (Aside: they claim to be the first public dialup ISP, and I have no reason to doubt them)</li>
+<li>Only a few carriers support eSIM's,</li>
+<li>The few that do require a contract. A tourist or student
+   studying abroad is better served by a PAYG plan, and</li>
+<li>Even if you can stomach a contract, that would require a UK bank
+   account; no way to easily pull that off.</li>
 </ul>
-<p>
-It was fun being reminded of all this stuff. So the lesson of the story: it's still worth buying books, and when you do, don't remove the labels.</p>
+<p>We ended up falling back to <a href="https://www.att.com/international/day-pass/">international roaming</a>. It works but
+is expensive.</p>
+<p>I think Apple made the wrong call removing the trusty old SIM tray.
+Clearly the new models can be made to work well with it, since how
+they are sold in the UK.  If you're unlucky enough to have bought
+your recent iPhone in the US, you're out of luck. </p>
+<p>I this is an example of Apple bad tendency sometimes choose form
+over function, "<a href="https://www.theringer.com/2016/9/7/16038622/why-did-apple-remove-the-headphone-jack-courage">courage</a>" over usability.</p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201306launch-day/" class="u-url">Launch Day</a></h1>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/youtube/" class="u-url">YouTube</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Sef Kloninger
             </span></p>
             <p class="dateline">
-            <a href="../../posts/201306launch-day/" rel="bookmark">
-            <time class="published dt-published" datetime="2013-06-11T22:59:24-07:00" itemprop="datePublished" title="2013-06-11 22:59">2013-06-11 22:59</time></a>
+            <a href="../../posts/youtube/" rel="bookmark">
+            <time class="published dt-published" datetime="2015-08-26T08:25:00+02:00" itemprop="datePublished" title="2015-08-26 08:25">2015-08-26 08:25</time></a>
             </p>
                 <p class="commentline">
     
-    <a href="../../posts/201306launch-day/#disqus_thread" data-disqus-identifier="cache/posts/201306launch-day.html">Comments</a>
+    <a href="../../posts/youtube/#disqus_thread" data-disqus-identifier="cache/posts/youtube.html">Comments</a>
 
 
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="../../f/spaceshuttle-300x283.png" width="180" height="170"><p>
-Today was launch day. It went really well.  I wanted to capture what a good launch feels like and contrast that with a more exciting launch, just five months ago.
-
-
-</p>
-<p>
-Today we turned on our first class on Stanford's instance the open-source <a href="http://code.edx.org">edX platform</a>, what we're calling <a href="http://online.stanford.edu/openedx">OpenEdX</a>. The class is <a href="https://class.stanford.edu/courses/Medicine/HRP258/Statistics_in_Medicine">Statistics in Medicine</a>, taught by Kristin Sainani of the Stanford School of Medicine. With over thirteen thousand students signed up it's a medium-sized MOOC (Massive Open Online Course).
-
-
-
-</p>
-<p>
-We have launched MOOC's for Stanford before: two in <a href="http://networking.class.stanford.edu/">Fall</a> <a href="http://solar.class.stanford.edu/">Quarter</a>, and one in <a href="http://db.class.stanford.edu/">Winter</a>. Even though the classes were huge success, but the launch days weren't so smooth. We had written that platform, <a href="http://class2go.stanford.edu/">Class2Go</a>, from the ground up with a small team in a dozen weeks in Fall; in the weeks before the Winter launch we ripped out the whole evaluation system, about one-third of the code, and replaced it with a whole new engine. In both cases most of our code was fresh off the presses.
-
-
-
-</p>
-<p>
-Those launches were rocky. I'll tell the story of the DB class launch in January. The first thing we do is a "soft launch," where you open the front door and some people find their way in. Those first visits give you a sense of how things will go.  Surprisingly, the servers were a bit busy.  But we wanted to keep going, so we scaled up capacity and moved on.
-
-
-
-</p>
-<p>
-The thing that drives real traffic is the announcement email. That gets people to the site. The announcements started going out, students started coming in, and the site lit up. We were in hot water. Servers were overloaded, and most surprising, the database was getting hammered. This was scary and unexpected. We control-C'ed the mail job and quickly hacked additional caching into the site.  We had to trickle out announcements over the next twelve hours.  We made it, but it was a long, stressful day.
-
-
-
-</p>
-<p>
-And then the days/weeks post-launch were spent watching graphs, triaging 500 errors (user-visible "we're sorry" pages), and installing daily hotfixes. But we got through it. The classes were a success and the team was proud.
-
-
-
-</p>
-<p>
-So, contrast that to today's launch.  Totally different.
-
-
-
-</p>
-<p>
-Everyone came in early as usual. I bought bagels. We turned on the class (soft-launch) and the servers hardly noticed. We sent the announcement mails, people came and took their pre-course survey and watched the intro video. Hardly any load. This chart shows the average CPU on our four appservers from 8:00 AM PDT / 15:00 UTC until 10:45 AM or so.
-
-
-
-</p>
-<p align="center">
-<img class="alignnone  wp-image-414" style="border: 0px;" alt="launch-app-cpu" src="../../f/launch-app-cpu1.png" width="1530" height="373"></p>
-<p>
-Those are happy servers. Other charts we watched (db connections, load, etc.) told the same story. The most impressive thing was not a single user visible error, no 500's!
-
-
-
-</p>
-<p>
-Those folks at edX made some solid software.  We're happy to be working with a strong group of engineers and a quality product.  We've had our hands on it only since April, and it was released open-source to the world on June 1.  I fully expect a lot of other universities and organizations are going to have a great time running classes on OpenEdX too.
-
-
-
-</p>
-<p>
-I just turned off half the appservers since we're fine on capacity. Now off to bed with a good feeling.
-
-</p>
+    <p><img style="float:right" class="postimage" src="../../f/YouTube-icon-full_color.png" alt="YouTube" width="200px" height="148px"></p>
+<p>I'm excited to start my new job at YouTube in a few weeks. I'll manage the
+engineering team building the data warehouse for usage metrics.</p>
+<p>I like that YouTube is <strong>important</strong>. It's firmly a part of our culture
+and I'm sure it will be how my kids watch video. YouTube's impressive
+<a href="https://www.youtube.com/yt/press/statistics.html">statistics</a> are the result. You don't see usage like that without a
+bunch of <strong>hard problems</strong>, and hard problems attract <strong>bright people</strong>.
+Indeed that's the clincher for why I'm looking forward to working there.
+People vote with their feet, and I have a lot of friends who have opted
+for Google, and YouTube specifically. They tell me that it's a great place
+to work.</p>
+<p>YouTube is one of the worlds foremost platforms for social commentary,
+education, and free speech. And it's plenty of <a href="https://www.youtube.com/watch?v=9bZkp7q19f0">entertainment</a> too. Sounds
+like fun.</p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201304coding-on-a-flight/" class="u-url">Coding on a Flight</a></h1>
+    </article><article class="h-entry post-text " itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/thick-apps/" class="u-url">Thick Apps Still Lose </a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Sef Kloninger
             </span></p>
             <p class="dateline">
-            <a href="../../posts/201304coding-on-a-flight/" rel="bookmark">
-            <time class="published dt-published" datetime="2013-04-08T22:30:38-07:00" itemprop="datePublished" title="2013-04-08 22:30">2013-04-08 22:30</time></a>
+            <a href="../../posts/thick-apps/" rel="bookmark">
+            <time class="published dt-published" datetime="2015-08-19T13:20:00-07:00" itemprop="datePublished" title="2015-08-19 13:20">2015-08-19 13:20</time></a>
             </p>
                 <p class="commentline">
     
-    <a href="../../posts/201304coding-on-a-flight/#disqus_thread" data-disqus-identifier="cache/posts/201304coding-on-a-flight.html">Comments</a>
+    <a href="../../posts/thick-apps/#disqus_thread" data-disqus-identifier="cache/posts/thick-apps.html">Comments</a>
 
 
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <img class="alignright  wp-image-408" style="border: 0px;" alt="airplane" src="../../f/airplane-300x126.png" width="240" height="101"><p>
-I'm surprised that that I like coding on flights. It's surprising because airplanes are generally hostile environments for most things, but I've found it a good place to code.
-
-
-
-</p>
-<p>
-The obvious reason is the lack of interruptions and distractions. Usualy there is no wifi, or it is too spotty to count on. So no email or IRC or web. While I know that distractions kill flow, I never seem give myself license to unplug in normal life. I'm a manager, and being a manager means being interruptible.
-
-
-
-</p>
-<p>
-But there's another reason. When I code unplugged, I code differently. I have to be self-sufficient. Instead of just looking things up on StackOverflow, I take 20% more time to figure it out myself. That's much more satisfying! It's just not that hard to rummage through the Django code or try things out in iPython.
-
-
-
-</p>
-<p>
-Also it just sounds cool to say you coded something up on the flight.
-
-
-
-</p>
-<p>
-But thre real question is should simulate "airplane mode" when grounded.  Hmm.</p>
+    <p><img style="float:right" class="postimage" src="../../f/online-required.png" alt="Microsoft Excel 2016 Error Message" width="60%"></p>
+<p>Thick apps won mobile. Fine. </p>
+<p>On laptop (and desktop) it's not so clear. What is better, thick or thin?
+I tend to live mostly in thin land, although I use some thick apps
+regularly, like Twitter's Mac client and Apple Photos.</p>
+<p>Every so often I give a big native app a try: <strong>Excel</strong> instead of
+<strong>Google Sheets</strong>, <strong>Mail.app</strong> instead of <strong>Gmail</strong>, <strong>Reminders</strong>
+instead of the barebones <strong>Tasks</strong> built into Gmail. (I can't bring myself
+to try Word). But it's disappointing to see how those fancy apps keep
+shooting themselves in the foot!</p>
+<p>Take for example this Excel error message. Excel is whining that it
+can't verify my subscription the first time I ran Excel untethered
+(version 15.11.2, for what its worth). Sure you can click through the
+warning, but would a newbie know to do that? At best off-putting, at worst
+downright disorienting. Why warn me of this at all? And why in a modal
+that stops me dead in my tracks?</p>
+<p>It seems thick apps should win. They rock the unplugged use case. An even
+better situation is flaky networks -- tethered, conference WiFi,
+travelling. UI's deal notoriously poorly with intermittent or partial
+outages. A thick client, relying on that connection only for hitting
+API's, can hide the network.</p>
+<p>Another place they should shine is the UI itself. They should be fast,
+beautiful, and featureful. Too often they're not. For example I find
+Mail.app to be clunky, difficult to customize, and its keyboard shortcuts
+few and poorly done. Gmail is pretty good!</p>
+<p>Finally there's the upgrade problem. Thick apps need conscious effort from
+their users before their work sees user time and they get feedback. And
+that's what drives innovation. Long cycles means slower (less) invention.
+One example I love is Gmail's "undo send" feature. Boy, you sure do miss
+that when you need it and it's not there! That should be on every thick
+client by now, but I don't think it is. I do know that Gmail has it and
+Mail.app still doesn't.</p>
+<p>Maybe the Internet can help. Look at <strong><a href="https://www.getchrome.com/">Chrome</a></strong> with its awesome auto
+updates. What makes this work is solid engineering and exceptional quality
+control. I've never seen behind the Google curtain, but I bet there's no
+magic, just a lot of good engineering that leads to good software. Like:
+good design and code reviews, tons of test coverage across many scenarios,
+diverse and well-instrumented canaries, and thorough performance and
+resource use testing. If Google didn't all of that so well, then we
+wouldn't accept frequent pushes. Without the frequent upgrade cycle,
+Chromes feature cycle would languish.</p>
+<p><strong><a href="https://www.getelectron.com/">Electron</a></strong> is another bright spot. This is the framework that gives
+Slack and GitHub's thick clients their fit and finish. It makes these feel
+like true native apps, even though they are mostly web controls with
+JavaScript the covers. Right-clicking still doesn't do what I want, and
+text controls are finicky, but it's close. But what those rough edges buy
+you, and the software producer, are frequent, reliable, and clean
+upgrades.</p>
+<p>My natural preference would be for thick apps. If they were done well,
+I'd use them.</p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201303online-ed-retention/" class="u-url">"Low" Retention Rates in Online Education Isn't Necessarily A Bad Thing</a></h1>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/job-15/" class="u-url">My Next Job</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Sef Kloninger
             </span></p>
             <p class="dateline">
-            <a href="../../posts/201303online-ed-retention/" rel="bookmark">
-            <time class="published dt-published" datetime="2013-03-31T12:23:15-07:00" itemprop="datePublished" title="2013-03-31 12:23">2013-03-31 12:23</time></a>
+            <a href="../../posts/job-15/" rel="bookmark">
+            <time class="published dt-published" datetime="2015-05-10T09:30:00-07:00" itemprop="datePublished" title="2015-05-10 09:30">2015-05-10 09:30</time></a>
             </p>
                 <p class="commentline">
     
-    <a href="../../posts/201303online-ed-retention/#disqus_thread" data-disqus-identifier="cache/posts/201303online-ed-retention.html">Comments</a>
+    <a href="../../posts/job-15/#disqus_thread" data-disqus-identifier="cache/posts/job-15.html">Comments</a>
 
 
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <img class="alignright  wp-image-400" style="border: 0px;" alt="Evaluate-300x198" src="../../f/Evaluate-300x198.png" width="240" height="158"><p>
-I am of two minds about <a title="Peter Reinhardt" href="http://rein.pk/online-educations-dirty-secret-awful-retention/" target="_blank">Peter Reinhardt post today</a> calling out online education's poor retention rates.
+    <p><img style="float:right" class="postimage" src="../../f/snowflake.png" alt="Snowflake" width="25%"></p>
+<p>I left <a href="http://www.wavefront.com/">my last job</a> a few weeks back and it's high time to look for a new
+one. If you're working on something interesting and think I could help, <a href="mailto:sefklon@gmail.com">let
+me know</a>! </p>
+<p>It's nice to not have a day job while looking for another. I was lucky enough
+to do this <a href="../../posts/201204my-sabbatical.html">once before in 2012</a> which turned out great. I learned then
+that time and flexibility lets you talk to lots of friends and learn about a
+breadth of projects. I found a fun project in a new domain (<a href="../../posts/201207on-line-education.html">online
+education</a>), something I doubt I'd have found the normal way.</p>
+<p>Maybe I'll get lucky again.</p>
+<p>Enough small talk, what am I looking for?</p>
+<p>I'm looking for some flavor of <strong>line manager</strong>. I'm a good senior manager and
+code-every-day engineer; but I'm exceptional leading a team and running a
+project. That's what line managers do: lead engineers, not other managers or
+departments or matrix-anything. Also, if you're some kind of executive then
+coding is an indulgence, and I'd rather it just be part of my job. Mostly I'm
+talking to <strong>small companies</strong>, say 10-100 people (fun-size).</p>
+<p>I want to <strong>build on my experience</strong>. I know infrastructure and cloud, SaaS
+and enterprise, and online education. I'm probably not the best person for
+your storage, security, gaming, e-commerce, or cryptocurrency company. I want
+to stay working on <strong>Internet technology</strong>. I like the (micro)services model.
+For my own projects I choose Python, JavaScript (frontend and backend), and
+Java. I know web operations, especially the <a href="../../posts/aws.html">Amazon stack</a>.</p>
+<p><strong>Location</strong> is important: I don't want to do a daily Menlo Park to San
+Francisco round-trip. I'd like to <strong>work with friends</strong> if possible. And I
+want to do something <strong>worthwhile</strong>.</p>
+<p>You can always get to my resume from the header here, or via this <a href="http://bit.ly/sef-resume">short
+link</a>. I'm open to a bunch of things, just no <a href="https://www.youtube.com/watch?v=VEgu7jdc_fs">kick boxing</a>.  Let's
+have coffee/drink or take a walk.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/aws/" class="u-url">Lessons from Three Years in AWS</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="../../posts/aws/" rel="bookmark">
+            <time class="published dt-published" datetime="2015-04-24T00:10:00-07:00" itemprop="datePublished" title="2015-04-24 00:10">2015-04-24 00:10</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="../../posts/aws/#disqus_thread" data-disqus-identifier="cache/posts/aws.html">Comments</a>
 
 
-</p>
-<p>
-I agree that retention rates are low. At Stanford we we just completed the Winter run of Jennifer Widom's <a title="Introduction to Databases" href="http://db.class2go.stanford.edu/" target="_blank">Database Class</a>, here are the course stats:
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p><img style="float:right" class="postimage" src="../../f/aws.png" alt="AWS Logo" width="30%"></p>
+<p>I've spent the last three years building and operating web sites
+with Amazon Web Services and here are a few lessons I've learned. 
+But I first have to come clean that I'm a fan of AWS with only
+casual experience with other IAAS/PAAS platforms.</p>
+<p><strong>S3 Is Amazing</strong>. They made the right engineering choices and
+compromises: cheap, practically infinitely scalable, fast enough,
+with good availability. $0.03/GB/mo covers up for a lot of sins.
+Knowing it's there changes how you build systems.</p>
+<p><strong>IAM Machine Roles From The Start</strong>. IAM with <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html">Instance Metadata</a>
+is a powerful way to manage secrets and rights. Trouble is you can't add
+to existing machines. Provision with machine roles in big categories
+(e.g. app servers, utility machines, databases) at the start, even if 
+just placeholders.</p>
+<p><strong>Availability Zoness Are Only Mostly Decoupled</strong>. After the 2011
+<a href="http://www.networkworld.com/article/2202805/cloud-computing/amazon-ec2-outage-calls--availability-zones--into-question.html">us-east-1 outage</a> we were reassured that a coordinated 
+outage wouldn't happen again, but it happened again just
+<a href="https://www.reddit.com/r/aws/comments/2zpag7/aws_internal_dns_outage/">last month</a>.</p>
+<p><strong>They Will Lock You In And You'll Like It</strong>. They secondary services
+work well, are cheap, and are handy. I'm speaking of SQS, SES,
+Glacier, even Elastic Transcoder. Who <em>wants</em> to run a durable queue
+again?</p>
+<p><strong>CloudFormation No</strong>. It's tough to get right. My
+objection isn't programming in YAML, I don't mind writing Ansible plays, it's the
+complexity/structure of CloudFormation that is impenetrable. Plus
+even if you get it working once, you'd never run it again on something
+that is running.</p>
+<p><strong>Boto Yes</strong>. Powerful and expressive. Don't script the CLI, use
+Boto. Easy as pie.</p>
+<p><strong>Qualify Machines Before Use</strong>. Some VMs have lousy networking,
+presumably due to a chatty same-host or same-rack neighbor. Test
+for loss and latency to other hosts you own and on EBS. (I've used
+home-grown scripts, don't know of a standard open-source widget,
+someone should write one).</p>
+<p><strong>VPC Yes</strong>. If you have machines talking to each other (i.e. not a
+lone machine doing something lonely) then put them in a VPC. It's not
+hard.</p>
+<p><strong>NAT No</strong>. You think that'll improve security, but it will just
+introduce SPOFS and capacity chokepoints. Give your machines publicly
+routable IP's and use security groups.</p>
+<p><strong>Network ACLs Are A Pain</strong>. Try to get as far as you can with just security
+groups.</p>
+<p><strong>You'll Peer VPC's Someday</strong>. Choose non-overlapping subnet IP ranges
+at the start. It's hard to change later.</p>
+<p><strong>Spot Instances Are Tricky</strong>. They're only For a very specific use
+case that likely isn't yours. Setting up a test network? You can
+spend the money you save by using spot on swear jar fees.</p>
+<p><strong>Pick a Management Toolset</strong>. Ansible, Chef, all those things aren't
+<em>all</em> that different when it comes down to it. Just don't dither back
+and forth. There's a little bit of extra Chef love w/ AWS but not enough to tip
+the scales in your decision I'd reckon. </p>
+<p><strong>Tech Support Is Terrible</strong>. My <a href="http://www.wavefront.com/">last little
+startup</a> didn't get much out of the <a href="https://aws.amazon.com/premiumsupport/">business level tech
+support</a> we bought. We needed it so we could call in to get
+help when we needed it, and we used that for escalating some problems.
+It was nice to have a number to call when I urgently need to up a
+system limit, say. But debugging something real, like a networking
+problem? Pretty rough.</p>
+<p><strong>...Unless You Are Big</strong>. Stanford, on the other hand, had a named
+rep who was responsive and helpful. I guess she was sales, but I
+used her freely on support issues and she worked the backchannels
+for us. Presumably this is what any big/important customer would
+get, that's just not you, sorry.</p>
+<p><strong>The Real Power Is On Demand</strong>. I'm reaffirming cloud
+koolaid here. Running this way lets you build and run systems
+differently, <em>much better</em>. I've relied on the cloud this to bring
+up emergency capacity. I've used it to convert a class of machines
+on the fly to the double-price double-RAM tier when hitting a
+surprising capacity crunch. There are a whole class of problems
+that get much easier when you can have 2x the machines for just a
+little while.  When someone comes to you with that cost/benefit
+spreadsheet arguing why you should self-host, that's when you need
+your file of "the cloud saved my bacon" stories at the ready.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/learn-to-write/" class="u-url">CS Students: Learn to Write</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="../../posts/learn-to-write/" rel="bookmark">
+            <time class="published dt-published" datetime="2014-01-25T16:17:00-08:00" itemprop="datePublished" title="2014-01-25 16:17">2014-01-25 16:17</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="../../posts/learn-to-write/#disqus_thread" data-disqus-identifier="cache/posts/learn-to-write.html">Comments</a>
 
-</p>
-<p>
-</p>
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p><img style="float:right" class="postimage" src="../../f/writing-hand.jpeg" alt="Writing Hand" width="40%"></p>
+<p>If I could do my college years over I would focus on writing. I
+would take courses that required a lot of writing, in the spirit
+of "learn by doing". I'd also take courses in the mechanics and
+craft: grammar, vocabulary, and rhetoric.</p>
+<p>I used to consider myself a competent writer. And certainly good
+enough for an engineer, right? But I've learned that I have a long
+way to go. I've learned that engineers spend much more time writing
+than you expect. And I appreciate how hard it is to write well.</p>
+<p>This came up just this past week. I came across a beautiful four
+page essay. It laid out the problem, described alternatives, and
+lead you concisely to a well-reasoned conclusion. Sure, it was about
+technology, but what carried the day was the good writing. Humbling!</p>
+<p>You're saying: but wait, you're a <a href="http://en.wikipedia.org/wiki/Pointy-Haired_Boss">pointy-haired boss</a> now
+Sef, one of those guys who doesn't do <em>Real Work</em> anymore. You write
+email and boss people around. I understand why managers like you
+need to write, I'm an engineer. I write code. Well, there's some
+truth to that. But I'd like to convince you that even monster coders,
+if they're any good, write a lot, write well, and value good writing
+in others.</p>
+<p>It is rare for someone to do their work in isolation and have it
+matter. Either you're working as part of a team, in a company or
+a community of developers, say on an open-source project. Sure, you
+build a great system or feature. But to have it matter to the world,
+for others to adopt it, you need to document, publicize, support,
+teach. 98% of that is writing.</p>
+<p>I had a lunchtime conversation with <a href="http://jacobian.org/writing/great-documentation/">Jacob Kaplan-Moss</a>,
+Django's co-founder, at last year's PyCon. I asked him why Django
+caught on and was adopted by so many of us (including <a href="http://class2go.stanford.edu/">my last
+project</a> and <a href="http://code.edx.org/">my current project</a>). I was expecting him
+to point to features or timing. Instead he said it was "because we
+wrote good docs". The Django team didn't treat documentation as an
+afterthought. They have lots of docs, and they are good.</p>
+<p>Consider that rare bird, the iconoclastic engineer working in
+isolation on their own project. I'm thinking of <a href="http://antirez.com/">Antirez</a> or
+<a href="http://www.marco.org/">Marco</a>. (Maybe they aren't even truly on their own so much.
+Humor me!) They are prolific and strong coders. But they also write
+a lot of words! They write a ton about their project; also tech
+landscape and their place in it. Would their software have as much
+of an impact if they didn't write so much (and well)? I say no.</p>
+<p>Case in point. Both Marco and I wrote blog posts riffing off the
+same topic two weeks ago. First, read <a href="http://sef.kloninger.com/posts/consume-produce-public.html">mine</a>, then
+<a href="http://www.marco.org/2014/01/03/the-builders-high">his</a>.  It takes me a ton of words to get something
+basic out.  His is concise and clear. Sheesh.</p>
+<p>So kids, don't shortchange those liberal arts classes. It's not
+fluffy stuff on the side. <strong>That is core</strong>. You need to write well
+to be a good engineer.</p>
+<p>Protip: the best way to do this is to major in the humanities. They
+write like crazy over there. Be like my friend Dan Chu and major
+in history, but secretly take CS courses on the side. If you're
+super smart like him, and can manage getting both degrees, then
+you're awesome. But don't sacrifice the BA for the BS. I would
+<strong>love</strong> to talk to a candidate with with a History BA and a Computer
+Science MS.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/switching-to-static/" class="u-url">Switching to Static</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="../../posts/switching-to-static/" rel="bookmark">
+            <time class="published dt-published" datetime="2013-12-30T01:35:23-08:00" itemprop="datePublished" title="2013-12-30 01:35">2013-12-30 01:35</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="../../posts/switching-to-static/#disqus_thread" data-disqus-identifier="cache/posts/switching-to-static.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p><img style="float:right" class="postimage" src="../../f/tesla.jpg" alt="Nikola Tesla" width="195" height="228"></p>
+<p>For those of you who frequently read this blog (n ≈ 0) you'll
+notice that it looks a bit different. I've moved it from my own
+hosted Wordpress instance to static pages generated by <a href="http://www.getnikola.com/">Nikola</a>
+and hosted up on <a href="http://www.github.com/">Github</a>.</p>
+<p>Why bother?  I didn't like my blog being something I wouldn't be
+proud to write or operate myself.  Wordpress was overkill and
+not worth the trouble:</p>
 <ul>
-<li>Registered: 64,127</li>
-	<li>Turned in some work: 20,836</li>
-	<li>Took the final exam: 4,771</li>
-	<li>Received a Statement of Accomplishment: 4,854 (1,927 with distinction)</li>
+<li>
+<p>Wordpress is database driven for dynamic sites. My little blog isn't
+  dynamic at all. Once you buy into the static idea, lots of otehr
+  things fall into place.</p>
+</li>
+<li>
+<p>Comments and account spam are still is a nuisance. The nice
+  people at <a href="http://akismet.com/">Akismet</a> have done a great job holding back the tide, 
+  but I still get at least one bogus registration a day. I expect a 
+  service like Disqus or Facebook or Google+ will be more likely
+  to keep pace with the spammers.</p>
+</li>
+<li>
+<p>I want to author in markdown; maybe even ReST someday. All this
+  wysiwyg-ish stuff in browsers is for the birds.</p>
+</li>
+<li>
+<p>I don't actually need to host anything. I'm not running my own IRC
+  server or anything. Even though <a href="http://dreamhost.com/">Dreamhost</a> has been a perfectly
+  good service, I just want something... well, less Wordpress-ey.</p>
+</li>
 </ul>
-<p>
-How do I feel that 23% of students who started the class finished? Or that only 7.6% who enrolled finished? Mostly I'm fine with that. I think there's a lot of value in someone kicking the tires. Some were experimenting with on-line education, some didn't know before hand if the class would be right for them. I share <a title="Curt Bonk, University of Indiana" href="http://php.indiana.edu/~cjbonk/" target="_blank">Curt Bonk</a>'s view that this shouldn't be seen as a black mark but as another form of outreach.
-
-
-
-</p>
-<p>
-I consider this over forty thousand people who got some exposure to the topic, the platform, and what this MOOC thing is all about.
-
-
-
-</p>
-<p>
-But I totally agree that increasing retention is a worthwhile goal and a valuable metric.   Online education platforms (mine included) should do what we can to keep students engaged.  This article has many good suggestions.  And there's a lot of room for experimentation.
-
-
-
-</p>
-<p>
-(disclaimer: I'm the engineering manager on <a title="Class2Go from Stanford" href="http://class2go.stanford.edu/" target="_blank">Class2Go</a>, the open-source MOOC platform we've built at Stanford)</p>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201301why-so-long/" class="u-url">Why Is That Feature Taking So Long?</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Sef Kloninger
-            </span></p>
-            <p class="dateline">
-            <a href="../../posts/201301why-so-long/" rel="bookmark">
-            <time class="published dt-published" datetime="2013-01-25T01:24:48-08:00" itemprop="datePublished" title="2013-01-25 01:24">2013-01-25 01:24</time></a>
-            </p>
-                <p class="commentline">
-    
-    <a href="../../posts/201301why-so-long/#disqus_thread" data-disqus-identifier="cache/posts/201301why-so-long.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <img class="alignright  wp-image-394" style="border: 0px;" alt="turd-polish" src="../../f/turd-polish.png" width="191" height="182"><p>
-I've observed a recurring source of tension:  building things fast vs. do it the right way. Usually you're not lucky enough that you can do both.  This post explains a bit why we (engineers) care so much about building things right.  Even when things are overdue and our stakeholders (end-users, biz folks, product management) are pushing to just get it done.
-
-
-</p>
-<p>
-You can describe the two poles here in pejorative terms.  Fast is slapdash, quick and dirty, bad software.  The right way is really just ivory-tower over-engineered turd polishing.  Is that fix really so important that we shouldn't ship it? Do you really need to refactor that now?
-
-
-
-</p>
-<p>
-I see three things driving engineers to build it right.
-
-</p>
-<p>
-</p>
+<h3>Choosing</h3>
+<p>So I need to pick a static web site hosting package, specifically
+one that is good for blogs.  The big things I was looking for:
+static site generation, Markdown/ReST support, and ability
+to host on free services like Github Pages.</p>
+<p>In additon I wanted these things (in no particular order):</p>
+<ul>
+<li>
+<p>active development</p>
+</li>
+<li>
+<p>in real use on real sites</p>
+</li>
+<li>
+<p>easy customization, ideally by theming</p>
+</li>
+<li>
+<p>ability to move over posts and comments, probably via Wordpress's
+  export function.</p>
+</li>
+<li>
+<p>python, what I program in for fun</p>
+</li>
+<li>
+<p>a bit extensible</p>
+</li>
+</ul>
+<p>I considered three options before settling on Nikola.  There are a
+ton of static site generators, even when you limit them to Python.
+But the only alternatives I seriously looked at were <a href="http://blog.getpelican.com/">Pelican</a> and
+<a href="http://ringce.com/hyde">Hyde</a>.  Of these Nikola seems to have the most active development
+and the richest set of features.  I ease especially drawn by their
+good documentation and theming.</p>
+<h3>Up and Running</h3>
+<p>Here are my notes of what it took.  This isn't a nicely-written howto,
+but if you want to see the blow-by-blow, read on.</p>
 <ol>
 <li>
-<strong>Wrong is insidious</strong>. A story: early on in Class2Go every page began with a fetch of some basic page data. If there was an error on lookup we would throw a 404. Not only is "not found" the wrong message, but it also isn't helpful. It covers up all kinds of other problems, in a way that is really difficult to debug.But for an engineer, these programming messes are <a href="http://en.wikipedia.org/wiki/Broken_windows_theory">broken windows</a>. Not only do they cheapen the project, they encourage others to take bad shortcuts. Heck, if they can't be bothered to handle exceptions correctly, then why should I?</li>
-	<li>
-<strong>Wrong is the express train to support hell.</strong> Unless you leave the company or project, you'll be called upon to support your own crappy code. That is certain. And there is almost nothing worse than being dragged back to debug some old code that you never meant to become production, and is now breaking the world.</li>
-	<li>
-<strong>Wrong hurts your reputation as an engineer</strong>. People see you taking shortcuts and infer that you are a sloppy programmer. And really they aren't wrong to do so. One habit of really good engineers is they don't leave a wake of messes behind them. They are able to do things (mostly) right even when they are moving fast.</li>
-</ol>
-<p>
-This last point is really the key one. Amongst engineers your reputation is your hard currency. It affects what projects you're invited to work on and what companies you'll be asked to join. Most importantly, good engineers only want to work with other good engineers, and they won't seek out someone sloppy. So I assume that any code I write will be looked at by a potential colleague or employer. This is especially true when working on an open-source project.
-
-
-
-</p>
-<p>
-This doesn't mean you have to go slow -- indeed, on my current project, <a href="http://class2go.stanford.edu/" target="_blank">Class2Go</a>, we get a lot done every week. What it does mean is that sometimes I'd rather not do something than do something I know will come out poorly.
-
-
-
-</p>
-<p>
-So, product manager waiting on a feature. What to do if you're waiting on an engineer and you think it's taking too damn long? The tactic **not** to use: tell them this won't matter and to just ship it. That will just piss him off. Better: get your senior engineer to convince the junior one why it's good enough to ship and reason about what really needs to get done. Exception: if the engineer you're waiting on is your senior engineer, then trust her judgment and wait.
-
-
-
-</p>
-<p>
-And finally, to you product managers and biz folks who push. You are right do do so. That's all that matters to the customers, all matters at the end of the day. Keep it up.</p>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201208wip-folders-with-ls/" class="u-url">Managing Work-In-Progress Folders with "ls -ltr"</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Sef Kloninger
-            </span></p>
-            <p class="dateline">
-            <a href="../../posts/201208wip-folders-with-ls/" rel="bookmark">
-            <time class="published dt-published" datetime="2012-08-07T01:56:53-07:00" itemprop="datePublished" title="2012-08-07 01:56">2012-08-07 01:56</time></a>
-            </p>
-                <p class="commentline">
-    
-    <a href="../../posts/201208wip-folders-with-ls/#disqus_thread" data-disqus-identifier="cache/posts/201208wip-folders-with-ls.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <img class="size-full wp-image-353 alignright" style="border: 0px;" title="blog-folder-done" src="../../f/blog-folder-done.png" alt="" width="107" height="41"><p>
-I've developed a nice little way to manage my work in progress folders.
-
-
-
-</p>
-<p>
-I keep a bunch of folders around where I can stick things that are in-flight: one for home projects, one for blogs, etc. I like accumulating ideas in there, one idea per file, that I can come back to and fuss over until something is ready.
-
-
-
-</p>
-<p>
-The folder is flypaper for ideas and notes.  My blog folder has about twenty files right now.
-
-
-
-</p>
-<p>
-Using "ls", and relying on file and directory modification times, is a useful way to keep track of all these files.  Here's how.
-
-
-
-</p>
-<p>
-As projects are finished I move them into a "done" folder. This gets them out of the way.  A useful side effect is the modification time of the done directly itself gets updated.
-
-
-
-</p>
-<p>
-The in-flight projects I care about most are the ones most recently updated: as an idea gets older it becomes less and less interesting.  When looking at this directory I use the "ls -ltr" command.  "l" means long (so you can see dates), "t" means sort by modification time, and "r" reverses that sort, so you see latest modified on the bottom.
-
-</p>
-<p align="center">
-</p>
-<p style="text-align: center;"><img class="aligncenter  wp-image-352" style="border: 0px;" title="blog-folder-detail" src="../../f/blog-folder-detail.png" alt="" width="719" height="275"></p>
-
-<p>
-The old files are at the top where I don't worry about them.  Some even scroll off the top of the screen, that's fine.  The done folder is a nice visual line for when something was last completed (say, published).  Having a separate color for directories makes this visually apparent.  And the bottom of the list are those most recently modified. Generally I work on the bottom up. Sometimes I go back to an old idea and add some notes. That bumps it to the top of the line -- it is interesting again.
-
-
-
-</p>
-<p>
-I probably type "ls -ltr" at least 5 times an hour.  I've never aliased it since my muscle memory is so strong (but maybe I still should).
-
-
-
- </p>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201207taking-down-100000-sites/" class="u-url">The Day I Took Down 100,000 Web Sites</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Sef Kloninger
-            </span></p>
-            <p class="dateline">
-            <a href="../../posts/201207taking-down-100000-sites/" rel="bookmark">
-            <time class="published dt-published" datetime="2012-07-25T10:56:57-07:00" itemprop="datePublished" title="2012-07-25 10:56">2012-07-25 10:56</time></a>
-            </p>
-                <p class="commentline">
-    
-    <a href="../../posts/201207taking-down-100000-sites/#disqus_thread" data-disqus-identifier="cache/posts/201207taking-down-100000-sites.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <img class="alignright size-full wp-image-343" style="border: 0px;" title="fire" src="../../f/fire.png" alt="fire alarm" width="300" height="240"><p>
-Every engineer has their "the day I did something very very bad" story. This is mine.
-
-
-</p>
-<p>
-It was my last week at <a href="http://www.ning.com/">Ning</a>. For about a year I ran the Infrastructure and Operations group. It was the end of a good stretch, working with a strong team on hard problems.
-
-
-
-</p>
-<p>
-In early 2010 (before I joined) Ning had successfully switched from a premium to paid model. Of Ning's two million social networks some were thriving onine communities, but many weren't. Trading those in for one hundred thousand good paying customers had been the right thing for the business. We kept around the 1.9M orphaned sites for some time in case someone wanted to assume ownership and start paying. By late 2011 the revival rate had dropped low enough that it was time to clear out the cruft.
-
-
-
-</p>
-<p>
-I volunteered for the cleanup. I enjoyed little projects like this because it kept my hands in the code and took away a task that would be a chore and distraction for the engineers. The job was some SQL queries, scripting, load testing, checking, and double-checking. The hardest part was ensuring we had the right list of networks to delete.
-
-
-
-</p>
-<p>
-It took about two months to write and run the scripts. I felt good that it had gone through uneventfully.
-
-
-
-</p>
-<p>
-There was a legacy corner of our system that hadn't been included in my cleanup pass. I hadn't worried about it at first since it was just a few thousand networks. But now that I was leaving Ning I wanted to tie off my loose end projects, and this was one. I assembled the list of stragglers and ran my scripts. The 2,000 deletes went quickly. This was 11:00 AM on regular workday -- my last Wednesday on the job.
-
-
-
-</p>
-<p>
-I immediately knew that I had done something very wrong. Since I sat close to the Customer Advocacy group I heard their IM clients and phones light up. Every Ning page was a "We're Sorry" 404 page. Oh crap.
-
-
-
-</p>
-<p>
-It only took a couple of minutes to find the problem. One of the networks I had marked for deletion had core Javascript and CSS needed by every Ning network -- important stuff. The network, "socialnetworkmain" was known to everyone as being important, and if I had done my spot checks better, I would have seen it straight away. Instead, I had been sloppy.
-
-
-
-</p>
-<p>
-The backdoor method I was using bypassed the safeties we had in place to protect our "really important" networks.
-
-
-
-</p>
-<p>
-Luckily, <a href="https://twitter.com/myelin">Phil</a>, one of our top-notch infrastructure engineers was sitting close by and quickly restored the network through the backend. Things returned to normal almost immediately. That feeling of panic started to back off. The jokes started and we started to relax.
-
-
-
-</p>
-<p>
-It took us another few hours to find and fix second and third order effects of my snafu. The network creation flow was broken -- fixed. An in-house monitoring system was dying silently -- fixed. And so on.
-
-
-
-<!-- Friday, August 18, 1995 -->
-</p>
-<p align="center">
-<a title="Dilbert strip where he screwed up big-time" href="http://dilbert.com/strips/comic/1995-08-18/"><img src="../../f/dilbert-screwed-up.gif" alt="Dilbert.com" border="0"></a>
-
-
-
-</p>
-<p>
-I learned four lessons:
-
-</p>
-<p>
-</p>
-<ol>
-<li>
-<strong>Undo is your friend.</strong> The tooling or features to revert your change will take time, but you will be happy to have it if you ever need it.</li>
-	<li>
-<strong>Make changes during the day.</strong> Resolving a hairy problem is hard if you don't have the right people, and when the people you do have are tired and foggy. This incident might have taken hours to resolve instead of minutes in the middle of the night.</li>
-	<li>
-<strong>It's not over until it's over.</strong> Once in crisis mode, you're eager to be get out of it. Once the main problem is solved it is tempting to exhale, go to lunch, go back to bed, whatever. But aftereffects might take a while to show up, or may just be harder to find.</li>
-	<li>
-<strong>Disproportionate effects.</strong> We all know that our complex systems nonlinear failure modes. Incidents like these are reminders that small changes have big effects. Said another way, even small things should be taken seriously.</li>
-</ol>
-<p>
-My time at Akamai had prepared me well for managing a crisis. But it's nice to have a refresher course every now and then.
-
-
-
- </p>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201207on-line-education/" class="u-url">On-Line Education Is Really Interesting Right Now</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Sef Kloninger
-            </span></p>
-            <p class="dateline">
-            <a href="../../posts/201207on-line-education/" rel="bookmark">
-            <time class="published dt-published" datetime="2012-07-09T12:49:31-07:00" itemprop="datePublished" title="2012-07-09 12:49">2012-07-09 12:49</time></a>
-            </p>
-                <p class="commentline">
-    
-    <a href="../../posts/201207on-line-education/#disqus_thread" data-disqus-identifier="cache/posts/201207on-line-education.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <img class="alignright  wp-image-307" style="border: 0px;" title="lecture-hall" src="../../f/lecture-hall-300x199.jpeg" alt="" width="270" height="179"><p>
-I've joined a research project at Stanford University (my alma mater).  I am working with a small team to build a platform for on-line education. This post explains what we're building, my part in it, and why this is an interesting area right now.
-
-</p>
-<h2>Class2Go</h2>
-
-<p>
-We are building Class2Go, an application to put Stanford classes on line.  Envision a video-driven web site with exercises and tests.  It will run much like a class today (professors, TA's, lectures, homework, tests, schedules) but with everything happening on-line.  For some kinds of classes this could improve the classroom experience for enrolled students; the excitement comes when you can bring in the a much larger set of non-enrolled students.
-
-
-
-</p>
-<p>
-The professors who have expressed interest so far are those who want to <a title="Flip teaching page on wikipedia" href="http://en.wikipedia.org/wiki/Flip_teaching" target="_blank">flip their classrooms</a> or host a <a title="Massive open online course page on wikipedia" href="http://en.wikipedia.org/wiki/Massive_open_online_course" target="_blank">Massive Open On-Line Course</a> (MOOC). Others have ideas on experimentation with the learning process itself. For example, do students learn better when they see slides, a talking head, or both? A large enough student population makes meaningful studies possible and cheap.
-
-</p>
-<p>
-There are a bunch of features needed over and above basic basic video.  First, can we devise a good system for students to grade each others work? This is an absolute must to do anything in the humanities at large scale.  We have some ideas of how to do peer evaluation, but it's an area that needs much more experimentation. A second important feature is enabling off-line use from laptops and tablets.  When we think of disconnected students we typically think of commuters, but we've heard it's just as important (or maybe more so) for students in developing countries where bandwidth is precious.
-
-</p>
-<p>
-While there are <a title="Link to Coursera site" href="https://www.coursera.org/" target="_blank">commercial</a> <a title="Link to Udacity site" href="http://www.udacity.com/" target="_blank">offerings</a> to do this, and even things from other established <a title="Link to Ed X site" href="http://www.edxonline.org/" target="_blank">universities</a>, Class2Go will be different in three important ways:
-
-</p>
-<p>
-</p>
+<p>The software was easy to set up and get started</p>
 <ul>
-<li>Research will be first and foremost. Hey prof, you want to do a wacky experiment? We can help.</li>
-	<li>Value produced by the course is retained and controlled by the professor and the university.  That value comes from the assets (video, homework) but even more so the community and technology.</li>
-	<li>The professors will have quick and ready access to their data. No waiting in lines for reports.</li>
+<li>
+<p><code>pip install nikola</code> did the right thing.  Of course
+  within a virtual environment, you have to keep the lab clean!</p>
+</li>
+<li>
+<p>Along the way I found a few other requirements, like request,
+  phpserialize, and markdown. These were easy to find/fix because of
+  helpful error messages.</p>
+</li>
+<li>
+<p>This is all now captured in the project's <code>requirements.txt</code>.</p>
+</li>
 </ul>
-<p>
-Stanford Professor Rob Reich made a very coherent argument for this in a <a title="Rob Reich blog post comparing Universities to Newspapers" href="http://www.stanford.edu/group/reichresearch/cgi-bin/site/2012/05/18/sending-universities-down-the-path-of-the-newspaper-industry/" target="_blank">recent blog post</a>. (Getting to work with smart people like him is a major job perq, by the way.)
-
-</p>
-<p>
-Part of what makes this doable is that there are so many great building blocks available.  We plan to use YouTube for video and the <a href="https://github.com/khan/khan-exercises" target="_blank">Khan Academy</a> framework for exercises.   <a href="https://piazza.com/" target="_blank">Piazza</a> has great discussions and forums to start with. Because of all this good stuff, we feel good about getting something strong out by the Fall for a couple of courses, and then expanding from there.
-
-</p>
-<p>
-And me?  I'm the line manager. It's fun to work on a project of this size where I can keep my hands dirty. For example, this week I'll be working on authentication (oauth).
-
-</p>
-<h2>Why Education, Why Now?</h2>
-
-<p>
-Two things brought me to education.
-
-</p>
-<p>
-Firstly, education is uniquely important. I challenge you to name another human pursuit that is as important, consumes so many resources (for good reason), and can be so transformative when done well.  The other two that come to mind are health and agriculture. But I'd say education is right up there.
-
-</p>
-<p>
-And second, education is changing right now. Of the meetings I've had while <a title="My Sabbatical" href="http://sef.kloninger.com/2012/04/my-sabbatical/" target="_blank">on sabbatical</a>  some of the most interesting have been about education. Why can't information technology have as big an impact on how people learn as it has had on everything else? Technology could mean making it available to to many more students, in different places and of different means. Educators could spend less time lecturing (dry stuff, to be sure) and more time working with students. Better measurement and analysis and could give educators near-real-time feedback and students tailor-made homework. Those are just a few of the examples that I heard about that got me excited.
-
-</p>
-<p>
-I look forward to doing something that will make even a little difference here. I'll blog about my experiences along the way.
-
-</p>
-<p>
-PS - <a title="Peter Norvig @ TED" href="http://fm.schmoller.net/2012/07/peter-norvigs-ted-talk-about-the-ai-course.html" target="_blank">Peter Norvig's TED Talk</a> captured the reasons and potential nicely.  That seven minutes is worth your time.
-
-</p>
-    </div>
+</li>
+<li>
+<p>Initial import from wordpress XML dump went <em>ok</em> but a fair bit of
+   manual HTML prettification took some time.</p>
+<ul>
+<li>
+<p>The slugs aren't how I like them: <code>201311seven-things.wp</code> 
+  instead of <code>seven-things.wp</code>.  I tried a bit to do mass
+  rewrite of those, but couldn't easily do that without breaking
+  everything, so just decided to let this go for now.  I'll just do
+  slugs without dates going forward.</p>
+</li>
+<li>
+<p>I considered <a href="http://www.aaronsw.com/2002/html2text/">html2text</a> but figured I'd just let the HTML 
+  slide for now. Too much trouble to go back and clean all that
+  up now.</p>
+</li>
+<li>
+<p>The "wp" extension, by default, is mapped to markdown instead of
+  html.  Odd but easy to change.</p>
+</li>
+<li>
+<p>Nikola has a nice simple redirect facility that the importer
+  pre-populated for me.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Migrate threads to <a href="http://disqus.com/">Disqus</a> - clean and simple,
+   worked right out of the box.</p>
+<ul>
+<li>
+<p>wordpress plugin has a nice import facility.  Said it'd take a
+  day, but didn't take that long at all.  Aside from one thread with 
+  75 comments, not much else that should cause them much heartache.</p>
+</li>
+<li>
+<p>nice simple URL mapping utility</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Publishing to github. Again, easy peasy. The way to make this work
+   is to put all your static files in a repo titled
+   <code>USERNAME.github.io</code>.  In my case: 
+   <code><a href="https://github.com/sefk/sefk.github.io">sefk.github.io</a></code>.  Just 
+   a couple of "tricks" were needed to make this work smoothly:</p>
+<ul>
+<li>
+<p>So that it would correctly serve my own domain, you have to put a
+     CNAME file in the root of the repo</p>
+</li>
+<li>
+<p>I put my nikola themes and source files in the "src" subdirectory,
+     and changed the <code>OUTPUT_DIR</code> configuration option to
+     <code>..</code>.  Github Pages wants things in the root.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The final swich.  I moved my domain from Dreamhost over to
+   <a href="http://gandi.fr/">Gandi</a>, which is the registrar I like to use.  They throw in
+   basic DNS with registration, which is sufficient for me.</p>
+</li>
+</ol>
+<h3>So There You Have It</h3>
+<p>So far I am really pleased with the result. It's a bit more work to
+publish, but for me that's natural and what I want. I guess I wouldn't
+recommend this to someone who isn't adept with all these bits (virtual
+environments, DNS, github repos, etc.) but for me that's no problem.</p>
+<p>Thanks to:</p>
+<ul>
+<li>
+<p>Using livereload with Nikola makes for a very nice workflow. Check
+  out <a href="http://serialized.net/2013/04/nikola-and-livereload-ftw/">this blog post</a> that describes how. Very helpful post,
+  thanks to Joshua Barratt for sharing.</p>
+</li>
+<li>
+<p>This <a href="http://kushaldas.in/posts/importing-your-wordpress-blog-to-nikola.html#uploading-your-blog-site-as-github-pages">helpful post by Kaushal Das</a>.</p>
+</li>
+</ul>
+</div>
     </article>
 </div>
 
         <ul class="pager postindexpager clearfix">
-<li class="next"><a href="index-1.html" rel="next">Older posts</a></li>
+<li class="next"><a href="index-2.html" rel="next">Older posts</a></li>
         </ul>
 <script>var disqus_shortname="sefkloninger";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer"><p align="center">Contents © 2025 <a href="mailto:sefklon@gmail.com">Sef Kloninger</a>       
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">
