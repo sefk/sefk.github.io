@@ -2,7 +2,7 @@
 .. title: The iPhone's SIM Tray Went Away Too Soon
 .. slug: esim
 .. date: 2024-01-05 02:34:49 UTC-08:00
-.. tags: 
+.. tags: Technology
 .. category: 
 .. link: 
 .. description: 

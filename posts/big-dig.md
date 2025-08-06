@@ -2,8 +2,8 @@
 .. title: The Big Dig
 .. slug: big-dig
 .. date: 2023-12-17 8:00
-.. tags:
-.. category: civics
+.. tags: Civics,Media
+.. category:
 .. link: 
 .. description: 
 .. type: text

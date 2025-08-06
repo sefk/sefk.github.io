@@ -3,7 +3,7 @@
 .. slug: aws
 .. link: 
 .. description: 
-.. tags: Tech
+.. tags: Technology
 .. date: 2015/04/24 00:10
 -->
 

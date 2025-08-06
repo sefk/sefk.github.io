@@ -2,7 +2,7 @@
 .. title: YouTube
 .. slug: youtube
 .. date: 2015-08-26 08:25 UTC+02:00
-.. tags: 
+.. tags: Technology,Life
 .. category: 
 .. link: 
 .. description: 

@@ -2,7 +2,7 @@
 .. title: My Next Job
 .. slug: job-15
 .. date: 2015-05-10 09:30 UTC-07:00
-.. tags: Tech, Life
+.. tags: Technology, Life
 .. type: text
 -->
 

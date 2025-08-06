@@ -2,7 +2,7 @@
 .. title: Contribute to a Good Open Source Project
 .. slug: good-proj
 .. date: 2015-05-17 20:12:05 UTC-07:00
-.. tags: Tech
+.. tags: Technology
 .. type: text
 .. status: draft
 -->

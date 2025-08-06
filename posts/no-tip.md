@@ -3,7 +3,7 @@
 .. slug: tips
 .. link: 
 .. description: 
-.. tags: Tech
+.. tags: Life
 .. date: 2014/04/28 20:07
 -->
 
@@ -35,4 +35,3 @@ awkwardly changing money. I'd definitely pay a premium for that.
 
 I wonder what other service business would benefit from decoupling
 feedback from money?
-

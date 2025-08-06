@@ -2,10 +2,10 @@
 .. title: My Love Letter to ATP
 .. slug: atp
 .. date: 2024-02-12 17:00:00 UTC-08:00
-.. tags: 
-.. category: podcasts
+.. tags: Media
+.. category:
 .. link: 
-.. description: Sef's favorite, the Accidental Tech Podcast.
+.. description: Sef's favorite, the Accidental Tech Podcast
 .. type: text
 -->
 

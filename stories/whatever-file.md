@@ -2,7 +2,7 @@
 .. title: My Whatever File
 .. slug: whatever-file
 .. date: 2015-06-10 22:36:54 UTC-07:00
-.. tags: Life
+.. tags: Life,draft
 .. category: 
 .. link: 
 .. description: 

@@ -3,7 +3,7 @@
 .. slug: learn-to-write
 .. link: 
 .. description: 
-.. tags: Tech
+.. tags: Technology
 .. date: 2014/01/25 16:17
 -->
 

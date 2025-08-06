@@ -2,8 +2,8 @@
 .. title: Cleaning Up Photo Duplicates
 .. slug: photo-dups
 .. date: 2024-02-19 12:00:00 UTC-08:00
-.. tags: 
-.. category: personal-tech
+.. tags: Technology
+.. category:
 .. link: 
 .. description: 
 .. type: text

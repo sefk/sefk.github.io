@@ -2,8 +2,8 @@
 .. title: Oppenheimer -- A Miss
 .. slug: oppenheimer
 .. date: 2024-02-19 13:20:00 UTC-08:00
-.. tags:
-.. category: movies
+.. tags: Media
+.. category:
 .. link: 
 .. description: 
 .. type: text

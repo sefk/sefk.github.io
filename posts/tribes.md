@@ -2,7 +2,7 @@
 .. title: Google Apps, Apple Devices
 .. slug: tribes
 .. date: 2015-09-11 10:05:19 UTC-07:00
-.. tags: 
+.. tags: Technology
 .. type: text
 .. status: draft
 -->

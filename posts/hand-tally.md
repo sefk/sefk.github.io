@@ -3,7 +3,7 @@
 .. slug: hand-tally
 .. link:
 .. description:
-.. tags: Halloween, Tech
+.. tags: Halloween,Tech
 .. date: 2014/10/30 9:20:00
 -->
 

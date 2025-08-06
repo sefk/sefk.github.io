@@ -3,7 +3,7 @@
 .. slug: switching-to-static
 .. link: 
 .. description: 
-.. tags: Tech
+.. tags: Technology
 .. date: 2013/12/30 01:35:23
 -->
 

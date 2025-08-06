@@ -2,7 +2,7 @@
 .. title: Working In The Open
 .. slug: working-in-the-open
 .. date: 2022-12-04 09:47:54 UTC-08:00
-.. tags: 
+.. tags: Life
 .. category: 
 .. link: 
 .. description: 
