@@ -32,8 +32,7 @@ that stuff *fun*.
 If any of this interests you too, reach me via [email](mailto:sefklon@gamil.com)
 (preferred) or [@sefk](https://hachyderm.io/@sefk) on Mastodon.
 
-For information about this site and the tools use I see my [tools page](tools).
-<br>
+For information about this site see my [tools page](tools).
 <br>
 
 [imp]: https://indivisiblemp.org/
