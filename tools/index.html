@@ -15,11 +15,11 @@
 <meta property="og:title" content="Tools">
 <meta property="og:url" content="https://sef.kloninger.com/tools/">
 <meta property="og:description" content="This Site
-This site is generated using the Nikola static site generator. For
-information about why I chose Nikola, and how that works, I wrote a blog
-post about that a long time ago in Dec 2013. I wis">
+This is a static website generated using Nikola. Static sites are great.
+I wrote a blog post about why the choice of this particular site
+generator a while back, but frankly any one will do ">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2025-08-04T00:00:00-07:00">
+<meta property="article:published_time" content="2025-08-28T00:00:00-07:00">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -88,22 +88,31 @@ bg-dark
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <h3>This Site</h3>
-<p>This site is generated using the <strong><a href="http://getnikola.com/">Nikola</a></strong> static site generator. For
-information about why I chose Nikola, and how that works, I wrote a <a href="http://sef.kloninger.com/posts/switching-to-static.html">blog
-post</a> about that a long time ago in Dec 2013. I wish the themes were
-more customizable, for now I'm using it stock. My site <a href="https://raw.githubusercontent.com/sefk/sefk.github.io/dev/README.md">README</a> shows the
-authoring/publish workflow. The workflow isn't bad once you set up the branches
-and GitHub correctly.</p>
-<p>This site is hosted on <strong><a href="https://pages.github.com/">GitHub Pages</a></strong> and delivered over
-<strong><a href="https://www.cloudflare.com/">CloudFlare</a></strong>. I'm happy with what they give me for free, thanks!</p>
-<p>I moved comments to <strong><a href="https://disqus.com/">Disqus</a></strong> years ago and I'm surprised they're still in
-business. At some point if that become enshittified I'll move them away, or turn
-them off altogether. And <strong><a href="https://analytics.google.com/">Google Analytics</a></strong> is more than enough
-visibility for me.</p>
+<p>This is a static website generated using <strong><a href="https://getnikola.com/">Nikola</a></strong>. Static sites are great.
+I wrote a <a href="../posts/switching-to-static/">blog post</a> about why the choice of this particular site
+generator a while back, but frankly any one will do and there are many to chose
+from.</p>
+<p>This site is hosted on <strong><a href="https://pages.github.com/">GitHub Pages</a></strong>. I'm really happy they have a
+nice free tier that's well suited to this kind of use. The <a href="https://raw.githubusercontent.com/sefk/sefk.github.io/dev/README.md">README</a> shows the
+authoring/publish workflow.</p>
+<p>Some of the other piece-parts:</p>
+<ul>
+<li>
+<strong><a href="https://www.cloudflare.com/">CloudFlare</a></strong> for acceleration and scale. (free)</li>
+<li>
+<strong><a href="https://letsencrypt.org/">Let's Encrypt</a></strong> for self-signed TLS certificates.</li>
+<li>
+<strong><a href="https://disqus.com/">Disqus</a></strong> for comments. I picked them years ago and frankly I'm surprised they're
+still a going concern. At some point if that become enshittified I'll move them
+away, or turn them off altogether. (free)</li>
+<li>
+<strong><a href="https://analytics.google.com/">Google Analytics</a></strong> for visibility. (free)</li>
+</ul>
 <p><strong><a href="https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.html">My resume</a></strong> is hard-coded simple HTML. It's formatted the way you would
 format something back in 1998: just barely css, tables with colspans for layout.
-I use <code>wkhtmltopdf</code> to render that HTML into a <a href="https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.pdf">PDF</a>, all managed by good old
-fashioned <a href="https://github.com/sefk/sef-resume">make</a>. I know there are way better ways to do it now.</p>
+ <code>wkhtmltopdf</code> renders HTML into a <a href="https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.pdf">PDF</a>, orchestrated by good old fashioned
+<a href="https://github.com/sefk/sef-resume">make</a>. I know there are much better ways to do all of this now, both content
+and workflow.</p>
 <h3>Editors</h3>
 <p><strong>vim</strong>. Still my go-to tool for writing: text, code (unless it's
 very complex), simple lists, meeting minutes. Lots to like about it: ubiquity,
