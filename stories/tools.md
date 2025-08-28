@@ -1,30 +1,34 @@
 <!--
 .. title: Tools
 .. slug: tools
-.. date: 2025/08/04
+.. date: 2025/08/28
 -->
 
 ## This Site
 
-This site is generated using the **[Nikola][]** static site generator. For
-information about why I chose Nikola, and how that works, I wrote a [blog
-post][static] about that a long time ago in Dec 2013. I wish the themes were
-more customizable, for now I'm using it stock. My site [README][] shows the
-authoring/publish workflow. The workflow isn't bad once you set up the branches
-and GitHub correctly.
+This is a static website generated using **[Nikola][]**. Static sites are great.
+I wrote a [blog post][static] about why the choice of this particular site
+generator a while back, but frankly any one will do and there are many to chose
+from.
 
-This site is hosted on **[GitHub Pages][Pages]** and delivered over
-**[CloudFlare][]**. I'm happy with what they give me for free, thanks!
+This site is hosted on **[GitHub Pages][Pages]**. I'm really happy they have a
+nice free tier that's well suited to this kind of use. The [README][] shows the
+authoring/publish workflow.
 
-I moved comments to **[Disqus][]** years ago and I'm surprised they're still in
-business. At some point if that become enshittified I'll move them away, or turn
-them off altogether. And **[Google Analytics][ga]** is more than enough
-visibility for me.
+Some of the other piece-parts:
+
+- **[CloudFlare][]** for acceleration and scale. (free)
+- **[Let's Encrypt][]** for self-signed TLS certificates.
+- **[Disqus][]** for comments. I picked them years ago and frankly I'm surprised they're
+still a going concern. At some point if that become enshittified I'll move them
+away, or turn them off altogether. (free)
+- **[Google Analytics][]** for visibility. (free)
 
 **[My resume][]** is hard-coded simple HTML. It's formatted the way you would
 format something back in 1998: just barely css, tables with colspans for layout.
-I use `wkhtmltopdf` to render that HTML into a [PDF][], all managed by good old
-fashioned [make][]. I know there are way better ways to do it now.
+ `wkhtmltopdf` renders HTML into a [PDF][], orchestrated by good old fashioned
+[make][]. I know there are much better ways to do all of this now, both content
+and workflow.
 
 ## Editors
 
@@ -86,13 +90,14 @@ Don't really use anymore.
 There are much fancier systems for keeping and managing task lists but I keep
 coming back to the basic one.
 
-[Nikola]:     http://getnikola.com/
-[static]:     http://sef.kloninger.com/posts/switching-to-static.html
-[Pages]:      https://pages.github.com/
-[CloudFlare]: https://www.cloudflare.com/
-[Disqus]:     https://disqus.com/
-[ga]:         https://analytics.google.com/
-[README]:     https://raw.githubusercontent.com/sefk/sefk.github.io/dev/README.md
-[My resume]:  https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.html
-[make]:       https://github.com/sefk/sef-resume
-[PDF]:        https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.pdf
+[Nikola]:           https://getnikola.com/
+[static]:           /posts/switching-to-static/
+[Pages]:            https://pages.github.com/
+[CloudFlare]:       https://www.cloudflare.com/
+[Let's Encrypt]:    https://letsencrypt.org/
+[Disqus]:           https://disqus.com/
+[Google Analytics]: https://analytics.google.com/
+[README]:           https://raw.githubusercontent.com/sefk/sefk.github.io/dev/README.md
+[My resume]:        https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.html
+[make]:             https://github.com/sefk/sef-resume
+[PDF]:              https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.pdf
