@@ -9,26 +9,20 @@
 This is a static website generated using **[Nikola][]**. Static sites are great.
 I wrote a [blog post][static] about why the choice of this particular site
 generator a while back, but frankly any one will do and there are many to chose
-from.
+from. All the pieces I use are free.
 
-This site is hosted on **[GitHub Pages][Pages]**. I'm really happy they have a
-nice free tier that's well suited to this kind of use. The [README][] shows the
-authoring/publish workflow.
-
-Some of the other piece-parts:
-
-- **[CloudFlare][]** for acceleration and scale. (free)
+- **[GitHub Pages][]**. The [README][] describes the authoring/publish workflow.
+- **[CloudFlare][]**
 - **[Let's Encrypt][]** for self-signed TLS certificates.
-- **[Disqus][]** for comments. I picked them years ago and frankly I'm surprised they're
-still a going concern. At some point if that become enshittified I'll move them
-away, or turn them off altogether. (free)
-- **[Google Analytics][]** for visibility. (free)
+- **[Disqus][]** for comments. I picked them years ago and frankly I'm surprised
+they're still a going concern. I'm ready to drop them though [if needed][shit].
+- **[Google Analytics][]**
 
 **[My resume][]** is hard-coded simple HTML. It's formatted the way you would
 format something back in 1998: just barely css, tables with colspans for layout.
  `wkhtmltopdf` renders HTML into a [PDF][], orchestrated by good old fashioned
-[make][]. I know there are much better ways to do all of this now, both content
-and workflow.
+`make`. I know there are much better ways to do the content and workflow these
+days.
 
 ## Editors
 
@@ -92,12 +86,12 @@ coming back to the basic one.
 
 [Nikola]:           https://getnikola.com/
 [static]:           /posts/switching-to-static/
-[Pages]:            https://pages.github.com/
+[Github Pages]:     https://pages.github.com/
 [CloudFlare]:       https://www.cloudflare.com/
 [Let's Encrypt]:    https://letsencrypt.org/
 [Disqus]:           https://disqus.com/
+[shit]:             https://en.wikipedia.org/wiki/Enshittification
 [Google Analytics]: https://analytics.google.com/
-[README]:           https://raw.githubusercontent.com/sefk/sefk.github.io/dev/README.md
+[README]:           https://github.com/sefk/sefk.github.io/blob/dev/README.md
 [My resume]:        https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.html
-[make]:             https://github.com/sefk/sef-resume
 [PDF]:              https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.pdf
