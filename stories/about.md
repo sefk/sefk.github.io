@@ -29,7 +29,7 @@ coming back to tech projects. I got my first computer, an Apple //e, and spent a
 whole summer hand-coding a [robots game][] in 6502 assembly. I've always found
 that stuff *fun*.
 
-If any of this interests you too, reach me via [email](mailto:sefklon@gamil.com)
+If any of this interests you too, reach me via [email](mailto:sefklon@gmail.com)
 (preferred) or [@sefk](https://hachyderm.io/@sefk) on Mastodon.
 
 For information about this site see my [tools page](tools).
