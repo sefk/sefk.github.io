@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about tech,warstory)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/cat_techwarstory.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 15 Sep 2025 21:55:30 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Naming Is Hard</title><link>https://sef.kloninger.com/posts/naming/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Lenna"&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/lena.png" alt="Photo of Lena Forsén" width="40%"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a story about how hard it is to come up with a good name.&lt;/p&gt;
+&lt;p&gt;This is in 2013 or so when I was building a &lt;a href="https://sef.kloninger.com/posts/201207on-line-education/"&gt;system online education
+for Stanford&lt;/a&gt;. We started in 2012 and &lt;a href="https://engineering.stanford.edu/news/stanford-launches-class2go-open-source-platform-online-classes"&gt;launched&lt;/a&gt; a nice little
+called Class2Go. The site worked well and supported the basic
+features of an online course well enough: videos, assessments, auth,
+reporting. We decided to keep it going and worked on it for another
+year, expanding the covered use cases and taking on more classes.&lt;/p&gt;
+&lt;p&gt;Even from the get-go the name &lt;em&gt;Class2Go&lt;/em&gt; was a bit off. The original
+product was conceived as a way to take &lt;a href="https://en.wikipedia.org/wiki/Massive_open_online_course"&gt;MOOC&lt;/a&gt;'s off-line. The idea
+was people taking classes in poorly connected places, like low
+bandwidth countries or places like your commuter train.  But the
+thing we actually built didn't really support the offline use case
+well anymore. In the process of getting to launch we kinda pivoted
+into a more basic online-ed course system and away from the on-the-go
+aspect.  It ended up being more like a little CMS backed by a
+database for logins and simple assessments results.&lt;/p&gt;
+&lt;p&gt;Luckily when you're part of Stanford you have access to smart people.
+We got connected to a person who does naming professionally. After
+talking to us to understand the products goals and features, they
+generated hundreds of candidate names. Each had gone through some
+basic vetting for things like domain name availability and avoiding
+potential copyright conflicts. It was my first time working with
+someone like that, and they were good at it. It was a good list.&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/naming/</guid><pubDate>Sat, 13 Sep 2025 00:20:36 GMT</pubDate></item></channel></rss>
