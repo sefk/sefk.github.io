@@ -131,7 +131,7 @@ NAVIGATION_LINKS = {
         ('mailto:sefklon@gmail.com', 'Email'),
         ('https://hachyderm.io/@sefk', 'Mastodon'),
         ('https://bsky.app/profile/sefk.bsky.social', 'Bsky'),
-        ('https://twitter.com/sefk', 'X'),
+#       ('https://twitter.com/sefk', 'X'),
         ('https://www.linkedin.com/in/sefkloninger/', "LinkedIn"),
         ('https://github.com/sefk', 'GitHub'),
         ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html', 'Resume'),
