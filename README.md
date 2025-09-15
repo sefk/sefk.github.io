@@ -14,7 +14,8 @@ products are pushed to ```master```.
 The general workflow is:
 
 1. **Write**. I like writing in Markdown with vi. Green characters on a black
-   background. Old school is the good school.
+   background. Old school is the good school. Generally ```nikola new_post``` is
+   the way to get started.
 
 2. **Review**. Nikola has a nice feature to automatically rebuild your project
    whenever something changes. workflow.  Command is ```nikola auto -p 8888```.
