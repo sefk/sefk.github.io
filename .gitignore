@@ -1,5 +1,6 @@
 output
 *.pyc
+__pycache__
 cache
 .doit.db.db
 .doit.db
