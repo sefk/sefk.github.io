@@ -127,7 +127,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('/posts/', 'Blog'),
+        ('/posts/index.html', 'Blog'),
         ('mailto:sefklon@gmail.com', 'Email'),
         ('https://hachyderm.io/@sefk', 'Mastodon'),
         ('https://bsky.app/profile/sefk.bsky.social', 'Bsky'),
@@ -651,10 +651,13 @@ LICENSE = ""
 # I recommend using the Creative Commons' wizard:
 # http://creativecommons.org/choose/
 LICENSE = """
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">
-<img alt="Creative Commons License BY-NC-SA"
-style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
+Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+<img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+<img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+<img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+"""
+
 
 # A small copyright notice for the page footer (in HTML).
 # Default is ''
