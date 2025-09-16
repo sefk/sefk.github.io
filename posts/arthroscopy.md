@@ -50,6 +50,6 @@ I'm back to work tomorrow, and I expect to be back on my bike by next
 week!
 
   [pamf]: http://www.pamf.org/sports/
-  [eakin]: http://www.pamf.org/dr-colin-l-eakin.html
+  [eakin]: https://www.sutterhealth.org/find-provider/dr-colin-l-eakin-1046233844
   [ice]: http://www.djoglobal.com/products/donjoy/donjoy-iceman-clear3
   [gen]: http://en.wikipedia.org/wiki/General_anaesthesia
