@@ -14,13 +14,13 @@ alt="Photo of Lena Forsén" width=40%>][lena]
 
 This is a story about how hard it is to come up with a good name.
 
-This was in 2013 or so when I was building a [system for online
-education at Stanford][s]. We started in 2012 and [launched][] a
-nice little site, Class2Go, with a small team in a few months. The
-site worked well and supported the basic features of an online
-course well enough: videos, assessments, auth, reporting. We decided
-to keep it going and worked on it for another year, expanding the
-covered use cases and taking on more classes.
+This was in 2013 or so when I was part of a team building a [system
+for online education][s] at Stanford. We [launched][] a nice little
+site, Class2Go, with a small team in a few months. The site worked
+well and supported the basic features of an online course well
+enough: videos, assessments, auth, reporting. We decided to keep
+it going and worked on it for another year, expanding the covered
+use cases and taking on more classes.
 
 But even from the beginning the name *Class2Go* felt a bit off. The
 original product's aim was to enable offline [MOOC] students. The
