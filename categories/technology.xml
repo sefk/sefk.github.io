@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Technology)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/technology.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 06 Aug 2025 01:32:33 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Cleaning Up Photo Duplicates</title><link>https://sef.kloninger.com/posts/photo-dups/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/dups-pie.png" alt="Pie Chart" width="30%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Technology)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/technology.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 17 Sep 2025 02:51:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Cleaning Up Photo Duplicates</title><link>https://sef.kloninger.com/posts/photo-dups/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/dups-pie.png" alt="Pie Chart" width="30%"&gt;&lt;/p&gt;
 &lt;p&gt;I did a data cleanup over the weekend. I doubt this is interesting
 for anyone else, I just wanted to capture my own notes.&lt;/p&gt;
 &lt;p&gt;Our family photos are stored up in Google Photos. We have about
@@ -267,7 +267,54 @@ surprising capacity crunch. There are a whole class of problems
 that get much easier when you can have 2x the machines for just a
 little while.  When someone comes to you with that cost/benefit
 spreadsheet arguing why you should self-host, that's when you need
-your file of "the cloud saved my bacon" stories at the ready.&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/aws/</guid><pubDate>Fri, 24 Apr 2015 07:10:00 GMT</pubDate></item><item><title>CS Students: Learn to Write</title><link>https://sef.kloninger.com/posts/learn-to-write/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/writing-hand.jpeg" alt="Writing Hand" width="40%"&gt;&lt;/p&gt;
+your file of "the cloud saved my bacon" stories at the ready.&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/aws/</guid><pubDate>Fri, 24 Apr 2015 07:10:00 GMT</pubDate></item><item><title>In Praise of the Hand Tally</title><link>https://sef.kloninger.com/posts/hand-tally/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/tallies.jpg" alt="Tally Marks" width="height=174"&gt;&lt;/p&gt;
+&lt;p&gt;For the past five years I've gathered statistics on how many
+trick-or-treaters have come by on Halloween.  If you want to read
+about that, check out posts from &lt;a href="https://sef.kloninger.com/posts/201311halloween-2013.html"&gt;last year&lt;/a&gt; or &lt;a href="https://sef.kloninger.com/posts/201210halloween-candy-data.html"&gt;the year before&lt;/a&gt;.
+This post is about &lt;strong&gt;how&lt;/strong&gt; I track those stats, and how I don't.&lt;/p&gt;
+&lt;p&gt;Every year I'm tempted to build some fancy system to collect and
+manage these statistics.  Wouldn't it be fun, say, to wire up some
+Raspberry Pi sensor that automatically counts and tweets running
+totals?  It wouldn't be &lt;em&gt;that&lt;/em&gt; hard and sounds like fun.&lt;/p&gt;
+&lt;p&gt;The problem is making something like that reliable.  You'd have to
+do all the un-fun stuff, like testing and contingency planning.  If
+your baseline is a clipboard, paper, and a ball point pen, your bar
+for failure is basically "never".  Even if I did build something
+fancy I'd still end up doing backup tallies by hand.  At this human
+scale, the tech ends up being a fun gimmick, not required.&lt;/p&gt;
+&lt;p&gt;It reminds me of a story from friend [Tony].  Tony
+and his brother &lt;a href="https://twitter.com/ProtomCannon"&gt;Tom&lt;/a&gt; run a giant gaming convention every year,
+the &lt;a href="http://evo.shoryuken.com/"&gt;Evolution Championship Series&lt;/a&gt; (Evo for short).  It's a
+multi-day convention in Las Vegas that attracts something like ten
+thousand participants.  They run the whole thing with their two
+other founders and some friends — I'm sure they have some
+paid help now, but the four guys are the main ones.  It's impressive.&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;img src="http://evo.shoryuken.com/wp-content/uploads/2014/02/9450177474_3d2e293e9d_b.jpg" style="padding-top:20px; padding-bottom:20px"&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Given that Tony and Tom are strong engineers, I figured this would
+be a slick high-tech operation.  Not so.&lt;/p&gt;
+&lt;p&gt;Tony said they've tried tech at various points and it wasn't worth
+it.  It's easy to see why that is tempting: they have multiple
+mobile coordinators that need access to changing, shared information,
+like brackets and schedules.  But what they've tried has let them
+down.  Usually it's not the hard parts that fail, but the basics,
+like batteries and wireless connectivity.  So they still run this
+off of printouts and voice communications (cell phones/walkie-talkies)
+and periodic data dumps.&lt;/p&gt;
+&lt;p&gt;And so, this year I'll be gathering my Halloween stats like I always
+have: clipboard, pen, and a hand-held &lt;a href="http://www.amazon.com/STEELMASTER-Counter-Inches-Silver-200100492/dp/B0089KJSFQ/ref=sr_1_3"&gt;tally counter&lt;/a&gt;.  The data
+will still be timely and accurate.&lt;/p&gt;
+&lt;p&gt;For the curious few, check out my &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;Halloween Traffic Spreadsheet&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Two postscripts.  First, Please stop spreading that
+&lt;a href="https://www.youtube.com/watch?v=LQy1DH38E5g"&gt;NASA Space Pen story&lt;/a&gt;.  I'm sure you've heard it: how do you write in zero G?
+the wasteful Americans commissioned a multi-million dollar space
+pen project; the scrappy can-do Russians used pencils.  Well, this
+story has been &lt;a href="http://www.snopes.com/business/genius/spacepen.asp"&gt;debunked by the good people at Snopes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And second, I'd like to plug Tony and Tom's "day job", &lt;a href="http://stonehearth.net/"&gt;Stonehearth&lt;/a&gt;.
+I think of it as Starcraft meets Minecraft.  I am so eager to play
+it when it lands.&lt;/p&gt;</description><category>Halloween</category><category>Technology</category><guid>https://sef.kloninger.com/posts/hand-tally/</guid><pubDate>Thu, 30 Oct 2014 16:20:00 GMT</pubDate></item><item><title>CS Students: Learn to Write</title><link>https://sef.kloninger.com/posts/learn-to-write/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/writing-hand.jpeg" alt="Writing Hand" width="40%"&gt;&lt;/p&gt;
 &lt;p&gt;If I could do my college years over I would focus on writing. I
 would take courses that required a lot of writing, in the spirit
 of "learn by doing". I'd also take courses in the mechanics and
@@ -517,30 +564,4 @@ There are really only three places where it has fallen short for me:
 &lt;/ul&gt;
 
 &lt;p&gt;
-So-long to &lt;a href="http://sparrowmailapp.com/"&gt;Sparrow&lt;/a&gt; and &lt;a href="http://www.apple.com/osx/apps/#mail"&gt;Mail.app&lt;/a&gt; and &lt;a href="http://mailplaneapp.com/"&gt;Mailplane&lt;/a&gt;. Or until someone does really nails &lt;a href="https://www.mailpile.is/"&gt;self-hosting&lt;/a&gt;.&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/201312airmail/</guid><pubDate>Tue, 03 Dec 2013 04:10:50 GMT</pubDate></item><item><title>K&amp;R C Programming, Quantum Books, Cambridge, MA</title><link>https://sef.kloninger.com/posts/201309knr-c-label/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p style="text-align: left;"&gt;&lt;img class="alignright  wp-image-433" style="border: 0px;" alt="IMG_4177" src="https://sef.kloninger.com/f/IMG_41771-231x300.jpg" width="139" height="180"&gt;
-
-&lt;/p&gt;&lt;p&gt;
-Today in a box I came across my old K&amp;amp;R. Probably the most valuable book I've owned. My copy has been heavily used.&lt;/p&gt;
-
-&lt;p&gt;
-But the unexpected, fun thing was finding an old label on the back cover.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-There is a lot in there.
-
-&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img class="aligncenter  wp-image-429" style="border: 0px;" alt="IMG_4179" src="https://sef.kloninger.com/f/IMG_4179-1024x393.jpg" width="584" height="224"&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;
-&lt;/p&gt;&lt;ul&gt;
-	&lt;li&gt;January 1994. I had just graduated college, driven cross country with my friend &lt;a href="http://www.linkedin.com/pub/shigeru-tanaka/0/a27/917"&gt;Shig&lt;/a&gt;, and started my first post-college job. I would have been in that job four months or so and realized that I should just stop borrowing someone else's copy (probably &lt;a href="http://www.linkedin.com/in/larryclaman/"&gt;Larry Claman&lt;/a&gt;'s) and buy my own.&lt;/li&gt;
-	&lt;li&gt;Purchased at Quantum Books, a great technical bookstore in the shadow of MIT in Cambridge, Massachusetts. It's no longer there. The bar that is there now (&lt;a style="font-style: normal;" href="http://www.themeadhall.com/"&gt;Meadhall&lt;/a&gt;) is a nice place, and I'm a big fan of beer, but it's not the same.&lt;/li&gt;
-	&lt;li&gt;According to an &lt;a style="font-style: normal;" href="http://www.bls.gov/data/inflation_calculator.htm"&gt;inflation calculator&lt;/a&gt;, $35 in 1994 is $55 today. That's expensive for a little book, especially to the twenty-two year old me.&lt;/li&gt;
-	&lt;li&gt;Note the email address: quanbook@world.std.com. This was back when mom and pop dialup ISP's where what we all used, people and businesses alike. This particular one, &lt;a style="font-style: normal;" href="http://world.std.com/"&gt;Software Tool &amp;amp; Die&lt;/a&gt;, was my private email address at the time too. (Aside: they claim to be the first public dialup ISP, and I have no reason to doubt them)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-It was fun being reminded of all this stuff. So the lesson of the story: it's still worth buying books, and when you do, don't remove the labels.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>https://sef.kloninger.com/posts/201309knr-c-label/</guid><pubDate>Sun, 15 Sep 2013 00:41:20 GMT</pubDate></item></channel></rss>
+So-long to &lt;a href="http://sparrowmailapp.com/"&gt;Sparrow&lt;/a&gt; and &lt;a href="http://www.apple.com/osx/apps/#mail"&gt;Mail.app&lt;/a&gt; and &lt;a href="http://mailplaneapp.com/"&gt;Mailplane&lt;/a&gt;. Or until someone does really nails &lt;a href="https://www.mailpile.is/"&gt;self-hosting&lt;/a&gt;.&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/201312airmail/</guid><pubDate>Tue, 03 Dec 2013 04:10:50 GMT</pubDate></item></channel></rss>

@@ -1,28 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 15 Sep 2025 21:55:30 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Naming Is Hard</title><link>https://sef.kloninger.com/posts/naming/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Lenna"&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/lena.png" alt="Photo of Lena Forsén" width="40%"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This is a story about how hard it is to come up with a good name.&lt;/p&gt;
-&lt;p&gt;This is in 2013 or so when I was building a &lt;a href="https://sef.kloninger.com/posts/201207on-line-education/"&gt;system online education
-for Stanford&lt;/a&gt;. We started in 2012 and &lt;a href="https://engineering.stanford.edu/news/stanford-launches-class2go-open-source-platform-online-classes"&gt;launched&lt;/a&gt; a nice little
-called Class2Go. The site worked well and supported the basic
-features of an online course well enough: videos, assessments, auth,
-reporting. We decided to keep it going and worked on it for another
-year, expanding the covered use cases and taking on more classes.&lt;/p&gt;
-&lt;p&gt;Even from the get-go the name &lt;em&gt;Class2Go&lt;/em&gt; was a bit off. The original
-product was conceived as a way to take &lt;a href="https://en.wikipedia.org/wiki/Massive_open_online_course"&gt;MOOC&lt;/a&gt;'s off-line. The idea
-was people taking classes in poorly connected places, like low
-bandwidth countries or places like your commuter train.  But the
-thing we actually built didn't really support the offline use case
-well anymore. In the process of getting to launch we kinda pivoted
-into a more basic online-ed course system and away from the on-the-go
-aspect.  It ended up being more like a little CMS backed by a
-database for logins and simple assessments results.&lt;/p&gt;
-&lt;p&gt;Luckily when you're part of Stanford you have access to smart people.
-We got connected to a person who does naming professionally. After
-talking to us to understand the products goals and features, they
-generated hundreds of candidate names. Each had gone through some
-basic vetting for things like domain name availability and avoiding
-potential copyright conflicts. It was my first time working with
-someone like that, and they were good at it. It was a good list.&lt;/p&gt;</description><guid>https://sef.kloninger.com/posts/naming/</guid><pubDate>Sat, 13 Sep 2025 00:20:36 GMT</pubDate></item><item><title>Sponsoring</title><link>https://sef.kloninger.com/posts/sponsoring/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/sponsor.png" alt="One person helping another while being graded" width="40%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 17 Sep 2025 02:51:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sponsoring</title><link>https://sef.kloninger.com/posts/sponsoring/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/sponsor.png" alt="One person helping another while being graded" width="40%"&gt;&lt;/p&gt;
 &lt;p&gt;Sponsorship is using your position and influence to help someone get ahead. It's
 similar in many ways to mentorship, the topic of my &lt;a href="https://sef.kloninger.com/posts/mentoring"&gt;last post&lt;/a&gt;.
 But sponsorship is a bit tricker. Most people understand mentorship
@@ -438,4 +415,26 @@ and I watched a bit together.&lt;/p&gt;
 &lt;p&gt;Team Hachyderm (&lt;a href="https://hachyderm.io/@nova"&gt;@nova&lt;/a&gt; &lt;a href="https://hachyderm.io/@dma"&gt;@dma&lt;/a&gt; &lt;a href="https://hachyderm.io/@quintessence"&gt;@quintessence&lt;/a&gt; &lt;a href="https://hachyderm.io/@Taniwha"&gt;@Taniwha&lt;/a&gt;
 &lt;a href="https://hachyderm.io/@hazelweakly"&gt;@hazelweakly&lt;/a&gt; &lt;a href="https://hachyderm.io/@malte"&gt;@malte&lt;/a&gt;): thank you for running this service well.
 But also thank you for giving me something I'm proud to use and proud to
-show my kid.&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/working-in-the-open/</guid><pubDate>Sun, 04 Dec 2022 17:47:54 GMT</pubDate></item></channel></rss>
+show my kid.&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/working-in-the-open/</guid><pubDate>Sun, 04 Dec 2022 17:47:54 GMT</pubDate></item><item><title>The NY Times Bee Puzzle</title><link>https://sef.kloninger.com/posts/timesbee/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;How many different New York Times Spelling Bee puzzles are there? Or more
+precisely, how many combinations of seven letters can be used to build Bee-type
+puzzles?&lt;/p&gt;
+&lt;p&gt;It turns out &lt;strong&gt;7,742 different seven letter combinations&lt;/strong&gt; can be used to
+generate Bee-style puzzles. There are more puzzles themseves based on what
+letter is chosen for the middle spot.&lt;/p&gt;
+&lt;p&gt;The majority of letter choices, about 62%, have just one pangram. That's lower
+than I expected, actually. It's not that uncommon to have two or three pangrams,
+which happens about about 25% of the time, and nearly four out of ten puzzles
+will have more than one pangram. The full output is &lt;a href="https://raw.githubusercontent.com/sefk/timesbee/master/timesbee.out"&gt;here&lt;/a&gt;, the output of this
+&lt;a href="https://github.com/sefk/timesbee"&gt;program&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Watch out for the combination &lt;code&gt;einprst&lt;/code&gt;. If this one ever comes up, good
+luck finding all twenty-seven of its pangrams.&lt;/p&gt;
+&lt;h4&gt;The Bee Puzzle&lt;/h4&gt;
+&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/timesbee.png" alt="Example Times Bee Puzzle" width="40%"&gt;&lt;/p&gt;
+&lt;p&gt;A Bee puzzle has seven letters with one "special" letter in the middle. Make as
+many words as You can find with at least four letters, using only the letters
+given, but it has to use the center letter. Proper nouns aren't allowed. Every
+puzzle has at least one &lt;strong&gt;pangram&lt;/strong&gt;, a word that uses all letters — this
+example's is &lt;em&gt;amphibian&lt;/em&gt;. Wikipedia cites &lt;a href="https://en.wikipedia.org/wiki/Frank_Longo"&gt;Frank Longo&lt;/a&gt; as the Bee's creator.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://nytbee.com/"&gt;nytbee.com&lt;/a&gt; has more today's puzzle and some interesting stats about these
+puzzles in general. They don't seem to be affiliated with the NY Times but that
+seem to be OK and is's a nice site.&lt;/p&gt;</description><category>Family</category><category>Games</category><guid>https://sef.kloninger.com/posts/timesbee/</guid><pubDate>Sat, 23 May 2020 22:00:00 GMT</pubDate></item></channel></rss>

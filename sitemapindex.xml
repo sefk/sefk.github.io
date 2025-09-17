@@ -6,67 +6,79 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://sef.kloninger.com/categories/cat_tech-warstories.xml</loc>
+  <lastmod>2025-09-16T02:06:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://sef.kloninger.com/categories/cat_techwarstory.xml</loc>
-  <lastmod>2025-09-15T21:55:00Z</lastmod>
+  <lastmod>2025-09-16T02:04:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/civics.xml</loc>
-  <lastmod>2025-08-06T01:32:00Z</lastmod>
+  <lastmod>2025-09-17T02:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/data.xml</loc>
-  <lastmod>2025-08-06T01:32:00Z</lastmod>
+  <lastmod>2025-09-17T02:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/education.xml</loc>
-  <lastmod>2025-08-06T01:32:00Z</lastmod>
+  <lastmod>2025-09-17T02:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/family.xml</loc>
-  <lastmod>2025-08-06T01:32:00Z</lastmod>
+  <lastmod>2025-09-17T02:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/games.xml</loc>
-  <lastmod>2025-08-05T14:50:00Z</lastmod>
+  <lastmod>2025-09-17T02:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/halloween.xml</loc>
-  <lastmod>2025-08-06T01:32:00Z</lastmod>
+  <lastmod>2025-09-17T02:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/health.xml</loc>
-  <lastmod>2025-08-06T01:32:00Z</lastmod>
+  <lastmod>2025-09-17T02:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/life.xml</loc>
-  <lastmod>2025-08-06T01:32:00Z</lastmod>
+  <lastmod>2025-09-17T02:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/management.xml</loc>
-  <lastmod>2025-08-06T01:32:00Z</lastmod>
+  <lastmod>2025-09-17T02:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/media.xml</loc>
-  <lastmod>2025-08-06T01:32:00Z</lastmod>
+  <lastmod>2025-09-17T02:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/tech.xml</loc>
-  <lastmod>2025-08-06T01:32:00Z</lastmod>
+  <lastmod>2025-09-17T02:44:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/technology.xml</loc>
-  <lastmod>2025-08-06T01:32:00Z</lastmod>
+  <lastmod>2025-09-17T02:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/tweets.xml</loc>
-  <lastmod>2025-08-05T14:50:00Z</lastmod>
+  <lastmod>2025-09-17T02:51:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://sef.kloninger.com/categories/war-stories.xml</loc>
+  <lastmod>2025-09-17T02:51:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://sef.kloninger.com/categories/warstories.xml</loc>
+  <lastmod>2025-09-17T02:28:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/rss.xml</loc>
-  <lastmod>2025-09-15T21:55:00Z</lastmod>
+  <lastmod>2025-09-17T02:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/sitemap.xml</loc>
-  <lastmod>2025-09-15T22:50:00Z</lastmod>
+  <lastmod>2025-09-17T02:51:00Z</lastmod>
  </sitemap>
 </sitemapindex>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about War Stories)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/war-stories.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 17 Sep 2025 02:51:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Launch Day</title><link>https://sef.kloninger.com/posts/201306launch-day/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="https://sef.kloninger.com/f/spaceshuttle-300x283.png" width="180" height="170"&gt;
+
+&lt;p&gt;
+Today was launch day. It went really well.  I wanted to capture what a good launch feels like and contrast that with a more exciting launch, just five months ago.
+
+
+&lt;/p&gt;&lt;p&gt;
+Today we turned on our first class on Stanford's instance the open-source &lt;a href="http://code.edx.org"&gt;edX platform&lt;/a&gt;, what we're calling &lt;a href="http://online.stanford.edu/openedx"&gt;OpenEdX&lt;/a&gt;. The class is &lt;a href="https://class.stanford.edu/courses/Medicine/HRP258/Statistics_in_Medicine"&gt;Statistics in Medicine&lt;/a&gt;, taught by Kristin Sainani of the Stanford School of Medicine. With over thirteen thousand students signed up it's a medium-sized MOOC (Massive Open Online Course).
+
+
+
+&lt;/p&gt;&lt;p&gt;
+We have launched MOOC's for Stanford before: two in &lt;a href="http://networking.class.stanford.edu/"&gt;Fall&lt;/a&gt; &lt;a href="http://solar.class.stanford.edu/"&gt;Quarter&lt;/a&gt;, and one in &lt;a href="http://db.class.stanford.edu/"&gt;Winter&lt;/a&gt;. Even though the classes were huge success, but the launch days weren't so smooth. We had written that platform, &lt;a href="http://class2go.stanford.edu/"&gt;Class2Go&lt;/a&gt;, from the ground up with a small team in a dozen weeks in Fall; in the weeks before the Winter launch we ripped out the whole evaluation system, about one-third of the code, and replaced it with a whole new engine. In both cases most of our code was fresh off the presses.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Those launches were rocky. I'll tell the story of the DB class launch in January. The first thing we do is a "soft launch," where you open the front door and some people find their way in. Those first visits give you a sense of how things will go.  Surprisingly, the servers were a bit busy.  But we wanted to keep going, so we scaled up capacity and moved on.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+The thing that drives real traffic is the announcement email. That gets people to the site. The announcements started going out, students started coming in, and the site lit up. We were in hot water. Servers were overloaded, and most surprising, the database was getting hammered. This was scary and unexpected. We control-C'ed the mail job and quickly hacked additional caching into the site.  We had to trickle out announcements over the next twelve hours.  We made it, but it was a long, stressful day.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+And then the days/weeks post-launch were spent watching graphs, triaging 500 errors (user-visible "we're sorry" pages), and installing daily hotfixes. But we got through it. The classes were a success and the team was proud.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+So, contrast that to today's launch.  Totally different.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Everyone came in early as usual. I bought bagels. We turned on the class (soft-launch) and the servers hardly noticed. We sent the announcement mails, people came and took their pre-course survey and watched the intro video. Hardly any load. This chart shows the average CPU on our four appservers from 8:00 AM PDT / 15:00 UTC until 10:45 AM or so.
+
+
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;img class="alignnone  wp-image-414" style="border: 0px;" alt="launch-app-cpu" src="https://sef.kloninger.com/f/launch-app-cpu1.png" width="1530" height="373"&gt;
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Those are happy servers. Other charts we watched (db connections, load, etc.) told the same story. The most impressive thing was not a single user visible error, no 500's!
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Those folks at edX made some solid software.  We're happy to be working with a strong group of engineers and a quality product.  We've had our hands on it only since April, and it was released open-source to the world on June 1.  I fully expect a lot of other universities and organizations are going to have a great time running classes on OpenEdX too.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+I just turned off half the appservers since we're fine on capacity. Now off to bed with a good feeling.
+
+&lt;/p&gt;</description><category>Education</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/201306launch-day/</guid><pubDate>Wed, 12 Jun 2013 05:59:24 GMT</pubDate></item><item><title>The Day I Took Down 100,000 Web Sites</title><link>https://sef.kloninger.com/posts/201207taking-down-100000-sites/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright size-full wp-image-343" style="border: 0px;" title="fire" src="https://sef.kloninger.com/f/fire.png" alt="fire alarm" width="300" height="240"&gt;
+
+&lt;p&gt;
+Every engineer has their "the day I did something very very bad" story. This is mine.
+
+
+&lt;/p&gt;&lt;p&gt;
+It was my last week at &lt;a href="http://www.ning.com/"&gt;Ning&lt;/a&gt;. For about a year I ran the Infrastructure and Operations group. It was the end of a good stretch, working with a strong team on hard problems.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+In early 2010 (before I joined) Ning had successfully switched from a premium to paid model. Of Ning's two million social networks some were thriving onine communities, but many weren't. Trading those in for one hundred thousand good paying customers had been the right thing for the business. We kept around the 1.9M orphaned sites for some time in case someone wanted to assume ownership and start paying. By late 2011 the revival rate had dropped low enough that it was time to clear out the cruft.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+I volunteered for the cleanup. I enjoyed little projects like this because it kept my hands in the code and took away a task that would be a chore and distraction for the engineers. The job was some SQL queries, scripting, load testing, checking, and double-checking. The hardest part was ensuring we had the right list of networks to delete.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+It took about two months to write and run the scripts. I felt good that it had gone through uneventfully.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+There was a legacy corner of our system that hadn't been included in my cleanup pass. I hadn't worried about it at first since it was just a few thousand networks. But now that I was leaving Ning I wanted to tie off my loose end projects, and this was one. I assembled the list of stragglers and ran my scripts. The 2,000 deletes went quickly. This was 11:00 AM on regular workday -- my last Wednesday on the job.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+I immediately knew that I had done something very wrong. Since I sat close to the Customer Advocacy group I heard their IM clients and phones light up. Every Ning page was a "We're Sorry" 404 page. Oh crap.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+It only took a couple of minutes to find the problem. One of the networks I had marked for deletion had core Javascript and CSS needed by every Ning network -- important stuff. The network, "socialnetworkmain" was known to everyone as being important, and if I had done my spot checks better, I would have seen it straight away. Instead, I had been sloppy.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+The backdoor method I was using bypassed the safeties we had in place to protect our "really important" networks.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Luckily, &lt;a href="https://twitter.com/myelin"&gt;Phil&lt;/a&gt;, one of our top-notch infrastructure engineers was sitting close by and quickly restored the network through the backend. Things returned to normal almost immediately. That feeling of panic started to back off. The jokes started and we started to relax.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+It took us another few hours to find and fix second and third order effects of my snafu. The network creation flow was broken -- fixed. An in-house monitoring system was dying silently -- fixed. And so on.
+
+
+
+&lt;!-- Friday, August 18, 1995 --&gt;
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;a title="Dilbert strip where he screwed up big-time" href="http://dilbert.com/strips/comic/1995-08-18/"&gt;&lt;img src="https://sef.kloninger.com/f/dilbert-screwed-up.gif" alt="Dilbert.com" border="0"&gt;&lt;/a&gt;
+
+
+
+&lt;/p&gt;&lt;p&gt;
+I learned four lessons:
+
+&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;ol&gt;
+	&lt;li&gt;&lt;strong&gt;Undo is your friend.&lt;/strong&gt; The tooling or features to revert your change will take time, but you will be happy to have it if you ever need it.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Make changes during the day.&lt;/strong&gt; Resolving a hairy problem is hard if you don't have the right people, and when the people you do have are tired and foggy. This incident might have taken hours to resolve instead of minutes in the middle of the night.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;It's not over until it's over.&lt;/strong&gt; Once in crisis mode, you're eager to be get out of it. Once the main problem is solved it is tempting to exhale, go to lunch, go back to bed, whatever. But aftereffects might take a while to show up, or may just be harder to find.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Disproportionate effects.&lt;/strong&gt; We all know that our complex systems nonlinear failure modes. Incidents like these are reminders that small changes have big effects. Said another way, even small things should be taken seriously.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+My time at Akamai had prepared me well for managing a crisis. But it's nice to have a refresher course every now and then.
+
+
+
+ &lt;/p&gt;</description><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/201207taking-down-100000-sites/</guid><pubDate>Wed, 25 Jul 2012 17:56:57 GMT</pubDate></item><item><title>Why Quit?  Because They Have Bigger Monitors</title><link>https://sef.kloninger.com/posts/201205engineering-culture-litmus-tests/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;
+Good engineers are attracted to places with a strong engineering culture. But how can you see what the culture is really like from the outside? Here are my two quick-and-dirty indicators.
+
+&lt;img class="alignright size-full wp-image-230" style="border: 0px;" title="testtubes" src="https://sef.kloninger.com/f/testtubes.png" alt="" width="149" height="200"&gt;
+
+
+&lt;/p&gt;&lt;p&gt;
+First a word about what I mean by an engineering culture. It means engineers are valued and important. Some implications:
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;/p&gt;&lt;ul&gt;
+	&lt;li&gt;How are decisions made? In an engineering culture, technical people have input into what gets built, when, and by whom.  Not signoff, but a real say.&lt;/li&gt;
+	&lt;li&gt;Is there respect for the craft of making software? Coding is still creative work that requires the right time and space. Some projets are tough to predict how long they will take, and that's needs to be OK.&lt;/li&gt;
+	&lt;li&gt;Infrastructure. How hard is it for the people who know (engineers, managers) to justify to their bosses when work is needed on non-feature driven stuff? This could be in the runtime system (like scaling work on the message queue) or back office (like build systems or version control).&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;
+Unfortunately, teasing this out in an interview can be tricky unless you have someone you really know and trust on the inside.
+
+&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;h2&gt;How big are the monitors?&lt;/h2&gt;
+
+A story from a prior company. I was an engineering manager that had a retention problem. One of the engineers on my team quit to go to a smaller, hipper company. This was from my exit interview:
+
+&lt;p&gt;
+&lt;/p&gt;&lt;blockquote&gt;
+
+&lt;p&gt;
+&lt;strong&gt;Me&lt;/strong&gt;: why are you leaving?
+
+&lt;/p&gt;&lt;p&gt;
+&lt;strong&gt;Him&lt;/strong&gt;: because they have bigger monitors.
+
+&lt;/p&gt;&lt;p&gt;
+&lt;strong&gt;Me&lt;/strong&gt;: (incredulous) are you kidding? we can get you a bigger monitor.
+
+&lt;/p&gt;&lt;p&gt;
+&lt;strong&gt;Him&lt;/strong&gt;: it's not just me -- everyone has big monitors.
+
+&lt;/p&gt;&lt;p&gt;
+&lt;strong&gt;Me&lt;/strong&gt;: why is that so important?
+
+&lt;/p&gt;&lt;p&gt;
+&lt;strong&gt;Him&lt;/strong&gt;: because it shows how much they value my time. The extra money to cram that many more pixels into my retina must be worth it to them.
+
+&lt;/p&gt;&lt;/blockquote&gt;
+
+And now I understand that this is totally true. Places that value their people consider equipment expenses small compared to the productivity (and happiness) of their people.  The best engineers are given the best tools to do their jobs. Big monitors are a very visible sign of this.
+
+&lt;h2&gt;Can people choose their own email addresses?&lt;/h2&gt;
+
+Non-engineers sometimes don't appreciate how important an email address is. It's your identity on line. A strict naming convention (first name last initial, or worse, last name first initial) indicates place that values conformity over engineer happiness. Worse, its a great way to make their people feel like cogs or "human resources," not the cool individuals that they are.
+
+&lt;p&gt;
+(Aside: let's do away with the term Human Resources.  It's horrible.)
+
+&lt;/p&gt;&lt;p&gt;
+This one is important for me personally since I have a weird first name. If you don't let me be &lt;code&gt;sef@company.com&lt;/code&gt; then you get major demerits in my book. And no, clunky alias tricks, like a mailing list with one member in it, doesn't count. It's what you see on your shell prompt that matters; it's what &lt;code&gt;whoami&lt;/code&gt; returns that matters.
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;img class="alignnone size-full wp-image-235" style="border: 0px;" title="whoami" src="https://sef.kloninger.com/f/whoami.png" alt="" width="556" height="226"&gt;
+
+&lt;/p&gt;&lt;p&gt;
+One final word: this isn't a slam on you hardworking IT guys and gals who keep important things running and have to enforce the rules you're given. Instead, I'm speaking to the bad policies (usually stemming from bad cultures) that can put you into bad positions. If you are at such a place, hunker down and pray for daylight.
+
+ &lt;/p&gt;</description><category>Management</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/201205engineering-culture-litmus-tests/</guid><pubDate>Thu, 17 May 2012 23:01:44 GMT</pubDate></item></channel></rss>
