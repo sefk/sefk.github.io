@@ -1044,3 +1044,9 @@ LOGGING_HANDLERS = {
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
 GLOBAL_CONTEXT = {}
+
+# In the process of migrating from V7 to V8 I ran the "upgrade_metadata_v8"
+# plugin and it verified that my use of tags was kosher.
+# They said it was OK to set both of these to False.
+USE_TAG_METADATA = False
+WARN_ABOUT_TAG_METADATA = False
