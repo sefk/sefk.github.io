@@ -3,7 +3,7 @@
 .. slug: chicken_soup
 .. link: 
 .. description: 
-.. tags: Family,Life,Health
+.. tags: Family,Life
 .. date: 2014/01/20 17:16
 -->
 

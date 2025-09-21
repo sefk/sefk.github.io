@@ -3,7 +3,7 @@
 .. slug: arthroscopy
 .. link: 
 .. description: 
-.. tags: Life,Health
+.. tags: Life
 .. date: 2014/08/18 22:20
 -->
 
