@@ -3,7 +3,7 @@
 .. slug: timesbee
 .. link: 
 .. description: 
-.. tags: Family,Games
+.. tags: Family,Puzzling
 .. date: 2020/05/23 15:00
 -->
 
