@@ -11,10 +11,25 @@ software engineering management &mdash; not retired, just on sabbatical.
      style="float:right; padding-left:40px;"
      alt="Sef squinting in a baseball hat" width=280px>
 
-For many years, off and on, I've written an old-style [blog](posts). Most of the
-posts are about [management](categories/management),
-[technology](categories/technology), or [life in general](categories/life). I
-hope you check it out.
+For many years, off and on, I've written an old-style blog. You
+can read posts [by date](posts) or read one of the categories below.
+I hope you check it out.
+
+<!-- TODO: auto-generate this list, possibly using Nikola's static_tag_cloud plugin?
+Consider showing counts of posts, or maybe sorting by that. -->
+
+<ul class="list-inline">
+    <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/civics/">Civics</a></li>
+    <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/data/">Data</a></li>
+    <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/education/">Education</a></li>
+    <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/family/">Family</a></li>
+    <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/games/">Games</a></li>
+    <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/life/">Life</a></li>
+    <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/management/">Management</a></li>
+    <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/media/">Media</a></li>
+    <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/technology/">Technology</a></li>
+    <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/war-stories/">War Stories</a></li>
+</ul>
 
 My career has been working for tech companies like Google, VMware, and Akamai,
 as well as some startups. My [resume][] has the whole story. The most fun was
