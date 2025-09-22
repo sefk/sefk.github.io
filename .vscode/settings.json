@@ -1,4 +1,13 @@
 {
+    "cSpell.ignorePaths": [
+        "conf.py",
+        "bin/**",
+        "lib/**",
+        "output/**",
+        "plugins/**",
+        "share/**",
+        "cache/**",
+    ],
     "cSpell.words": [
         "Bsky",
         "Forsén",
