@@ -37,13 +37,16 @@ building a site for online education for Stanford during the MOOC boom of 2012.
 
 <table>
 <tr>
-<td width=20% align=center><font size=20>❌👑</font></td>
+<td width=20% align=center>
+    <font size=10>
+        <a href="https://www.nokings.org/" style="text-decoration:none">❌👑</a>
+    </font>
+</td>
 <td>
 Lately I've become concerned by America's movement toward authoritarianism.
-I. support the work being done by
+I support the work being done by
 <a href="https://indivisiblemp.org/">my local Indivisible chapter</a>
 and the national <a href="https://www.nokings.org/">No Kings</a> movement.
-I aim to do more.
 </td>
 </tr>
 </table>
