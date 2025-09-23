@@ -32,10 +32,10 @@ So how do we ensure that value gets delivered? When you work in a team or a
 company people turn over. It's not just enough to do the experiment, you need to
 write it up and share your results. To produce a good writeup, you should:
 
-1. **Figure out your hypothesis(es)** that you're testing. Often this is in the
-   form of one or more questions. For prototypes, it might be a boolean, i.e. we
-   can build X that will work. But even then, consider what "done" means.
-   Stating your hypothesis in terms of a metric is often easiest. NB I find the
+1. **Figure out the hypothesis(es)** you're testing. Often this is in the form
+   of one or more questions. For prototypes, it might be a boolean, i.e. we can
+   build X that will work. But even then, consider what "done" means. Stating
+   your hypothesis in terms of a metric is often easiest. NB I find the
    goal/driver/guardrail framework from Thanks [Diane][]'s book helpful,
    [Trustworthy Online Controlled Experiments][book]. 
 
