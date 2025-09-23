@@ -34,19 +34,21 @@ write it up and share your results. To produce a good writeup, you should:
 
 1. **Figure out your hypothesis(es)** that you're testing. Often this is in the
    form of one or more questions. For prototypes, it might be a boolean, i.e. we
-   can build X that will work. But even then, consider what "done" means. What
-   are you measuring? (*)
+   can build X that will work. But even then, consider what "done" means.
+   Stating your hypothesis in terms of a metric is often easiest. NB I find the
+   goal/driver/guardrail framework from Thanks [Diane][]'s book helpful,
+   [Trustworthy Online Controlled Experiments][book]. 
 
-2.  **State your assumptions and method**. This is where you usually get the most
-    feedback. Note that this usually isn't a project plan, as your reviewers
-    usually don't care how long it takes or what happens when. 
+2. **State your assumptions and method**. This is where you usually get the most
+   feedback. Note that this usually isn't a project plan, as your reviewers
+   usually don't care how long it takes or what happens when. 
 
-3.  **Seek feedback** from your peers. Publish the doc stating the method to have
-    smart people poke holes in your plan and make sure what you're measuring
-    will actually address the hypothesis. And then when the experiment is done,
-    get it reviewed by someone senior to ensure that your work supports your
-    conclusion. This also spreads knowledge about this work (both that you're
-    doing it, and the results) so the overall organization benefits.
+3. **Seek feedback** from your peers. Publish the doc stating the method to have
+   smart people poke holes in your plan and make sure what you're measuring will
+   actually address the hypothesis. And then when the experiment is done, get it
+   reviewed by someone senior to ensure that your work supports your conclusion.
+   This also spreads knowledge about this work (both that you're doing it, and
+   the results) so the overall organization benefits.
 
 The artifact produced has many benefits. It's useful for you as you discuss
 follow-on work; it's useful come performance evaluation time. But most
@@ -56,7 +58,5 @@ learn from this work.
 You'll benefit from taking the time to write it up, the reviewers learn from
 reading, and it'll live on past your time with the team.
 
-(*) I find the goal/driver/guardrail framework from this book helpful:
-[Trustworthy Online Controlled Experiments][book]. 
-
-[book]: https://www.google.com/books/edition/Trustworthy_Online_Controlled_Experiment/TFjPDwAAQBAJ?hl=en&gbpv=1&dq=trustworthy%20online%20controlled%20experiments&pg=PP1&printsec=frontcover
+[Diane]: https://research.google/people/author3770/?&type=google
+[book]: https://www.google.com/books/edition/Trustworthy_Online_Controlled_Experiment/TFjPDwAAQBAJ?hl=en&gbpv=1
