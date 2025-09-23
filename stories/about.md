@@ -35,9 +35,19 @@ My career has been working for tech companies like Google, VMware, and Akamai,
 as well as some startups. My [resume][] has the whole story. The most fun was
 building a site for online education for Stanford during the MOOC boom of 2012.
 
-Lately I've become concerned by America's movement toward authoritarianism. I
-support the work being done by [my local Indivisible chapter][imp] and the
-national [No Kings][] movement and aim to do more.
+<table>
+<tr>
+<td width=20% align=center><font size=20>❌👑</font></td>
+<td>
+Lately I've become concerned by America's movement toward authoritarianism.
+I. support the work being done by
+<a href="https://indivisiblemp.org/">my local Indivisible chapter</a>
+and the national <a href="https://www.nokings.org/">No Kings</a> movement.
+I aim to do more.
+</td>
+</tr>
+</table>
+<p></p>
 
 I'm also playing board games, video games, and learning bridge. But I keep
 coming back to tech projects. I got my first computer, an Apple //e, and spent a
@@ -50,7 +60,5 @@ If any of this interests you too, reach me via [email](mailto:sefklon@gmail.com)
 For information about this site see my [tools page](tools).
 <br>
 
-[imp]: https://indivisiblemp.org/
-[No Kings]: https://www.nokings.org/
 [resume]: https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html
 [robots game]: http://en.wikipedia.org/wiki/Robots_%28BSD_game%29
