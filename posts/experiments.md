@@ -6,6 +6,8 @@
 .. type: text
 -->
 
+<img style="float:right" class="postimage" src="/f/experiment.jpeg" alt="Line art of an experiment" width=60%>
+
 _What's the value of an experiment or a prototype?_
 
 There are all kinds of ways to have impact. A feature can improve user
