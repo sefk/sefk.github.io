@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Management)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/management.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 23 Sep 2025 18:25:08 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Learn From Experiments</title><link>https://sef.kloninger.com/posts/experiments/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/experiment.jpeg" alt="Line art of an experiment" width="60%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Management)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/management.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 23 Sep 2025 18:29:08 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Learn From Experiments</title><link>https://sef.kloninger.com/posts/experiments/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/experiment.jpeg" alt="Line art of an experiment" width="60%"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;What's the value of an experiment or a prototype?&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;There are all kinds of ways to have impact. A feature can improve user
 experience; a hardening project can reduce risk of a production outage;
@@ -21,10 +21,10 @@ company people turn over. It's not just enough to do the experiment, you need to
 write it up and share your results. To produce a good writeup, you should:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Figure out your hypothesis(es)&lt;/strong&gt; that you're testing. Often this is in the
-   form of one or more questions. For prototypes, it might be a boolean, i.e. we
-   can build X that will work. But even then, consider what "done" means.
-   Stating your hypothesis in terms of a metric is often easiest. NB I find the
+&lt;p&gt;&lt;strong&gt;Figure out the hypothesis(es)&lt;/strong&gt; you're testing. Often this is in the form
+   of one or more questions. For prototypes, it might be a boolean, i.e. we can
+   build X that will work. But even then, consider what "done" means. Stating
+   your hypothesis in terms of a metric is often easiest. NB I find the
    goal/driver/guardrail framework from Thanks &lt;a href="https://research.google/people/author3770/?&amp;amp;type=google"&gt;Diane&lt;/a&gt;'s book helpful,
    &lt;a href="https://www.google.com/books/edition/Trustworthy_Online_Controlled_Experiment/TFjPDwAAQBAJ?hl=en&amp;amp;gbpv=1"&gt;Trustworthy Online Controlled Experiments&lt;/a&gt;. &lt;/p&gt;
 &lt;/li&gt;
