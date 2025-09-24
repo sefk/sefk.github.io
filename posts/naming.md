@@ -1,7 +1,7 @@
 <!--
 .. title: Naming Is Hard
 .. slug: naming
-.. date: 3000-10-01 18:00:00 UTC-07:00
+.. date: 2025-09-23 22:00:00 UTC-07:00
 .. tags: Tech,War Stories,Education
 .. category:
 .. link: 
@@ -14,15 +14,15 @@ alt="Photo of Lena Forsén" width=40%>][lena]
 
 This is a story about how hard it is to come up with a good name.
 
-This was in 2013 or so when I was part of a team building a [system
-for online education][in] at Stanford. We [launched][] a nice little
-site, Class2Go, with a small team in a few months. It worked well
-and supported the basic features of an online course: videos,
-assessments, auth, reporting. We decided to keep it going and worked
-on it for another year, expanding the covered use cases and taking
-on more classes.
+This was in 2013. I was part of a team building a [system for online
+education][in] at Stanford. We [launched][] a nice little site,
+Class2Go, with a small team in a few months. It worked well and
+supported the basic features of an online course: videos, assessments,
+auth, reporting. We decided to keep it going and worked on it for
+another year, expanding the covered use cases and taking on more
+classes.
 
-Even from the beginning the name *Class2Go* felt a bit off. Our
+But even from the beginning the name *Class2Go* felt a bit off. Our
 original aim was to enable offline [MOOC] students, people trying
 to take classes offline or in poorly-connected places But we ended
 up pivoting away from the offline use case to more standard
@@ -40,23 +40,24 @@ candidate names (I wish I still had that list).
 One name caught everyone's attention: **Tindra**. It's a Swedish
 word that means "sparkle" or "twinkle." It's evocative and easy to
 say. It also happens to be a woman's name, but not a particularly
-common one. 
+common one we were told. 
 
 Surprisingly, `tindra.com` was available! In 2013 short and catchy
 domain names were getting hard to come The [new gTLD program][] had
 only just been approved in 2012, and `.com` and `.org` were pretty
 crowded.
 
-The problem was that if you Googled that name the top result was a
-Swedish adult film actress! Maybe with enough SEO juice, over time,
-we would have overtaken that. But on launch day, that's not the
-association you want to have.
+The problem was that if you Googled "tindra," the top result was a
+Swedish adult film actress! Not good. Maybe with enough SEO juice,
+over time, we would have overtaken that. But on launch day, that's
+not the association you want to have.
 
 We ended up punting on the problem and going with a generic name,
-**Stanford Online**. It got the job done but felt like a missed
+**Stanford Online**. It got the job done, but felt like a missed
 opportunity. We later merged with edX and [I found another job][out].
-Eventually the team re-branded with **[Lagunita][]** which is the
-name of the lake on campus, which they're still using today.
+Eventually the team re-branded the site with the name **[Lagunita][]**,
+the name of the lake on campus, which they're still using today. I
+like it.
 
 I admit I still have a thing for Tindra.  The name, not the actress.
 
