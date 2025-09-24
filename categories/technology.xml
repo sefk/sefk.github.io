@@ -1,5 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Technology)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/technology.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 23 Sep 2025 18:17:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Cleaning Up Photo Duplicates</title><link>https://sef.kloninger.com/posts/photo-dups/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/dups-pie.png" alt="Pie Chart" width="30%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Technology)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/technology.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 24 Sep 2025 05:11:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Naming Is Hard</title><link>https://sef.kloninger.com/posts/naming/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Lenna"&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/lena.png" alt="Photo of Lena Forsén" width="40%"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a story about how hard it is to come up with a good name.&lt;/p&gt;
+&lt;p&gt;This was in 2013. I was part of a team building a &lt;a href="https://sef.kloninger.com/posts/201207on-line-education/"&gt;system for online
+education&lt;/a&gt; at Stanford. We &lt;a href="https://engineering.stanford.edu/news/stanford-launches-class2go-open-source-platform-online-classes"&gt;launched&lt;/a&gt; a nice little site,
+Class2Go, with a small team in a few months. It worked well and
+supported the basic features of an online course: videos, assessments,
+auth, reporting. We decided to keep it going and worked on it for
+another year, expanding the covered use cases and taking on more
+classes.&lt;/p&gt;
+&lt;p&gt;But even from the beginning the name &lt;em&gt;Class2Go&lt;/em&gt; felt a bit off. Our
+original aim was to enable offline &lt;a href="https://en.wikipedia.org/wiki/Massive_open_online_course"&gt;MOOC&lt;/a&gt; students, people trying
+to take classes offline or in poorly-connected places But we ended
+up pivoting away from the offline use case to more standard
+hosted-course features. It became a little multi-tenant CMS with a
+small database for auth, assessment results, and some basic analytics.&lt;/p&gt;
+&lt;p&gt;We decided to rebrand. Someone knew a naming consultant, presumably
+an alum, and soon enough we had an expert on board. They were really
+interesting to work with. After understanding the platform's goals
+and features, they generated hundreds of candidate names. Each was
+vetting for domain name availability and copyright conflicts. The
+consultant was good at their job, bringing us something like a hundred
+candidate names (I wish I still had that list).&lt;/p&gt;
+&lt;p&gt;One name caught everyone's attention: &lt;strong&gt;Tindra&lt;/strong&gt;. It's a Swedish
+word that means "sparkle" or "twinkle." It's evocative and easy to
+say. It also happens to be a woman's name, but not a particularly
+common one we were told. &lt;/p&gt;
+&lt;p&gt;Surprisingly, &lt;code&gt;tindra.com&lt;/code&gt; was available! In 2013 short and catchy
+domain names were getting hard to come The &lt;a href="https://newgtldprogram.icann.org/"&gt;new gTLD program&lt;/a&gt; had
+only just been approved in 2012, and &lt;code&gt;.com&lt;/code&gt; and &lt;code&gt;.org&lt;/code&gt; were pretty
+crowded.&lt;/p&gt;
+&lt;p&gt;The problem was that if you Googled "tindra," the top result was a
+Swedish adult film actress! Not good. Maybe with enough SEO juice,
+over time, we would have overtaken that. But on launch day, that's
+not the association you want to have.&lt;/p&gt;
+&lt;p&gt;We ended up punting on the problem and going with a generic name,
+&lt;strong&gt;Stanford Online&lt;/strong&gt;. It got the job done, but felt like a missed
+opportunity. We later merged with edX and &lt;a href="https://sef.kloninger.com/posts/leaving-stanford/"&gt;I found another job&lt;/a&gt;.
+Eventually the team re-branded the site with the name &lt;strong&gt;&lt;a href="https://online.stanford.edu/lagunita-learning-platform"&gt;Lagunita&lt;/a&gt;&lt;/strong&gt;,
+the name of the lake on campus, which they're still using today. I
+like it.&lt;/p&gt;
+&lt;p&gt;I admit I still have a thing for Tindra.  The name, not the actress.&lt;/p&gt;
+&lt;p&gt;Postscript: &lt;code&gt;tindra.com&lt;/code&gt; still doesn't seem to be used for anything
+today. It looks to just be parked by a German domain registrar.
+Google results don't seem to be a problem. Maybe it's available for
+something interesting?&lt;/p&gt;</description><category>Education</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/naming/</guid><pubDate>Wed, 24 Sep 2025 05:00:00 GMT</pubDate></item><item><title>Cleaning Up Photo Duplicates</title><link>https://sef.kloninger.com/posts/photo-dups/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/dups-pie.png" alt="Pie Chart" width="30%"&gt;&lt;/p&gt;
 &lt;p&gt;I did a data cleanup over the weekend. I doubt this is interesting
 for anyone else, I just wanted to capture my own notes.&lt;/p&gt;
 &lt;p&gt;Our family photos are stored up in Google Photos. We have about
@@ -517,30 +561,4 @@ There are really only three places where it has fallen short for me:
 &lt;/ul&gt;
 
 &lt;p&gt;
-So-long to &lt;a href="http://sparrowmailapp.com/"&gt;Sparrow&lt;/a&gt; and &lt;a href="http://www.apple.com/osx/apps/#mail"&gt;Mail.app&lt;/a&gt; and &lt;a href="http://mailplaneapp.com/"&gt;Mailplane&lt;/a&gt;. Or until someone does really nails &lt;a href="https://www.mailpile.is/"&gt;self-hosting&lt;/a&gt;.&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/201312airmail/</guid><pubDate>Tue, 03 Dec 2013 04:10:50 GMT</pubDate></item><item><title>K&amp;R C Programming, Quantum Books, Cambridge, MA</title><link>https://sef.kloninger.com/posts/201309knr-c-label/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p style="text-align: left;"&gt;&lt;img class="alignright  wp-image-433" style="border: 0px;" alt="IMG_4177" src="https://sef.kloninger.com/f/IMG_41771-231x300.jpg" width="139" height="180"&gt;
-
-&lt;/p&gt;&lt;p&gt;
-Today in a box I came across my old K&amp;amp;R. Probably the most valuable book I've owned. My copy has been heavily used.&lt;/p&gt;
-
-&lt;p&gt;
-But the unexpected, fun thing was finding an old label on the back cover.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-There is a lot in there.
-
-&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img class="aligncenter  wp-image-429" style="border: 0px;" alt="IMG_4179" src="https://sef.kloninger.com/f/IMG_4179-1024x393.jpg" width="584" height="224"&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;
-&lt;/p&gt;&lt;ul&gt;
-	&lt;li&gt;January 1994. I had just graduated college, driven cross country with my friend &lt;a href="http://www.linkedin.com/pub/shigeru-tanaka/0/a27/917"&gt;Shig&lt;/a&gt;, and started my first post-college job. I would have been in that job four months or so and realized that I should just stop borrowing someone else's copy (probably &lt;a href="http://www.linkedin.com/in/larryclaman/"&gt;Larry Claman&lt;/a&gt;'s) and buy my own.&lt;/li&gt;
-	&lt;li&gt;Purchased at Quantum Books, a great technical bookstore in the shadow of MIT in Cambridge, Massachusetts. It's no longer there. The bar that is there now (&lt;a style="font-style: normal;" href="http://www.themeadhall.com/"&gt;Meadhall&lt;/a&gt;) is a nice place, and I'm a big fan of beer, but it's not the same.&lt;/li&gt;
-	&lt;li&gt;According to an &lt;a style="font-style: normal;" href="http://www.bls.gov/data/inflation_calculator.htm"&gt;inflation calculator&lt;/a&gt;, $35 in 1994 is $55 today. That's expensive for a little book, especially to the twenty-two year old me.&lt;/li&gt;
-	&lt;li&gt;Note the email address: quanbook@world.std.com. This was back when mom and pop dialup ISP's where what we all used, people and businesses alike. This particular one, &lt;a style="font-style: normal;" href="http://world.std.com/"&gt;Software Tool &amp;amp; Die&lt;/a&gt;, was my private email address at the time too. (Aside: they claim to be the first public dialup ISP, and I have no reason to doubt them)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-It was fun being reminded of all this stuff. So the lesson of the story: it's still worth buying books, and when you do, don't remove the labels.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>https://sef.kloninger.com/posts/201309knr-c-label/</guid><pubDate>Sun, 15 Sep 2013 00:41:20 GMT</pubDate></item></channel></rss>
+So-long to &lt;a href="http://sparrowmailapp.com/"&gt;Sparrow&lt;/a&gt; and &lt;a href="http://www.apple.com/osx/apps/#mail"&gt;Mail.app&lt;/a&gt; and &lt;a href="http://mailplaneapp.com/"&gt;Mailplane&lt;/a&gt;. Or until someone does really nails &lt;a href="https://www.mailpile.is/"&gt;self-hosting&lt;/a&gt;.&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/201312airmail/</guid><pubDate>Tue, 03 Dec 2013 04:10:50 GMT</pubDate></item></channel></rss>
