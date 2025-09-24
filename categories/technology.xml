@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Technology)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/technology.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 24 Sep 2025 05:11:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Naming Is Hard</title><link>https://sef.kloninger.com/posts/naming/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Lenna"&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/lena.png" alt="Photo of Lena Forsén" width="40%"&gt;&lt;/a&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Technology)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/technology.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 24 Sep 2025 05:28:18 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Naming Is Hard</title><link>https://sef.kloninger.com/posts/naming/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Lenna"&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/lena.png" alt="Photo of Lena Forsén" width="40%"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This is a story about how hard it is to come up with a good name.&lt;/p&gt;
 &lt;p&gt;This was in 2013. I was part of a team building a &lt;a href="https://sef.kloninger.com/posts/201207on-line-education/"&gt;system for online
 education&lt;/a&gt; at Stanford. We &lt;a href="https://engineering.stanford.edu/news/stanford-launches-class2go-open-source-platform-online-classes"&gt;launched&lt;/a&gt; a nice little site,
@@ -39,7 +39,7 @@ opportunity. We later merged with edX and &lt;a href="https://sef.kloninger.com/
 Eventually the team re-branded the site with the name &lt;strong&gt;&lt;a href="https://online.stanford.edu/lagunita-learning-platform"&gt;Lagunita&lt;/a&gt;&lt;/strong&gt;,
 the name of the lake on campus, which they're still using today. I
 like it.&lt;/p&gt;
-&lt;p&gt;I admit I still have a thing for Tindra.  The name, not the actress.&lt;/p&gt;
+&lt;p&gt;I admit I still have a thing for Tindra though. The name, not the actress.&lt;/p&gt;
 &lt;p&gt;Postscript: &lt;code&gt;tindra.com&lt;/code&gt; still doesn't seem to be used for anything
 today. It looks to just be parked by a German domain registrar.
 Google results don't seem to be a problem. Maybe it's available for
