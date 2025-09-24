@@ -2,7 +2,7 @@
 .. title: Naming Is Hard
 .. slug: naming
 .. date: 2025-09-23 22:00:00 UTC-07:00
-.. tags: Tech,War Stories,Education
+.. tags: Technology,War Stories,Education
 .. category:
 .. link: 
 .. description: 
