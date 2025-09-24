@@ -59,7 +59,7 @@ Eventually the team re-branded the site with the name **[Lagunita][]**,
 the name of the lake on campus, which they're still using today. I
 like it.
 
-I admit I still have a thing for Tindra.  The name, not the actress.
+I admit I still have a thing for Tindra though. The name, not the actress.
 
 Postscript: `tindra.com` still doesn't seem to be used for anything
 today. It looks to just be parked by a German domain registrar.
