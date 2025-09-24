@@ -66,6 +66,8 @@ today. It looks to just be parked by a German domain registrar.
 Google results don't seem to be a problem. Maybe it's available for
 something interesting?
 
+_Thanks to Jane Manning for her review, she was there too._
+
 [lena]: https://en.wikipedia.org/wiki/Lenna
 [in]: /posts/201207on-line-education/
 [out]: /posts/leaving-stanford/
