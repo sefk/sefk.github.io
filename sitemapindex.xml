@@ -15,7 +15,7 @@
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/education.xml</loc>
-  <lastmod>2025-09-23T04:51:00Z</lastmod>
+  <lastmod>2025-09-24T05:07:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/family.xml</loc>
@@ -38,19 +38,23 @@
   <lastmod>2025-09-23T04:51:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://sef.kloninger.com/categories/tech.xml</loc>
+  <lastmod>2025-09-24T05:07:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://sef.kloninger.com/categories/technology.xml</loc>
   <lastmod>2025-09-23T18:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/war-stories.xml</loc>
-  <lastmod>2025-09-23T04:51:00Z</lastmod>
+  <lastmod>2025-09-24T05:07:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/rss.xml</loc>
-  <lastmod>2025-09-23T18:29:00Z</lastmod>
+  <lastmod>2025-09-24T05:07:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/sitemap.xml</loc>
-  <lastmod>2025-09-23T18:29:00Z</lastmod>
+  <lastmod>2025-09-24T05:07:00Z</lastmod>
  </sitemap>
 </sitemapindex>
