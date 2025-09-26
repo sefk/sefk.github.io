@@ -22,6 +22,7 @@ Consider showing counts of posts, or maybe sorting by that. -->
     <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/civics/">Civics</a></li>
     <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/data/">Data</a></li>
     <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/education/">Education</a></li>
+    <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/engineering/">Engineering</a></li>
     <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/family/">Family</a></li>
     <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/puzzling/">Puzzling</a></li>
     <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/life/">Life</a></li>
