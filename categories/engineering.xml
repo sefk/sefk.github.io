@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Engineering)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/engineering.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 26 Sep 2025 16:45:53 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Learn From Experiments</title><link>https://sef.kloninger.com/posts/experiments/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/experiment.jpeg" alt="Line art of an experiment" width="60%"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What's the value of an experiment or a prototype?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;There are all kinds of ways to have impact. A feature can improve user
+experience; a hardening project can reduce risk of a production outage;
+refactoring or test coverage can improve velocity or make software easier and
+safer to maintain. And good engineers care a lot about impact. While it's not
+the only thing that matters (the "how" is important too), if you start with
+impact, you'll generally do well.&lt;/p&gt;
+&lt;p&gt;An engineer's job to put ideas into practice, to make things. But sometimes
+we're not sure what to make. Or we think we know, but aren't sure it'll work.
+The best way to figure that out is often running a set of experiments, or maybe
+building a prototype (an n=1 experiment).&lt;/p&gt;
+&lt;p&gt;But crucially, an experiment doesn't have value itself. An experiment is
+successful only if we've learned something. The intent of the test rig or
+prototype isn't to live on. Indeed, knowing that we plan to throw it away is
+part of what makes it fast and cheap to build, and it shouldn't have all the
+trappings of production-quality software, like test coverage and code reviews.&lt;/p&gt;
+&lt;p&gt;So how do we ensure that value gets delivered? When you work in a team or a
+company people turn over. It's not just enough to do the experiment, you need to
+write it up and share your results. To produce a good writeup, you should:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Figure out the hypothesis(es)&lt;/strong&gt; you're testing. Often this is in the form
+   of one or more questions. For prototypes, it might be a boolean, i.e. we can
+   build X that will work. But even then, consider what "done" means. Stating
+   your hypothesis in terms of a metric is often easiest. NB I find the
+   goal/driver/guardrail framework from Thanks &lt;a href="https://research.google/people/author3770/?&amp;amp;type=google"&gt;Diane&lt;/a&gt;'s book helpful,
+   &lt;a href="https://www.google.com/books/edition/Trustworthy_Online_Controlled_Experiment/TFjPDwAAQBAJ?hl=en&amp;amp;gbpv=1"&gt;Trustworthy Online Controlled Experiments&lt;/a&gt;. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;State your assumptions and method&lt;/strong&gt;. This is where you usually get the most
+   feedback. Note that this usually isn't a project plan, as your reviewers
+   usually don't care how long it takes or what happens when. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Seek feedback&lt;/strong&gt; from your peers. Publish the doc stating the method to have
+   smart people poke holes in your plan and make sure what you're measuring will
+   actually address the hypothesis. And then when the experiment is done, get it
+   reviewed by someone senior to ensure that your work supports your conclusion.
+   This also spreads knowledge about this work (both that you're doing it, and
+   the results) so the overall organization benefits.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The artifact produced has many benefits. It's useful for you as you discuss
+follow-on work; it's useful come performance evaluation time. But most
+importantly, it benefits the organization. Contemporary and future peers can
+learn from this work. &lt;/p&gt;
+&lt;p&gt;You'll benefit from taking the time to write it up, the reviewers learn from
+reading, and it'll live on past your time with the team.&lt;/p&gt;</description><category>Data</category><category>Engineering</category><category>Management</category><guid>https://sef.kloninger.com/posts/experiments/</guid><pubDate>Tue, 23 Sep 2025 18:00:00 GMT</pubDate></item><item><title>Lessons from Three Years in AWS</title><link>https://sef.kloninger.com/posts/aws/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/aws.png" alt="AWS Logo" width="30%"&gt;&lt;/p&gt;
+&lt;p&gt;I've spent the last three years building and operating web sites
+with Amazon Web Services and here are a few lessons I've learned. 
+But I first have to come clean that I'm a fan of AWS with only
+casual experience with other IAAS/PAAS platforms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;S3 Is Amazing&lt;/strong&gt;. They made the right engineering choices and
+compromises: cheap, practically infinitely scalable, fast enough,
+with good availability. $0.03/GB/mo covers up for a lot of sins.
+Knowing it's there changes how you build systems.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;IAM Machine Roles From The Start&lt;/strong&gt;. IAM with &lt;a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html"&gt;Instance Metadata&lt;/a&gt;
+is a powerful way to manage secrets and rights. Trouble is you can't add
+to existing machines. Provision with machine roles in big categories
+(e.g. app servers, utility machines, databases) at the start, even if 
+just placeholders.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Availability Zoness Are Only Mostly Decoupled&lt;/strong&gt;. After the 2011
+&lt;a href="http://www.networkworld.com/article/2202805/cloud-computing/amazon-ec2-outage-calls--availability-zones--into-question.html"&gt;us-east-1 outage&lt;/a&gt; we were reassured that a coordinated 
+outage wouldn't happen again, but it happened again just
+&lt;a href="https://www.reddit.com/r/aws/comments/2zpag7/aws_internal_dns_outage/"&gt;last month&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;They Will Lock You In And You'll Like It&lt;/strong&gt;. They secondary services
+work well, are cheap, and are handy. I'm speaking of SQS, SES,
+Glacier, even Elastic Transcoder. Who &lt;em&gt;wants&lt;/em&gt; to run a durable queue
+again?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CloudFormation No&lt;/strong&gt;. It's tough to get right. My
+objection isn't programming in YAML, I don't mind writing Ansible plays, it's the
+complexity/structure of CloudFormation that is impenetrable. Plus
+even if you get it working once, you'd never run it again on something
+that is running.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Boto Yes&lt;/strong&gt;. Powerful and expressive. Don't script the CLI, use
+Boto. Easy as pie.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Qualify Machines Before Use&lt;/strong&gt;. Some VMs have lousy networking,
+presumably due to a chatty same-host or same-rack neighbor. Test
+for loss and latency to other hosts you own and on EBS. (I've used
+home-grown scripts, don't know of a standard open-source widget,
+someone should write one).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VPC Yes&lt;/strong&gt;. If you have machines talking to each other (i.e. not a
+lone machine doing something lonely) then put them in a VPC. It's not
+hard.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NAT No&lt;/strong&gt;. You think that'll improve security, but it will just
+introduce SPOFS and capacity chokepoints. Give your machines publicly
+routable IP's and use security groups.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Network ACLs Are A Pain&lt;/strong&gt;. Try to get as far as you can with just security
+groups.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You'll Peer VPC's Someday&lt;/strong&gt;. Choose non-overlapping subnet IP ranges
+at the start. It's hard to change later.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spot Instances Are Tricky&lt;/strong&gt;. They're only For a very specific use
+case that likely isn't yours. Setting up a test network? You can
+spend the money you save by using spot on swear jar fees.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pick a Management Toolset&lt;/strong&gt;. Ansible, Chef, all those things aren't
+&lt;em&gt;all&lt;/em&gt; that different when it comes down to it. Just don't dither back
+and forth. There's a little bit of extra Chef love w/ AWS but not enough to tip
+the scales in your decision I'd reckon. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tech Support Is Terrible&lt;/strong&gt;. My &lt;a href="http://www.wavefront.com/"&gt;last little
+startup&lt;/a&gt; didn't get much out of the &lt;a href="https://aws.amazon.com/premiumsupport/"&gt;business level tech
+support&lt;/a&gt; we bought. We needed it so we could call in to get
+help when we needed it, and we used that for escalating some problems.
+It was nice to have a number to call when I urgently need to up a
+system limit, say. But debugging something real, like a networking
+problem? Pretty rough.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;...Unless You Are Big&lt;/strong&gt;. Stanford, on the other hand, had a named
+rep who was responsive and helpful. I guess she was sales, but I
+used her freely on support issues and she worked the backchannels
+for us. Presumably this is what any big/important customer would
+get, that's just not you, sorry.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Real Power Is On Demand&lt;/strong&gt;. I'm reaffirming cloud
+koolaid here. Running this way lets you build and run systems
+differently, &lt;em&gt;much better&lt;/em&gt;. I've relied on the cloud this to bring
+up emergency capacity. I've used it to convert a class of machines
+on the fly to the double-price double-RAM tier when hitting a
+surprising capacity crunch. There are a whole class of problems
+that get much easier when you can have 2x the machines for just a
+little while.  When someone comes to you with that cost/benefit
+spreadsheet arguing why you should self-host, that's when you need
+your file of "the cloud saved my bacon" stories at the ready.&lt;/p&gt;</description><category>Engineering</category><category>Technology</category><guid>https://sef.kloninger.com/posts/aws/</guid><pubDate>Fri, 24 Apr 2015 07:10:00 GMT</pubDate></item><item><title>CS Students: Learn to Write</title><link>https://sef.kloninger.com/posts/learn-to-write/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/writing-hand.jpeg" alt="Writing Hand" width="40%"&gt;&lt;/p&gt;
+&lt;p&gt;If I could do my college years over I would focus on writing. I
+would take courses that required a lot of writing, in the spirit
+of "learn by doing". I'd also take courses in the mechanics and
+craft: grammar, vocabulary, and rhetoric.&lt;/p&gt;
+&lt;p&gt;I used to consider myself a competent writer. And certainly good
+enough for an engineer, right? But I've learned that I have a long
+way to go. I've learned that engineers spend much more time writing
+than you expect. And I appreciate how hard it is to write well.&lt;/p&gt;
+&lt;p&gt;This came up just this past week. I came across a beautiful four
+page essay. It laid out the problem, described alternatives, and
+lead you concisely to a well-reasoned conclusion. Sure, it was about
+technology, but what carried the day was the good writing. Humbling!&lt;/p&gt;
+&lt;p&gt;You're saying: but wait, you're a &lt;a href="http://en.wikipedia.org/wiki/Pointy-Haired_Boss"&gt;pointy-haired boss&lt;/a&gt; now
+Sef, one of those guys who doesn't do &lt;em&gt;Real Work&lt;/em&gt; anymore. You write
+email and boss people around. I understand why managers like you
+need to write, I'm an engineer. I write code. Well, there's some
+truth to that. But I'd like to convince you that even monster coders,
+if they're any good, write a lot, write well, and value good writing
+in others.&lt;/p&gt;
+&lt;p&gt;It is rare for someone to do their work in isolation and have it
+matter. Either you're working as part of a team, in a company or
+a community of developers, say on an open-source project. Sure, you
+build a great system or feature. But to have it matter to the world,
+for others to adopt it, you need to document, publicize, support,
+teach. 98% of that is writing.&lt;/p&gt;
+&lt;p&gt;I had a lunchtime conversation with &lt;a href="http://jacobian.org/writing/great-documentation/"&gt;Jacob Kaplan-Moss&lt;/a&gt;,
+Django's co-founder, at last year's PyCon. I asked him why Django
+caught on and was adopted by so many of us (including &lt;a href="http://class2go.stanford.edu/"&gt;my last
+project&lt;/a&gt; and &lt;a href="http://code.edx.org/"&gt;my current project&lt;/a&gt;). I was expecting him
+to point to features or timing. Instead he said it was "because we
+wrote good docs". The Django team didn't treat documentation as an
+afterthought. They have lots of docs, and they are good.&lt;/p&gt;
+&lt;p&gt;Consider that rare bird, the iconoclastic engineer working in
+isolation on their own project. I'm thinking of &lt;a href="http://antirez.com/"&gt;Antirez&lt;/a&gt; or
+&lt;a href="http://www.marco.org/"&gt;Marco&lt;/a&gt;. (Maybe they aren't even truly on their own so much.
+Humor me!) They are prolific and strong coders. But they also write
+a lot of words! They write a ton about their project; also tech
+landscape and their place in it. Would their software have as much
+of an impact if they didn't write so much (and well)? I say no.&lt;/p&gt;
+&lt;p&gt;Case in point. Both Marco and I wrote blog posts riffing off the
+same topic two weeks ago. First, read &lt;a href="http://sef.kloninger.com/posts/consume-produce-public.html"&gt;mine&lt;/a&gt;, then
+&lt;a href="http://www.marco.org/2014/01/03/the-builders-high"&gt;his&lt;/a&gt;.  It takes me a ton of words to get something
+basic out.  His is concise and clear. Sheesh.&lt;/p&gt;
+&lt;p&gt;So kids, don't shortchange those liberal arts classes. It's not
+fluffy stuff on the side. &lt;strong&gt;That is core&lt;/strong&gt;. You need to write well
+to be a good engineer.&lt;/p&gt;
+&lt;p&gt;Protip: the best way to do this is to major in the humanities. They
+write like crazy over there. Be like my friend Dan Chu and major
+in history, but secretly take CS courses on the side. If you're
+super smart like him, and can manage getting both degrees, then
+you're awesome. But don't sacrifice the BA for the BS. I would
+&lt;strong&gt;love&lt;/strong&gt; to talk to a candidate with with a History BA and a Computer
+Science MS.&lt;/p&gt;</description><category>Engineering</category><category>Technology</category><guid>https://sef.kloninger.com/posts/learn-to-write/</guid><pubDate>Sun, 26 Jan 2014 00:17:00 GMT</pubDate></item><item><title>Launch Day</title><link>https://sef.kloninger.com/posts/201306launch-day/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="https://sef.kloninger.com/f/spaceshuttle-300x283.png" width="180" height="170"&gt;
+
+&lt;p&gt;
+Today was launch day. It went really well.  I wanted to capture what a good launch feels like and contrast that with a more exciting launch, just five months ago.
+
+
+&lt;/p&gt;&lt;p&gt;
+Today we turned on our first class on Stanford's instance the open-source &lt;a href="http://code.edx.org"&gt;edX platform&lt;/a&gt;, what we're calling &lt;a href="http://online.stanford.edu/openedx"&gt;OpenEdX&lt;/a&gt;. The class is &lt;a href="https://class.stanford.edu/courses/Medicine/HRP258/Statistics_in_Medicine"&gt;Statistics in Medicine&lt;/a&gt;, taught by Kristin Sainani of the Stanford School of Medicine. With over thirteen thousand students signed up it's a medium-sized MOOC (Massive Open Online Course).
+
+
+
+&lt;/p&gt;&lt;p&gt;
+We have launched MOOC's for Stanford before: two in &lt;a href="http://networking.class.stanford.edu/"&gt;Fall&lt;/a&gt; &lt;a href="http://solar.class.stanford.edu/"&gt;Quarter&lt;/a&gt;, and one in &lt;a href="http://db.class.stanford.edu/"&gt;Winter&lt;/a&gt;. Even though the classes were huge success, but the launch days weren't so smooth. We had written that platform, &lt;a href="http://class2go.stanford.edu/"&gt;Class2Go&lt;/a&gt;, from the ground up with a small team in a dozen weeks in Fall; in the weeks before the Winter launch we ripped out the whole evaluation system, about one-third of the code, and replaced it with a whole new engine. In both cases most of our code was fresh off the presses.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Those launches were rocky. I'll tell the story of the DB class launch in January. The first thing we do is a "soft launch," where you open the front door and some people find their way in. Those first visits give you a sense of how things will go.  Surprisingly, the servers were a bit busy.  But we wanted to keep going, so we scaled up capacity and moved on.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+The thing that drives real traffic is the announcement email. That gets people to the site. The announcements started going out, students started coming in, and the site lit up. We were in hot water. Servers were overloaded, and most surprising, the database was getting hammered. This was scary and unexpected. We control-C'ed the mail job and quickly hacked additional caching into the site.  We had to trickle out announcements over the next twelve hours.  We made it, but it was a long, stressful day.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+And then the days/weeks post-launch were spent watching graphs, triaging 500 errors (user-visible "we're sorry" pages), and installing daily hotfixes. But we got through it. The classes were a success and the team was proud.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+So, contrast that to today's launch.  Totally different.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Everyone came in early as usual. I bought bagels. We turned on the class (soft-launch) and the servers hardly noticed. We sent the announcement mails, people came and took their pre-course survey and watched the intro video. Hardly any load. This chart shows the average CPU on our four appservers from 8:00 AM PDT / 15:00 UTC until 10:45 AM or so.
+
+
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;img class="alignnone  wp-image-414" style="border: 0px;" alt="launch-app-cpu" src="https://sef.kloninger.com/f/launch-app-cpu1.png" width="1530" height="373"&gt;
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Those are happy servers. Other charts we watched (db connections, load, etc.) told the same story. The most impressive thing was not a single user visible error, no 500's!
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Those folks at edX made some solid software.  We're happy to be working with a strong group of engineers and a quality product.  We've had our hands on it only since April, and it was released open-source to the world on June 1.  I fully expect a lot of other universities and organizations are going to have a great time running classes on OpenEdX too.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+I just turned off half the appservers since we're fine on capacity. Now off to bed with a good feeling.
+
+&lt;/p&gt;</description><category>Education</category><category>Engineering</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/201306launch-day/</guid><pubDate>Wed, 12 Jun 2013 05:59:24 GMT</pubDate></item><item><title>Why Is That Feature Taking So Long?</title><link>https://sef.kloninger.com/posts/201301why-so-long/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-394" style="border: 0px;" alt="turd-polish" src="https://sef.kloninger.com/f/turd-polish.png" width="191" height="182"&gt;
+
+&lt;p&gt;
+I've observed a recurring source of tension:  building things fast vs. do it the right way. Usually you're not lucky enough that you can do both.  This post explains a bit why we (engineers) care so much about building things right.  Even when things are overdue and our stakeholders (end-users, biz folks, product management) are pushing to just get it done.
+
+
+&lt;/p&gt;&lt;p&gt;
+You can describe the two poles here in pejorative terms.  Fast is slapdash, quick and dirty, bad software.  The right way is really just ivory-tower over-engineered turd polishing.  Is that fix really so important that we shouldn't ship it? Do you really need to refactor that now?
+
+
+
+&lt;/p&gt;&lt;p&gt;
+I see three things driving engineers to build it right.
+
+&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;ol&gt;
+	&lt;li&gt;&lt;strong&gt;Wrong is insidious&lt;/strong&gt;. A story: early on in Class2Go every page began with a fetch of some basic page data. If there was an error on lookup we would throw a 404. Not only is "not found" the wrong message, but it also isn't helpful. It covers up all kinds of other problems, in a way that is really difficult to debug.But for an engineer, these programming messes are &lt;a href="http://en.wikipedia.org/wiki/Broken_windows_theory"&gt;broken windows&lt;/a&gt;. Not only do they cheapen the project, they encourage others to take bad shortcuts. Heck, if they can't be bothered to handle exceptions correctly, then why should I?&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Wrong is the express train to support hell.&lt;/strong&gt; Unless you leave the company or project, you'll be called upon to support your own crappy code. That is certain. And there is almost nothing worse than being dragged back to debug some old code that you never meant to become production, and is now breaking the world.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Wrong hurts your reputation as an engineer&lt;/strong&gt;. People see you taking shortcuts and infer that you are a sloppy programmer. And really they aren't wrong to do so. One habit of really good engineers is they don't leave a wake of messes behind them. They are able to do things (mostly) right even when they are moving fast.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+This last point is really the key one. Amongst engineers your reputation is your hard currency. It affects what projects you're invited to work on and what companies you'll be asked to join. Most importantly, good engineers only want to work with other good engineers, and they won't seek out someone sloppy. So I assume that any code I write will be looked at by a potential colleague or employer. This is especially true when working on an open-source project.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+This doesn't mean you have to go slow -- indeed, on my current project, &lt;a href="http://class2go.stanford.edu/" target="_blank"&gt;Class2Go&lt;/a&gt;, we get a lot done every week. What it does mean is that sometimes I'd rather not do something than do something I know will come out poorly.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+So, product manager waiting on a feature. What to do if you're waiting on an engineer and you think it's taking too damn long? The tactic **not** to use: tell them this won't matter and to just ship it. That will just piss him off. Better: get your senior engineer to convince the junior one why it's good enough to ship and reason about what really needs to get done. Exception: if the engineer you're waiting on is your senior engineer, then trust her judgment and wait.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+And finally, to you product managers and biz folks who push. You are right do do so. That's all that matters to the customers, all matters at the end of the day. Keep it up.&lt;/p&gt;</description><category>Engineering</category><category>Management</category><guid>https://sef.kloninger.com/posts/201301why-so-long/</guid><pubDate>Fri, 25 Jan 2013 09:24:48 GMT</pubDate></item><item><title>The Day I Took Down 100,000 Web Sites</title><link>https://sef.kloninger.com/posts/201207taking-down-100000-sites/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright size-full wp-image-343" style="border: 0px;" title="fire" src="https://sef.kloninger.com/f/fire.png" alt="fire alarm" width="300" height="240"&gt;
+
+&lt;p&gt;
+Every engineer has their "the day I did something very very bad" story. This is mine.
+
+
+&lt;/p&gt;&lt;p&gt;
+It was my last week at &lt;a href="http://www.ning.com/"&gt;Ning&lt;/a&gt;. For about a year I ran the Infrastructure and Operations group. It was the end of a good stretch, working with a strong team on hard problems.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+In early 2010 (before I joined) Ning had successfully switched from a premium to paid model. Of Ning's two million social networks some were thriving onine communities, but many weren't. Trading those in for one hundred thousand good paying customers had been the right thing for the business. We kept around the 1.9M orphaned sites for some time in case someone wanted to assume ownership and start paying. By late 2011 the revival rate had dropped low enough that it was time to clear out the cruft.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+I volunteered for the cleanup. I enjoyed little projects like this because it kept my hands in the code and took away a task that would be a chore and distraction for the engineers. The job was some SQL queries, scripting, load testing, checking, and double-checking. The hardest part was ensuring we had the right list of networks to delete.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+It took about two months to write and run the scripts. I felt good that it had gone through uneventfully.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+There was a legacy corner of our system that hadn't been included in my cleanup pass. I hadn't worried about it at first since it was just a few thousand networks. But now that I was leaving Ning I wanted to tie off my loose end projects, and this was one. I assembled the list of stragglers and ran my scripts. The 2,000 deletes went quickly. This was 11:00 AM on regular workday -- my last Wednesday on the job.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+I immediately knew that I had done something very wrong. Since I sat close to the Customer Advocacy group I heard their IM clients and phones light up. Every Ning page was a "We're Sorry" 404 page. Oh crap.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+It only took a couple of minutes to find the problem. One of the networks I had marked for deletion had core Javascript and CSS needed by every Ning network -- important stuff. The network, "socialnetworkmain" was known to everyone as being important, and if I had done my spot checks better, I would have seen it straight away. Instead, I had been sloppy.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+The backdoor method I was using bypassed the safeties we had in place to protect our "really important" networks.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+Luckily, &lt;a href="https://twitter.com/myelin"&gt;Phil&lt;/a&gt;, one of our top-notch infrastructure engineers was sitting close by and quickly restored the network through the backend. Things returned to normal almost immediately. That feeling of panic started to back off. The jokes started and we started to relax.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+It took us another few hours to find and fix second and third order effects of my snafu. The network creation flow was broken -- fixed. An in-house monitoring system was dying silently -- fixed. And so on.
+
+
+
+&lt;!-- Friday, August 18, 1995 --&gt;
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;a title="Dilbert strip where he screwed up big-time" href="http://dilbert.com/strips/comic/1995-08-18/"&gt;&lt;img src="https://sef.kloninger.com/f/dilbert-screwed-up.gif" alt="Dilbert.com" border="0"&gt;&lt;/a&gt;
+
+
+
+&lt;/p&gt;&lt;p&gt;
+I learned four lessons:
+
+&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;ol&gt;
+	&lt;li&gt;&lt;strong&gt;Undo is your friend.&lt;/strong&gt; The tooling or features to revert your change will take time, but you will be happy to have it if you ever need it.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Make changes during the day.&lt;/strong&gt; Resolving a hairy problem is hard if you don't have the right people, and when the people you do have are tired and foggy. This incident might have taken hours to resolve instead of minutes in the middle of the night.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;It's not over until it's over.&lt;/strong&gt; Once in crisis mode, you're eager to be get out of it. Once the main problem is solved it is tempting to exhale, go to lunch, go back to bed, whatever. But aftereffects might take a while to show up, or may just be harder to find.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Disproportionate effects.&lt;/strong&gt; We all know that our complex systems nonlinear failure modes. Incidents like these are reminders that small changes have big effects. Said another way, even small things should be taken seriously.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+My time at Akamai had prepared me well for managing a crisis. But it's nice to have a refresher course every now and then.
+
+
+
+ &lt;/p&gt;</description><category>Engineering</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/201207taking-down-100000-sites/</guid><pubDate>Wed, 25 Jul 2012 17:56:57 GMT</pubDate></item><item><title>Why Quit?  Because They Have Bigger Monitors</title><link>https://sef.kloninger.com/posts/201205engineering-culture-litmus-tests/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;
+Good engineers are attracted to places with a strong engineering culture. But how can you see what the culture is really like from the outside? Here are my two quick-and-dirty indicators.
+
+&lt;img class="alignright size-full wp-image-230" style="border: 0px;" title="testtubes" src="https://sef.kloninger.com/f/testtubes.png" alt="" width="149" height="200"&gt;
+
+
+&lt;/p&gt;&lt;p&gt;
+First a word about what I mean by an engineering culture. It means engineers are valued and important. Some implications:
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;/p&gt;&lt;ul&gt;
+	&lt;li&gt;How are decisions made? In an engineering culture, technical people have input into what gets built, when, and by whom.  Not signoff, but a real say.&lt;/li&gt;
+	&lt;li&gt;Is there respect for the craft of making software? Coding is still creative work that requires the right time and space. Some projets are tough to predict how long they will take, and that's needs to be OK.&lt;/li&gt;
+	&lt;li&gt;Infrastructure. How hard is it for the people who know (engineers, managers) to justify to their bosses when work is needed on non-feature driven stuff? This could be in the runtime system (like scaling work on the message queue) or back office (like build systems or version control).&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;
+Unfortunately, teasing this out in an interview can be tricky unless you have someone you really know and trust on the inside.
+
+&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;h2&gt;How big are the monitors?&lt;/h2&gt;
+
+A story from a prior company. I was an engineering manager that had a retention problem. One of the engineers on my team quit to go to a smaller, hipper company. This was from my exit interview:
+
+&lt;p&gt;
+&lt;/p&gt;&lt;blockquote&gt;
+
+&lt;p&gt;
+&lt;strong&gt;Me&lt;/strong&gt;: why are you leaving?
+
+&lt;/p&gt;&lt;p&gt;
+&lt;strong&gt;Him&lt;/strong&gt;: because they have bigger monitors.
+
+&lt;/p&gt;&lt;p&gt;
+&lt;strong&gt;Me&lt;/strong&gt;: (incredulous) are you kidding? we can get you a bigger monitor.
+
+&lt;/p&gt;&lt;p&gt;
+&lt;strong&gt;Him&lt;/strong&gt;: it's not just me -- everyone has big monitors.
+
+&lt;/p&gt;&lt;p&gt;
+&lt;strong&gt;Me&lt;/strong&gt;: why is that so important?
+
+&lt;/p&gt;&lt;p&gt;
+&lt;strong&gt;Him&lt;/strong&gt;: because it shows how much they value my time. The extra money to cram that many more pixels into my retina must be worth it to them.
+
+&lt;/p&gt;&lt;/blockquote&gt;
+
+And now I understand that this is totally true. Places that value their people consider equipment expenses small compared to the productivity (and happiness) of their people.  The best engineers are given the best tools to do their jobs. Big monitors are a very visible sign of this.
+
+&lt;h2&gt;Can people choose their own email addresses?&lt;/h2&gt;
+
+Non-engineers sometimes don't appreciate how important an email address is. It's your identity on line. A strict naming convention (first name last initial, or worse, last name first initial) indicates place that values conformity over engineer happiness. Worse, its a great way to make their people feel like cogs or "human resources," not the cool individuals that they are.
+
+&lt;p&gt;
+(Aside: let's do away with the term Human Resources.  It's horrible.)
+
+&lt;/p&gt;&lt;p&gt;
+This one is important for me personally since I have a weird first name. If you don't let me be &lt;code&gt;sef@company.com&lt;/code&gt; then you get major demerits in my book. And no, clunky alias tricks, like a mailing list with one member in it, doesn't count. It's what you see on your shell prompt that matters; it's what &lt;code&gt;whoami&lt;/code&gt; returns that matters.
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;img class="alignnone size-full wp-image-235" style="border: 0px;" title="whoami" src="https://sef.kloninger.com/f/whoami.png" alt="" width="556" height="226"&gt;
+
+&lt;/p&gt;&lt;p&gt;
+One final word: this isn't a slam on you hardworking IT guys and gals who keep important things running and have to enforce the rules you're given. Instead, I'm speaking to the bad policies (usually stemming from bad cultures) that can put you into bad positions. If you are at such a place, hunker down and pray for daylight.
+
+ &lt;/p&gt;</description><category>Engineering</category><category>Management</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/201205engineering-culture-litmus-tests/</guid><pubDate>Thu, 17 May 2012 23:01:44 GMT</pubDate></item><item><title>Working Hard, On The Right Stuff, and In The Right Way  </title><link>https://sef.kloninger.com/posts/201204measuring-an-engineering-manager/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;a href="http://sef.kloninger.com/2012/04/measuring-an-engineering-manager/pointy-haired_boss/" rel="attachment wp-att-147"&gt;&lt;img class="alignright size-full wp-image-147" style="border-style: initial; border-color: initial; border-image: initial; border-width: 0px;" title="Pointy-Haired-Boss" src="https://sef.kloninger.com/f/Pointy-Haired_Boss.png" alt="Pointy Haired Boss" width="196" height="204"&gt;&lt;/a&gt;
+
+&lt;p&gt;
+So now you're an engineering manager. How do you know if you're doing a good job?
+&lt;/p&gt;
+
+
+&lt;p&gt;
+This was an important question for me about thirteen years ago, when I moved from a code-every-day software engineer into my first management job. In the decade-plus I've been an engineering manager (&lt;a href="http://sef.kloninger.com/2012/04/my-sabbatical/"&gt;up until recently&lt;/a&gt;) I've relied on three measures for myself and engineering managers under me.  It's the title of this post.
+&lt;/p&gt;
+
+
+
+&lt;p&gt;
+The problem is that managers enable their people to produce. An engineer's contribution is measurable, more or less. Even when the scale and units are slippery (is that 95% or 50% done?) at least you can see forward progress: releases, bugs closed, API users. But an engineering manager? At best it feels squishy; at worst it feels like overhead, and nobody wants to be overhead.
+&lt;/p&gt;
+
+
+
+&lt;p&gt;
+The question of "am I doing a good job?" came up when I was a first-time engineering manager at Akamai Technologies.  This was 1999 and Akamai was still small-ish (30 engineers).  Us first-time managers were learning on the job. That's when I distilled down my three rules.  They are:
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;/p&gt;&lt;blockquote&gt;
+A good engineering manager's team should be
+&lt;ol&gt;
+&lt;li&gt;working hard,&lt;/li&gt;
+&lt;li&gt;working on the right stuff, and&lt;/li&gt;
+&lt;li&gt;doing it the right way.&lt;/li&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+The key insight here is that you don't measure the manager herself, since management done well just enables the creative work of the team. Judge the team and you judge the manager.
+&lt;/p&gt;
+
+&lt;h2&gt;Working Hard&lt;/h2&gt;
+
+&lt;p&gt;
+Of course a high-performing team is inherently good. But it's also the best indicator if the manager is doing their job right. A productive team is a motivated team. In my experience, teams don't work hard unless they have all the wonderful qualities that we want in a team: empowerment, alignment with company goals, feeling of camaraderie, trust in management. They should be equipped to do their work and know why they're doing it. A manager should try to give their teams these things, or at least not get in the way.
+&lt;/p&gt;
+
+
+
+&lt;p&gt;
+Let's consider the alternative. If your engineers are demotivated or bored then long before they quit (&lt;a href="http://www.randsinrepose.com/archives/2011/07/12/bored_people_quit.html"&gt;and they will&lt;/a&gt;) they will check out.
+&lt;/p&gt;
+
+
+
+&lt;p&gt;
+One caution: working hard is often confused with long hours and face time. It's not. And there are few things more demotivating to a team than a manager demanding more hours. (Some places are really productive and &lt;a href="http://ryanleecarson.tumblr.com/post/21708810513/4-day-week"&gt;only work four days a week&lt;/a&gt;.)
+&lt;/p&gt;
+
+
+
+&lt;p&gt;
+Hiring and firing figures into this too. An under-staffed team can't do what it needs to do or can get burnt out. Worse, lowering the bar to hire someone beneath the team, or not firing the low performer, is hugely demotivating.
+&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;Working On The Right Stuff&lt;/h2&gt;
+
+&lt;p&gt;
+This is where the manager can have a more direct and immediate impact. You have to set up a few good processes (not too many) and enforce them.  Your goal is maximize useful work.  One way is to prevent work on stuff that will be wasted.  Another is to reduce thrashing by finishing one thing before starting another. This is where delivery comes in: it's one thing to be busy, but how much makes it into real customers' hands?
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Some of this sounds like product management, especially prioritization and product definition. But it doesn't happen well without the engineering manager communicating well, working closely with those product managers, pushing back constructively when needed.  So actually read that spec!
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Much of my career has been in backend systems. Infrastructure projects to enable features are the exceptions. Most aim to improve reliability by doing things like removing bottlenecks (scaling) or bulletproofing systems. Unfortunately I think the only way to judge these projects qualitatively.  Measuring how often it &lt;em&gt;would&lt;/em&gt; have broken is so hard. Just make sure you get a techie who you trust to evaluate projects impersonally and critically. And be careful of pet projects.
+&lt;/p&gt;
+
+&lt;h2&gt;Doing It The Right Way&lt;/h2&gt;
+
+&lt;p&gt;
+For many years I only had the first two measures. But I've come to value this one more over time.
+&lt;/p&gt;
+
+
+
+&lt;p&gt;
+This criteria captures quality and culture. Are the manager's engineers working well together? Best judge of this is if other engineers want to be in this group. Do the engineers have a culture of quality? They should speak with pride of their work. If they feel their products are slipshod, through lack of care or lack of room to do the job right, then it will show.
+
+&lt;/p&gt;
+
+
+&lt;p&gt;
+It also means that they aren't leaving scorched earth behind them. Their systems are maintainable and usable by others; the ops guys don't hate them because of missing tools or crappy logs; they've done code reviews and actually listened to the feedback.
+&lt;/p&gt;
+
+&lt;h2&gt;Anti-Patterns&lt;/h2&gt;
+
+&lt;p&gt;
+There are a couple of other things that I &lt;strong&gt;haven't&lt;/strong&gt; mentioned as being important. They're probably on others' lists, but not on mine.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;/p&gt;&lt;ol&gt;
+	&lt;li&gt;"Leadership." To some people this means that you know how to tell people what to do. To others it means just doing a lot of the things above well, like communication. I'm not disagreeing that it's not important, I just don't know how to define or measure it. It feels like one of those "you know it when you see it" things.&lt;/li&gt;
+	&lt;li&gt;Well-triaged bug lists; great status reports; well-run team meetings. If any of these things help you accomplish the three things above, then do them, if not then they're paperwork.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;
+For example, when I managed a large team at VMware I spent a lot of time triaging bugs. That's the VMware's engineering culture, but it's also what you need for a large, distributed team delivering enterprise software. By contrast, at Ning I spent very little time in the bug database. That team was much smaller (6 vs 100), and our releases were less complicated and less scary. And that was the right way to manage that team.
+&lt;/p&gt;
+
+
+
+&lt;p&gt;
+Finally, I want to credit some of those early managers in those Akamai days that I learned with/from:
+
+&lt;/p&gt;&lt;ul&gt;
+	&lt;li&gt;Experienced managers like George Conrades, Danny Lewin, Tom Leighton and Ross Seider&lt;/li&gt;
+	&lt;li&gt;Fellow newcomers like Joel Wein, Ravi Sundaram, Harald Prokop, Marty Kagan, Jay Parikh, Julia Austin, and Bobby Blumofe&lt;/li&gt;
+	&lt;li&gt;Thoughtful techies like Danner Stodolsky, Bill Weihl, Erik Nygren, and Chris Joerg.&lt;/li&gt;
+&lt;/ul&gt;</description><category>Engineering</category><category>Management</category><guid>https://sef.kloninger.com/posts/201204measuring-an-engineering-manager/</guid><pubDate>Wed, 25 Apr 2012 08:39:34 GMT</pubDate></item></channel></rss>

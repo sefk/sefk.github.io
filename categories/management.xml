@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Management)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/management.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 23 Sep 2025 18:29:08 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Learn From Experiments</title><link>https://sef.kloninger.com/posts/experiments/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/experiment.jpeg" alt="Line art of an experiment" width="60%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Management)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/management.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 26 Sep 2025 16:45:53 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Learn From Experiments</title><link>https://sef.kloninger.com/posts/experiments/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/experiment.jpeg" alt="Line art of an experiment" width="60%"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;What's the value of an experiment or a prototype?&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;There are all kinds of ways to have impact. A feature can improve user
 experience; a hardening project can reduce risk of a production outage;
@@ -47,7 +47,7 @@ follow-on work; it's useful come performance evaluation time. But most
 importantly, it benefits the organization. Contemporary and future peers can
 learn from this work. &lt;/p&gt;
 &lt;p&gt;You'll benefit from taking the time to write it up, the reviewers learn from
-reading, and it'll live on past your time with the team.&lt;/p&gt;</description><category>Data</category><category>Management</category><guid>https://sef.kloninger.com/posts/experiments/</guid><pubDate>Tue, 23 Sep 2025 18:00:00 GMT</pubDate></item><item><title>Sponsoring</title><link>https://sef.kloninger.com/posts/sponsoring/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/sponsor.png" alt="One person helping another while being graded" width="40%"&gt;&lt;/p&gt;
+reading, and it'll live on past your time with the team.&lt;/p&gt;</description><category>Data</category><category>Engineering</category><category>Management</category><guid>https://sef.kloninger.com/posts/experiments/</guid><pubDate>Tue, 23 Sep 2025 18:00:00 GMT</pubDate></item><item><title>Sponsoring</title><link>https://sef.kloninger.com/posts/sponsoring/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/sponsor.png" alt="One person helping another while being graded" width="40%"&gt;&lt;/p&gt;
 &lt;p&gt;Sponsorship is using your position and influence to help someone get ahead. It's
 similar in many ways to mentorship, the topic of my &lt;a href="https://sef.kloninger.com/posts/mentoring"&gt;last post&lt;/a&gt;.
 But sponsorship is a bit tricker. Most people understand mentorship
@@ -229,7 +229,7 @@ So, product manager waiting on a feature. What to do if you're waiting on an eng
 
 
 &lt;/p&gt;&lt;p&gt;
-And finally, to you product managers and biz folks who push. You are right do do so. That's all that matters to the customers, all matters at the end of the day. Keep it up.&lt;/p&gt;</description><category>Management</category><guid>https://sef.kloninger.com/posts/201301why-so-long/</guid><pubDate>Fri, 25 Jan 2013 09:24:48 GMT</pubDate></item><item><title>Two Things At Once</title><link>https://sef.kloninger.com/posts/201206two-things-at-once/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;
+And finally, to you product managers and biz folks who push. You are right do do so. That's all that matters to the customers, all matters at the end of the day. Keep it up.&lt;/p&gt;</description><category>Engineering</category><category>Management</category><guid>https://sef.kloninger.com/posts/201301why-so-long/</guid><pubDate>Fri, 25 Jan 2013 09:24:48 GMT</pubDate></item><item><title>Two Things At Once</title><link>https://sef.kloninger.com/posts/201206two-things-at-once/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;
 Engineering management is about solving problems and removing obstacles. You always have more problems than time and resources to solve them. How can you stay on top of it all?
 
 
@@ -381,7 +381,7 @@ This one is important for me personally since I have a weird first name. If you 
 &lt;/p&gt;&lt;p&gt;
 One final word: this isn't a slam on you hardworking IT guys and gals who keep important things running and have to enforce the rules you're given. Instead, I'm speaking to the bad policies (usually stemming from bad cultures) that can put you into bad positions. If you are at such a place, hunker down and pray for daylight.
 
- &lt;/p&gt;</description><category>Management</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/201205engineering-culture-litmus-tests/</guid><pubDate>Thu, 17 May 2012 23:01:44 GMT</pubDate></item><item><title>"I Absorb Uncertainty"</title><link>https://sef.kloninger.com/posts/absorb-uncertainty/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;
+ &lt;/p&gt;</description><category>Engineering</category><category>Management</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/201205engineering-culture-litmus-tests/</guid><pubDate>Thu, 17 May 2012 23:01:44 GMT</pubDate></item><item><title>"I Absorb Uncertainty"</title><link>https://sef.kloninger.com/posts/absorb-uncertainty/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;
 It was my first day at Akamai.  They were still small enough that the all new employees had group lunch with the CEO, George Conrades.
 
 
@@ -549,4 +549,4 @@ Finally, I want to credit some of those early managers in those Akamai days that
 	&lt;li&gt;Experienced managers like George Conrades, Danny Lewin, Tom Leighton and Ross Seider&lt;/li&gt;
 	&lt;li&gt;Fellow newcomers like Joel Wein, Ravi Sundaram, Harald Prokop, Marty Kagan, Jay Parikh, Julia Austin, and Bobby Blumofe&lt;/li&gt;
 	&lt;li&gt;Thoughtful techies like Danner Stodolsky, Bill Weihl, Erik Nygren, and Chris Joerg.&lt;/li&gt;
-&lt;/ul&gt;</description><category>Management</category><guid>https://sef.kloninger.com/posts/201204measuring-an-engineering-manager/</guid><pubDate>Wed, 25 Apr 2012 08:39:34 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;</description><category>Engineering</category><category>Management</category><guid>https://sef.kloninger.com/posts/201204measuring-an-engineering-manager/</guid><pubDate>Wed, 25 Apr 2012 08:39:34 GMT</pubDate></item></channel></rss>
