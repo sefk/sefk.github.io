@@ -78,7 +78,55 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="naming/" class="u-url">Naming Is Hard</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="interview-question/" class="u-url">A Good Interview Question</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="interview-question/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-10-07T15:00:00-07:00" itemprop="datePublished" title="2025-10-07 15:00">2025-10-07 15:00</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="interview-question/#disqus_thread" data-disqus-identifier="cache/posts/interview-question.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p><img style="float:right" class="postimage" src="../f/python.png" alt="Python language logo" width="25%"></p>
+<p>I liked the interview question that I got when interviewing at YouTube in 2015.
+At Google then we'd have an interview panel of four or five people, each
+assigned to cover a different area. <a href="https://www.linkedin.com/in/billy-biggs-7ab1023/">Billy Biggs</a> was the TL on my panel asked
+to evaluate "architecture" but for a manager, that kind of translates to general
+technical cluefulness. There was a separate <a href="201205fizzbuzz-for-managers">programming question</a>.</p>
+<p>Billy's question: <strong>Discuss what would cause a Python interpreter to crash. Not
+a <em>program written in Python</em>, but the interpreter itself.</strong></p>
+<p>I remember this leading to a fun, rambling, back-and-forth forty-five minute
+discussion of the <strong>many ways computers can fail</strong>. There are so many! Every
+level of the stack can fail in interesting ways: storage, RAM, memory
+management, networking. How would a bit flip in a TLB manifest? How does TCP/IP
+detect and handle ordering? collisions?</p>
+<p>We also covered a bunch of <strong>engineering and process questions</strong>. How is the
+interpreter itself implemented, in what language and by whom? What would the
+quality processes be like for a product like that, especially given Python is
+presumably a large and complicated open source project? How would you manage
+this as development project? How important is it that there's an <a href="https://en.wikipedia.org/wiki/Benevolent_dictator_for_life">BDFL</a>? </p>
+<p>And then that lead to a some more interesting higher-level discussions about the
+actual <strong>costs and benefits of addressing failures</strong> like these in the field.
+When should programs hard-fail versus try to detect and recover? How would you
+staff an engineering team to find and chase down errors? What's the user impact
+to a failure like this?</p>
+<p>One of my favorite things about this question is it's that most likely it was
+something they'd actually seen at YouTube. In 2015 significant parts of YouTube
+was <a href="https://mail.python.org/pipermail/python-dev/2006-December/070323.html">written in Python</a> (that's likely not the case anymore, I don't know).
+Crashes like these must have come up in the field. Not only are real-world
+problems relatively easy to ask, but they have the added benefit of showing the
+candidate the kinds of issues that the team actually deals with.</p>
+<p>I got the job.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="naming/" class="u-url">Naming Is Hard</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Sef Kloninger
@@ -626,46 +674,6 @@ many bad toasters there are, and how they can be bad for so many
 reasons. My favorite reason was poor <a href="https://www.youtube.com/user/knobfeel">knob feel</a>.</p>
 <p>Nice work <a href="https://hypercritical.co/">John</a>, <a href="https://marco.org/">Marco</a>, and <a href="https://caseyliss.com/">Casey</a>.
 Please keep it up for a long, long time.</p>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="esim/" class="u-url">The iPhone's SIM Tray Went Away Too Soon</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Sef Kloninger
-            </span></p>
-            <p class="dateline">
-            <a href="esim/" rel="bookmark">
-            <time class="published dt-published" datetime="2024-01-05T02:34:49-08:00" itemprop="datePublished" title="2024-01-05 02:34">2024-01-05 02:34</time></a>
-            </p>
-                <p class="commentline">
-    
-    <a href="esim/#disqus_thread" data-disqus-identifier="cache/posts/esim.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <p><img style="float:right" class="postimage" src="../f/sim.png" alt="SIM" width="25%"></p>
-<p>If you've traveled internationally, likely you've used a SIM card
-for local data and calls. There is a nice ecosystem around SIMs
-with a wealth of easy and affordable Pay As You Go (PAYG) options.</p>
-<p>But the newer iPhones did away with the SIM slot if favor of some new
-eSIM hotness. Apple has all kinds of <a href="https://support.apple.com/en-gb/HT209096">info</a> claiming they have good
-international support, but I found reality falls short.</p>
-<ul>
-<li>Only a few carriers support eSIM's,</li>
-<li>The few that do require a contract. A tourist or student
-   studying abroad is better served by a PAYG plan, and</li>
-<li>Even if you can stomach a contract, that would require a UK bank
-   account; no way to easily pull that off.</li>
-</ul>
-<p>We ended up falling back to <a href="https://www.att.com/international/day-pass/">international roaming</a>. It works but
-is expensive.</p>
-<p>I think Apple made the wrong call removing the trusty old SIM tray.
-Clearly the new models can be made to work well with it, since how
-they are sold in the UK.  If you're unlucky enough to have bought
-your recent iPhone in the US, you're out of luck. </p>
-<p>I this is an example of Apple bad tendency sometimes choose form
-over function, "<a href="https://www.theringer.com/2016/9/7/16038622/why-did-apple-remove-the-headphone-jack-courage">courage</a>" over usability.</p>
     </div>
     </article>
 </div>

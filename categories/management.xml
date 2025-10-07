@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Management)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/management.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 26 Sep 2025 16:45:53 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Learn From Experiments</title><link>https://sef.kloninger.com/posts/experiments/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/experiment.jpeg" alt="Line art of an experiment" width="60%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Management)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/management.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 07 Oct 2025 22:50:34 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A Good Interview Question</title><link>https://sef.kloninger.com/posts/interview-question/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/python.png" alt="Python language logo" width="25%"&gt;&lt;/p&gt;
+&lt;p&gt;I liked the interview question that I got when interviewing at YouTube in 2015.
+At Google then we'd have an interview panel of four or five people, each
+assigned to cover a different area. &lt;a href="https://www.linkedin.com/in/billy-biggs-7ab1023/"&gt;Billy Biggs&lt;/a&gt; was the TL on my panel asked
+to evaluate "architecture" but for a manager, that kind of translates to general
+technical cluefulness. There was a separate &lt;a href="https://sef.kloninger.com/posts/201205fizzbuzz-for-managers"&gt;programming question&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Billy's question: &lt;strong&gt;Discuss what would cause a Python interpreter to crash. Not
+a &lt;em&gt;program written in Python&lt;/em&gt;, but the interpreter itself.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I remember this leading to a fun, rambling, back-and-forth forty-five minute
+discussion of the &lt;strong&gt;many ways computers can fail&lt;/strong&gt;. There are so many! Every
+level of the stack can fail in interesting ways: storage, RAM, memory
+management, networking. How would a bit flip in a TLB manifest? How does TCP/IP
+detect and handle ordering? collisions?&lt;/p&gt;
+&lt;p&gt;We also covered a bunch of &lt;strong&gt;engineering and process questions&lt;/strong&gt;. How is the
+interpreter itself implemented, in what language and by whom? What would the
+quality processes be like for a product like that, especially given Python is
+presumably a large and complicated open source project? How would you manage
+this as development project? How important is it that there's an &lt;a href="https://en.wikipedia.org/wiki/Benevolent_dictator_for_life"&gt;BDFL&lt;/a&gt;? &lt;/p&gt;
+&lt;p&gt;And then that lead to a some more interesting higher-level discussions about the
+actual &lt;strong&gt;costs and benefits of addressing failures&lt;/strong&gt; like these in the field.
+When should programs hard-fail versus try to detect and recover? How would you
+staff an engineering team to find and chase down errors? What's the user impact
+to a failure like this?&lt;/p&gt;
+&lt;p&gt;One of my favorite things about this question is it's that most likely it was
+something they'd actually seen at YouTube. In 2015 significant parts of YouTube
+was &lt;a href="https://mail.python.org/pipermail/python-dev/2006-December/070323.html"&gt;written in Python&lt;/a&gt; (that's likely not the case anymore, I don't know).
+Crashes like these must have come up in the field. Not only are real-world
+problems relatively easy to ask, but they have the added benefit of showing the
+candidate the kinds of issues that the team actually deals with.&lt;/p&gt;
+&lt;p&gt;I got the job.&lt;/p&gt;</description><category>Management</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/interview-question/</guid><pubDate>Tue, 07 Oct 2025 22:00:00 GMT</pubDate></item><item><title>Learn From Experiments</title><link>https://sef.kloninger.com/posts/experiments/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/experiment.jpeg" alt="Line art of an experiment" width="60%"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;What's the value of an experiment or a prototype?&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;There are all kinds of ways to have impact. A feature can improve user
 experience; a hardening project can reduce risk of a production outage;
@@ -262,7 +291,7 @@ This technique has driven a couple good behaviors for me as an engineering manag
 
  &lt;/p&gt;</description><category>Management</category><guid>https://sef.kloninger.com/posts/201206two-things-at-once/</guid><pubDate>Tue, 05 Jun 2012 20:50:39 GMT</pubDate></item><item><title>FizzBuzz Questions for Engineering Managers </title><link>https://sef.kloninger.com/posts/201205fizzbuzz-for-managers/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="size-full wp-image-272 alignleft" style="padding:20px; float:left" title="fizzbuzz" src="https://sef.kloninger.com/f/fizzbuzz.png" alt="" width="116" height="166"&gt;
 
-&lt;p&gt;You probably wouldn't hire an engineer that you hadn't seen code. But people tend to hire  engineering managers without seeing them manage. I contend that's a big oversight: you should see them manage on their feet, at least a little.  But how?
+&lt;p&gt;You probably wouldn't hire an engineer that you hadn't seen code. But people tend to hire engineering managers without seeing them manage. I contend that's a big oversight: you should see them manage on their feet, at least a little.  But how?
 
 &lt;/p&gt;&lt;p&gt;
 I'm thinking along the lines of the "FizzBuzz" class of questions. I believe they got some fame with &lt;a href="http://imranontech.com/2007/01/24/using-fizzbuzz-to-find-developers-who-grok-coding/" target="_blank"&gt;this article&lt;/a&gt; in 2007, and Google &lt;a href="http://www.google.com/trends/?q=fizzbuzz" target="_blank"&gt;seems to support this&lt;/a&gt;. Anyway, they are simple programming problems that should be no-brainers for any decent engineer. But they are useful exactly because of the surprisingly large number of candidates who flame out on them. By some accounts, as high as 50%.
@@ -425,128 +454,4 @@ PS - Googling around for this phrase, I see others might have used it too.  One
 
 
 
- &lt;/p&gt;</description><category>Management</category><guid>https://sef.kloninger.com/posts/absorb-uncertainty/</guid><pubDate>Thu, 03 May 2012 19:41:28 GMT</pubDate></item><item><title>Working Hard, On The Right Stuff, and In The Right Way  </title><link>https://sef.kloninger.com/posts/201204measuring-an-engineering-manager/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;a href="http://sef.kloninger.com/2012/04/measuring-an-engineering-manager/pointy-haired_boss/" rel="attachment wp-att-147"&gt;&lt;img class="alignright size-full wp-image-147" style="border-style: initial; border-color: initial; border-image: initial; border-width: 0px;" title="Pointy-Haired-Boss" src="https://sef.kloninger.com/f/Pointy-Haired_Boss.png" alt="Pointy Haired Boss" width="196" height="204"&gt;&lt;/a&gt;
-
-&lt;p&gt;
-So now you're an engineering manager. How do you know if you're doing a good job?
-&lt;/p&gt;
-
-
-&lt;p&gt;
-This was an important question for me about thirteen years ago, when I moved from a code-every-day software engineer into my first management job. In the decade-plus I've been an engineering manager (&lt;a href="http://sef.kloninger.com/2012/04/my-sabbatical/"&gt;up until recently&lt;/a&gt;) I've relied on three measures for myself and engineering managers under me.  It's the title of this post.
-&lt;/p&gt;
-
-
-
-&lt;p&gt;
-The problem is that managers enable their people to produce. An engineer's contribution is measurable, more or less. Even when the scale and units are slippery (is that 95% or 50% done?) at least you can see forward progress: releases, bugs closed, API users. But an engineering manager? At best it feels squishy; at worst it feels like overhead, and nobody wants to be overhead.
-&lt;/p&gt;
-
-
-
-&lt;p&gt;
-The question of "am I doing a good job?" came up when I was a first-time engineering manager at Akamai Technologies.  This was 1999 and Akamai was still small-ish (30 engineers).  Us first-time managers were learning on the job. That's when I distilled down my three rules.  They are:
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;/p&gt;&lt;blockquote&gt;
-A good engineering manager's team should be
-&lt;ol&gt;
-&lt;li&gt;working hard,&lt;/li&gt;
-&lt;li&gt;working on the right stuff, and&lt;/li&gt;
-&lt;li&gt;doing it the right way.&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
-
-
-&lt;p&gt;
-The key insight here is that you don't measure the manager herself, since management done well just enables the creative work of the team. Judge the team and you judge the manager.
-&lt;/p&gt;
-
-&lt;h2&gt;Working Hard&lt;/h2&gt;
-
-&lt;p&gt;
-Of course a high-performing team is inherently good. But it's also the best indicator if the manager is doing their job right. A productive team is a motivated team. In my experience, teams don't work hard unless they have all the wonderful qualities that we want in a team: empowerment, alignment with company goals, feeling of camaraderie, trust in management. They should be equipped to do their work and know why they're doing it. A manager should try to give their teams these things, or at least not get in the way.
-&lt;/p&gt;
-
-
-
-&lt;p&gt;
-Let's consider the alternative. If your engineers are demotivated or bored then long before they quit (&lt;a href="http://www.randsinrepose.com/archives/2011/07/12/bored_people_quit.html"&gt;and they will&lt;/a&gt;) they will check out.
-&lt;/p&gt;
-
-
-
-&lt;p&gt;
-One caution: working hard is often confused with long hours and face time. It's not. And there are few things more demotivating to a team than a manager demanding more hours. (Some places are really productive and &lt;a href="http://ryanleecarson.tumblr.com/post/21708810513/4-day-week"&gt;only work four days a week&lt;/a&gt;.)
-&lt;/p&gt;
-
-
-
-&lt;p&gt;
-Hiring and firing figures into this too. An under-staffed team can't do what it needs to do or can get burnt out. Worse, lowering the bar to hire someone beneath the team, or not firing the low performer, is hugely demotivating.
-&lt;/p&gt;
-
-
-
-
-&lt;h2&gt;Working On The Right Stuff&lt;/h2&gt;
-
-&lt;p&gt;
-This is where the manager can have a more direct and immediate impact. You have to set up a few good processes (not too many) and enforce them.  Your goal is maximize useful work.  One way is to prevent work on stuff that will be wasted.  Another is to reduce thrashing by finishing one thing before starting another. This is where delivery comes in: it's one thing to be busy, but how much makes it into real customers' hands?
-&lt;/p&gt;
-
-
-&lt;p&gt;
-Some of this sounds like product management, especially prioritization and product definition. But it doesn't happen well without the engineering manager communicating well, working closely with those product managers, pushing back constructively when needed.  So actually read that spec!
-&lt;/p&gt;
-
-
-&lt;p&gt;
-Much of my career has been in backend systems. Infrastructure projects to enable features are the exceptions. Most aim to improve reliability by doing things like removing bottlenecks (scaling) or bulletproofing systems. Unfortunately I think the only way to judge these projects qualitatively.  Measuring how often it &lt;em&gt;would&lt;/em&gt; have broken is so hard. Just make sure you get a techie who you trust to evaluate projects impersonally and critically. And be careful of pet projects.
-&lt;/p&gt;
-
-&lt;h2&gt;Doing It The Right Way&lt;/h2&gt;
-
-&lt;p&gt;
-For many years I only had the first two measures. But I've come to value this one more over time.
-&lt;/p&gt;
-
-
-
-&lt;p&gt;
-This criteria captures quality and culture. Are the manager's engineers working well together? Best judge of this is if other engineers want to be in this group. Do the engineers have a culture of quality? They should speak with pride of their work. If they feel their products are slipshod, through lack of care or lack of room to do the job right, then it will show.
-
-&lt;/p&gt;
-
-
-&lt;p&gt;
-It also means that they aren't leaving scorched earth behind them. Their systems are maintainable and usable by others; the ops guys don't hate them because of missing tools or crappy logs; they've done code reviews and actually listened to the feedback.
-&lt;/p&gt;
-
-&lt;h2&gt;Anti-Patterns&lt;/h2&gt;
-
-&lt;p&gt;
-There are a couple of other things that I &lt;strong&gt;haven't&lt;/strong&gt; mentioned as being important. They're probably on others' lists, but not on mine.
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;/p&gt;&lt;ol&gt;
-	&lt;li&gt;"Leadership." To some people this means that you know how to tell people what to do. To others it means just doing a lot of the things above well, like communication. I'm not disagreeing that it's not important, I just don't know how to define or measure it. It feels like one of those "you know it when you see it" things.&lt;/li&gt;
-	&lt;li&gt;Well-triaged bug lists; great status reports; well-run team meetings. If any of these things help you accomplish the three things above, then do them, if not then they're paperwork.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;
-For example, when I managed a large team at VMware I spent a lot of time triaging bugs. That's the VMware's engineering culture, but it's also what you need for a large, distributed team delivering enterprise software. By contrast, at Ning I spent very little time in the bug database. That team was much smaller (6 vs 100), and our releases were less complicated and less scary. And that was the right way to manage that team.
-&lt;/p&gt;
-
-
-
-&lt;p&gt;
-Finally, I want to credit some of those early managers in those Akamai days that I learned with/from:
-
-&lt;/p&gt;&lt;ul&gt;
-	&lt;li&gt;Experienced managers like George Conrades, Danny Lewin, Tom Leighton and Ross Seider&lt;/li&gt;
-	&lt;li&gt;Fellow newcomers like Joel Wein, Ravi Sundaram, Harald Prokop, Marty Kagan, Jay Parikh, Julia Austin, and Bobby Blumofe&lt;/li&gt;
-	&lt;li&gt;Thoughtful techies like Danner Stodolsky, Bill Weihl, Erik Nygren, and Chris Joerg.&lt;/li&gt;
-&lt;/ul&gt;</description><category>Engineering</category><category>Management</category><guid>https://sef.kloninger.com/posts/201204measuring-an-engineering-manager/</guid><pubDate>Wed, 25 Apr 2012 08:39:34 GMT</pubDate></item></channel></rss>
+ &lt;/p&gt;</description><category>Management</category><guid>https://sef.kloninger.com/posts/absorb-uncertainty/</guid><pubDate>Thu, 03 May 2012 19:41:28 GMT</pubDate></item></channel></rss>
