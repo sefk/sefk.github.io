@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Engineering)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/engineering.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 07 Oct 2025 22:50:34 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Learn From Experiments</title><link>https://sef.kloninger.com/posts/experiments/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/experiment.jpeg" alt="Line art of an experiment" width="60%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Engineering)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/engineering.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 07 Oct 2025 22:54:39 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A Good Interview Question</title><link>https://sef.kloninger.com/posts/interview-question/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/python.png" alt="Python language logo" width="25%"&gt;&lt;/p&gt;
+&lt;p&gt;I liked the interview question that I got when interviewing at YouTube in 2015.
+At Google then we'd have an interview panel of four or five people, each
+assigned to cover a different area. &lt;a href="https://www.linkedin.com/in/billy-biggs-7ab1023/"&gt;Billy Biggs&lt;/a&gt; was the TL on my panel asked
+to evaluate "architecture" but for a manager, that kind of translates to general
+technical cluefulness. There was a separate &lt;a href="https://sef.kloninger.com/posts/201205fizzbuzz-for-managers"&gt;programming question&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Billy's question: &lt;strong&gt;Discuss what would cause a Python interpreter to crash. Not
+a &lt;em&gt;program written in Python&lt;/em&gt;, but the interpreter itself.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I remember this leading to a fun, rambling, back-and-forth forty-five minute
+discussion of the &lt;strong&gt;many ways computers can fail&lt;/strong&gt;. There are so many! Every
+level of the stack can fail in interesting ways: storage, RAM, memory
+management, networking. How would a bit flip in a TLB manifest? How does TCP/IP
+detect and handle ordering? collisions?&lt;/p&gt;
+&lt;p&gt;We also covered a bunch of &lt;strong&gt;engineering and process questions&lt;/strong&gt;. How is the
+interpreter itself implemented, in what language and by whom? What would the
+quality processes be like for a product like that, especially given Python is
+presumably a large and complicated open source project? How would you manage
+this as development project? How important is it that there's an &lt;a href="https://en.wikipedia.org/wiki/Benevolent_dictator_for_life"&gt;BDFL&lt;/a&gt;? &lt;/p&gt;
+&lt;p&gt;And then that lead to a some more interesting higher-level discussions about the
+actual &lt;strong&gt;costs and benefits of addressing failures&lt;/strong&gt; like these in the field.
+When should programs hard-fail versus try to detect and recover? How would you
+staff an engineering team to find and chase down errors? What's the user impact
+to a failure like this?&lt;/p&gt;
+&lt;p&gt;One of my favorite things about this question is it's that most likely it was
+something they'd actually seen at YouTube. In 2015 significant parts of YouTube
+was &lt;a href="https://mail.python.org/pipermail/python-dev/2006-December/070323.html"&gt;written in Python&lt;/a&gt; (that's likely not the case anymore, I don't know).
+Crashes like these must have come up in the field. Not only are real-world
+problems relatively easy to ask, but they have the added benefit of showing the
+candidate the kinds of issues that the team actually deals with.&lt;/p&gt;
+&lt;p&gt;I got the job.&lt;/p&gt;</description><category>Engineering</category><category>Management</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/interview-question/</guid><pubDate>Tue, 07 Oct 2025 22:00:00 GMT</pubDate></item><item><title>Learn From Experiments</title><link>https://sef.kloninger.com/posts/experiments/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/experiment.jpeg" alt="Line art of an experiment" width="60%"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;What's the value of an experiment or a prototype?&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;There are all kinds of ways to have impact. A feature can improve user
 experience; a hardening project can reduce risk of a production outage;

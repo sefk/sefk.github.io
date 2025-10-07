@@ -10,6 +10,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
 <link rel="canonical" href="https://sef.kloninger.com/categories/engineering/">
+<link rel="next" href="index-1.html" type="text/html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link rel="alternate" type="application/rss+xml" title="RSS for tag Engineering" hreflang="en" href="../engineering.xml">
 </head>
 <body>
@@ -84,7 +85,55 @@ bg-dark
 
         </div>
     </header><div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/experiments/" class="u-url">Learn From Experiments</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/interview-question/" class="u-url">A Good Interview Question</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="../../posts/interview-question/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-10-07T15:00:00-07:00" itemprop="datePublished" title="2025-10-07 15:00">2025-10-07 15:00</time></a>
+            </p>
+                <p class="commentline">
+    
+    <a href="../../posts/interview-question/#disqus_thread" data-disqus-identifier="cache/posts/interview-question.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p><img style="float:right" class="postimage" src="../../f/python.png" alt="Python language logo" width="25%"></p>
+<p>I liked the interview question that I got when interviewing at YouTube in 2015.
+At Google then we'd have an interview panel of four or five people, each
+assigned to cover a different area. <a href="https://www.linkedin.com/in/billy-biggs-7ab1023/">Billy Biggs</a> was the TL on my panel asked
+to evaluate "architecture" but for a manager, that kind of translates to general
+technical cluefulness. There was a separate <a href="../../posts/201205fizzbuzz-for-managers">programming question</a>.</p>
+<p>Billy's question: <strong>Discuss what would cause a Python interpreter to crash. Not
+a <em>program written in Python</em>, but the interpreter itself.</strong></p>
+<p>I remember this leading to a fun, rambling, back-and-forth forty-five minute
+discussion of the <strong>many ways computers can fail</strong>. There are so many! Every
+level of the stack can fail in interesting ways: storage, RAM, memory
+management, networking. How would a bit flip in a TLB manifest? How does TCP/IP
+detect and handle ordering? collisions?</p>
+<p>We also covered a bunch of <strong>engineering and process questions</strong>. How is the
+interpreter itself implemented, in what language and by whom? What would the
+quality processes be like for a product like that, especially given Python is
+presumably a large and complicated open source project? How would you manage
+this as development project? How important is it that there's an <a href="https://en.wikipedia.org/wiki/Benevolent_dictator_for_life">BDFL</a>? </p>
+<p>And then that lead to a some more interesting higher-level discussions about the
+actual <strong>costs and benefits of addressing failures</strong> like these in the field.
+When should programs hard-fail versus try to detect and recover? How would you
+staff an engineering team to find and chase down errors? What's the user impact
+to a failure like this?</p>
+<p>One of my favorite things about this question is it's that most likely it was
+something they'd actually seen at YouTube. In 2015 significant parts of YouTube
+was <a href="https://mail.python.org/pipermail/python-dev/2006-December/070323.html">written in Python</a> (that's likely not the case anymore, I don't know).
+Crashes like these must have come up in the field. Not only are real-world
+problems relatively easy to ask, but they have the added benefit of showing the
+candidate the kinds of issues that the team actually deals with.</p>
+<p>I got the job.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/experiments/" class="u-url">Learn From Experiments</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Sef Kloninger
@@ -665,158 +714,13 @@ One final word: this isn't a slam on you hardworking IT guys and gals who keep i
 
  </p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/201204measuring-an-engineering-manager/" class="u-url">Working Hard, On The Right Stuff, and In The Right Way  </a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Sef Kloninger
-            </span></p>
-            <p class="dateline">
-            <a href="../../posts/201204measuring-an-engineering-manager/" rel="bookmark">
-            <time class="published dt-published" datetime="2012-04-25T01:39:34-07:00" itemprop="datePublished" title="2012-04-25 01:39">2012-04-25 01:39</time></a>
-            </p>
-                <p class="commentline">
-    
-    <a href="../../posts/201204measuring-an-engineering-manager/#disqus_thread" data-disqus-identifier="cache/posts/201204measuring-an-engineering-manager.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <a href="http://sef.kloninger.com/2012/04/measuring-an-engineering-manager/pointy-haired_boss/" rel="attachment wp-att-147"><img class="alignright size-full wp-image-147" style="border-style: initial; border-color: initial; border-image: initial; border-width: 0px;" title="Pointy-Haired-Boss" src="../../f/Pointy-Haired_Boss.png" alt="Pointy Haired Boss" width="196" height="204"></a>
-
-<p>
-So now you're an engineering manager. How do you know if you're doing a good job?
-</p>
-
-
-<p>
-This was an important question for me about thirteen years ago, when I moved from a code-every-day software engineer into my first management job. In the decade-plus I've been an engineering manager (<a href="http://sef.kloninger.com/2012/04/my-sabbatical/">up until recently</a>) I've relied on three measures for myself and engineering managers under me.  It's the title of this post.
-</p>
-
-
-
-<p>
-The problem is that managers enable their people to produce. An engineer's contribution is measurable, more or less. Even when the scale and units are slippery (is that 95% or 50% done?) at least you can see forward progress: releases, bugs closed, API users. But an engineering manager? At best it feels squishy; at worst it feels like overhead, and nobody wants to be overhead.
-</p>
-
-
-
-<p>
-The question of "am I doing a good job?" came up when I was a first-time engineering manager at Akamai Technologies.  This was 1999 and Akamai was still small-ish (30 engineers).  Us first-time managers were learning on the job. That's when I distilled down my three rules.  They are:
-</p>
-
-<p>
-</p>
-<blockquote>
-A good engineering manager's team should be
-<ol>
-<li>working hard,</li>
-<li>working on the right stuff, and</li>
-<li>doing it the right way.</li>
-</ol>
-</blockquote>
-
-
-<p>
-The key insight here is that you don't measure the manager herself, since management done well just enables the creative work of the team. Judge the team and you judge the manager.
-</p>
-
-<h2>Working Hard</h2>
-
-<p>
-Of course a high-performing team is inherently good. But it's also the best indicator if the manager is doing their job right. A productive team is a motivated team. In my experience, teams don't work hard unless they have all the wonderful qualities that we want in a team: empowerment, alignment with company goals, feeling of camaraderie, trust in management. They should be equipped to do their work and know why they're doing it. A manager should try to give their teams these things, or at least not get in the way.
-</p>
-
-
-
-<p>
-Let's consider the alternative. If your engineers are demotivated or bored then long before they quit (<a href="http://www.randsinrepose.com/archives/2011/07/12/bored_people_quit.html">and they will</a>) they will check out.
-</p>
-
-
-
-<p>
-One caution: working hard is often confused with long hours and face time. It's not. And there are few things more demotivating to a team than a manager demanding more hours. (Some places are really productive and <a href="http://ryanleecarson.tumblr.com/post/21708810513/4-day-week">only work four days a week</a>.)
-</p>
-
-
-
-<p>
-Hiring and firing figures into this too. An under-staffed team can't do what it needs to do or can get burnt out. Worse, lowering the bar to hire someone beneath the team, or not firing the low performer, is hugely demotivating.
-</p>
-
-
-
-
-<h2>Working On The Right Stuff</h2>
-
-<p>
-This is where the manager can have a more direct and immediate impact. You have to set up a few good processes (not too many) and enforce them.  Your goal is maximize useful work.  One way is to prevent work on stuff that will be wasted.  Another is to reduce thrashing by finishing one thing before starting another. This is where delivery comes in: it's one thing to be busy, but how much makes it into real customers' hands?
-</p>
-
-
-<p>
-Some of this sounds like product management, especially prioritization and product definition. But it doesn't happen well without the engineering manager communicating well, working closely with those product managers, pushing back constructively when needed.  So actually read that spec!
-</p>
-
-
-<p>
-Much of my career has been in backend systems. Infrastructure projects to enable features are the exceptions. Most aim to improve reliability by doing things like removing bottlenecks (scaling) or bulletproofing systems. Unfortunately I think the only way to judge these projects qualitatively.  Measuring how often it <em>would</em> have broken is so hard. Just make sure you get a techie who you trust to evaluate projects impersonally and critically. And be careful of pet projects.
-</p>
-
-<h2>Doing It The Right Way</h2>
-
-<p>
-For many years I only had the first two measures. But I've come to value this one more over time.
-</p>
-
-
-
-<p>
-This criteria captures quality and culture. Are the manager's engineers working well together? Best judge of this is if other engineers want to be in this group. Do the engineers have a culture of quality? They should speak with pride of their work. If they feel their products are slipshod, through lack of care or lack of room to do the job right, then it will show.
-
-</p>
-
-
-<p>
-It also means that they aren't leaving scorched earth behind them. Their systems are maintainable and usable by others; the ops guys don't hate them because of missing tools or crappy logs; they've done code reviews and actually listened to the feedback.
-</p>
-
-<h2>Anti-Patterns</h2>
-
-<p>
-There are a couple of other things that I <strong>haven't</strong> mentioned as being important. They're probably on others' lists, but not on mine.
-</p>
-
-<p>
-</p>
-<ol>
-<li>"Leadership." To some people this means that you know how to tell people what to do. To others it means just doing a lot of the things above well, like communication. I'm not disagreeing that it's not important, I just don't know how to define or measure it. It feels like one of those "you know it when you see it" things.</li>
-	<li>Well-triaged bug lists; great status reports; well-run team meetings. If any of these things help you accomplish the three things above, then do them, if not then they're paperwork.</li>
-</ol>
-<p>
-For example, when I managed a large team at VMware I spent a lot of time triaging bugs. That's the VMware's engineering culture, but it's also what you need for a large, distributed team delivering enterprise software. By contrast, at Ning I spent very little time in the bug database. That team was much smaller (6 vs 100), and our releases were less complicated and less scary. And that was the right way to manage that team.
-</p>
-
-
-
-<p>
-Finally, I want to credit some of those early managers in those Akamai days that I learned with/from:
-
-</p>
-<ul>
-<li>Experienced managers like George Conrades, Danny Lewin, Tom Leighton and Ross Seider</li>
-	<li>Fellow newcomers like Joel Wein, Ravi Sundaram, Harald Prokop, Marty Kagan, Jay Parikh, Julia Austin, and Bobby Blumofe</li>
-	<li>Thoughtful techies like Danner Stodolsky, Bill Weihl, Erik Nygren, and Chris Joerg.</li>
-</ul>
-</div>
     </article>
 </div>
 
-
-
-    
-       <script>var disqus_shortname="sefkloninger";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer"><p align="center">Contents © 2025 <a href="mailto:sefklon@gmail.com">Sef Kloninger</a>       Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+        <ul class="pager postindexpager clearfix">
+<li class="next"><a href="index-1.html" rel="next">Older posts</a></li>
+        </ul>
+<script>var disqus_shortname="sefkloninger";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer"><p align="center">Contents © 2025 <a href="mailto:sefklon@gmail.com">Sef Kloninger</a>       Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
             
             
