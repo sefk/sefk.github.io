@@ -38,9 +38,9 @@ building a site for online education for Stanford during the MOOC boom of 2012.
 
 <table>
 <tr>
-<td width=20% align=center>
+<td width=25% align=center>
     <font size=10>
-        <a href="https://www.nokings.org/" style="text-decoration:none">❌👑</a>
+        <a href="https://www.nokings.org/" style="text-decoration:none">❌ 👑</a>
     </font>
 </td>
 <td>
