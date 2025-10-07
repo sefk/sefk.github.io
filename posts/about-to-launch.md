@@ -1,10 +1,8 @@
 <!--
 .. title: I'm About To Launch This
 .. slug: about-to-launch
-.. date: 2025-09-26 09:12:46 UTC-07:00
+.. date: 3025-09-26 09:12:46 UTC-07:00
 .. tags: Engineering
-.. category: 
-.. link: 
 .. description: 
 .. type: text
 -->
