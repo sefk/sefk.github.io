@@ -2,7 +2,7 @@
 .. title: A Good Interview Question
 .. slug: interview-question
 .. date: 2025-10-07 15:00 UTC-07:00
-.. tags: Technology,Management,War Stories
+.. tags: Management,Engineering,War Stories
 .. type: text
 -->
 
