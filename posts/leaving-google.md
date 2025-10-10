@@ -1,56 +1,43 @@
 <!--
 .. title: Leaving Google
 .. slug: leaving-google
-.. date: 3025-10-09 14:00:00 UTC-07:00
+.. date: 2025-10-09 22:00:00 UTC-07:00
 .. tags: Life,Technology
-.. category: 
-.. link: 
-.. description: 
 .. type: text
 -->
 
-<img style="float:right" class="postimage" src="/f/google-10year.jpeg" alt="Sef holding a framed certificate of 10 years of service from Google." width=40%>
+<img style="float:right" class="postimage" src="/f/google-10year.jpeg" alt="Sef holding a framed certificate, Google ten years of service." width=60%>
 
-Google's offer of a Voluntary Exit Package landed in my mailbox right about the
-time I was reaching my ten-year anniversary. Similar things had been offered to
-some of the narrow-margin areas of the business, (news][]), but this was one of
-the first times to touch the traditional revenue engines, like the PA I was in,
-K&I, and a few others, like Core. \[[1](#note1)\].
+An offer of a Voluntary Exit from Google HR landed in my mailbox right around my
+ten-year anniversary with the company, give or take. We'd had a couple of
+packages like this in of the company ([news][]) before, basically a similar deal
+to getting laid off. But this was the first one put in front of those of us
+working in one of the big, traditional revenue engines of the company &mdash; I
+worked on Search.
 
-I wasn't looking to leave. I was doing good work with a good team, and I had a
-[boss][]. The package was enough to start a discussions with my wife, "hey, why
-_not_ now". My last day was August 14th and October 4th was when I formally fell
-off the books.
+I wasn't aiming to leave. I liked the work, I had a good team and [boss][]. But
+the package was enough to kickstart a discussion, "why _not_ now?". My wife and
+I ran numbers and discussed our futures. I clicked the button. My last day as a
+Googler was earlier this week, October 4th.
 
-I have good feelings about my time at Google. I worked three years at YouTube,
-three years at Cloud, and three years at Search. During that time I got to work
-alongside some exceptional people.
+I have good feelings about my time at Google. Part of what was fun was variety:
+three years at YouTube, three years at Cloud, and four years at Search. I got to
+play with big infrastructure and solve some hard problems. I saw behind the
+curtain. But mostly I value the smart and interesting people I got to work with.
+Kind of a cliche, but it's the truth.
 
-I've decided not to write a bunch of dishy stories about things I didn't like
-so much at Google. But if you want to take me out for a beer, I'm around.
+Not everything was great. I've decided that I won't use this space for dishy
+writing about how Google isn't all it claims to be. But I sure do love war
+stories and grousing. If you want to take me out for a beer, I'm around.
 
-What's next? I haven't decided if this is a retirement, or sabbatical, or what.
-I've been off work twice before, once by choice and once not. The first one was
-wonderful and and expanded my view of what was possible; the second was
-stressful. The main difference was me: was I able to have an open-minded and
-exploratory mindset, or one of worry and obligation. I can confidently say that
-I'm going into this time off with a very positive and good mindset.
+What's next? I haven't decided if this is retirement, or a sabbatical, or
+something else. I've been off work for extended stretches twice before, once by
+choice and once not. Those two times taught me that the difference between a
+wonderful, mind-expanding time and a stress-fest is my own mindset. My mindset
+going into this time is good.
 
-One thing I look forward to doing is writing a lot in this space, mostly just
-for me. I enjoy writing. It's a nice way to reflect back on my thirty years in
-software engineering.
-
-One thing I'm concerned about is missing the built-in community of bright,
-like-minded people that I got to work alongside all those years. I'm not sure
-quite yet what that is, but I'm sure I'll find it. I always have.
-
-#### Notes
-<a name="note1"></a>
-
-1. Google is organized into roughly a dozen Product Areas (PA's). Mostly they
-   correspond to things that you'd recognize from the outside, like YouTube and
-   Cloud. There's one biggie, Knowledge & Information, that covers Search, Ads,
-   and related things like Maps.
+I'm excited about the time ahead; I'm fortunate to have the time to focus on
+what's important.
 
 [news]: https://9to5google.com/2025/01/30/pixel-android-voluntary-exit-employees/
 [boss]: https://www.linkedin.com/in/michaelwinton/
