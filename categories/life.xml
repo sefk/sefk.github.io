@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Life)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/life.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 07 Oct 2025 22:50:34 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Working In The Open</title><link>https://sef.kloninger.com/posts/working-in-the-open/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/hachyderm-debugging.png" alt="screenshot of @nova live-debugging Hachyderm on Twitch" width="50%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Life)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/life.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 10 Oct 2025 05:02:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Leaving Google</title><link>https://sef.kloninger.com/posts/leaving-google/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/google-10year.jpeg" alt="Sef holding a framed certificate, Google ten years of service." width="60%"&gt;&lt;/p&gt;
+&lt;p&gt;An offer of a Voluntary Exit from Google HR landed in my mailbox right around my
+ten-year anniversary with the company, give or take. We'd had a couple of
+packages like this in of the company (&lt;a href="https://9to5google.com/2025/01/30/pixel-android-voluntary-exit-employees/"&gt;news&lt;/a&gt;) before, basically a similar deal
+to getting laid off. But this was the first one put in front of those of us
+working in one of the big, traditional revenue engines of the company — I
+worked on Search.&lt;/p&gt;
+&lt;p&gt;I wasn't aiming to leave. I liked the work, I had a good team and &lt;a href="https://www.linkedin.com/in/michaelwinton/"&gt;boss&lt;/a&gt;. But
+the package was enough to kickstart a discussion, "why &lt;em&gt;not&lt;/em&gt; now?". My wife and
+I ran numbers and discussed our futures. I clicked the button. My last day as a
+Googler was earlier this week, October 4th.&lt;/p&gt;
+&lt;p&gt;I have good feelings about my time at Google. Part of what was fun was variety:
+three years at YouTube, three years at Cloud, and four years at Search. I got to
+play with big infrastructure and solve some hard problems. I saw behind the
+curtain. But mostly I value the smart and interesting people I got to work with.
+Kind of a cliche, but it's the truth.&lt;/p&gt;
+&lt;p&gt;Not everything was great. I've decided that I won't use this space for dishy
+writing about how Google isn't all it claims to be. But I sure do love war
+stories and grousing. If you want to take me out for a beer, I'm around.&lt;/p&gt;
+&lt;p&gt;What's next? I haven't decided if this is retirement, or a sabbatical, or
+something else. I've been off work for extended stretches twice before, once by
+choice and once not. Those two times taught me that the difference between a
+wonderful, mind-expanding time and a stress-fest is my own mindset. My mindset
+going into this time is good.&lt;/p&gt;
+&lt;p&gt;I'm excited about the time ahead; I'm fortunate to have the time to focus on
+what's important.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>https://sef.kloninger.com/posts/leaving-google/</guid><pubDate>Fri, 10 Oct 2025 05:00:00 GMT</pubDate></item><item><title>Working In The Open</title><link>https://sef.kloninger.com/posts/working-in-the-open/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/hachyderm-debugging.png" alt="screenshot of @nova live-debugging Hachyderm on Twitch" width="50%"&gt;&lt;/p&gt;
 
 &lt;p&gt;The other day my daughter asked me about Software Engineering -- what do
 we &lt;em&gt;actually do&lt;/em&gt;? She's eighteen and probably won't follow in my
@@ -167,49 +192,4 @@ hard, it's satisfying, and it tastes great. &lt;a href="https://sef.kloninger.co
 to &lt;a href="http://peninsulaschool.org/"&gt;Peninsula School&lt;/a&gt; and gets used at our annual Craft Fair.
 It's benefited from years of refinement.&lt;/p&gt;
 &lt;p&gt;I add more salt. I don't do peas. I've tried with rice but it
-got starchy and weird, stick with egg noodles.&lt;/p&gt;</description><category>Family</category><category>Life</category><guid>https://sef.kloninger.com/posts/chicken_soup/</guid><pubDate>Tue, 21 Jan 2014 01:16:00 GMT</pubDate></item><item><title>Consume vs. Produce vs. Produce Publicly</title><link>https://sef.kloninger.com/posts/consume-produce-public/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/make-asl.gif" alt="\" make in american sign language width="50%"&gt;&lt;/p&gt;
-
-&lt;p&gt;One of my goals for this year is to try to produce more and consume
-less. Not in the green, fixed-planetary-resources sense [1]. I
-mean to make more things, ideas, contributions.  To be more creative.
-Creative in literal sense of that word: creating.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://twitter.com/rands"&gt;Rands&lt;/a&gt; said it well in his post this week, 
-&lt;a href="http://randsinrepose.com/archives/the-builders-high/"&gt;"The Builder's High'&lt;/a&gt;. If you haven't read it, go do so now.
-I'll wait.  (and while you're at it, if you don't have him followed
-or bookmarked or whatever, do that too.)&lt;/p&gt;
-&lt;p&gt;I agree with pretty much everything he said in there. The good
-feeling that comes from actually making soemthing. How that's
-especially true now in light of the constant crush of everyone
-else's creations (he called them "moments"). &lt;/p&gt;
-&lt;p&gt;Making takes many forms. Since I stink at woodworking and gardening
-and painting, I'll stick to the things I do enjoy, like writing and
-coding and cooking. Those fit less into the traditional mold of
-"building" or "making" but that's OK.&lt;/p&gt;
-&lt;p&gt;I want to take it one step further. Here are my three categories
-in value order. Numbers 1 and 2 we just spoke of, but 3 is new.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Consume&lt;/strong&gt;. This is watching TV, playing video games, trashy
-   reading. Sure I'm going to keep doing that, but it's not energizing.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Produce&lt;/strong&gt;. Cooking a meal, learning something interesting. Maybe
-   even reading something intellectually challenging, but that's pushing
-   it.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Produce, In Public&lt;/strong&gt;. Now, this is the toughie. It's one thing to 
-   do something creative, another to put yourself out there and tell 
-   poeple what you did, and why. By sharing the product, by talking
-   people through the choices you made to get there, you're opening
-   yourself up to criticism. But why not!&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;That is part of the reason why I &lt;a href="https://sef.kloninger.com/posts/switching-to-static.html"&gt;reworked my blog&lt;/a&gt; over the
-holiday break, so I'd have a nicer platform for writing. Anything to
-lower the bar to produce.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;[1] I'm not anti-green. I really appreciate the environmental
-warriors out there who walk the walk with real life choices to
-consume less. That's just not my bailiwick, for now at least.&lt;/p&gt;
-&lt;!-- vim set fo+=awn ai tw=72 --&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/consume-produce-public/</guid><pubDate>Fri, 10 Jan 2014 06:51:00 GMT</pubDate></item></channel></rss>
+got starchy and weird, stick with egg noodles.&lt;/p&gt;</description><category>Family</category><category>Life</category><guid>https://sef.kloninger.com/posts/chicken_soup/</guid><pubDate>Tue, 21 Jan 2014 01:16:00 GMT</pubDate></item></channel></rss>

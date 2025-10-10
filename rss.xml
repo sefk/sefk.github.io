@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 07 Oct 2025 22:59:28 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A Good Interview Question</title><link>https://sef.kloninger.com/posts/interview-question/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/python.png" alt="Python language logo" width="25%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 10 Oct 2025 05:02:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Leaving Google</title><link>https://sef.kloninger.com/posts/leaving-google/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/google-10year.jpeg" alt="Sef holding a framed certificate, Google ten years of service." width="60%"&gt;&lt;/p&gt;
+&lt;p&gt;An offer of a Voluntary Exit from Google HR landed in my mailbox right around my
+ten-year anniversary with the company, give or take. We'd had a couple of
+packages like this in of the company (&lt;a href="https://9to5google.com/2025/01/30/pixel-android-voluntary-exit-employees/"&gt;news&lt;/a&gt;) before, basically a similar deal
+to getting laid off. But this was the first one put in front of those of us
+working in one of the big, traditional revenue engines of the company — I
+worked on Search.&lt;/p&gt;
+&lt;p&gt;I wasn't aiming to leave. I liked the work, I had a good team and &lt;a href="https://www.linkedin.com/in/michaelwinton/"&gt;boss&lt;/a&gt;. But
+the package was enough to kickstart a discussion, "why &lt;em&gt;not&lt;/em&gt; now?". My wife and
+I ran numbers and discussed our futures. I clicked the button. My last day as a
+Googler was earlier this week, October 4th.&lt;/p&gt;
+&lt;p&gt;I have good feelings about my time at Google. Part of what was fun was variety:
+three years at YouTube, three years at Cloud, and four years at Search. I got to
+play with big infrastructure and solve some hard problems. I saw behind the
+curtain. But mostly I value the smart and interesting people I got to work with.
+Kind of a cliche, but it's the truth.&lt;/p&gt;
+&lt;p&gt;Not everything was great. I've decided that I won't use this space for dishy
+writing about how Google isn't all it claims to be. But I sure do love war
+stories and grousing. If you want to take me out for a beer, I'm around.&lt;/p&gt;
+&lt;p&gt;What's next? I haven't decided if this is retirement, or a sabbatical, or
+something else. I've been off work for extended stretches twice before, once by
+choice and once not. Those two times taught me that the difference between a
+wonderful, mind-expanding time and a stress-fest is my own mindset. My mindset
+going into this time is good.&lt;/p&gt;
+&lt;p&gt;I'm excited about the time ahead; I'm fortunate to have the time to focus on
+what's important.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>https://sef.kloninger.com/posts/leaving-google/</guid><pubDate>Fri, 10 Oct 2025 05:00:00 GMT</pubDate></item><item><title>A Good Interview Question</title><link>https://sef.kloninger.com/posts/interview-question/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/python.png" alt="Python language logo" width="25%"&gt;&lt;/p&gt;
 &lt;p&gt;I liked the question that I got when interviewing at YouTube in 2015. At Google
 then we'd have an interview panel of four or five people, each assigned to cover
 a different area. &lt;a href="https://www.linkedin.com/in/billy-biggs-7ab1023/"&gt;Billy Biggs&lt;/a&gt; was the TL on my panel asked to evaluate
@@ -466,41 +491,4 @@ Clearly the new models can be made to work well with it, since how
 they are sold in the UK.  If you're unlucky enough to have bought
 your recent iPhone in the US, you're out of luck. &lt;/p&gt;
 &lt;p&gt;I this is an example of Apple bad tendency sometimes choose form
-over function, "&lt;a href="https://www.theringer.com/2016/9/7/16038622/why-did-apple-remove-the-headphone-jack-courage"&gt;courage&lt;/a&gt;" over usability.&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/esim/</guid><pubDate>Fri, 05 Jan 2024 10:34:49 GMT</pubDate></item><item><title>The Big Dig</title><link>https://sef.kloninger.com/posts/big-dig/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;a href="https://www.wgbh.org/podcasts/the-big-dig"&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/bigdig.png" alt="Big Dig podcast title art (WGBH)" width="50%"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I just finished the &lt;a href="https://www.wgbh.org/podcasts/the-big-dig"&gt;Big Dig podcast&lt;/a&gt; and it's worth
-a listen. It's about Boston's &lt;a href="https://en.wikipedia.org/wiki/Big_Dig"&gt;Central Artery/Tunnel Project&lt;/a&gt;,
-the most expensive highway project in US history. They cover the
-whole story, from conception, to getting it approved, to years of
-execution, and then the fallout from cost overruns and mismanagement.
-The podcast is well produced and has a lot of primary-source
-interviews.&lt;/p&gt;
-&lt;p&gt;I have a little bit of a personal connection, since I lived in
-Boston during the project's later years when it was on the news &lt;em&gt;all the
-time&lt;/em&gt;. I even toured &lt;a href="https://en.wikipedia.org/wiki/Leonard_P._Zakim_Bunker_Hill_Memorial_Bridge"&gt;a part&lt;/a&gt; under construction. &lt;/p&gt;
-&lt;p&gt;But what I find most compelling is trying to connect to the question,
-can America build big infrastructure anymore? It's something I think
-lot about. We benefit from by the giant projects from the past
-(dams, bridges, interstates) but can't maintain them properly; we
-struggle to take on new things like &lt;a href="https://en.wikipedia.org/wiki/California_High-Speed_Rail"&gt;high-speed rail&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;They place most of the blame on headwinds that didn't exist in the
-public-works heyday of the twentieth century. Leaders are under
-more scrutiny; projects fall under a bunch of regulations intended
-to protect the environment and workers. Public commentary slows
-things down.&lt;/p&gt;
-&lt;p&gt;The problem is, while the old way was easier, it also caused a lot
-of harm. I learned the story of the Cambridge and East Boston
-families that stopped interstate projects that would have leveled
-their homes and neighborhoods. I know those places well. I used to
-own a home right where &lt;a href="https://en.wikipedia.org/wiki/Interstate_695_(Massachusetts)"&gt;one of those roads was supposed to have
-been&lt;/a&gt;. I sure am grateful to those protesters who won!&lt;/p&gt;
-&lt;p&gt;It ends on a hopeful note. Not that it's easy, nor are we necessarily
-that much better managing big projects now. But there are success
-stories.&lt;/p&gt;
-&lt;p&gt;One part I especially liked was &lt;a href="https://overcast.fm/+BDdBHAXcVU/20:47"&gt;20 minutes into the final episode&lt;/a&gt;,
-in the final interview with &lt;a href="https://en.wikipedia.org/wiki/Frederick_P._Salvucci"&gt;Fred Salvucci&lt;/a&gt;, where he told the
-story Saint Francis. God tells Francis to build a cathedral, but
-then tears it down. Francis builds another, God destroys it again.
-Why, Francis asks. Because it's not enough to build a physical
-cathedral, but you also have to build the support for it in the
-hearts and minds of the people. Maybe that's the part we're not
-doing well enough now.&lt;/p&gt;</description><category>Civics</category><category>Media</category><guid>https://sef.kloninger.com/posts/big-dig/</guid><pubDate>Sun, 17 Dec 2023 16:00:00 GMT</pubDate></item></channel></rss>
+over function, "&lt;a href="https://www.theringer.com/2016/9/7/16038622/why-did-apple-remove-the-headphone-jack-courage"&gt;courage&lt;/a&gt;" over usability.&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/esim/</guid><pubDate>Fri, 05 Jan 2024 10:34:49 GMT</pubDate></item></channel></rss>
