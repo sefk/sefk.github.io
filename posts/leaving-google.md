@@ -34,10 +34,11 @@ I'm always up for that.
 What's next? I haven't decided if this is retirement, or a sabbatical, or
 something else. I've been off work for extended stretches twice before, once by
 choice and once not. Those two times taught me that the difference between a
-wonderful, mind-expanding time and a stress-fest is my own mindset. My mindset
-going into this time is good.
+wonderful, mind-expanding time and a stress-fest is my own mindset. And now
+that I haven't been really working for six weeks now, I can confidently say
+that my mindset is positive and good.
 
-I'm excited about the time ahead. I feel fortunate to have some time to focus on
+I'm excited about the next phase. I feel fortunate to have some time to focus on
 what's important.
 
 [news]: https://9to5google.com/2025/01/30/pixel-android-voluntary-exit-employees/
