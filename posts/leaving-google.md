@@ -10,9 +10,9 @@
 
 An offer of a Voluntary Exit from Google HR landed in my mailbox right around my
 ten-year anniversary with the company, give or take. We'd had a couple of
-packages like this at Google ([news][]) before, basically a similar deal to
-getting laid off. But this was the first one put in front of those of us working
-in one of the big revenue engines of the company &mdash; I worked on Search.
+packages like this at Google before ([news][]), basically the same deal you'd
+get if you got laid off. But this was the first one put in front of those of us
+working in one of the revenue engines of the company &mdash; I worked on Search.
 
 I wasn't aiming to leave. I liked the work, I had a good team and [boss][]. But
 the package was enough to kickstart a discussion, "why _not_ now?". My wife and
