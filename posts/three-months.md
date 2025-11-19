@@ -33,11 +33,10 @@ good occasion to take stock of how that's going. In a word, it's been **great**.
   hasn't gotten cleaned out; neither has the garage.
 
 My friend Rachel Grey has a three month head start on me leaving Google. Her
-writing this resonates with me. Especially [this from a recent LinkedIn
-post][rg]: "I heard on the retired-Googlers mailing list that one month off per
-year of service is a good rule of thumb; after six of them, I'm still feeling
-like a sailor who just barely managed to swim to shore." Maybe that's still
-where I'm at too.
+writing this resonates with me. Especially this from recent LinkedIn post
+([private, sorry][rg]): "one month off per year of service is a good rule of
+thumb; after six of them, I'm still feeling like a sailor who just barely
+managed to swim to shore." Maybe that's still where I'm at too.
 
 So what have I been doing?  I'm prioritizing friends and family &mdash; I'm
 lucky to have a lot of people I care about. I'm embarrassed that I haven't
@@ -48,5 +47,5 @@ Beyond that, I'm getting involved with a couple of small projects but nothing
 serious yet. When I find something interesting, I'll write about it here.
 
 [the gym]: https://www.bayclubs.com/clubs/redwoodshores
-[rg]: https://www.linkedin.com/posts/rachel-grey-b69319_after-six-months-out-of-tech-my-primary-ugcPost-7383907826374582272-yCCs?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAykVIB-AXPmOavG4dWFKkiQNIJZrkBeQU
+[rg]: https://www.linkedin.com/posts/rachel-grey-b69319_after-six-months-out-of-tech-my-primary-ugcPost-7383907826374582272-yCCs
 [bridge lessons]: https://planet-bridge.org/index.php
