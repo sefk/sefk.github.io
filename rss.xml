@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 11 Nov 2025 22:46:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Leaving Google</title><link>https://sef.kloninger.com/posts/leaving-google/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/google-10year.jpeg" alt="Sef holding a framed certificate, Google ten years of service." width="60%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 19 Nov 2025 22:56:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Three Months</title><link>https://sef.kloninger.com/posts/three-months/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;I've been &lt;a href="https://sef.kloninger.com/posts/leaving-google"&gt;off work&lt;/a&gt; for about three months now. It's a
+good occasion to take stock of how that's going. In a word, it's been &lt;strong&gt;great&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/activities.jpeg" alt="Meme from the movie \" step brothers\" showing men playing in a bedroom with the caption \"we have so much room for activities.\"" width="50%"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I'm surprised how much lighter my mood is. It feels like a weight that I've
+  been carrying around for some time is no longer there. It's different than
+  being on vacation, better actually. I didn't appreciate how stressful
+  tech management has been all these years.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I'm taking a ton of pleasure in simple things. I go grocery shopping almost
+  every day, I'm doing a ton of cooking.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It feels good to get healthier. I had knee surgery and am recovering from that
+  just fine. I exercise nearly every day. On days that I don't go to &lt;a href="https://www.bayclubs.com/clubs/redwoodshores"&gt;the
+  gym&lt;/a&gt; I do thirty minutes on the bike.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It's great to have flexibility. I hadn't planned to see my Dad on his 80th
+  birthday because we'd on a bigger group thing later. But on a whim I drove
+  down and took him out for breakfast on his actual birthday, because why not.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If I didn't want to do it before, I still don't want to do it. The closet
+  hasn't gotten cleaned out; neither has the garage.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;My friend Rachel Grey has a three month head start on me leaving Google. Her
+writing this resonates with me. Especially &lt;a href="https://www.linkedin.com/posts/rachel-grey-b69319_after-six-months-out-of-tech-my-primary-ugcPost-7383907826374582272-yCCs?utm_source=share&amp;amp;utm_medium=member_desktop&amp;amp;rcm=ACoAAAAykVIB-AXPmOavG4dWFKkiQNIJZrkBeQU"&gt;this from a recent LinkedIn
+post&lt;/a&gt;: "I heard on the retired-Googlers mailing list that one month off per
+year of service is a good rule of thumb; after six of them, I'm still feeling
+like a sailor who just barely managed to swim to shore." Maybe that's still
+where I'm at too.&lt;/p&gt;
+&lt;p&gt;So what have I been doing?  I'm prioritizing friends and family — I'm
+lucky to have a lot of people I care about. I'm embarrassed that I haven't
+always been good about staying in touch, but I can fix that now. And fun stuff
+like &lt;a href="https://planet-bridge.org/index.php"&gt;bridge lessons&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Beyond that, I'm getting involved with a couple of small projects but nothing
+serious yet. When I find something interesting, I'll write about it here.&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/three-months/</guid><pubDate>Wed, 19 Nov 2025 22:00:00 GMT</pubDate></item><item><title>Leaving Google</title><link>https://sef.kloninger.com/posts/leaving-google/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/google-10year.jpeg" alt="Sef holding a framed certificate, Google ten years of service." width="60%"&gt;&lt;/p&gt;
 &lt;p&gt;An offer of a Voluntary Exit from Google HR landed in my mailbox right around my
 ten-year anniversary with the company, give or take. We'd had a couple of
 packages like this at Google before (&lt;a href="https://9to5google.com/2025/01/30/pixel-android-voluntary-exit-employees/"&gt;news&lt;/a&gt;), basically the same deal you'd
@@ -472,25 +512,4 @@ toasters to review. And &lt;a href="https://www.caseyliss.com/2015/9/10/siracusa
 many bad toasters there are, and how they can be bad for so many
 reasons. My favorite reason was poor &lt;a href="https://www.youtube.com/user/knobfeel"&gt;knob feel&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Nice work &lt;a href="https://hypercritical.co/"&gt;John&lt;/a&gt;, &lt;a href="https://marco.org/"&gt;Marco&lt;/a&gt;, and &lt;a href="https://caseyliss.com/"&gt;Casey&lt;/a&gt;.
-Please keep it up for a long, long time.&lt;/p&gt;</description><category>Media</category><guid>https://sef.kloninger.com/posts/atp/</guid><pubDate>Tue, 13 Feb 2024 01:00:00 GMT</pubDate></item><item><title>The iPhone's SIM Tray Went Away Too Soon</title><link>https://sef.kloninger.com/posts/esim/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/sim.png" alt="SIM" width="25%"&gt;&lt;/p&gt;
-&lt;p&gt;If you've traveled internationally, likely you've used a SIM card
-for local data and calls. There is a nice ecosystem around SIMs
-with a wealth of easy and affordable Pay As You Go (PAYG) options.&lt;/p&gt;
-&lt;p&gt;But the newer iPhones did away with the SIM slot if favor of some new
-eSIM hotness. Apple has all kinds of &lt;a href="https://support.apple.com/en-gb/HT209096"&gt;info&lt;/a&gt; claiming they have good
-international support, but I found reality falls short.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Only a few carriers support eSIM's,&lt;/li&gt;
-&lt;li&gt;The few that do require a contract. A tourist or student
-   studying abroad is better served by a PAYG plan, and&lt;/li&gt;
-&lt;li&gt;Even if you can stomach a contract, that would require a UK bank
-   account; no way to easily pull that off.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We ended up falling back to &lt;a href="https://www.att.com/international/day-pass/"&gt;international roaming&lt;/a&gt;. It works but
-is expensive.&lt;/p&gt;
-&lt;p&gt;I think Apple made the wrong call removing the trusty old SIM tray.
-Clearly the new models can be made to work well with it, since how
-they are sold in the UK.  If you're unlucky enough to have bought
-your recent iPhone in the US, you're out of luck. &lt;/p&gt;
-&lt;p&gt;I this is an example of Apple bad tendency sometimes choose form
-over function, "&lt;a href="https://www.theringer.com/2016/9/7/16038622/why-did-apple-remove-the-headphone-jack-courage"&gt;courage&lt;/a&gt;" over usability.&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/esim/</guid><pubDate>Fri, 05 Jan 2024 10:34:49 GMT</pubDate></item></channel></rss>
+Please keep it up for a long, long time.&lt;/p&gt;</description><category>Media</category><guid>https://sef.kloninger.com/posts/atp/</guid><pubDate>Tue, 13 Feb 2024 01:00:00 GMT</pubDate></item></channel></rss>
