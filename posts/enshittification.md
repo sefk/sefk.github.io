@@ -21,6 +21,6 @@ the first place. Isn't controlling things the whole point of this old-school
 blog business? Not a big loss, nobody had posted a comment in a long time. But
 still.
 
-[Enshittification]: https://en.wikipedia.org/wiki/Enshittification
 [Disqus]: https://disqus.com/
+[Enshittification]: https://en.wikipedia.org/wiki/Enshittification
 [screenshot]: /f/disqus-enshittified.png
