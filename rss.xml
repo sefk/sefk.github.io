@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 19 Nov 2025 23:01:45 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Three Months</title><link>https://sef.kloninger.com/posts/three-months/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;I've been &lt;a href="https://sef.kloninger.com/posts/leaving-google"&gt;off work&lt;/a&gt; for about three months now. It's a
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 04 Dec 2025 06:26:33 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Enshittification</title><link>https://sef.kloninger.com/posts/enshittification/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div style="float:right; align:right; width:30%; font-size:150px"&gt;
+  &lt;p align="center"&gt;💩&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I turned off comments on this blog today. Nobody had posted a comment in a long
+time, and the only reason I'd kept them on all these years were to continue to
+show a couple of comments on some very old posts.&lt;/p&gt;
+&lt;p&gt;Why? Because &lt;a href="https://disqus.com/"&gt;Disqus&lt;/a&gt;, the provider lo these many years, has gone down the
+&lt;a href="https://en.wikipedia.org/wiki/Enshittification"&gt;Enshittification&lt;/a&gt; path. They started running a bunch of link-spam in place of
+the comment box. Of course they did. I captured a screenshot, which you can
+&lt;a href="https://sef.kloninger.com/f/disqus-enshittified.png"&gt;take a peek at&lt;/a&gt;. Boo.&lt;/p&gt;
+&lt;p&gt;Shame on me for entrusting this company to handle content for my personal site
+in the first place. Isn't that the whole point of writing and maintaining an
+old-school blog? Sigh.&lt;/p&gt;</description><category>Tech</category><guid>https://sef.kloninger.com/posts/enshittification/</guid><pubDate>Thu, 04 Dec 2025 00:15:00 GMT</pubDate></item><item><title>Three Months</title><link>https://sef.kloninger.com/posts/three-months/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;I've been &lt;a href="https://sef.kloninger.com/posts/leaving-google"&gt;off work&lt;/a&gt; for about three months now. It's a
 good occasion to take stock of how that's going. In a word, it's been &lt;strong&gt;great&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/activities.jpeg" alt="Meme from the movie \" step brothers\" showing men playing in a bedroom with the caption \"we have so much room for activities.\"" width="50%"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/activities.jpeg" alt="Meme from the movie \" step brothers showing men playing in a bedroom with the caption have so much room for activities. width="50%"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;I'm surprised how much lighter my mood is. It feels like a weight that I've
@@ -38,7 +51,72 @@ lucky to have a lot of people I care about. I'm embarrassed that I haven't
 always been good about staying in touch, but I can fix that now. And fun stuff
 like &lt;a href="https://planet-bridge.org/index.php"&gt;bridge lessons&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Beyond that, I'm getting involved with a couple of small projects but nothing
-serious yet. When I find something interesting, I'll write about it here.&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/three-months/</guid><pubDate>Wed, 19 Nov 2025 22:00:00 GMT</pubDate></item><item><title>Leaving Google</title><link>https://sef.kloninger.com/posts/leaving-google/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/google-10year.jpeg" alt="Sef holding a framed certificate, Google ten years of service." width="60%"&gt;&lt;/p&gt;
+serious yet. When I find something interesting, I'll write about it here.&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/three-months/</guid><pubDate>Wed, 19 Nov 2025 22:00:00 GMT</pubDate></item><item><title>Data Preservation</title><link>https://sef.kloninger.com/posts/data-preservation/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;I believe good data about our world -- nature, people, economies, etc.
+-- is a public good. I believe that in my bones. Which is why it's so
+troubling to me when I hear&lt;/p&gt;
+&lt;p&gt;Homeland Infrastructure Foundation-Level Data (HIFLD)
+NASA &lt;/p&gt;
+&lt;p&gt;https://www.reddit.com/r/gis/comments/1lkol3s/sad_news_hifld_open_to_be_discontinued_by_sept_30/
+https://projectgeospatial.org/geospatial-frontiers/the-rise-power-and-uncertain-future-of-americas-open-infrastructure-data&lt;/p&gt;</description><category>Civics</category><category>Life</category><category>Tech</category><guid>https://sef.kloninger.com/posts/data-preservation/</guid><pubDate>Mon, 10 Nov 2025 22:37:06 GMT</pubDate></item><item><title>Values</title><link>https://sef.kloninger.com/posts/values/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/values-crowbar.png" alt="Crowbar with the word \" values written on the side width="30%"&gt;&lt;/p&gt;
+&lt;p&gt;Values are useful. 
+thirty years as an engineering manager has been in big companies, trying to
+get people to do things, and I've used values one of the quickest ways to
+do that. It gets peoples attention; it can bring an unruly or noncommital
+peer to heel.&lt;/p&gt;
+&lt;h4&gt;Example At A Big Company -- Google&lt;/h4&gt;
+&lt;h4&gt;An Example -- Groups.IO&lt;/h4&gt;
+&lt;p&gt;I'm writing to recommend a good vendor, &lt;a href="https://groups.io/"&gt;Groups.IO&lt;/a&gt;. They are a mailing list
+company. If you have a group of people that you want to to keep in touch with,
+they can provide basic mailing list features. The free tier is pretty
+reasonable, up to 100 subscribers and only basic features. Then if you need
+bigger lists, or fancy features, they'll upsell a premium offer.&lt;/p&gt;
+&lt;p&gt;Why not just Google Groups? I basically believe their claim that Google Groups
+has gone long in the tooth. It works but it's been a long time since it's gotten
+improvements. '&lt;/p&gt;
+&lt;p&gt;For me the main driver was that it &lt;em&gt;wasn't Google&lt;/em&gt;. The need to create a Google
+ID is a pretty big barrier for some people, either for philosophical or
+technical reasons. Amongst the group of people I was hoping to reach, a
+not-small number has some trouble with their Google account before, and having
+to sort that out was a big barrier. &lt;/p&gt;
+&lt;p&gt;There are two things in particular that cause me to write a special post.&lt;/p&gt;
+&lt;h4&gt;1. Do One Thing Well&lt;/h4&gt;
+&lt;p&gt;They offer this basic mailing list service and do it really well. Their service
+is fast, featureful, robust. Because it's the most important thing the company
+does, they take it seriously and it shows.&lt;/p&gt;
+&lt;p&gt;Now they do have a bunch of higher-value things like calendars and shared
+databases. I confess I didn't try those, and I don't begrudge them for expanding
+up the stack. But you don't &lt;em&gt;have&lt;/em&gt; to use those, and the upsell isn't too pesky.&lt;/p&gt;
+&lt;h4&gt;2. The Premium Trial is Well Behaved&lt;/h4&gt;
+&lt;p&gt;This is really the unique thing that motivated this post. I wasn't sure that I
+needed the premium service, so I signed up for a free trial. The thing that was
+a pleasant surprise was when the trial period ended, it fell back to the
+standard. The email I got from them is included below, with the key sentence
+highlighted in yellow.&lt;/p&gt;
+&lt;p&gt;When was the last time you saw a service do this at then end of the free trial?
+I can't remember one. It's great.&lt;/p&gt;
+&lt;p&gt;What's so great about this is that it sends strong signal that &lt;strong&gt;this company puts
+the user first&lt;/strong&gt;. I can imagine the pitch from the person at the company responsible
+for &lt;/p&gt;
+&lt;div class="indented-box-margin"&gt;
+Hello,&lt;br&gt;
+&lt;br&gt;
+&lt;mark&gt;Your free premium group trial for redacted@groups.io is due to end on Saturday, October 11, 2025. 
+On that date, your group will be downgraded to the free plan.&lt;/mark&gt; If you would like to continue enjoying all the premium features, you can pay for a premium plan.&lt;br&gt;
+&lt;br&gt;
+As a reminder, here are some of the benefits of the Premium plan:&lt;br&gt;
+
+&lt;ul&gt;
+&lt;li&gt; Calendar, Chat, Photos, Polls, Files, Databases, and Wikis&lt;/li&gt;
+&lt;li&gt; Subgroups on your own domain&lt;br&gt;&lt;/li&gt;
+&lt;li&gt; Ability to directly add people to your group&lt;/li&gt;
+&lt;li&gt; Expanded storage space&lt;/li&gt;
+&lt;li&gt; Ability to accept donations&lt;/li&gt;
+&lt;li&gt; Premium support&lt;/li&gt;
+&lt;/ul&gt;
+If you have any questions, feel free to reply to this email. Thank you for using Groups.io.&lt;br&gt;
+&lt;br&gt;
+The Groups.io Team
+&lt;/div&gt;</description><guid>https://sef.kloninger.com/posts/values/</guid><pubDate>Tue, 14 Oct 2025 03:52:16 GMT</pubDate></item><item><title>Leaving Google</title><link>https://sef.kloninger.com/posts/leaving-google/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/google-10year.jpeg" alt="Sef holding a framed certificate, Google ten years of service." width="60%"&gt;&lt;/p&gt;
 &lt;p&gt;An offer of a Voluntary Exit from Google HR landed in my mailbox right around my
 ten-year anniversary with the company, give or take. We'd had a couple of
 packages like this at Google before (&lt;a href="https://9to5google.com/2025/01/30/pixel-android-voluntary-exit-employees/"&gt;news&lt;/a&gt;), basically the same deal you'd
@@ -321,194 +399,4 @@ to peers that come up at performance review time.&lt;/p&gt;
 &lt;p&gt;Finally, find a way to &lt;strong&gt;pay it forward&lt;/strong&gt;. Introduce mentors and
 mentees; volunteer in your company's matchmaking service; find
 people who appear to stranded and offer to help them out. Sending
-this post might be a fine icebreaker.&lt;/p&gt;</description><category>Management</category><guid>https://sef.kloninger.com/posts/mentoring/</guid><pubDate>Sun, 07 Jul 2024 20:00:00 GMT</pubDate></item><item><title>Oppenheimer -- A Miss</title><link>https://sef.kloninger.com/posts/oppenheimer/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/stetson.png" alt="Stetson Hat" width="40%"&gt;&lt;/p&gt;
-&lt;p&gt;I was so disappointed in Oppenheimer. It wasn't terrible, but what
-a missed opportunity.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Mystifying&lt;/strong&gt;. Part of the job of a biopic is to give you insight
-into what a person is thinking and feeling. Especially for this
-movie, which is basically about this question: what would it be
-like to be the person who made these terrible weapons?  I understand
-he's complicated, and &lt;em&gt;it's&lt;/em&gt; complicated.  But instead of dialog,
-or even some outright explaining, this movie leans on of Cillian
-Murphy staring into the distance or adjusting his hat.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Women&lt;/strong&gt;. There were plenty of interesting women they could have
-brought in, either contemporaries, or from academia, or the
-Manhattan project itself. There are only two women in the movie:
-one is a sex object with mental health issues (Pugh); the other is
-a mother/lush with a surprisingly sharp wit, but only for a minute
-(Blunt). The sex scene, oddly using Oppenheimer's most famous line,
-was gratuitous and super weird.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Strauss&lt;/strong&gt;. I'm not invested at all in the conflict with &lt;a href="https://en.wikipedia.org/wiki/Lewis_Strauss"&gt;Admiral
-Strauss&lt;/a&gt;. Paraphrasing the good folks at &lt;a href="https://www.theincomparable.com/theincomparable/703/"&gt;The Incomparable&lt;/a&gt;, "I
-don't care if some guy becomes Commerce Secretary in the Eisenhower
-Cabinet."&lt;/p&gt;
-&lt;p&gt;Given how much I like the &lt;a href="https://www.amazon.com/Making-Atomic-Bomb-Richard-Rhodes/dp/1451677618"&gt;history and the science&lt;/a&gt; of this
-period, I was really pulling for this movie. Dang.&lt;/p&gt;</description><category>Media</category><guid>https://sef.kloninger.com/posts/oppenheimer/</guid><pubDate>Mon, 19 Feb 2024 21:20:00 GMT</pubDate></item><item><title>Cleaning Up Photo Duplicates</title><link>https://sef.kloninger.com/posts/photo-dups/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/dups-pie.png" alt="Pie Chart" width="30%"&gt;&lt;/p&gt;
-&lt;p&gt;I did a data cleanup over the weekend. I doubt this is interesting
-for anyone else, I just wanted to capture my own notes.&lt;/p&gt;
-&lt;p&gt;Our family photos are stored up in Google Photos. We have about
-100k photos and short movies that take up 0.5TB. I wanted to back
-up to &lt;a href="https://www.synology.com/en-us/products?product_line=ds_plus"&gt;local storage&lt;/a&gt;, but also I liked the idea of trying the
-&lt;a href="https://www.mdisc.com/"&gt;mdisc&lt;/a&gt; format for long-term storage.&lt;/p&gt;
-&lt;p&gt;I ran &lt;a href="https://takeout.google.com/"&gt;Takeout&lt;/a&gt; and unzipped everything. I was surprised to see
-so many duplicates. Some are copies in the same folders with suffixes
-like "(1)", most are multiple copies in different folders.
-Takeout seems to just store a copy for each album a photo is in.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://docs.google.com/spreadsheets/d/10pRVc1_6u0G2z62uEJSHHZ0yzf43Zoa9yx0D2bpICmE/edit?usp=sharing"&gt;Some poking at the data&lt;/a&gt; shows 88% of 302,755 files / 72% of
-the bytes were unique (histogram at the bottom of the post).  Removing
-dups can save 200+GB. Sure not really worth the trouble but why
-not.&lt;/p&gt;
-&lt;h4&gt;Steps&lt;/h4&gt;
-&lt;p&gt;1. On the NAS, gather file checksums (&lt;code&gt;md5sum&lt;/code&gt;) and sizes for all
-the files under &lt;code&gt;Takeout/Google Files&lt;/code&gt;. Mostly variations on
-of &lt;code&gt;find -print0 | xargs -0&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;2. Data cleanup to get into nice file paths and clean delimiters,
-mostly interactively with &lt;code&gt;vi&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;3. Insert into &lt;code&gt;sqlite&lt;/code&gt; using &lt;code&gt;.separator&lt;/code&gt; and &lt;code&gt;.import&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Here's what the database ended up looking like: &lt;code&gt;Photos&lt;/code&gt; and &lt;code&gt;Sizes&lt;/code&gt;
-are inputs, &lt;code&gt;HashCounts&lt;/code&gt;, &lt;code&gt;Duplicates&lt;/code&gt;, and &lt;code&gt;Candidates&lt;/code&gt; are
-outputs.&lt;/p&gt;
-&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="k"&gt;CREATE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;TABLE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;TEXT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;TEXT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="k"&gt;CREATE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;TABLE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Sizes&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;size&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;TEXT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="k"&gt;CREATE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;TABLE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HashCounts&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;TEXT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="k"&gt;found&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="k"&gt;CREATE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;TABLE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Duplicates&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STRING&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STRING&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="k"&gt;found&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="k"&gt;size&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="k"&gt;CREATE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;TABLE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Candidates&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STRING&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;STRING&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="k"&gt;size&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;INT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;4. Find the dups. I'm surprised to find some with 50 or more copies,
-but it out some family favorites end up in lots of albums.&lt;/p&gt;
-&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="k"&gt;insert&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;into&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HashCounts&lt;/span&gt;
-&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;found&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;group&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;by&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;5. Figure out candidates for deletion&lt;/p&gt;
-&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="k"&gt;insert&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;into&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Duplicates&lt;/span&gt;
-&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HashCounts&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;found&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Sizes&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;size&lt;/span&gt;
-&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HashCounts&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Sizes&lt;/span&gt;
-&lt;span class="k"&gt;where&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HashCounts&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;and&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;Sizes&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;
-&lt;span class="k"&gt;and&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HashCounts&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;found&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;The first of each set is the one we'll keep.&lt;/p&gt;
-&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="k"&gt;insert&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;into&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Candidates&lt;/span&gt;
-&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;
-&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;size&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;row_number&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;over&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;partition&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;by&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;row_number&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Duplicates&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;order&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;by&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hash&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;desc&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;where&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;row_number&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;I was surprised that sqlplus supports window functions, nice.&lt;/p&gt;
-&lt;p&gt;The inner reverse-alpha sort on "path" takes care of two cases.
-I tend to prefer keeping photos with names that start with
-years, and Those come first alphabetically (nice). Also within
-folders often there are many copies with "(1)" and "(2)" suffixes
-that are generally cruft and most worthy of removing, and those
-also sort last alphabetically (nice).&lt;/p&gt;
-&lt;p&gt;5. Dump out the "Candidates" using &lt;code&gt;.output&lt;/code&gt;. Copy back to the NAS.
-Do lots of spot checks. Convert to a bash script of &lt;code&gt;rm&lt;/code&gt; commands,
-run very carefully.&lt;/p&gt;
-&lt;h4&gt;Tools&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;Sqlite&lt;/strong&gt; is my go-to tool for ad-hoc work like this.  It's fast
-and simple, but only for small jobs -- this one is MB-scale.&lt;/p&gt;
-&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="k"&gt;select&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pgsize&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;dbstat&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;group&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;by&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="w"&gt;           &lt;/span&gt;&lt;span class="k"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pgsize&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="c1"&gt;-------------  -----------&lt;/span&gt;
-&lt;span class="n"&gt;Candidates&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="mi"&gt;3006464&lt;/span&gt;
-&lt;span class="n"&gt;Duplicates&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="mi"&gt;5541888&lt;/span&gt;
-&lt;span class="n"&gt;HashCounts&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="mi"&gt;11051008&lt;/span&gt;
-&lt;span class="n"&gt;Photos&lt;/span&gt;&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="mi"&gt;23240704&lt;/span&gt;
-&lt;span class="n"&gt;Sizes&lt;/span&gt;&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="mi"&gt;13807616&lt;/span&gt;
-&lt;span class="n"&gt;sqlite_schema&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="mi"&gt;4096&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;My &lt;strong&gt;Synology&lt;/strong&gt; is a pretty good place for storage with ability to
-ssh in and run local commands.  But if I had to do this again,
-though, I should have just bought a large locally-connected SSD.
-All the transfers to-from the NAS were a hassle. Looking now I'm
-stunned that you can get a 4 TB external SSD for under $300.&lt;/p&gt;
-&lt;p&gt;Some &lt;a href="https://docs.google.com/spreadsheets/d/1O4gzeTn8GNeL1X4DrBUprcEqpK6jKbQrtEfBNdJF-Pw/edit#gid=810787524"&gt;private notes&lt;/a&gt; here.&lt;/p&gt;
-&lt;p&gt;&lt;img class="postimage" src="https://sef.kloninger.com/f/dups-histo.png" alt="Histogram" width="100%"&gt;
-(&lt;a href="https://docs.google.com/spreadsheets/d/10pRVc1_6u0G2z62uEJSHHZ0yzf43Zoa9yx0D2bpICmE/edit?usp=sharing"&gt;source&lt;/a&gt;)&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/photo-dups/</guid><pubDate>Mon, 19 Feb 2024 20:00:00 GMT</pubDate></item><item><title>My Love Letter to ATP</title><link>https://sef.kloninger.com/posts/atp/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/atp.png" alt="ATP Podcast Art" width="40%"&gt;&lt;/p&gt;
-&lt;p&gt;I listen to a fair number of podcasts. The &lt;a href="https://atp.fm/"&gt;Accidental Tech
-Podcast&lt;/a&gt; is my favorite by a mile.&lt;/p&gt;
-&lt;p&gt;It's the one that I look forward to every week. It comes out on
-Thursdays, often right when I'm leaving work. It's a sign that
-the weekend is right around the corner.&lt;/p&gt;
-&lt;p&gt;I'll get some of the reasons why out of the way quickly, the reasons
-particular to me and my tastes.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The topic, the world of technology and all things around it,
-  is right in my wheelhouse. It's my profession, but also my hobby.
-  That's what got me in the door. If this stuff isn't your thing,
-  then this podcast won't be either.&lt;/li&gt;
-&lt;li&gt;They talk a lot about Apple products and that ecosystem, which
-  where I spend my personal time.&lt;/li&gt;
-&lt;li&gt;But they also cover a lot of issues that touch on the world of
-  technology: business, law &amp;amp; politics, companies, social media.
-  I like their descriptions, their take, their rants.&lt;/li&gt;
-&lt;li&gt;They end up talking a lot about personal tech too. Like how to
-  manage family photos and backups. The hard, fussy stuff that ends
-  up taking up so much of our lives. For example, what's the best
-  way to help parents deal with passwords. Hard stuff!&lt;/li&gt;
-&lt;li&gt;I especially like tech-adjacent topics like home audio/video,
-  home automation, and gaming.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;But what I appreciate more than the content of ATP are the
-hosts and the care they take to produce a good show.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;They are &lt;strong&gt;friends&lt;/strong&gt;. It's nice hanging out with people
-  who like each other. It's kind of like we have permission
-  to eavesdrop and be a part of that.&lt;/li&gt;
-&lt;li&gt;They're not afraid to discuss &lt;strong&gt;their lives&lt;/strong&gt;.
-  Stuff like families and work/life stress.
-  This is good stuff for me because I'm in the same life
-  situation as them: middle-aged tech dads.
-  But bringing their whole selves
-  to the show is a bit of vulnerability that I appreciate.&lt;/li&gt;
-&lt;li&gt;ATP is &lt;strong&gt;exceptionally well produced&lt;/strong&gt;. I didn't
-  appreciate this until I'd heard so many other podcasts that
-  are produced terribly, with bad recordings or poorly mixed.
-  Usually you have to turn to the corporate, fancy
-  podcasts, but they also have lots of ads and are
-  usually different kinds of shows.&lt;/li&gt;
-&lt;li&gt;And the show is so &lt;strong&gt;well edited&lt;/strong&gt;. They edit it without
-  losing any of the content or the pacing, and sparing us all the
-  awkward "um where were we" and technical futzing.&lt;/li&gt;
-&lt;li&gt;They &lt;strong&gt;don't talk over each other&lt;/strong&gt;. Part of this is discipline,
-  part of this is just politeness. But also now that I've listened
-  to the pre-edit "bootleg" a couple of times, I've come to appreciate
-  how much of this is also fixed in the edit.  Nice job Marco.&lt;/li&gt;
-&lt;li&gt;They are &lt;strong&gt;respectful&lt;/strong&gt;.  They don't put people down, they aren't
-  mean.  When they kid each other it's in good fun.&lt;/li&gt;
-&lt;li&gt;When (rarely) they wade into social justice or
-  world events, they do so respectfully and thoughtfully.
-  They understand that as three three cisgender white guys,
-  it's good to have views to share, but also right to listen
-  and help others.&lt;/li&gt;
-&lt;li&gt;Their show is &lt;strong&gt;reliable&lt;/strong&gt;. It's great that they keep to a
-  regular format and schedule. It fits into the rest of your life
-  and becomes something you count on.&lt;/li&gt;
-&lt;li&gt;Finally, some small things: Yay for proper use of
-  &lt;strong&gt;chapter markers&lt;/strong&gt;, hardly anybody else uses them properly.
-  And I like their
-  their occasional forays into &lt;strong&gt;car talk&lt;/strong&gt;, just because I like car
-  stuff too.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Although they joke about how much of the show is devoted to feedback,
-it's one of my favorite parts. It shows that they listen and are
-learning.  And they share that learning with all of us. A recent
-example was six minutes or so into &lt;a href="https://atp.fm/570"&gt;Episode 570&lt;/a&gt; when I learned
-how home power battery systems, when full, signal this by changing
-&lt;em&gt;the frequency of AC power&lt;/em&gt; as a signal to solar panels to back off.
-Fascinating!&lt;/p&gt;
-&lt;p&gt;I like the members-only specials. It's OK with me that these are
-only available to members. They've been candid lately about ad
-revenue drying up and they could use the extra revenue channel.
-These episodes are a nice way to reward members. They've managed
-to do these without compromising the core show.&lt;/p&gt;
-&lt;p&gt;The best thing they ever did on ATP was getting a sponsor to send John
-toasters to review. And &lt;a href="https://www.caseyliss.com/2015/9/10/siracusa-on-toasters"&gt;review he did&lt;/a&gt;! I didn't appreciate how
-many bad toasters there are, and how they can be bad for so many
-reasons. My favorite reason was poor &lt;a href="https://www.youtube.com/user/knobfeel"&gt;knob feel&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Nice work &lt;a href="https://hypercritical.co/"&gt;John&lt;/a&gt;, &lt;a href="https://marco.org/"&gt;Marco&lt;/a&gt;, and &lt;a href="https://caseyliss.com/"&gt;Casey&lt;/a&gt;.
-Please keep it up for a long, long time.&lt;/p&gt;</description><category>Media</category><guid>https://sef.kloninger.com/posts/atp/</guid><pubDate>Tue, 13 Feb 2024 01:00:00 GMT</pubDate></item></channel></rss>
+this post might be a fine icebreaker.&lt;/p&gt;</description><category>Management</category><guid>https://sef.kloninger.com/posts/mentoring/</guid><pubDate>Sun, 07 Jul 2024 20:00:00 GMT</pubDate></item></channel></rss>

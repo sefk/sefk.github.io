@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Life)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/life.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 19 Nov 2025 23:01:45 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Three Months</title><link>https://sef.kloninger.com/posts/three-months/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;I've been &lt;a href="https://sef.kloninger.com/posts/leaving-google"&gt;off work&lt;/a&gt; for about three months now. It's a
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Life)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/life.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 04 Dec 2025 06:26:33 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Three Months</title><link>https://sef.kloninger.com/posts/three-months/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;I've been &lt;a href="https://sef.kloninger.com/posts/leaving-google"&gt;off work&lt;/a&gt; for about three months now. It's a
 good occasion to take stock of how that's going. In a word, it's been &lt;strong&gt;great&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/activities.jpeg" alt="Meme from the movie \" step brothers\" showing men playing in a bedroom with the caption \"we have so much room for activities.\"" width="50%"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/activities.jpeg" alt="Meme from the movie \" step brothers showing men playing in a bedroom with the caption have so much room for activities. width="50%"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;I'm surprised how much lighter my mood is. It feels like a weight that I've
@@ -38,7 +38,13 @@ lucky to have a lot of people I care about. I'm embarrassed that I haven't
 always been good about staying in touch, but I can fix that now. And fun stuff
 like &lt;a href="https://planet-bridge.org/index.php"&gt;bridge lessons&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Beyond that, I'm getting involved with a couple of small projects but nothing
-serious yet. When I find something interesting, I'll write about it here.&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/three-months/</guid><pubDate>Wed, 19 Nov 2025 22:00:00 GMT</pubDate></item><item><title>Leaving Google</title><link>https://sef.kloninger.com/posts/leaving-google/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/google-10year.jpeg" alt="Sef holding a framed certificate, Google ten years of service." width="60%"&gt;&lt;/p&gt;
+serious yet. When I find something interesting, I'll write about it here.&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/three-months/</guid><pubDate>Wed, 19 Nov 2025 22:00:00 GMT</pubDate></item><item><title>Data Preservation</title><link>https://sef.kloninger.com/posts/data-preservation/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;I believe good data about our world -- nature, people, economies, etc.
+-- is a public good. I believe that in my bones. Which is why it's so
+troubling to me when I hear&lt;/p&gt;
+&lt;p&gt;Homeland Infrastructure Foundation-Level Data (HIFLD)
+NASA &lt;/p&gt;
+&lt;p&gt;https://www.reddit.com/r/gis/comments/1lkol3s/sad_news_hifld_open_to_be_discontinued_by_sept_30/
+https://projectgeospatial.org/geospatial-frontiers/the-rise-power-and-uncertain-future-of-americas-open-infrastructure-data&lt;/p&gt;</description><category>Civics</category><category>Life</category><category>Tech</category><guid>https://sef.kloninger.com/posts/data-preservation/</guid><pubDate>Mon, 10 Nov 2025 22:37:06 GMT</pubDate></item><item><title>Leaving Google</title><link>https://sef.kloninger.com/posts/leaving-google/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/google-10year.jpeg" alt="Sef holding a framed certificate, Google ten years of service." width="60%"&gt;&lt;/p&gt;
 &lt;p&gt;An offer of a Voluntary Exit from Google HR landed in my mailbox right around my
 ten-year anniversary with the company, give or take. We'd had a couple of
 packages like this at Google before (&lt;a href="https://9to5google.com/2025/01/30/pixel-android-voluntary-exit-employees/"&gt;news&lt;/a&gt;), basically the same deal you'd
@@ -200,29 +206,4 @@ Not one of Bowie's better known songs, nor even one of his best, but
 remarkably well suited to this. I believe it's because the
 melody is kind of odd and not all that pleasant, so it's not going
 to get stuck itself. You kind of remember the melody and lyrics,
-but not quite, so that keeps you busy. It always does the trick. &lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/earworm/</guid><pubDate>Sun, 17 Aug 2014 00:25:00 GMT</pubDate></item><item><title>Feedback Without Tips</title><link>https://sef.kloninger.com/posts/tips/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/tip-oneill.jpg" alt="Tip O'Neill" width="30%"&gt;&lt;/p&gt;
-&lt;p&gt;I really don't like tipping. I'm not like &lt;a href="https://www.youtube.com/watch?v=Z-qV9wVGb38"&gt;Mr. Pink&lt;/a&gt;. It's
-not that I don't want my server or driver to get something extra.
-I just don't like the awkward social situation of deciding if this
-is a tipping situation, and if so, how much.&lt;/p&gt;
-&lt;p&gt;Two services have come up recently where I will happily pay a premium
-to not have to fret about too much or too little:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Uber&lt;/strong&gt;. Lots to like about this service but the act of just 
-  leaving out of my cab without paying is joyful. I always rate 
-  my drivers, good or bad. 98% of the time, it's good by the way.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;OrderAhead&lt;/strong&gt;. Are you supposed to tip when picking up takeout 
-  from a restaurant? I've never known. Neither way feels right, so 
-  I usually end up splitting the difference and rounding up to 
-  some amount, say leaving a 6% tip, which is the &lt;em&gt;worst&lt;/em&gt; choice. 
-  Either that's 6% that wasn't expected, or I'm inadvertently
-  shafting someone.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Both of these services decouple feedback from money. Both avoid
-awkwardly changing money. I'd definitely pay a premium for that.&lt;/p&gt;
-&lt;p&gt;I wonder what other service business would benefit from decoupling
-feedback from money?&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/tips/</guid><pubDate>Tue, 29 Apr 2014 03:07:00 GMT</pubDate></item></channel></rss>
+but not quite, so that keeps you busy. It always does the trick. &lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/earworm/</guid><pubDate>Sun, 17 Aug 2014 00:25:00 GMT</pubDate></item></channel></rss>

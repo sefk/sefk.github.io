@@ -7,54 +7,58 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://sef.kloninger.com/categories/civics.xml</loc>
-  <lastmod>2025-10-31T17:37:00Z</lastmod>
+  <lastmod>2025-12-03T23:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/data.xml</loc>
-  <lastmod>2025-10-31T17:37:00Z</lastmod>
+  <lastmod>2025-12-03T23:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/education.xml</loc>
-  <lastmod>2025-10-31T17:37:00Z</lastmod>
+  <lastmod>2025-12-03T23:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/engineering.xml</loc>
-  <lastmod>2025-10-31T17:37:00Z</lastmod>
+  <lastmod>2025-12-03T23:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/family.xml</loc>
-  <lastmod>2025-10-31T17:37:00Z</lastmod>
+  <lastmod>2025-12-03T23:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/life.xml</loc>
-  <lastmod>2025-11-19T23:01:00Z</lastmod>
+  <lastmod>2025-12-04T06:26:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/management.xml</loc>
-  <lastmod>2025-10-31T17:37:00Z</lastmod>
+  <lastmod>2025-12-03T23:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/media.xml</loc>
-  <lastmod>2025-10-31T17:37:00Z</lastmod>
+  <lastmod>2025-12-03T23:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/puzzling.xml</loc>
-  <lastmod>2025-10-31T17:37:00Z</lastmod>
+  <lastmod>2025-12-03T23:40:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://sef.kloninger.com/categories/tech.xml</loc>
+  <lastmod>2025-12-04T00:28:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/technology.xml</loc>
-  <lastmod>2025-10-31T17:37:00Z</lastmod>
+  <lastmod>2025-12-03T23:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/war-stories.xml</loc>
-  <lastmod>2025-10-31T17:37:00Z</lastmod>
+  <lastmod>2025-12-03T23:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/rss.xml</loc>
-  <lastmod>2025-11-19T23:01:00Z</lastmod>
+  <lastmod>2025-12-04T06:26:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/sitemap.xml</loc>
-  <lastmod>2025-11-19T23:01:00Z</lastmod>
+  <lastmod>2025-12-04T06:26:00Z</lastmod>
  </sitemap>
 </sitemapindex>
