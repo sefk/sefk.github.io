@@ -2,7 +2,7 @@
 .. title: Enshittification
 .. slug: enshittification
 .. date: 2025-12-03 16:15:00 UTC-08:00
-.. tags: Tech
+.. tags: Technology
 .. type: text
 -->
 
