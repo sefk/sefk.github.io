@@ -41,9 +41,11 @@ python3 -m venv .
 source ./bin/activate
 ```
 
-Remember to ```source ./bin/activate``` when starting up future shells. `direnv`
-should take care of this for you ever since
-`[a9d1bd](https://github.com/sefk/sef-dotfiles/commit/a9d1bdb1775ddf9f90d53d41a5c9366973b22b51)`.
+You'll want to `` `source ./bin/activate` `` when starting up future shells.
+Most likely `direnv` is installed and should take care of this for you as you
+move around directories (see `[a9d1bd][]`).
+
+[a9d1bd]: https://github.com/sefk/sef-dotfiles/commit/a9d1bdb1775ddf9f90d53d41a5c9366973b22b51
 
 ### Nikola
 

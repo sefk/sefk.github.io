@@ -134,8 +134,8 @@ NAVIGATION_LINKS = {
 #       ('https://twitter.com/sefk', 'X'),
         ('https://www.linkedin.com/in/sefkloninger/', "LinkedIn"),
         ('https://github.com/sefk', 'GitHub'),
-        ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html', 'Resume'),
-        ('https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.pdf', 'PDF'),
+        ('/sef-resume/sef-kloninger-resume.html', 'Resume'),
+        ('/sef-resume/sef-kloninger-resume.pdf', 'PDF'),
     ),
 }
 
