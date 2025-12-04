@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 04 Dec 2025 06:28:37 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Enshittification</title><link>https://sef.kloninger.com/posts/enshittification/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div style="float:right; align:right; width:30%; font-size:150px"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 04 Dec 2025 06:38:38 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>No More Blog Comments</title><link>https://sef.kloninger.com/posts/enshittification/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div style="float:right; align:right; width:30%; font-size:150px"&gt;
   &lt;p align="center"&gt;💩&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;I turned off comments on this blog today. Nobody had posted a comment in a long
-time, and the only reason I'd kept them on all these years were to continue to
-show a couple of comments on some very old posts.&lt;/p&gt;
-&lt;p&gt;Why? Because &lt;a href="https://disqus.com/"&gt;Disqus&lt;/a&gt;, the provider lo these many years, has gone down the
-&lt;a href="https://en.wikipedia.org/wiki/Enshittification"&gt;Enshittification&lt;/a&gt; path. They started running a bunch of link-spam in place of
-the comment box. Of course they did. I captured a screenshot, which you can
-&lt;a href="https://sef.kloninger.com/f/disqus-enshittified.png"&gt;take a peek at&lt;/a&gt;. Boo.&lt;/p&gt;
-&lt;p&gt;Shame on me for entrusting this company to handle content for my personal site
-in the first place. Isn't that the whole point of writing and maintaining an
-old-school blog? Sigh.&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/enshittification/</guid><pubDate>Thu, 04 Dec 2025 00:15:00 GMT</pubDate></item><item><title>Three Months</title><link>https://sef.kloninger.com/posts/three-months/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;I've been &lt;a href="https://sef.kloninger.com/posts/leaving-google"&gt;off work&lt;/a&gt; for about three months now. It's a
+&lt;p&gt;I turned off comments on this site today. Up 'til now the good people at
+&lt;a href="https://disqus.com/"&gt;Disqus&lt;/a&gt; had provided me with a free service for commenting that had worked
+well for ten-plus years.&lt;/p&gt;
+&lt;p&gt;Why? Because Disqus appears to have gone down the &lt;a href="https://en.wikipedia.org/wiki/Enshittification"&gt;enshittification&lt;/a&gt; path.
+They started running a bunch of link-spam right above the comment box on all my
+pages. Of course they did. I captured a &lt;a href="https://sef.kloninger.com/f/disqus-enshittified.png"&gt;screenshot&lt;/a&gt; if you want to see, boo.&lt;/p&gt;
+&lt;p&gt;Shame on me for entrusting a company to handle content for my personal site in
+the first place. Isn't controlling things the whole point of this old-school
+blog business? Not a big loss, nobody had posted a comment in a long time. But
+still.&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/enshittification/</guid><pubDate>Thu, 04 Dec 2025 00:15:00 GMT</pubDate></item><item><title>Three Months</title><link>https://sef.kloninger.com/posts/three-months/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;I've been &lt;a href="https://sef.kloninger.com/posts/leaving-google"&gt;off work&lt;/a&gt; for about three months now. It's a
 good occasion to take stock of how that's going. In a word, it's been &lt;strong&gt;great&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/activities.jpeg" alt="Meme from the movie \" step brothers showing men playing in a bedroom with the caption have so much room for activities. width="50%"&gt;&lt;/p&gt;
 &lt;ul&gt;
