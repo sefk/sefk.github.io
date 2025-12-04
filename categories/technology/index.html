@@ -85,7 +85,33 @@ bg-dark
 
         </div>
     </header><div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/leaving-google/" class="u-url">Leaving Google</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/enshittification/" class="u-url">Enshittification</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="../../posts/enshittification/" rel="bookmark">
+            <time class="published dt-published" datetime="2025-12-03T16:15:00-08:00" itemprop="datePublished" title="2025-12-03 16:15">2025-12-03 16:15</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div style="float:right; align:right; width:30%; font-size:150px">
+  <p align="center">💩</p>
+</div>
+
+<p>I turned off comments on this blog today. Nobody had posted a comment in a long
+time, and the only reason I'd kept them on all these years were to continue to
+show a couple of comments on some very old posts.</p>
+<p>Why? Because <a href="https://disqus.com/">Disqus</a>, the provider lo these many years, has gone down the
+<a href="https://en.wikipedia.org/wiki/Enshittification">Enshittification</a> path. They started running a bunch of link-spam in place of
+the comment box. Of course they did. I captured a screenshot, which you can
+<a href="../../f/disqus-enshittified.png">take a peek at</a>. Boo.</p>
+<p>Shame on me for entrusting this company to handle content for my personal site
+in the first place. Isn't that the whole point of writing and maintaining an
+old-school blog? Sigh.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/leaving-google/" class="u-url">Leaving Google</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Sef Kloninger
@@ -443,91 +469,6 @@ want to do something <strong>worthwhile</strong>.</p>
 <p>You can always get to my resume from the header here, or via this <a href="http://bit.ly/sef-resume">short
 link</a>. I'm open to a bunch of things, just no <a href="https://www.youtube.com/watch?v=VEgu7jdc_fs">kick boxing</a>.  Let's
 have coffee/drink or take a walk.</p>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/aws/" class="u-url">Lessons from Three Years in AWS</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Sef Kloninger
-            </span></p>
-            <p class="dateline">
-            <a href="../../posts/aws/" rel="bookmark">
-            <time class="published dt-published" datetime="2015-04-24T00:10:00-07:00" itemprop="datePublished" title="2015-04-24 00:10">2015-04-24 00:10</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p><img style="float:right" class="postimage" src="../../f/aws.png" alt="AWS Logo" width="30%"></p>
-<p>I've spent the last three years building and operating web sites
-with Amazon Web Services and here are a few lessons I've learned. 
-But I first have to come clean that I'm a fan of AWS with only
-casual experience with other IAAS/PAAS platforms.</p>
-<p><strong>S3 Is Amazing</strong>. They made the right engineering choices and
-compromises: cheap, practically infinitely scalable, fast enough,
-with good availability. $0.03/GB/mo covers up for a lot of sins.
-Knowing it's there changes how you build systems.</p>
-<p><strong>IAM Machine Roles From The Start</strong>. IAM with <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html">Instance Metadata</a>
-is a powerful way to manage secrets and rights. Trouble is you can't add
-to existing machines. Provision with machine roles in big categories
-(e.g. app servers, utility machines, databases) at the start, even if 
-just placeholders.</p>
-<p><strong>Availability Zoness Are Only Mostly Decoupled</strong>. After the 2011
-<a href="http://www.networkworld.com/article/2202805/cloud-computing/amazon-ec2-outage-calls--availability-zones--into-question.html">us-east-1 outage</a> we were reassured that a coordinated 
-outage wouldn't happen again, but it happened again just
-<a href="https://www.reddit.com/r/aws/comments/2zpag7/aws_internal_dns_outage/">last month</a>.</p>
-<p><strong>They Will Lock You In And You'll Like It</strong>. They secondary services
-work well, are cheap, and are handy. I'm speaking of SQS, SES,
-Glacier, even Elastic Transcoder. Who <em>wants</em> to run a durable queue
-again?</p>
-<p><strong>CloudFormation No</strong>. It's tough to get right. My
-objection isn't programming in YAML, I don't mind writing Ansible plays, it's the
-complexity/structure of CloudFormation that is impenetrable. Plus
-even if you get it working once, you'd never run it again on something
-that is running.</p>
-<p><strong>Boto Yes</strong>. Powerful and expressive. Don't script the CLI, use
-Boto. Easy as pie.</p>
-<p><strong>Qualify Machines Before Use</strong>. Some VMs have lousy networking,
-presumably due to a chatty same-host or same-rack neighbor. Test
-for loss and latency to other hosts you own and on EBS. (I've used
-home-grown scripts, don't know of a standard open-source widget,
-someone should write one).</p>
-<p><strong>VPC Yes</strong>. If you have machines talking to each other (i.e. not a
-lone machine doing something lonely) then put them in a VPC. It's not
-hard.</p>
-<p><strong>NAT No</strong>. You think that'll improve security, but it will just
-introduce SPOFS and capacity chokepoints. Give your machines publicly
-routable IP's and use security groups.</p>
-<p><strong>Network ACLs Are A Pain</strong>. Try to get as far as you can with just security
-groups.</p>
-<p><strong>You'll Peer VPC's Someday</strong>. Choose non-overlapping subnet IP ranges
-at the start. It's hard to change later.</p>
-<p><strong>Spot Instances Are Tricky</strong>. They're only For a very specific use
-case that likely isn't yours. Setting up a test network? You can
-spend the money you save by using spot on swear jar fees.</p>
-<p><strong>Pick a Management Toolset</strong>. Ansible, Chef, all those things aren't
-<em>all</em> that different when it comes down to it. Just don't dither back
-and forth. There's a little bit of extra Chef love w/ AWS but not enough to tip
-the scales in your decision I'd reckon. </p>
-<p><strong>Tech Support Is Terrible</strong>. My <a href="http://www.wavefront.com/">last little
-startup</a> didn't get much out of the <a href="https://aws.amazon.com/premiumsupport/">business level tech
-support</a> we bought. We needed it so we could call in to get
-help when we needed it, and we used that for escalating some problems.
-It was nice to have a number to call when I urgently need to up a
-system limit, say. But debugging something real, like a networking
-problem? Pretty rough.</p>
-<p><strong>...Unless You Are Big</strong>. Stanford, on the other hand, had a named
-rep who was responsive and helpful. I guess she was sales, but I
-used her freely on support issues and she worked the backchannels
-for us. Presumably this is what any big/important customer would
-get, that's just not you, sorry.</p>
-<p><strong>The Real Power Is On Demand</strong>. I'm reaffirming cloud
-koolaid here. Running this way lets you build and run systems
-differently, <em>much better</em>. I've relied on the cloud this to bring
-up emergency capacity. I've used it to convert a class of machines
-on the fly to the double-price double-RAM tier when hitting a
-surprising capacity crunch. There are a whole class of problems
-that get much easier when you can have 2x the machines for just a
-little while.  When someone comes to you with that cost/benefit
-spreadsheet arguing why you should self-host, that's when you need
-your file of "the cloud saved my bacon" stories at the ready.</p>
     </div>
     </article>
 </div>
