@@ -1,5 +1,5 @@
 <!--
-.. title: Enshittification
+.. title: No More Blog Comments
 .. slug: enshittification
 .. date: 2025-12-03 16:15:00 UTC-08:00
 .. tags: Technology
@@ -10,19 +10,19 @@
   <p align="center">💩</p>
 </div>
 
-I turned off comments on this blog today. Nobody had posted a comment in a long
-time, and the only reason I'd kept them on all these years were to continue to
-show a couple of comments on some very old posts.
+I turned off comments on this site today. Up 'til now the good people at
+[Disqus][] had provided me with a free service for commenting that had worked
+well for ten-plus years.
 
-Why? Because [Disqus], the provider lo these many years, has gone down the
-[Enshittification][] path. They started running a bunch of link-spam in place of
-the comment box. Of course they did. I captured a screenshot, which you can
-[take a peek at][ss]. Boo.
+Why? Because Disqus appears to have gone down the [enshittification][] path.
+They started running a bunch of link-spam right above the comment box on all my
+pages. Of course they did. I captured a [screenshot][] if you want to see, boo.
 
-Shame on me for entrusting this company to handle content for my personal site
-in the first place. Isn't that the whole point of writing and maintaining an
-old-school blog? Sigh.
+Shame on me for entrusting a company to handle content for my personal site in
+the first place. Isn't controlling things the whole point of this old-school
+blog business? Not a big loss, nobody had posted a comment in a long time. But
+still.
 
 [Enshittification]: https://en.wikipedia.org/wiki/Enshittification
 [Disqus]: https://disqus.com/
-[ss]: /f/disqus-enshittified.png
+[screenshot]: /f/disqus-enshittified.png
