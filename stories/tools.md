@@ -14,8 +14,6 @@ from. All the pieces I use are free.
 - **[GitHub Pages][]**. The [README][] describes the authoring/publish workflow.
 - **[CloudFlare][]**
 - **[Let's Encrypt][]** for self-signed TLS certificates.
-- **[Disqus][]** for comments. I picked them years ago and frankly I'm surprised
-they're still a going concern. I'm ready to drop them though [if needed][shit].
 - **[Google Analytics][]**
 
 **[My resume][]** is hard-coded simple HTML. It's formatted the way you would
@@ -78,7 +76,7 @@ mac has proven remarkably durable.
 My GPG key is [`4C79 48F2 2057 0647 D573  937B AFD1 2F02 88AC 23B2`](../../f/sef-public-gpg-key-2015-06.asc).
 Don't really use anymore.
 
-[gpg]:      http://pgp.mit.edu/pks/lookup?op=vindex&search=0x1C97549F426D2123
+[gpg]: http://pgp.mit.edu/pks/lookup?op=vindex&search=0x1C97549F426D2123
 
 **Google Calendar and Tasks**. I use my calendar as my journal and todos too.
 There are much fancier systems for keeping and managing task lists but I keep
@@ -89,8 +87,6 @@ coming back to the basic one.
 [Github Pages]:     https://pages.github.com/
 [CloudFlare]:       https://www.cloudflare.com/
 [Let's Encrypt]:    https://letsencrypt.org/
-[Disqus]:           https://disqus.com/
-[shit]:             https://en.wikipedia.org/wiki/Enshittification
 [Google Analytics]: https://analytics.google.com/
 [README]:           https://github.com/sefk/sefk.github.io/blob/dev/README.md
 [My resume]:        https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.html
