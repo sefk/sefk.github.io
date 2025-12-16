@@ -37,8 +37,8 @@ Now that Nikola has moved over to Python 3 we have a little bit more to set thin
 
 ```bash
 cd ./sefk.github.io
-python3 -m venv .
-source ./bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 ```
 
 You'll want to `` `source ./bin/activate` `` when starting up future shells.
