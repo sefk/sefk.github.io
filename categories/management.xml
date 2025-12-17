@@ -1,5 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Management)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/management.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 16 Dec 2025 02:34:25 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A Good Interview Question</title><link>https://sef.kloninger.com/posts/interview-question/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/python.png" alt="Python language logo" width="25%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Management)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/management.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 17 Dec 2025 07:02:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Rob Reiner: "Whatever you like to do, do a lot of it. Do it every day."</title><link>https://sef.kloninger.com/posts/rob-reiner/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/rob-reiner.jpg" alt="Photo of Rob Reiner from Wikipedia, source Neil Grabowsky / Montclair Film Festival" width="30%"&gt;&lt;/p&gt;
+&lt;p&gt;I was fortunate to have had a talk and meal with Rob Reiner some years back. I
+wanted to take a moment to share this story on the sad occasion of his death
+this week.&lt;/p&gt;
+&lt;p&gt;It was 2003 or so. I lived and worked for Akamai in Boston.  I went back and
+forth to our San Mateo office. There was a red eye from San Jose to Boston that
+I'd take home. Back then the San Jose airport was smaller than it is now, and
+was especially quiet at the evenings. Flight curfews meant not many flights left
+that time of night which means not a lot of dinner options. So McDonald's it
+was.&lt;/p&gt;
+&lt;p&gt;Rob Reiner was in line right in front of me! He was traveling with some
+assistant-type person. I tend to not want to bother celebrities in public, but I
+was moved to say something.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sef&lt;/strong&gt;: Hello Mr. Reiner. Forgive me but I just wanted to say how much I enjoy
+your work. I'm a really big fan.&lt;/p&gt;
+&lt;p&gt;He has this big grin and offers his hand.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rob Reiner&lt;/strong&gt;: Hi! What's your name? Thanks for introducing yourself. What have
+I done that you liked?&lt;/p&gt;
+&lt;p&gt;I don't think this was some admission question, I think he genuinely just wanted
+to know. And I know his films pretty well at this point. &lt;em&gt;When Harry Met Sally&lt;/em&gt;
+is his most popular work, but what most people would probably answer would be &lt;em&gt;A
+Few Good Men&lt;/em&gt;. That had been up for Best Picture ten years prior.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sef&lt;/strong&gt;: &lt;em&gt;The Princess Bride&lt;/em&gt;, hands down. I love the story and I love what you
+did with it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rob Reiner&lt;/strong&gt;: I'm glad you said that. That's my favorite too.&lt;/p&gt;
+&lt;p&gt;I got what I was hoping for at this point. I thanked him and started to beg off
+to give him space to order his burger and have dinner in peace. But no. In that
+loud, New Yorker voice, he said "C'mon, let's have cheeseburgers!" and offered
+me a seat at a table. How could I say no? The three of us all sat.&lt;/p&gt;
+&lt;p&gt;We had a nice talk over dinner. He asked questions and seemed genuinely
+interested in what I did -- work, family. But the highlight was toward the end.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rob Reiner&lt;/strong&gt;: What else can I answer for you?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sef&lt;/strong&gt;: What would you tell someone early in their career?&lt;/p&gt;
+&lt;p&gt;At this point I was about thirty years old, so hardly &lt;em&gt;that&lt;/em&gt; early in my own
+career, but I was asking in a genuine way. He answered straight away.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rob Reiner&lt;/strong&gt;: &lt;mark&gt;Whatever you like to do, do a lot of it. Do it every
+day.&lt;/mark&gt; Me, I like writing so I try to do that of it every day if I can. 
+That's how you get good.&lt;/p&gt;
+&lt;p&gt;then told a few stories about he meets people who don't do this. I guess when
+you're someone like him people asking you frequently for jobs or if you'd
+produce their movie or whatnot. He said that he'd ask them what was the last
+thing they'd written, or what they were working on now, or what'd they'd written
+today. And he could tell if they did it often and did it for fun. If it was a
+chore and a burden that was a bad sign.&lt;/p&gt;
+&lt;p&gt;(BTW, I've used this when hiring people who are even the least bit technical,
+even managers. I ask them to write some code, even just a little bit. Do they
+relish or dread it? Does it seem like they've done it recently? You can tell a
+lot from how they react, which is more important than the answer itself.)&lt;/p&gt;
+&lt;p&gt;I was struck by what a nice and interesting, and interested, person Rob Reiner
+was. It was incredibly generous for him to spend time with a fanboy when he
+could be off duty and just enjoying his cheeseburger. What a gem.&lt;/p&gt;</description><category>Life</category><category>Management</category><guid>https://sef.kloninger.com/posts/rob-reiner/</guid><pubDate>Wed, 17 Dec 2025 07:00:00 GMT</pubDate></item><item><title>A Good Interview Question</title><link>https://sef.kloninger.com/posts/interview-question/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/python.png" alt="Python language logo" width="25%"&gt;&lt;/p&gt;
 &lt;p&gt;I liked the question that I got when interviewing at YouTube in 2015. At Google
 then we'd have an interview panel of four or five people, each assigned to cover
 a different area. &lt;a href="https://www.linkedin.com/in/billy-biggs-7ab1023/"&gt;Billy Biggs&lt;/a&gt; was the TL on my panel asked to evaluate
@@ -411,48 +461,4 @@ This one is important for me personally since I have a weird first name. If you 
 &lt;/p&gt;&lt;p&gt;
 One final word: this isn't a slam on you hardworking IT guys and gals who keep important things running and have to enforce the rules you're given. Instead, I'm speaking to the bad policies (usually stemming from bad cultures) that can put you into bad positions. If you are at such a place, hunker down and pray for daylight.
 
- &lt;/p&gt;</description><category>Engineering</category><category>Management</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/201205engineering-culture-litmus-tests/</guid><pubDate>Thu, 17 May 2012 23:01:44 GMT</pubDate></item><item><title>"I Absorb Uncertainty"</title><link>https://sef.kloninger.com/posts/absorb-uncertainty/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;
-It was my first day at Akamai.  They were still small enough that the all new employees had group lunch with the CEO, George Conrades.
-
-
-&lt;/p&gt;&lt;p&gt;
-For those who don't know him, George is flat out impressive. Partially that comes from being smart, thoughtful, and well spoken. But it also comes from being comfortable in &lt;strong&gt;big&lt;/strong&gt; jobs. Prior to Akamai, George was CEO of BBN and GM of IBM United States, part of his thirty year career at IBM.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-Someone asked George what he did as CEO, and George unpacked his stock answer. Something about products, people, and finances.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-The new hire followed up: "No, George, what do &lt;strong&gt;you&lt;/strong&gt; actually &lt;strong&gt;do&lt;/strong&gt;?" It was a pointed question, and a bit smart-alecky. But it was also genuine, and George took it seriously. His answer stuck with me.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-"I absorb uncertainty," George said.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-He explained: If you get this many bright people together you're bound to have differences of opinion. Those can escalate into a real disagreement. Soon it gets heated and feelings and reputations are at stake. When this happens, the CEO's job is to hear and follow the discussion, know when forward progress isn't being made, and then make a decision. And then communicate that decision clearly so everyone can move on.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-Making a decision absorbs uncertainty. Uncertainty disempowers your people and paralyzes your organization. A good CEO doesn't let that happen.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-Now that's a good leader.  Thanks, George.
-
-
-
-&lt;/p&gt;&lt;p&gt;
-PS - Googling around for this phrase, I see others might have used it too.  One is Vittorio Cassoni, reported by Esther Dyson (&lt;a href="http://online.wsj.com/article/00FE1687-EE39-415D-A5C7-CA9948ED3CF6.html" target="_blank"&gt;video&lt;/a&gt;). But in my book, credit goes to GHC.
-
-
-
- &lt;/p&gt;</description><category>Management</category><guid>https://sef.kloninger.com/posts/absorb-uncertainty/</guid><pubDate>Thu, 03 May 2012 19:41:28 GMT</pubDate></item></channel></rss>
+ &lt;/p&gt;</description><category>Engineering</category><category>Management</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/201205engineering-culture-litmus-tests/</guid><pubDate>Thu, 17 May 2012 23:01:44 GMT</pubDate></item></channel></rss>
