@@ -19,9 +19,9 @@ home from San Jose. Back then the San Jose airport was smaller than it is now,
 and was especially quiet at the evenings. Not a lot of dinner options, so
 McDonald's it was.
 
-One day I recognized Rob Reiner in line right in front of me! He was traveling
-with some assistant-type person, patiently waiting. I tend to not bother
-celebrities in public, but I was moved to say something.
+That day I was surprised to recognize Rob Reiner in line right in front of me!
+He was traveling with some assistant-type person, patiently waiting. I tend to
+not bother celebrities in public, but I was moved to say something.
 
 **Sef**: Hello Mr. Reiner. Forgive me but I just wanted to say how much I enjoy
 your work. I'm a really big fan.
@@ -29,20 +29,20 @@ your work. I'm a really big fan.
 **Rob Reiner** (big grin): Hi! What's your name? Thanks for introducing
 yourself. What have I done that you like?
 
-I think he genuinely wanted to know. And of course I knew his films &mdash;
-_When Harry Met Sally_ was the probably the most popular, _A Few Good Men_
-was the one that had been up for Best Picture. Great films! And _Spinal
-Tap_, of course.
+I think he genuinely wanted to know. I knew his big films pretty well &mdash;
+_When Harry Met Sally_ was the most popular, _A Few Good Men_ had been up for
+Best Picture, _Spinal Tap_ is well, Spinal Tap. These are all really great
+films.
 
 **Sef**: _The Princess Bride_, hands down. I love the story and I love what you
 did with it.
 
 **Rob Reiner**: I'm glad you said that. That's my favorite too.
 
-Hearing that was more than I'd hoped for. I thanked him and backed away so he
+Hearing that was more than I'd hoped for. I thanked him and begged off so he
 could order his burger and have dinner in peace. But no, in that New Yorker
-voice and with a big smile he said "C'mon, let's have cheeseburgers!" and
-offered me a seat at a table. The three of us all sat.
+voice and with a big smile he said, "C'mon, let's have cheeseburgers!" The three
+of us all sat.
 
 We had a nice talk over dinner. He asked questions and seemed genuinely
 interested in what I did -- work, family. But the highlight was toward the end.
