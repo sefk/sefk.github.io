@@ -61,7 +61,7 @@ career, but I was asking in a genuine way. He answered straight away.
 day.</mark> Me, I like writing so I try to do that of it every day if I can. 
 That's how you get good.
 
-then told a few stories about he meets people who don't do this. I guess when
+He then told a few stories about he meets people who don't do this. I guess when
 you're someone like him people asking you frequently for jobs or if you'd
 produce their movie or whatnot. He said that he'd ask them what was the last
 thing they'd written, or what they were working on now, or what'd they'd written
