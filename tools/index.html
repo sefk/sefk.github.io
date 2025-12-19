@@ -92,54 +92,57 @@ from. All the pieces I use are free.</p>
 <ul>
 <li>
 <strong><a href="https://pages.github.com/">GitHub Pages</a></strong>. The <a href="https://github.com/sefk/sefk.github.io/blob/dev/README.md">README</a> describes the authoring/publish workflow.</li>
-<li><strong><a href="https://www.cloudflare.com/">CloudFlare</a></strong></li>
+<li>
+<strong><a href="https://www.cloudflare.com/">CloudFlare</a></strong> for Delivery.</li>
 <li>
 <strong><a href="https://letsencrypt.org/">Let's Encrypt</a></strong> for self-signed TLS certificates.</li>
 <li><strong><a href="https://analytics.google.com/">Google Analytics</a></strong></li>
 </ul>
-<p><strong><a href="https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.html">My resume</a></strong> is hard-coded simple HTML. It's formatted the way you would
-format something back in 1998: just barely css, tables with colspans for layout.
- <code>wkhtmltopdf</code> renders HTML into a <a href="https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.pdf">PDF</a>, orchestrated by good old fashioned
-<code>make</code>. I know there are much better ways to do the content and workflow these
-days.</p>
+<h3>My Resume</h3>
+<p>I maintain two versions of my resume, in <a href="https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.html">HTML</a> and <a href="https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.pdf">PDF</a> formats. It's
+written in hand-coded simple HTML. It's formatted the way you would format
+something back in 1998: just barely css; tables and colspans for layout.  I use
+the utility <code>wkhtmltopdf</code> to render HTML into a <a href="https://rawgit.com/sefk/sef-resume/master/sef-kloninger-resume.pdf">PDF</a>. This is just a wrapper
+around the webkit engine, and seems to work OK, but I'd switch to something more
+modern and distributed via <code>brew</code> if I could find one.</p>
+<p>Formatting is orchestrated by good old fashioned <code>make</code>. I know there are much
+better ways to do the content and workflow these days.</p>
 <h3>Editors</h3>
-<p><strong>vim</strong>. Still my go-to tool for writing: text, code (unless it's
-very complex), simple lists, meeting minutes. Lots to like about it: ubiquity,
-speed, easy on the fingers.</p>
-<p><strong>VS Code</strong> with VI keybindings.</p>
+<p><strong>vim</strong>. Still my go-to tool for writing: text, code (unless it's very complex),
+simple lists, meeting minutes. Lots to like about it: ubiquity, speed, easy on
+the fingers.</p>
+<p><strong>Visual Studio Code</strong> with VI keybindings. This still works well, but with
+every passing day I worry about it becoming bloated and enshittified.</p>
 <p><strong>Google Docs</strong>.</p>
 <h3>The Command Line</h3>
-<p><strong>ITerm2</strong>. A nice replacement for the mac's built-in Terminal.app. It's always
-worked well and seems to be maintained well.</p>
+<p><strong>Ghostty</strong>. Terminal replacement. After a long-time user, I switched from
+iTerm2 to Ghostty as it seems just a little cleaner and more Mac-like.</p>
 <p><strong>Autojump</strong>. Watches what you <code>cd</code> to and then you can quickly jump back there.
 <code>j posts</code> takes me to my "posts" directory. Magic.</p>
 <p><strong>Zsh</strong>. I finally switched over to Zsh when MacOS switched the default shell to
-Zsh several years ago (Catalina). I've found <strong><a href="https://ohmyz.sh/">Oh My Zsh</a></strong> to be
-a helpful way to manage themes and plugins. I expected it's trick of updating
-every time you open a window to be more onerous, but it hasn't troubled me yet.</p>
+Zsh several years ago (Catalina). I've found <strong><a href="https://ohmyz.sh/">Oh My Zsh</a></strong> to be a helpful
+way to manage themes and plugins. I expected its trick of checking for updates
+updating every time you open a window to be onerous, but it hasn't troubled me
+yet.</p>
 <h3>Mac Things</h3>
-<p><strong><a href="https://github.com/lwouis/alt-tab-macos">Alt-tab</a></strong>. My key
-requirement is I need to quickly switch between windows with alt-tab. I prefer
-lots of windows to tabs, and alt-tab is hard-wired into my fingers from so many
-years on Windows.  And the Mac has never done this right, differentiating
-between windows and apps (why?). Prior apps I tried for this were Witch and
-Hyperswitch, but it's hard to find one that's reliable.</p>
-<p><strong><a href="https://manytricks.com/moom/">Moom</a></strong>. I've tried a bunch of Mac
-things for moving windows around and this one is the best. The hotkey I've
-assigned is easy to type (ctrl-shift-semicolon), pushing once gets me to some
-nice instant macros (top, right, full screen) but the best thing is pushing
-<em>twice</em> to bring up this nice little micro-manager where I can place windows
-manually. Well done and works.</p>
-<p><strong><a href="https://fiplab.com/apps/copyclip-for-mac">CopyClip</a></strong>. I've come
-to rely on a clipbar manager quite a bit and it's one of the things I miss most
-when moving to another OS like Linux or Chrome. This one has always done the job
-for me.</p>
-<p><strong><a href="https://brew.sh/">Homebrew</a></strong>. The missing package manager for the
-mac has proven remarkably durable.</p>
+<p><strong><a href="https://brew.sh/">Homebrew</a></strong>. The missing package manager for the Mac has proven remarkably
+durable.</p>
+<p><strong><a href="https://fiplab.com/apps/copyclip-for-mac">CopyClip</a></strong>. I've come to rely on a clipboard manager quite a bit and it's
+one of the things I miss most when moving to another OS. This one has always
+done the job for me.</p>
+<p><strong><a href="https://manytricks.com/moom/">Moom</a></strong>. I've tried a bunch of Mac things for moving windows around and
+this one is the best. The hotkey I've assigned is easy to type
+(ctrl-shift-semicolon), pushing once gets me to some nice instant macros (top,
+right, full screen) but the best thing is pushing <em>twice</em> to bring up this nice
+little micro-manager where I can place windows manually. Well done and works.</p>
+<p><strong><a href="https://github.com/lwouis/alt-tab-macos">Alt-Tab</a></strong>. My key requirement is I need to quickly switch between
+windows with alt-tab. I prefer lots of windows to tabs, and alt-tab is
+hard-wired into my fingers from so many years on Windows.  And the Mac has never
+done this right, differentiating between windows and apps (why?). Prior apps I
+tried for this were Witch and Hyperswitch, but it's hard to find one that's
+reliable.</p>
 <h3>Productivity and Apps</h3>
-<p><strong>Gmail</strong>. Keep trying other things but keep coming back. </p>
-<p>My GPG key is <a href="f/sef-public-gpg-key-2015-06.asc"><code>4C79 48F2 2057 0647 D573  937B AFD1 2F02 88AC 23B2</code></a>.
-Don't really use anymore.</p>
+<p><strong>Gmail</strong>. Keep trying other things but keep coming back.</p>
 <p><strong>Google Calendar and Tasks</strong>. I use my calendar as my journal and todos too.
 There are much fancier systems for keeping and managing task lists but I keep
 coming back to the basic one.</p>
