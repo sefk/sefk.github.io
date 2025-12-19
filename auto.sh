@@ -1,4 +1,3 @@
 #!/bin/bash
 
-nikola build
-nikola serve
+find files posts stories | entr -r -s 'nikola build && nikola serve'
