@@ -60,6 +60,21 @@ nikola auto
 
 ## Troubleshooting
 
+### `nikola auto` event processing error
+
+```bash
+> nikola auto
+[2025-12-16 14:24:38] ERROR: Nikola: RuntimeError: There is no current event loop in thread 'MainThread'.
+[2025-12-16 14:24:38] WARNING: Nikola: To see more details, run Nikola in debug mode (set environment variable NIKOLA_DEBUG=1) or use NIKOLA_SHOW_TRACEBACKS=1
+```
+
+The `auto.sh` one-liner checked into the root of this repo is a workaround. It
+does a simple build and serve whenever something changes. It's not as good as a
+proper `nikola auto` because that nicely injects some javascript that reloads
+the page.
+
+Needs `brew install entr` on MacOS, similar things exist for other OS'es.
+
 ### lxml error
 
 If you're seeing this:
