@@ -60,7 +60,7 @@ nikola auto
 
 ## Troubleshooting
 
-### `nikola auto` event processing error
+### `nikola auto` event processing error ([#3881](https://github.com/getnikola/nikola/issues/3881))
 
 ```bash
 > nikola auto
