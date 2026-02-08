@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 04 Jan 2026 23:44:36 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Data Is Worth Preserving</title><link>https://sef.kloninger.com/posts/data-preservation/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/drp-logo.jpg" alt="Logo for the Data Rescue Project" width="30%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 08 Feb 2026 20:05:41 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Data Is Worth Preserving</title><link>https://sef.kloninger.com/posts/data-preservation/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/drp-logo.jpg" alt="Logo for the Data Rescue Project" width="30%"&gt;&lt;/p&gt;
 &lt;p&gt;Governments should produce &lt;a href="https://en.wikipedia.org/wiki/Public_good"&gt;public goods&lt;/a&gt;, like navigation aids and roads. That
 seems like a reasonable thing to expect of a functioning government, right?&lt;/p&gt;
 &lt;p&gt;I consider data a public good too. We all benefit from accurate maps,
@@ -143,7 +143,7 @@ ten-year anniversary with the company, give or take. We'd had a couple of
 packages like this at Google before (&lt;a href="https://9to5google.com/2025/01/30/pixel-android-voluntary-exit-employees/"&gt;news&lt;/a&gt;), basically the same deal you'd
 get if you got laid off. But this was the first one put in front of those of us
 working in one of the revenue engines of the company — I worked on Search.&lt;/p&gt;
-&lt;p&gt;I wasn't aiming to leave. I liked the work, I had a good team and &lt;a href="https://www.linkedin.com/in/michaelwinton/"&gt;boss&lt;/a&gt;. But
+&lt;p&gt;I wasn't aiming to leave. I liked the work, I had a good team and boss. But
 the package was enough to kickstart a discussion, "why &lt;em&gt;not&lt;/em&gt; now?". My wife and
 I ran numbers and discussed our futures. I clicked the button. My last day as a
 Googler was earlier this week, October 4th.&lt;/p&gt;
