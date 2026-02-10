@@ -10,20 +10,20 @@
 alt="Screenshot of Daisy Disk with a disk nearly full" width=50%>
 
 Recently I've been beguiled by my local disk being almost full. This is on my
-every day Mac running Tahoe 26.2.
+everyday M3 MacBook Air running the latest Tahoe 26.2.
 
-The tool I turn to to debug space issues is [Daisy Disk]. It's a great tool that
-I've used for years. In this case it showed the problem, but wasn't able to fix
-it.
+For years I've used [Daisy Disk] to debug space issues like this, it's great.
+In this case it showed the problem, but wasn't able to narrow down what the
+problem was nor remove it.
 
-Not have any success through the normal means, I wrote the developer of Daisy
-Disk, [Oleg]. They explained the problem and suggested a workaround. It worked
-like a champ! I included the explanation below and screenshots showing before
-and after.
+Not have any success through the normal means ("Googling around"), I wrote the
+developer of Daisy Disk, [Oleg]. They explained the problem and suggested a
+workaround. It worked like a champ! I included the explanation below and
+screenshots showing before and after.
 
-I want to say thanks to Oleg for their help! And this is a nice opportunity to
+I want to say thanks to Oleg for their help. And this is a nice opportunity to
 say thank you to indie developers in general who are often so helpful sharing
-their expertise.
+their expertise. What a wonderful and important part of our community.
 
 <hr>
 
