@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://sef.kloninger.com/categories/appreciation.xml</loc>
-  <lastmod>2026-02-10T16:14:00Z</lastmod>
+  <lastmod>2026-02-10T16:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/civics.xml</loc>
@@ -47,7 +47,7 @@
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/tech.xml</loc>
-  <lastmod>2026-02-10T16:14:00Z</lastmod>
+  <lastmod>2026-02-10T16:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/technology.xml</loc>
@@ -59,10 +59,10 @@
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/rss.xml</loc>
-  <lastmod>2026-02-10T16:19:00Z</lastmod>
+  <lastmod>2026-02-10T16:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/sitemap.xml</loc>
-  <lastmod>2026-02-10T16:19:00Z</lastmod>
+  <lastmod>2026-02-10T16:29:00Z</lastmod>
  </sitemap>
 </sitemapindex>
