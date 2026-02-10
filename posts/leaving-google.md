@@ -10,11 +10,11 @@
 
 An offer of a Voluntary Exit from Google HR landed in my mailbox right around my
 ten-year anniversary with the company, give or take. We'd had a couple of
-packages like this at Google before ([news][]), basically the same deal you'd
+packages like this at Google before ([news]), basically the same deal you'd
 get if you got laid off. But this was the first one put in front of those of us
 working in one of the revenue engines of the company &mdash; I worked on Search.
 
-I wasn't aiming to leave. I liked the work, I had a good team and [boss][]. But
+I wasn't aiming to leave. I liked the work, I had a good team and boss. But
 the package was enough to kickstart a discussion, "why _not_ now?". My wife and
 I ran numbers and discussed our futures. I clicked the button. My last day as a
 Googler was earlier this week, October 4th.
@@ -42,4 +42,3 @@ I'm excited about the next phase. I feel fortunate to have some time to focus on
 what's important.
 
 [news]: https://9to5google.com/2025/01/30/pixel-android-voluntary-exit-employees/
-[boss]: https://www.linkedin.com/in/michaelwinton/

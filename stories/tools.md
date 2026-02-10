@@ -16,6 +16,8 @@ from. All the pieces I use are free.
 - **[Let's Encrypt][]** for self-signed TLS certificates.
 - **[Google Analytics][]**
 
+The source code is in a public [github repo].
+
 [Nikola]:           https://getnikola.com/
 [static]:           /posts/switching-to-static/
 [Github Pages]:     https://pages.github.com/
@@ -23,6 +25,7 @@ from. All the pieces I use are free.
 [Let's Encrypt]:    https://letsencrypt.org/
 [Google Analytics]: https://analytics.google.com/
 [README]:           https://github.com/sefk/sefk.github.io/blob/dev/README.md
+[github repo]:      https://github.com/sefk/sefk.github.io/tree/dev
 
 ## My Resume
 
