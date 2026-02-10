@@ -78,7 +78,62 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="data-preservation/" class="u-url">Data Is Worth Preserving</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="daisy-disk/" class="u-url">Thanks, Daisy Disk</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="daisy-disk/" rel="bookmark">
+            <time class="published dt-published" datetime="2026-02-10T08:00:21-08:00" itemprop="datePublished" title="2026-02-10 08:00">2026-02-10 08:00</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p><img style="float:right" class="postimage" src="../f/daisy-disk-full.png" alt="Screenshot of Daisy Disk with a disk nearly full" width="50%"></p>
+<p>Recently I've been beguiled by my local disk being almost full. This is on my
+every day Mac running Tahoe 26.2.</p>
+<p>The tool I turn to to debug space issues is <a href="https://daisydiskapp.com/">Daisy Disk</a>. It's a great tool that
+I've used for years. In this case it showed the problem, but wasn't able to fix
+it.</p>
+<p>Not have any success through the normal means, I wrote the developer of Daisy
+Disk, <a href="https://daisydiskapp.com/about/">Oleg</a>. They explained the problem and suggested a workaround. It worked
+like a champ! I included the explanation below and screenshots showing before
+and after.</p>
+<p>I want to say thanks to Oleg for their help! And this is a nice opportunity to
+say thank you to indie developers in general who are often so helpful sharing
+their expertise.</p>
+<hr>
+<p>Oleg's explanation:</p>
+<ul>
+<p>
+This error has recently been reported by a few other users as well, and our
+investigation shows that it's caused by a new bug in macOS, introduced in one
+of its recent updates. (It didn't happen before). The symptom is exactly like
+in your case - a Time Machine snapshot becomes damaged for unknown reason, and
+it cannot be deleted in the normal way - not only in DaisyDisk, but also not
+in Terminal, using the tmutil command-line tool. Moreover, the tmutil tool
+doesn't even list the damaged snapshot. It becomes almost entirely lost, while
+it still consumes disk space.
+</p>
+
+<p>
+We have found the following workaround solution. Please launch the system's Disk
+Utility (/Applications/Utilities/Disk Utility.app) and in the left sidebar,
+select your data volume, likely called "Macintosh HD - Data". Note that there
+will also be another volume called "Macintosh HD" (without "Data"), but you
+should select specifically "Macintosh HD - Data". Then select the View \&gt; Show
+APFS Snapshots menu command. In the lower part of the window, you will see the
+damaged Time Machine snapshot in the list. Please select it and then click the
+"-" (minus) button at the bottom to delete it.
+</p>
+</ul>
+<p>And screenshots showing the before and after. Note the two broken snapshots in
+the list below.</p>
+<p><img alt="Disk utility showing disk almost full" src="../f/daisy-disk-before.png"></p>
+<p>After</p>
+<p><img alt="Disk utility showing disk back to normal" src="../f/daisy-disk-after.png"></p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="data-preservation/" class="u-url">Data Is Worth Preserving</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Sef Kloninger
@@ -408,67 +463,6 @@ today. It looks to just be parked by a German domain registrar.
 Google results don't seem to be a problem. Maybe it's available for
 something interesting?</p>
 <p><em>Thanks to Jane Manning for her review, she was there too.</em></p>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="experiments/" class="u-url">Learn From Experiments</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Sef Kloninger
-            </span></p>
-            <p class="dateline">
-            <a href="experiments/" rel="bookmark">
-            <time class="published dt-published" datetime="2025-09-23T11:00:00-07:00" itemprop="datePublished" title="2025-09-23 11:00">2025-09-23 11:00</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p><img style="float:right" class="postimage" src="../f/experiment.jpeg" alt="Line art of an experiment" width="60%"></p>
-<p><em>What's the value of an experiment or a prototype?</em></p>
-<p>There are all kinds of ways to have impact. A feature can improve user
-experience; a hardening project can reduce risk of a production outage;
-refactoring or test coverage can improve velocity or make software easier and
-safer to maintain. And good engineers care a lot about impact. While it's not
-the only thing that matters (the "how" is important too), if you start with
-impact, you'll generally do well.</p>
-<p>An engineer's job to put ideas into practice, to make things. But sometimes
-we're not sure what to make. Or we think we know, but aren't sure it'll work.
-The best way to figure that out is often running a set of experiments, or maybe
-building a prototype (an n=1 experiment).</p>
-<p>But crucially, an experiment doesn't have value itself. An experiment is
-successful only if we've learned something. The intent of the test rig or
-prototype isn't to live on. Indeed, knowing that we plan to throw it away is
-part of what makes it fast and cheap to build, and it shouldn't have all the
-trappings of production-quality software, like test coverage and code reviews.</p>
-<p>So how do we ensure that value gets delivered? When you work in a team or a
-company people turn over. It's not just enough to do the experiment, you need to
-write it up and share your results. To produce a good writeup, you should:</p>
-<ol>
-<li>
-<p><strong>Figure out the hypothesis(es)</strong> you're testing. Often this is in the form
-   of one or more questions. For prototypes, it might be a boolean, i.e. we can
-   build X that will work. But even then, consider what "done" means. Stating
-   your hypothesis in terms of a metric is often easiest. NB I find the
-   goal/driver/guardrail framework from Thanks <a href="https://research.google/people/author3770/?&amp;type=google">Diane</a>'s book helpful,
-   <a href="https://www.google.com/books/edition/Trustworthy_Online_Controlled_Experiment/TFjPDwAAQBAJ?hl=en&amp;gbpv=1">Trustworthy Online Controlled Experiments</a>. </p>
-</li>
-<li>
-<p><strong>State your assumptions and method</strong>. This is where you usually get the most
-   feedback. Note that this usually isn't a project plan, as your reviewers
-   usually don't care how long it takes or what happens when. </p>
-</li>
-<li>
-<p><strong>Seek feedback</strong> from your peers. Publish the doc stating the method to have
-   smart people poke holes in your plan and make sure what you're measuring will
-   actually address the hypothesis. And then when the experiment is done, get it
-   reviewed by someone senior to ensure that your work supports your conclusion.
-   This also spreads knowledge about this work (both that you're doing it, and
-   the results) so the overall organization benefits.</p>
-</li>
-</ol>
-<p>The artifact produced has many benefits. It's useful for you as you discuss
-follow-on work; it's useful come performance evaluation time. But most
-importantly, it benefits the organization. Contemporary and future peers can
-learn from this work. </p>
-<p>You'll benefit from taking the time to write it up, the reviewers learn from
-reading, and it'll live on past your time with the team.</p>
     </div>
     </article>
 </div>
