@@ -103,7 +103,7 @@
  </url>
  <url>
   <loc>https://sef.kloninger.com/archive.html</loc>
-  <lastmod>2026-02-10T16:38:00Z</lastmod>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/</loc>
@@ -127,11 +127,11 @@
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/engineering/</loc>
-  <lastmod>2025-12-16T05:35:00Z</lastmod>
+  <lastmod>2026-02-14T18:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/engineering/index-1.html</loc>
-  <lastmod>2026-02-10T15:47:00Z</lastmod>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/family/</loc>
@@ -143,11 +143,11 @@
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/life/index-1.html</loc>
-  <lastmod>2026-02-10T16:38:00Z</lastmod>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/life/index-2.html</loc>
-  <lastmod>2026-02-10T16:12:00Z</lastmod>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/management/</loc>
@@ -155,7 +155,7 @@
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/management/index-1.html</loc>
-  <lastmod>2026-02-10T15:47:00Z</lastmod>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/media/</loc>
@@ -175,11 +175,11 @@
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/technology/index-1.html</loc>
-  <lastmod>2026-02-10T15:47:00Z</lastmod>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/technology/index-2.html</loc>
-  <lastmod>2026-02-10T15:47:00Z</lastmod>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/war-stories/</loc>
@@ -187,7 +187,7 @@
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/</loc>
-  <lastmod>2026-02-10T15:47:00Z</lastmod>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/201203those-little-utilities/</loc>
@@ -224,6 +224,10 @@
  <url>
   <loc>https://sef.kloninger.com/posts/201205fizzbuzz-for-managers/</loc>
   <lastmod>2025-12-16T05:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/posts/201205i-absorb-uncertainty/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/201206two-things-at-once/</loc>
@@ -282,6 +286,10 @@
   <lastmod>2025-12-16T05:35:00Z</lastmod>
  </url>
  <url>
+  <loc>https://sef.kloninger.com/posts/airmail/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://sef.kloninger.com/posts/arthroscopy/</loc>
   <lastmod>2025-12-16T05:35:00Z</lastmod>
  </url>
@@ -298,8 +306,20 @@
   <lastmod>2025-12-16T05:35:00Z</lastmod>
  </url>
  <url>
+  <loc>https://sef.kloninger.com/posts/browsers-for-web-apps/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://sef.kloninger.com/posts/chicken_soup/</loc>
   <lastmod>2025-12-16T05:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/posts/coding-on-a-flight/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/posts/concentration/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/consume-produce-public/</loc>
@@ -310,12 +330,24 @@
   <lastmod>2026-02-10T15:47:00Z</lastmod>
  </url>
  <url>
+  <loc>https://sef.kloninger.com/posts/daleks/</loc>
+  <lastmod>2026-02-14T00:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/posts/danny-lewin-42nd-birthday/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://sef.kloninger.com/posts/data-preservation/</loc>
   <lastmod>2025-12-16T05:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/earworm/</loc>
   <lastmod>2025-12-16T05:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/posts/engineering-culture-litmus-tests/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/enshittification/</loc>
@@ -330,6 +362,14 @@
   <lastmod>2025-12-16T05:35:00Z</lastmod>
  </url>
  <url>
+  <loc>https://sef.kloninger.com/posts/fizzbuzz-for-managers/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/posts/halloween-2013/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://sef.kloninger.com/posts/halloween-2014/</loc>
   <lastmod>2025-12-16T05:35:00Z</lastmod>
  </url>
@@ -338,36 +378,40 @@
   <lastmod>2025-12-16T05:35:00Z</lastmod>
  </url>
  <url>
+  <loc>https://sef.kloninger.com/posts/halloween-candy-data/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://sef.kloninger.com/posts/hand-tally/</loc>
   <lastmod>2025-12-16T05:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/index-1.html</loc>
-  <lastmod>2026-02-10T16:38:00Z</lastmod>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/index-2.html</loc>
-  <lastmod>2026-02-10T15:47:00Z</lastmod>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/index-3.html</loc>
-  <lastmod>2026-02-10T15:47:00Z</lastmod>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/index-4.html</loc>
-  <lastmod>2026-02-10T15:47:00Z</lastmod>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/index-5.html</loc>
-  <lastmod>2026-02-10T15:47:00Z</lastmod>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/index-6.html</loc>
-  <lastmod>2026-02-10T16:38:00Z</lastmod>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/index-7.html</loc>
-  <lastmod>2026-02-10T16:12:00Z</lastmod>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/interview-question/</loc>
@@ -376,6 +420,14 @@
  <url>
   <loc>https://sef.kloninger.com/posts/job-15/</loc>
   <lastmod>2025-12-16T05:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/posts/knr-c-label/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/posts/launch-day/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/learn-to-write/</loc>
@@ -390,12 +442,28 @@
   <lastmod>2025-12-16T05:35:00Z</lastmod>
  </url>
  <url>
+  <loc>https://sef.kloninger.com/posts/measuring-an-engineering-manager/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://sef.kloninger.com/posts/mentoring/</loc>
   <lastmod>2025-12-16T05:35:00Z</lastmod>
  </url>
  <url>
+  <loc>https://sef.kloninger.com/posts/my-sabbatical/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://sef.kloninger.com/posts/naming/</loc>
   <lastmod>2025-12-16T05:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/posts/on-line-education/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/posts/online-ed-retention/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/oppenheimer/</loc>
@@ -422,6 +490,10 @@
   <lastmod>2025-12-16T05:35:00Z</lastmod>
  </url>
  <url>
+  <loc>https://sef.kloninger.com/posts/seven-things/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://sef.kloninger.com/posts/sponsoring/</loc>
   <lastmod>2025-12-16T05:35:00Z</lastmod>
  </url>
@@ -430,8 +502,16 @@
   <lastmod>2025-12-16T05:35:00Z</lastmod>
  </url>
  <url>
+  <loc>https://sef.kloninger.com/posts/taking-down-100000-sites/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://sef.kloninger.com/posts/thick-apps/</loc>
   <lastmod>2025-12-16T05:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/posts/those-little-utilities/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/three-months/</loc>
@@ -444,6 +524,22 @@
  <url>
   <loc>https://sef.kloninger.com/posts/tips/</loc>
   <lastmod>2025-12-16T05:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/posts/too-many-clouds/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/posts/two-things-at-once/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/posts/why-so-long/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/posts/wip-folders-with-ls/</loc>
+  <lastmod>2026-02-16T22:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/working-in-the-open/</loc>

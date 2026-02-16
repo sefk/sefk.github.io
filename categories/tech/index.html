@@ -84,7 +84,59 @@ bg-dark
 
         </div>
     </header><div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/daisy-disk/" class="u-url">Thanks, Daisy Disk</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/daleks/" class="u-url">Vibe Coding</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="../../posts/daleks/" rel="bookmark">
+            <time class="published dt-published" datetime="2026-02-13T16:02:00-08:00" itemprop="datePublished" title="2026-02-13 16:02">2026-02-13 16:02</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p><img style="float:right" class="postimage" src="../../f/daleks-1984.jpeg" alt="Original Daleks game from 1984" width="45%"></p>
+<p>When I was fourteen years old, I spent the summer hand-coding a video game. I'd
+gone to a family gathering and my older cousin Erik brought his Mac from
+college. I loved it, of course. I thought the <a href="https://www.macintoshrepository.org/3913-daleks">Daleks</a> game he had running on it
+was so cool. The screenshot on the right is from that Classic Mac website and is
+exactly how I remember it looking back then.</p>
+<p>I was mesmerized. I'd played video games on my computer, like Hard Hat Mack
+(<a href="https://www.youtube.com/watch?v=zanShXo4btw">gameplay video</a>), that were state of the art back then. But those were
+coded by someone else. This seemed like something I could do.</p>
+<p>Once I got back home to Fresno I got to work. I spent most of the rest of that
+summer writing a clone of that game on my Apple //e. It was all done in
+hand-coded 6502 assembly, I didn't even have an assembler back then, so I had to
+do all the opcodes by hand. I had to learn twos complement math to do all the
+branch offsets, in pencil on graph paper. The hardest part was getting smooth
+animation working, since the Apple //e graphics system was super quirky,
+especially the non-linear frame buffer. The high-res graphics section of this
+<a href="https://en.wikipedia.org/wiki/Apple_II_graphics">wikipedia page</a> describes it well enough.</p>
+<p>I remember it took about two months to get it working. It's the first time I can
+remember being in a flow state. It began my lifelong love of computers.</p>
+<p><img style="float:right" class="postimage" src="../../f/daleks-2026.png" alt="Screenshot of my recent Daleks game" width="50%"></p>
+<p>Now, forty years later I'm <a href="../../posts/leaving-google/">on a break</a> and taking a <a href="https://continuingstudies.stanford.edu/courses/detail/20252_TECH-42">Vibe Coding class</a>. Our
+week one assignment is to code up a game. Out of nostalgia, I chose my old
+friend, Daleks. <strong>In about two hours, and spending about $10, I had a working
+prototype.</strong> I spent another couple of hours cleaning things up and getting into
+version control. You can <a href="../../daleks">play it here</a>.</p>
+<p>This was my first experience with Replit. Super impressive. This was also what
+the rest of the students in the class used, and most of what they came up with
+were much fancier than what I did, with 3d graphics and more interactive game
+play. Although I also heard from some students that they ended up spending much
+more to get their game stood up.</p>
+<p>What was also impressive about this first experience with Vibe Coding was
+dealing with backend and integration issues. To get their code deployed onto
+this site required wiring up a GitHub workflow. Replit handled that just fine
+too, although it took a couple of round trips.</p>
+<p>Earlier today I asked Gemini to get local hosting running. There were some
+permissions and crashing issues, and I had to resist the urge to run from the
+command line myself and start Googling error messages like I normally do.
+Instead I had Gemini debug and fix its own errors, which it did quickly.</p>
+<p>If you'd like to check out the code or see some construction notes, they can all
+be found in <a href="https://github.com/sefk/daleks">GitHub</a>.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/daisy-disk/" class="u-url">Thanks, Daisy Disk</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Sef Kloninger
@@ -224,11 +276,10 @@ leadership and a return to effective government. Assert your rights and
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
         captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
-    </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-30366531-1"></script><script>
+    </script><!-- Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-30366531-1"></script><script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-30366531-1');
 </script>
 </body>

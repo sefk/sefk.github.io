@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Feb 2026 16:38:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Thanks, Daisy Disk</title><link>https://sef.kloninger.com/posts/daisy-disk/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/daisy-disk-full.png" alt="Screenshot of Daisy Disk with a disk nearly full" width="50%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 16 Feb 2026 22:29:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Vibe Coding</title><link>https://sef.kloninger.com/posts/daleks/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/daleks-1984.jpeg" alt="Original Daleks game from 1984" width="45%"&gt;&lt;/p&gt;
+&lt;p&gt;When I was fourteen years old, I spent the summer hand-coding a video game. I'd
+gone to a family gathering and my older cousin Erik brought his Mac from
+college. I loved it, of course. I thought the &lt;a href="https://www.macintoshrepository.org/3913-daleks"&gt;Daleks&lt;/a&gt; game he had running on it
+was so cool. The screenshot on the right is from that Classic Mac website and is
+exactly how I remember it looking back then.&lt;/p&gt;
+&lt;p&gt;I was mesmerized. I'd played video games on my computer, like Hard Hat Mack
+(&lt;a href="https://www.youtube.com/watch?v=zanShXo4btw"&gt;gameplay video&lt;/a&gt;), that were state of the art back then. But those were
+coded by someone else. This seemed like something I could do.&lt;/p&gt;
+&lt;p&gt;Once I got back home to Fresno I got to work. I spent most of the rest of that
+summer writing a clone of that game on my Apple //e. It was all done in
+hand-coded 6502 assembly, I didn't even have an assembler back then, so I had to
+do all the opcodes by hand. I had to learn twos complement math to do all the
+branch offsets, in pencil on graph paper. The hardest part was getting smooth
+animation working, since the Apple //e graphics system was super quirky,
+especially the non-linear frame buffer. The high-res graphics section of this
+&lt;a href="https://en.wikipedia.org/wiki/Apple_II_graphics"&gt;wikipedia page&lt;/a&gt; describes it well enough.&lt;/p&gt;
+&lt;p&gt;I remember it took about two months to get it working. It's the first time I can
+remember being in a flow state. It began my lifelong love of computers.&lt;/p&gt;
+&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/daleks-2026.png" alt="Screenshot of my recent Daleks game" width="50%"&gt;&lt;/p&gt;
+&lt;p&gt;Now, forty years later I'm &lt;a href="https://sef.kloninger.com/posts/leaving-google/"&gt;on a break&lt;/a&gt; and taking a &lt;a href="https://continuingstudies.stanford.edu/courses/detail/20252_TECH-42"&gt;Vibe Coding class&lt;/a&gt;. Our
+week one assignment is to code up a game. Out of nostalgia, I chose my old
+friend, Daleks. &lt;strong&gt;In about two hours, and spending about $10, I had a working
+prototype.&lt;/strong&gt; I spent another couple of hours cleaning things up and getting into
+version control. You can &lt;a href="https://sef.kloninger.com/daleks"&gt;play it here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This was my first experience with Replit. Super impressive. This was also what
+the rest of the students in the class used, and most of what they came up with
+were much fancier than what I did, with 3d graphics and more interactive game
+play. Although I also heard from some students that they ended up spending much
+more to get their game stood up.&lt;/p&gt;
+&lt;p&gt;What was also impressive about this first experience with Vibe Coding was
+dealing with backend and integration issues. To get their code deployed onto
+this site required wiring up a GitHub workflow. Replit handled that just fine
+too, although it took a couple of round trips.&lt;/p&gt;
+&lt;p&gt;Earlier today I asked Gemini to get local hosting running. There were some
+permissions and crashing issues, and I had to resist the urge to run from the
+command line myself and start Googling error messages like I normally do.
+Instead I had Gemini debug and fix its own errors, which it did quickly.&lt;/p&gt;
+&lt;p&gt;If you'd like to check out the code or see some construction notes, they can all
+be found in &lt;a href="https://github.com/sefk/daleks"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</description><category>Tech</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/daleks/</guid><pubDate>Sat, 14 Feb 2026 00:02:00 GMT</pubDate></item><item><title>Thanks, Daisy Disk</title><link>https://sef.kloninger.com/posts/daisy-disk/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/daisy-disk-full.png" alt="Screenshot of Daisy Disk with a disk nearly full" width="50%"&gt;&lt;/p&gt;
 &lt;p&gt;Recently I've been beguiled by my local disk being almost full. This is on my
 everyday M3 MacBook Air running the latest Tahoe 26.2.&lt;/p&gt;
 &lt;p&gt;For years I've used &lt;a href="https://daisydiskapp.com/"&gt;Daisy Disk&lt;/a&gt; to debug space issues like this, it's great.
@@ -331,75 +370,4 @@ follow-on work; it's useful come performance evaluation time. But most
 importantly, it benefits the organization. Contemporary and future peers can
 learn from this work. &lt;/p&gt;
 &lt;p&gt;You'll benefit from taking the time to write it up, the reviewers learn from
-reading, and it'll live on past your time with the team.&lt;/p&gt;</description><category>Data</category><category>Engineering</category><category>Management</category><guid>https://sef.kloninger.com/posts/experiments/</guid><pubDate>Tue, 23 Sep 2025 18:00:00 GMT</pubDate></item><item><title>Sponsoring</title><link>https://sef.kloninger.com/posts/sponsoring/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/sponsor.png" alt="One person helping another while being graded" width="40%"&gt;&lt;/p&gt;
-&lt;p&gt;Sponsorship is using your position and influence to help someone get ahead. It's
-similar in many ways to mentorship, the topic of my &lt;a href="https://sef.kloninger.com/posts/mentoring"&gt;last post&lt;/a&gt;.
-But sponsorship is a bit tricker. Most people understand mentorship
-and have good feelings about it. Sponsorship is a bit less familiar and might
-even feel a bit unseemly — at least it used to feel that way to me.&lt;/p&gt;
-&lt;p&gt;Although I'd heard the concept before, a talk &lt;a href="https://www.carlaspearls.com/"&gt;Carla Harris&lt;/a&gt; gave at Google in
-2022 made an impression on me and brought it to the forefront. (She has a &lt;a href="https://www.youtube.com/watch?v=gpE_W50OTUc"&gt;2019
-TED Talk&lt;/a&gt; that hits a lot of the same points). She spoke about the value of
-sponsorship, both on the receiving end early in her career and now as a sponsor
-herself. More than just her description, what I most appreciated was her candor.
-It gave me a permission structure to use this concept myself. I started using it
-with junior engineers when thinking about their careers; I thought about it
-myself when debugging how some decision played out. It also helped me to think
-of it less judgmentally. Now I see it as being thoughtful and pragmatic about
-how decisions are made.&lt;/p&gt;
-&lt;p&gt;So what it it? Sponsoring is similar to mentoring in that it's an investment in
-someone, but the mechanism is different. Mentoring is a commitment to
-problem-solve issues as they come up, teach skills, and serve as a sounding
-board, amongst other things. Sponsoring is more strategic. The sponsor is
-committing to understand the sponsored's goals and strengths, and (here's the
-important part) help them get ahead. The time commitment isn't as large, but the
-&lt;em&gt;actual commitment&lt;/em&gt; is greater. Assuming they see eye-to-eye, the sponsor
-commits to &lt;em&gt;putting their reputation on the line&lt;/em&gt; to help the their person
-achieve their goals. Some examples would be vouching for the sponsored during a
-staffing conversations or seeking out and advocating for them when opportunities
-comes up.&lt;/p&gt;
-&lt;p&gt;In some ways, sponsorship acknowledges and even co-opts the "you have to know
-somebody" way that the world actually works. Underrepresented groups can benefit
-from sponsorship as a way to wedge into existing power structures. If that
-describes you, consider asking for someone to explicitly sponsor you; if you're
-in a traditionally privileged group, consider sponsoring someone who isn't so
-much.  My Google peer &lt;a href="https://www.linkedin.com/in/rachel-grey-b69319/"&gt;Rachel&lt;/a&gt; observed: "women are often over-mentored and
-under-sponsored."&lt;/p&gt;
-&lt;h4&gt;Maybe You're Going Up For Promotion&lt;/h4&gt;
-&lt;p&gt;With this in mind, let's apply this to promotions.&lt;/p&gt;
-&lt;p&gt;Try as we might to bring rigor and de-bias these decisions, they are complicated
-and are made by real-world humans. Organizations rely on their senior people to
-bring their experience, knowledge, and judgment to bear.&lt;/p&gt;
-&lt;p&gt;Consider how the promotion decision will be made for your case. One key question
-is &lt;strong&gt;who'll be in the room&lt;/strong&gt;? This isn't just who is invited and who will
-attend, but more who will be &lt;strong&gt;influential&lt;/strong&gt; in the discussion and decision
-making process, and &lt;strong&gt;for what&lt;/strong&gt; kinds of questions. Not everyone has an equal
-voice.&lt;/p&gt;
-&lt;p&gt;Say you're an engineer going up for promotion to senior engineer. Then likely a
-senior tech lead (not necessarily &lt;em&gt;your&lt;/em&gt; tech lead!) will be asked to speak to
-the quality of your work (e.g. good code, considered alternatives,
-future-proofing). A senior manager will likely be asked to assess how well you
-worked with others and made good decisions. And these are just two of the
-factors — there will be many others depending on your role and level. You
-need to work down the rubric and think through who'll be asked to attest to each
-area as it comes up. Who will be asked to speak to concerns when they're raised
-("was that &lt;em&gt;really&lt;/em&gt; that hard?")?&lt;/p&gt;
-&lt;p&gt;Sometimes you might know who the key person will be, but often you won't. Enlist
-your manager or other senior leaders to think it through with you. Game plan the
-decision out.&lt;/p&gt;
-&lt;p&gt;And then assess their level of support. This may be something you can do
-yourself (if you have a relationship already) or maybe you'll need your
-manager's help. But somehow you need to ask them, as candidly as you can, "If
-asked about X, what will you say?" It can sometimes be hard to get an honest
-answer, so you may need to push a little. Reassure them you'd much rather know
-now if you have their support or not and you're not going to hold it against
-them.&lt;/p&gt;
-&lt;p&gt;If you don't have their support yet, that's OK. Think about work you can do
-to change that over time.&lt;/p&gt;
-&lt;h4&gt;Day-To-Day Decisions&lt;/h4&gt;
-&lt;p&gt;Not all decisions are as high-stakes as promotions. Leaders make decisions all
-the time, like whom to trust to lead a project or run a meeting. I like to think
-about these small-but-important decisions too in the context of sponsorship. Is
-your manager your sponsor? What about your TL?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Thanks to Josh Loftus, Maren Stever, Jane Manning, and Rachel Grey for their
-reviews.&lt;/em&gt;&lt;/p&gt;</description><category>Management</category><guid>https://sef.kloninger.com/posts/sponsoring/</guid><pubDate>Sun, 30 Mar 2025 20:00:00 GMT</pubDate></item></channel></rss>
+reading, and it'll live on past your time with the team.&lt;/p&gt;</description><category>Data</category><category>Engineering</category><category>Management</category><guid>https://sef.kloninger.com/posts/experiments/</guid><pubDate>Tue, 23 Sep 2025 18:00:00 GMT</pubDate></item></channel></rss>

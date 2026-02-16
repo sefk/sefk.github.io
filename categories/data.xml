@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Data)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/data.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 16 Dec 2025 05:35:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Learn From Experiments</title><link>https://sef.kloninger.com/posts/experiments/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/experiment.jpeg" alt="Line art of an experiment" width="60%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Data)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/data.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 16 Feb 2026 22:29:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Learn From Experiments</title><link>https://sef.kloninger.com/posts/experiments/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/experiment.jpeg" alt="Line art of an experiment" width="60%"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;What's the value of an experiment or a prototype?&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;There are all kinds of ways to have impact. A feature can improve user
 experience; a hardening project can reduce risk of a production outage;
@@ -116,9 +116,7 @@ pen project; the scrappy can-do Russians used pencils.  Well, this
 story has been &lt;a href="http://www.snopes.com/business/genius/spacepen.asp"&gt;debunked by the good people at Snopes&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;And second, I'd like to plug Tony and Tom's "day job", &lt;a href="http://stonehearth.net/"&gt;Stonehearth&lt;/a&gt;.
 I think of it as Starcraft meets Minecraft.  I am so eager to play
-it when it lands.&lt;/p&gt;</description><category>Data</category><guid>https://sef.kloninger.com/posts/hand-tally/</guid><pubDate>Thu, 30 Oct 2014 16:20:00 GMT</pubDate></item><item><title>Halloween Down 20%, But Still Solid</title><link>https://sef.kloninger.com/posts/201311halloween-2013/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-440" style="border: 0px;" alt="halloween2013-ticker" src="https://sef.kloninger.com/f/halloween2013-ticker-300x300.jpg" width="126" height="126"&gt;
-
-
+it when it lands.&lt;/p&gt;</description><category>Data</category><guid>https://sef.kloninger.com/posts/hand-tally/</guid><pubDate>Thu, 30 Oct 2014 16:20:00 GMT</pubDate></item><item><title>Halloween Down 20%, But Still Solid</title><link>https://sef.kloninger.com/posts/halloween-2013/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img class="alignright  wp-image-440" style="border: 0px;" alt="halloween2013-ticker" src="https://sef.kloninger.com/f/halloween2013-ticker-300x300.jpg" width="126" height="126"&gt;&lt;/p&gt;
 &lt;p&gt;
 This year we had a sizable number of trick-or-treaters at our house in the Willows neighborhood of Menlo Park. The 303 we saw was down from our high last year, but abou the same as the year before that.
 
@@ -158,10 +156,7 @@ It was outstanding having my friend &lt;a href="https://twitter.com/amylameyer"&
 
 
 &lt;/p&gt;&lt;p&gt;
-As always, the Google Spreadsheet with the graphs and raw data is publicly available &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;here&lt;/a&gt;. Check it out!
-
-
-&lt;/p&gt;</description><category>Data</category><guid>https://sef.kloninger.com/posts/201311halloween-2013/</guid><pubDate>Sun, 03 Nov 2013 05:25:17 GMT</pubDate></item><item><title>Halloween Candy Data</title><link>https://sef.kloninger.com/posts/201210halloween-candy-data/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;Update with actuals from Halloween 2012:  It was a banner year.
+As always, the Google Spreadsheet with the graphs and raw data is publicly available &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;here&lt;/a&gt;. Check it out!&lt;/p&gt;</description><category>Data</category><guid>https://sef.kloninger.com/posts/halloween-2013/</guid><pubDate>Sun, 03 Nov 2013 05:25:17 GMT</pubDate></item><item><title>Halloween Candy Data</title><link>https://sef.kloninger.com/posts/halloween-candy-data/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;Update with actuals from Halloween 2012:  It was a banner year.
 
 
 &lt;/p&gt;&lt;p align="center"&gt;
@@ -184,9 +179,9 @@ As you can see we live in a pretty popular neighborhood.  Each year has its own
 
 &lt;/p&gt;&lt;p&gt;
 &lt;/p&gt;&lt;ul&gt;
-	&lt;li&gt;&lt;strong&gt;2009&lt;/strong&gt; - our first year in our new neighborhood. We had no idea that this was such a popular trick-or-treating spot. I ran out of candy at 8:00, turned out the lights, and hid in the back of the house. Shameful.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;2010&lt;/strong&gt; - a fine year.  No complaints.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;2011&lt;/strong&gt; - we moved to a new house just around the corner.  I figured the quieter street would mean fewer kids -- not so! What I didn't appreciate was the attractive power of my next door neighbor's &lt;em&gt;insane&lt;/em&gt; decorations. Luckily my wife came back with emergency supplies just in time.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;2009&lt;/strong&gt; - our first year in our new neighborhood. We had no idea that this was such a popular trick-or-treating spot. I ran out of candy at 8:00, turned out the lights, and hid in the back of the house. Shameful.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;2010&lt;/strong&gt; - a fine year.  No complaints.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;2011&lt;/strong&gt; - we moved to a new house just around the corner.  I figured the quieter street would mean fewer kids -- not so! What I didn't appreciate was the attractive power of my next door neighbor's &lt;em&gt;insane&lt;/em&gt; decorations. Luckily my wife came back with emergency supplies just in time.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -205,4 +200,4 @@ During the busiest 15 minute period last year I was serving a kid every twenty s
 
 
 &lt;/p&gt;&lt;p&gt;
-If you come by my house this year you'll see me again, handing out candy with one hand and scribbling hash marks with the other.   I'll update the data in my &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;public spreadsheet&lt;/a&gt;.&lt;/p&gt;</description><category>Data</category><category>Life</category><guid>https://sef.kloninger.com/posts/201210halloween-candy-data/</guid><pubDate>Wed, 31 Oct 2012 07:19:35 GMT</pubDate></item></channel></rss>
+If you come by my house this year you'll see me again, handing out candy with one hand and scribbling hash marks with the other.   I'll update the data in my &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;public spreadsheet&lt;/a&gt;.&lt;/p&gt;</description><category>Data</category><category>Life</category><guid>https://sef.kloninger.com/posts/halloween-candy-data/</guid><pubDate>Wed, 31 Oct 2012 07:19:35 GMT</pubDate></item></channel></rss>

@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about War Stories)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/war-stories.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 16 Dec 2025 05:35:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A Good Interview Question</title><link>https://sef.kloninger.com/posts/interview-question/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/python.png" alt="Python language logo" width="25%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about War Stories)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/war-stories.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 16 Feb 2026 22:29:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Vibe Coding</title><link>https://sef.kloninger.com/posts/daleks/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/daleks-1984.jpeg" alt="Original Daleks game from 1984" width="45%"&gt;&lt;/p&gt;
+&lt;p&gt;When I was fourteen years old, I spent the summer hand-coding a video game. I'd
+gone to a family gathering and my older cousin Erik brought his Mac from
+college. I loved it, of course. I thought the &lt;a href="https://www.macintoshrepository.org/3913-daleks"&gt;Daleks&lt;/a&gt; game he had running on it
+was so cool. The screenshot on the right is from that Classic Mac website and is
+exactly how I remember it looking back then.&lt;/p&gt;
+&lt;p&gt;I was mesmerized. I'd played video games on my computer, like Hard Hat Mack
+(&lt;a href="https://www.youtube.com/watch?v=zanShXo4btw"&gt;gameplay video&lt;/a&gt;), that were state of the art back then. But those were
+coded by someone else. This seemed like something I could do.&lt;/p&gt;
+&lt;p&gt;Once I got back home to Fresno I got to work. I spent most of the rest of that
+summer writing a clone of that game on my Apple //e. It was all done in
+hand-coded 6502 assembly, I didn't even have an assembler back then, so I had to
+do all the opcodes by hand. I had to learn twos complement math to do all the
+branch offsets, in pencil on graph paper. The hardest part was getting smooth
+animation working, since the Apple //e graphics system was super quirky,
+especially the non-linear frame buffer. The high-res graphics section of this
+&lt;a href="https://en.wikipedia.org/wiki/Apple_II_graphics"&gt;wikipedia page&lt;/a&gt; describes it well enough.&lt;/p&gt;
+&lt;p&gt;I remember it took about two months to get it working. It's the first time I can
+remember being in a flow state. It began my lifelong love of computers.&lt;/p&gt;
+&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/daleks-2026.png" alt="Screenshot of my recent Daleks game" width="50%"&gt;&lt;/p&gt;
+&lt;p&gt;Now, forty years later I'm &lt;a href="https://sef.kloninger.com/posts/leaving-google/"&gt;on a break&lt;/a&gt; and taking a &lt;a href="https://continuingstudies.stanford.edu/courses/detail/20252_TECH-42"&gt;Vibe Coding class&lt;/a&gt;. Our
+week one assignment is to code up a game. Out of nostalgia, I chose my old
+friend, Daleks. &lt;strong&gt;In about two hours, and spending about $10, I had a working
+prototype.&lt;/strong&gt; I spent another couple of hours cleaning things up and getting into
+version control. You can &lt;a href="https://sef.kloninger.com/daleks"&gt;play it here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This was my first experience with Replit. Super impressive. This was also what
+the rest of the students in the class used, and most of what they came up with
+were much fancier than what I did, with 3d graphics and more interactive game
+play. Although I also heard from some students that they ended up spending much
+more to get their game stood up.&lt;/p&gt;
+&lt;p&gt;What was also impressive about this first experience with Vibe Coding was
+dealing with backend and integration issues. To get their code deployed onto
+this site required wiring up a GitHub workflow. Replit handled that just fine
+too, although it took a couple of round trips.&lt;/p&gt;
+&lt;p&gt;Earlier today I asked Gemini to get local hosting running. There were some
+permissions and crashing issues, and I had to resist the urge to run from the
+command line myself and start Googling error messages like I normally do.
+Instead I had Gemini debug and fix its own errors, which it did quickly.&lt;/p&gt;
+&lt;p&gt;If you'd like to check out the code or see some construction notes, they can all
+be found in &lt;a href="https://github.com/sefk/daleks"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</description><category>Tech</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/daleks/</guid><pubDate>Sat, 14 Feb 2026 00:02:00 GMT</pubDate></item><item><title>A Good Interview Question</title><link>https://sef.kloninger.com/posts/interview-question/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/python.png" alt="Python language logo" width="25%"&gt;&lt;/p&gt;
 &lt;p&gt;I liked the question that I got when interviewing at YouTube in 2015. At Google
 then we'd have an interview panel of four or five people, each assigned to cover
 a different area. &lt;a href="https://www.linkedin.com/in/billy-biggs-7ab1023/"&gt;Billy Biggs&lt;/a&gt; was the TL on my panel asked to evaluate
@@ -74,8 +113,7 @@ like it.&lt;/p&gt;
 today. It looks to just be parked by a German domain registrar.
 Google results don't seem to be a problem. Maybe it's available for
 something interesting?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Thanks to Jane Manning for her review, she was there too.&lt;/em&gt;&lt;/p&gt;</description><category>Education</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/naming/</guid><pubDate>Wed, 24 Sep 2025 05:00:00 GMT</pubDate></item><item><title>Launch Day</title><link>https://sef.kloninger.com/posts/201306launch-day/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="https://sef.kloninger.com/f/spaceshuttle-300x283.png" width="180" height="170"&gt;
-
+&lt;p&gt;&lt;em&gt;Thanks to Jane Manning for her review, she was there too.&lt;/em&gt;&lt;/p&gt;</description><category>Education</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/naming/</guid><pubDate>Wed, 24 Sep 2025 05:00:00 GMT</pubDate></item><item><title>Launch Day</title><link>https://sef.kloninger.com/posts/launch-day/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="https://sef.kloninger.com/f/spaceshuttle-300x283.png" width="180" height="170"&gt;&lt;/p&gt;
 &lt;p&gt;
 Today was launch day. It went really well.  I wanted to capture what a good launch feels like and contrast that with a more exciting launch, just five months ago.
 
@@ -131,10 +169,7 @@ Those folks at edX made some solid software.  We're happy to be working with a 
 
 
 &lt;/p&gt;&lt;p&gt;
-I just turned off half the appservers since we're fine on capacity. Now off to bed with a good feeling.
-
-&lt;/p&gt;</description><category>Education</category><category>Engineering</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/201306launch-day/</guid><pubDate>Wed, 12 Jun 2013 05:59:24 GMT</pubDate></item><item><title>The Day I Took Down 100,000 Web Sites</title><link>https://sef.kloninger.com/posts/201207taking-down-100000-sites/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright size-full wp-image-343" style="border: 0px;" title="fire" src="https://sef.kloninger.com/f/fire.png" alt="fire alarm" width="300" height="240"&gt;
-
+I just turned off half the appservers since we're fine on capacity. Now off to bed with a good feeling.&lt;/p&gt;</description><category>Education</category><category>Engineering</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/launch-day/</guid><pubDate>Wed, 12 Jun 2013 05:59:24 GMT</pubDate></item><item><title>The Day I Took Down 100,000 Web Sites</title><link>https://sef.kloninger.com/posts/taking-down-100000-sites/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img class="alignright size-full wp-image-343" style="border: 0px;" title="fire" src="https://sef.kloninger.com/f/fire.png" alt="fire alarm" width="300" height="240"&gt;&lt;/p&gt;
 &lt;p&gt;
 Every engineer has their "the day I did something very very bad" story. This is mine.
 
@@ -200,18 +235,14 @@ I learned four lessons:
 
 &lt;/p&gt;&lt;p&gt;
 &lt;/p&gt;&lt;ol&gt;
-	&lt;li&gt;&lt;strong&gt;Undo is your friend.&lt;/strong&gt; The tooling or features to revert your change will take time, but you will be happy to have it if you ever need it.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Make changes during the day.&lt;/strong&gt; Resolving a hairy problem is hard if you don't have the right people, and when the people you do have are tired and foggy. This incident might have taken hours to resolve instead of minutes in the middle of the night.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;It's not over until it's over.&lt;/strong&gt; Once in crisis mode, you're eager to be get out of it. Once the main problem is solved it is tempting to exhale, go to lunch, go back to bed, whatever. But aftereffects might take a while to show up, or may just be harder to find.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Disproportionate effects.&lt;/strong&gt; We all know that our complex systems nonlinear failure modes. Incidents like these are reminders that small changes have big effects. Said another way, even small things should be taken seriously.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Undo is your friend.&lt;/strong&gt; The tooling or features to revert your change will take time, but you will be happy to have it if you ever need it.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Make changes during the day.&lt;/strong&gt; Resolving a hairy problem is hard if you don't have the right people, and when the people you do have are tired and foggy. This incident might have taken hours to resolve instead of minutes in the middle of the night.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;It's not over until it's over.&lt;/strong&gt; Once in crisis mode, you're eager to be get out of it. Once the main problem is solved it is tempting to exhale, go to lunch, go back to bed, whatever. But aftereffects might take a while to show up, or may just be harder to find.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Disproportionate effects.&lt;/strong&gt; We all know that our complex systems nonlinear failure modes. Incidents like these are reminders that small changes have big effects. Said another way, even small things should be taken seriously.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;
-My time at Akamai had prepared me well for managing a crisis. But it's nice to have a refresher course every now and then.
-
-
-
- &lt;/p&gt;</description><category>Engineering</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/201207taking-down-100000-sites/</guid><pubDate>Wed, 25 Jul 2012 17:56:57 GMT</pubDate></item><item><title>Why Quit?  Because They Have Bigger Monitors</title><link>https://sef.kloninger.com/posts/201205engineering-culture-litmus-tests/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;
+My time at Akamai had prepared me well for managing a crisis. But it's nice to have a refresher course every now and then.&lt;/p&gt;</description><category>Engineering</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/taking-down-100000-sites/</guid><pubDate>Wed, 25 Jul 2012 17:56:57 GMT</pubDate></item><item><title>Why Quit?  Because They Have Bigger Monitors</title><link>https://sef.kloninger.com/posts/engineering-culture-litmus-tests/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;
 Good engineers are attracted to places with a strong engineering culture. But how can you see what the culture is really like from the outside? Here are my two quick-and-dirty indicators.
 
 &lt;img class="alignright size-full wp-image-230" style="border: 0px;" title="testtubes" src="https://sef.kloninger.com/f/testtubes.png" alt="" width="149" height="200"&gt;
@@ -223,9 +254,9 @@ First a word about what I mean by an engineering culture. It means engineers are
 
 &lt;p&gt;
 &lt;/p&gt;&lt;ul&gt;
-	&lt;li&gt;How are decisions made? In an engineering culture, technical people have input into what gets built, when, and by whom.  Not signoff, but a real say.&lt;/li&gt;
-	&lt;li&gt;Is there respect for the craft of making software? Coding is still creative work that requires the right time and space. Some projets are tough to predict how long they will take, and that's needs to be OK.&lt;/li&gt;
-	&lt;li&gt;Infrastructure. How hard is it for the people who know (engineers, managers) to justify to their bosses when work is needed on non-feature driven stuff? This could be in the runtime system (like scaling work on the message queue) or back office (like build systems or version control).&lt;/li&gt;
+    &lt;li&gt;How are decisions made? In an engineering culture, technical people have input into what gets built, when, and by whom.  Not signoff, but a real say.&lt;/li&gt;
+    &lt;li&gt;Is there respect for the craft of making software? Coding is still creative work that requires the right time and space. Some projets are tough to predict how long they will take, and that's needs to be OK.&lt;/li&gt;
+    &lt;li&gt;Infrastructure. How hard is it for the people who know (engineers, managers) to justify to their bosses when work is needed on non-feature driven stuff? This could be in the runtime system (like scaling work on the message queue) or back office (like build systems or version control).&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -233,7 +264,7 @@ First a word about what I mean by an engineering culture. It means engineers are
 Unfortunately, teasing this out in an interview can be tricky unless you have someone you really know and trust on the inside.
 
 &lt;/p&gt;&lt;p&gt;
-&lt;/p&gt;&lt;h2&gt;How big are the monitors?&lt;/h2&gt;
+&lt;/p&gt;&lt;h3&gt;How big are the monitors?&lt;/h3&gt;
 
 A story from a prior company. I was an engineering manager that had a retention problem. One of the engineers on my team quit to go to a smaller, hipper company. This was from my exit interview:
 
@@ -262,7 +293,7 @@ A story from a prior company. I was an engineering manager that had a retention 
 
 And now I understand that this is totally true. Places that value their people consider equipment expenses small compared to the productivity (and happiness) of their people.  The best engineers are given the best tools to do their jobs. Big monitors are a very visible sign of this.
 
-&lt;h2&gt;Can people choose their own email addresses?&lt;/h2&gt;
+&lt;h3&gt;Can people choose their own email addresses?&lt;/h3&gt;
 
 Non-engineers sometimes don't appreciate how important an email address is. It's your identity on line. A strict naming convention (first name last initial, or worse, last name first initial) indicates place that values conformity over engineer happiness. Worse, its a great way to make their people feel like cogs or "human resources," not the cool individuals that they are.
 
@@ -276,6 +307,4 @@ This one is important for me personally since I have a weird first name. If you 
 &lt;img class="alignnone size-full wp-image-235" style="border: 0px;" title="whoami" src="https://sef.kloninger.com/f/whoami.png" alt="" width="556" height="226"&gt;
 
 &lt;/p&gt;&lt;p&gt;
-One final word: this isn't a slam on you hardworking IT guys and gals who keep important things running and have to enforce the rules you're given. Instead, I'm speaking to the bad policies (usually stemming from bad cultures) that can put you into bad positions. If you are at such a place, hunker down and pray for daylight.
-
- &lt;/p&gt;</description><category>Engineering</category><category>Management</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/201205engineering-culture-litmus-tests/</guid><pubDate>Thu, 17 May 2012 23:01:44 GMT</pubDate></item></channel></rss>
+One final word: this isn't a slam on you hardworking IT guys and gals who keep important things running and have to enforce the rules you're given. Instead, I'm speaking to the bad policies (usually stemming from bad cultures) that can put you into bad positions. If you are at such a place, hunker down and pray for daylight.&lt;/p&gt;</description><category>Engineering</category><category>Management</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/engineering-culture-litmus-tests/</guid><pubDate>Thu, 17 May 2012 23:01:44 GMT</pubDate></item></channel></rss>

@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Tech)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/tech.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Feb 2026 16:29:00 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Thanks, Daisy Disk</title><link>https://sef.kloninger.com/posts/daisy-disk/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/daisy-disk-full.png" alt="Screenshot of Daisy Disk with a disk nearly full" width="50%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Tech)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/tech.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 16 Feb 2026 22:29:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Vibe Coding</title><link>https://sef.kloninger.com/posts/daleks/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/daleks-1984.jpeg" alt="Original Daleks game from 1984" width="45%"&gt;&lt;/p&gt;
+&lt;p&gt;When I was fourteen years old, I spent the summer hand-coding a video game. I'd
+gone to a family gathering and my older cousin Erik brought his Mac from
+college. I loved it, of course. I thought the &lt;a href="https://www.macintoshrepository.org/3913-daleks"&gt;Daleks&lt;/a&gt; game he had running on it
+was so cool. The screenshot on the right is from that Classic Mac website and is
+exactly how I remember it looking back then.&lt;/p&gt;
+&lt;p&gt;I was mesmerized. I'd played video games on my computer, like Hard Hat Mack
+(&lt;a href="https://www.youtube.com/watch?v=zanShXo4btw"&gt;gameplay video&lt;/a&gt;), that were state of the art back then. But those were
+coded by someone else. This seemed like something I could do.&lt;/p&gt;
+&lt;p&gt;Once I got back home to Fresno I got to work. I spent most of the rest of that
+summer writing a clone of that game on my Apple //e. It was all done in
+hand-coded 6502 assembly, I didn't even have an assembler back then, so I had to
+do all the opcodes by hand. I had to learn twos complement math to do all the
+branch offsets, in pencil on graph paper. The hardest part was getting smooth
+animation working, since the Apple //e graphics system was super quirky,
+especially the non-linear frame buffer. The high-res graphics section of this
+&lt;a href="https://en.wikipedia.org/wiki/Apple_II_graphics"&gt;wikipedia page&lt;/a&gt; describes it well enough.&lt;/p&gt;
+&lt;p&gt;I remember it took about two months to get it working. It's the first time I can
+remember being in a flow state. It began my lifelong love of computers.&lt;/p&gt;
+&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/daleks-2026.png" alt="Screenshot of my recent Daleks game" width="50%"&gt;&lt;/p&gt;
+&lt;p&gt;Now, forty years later I'm &lt;a href="https://sef.kloninger.com/posts/leaving-google/"&gt;on a break&lt;/a&gt; and taking a &lt;a href="https://continuingstudies.stanford.edu/courses/detail/20252_TECH-42"&gt;Vibe Coding class&lt;/a&gt;. Our
+week one assignment is to code up a game. Out of nostalgia, I chose my old
+friend, Daleks. &lt;strong&gt;In about two hours, and spending about $10, I had a working
+prototype.&lt;/strong&gt; I spent another couple of hours cleaning things up and getting into
+version control. You can &lt;a href="https://sef.kloninger.com/daleks"&gt;play it here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This was my first experience with Replit. Super impressive. This was also what
+the rest of the students in the class used, and most of what they came up with
+were much fancier than what I did, with 3d graphics and more interactive game
+play. Although I also heard from some students that they ended up spending much
+more to get their game stood up.&lt;/p&gt;
+&lt;p&gt;What was also impressive about this first experience with Vibe Coding was
+dealing with backend and integration issues. To get their code deployed onto
+this site required wiring up a GitHub workflow. Replit handled that just fine
+too, although it took a couple of round trips.&lt;/p&gt;
+&lt;p&gt;Earlier today I asked Gemini to get local hosting running. There were some
+permissions and crashing issues, and I had to resist the urge to run from the
+command line myself and start Googling error messages like I normally do.
+Instead I had Gemini debug and fix its own errors, which it did quickly.&lt;/p&gt;
+&lt;p&gt;If you'd like to check out the code or see some construction notes, they can all
+be found in &lt;a href="https://github.com/sefk/daleks"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</description><category>Tech</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/daleks/</guid><pubDate>Sat, 14 Feb 2026 00:02:00 GMT</pubDate></item><item><title>Thanks, Daisy Disk</title><link>https://sef.kloninger.com/posts/daisy-disk/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/daisy-disk-full.png" alt="Screenshot of Daisy Disk with a disk nearly full" width="50%"&gt;&lt;/p&gt;
 &lt;p&gt;Recently I've been beguiled by my local disk being almost full. This is on my
 everyday M3 MacBook Air running the latest Tahoe 26.2.&lt;/p&gt;
 &lt;p&gt;For years I've used &lt;a href="https://daisydiskapp.com/"&gt;Daisy Disk&lt;/a&gt; to debug space issues like this, it's great.

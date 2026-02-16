@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Engineering)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/engineering.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 16 Dec 2025 05:35:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A Good Interview Question</title><link>https://sef.kloninger.com/posts/interview-question/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/python.png" alt="Python language logo" width="25%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Engineering)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/engineering.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 16 Feb 2026 22:29:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A Good Interview Question</title><link>https://sef.kloninger.com/posts/interview-question/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/python.png" alt="Python language logo" width="25%"&gt;&lt;/p&gt;
 &lt;p&gt;I liked the question that I got when interviewing at YouTube in 2015. At Google
 then we'd have an interview panel of four or five people, each assigned to cover
 a different area. &lt;a href="https://www.linkedin.com/in/billy-biggs-7ab1023/"&gt;Billy Biggs&lt;/a&gt; was the TL on my panel asked to evaluate
@@ -202,8 +202,7 @@ in history, but secretly take CS courses on the side. If you're
 super smart like him, and can manage getting both degrees, then
 you're awesome. But don't sacrifice the BA for the BS. I would
 &lt;strong&gt;love&lt;/strong&gt; to talk to a candidate with with a History BA and a Computer
-Science MS.&lt;/p&gt;</description><category>Engineering</category><category>Technology</category><guid>https://sef.kloninger.com/posts/learn-to-write/</guid><pubDate>Sun, 26 Jan 2014 00:17:00 GMT</pubDate></item><item><title>Launch Day</title><link>https://sef.kloninger.com/posts/201306launch-day/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="https://sef.kloninger.com/f/spaceshuttle-300x283.png" width="180" height="170"&gt;
-
+Science MS.&lt;/p&gt;</description><category>Engineering</category><category>Technology</category><guid>https://sef.kloninger.com/posts/learn-to-write/</guid><pubDate>Sun, 26 Jan 2014 00:17:00 GMT</pubDate></item><item><title>Launch Day</title><link>https://sef.kloninger.com/posts/launch-day/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="https://sef.kloninger.com/f/spaceshuttle-300x283.png" width="180" height="170"&gt;&lt;/p&gt;
 &lt;p&gt;
 Today was launch day. It went really well.  I wanted to capture what a good launch feels like and contrast that with a more exciting launch, just five months ago.
 
@@ -259,10 +258,7 @@ Those folks at edX made some solid software.  We're happy to be working with a 
 
 
 &lt;/p&gt;&lt;p&gt;
-I just turned off half the appservers since we're fine on capacity. Now off to bed with a good feeling.
-
-&lt;/p&gt;</description><category>Education</category><category>Engineering</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/201306launch-day/</guid><pubDate>Wed, 12 Jun 2013 05:59:24 GMT</pubDate></item><item><title>Why Is That Feature Taking So Long?</title><link>https://sef.kloninger.com/posts/201301why-so-long/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-394" style="border: 0px;" alt="turd-polish" src="https://sef.kloninger.com/f/turd-polish.png" width="191" height="182"&gt;
-
+I just turned off half the appservers since we're fine on capacity. Now off to bed with a good feeling.&lt;/p&gt;</description><category>Education</category><category>Engineering</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/launch-day/</guid><pubDate>Wed, 12 Jun 2013 05:59:24 GMT</pubDate></item><item><title>Why Is That Feature Taking So Long?</title><link>https://sef.kloninger.com/posts/why-so-long/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img class="alignright  wp-image-394" style="border: 0px;" alt="turd-polish" src="https://sef.kloninger.com/f/turd-polish.png" width="191" height="182"&gt;&lt;/p&gt;
 &lt;p&gt;
 I've observed a recurring source of tension:  building things fast vs. do it the right way. Usually you're not lucky enough that you can do both.  This post explains a bit why we (engineers) care so much about building things right.  Even when things are overdue and our stakeholders (end-users, biz folks, product management) are pushing to just get it done.
 
@@ -277,9 +273,9 @@ I see three things driving engineers to build it right.
 
 &lt;/p&gt;&lt;p&gt;
 &lt;/p&gt;&lt;ol&gt;
-	&lt;li&gt;&lt;strong&gt;Wrong is insidious&lt;/strong&gt;. A story: early on in Class2Go every page began with a fetch of some basic page data. If there was an error on lookup we would throw a 404. Not only is "not found" the wrong message, but it also isn't helpful. It covers up all kinds of other problems, in a way that is really difficult to debug.But for an engineer, these programming messes are &lt;a href="http://en.wikipedia.org/wiki/Broken_windows_theory"&gt;broken windows&lt;/a&gt;. Not only do they cheapen the project, they encourage others to take bad shortcuts. Heck, if they can't be bothered to handle exceptions correctly, then why should I?&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Wrong is the express train to support hell.&lt;/strong&gt; Unless you leave the company or project, you'll be called upon to support your own crappy code. That is certain. And there is almost nothing worse than being dragged back to debug some old code that you never meant to become production, and is now breaking the world.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Wrong hurts your reputation as an engineer&lt;/strong&gt;. People see you taking shortcuts and infer that you are a sloppy programmer. And really they aren't wrong to do so. One habit of really good engineers is they don't leave a wake of messes behind them. They are able to do things (mostly) right even when they are moving fast.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Wrong is insidious&lt;/strong&gt;. A story: early on in Class2Go every page began with a fetch of some basic page data. If there was an error on lookup we would throw a 404. Not only is "not found" the wrong message, but it also isn't helpful. It covers up all kinds of other problems, in a way that is really difficult to debug.But for an engineer, these programming messes are &lt;a href="http://en.wikipedia.org/wiki/Broken_windows_theory"&gt;broken windows&lt;/a&gt;. Not only do they cheapen the project, they encourage others to take bad shortcuts. Heck, if they can't be bothered to handle exceptions correctly, then why should I?&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Wrong is the express train to support hell.&lt;/strong&gt; Unless you leave the company or project, you'll be called upon to support your own crappy code. That is certain. And there is almost nothing worse than being dragged back to debug some old code that you never meant to become production, and is now breaking the world.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Wrong hurts your reputation as an engineer&lt;/strong&gt;. People see you taking shortcuts and infer that you are a sloppy programmer. And really they aren't wrong to do so. One habit of really good engineers is they don't leave a wake of messes behind them. They are able to do things (mostly) right even when they are moving fast.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;
@@ -298,8 +294,7 @@ So, product manager waiting on a feature. What to do if you're waiting on an eng
 
 
 &lt;/p&gt;&lt;p&gt;
-And finally, to you product managers and biz folks who push. You are right do do so. That's all that matters to the customers, all matters at the end of the day. Keep it up.&lt;/p&gt;</description><category>Engineering</category><category>Management</category><guid>https://sef.kloninger.com/posts/201301why-so-long/</guid><pubDate>Fri, 25 Jan 2013 09:24:48 GMT</pubDate></item><item><title>The Day I Took Down 100,000 Web Sites</title><link>https://sef.kloninger.com/posts/201207taking-down-100000-sites/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright size-full wp-image-343" style="border: 0px;" title="fire" src="https://sef.kloninger.com/f/fire.png" alt="fire alarm" width="300" height="240"&gt;
-
+And finally, to you product managers and biz folks who push. You are right do do so. That's all that matters to the customers, all matters at the end of the day. Keep it up.&lt;/p&gt;</description><category>Engineering</category><category>Management</category><guid>https://sef.kloninger.com/posts/why-so-long/</guid><pubDate>Fri, 25 Jan 2013 09:24:48 GMT</pubDate></item><item><title>The Day I Took Down 100,000 Web Sites</title><link>https://sef.kloninger.com/posts/taking-down-100000-sites/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img class="alignright size-full wp-image-343" style="border: 0px;" title="fire" src="https://sef.kloninger.com/f/fire.png" alt="fire alarm" width="300" height="240"&gt;&lt;/p&gt;
 &lt;p&gt;
 Every engineer has their "the day I did something very very bad" story. This is mine.
 
@@ -365,18 +360,14 @@ I learned four lessons:
 
 &lt;/p&gt;&lt;p&gt;
 &lt;/p&gt;&lt;ol&gt;
-	&lt;li&gt;&lt;strong&gt;Undo is your friend.&lt;/strong&gt; The tooling or features to revert your change will take time, but you will be happy to have it if you ever need it.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Make changes during the day.&lt;/strong&gt; Resolving a hairy problem is hard if you don't have the right people, and when the people you do have are tired and foggy. This incident might have taken hours to resolve instead of minutes in the middle of the night.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;It's not over until it's over.&lt;/strong&gt; Once in crisis mode, you're eager to be get out of it. Once the main problem is solved it is tempting to exhale, go to lunch, go back to bed, whatever. But aftereffects might take a while to show up, or may just be harder to find.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Disproportionate effects.&lt;/strong&gt; We all know that our complex systems nonlinear failure modes. Incidents like these are reminders that small changes have big effects. Said another way, even small things should be taken seriously.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Undo is your friend.&lt;/strong&gt; The tooling or features to revert your change will take time, but you will be happy to have it if you ever need it.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Make changes during the day.&lt;/strong&gt; Resolving a hairy problem is hard if you don't have the right people, and when the people you do have are tired and foggy. This incident might have taken hours to resolve instead of minutes in the middle of the night.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;It's not over until it's over.&lt;/strong&gt; Once in crisis mode, you're eager to be get out of it. Once the main problem is solved it is tempting to exhale, go to lunch, go back to bed, whatever. But aftereffects might take a while to show up, or may just be harder to find.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Disproportionate effects.&lt;/strong&gt; We all know that our complex systems nonlinear failure modes. Incidents like these are reminders that small changes have big effects. Said another way, even small things should be taken seriously.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;
-My time at Akamai had prepared me well for managing a crisis. But it's nice to have a refresher course every now and then.
-
-
-
- &lt;/p&gt;</description><category>Engineering</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/201207taking-down-100000-sites/</guid><pubDate>Wed, 25 Jul 2012 17:56:57 GMT</pubDate></item><item><title>Why Quit?  Because They Have Bigger Monitors</title><link>https://sef.kloninger.com/posts/201205engineering-culture-litmus-tests/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;
+My time at Akamai had prepared me well for managing a crisis. But it's nice to have a refresher course every now and then.&lt;/p&gt;</description><category>Engineering</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/taking-down-100000-sites/</guid><pubDate>Wed, 25 Jul 2012 17:56:57 GMT</pubDate></item><item><title>Why Quit?  Because They Have Bigger Monitors</title><link>https://sef.kloninger.com/posts/engineering-culture-litmus-tests/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;
 Good engineers are attracted to places with a strong engineering culture. But how can you see what the culture is really like from the outside? Here are my two quick-and-dirty indicators.
 
 &lt;img class="alignright size-full wp-image-230" style="border: 0px;" title="testtubes" src="https://sef.kloninger.com/f/testtubes.png" alt="" width="149" height="200"&gt;
@@ -388,9 +379,9 @@ First a word about what I mean by an engineering culture. It means engineers are
 
 &lt;p&gt;
 &lt;/p&gt;&lt;ul&gt;
-	&lt;li&gt;How are decisions made? In an engineering culture, technical people have input into what gets built, when, and by whom.  Not signoff, but a real say.&lt;/li&gt;
-	&lt;li&gt;Is there respect for the craft of making software? Coding is still creative work that requires the right time and space. Some projets are tough to predict how long they will take, and that's needs to be OK.&lt;/li&gt;
-	&lt;li&gt;Infrastructure. How hard is it for the people who know (engineers, managers) to justify to their bosses when work is needed on non-feature driven stuff? This could be in the runtime system (like scaling work on the message queue) or back office (like build systems or version control).&lt;/li&gt;
+    &lt;li&gt;How are decisions made? In an engineering culture, technical people have input into what gets built, when, and by whom.  Not signoff, but a real say.&lt;/li&gt;
+    &lt;li&gt;Is there respect for the craft of making software? Coding is still creative work that requires the right time and space. Some projets are tough to predict how long they will take, and that's needs to be OK.&lt;/li&gt;
+    &lt;li&gt;Infrastructure. How hard is it for the people who know (engineers, managers) to justify to their bosses when work is needed on non-feature driven stuff? This could be in the runtime system (like scaling work on the message queue) or back office (like build systems or version control).&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -398,7 +389,7 @@ First a word about what I mean by an engineering culture. It means engineers are
 Unfortunately, teasing this out in an interview can be tricky unless you have someone you really know and trust on the inside.
 
 &lt;/p&gt;&lt;p&gt;
-&lt;/p&gt;&lt;h2&gt;How big are the monitors?&lt;/h2&gt;
+&lt;/p&gt;&lt;h3&gt;How big are the monitors?&lt;/h3&gt;
 
 A story from a prior company. I was an engineering manager that had a retention problem. One of the engineers on my team quit to go to a smaller, hipper company. This was from my exit interview:
 
@@ -427,7 +418,7 @@ A story from a prior company. I was an engineering manager that had a retention 
 
 And now I understand that this is totally true. Places that value their people consider equipment expenses small compared to the productivity (and happiness) of their people.  The best engineers are given the best tools to do their jobs. Big monitors are a very visible sign of this.
 
-&lt;h2&gt;Can people choose their own email addresses?&lt;/h2&gt;
+&lt;h3&gt;Can people choose their own email addresses?&lt;/h3&gt;
 
 Non-engineers sometimes don't appreciate how important an email address is. It's your identity on line. A strict naming convention (first name last initial, or worse, last name first initial) indicates place that values conformity over engineer happiness. Worse, its a great way to make their people feel like cogs or "human resources," not the cool individuals that they are.
 
@@ -441,26 +432,18 @@ This one is important for me personally since I have a weird first name. If you 
 &lt;img class="alignnone size-full wp-image-235" style="border: 0px;" title="whoami" src="https://sef.kloninger.com/f/whoami.png" alt="" width="556" height="226"&gt;
 
 &lt;/p&gt;&lt;p&gt;
-One final word: this isn't a slam on you hardworking IT guys and gals who keep important things running and have to enforce the rules you're given. Instead, I'm speaking to the bad policies (usually stemming from bad cultures) that can put you into bad positions. If you are at such a place, hunker down and pray for daylight.
-
- &lt;/p&gt;</description><category>Engineering</category><category>Management</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/201205engineering-culture-litmus-tests/</guid><pubDate>Thu, 17 May 2012 23:01:44 GMT</pubDate></item><item><title>Working Hard, On The Right Stuff, and In The Right Way  </title><link>https://sef.kloninger.com/posts/201204measuring-an-engineering-manager/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;a href="http://sef.kloninger.com/2012/04/measuring-an-engineering-manager/pointy-haired_boss/" rel="attachment wp-att-147"&gt;&lt;img class="alignright size-full wp-image-147" style="border-style: initial; border-color: initial; border-image: initial; border-width: 0px;" title="Pointy-Haired-Boss" src="https://sef.kloninger.com/f/Pointy-Haired_Boss.png" alt="Pointy Haired Boss" width="196" height="204"&gt;&lt;/a&gt;
-
+One final word: this isn't a slam on you hardworking IT guys and gals who keep important things running and have to enforce the rules you're given. Instead, I'm speaking to the bad policies (usually stemming from bad cultures) that can put you into bad positions. If you are at such a place, hunker down and pray for daylight.&lt;/p&gt;</description><category>Engineering</category><category>Management</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/engineering-culture-litmus-tests/</guid><pubDate>Thu, 17 May 2012 23:01:44 GMT</pubDate></item><item><title>Working Hard, On The Right Stuff, and In The Right Way  </title><link>https://sef.kloninger.com/posts/measuring-an-engineering-manager/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;a href="http://sef.kloninger.com/2012/04/measuring-an-engineering-manager/pointy-haired_boss/" rel="attachment wp-att-147"&gt;&lt;img class="alignright size-full wp-image-147" style="border-style: initial; border-color: initial; border-image: initial; border-width: 0px;" title="Pointy-Haired-Boss" src="https://sef.kloninger.com/f/Pointy-Haired_Boss.png" alt="Pointy Haired Boss" width="196" height="204"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 So now you're an engineering manager. How do you know if you're doing a good job?
 &lt;/p&gt;
-
 
 &lt;p&gt;
 This was an important question for me about thirteen years ago, when I moved from a code-every-day software engineer into my first management job. In the decade-plus I've been an engineering manager (&lt;a href="http://sef.kloninger.com/2012/04/my-sabbatical/"&gt;up until recently&lt;/a&gt;) I've relied on three measures for myself and engineering managers under me.  It's the title of this post.
 &lt;/p&gt;
 
-
-
 &lt;p&gt;
 The problem is that managers enable their people to produce. An engineer's contribution is measurable, more or less. Even when the scale and units are slippery (is that 95% or 50% done?) at least you can see forward progress: releases, bugs closed, API users. But an engineering manager? At best it feels squishy; at worst it feels like overhead, and nobody wants to be overhead.
 &lt;/p&gt;
-
-
 
 &lt;p&gt;
 The question of "am I doing a good job?" came up when I was a first-time engineering manager at Akamai Technologies.  This was 1999 and Akamai was still small-ish (30 engineers).  Us first-time managers were learning on the job. That's when I distilled down my three rules.  They are:
@@ -480,68 +463,54 @@ A good engineering manager's team should be
 The key insight here is that you don't measure the manager herself, since management done well just enables the creative work of the team. Judge the team and you judge the manager.
 &lt;/p&gt;
 
-&lt;h2&gt;Working Hard&lt;/h2&gt;
+&lt;h3&gt;Working Hard&lt;/h3&gt;
 
 &lt;p&gt;
 Of course a high-performing team is inherently good. But it's also the best indicator if the manager is doing their job right. A productive team is a motivated team. In my experience, teams don't work hard unless they have all the wonderful qualities that we want in a team: empowerment, alignment with company goals, feeling of camaraderie, trust in management. They should be equipped to do their work and know why they're doing it. A manager should try to give their teams these things, or at least not get in the way.
 &lt;/p&gt;
 
-
-
 &lt;p&gt;
 Let's consider the alternative. If your engineers are demotivated or bored then long before they quit (&lt;a href="http://www.randsinrepose.com/archives/2011/07/12/bored_people_quit.html"&gt;and they will&lt;/a&gt;) they will check out.
 &lt;/p&gt;
-
-
 
 &lt;p&gt;
 One caution: working hard is often confused with long hours and face time. It's not. And there are few things more demotivating to a team than a manager demanding more hours. (Some places are really productive and &lt;a href="http://ryanleecarson.tumblr.com/post/21708810513/4-day-week"&gt;only work four days a week&lt;/a&gt;.)
 &lt;/p&gt;
 
-
-
 &lt;p&gt;
 Hiring and firing figures into this too. An under-staffed team can't do what it needs to do or can get burnt out. Worse, lowering the bar to hire someone beneath the team, or not firing the low performer, is hugely demotivating.
 &lt;/p&gt;
 
-
-
-
-&lt;h2&gt;Working On The Right Stuff&lt;/h2&gt;
+&lt;h3&gt;Working On The Right Stuff&lt;/h3&gt;
 
 &lt;p&gt;
 This is where the manager can have a more direct and immediate impact. You have to set up a few good processes (not too many) and enforce them.  Your goal is maximize useful work.  One way is to prevent work on stuff that will be wasted.  Another is to reduce thrashing by finishing one thing before starting another. This is where delivery comes in: it's one thing to be busy, but how much makes it into real customers' hands?
 &lt;/p&gt;
 
-
 &lt;p&gt;
 Some of this sounds like product management, especially prioritization and product definition. But it doesn't happen well without the engineering manager communicating well, working closely with those product managers, pushing back constructively when needed.  So actually read that spec!
 &lt;/p&gt;
-
 
 &lt;p&gt;
 Much of my career has been in backend systems. Infrastructure projects to enable features are the exceptions. Most aim to improve reliability by doing things like removing bottlenecks (scaling) or bulletproofing systems. Unfortunately I think the only way to judge these projects qualitatively.  Measuring how often it &lt;em&gt;would&lt;/em&gt; have broken is so hard. Just make sure you get a techie who you trust to evaluate projects impersonally and critically. And be careful of pet projects.
 &lt;/p&gt;
 
-&lt;h2&gt;Doing It The Right Way&lt;/h2&gt;
+&lt;h3&gt;Doing It The Right Way&lt;/h3&gt;
 
 &lt;p&gt;
 For many years I only had the first two measures. But I've come to value this one more over time.
 &lt;/p&gt;
-
-
 
 &lt;p&gt;
 This criteria captures quality and culture. Are the manager's engineers working well together? Best judge of this is if other engineers want to be in this group. Do the engineers have a culture of quality? They should speak with pride of their work. If they feel their products are slipshod, through lack of care or lack of room to do the job right, then it will show.
 
 &lt;/p&gt;
 
-
 &lt;p&gt;
 It also means that they aren't leaving scorched earth behind them. Their systems are maintainable and usable by others; the ops guys don't hate them because of missing tools or crappy logs; they've done code reviews and actually listened to the feedback.
 &lt;/p&gt;
 
-&lt;h2&gt;Anti-Patterns&lt;/h2&gt;
+&lt;h3&gt;Anti-Patterns&lt;/h3&gt;
 
 &lt;p&gt;
 There are a couple of other things that I &lt;strong&gt;haven't&lt;/strong&gt; mentioned as being important. They're probably on others' lists, but not on mine.
@@ -549,8 +518,8 @@ There are a couple of other things that I &lt;strong&gt;haven't&lt;/strong&gt; m
 
 &lt;p&gt;
 &lt;/p&gt;&lt;ol&gt;
-	&lt;li&gt;"Leadership." To some people this means that you know how to tell people what to do. To others it means just doing a lot of the things above well, like communication. I'm not disagreeing that it's not important, I just don't know how to define or measure it. It feels like one of those "you know it when you see it" things.&lt;/li&gt;
-	&lt;li&gt;Well-triaged bug lists; great status reports; well-run team meetings. If any of these things help you accomplish the three things above, then do them, if not then they're paperwork.&lt;/li&gt;
+    &lt;li&gt;"Leadership." To some people this means that you know how to tell people what to do. To others it means just doing a lot of the things above well, like communication. I'm not disagreeing that it's not important, I just don't know how to define or measure it. It feels like one of those "you know it when you see it" things.&lt;/li&gt;
+    &lt;li&gt;Well-triaged bug lists; great status reports; well-run team meetings. If any of these things help you accomplish the three things above, then do them, if not then they're paperwork.&lt;/li&gt;
 &lt;/ol&gt;
 
 
@@ -558,13 +527,11 @@ There are a couple of other things that I &lt;strong&gt;haven't&lt;/strong&gt; m
 For example, when I managed a large team at VMware I spent a lot of time triaging bugs. That's the VMware's engineering culture, but it's also what you need for a large, distributed team delivering enterprise software. By contrast, at Ning I spent very little time in the bug database. That team was much smaller (6 vs 100), and our releases were less complicated and less scary. And that was the right way to manage that team.
 &lt;/p&gt;
 
-
-
 &lt;p&gt;
 Finally, I want to credit some of those early managers in those Akamai days that I learned with/from:
 
 &lt;/p&gt;&lt;ul&gt;
-	&lt;li&gt;Experienced managers like George Conrades, Danny Lewin, Tom Leighton and Ross Seider&lt;/li&gt;
-	&lt;li&gt;Fellow newcomers like Joel Wein, Ravi Sundaram, Harald Prokop, Marty Kagan, Jay Parikh, Julia Austin, and Bobby Blumofe&lt;/li&gt;
-	&lt;li&gt;Thoughtful techies like Danner Stodolsky, Bill Weihl, Erik Nygren, and Chris Joerg.&lt;/li&gt;
-&lt;/ul&gt;</description><category>Engineering</category><category>Management</category><guid>https://sef.kloninger.com/posts/201204measuring-an-engineering-manager/</guid><pubDate>Wed, 25 Apr 2012 08:39:34 GMT</pubDate></item></channel></rss>
+    &lt;li&gt;Experienced managers like George Conrades, Danny Lewin, Tom Leighton and Ross Seider&lt;/li&gt;
+    &lt;li&gt;Fellow newcomers like Joel Wein, Ravi Sundaram, Harald Prokop, Marty Kagan, Jay Parikh, Julia Austin, and Bobby Blumofe&lt;/li&gt;
+    &lt;li&gt;Thoughtful techies like Danner Stodolsky, Bill Weihl, Erik Nygren, and Chris Joerg.&lt;/li&gt;
+&lt;/ul&gt;</description><category>Engineering</category><category>Management</category><guid>https://sef.kloninger.com/posts/measuring-an-engineering-manager/</guid><pubDate>Wed, 25 Apr 2012 08:39:34 GMT</pubDate></item></channel></rss>

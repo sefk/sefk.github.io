@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Education)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/education.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 16 Dec 2025 05:35:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Naming Is Hard</title><link>https://sef.kloninger.com/posts/naming/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Lenna"&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/lena.png" alt="Photo of Lena Forsén" width="40%"&gt;&lt;/a&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Education)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/education.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 16 Feb 2026 22:29:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Naming Is Hard</title><link>https://sef.kloninger.com/posts/naming/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Lenna"&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/lena.png" alt="Photo of Lena Forsén" width="40%"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This is a story about how hard it is to come up with a good name.&lt;/p&gt;
 &lt;p&gt;This was in 2013. I was part of a team building a &lt;a href="https://sef.kloninger.com/posts/201207on-line-education/"&gt;system for online
 education&lt;/a&gt; at Stanford. We &lt;a href="https://engineering.stanford.edu/news/stanford-launches-class2go-open-source-platform-online-classes"&gt;launched&lt;/a&gt; a nice little site,
@@ -165,8 +165,7 @@ Ike, Jim, Phil, Ross...)&lt;/p&gt;
 especially Jason and Jane; the team in the Office of the Vice Provost for
 Online Learning, especially Professor &lt;a href="http://theory.stanford.edu/people/jcm/"&gt;John Mitchell&lt;/a&gt; who made this
 possible; and my many friends at edX.  There's a lot to be proud of over
-the past two years, and a lot of good work ahead.&lt;/p&gt;</description><category>Education</category><guid>https://sef.kloninger.com/posts/leaving-stanford/</guid><pubDate>Mon, 01 Sep 2014 06:45:00 GMT</pubDate></item><item><title>Launch Day</title><link>https://sef.kloninger.com/posts/201306launch-day/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="https://sef.kloninger.com/f/spaceshuttle-300x283.png" width="180" height="170"&gt;
-
+the past two years, and a lot of good work ahead.&lt;/p&gt;</description><category>Education</category><guid>https://sef.kloninger.com/posts/leaving-stanford/</guid><pubDate>Mon, 01 Sep 2014 06:45:00 GMT</pubDate></item><item><title>Launch Day</title><link>https://sef.kloninger.com/posts/launch-day/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="https://sef.kloninger.com/f/spaceshuttle-300x283.png" width="180" height="170"&gt;&lt;/p&gt;
 &lt;p&gt;
 Today was launch day. It went really well.  I wanted to capture what a good launch feels like and contrast that with a more exciting launch, just five months ago.
 
@@ -222,10 +221,7 @@ Those folks at edX made some solid software.  We're happy to be working with a 
 
 
 &lt;/p&gt;&lt;p&gt;
-I just turned off half the appservers since we're fine on capacity. Now off to bed with a good feeling.
-
-&lt;/p&gt;</description><category>Education</category><category>Engineering</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/201306launch-day/</guid><pubDate>Wed, 12 Jun 2013 05:59:24 GMT</pubDate></item><item><title>"Low" Retention Rates in Online Education Isn't Necessarily A Bad Thing</title><link>https://sef.kloninger.com/posts/201303online-ed-retention/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-400" style="border: 0px;" alt="Evaluate-300x198" src="https://sef.kloninger.com/f/Evaluate-300x198.png" width="240" height="158"&gt;
-
+I just turned off half the appservers since we're fine on capacity. Now off to bed with a good feeling.&lt;/p&gt;</description><category>Education</category><category>Engineering</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/launch-day/</guid><pubDate>Wed, 12 Jun 2013 05:59:24 GMT</pubDate></item><item><title>"Low" Retention Rates in Online Education Isn't Necessarily A Bad Thing</title><link>https://sef.kloninger.com/posts/online-ed-retention/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img class="alignright  wp-image-400" style="border: 0px;" alt="Evaluate-300x198" src="https://sef.kloninger.com/f/Evaluate-300x198.png" width="240" height="158"&gt;&lt;/p&gt;
 &lt;p&gt;
 I am of two minds about &lt;a title="Peter Reinhardt" href="http://rein.pk/online-educations-dirty-secret-awful-retention/" target="_blank"&gt;Peter Reinhardt post today&lt;/a&gt; calling out online education's poor retention rates.
 
@@ -235,10 +231,10 @@ I agree that retention rates are low. At Stanford we we just completed the Wint
 
 &lt;/p&gt;&lt;p&gt;
 &lt;/p&gt;&lt;ul&gt;
-	&lt;li&gt;Registered: 64,127&lt;/li&gt;
-	&lt;li&gt;Turned in some work: 20,836&lt;/li&gt;
-	&lt;li&gt;Took the final exam: 4,771&lt;/li&gt;
-	&lt;li&gt;Received a Statement of Accomplishment: 4,854 (1,927 with distinction)&lt;/li&gt;
+    &lt;li&gt;Registered: 64,127&lt;/li&gt;
+    &lt;li&gt;Turned in some work: 20,836&lt;/li&gt;
+    &lt;li&gt;Took the final exam: 4,771&lt;/li&gt;
+    &lt;li&gt;Received a Statement of Accomplishment: 4,854 (1,927 with distinction)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -257,13 +253,11 @@ But I totally agree that increasing retention is a worthwhile goal and a valua
 
 
 &lt;/p&gt;&lt;p&gt;
-(disclaimer: I'm the engineering manager on &lt;a title="Class2Go from Stanford" href="http://class2go.stanford.edu/" target="_blank"&gt;Class2Go&lt;/a&gt;, the open-source MOOC platform we've built at Stanford)&lt;/p&gt;</description><category>Education</category><guid>https://sef.kloninger.com/posts/201303online-ed-retention/</guid><pubDate>Sun, 31 Mar 2013 19:23:15 GMT</pubDate></item><item><title>On-Line Education Is Really Interesting Right Now</title><link>https://sef.kloninger.com/posts/201207on-line-education/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;img class="alignright  wp-image-307" style="border: 0px;" title="lecture-hall" src="https://sef.kloninger.com/f/lecture-hall-300x199.jpeg" alt="" width="270" height="179"&gt;
-
-
+(disclaimer: I'm the engineering manager on &lt;a title="Class2Go from Stanford" href="http://class2go.stanford.edu/" target="_blank"&gt;Class2Go&lt;/a&gt;, the open-source MOOC platform we've built at Stanford)&lt;/p&gt;</description><category>Education</category><guid>https://sef.kloninger.com/posts/online-ed-retention/</guid><pubDate>Sun, 31 Mar 2013 19:23:15 GMT</pubDate></item><item><title>On-Line Education Is Really Interesting Right Now</title><link>https://sef.kloninger.com/posts/on-line-education/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img class="alignright  wp-image-307" style="border: 0px;" title="lecture-hall" src="https://sef.kloninger.com/f/lecture-hall-300x199.jpeg" alt="" width="270" height="179"&gt;&lt;/p&gt;
 &lt;p&gt;
 I've joined a research project at Stanford University (my alma mater).  I am working with a small team to build a platform for on-line education. This post explains what we're building, my part in it, and why this is an interesting area right now.
 
-&lt;/p&gt;&lt;h2&gt;Class2Go&lt;/h2&gt;
+&lt;/p&gt;&lt;h3&gt;Class2Go&lt;/h3&gt;
 
 &lt;p&gt;
 We are building Class2Go, an application to put Stanford classes on line.  Envision a video-driven web site with exercises and tests.  It will run much like a class today (professors, TA's, lectures, homework, tests, schedules) but with everything happening on-line.  For some kinds of classes this could improve the classroom experience for enrolled students; the excitement comes when you can bring in the a much larger set of non-enrolled students.
@@ -281,9 +275,9 @@ While there are &lt;a title="Link to Coursera site" href="https://www.coursera.o
 
 &lt;/p&gt;&lt;p&gt;
 &lt;/p&gt;&lt;ul&gt;
-	&lt;li&gt;Research will be first and foremost. Hey prof, you want to do a wacky experiment? We can help.&lt;/li&gt;
-	&lt;li&gt;Value produced by the course is retained and controlled by the professor and the university.  That value comes from the assets (video, homework) but even more so the community and technology.&lt;/li&gt;
-	&lt;li&gt;The professors will have quick and ready access to their data. No waiting in lines for reports.&lt;/li&gt;
+    &lt;li&gt;Research will be first and foremost. Hey prof, you want to do a wacky experiment? We can help.&lt;/li&gt;
+    &lt;li&gt;Value produced by the course is retained and controlled by the professor and the university.  That value comes from the assets (video, homework) but even more so the community and technology.&lt;/li&gt;
+    &lt;li&gt;The professors will have quick and ready access to their data. No waiting in lines for reports.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -295,7 +289,7 @@ Part of what makes this doable is that there are so many great building blocks a
 &lt;/p&gt;&lt;p&gt;
 And me?  I'm the line manager. It's fun to work on a project of this size where I can keep my hands dirty. For example, this week I'll be working on authentication (oauth).
 
-&lt;/p&gt;&lt;h2&gt;Why Education, Why Now?&lt;/h2&gt;
+&lt;/p&gt;&lt;h3&gt;Why Education, Why Now?&lt;/h3&gt;
 
 &lt;p&gt;
 Two things brought me to education.
@@ -310,6 +304,4 @@ And second, education is changing right now. Of the meetings I've had while &lt
 I look forward to doing something that will make even a little difference here. I'll blog about my experiences along the way.
 
 &lt;/p&gt;&lt;p&gt;
-PS - &lt;a title="Peter Norvig @ TED" href="http://fm.schmoller.net/2012/07/peter-norvigs-ted-talk-about-the-ai-course.html" target="_blank"&gt;Peter Norvig's TED Talk&lt;/a&gt; captured the reasons and potential nicely.  That seven minutes is worth your time.
-
-&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>https://sef.kloninger.com/posts/201207on-line-education/</guid><pubDate>Mon, 09 Jul 2012 19:49:31 GMT</pubDate></item></channel></rss>
+PS - &lt;a title="Peter Norvig @ TED" href="http://fm.schmoller.net/2012/07/peter-norvigs-ted-talk-about-the-ai-course.html" target="_blank"&gt;Peter Norvig's TED Talk&lt;/a&gt; captured the reasons and potential nicely.  That seven minutes is worth your time.&lt;/p&gt;</description><category>Education</category><category>Technology</category><guid>https://sef.kloninger.com/posts/on-line-education/</guid><pubDate>Mon, 09 Jul 2012 19:49:31 GMT</pubDate></item></channel></rss>

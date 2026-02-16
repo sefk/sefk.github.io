@@ -78,7 +78,59 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="daisy-disk/" class="u-url">Thanks, Daisy Disk</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="daleks/" class="u-url">Vibe Coding</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="daleks/" rel="bookmark">
+            <time class="published dt-published" datetime="2026-02-13T16:02:00-08:00" itemprop="datePublished" title="2026-02-13 16:02">2026-02-13 16:02</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p><img style="float:right" class="postimage" src="../f/daleks-1984.jpeg" alt="Original Daleks game from 1984" width="45%"></p>
+<p>When I was fourteen years old, I spent the summer hand-coding a video game. I'd
+gone to a family gathering and my older cousin Erik brought his Mac from
+college. I loved it, of course. I thought the <a href="https://www.macintoshrepository.org/3913-daleks">Daleks</a> game he had running on it
+was so cool. The screenshot on the right is from that Classic Mac website and is
+exactly how I remember it looking back then.</p>
+<p>I was mesmerized. I'd played video games on my computer, like Hard Hat Mack
+(<a href="https://www.youtube.com/watch?v=zanShXo4btw">gameplay video</a>), that were state of the art back then. But those were
+coded by someone else. This seemed like something I could do.</p>
+<p>Once I got back home to Fresno I got to work. I spent most of the rest of that
+summer writing a clone of that game on my Apple //e. It was all done in
+hand-coded 6502 assembly, I didn't even have an assembler back then, so I had to
+do all the opcodes by hand. I had to learn twos complement math to do all the
+branch offsets, in pencil on graph paper. The hardest part was getting smooth
+animation working, since the Apple //e graphics system was super quirky,
+especially the non-linear frame buffer. The high-res graphics section of this
+<a href="https://en.wikipedia.org/wiki/Apple_II_graphics">wikipedia page</a> describes it well enough.</p>
+<p>I remember it took about two months to get it working. It's the first time I can
+remember being in a flow state. It began my lifelong love of computers.</p>
+<p><img style="float:right" class="postimage" src="../f/daleks-2026.png" alt="Screenshot of my recent Daleks game" width="50%"></p>
+<p>Now, forty years later I'm <a href="leaving-google/">on a break</a> and taking a <a href="https://continuingstudies.stanford.edu/courses/detail/20252_TECH-42">Vibe Coding class</a>. Our
+week one assignment is to code up a game. Out of nostalgia, I chose my old
+friend, Daleks. <strong>In about two hours, and spending about $10, I had a working
+prototype.</strong> I spent another couple of hours cleaning things up and getting into
+version control. You can <a href="../daleks">play it here</a>.</p>
+<p>This was my first experience with Replit. Super impressive. This was also what
+the rest of the students in the class used, and most of what they came up with
+were much fancier than what I did, with 3d graphics and more interactive game
+play. Although I also heard from some students that they ended up spending much
+more to get their game stood up.</p>
+<p>What was also impressive about this first experience with Vibe Coding was
+dealing with backend and integration issues. To get their code deployed onto
+this site required wiring up a GitHub workflow. Replit handled that just fine
+too, although it took a couple of round trips.</p>
+<p>Earlier today I asked Gemini to get local hosting running. There were some
+permissions and crashing issues, and I had to resist the urge to run from the
+command line myself and start Googling error messages like I normally do.
+Instead I had Gemini debug and fix its own errors, which it did quickly.</p>
+<p>If you'd like to check out the code or see some construction notes, they can all
+be found in <a href="https://github.com/sefk/daleks">GitHub</a>.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="daisy-disk/" class="u-url">Thanks, Daisy Disk</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Sef Kloninger
@@ -406,64 +458,6 @@ showing the candidate the kinds of issues that the team actually deals with. It'
 also a well-shaped question: open ended, no right/wrong answers.</p>
 <p>I got the job.</p>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="naming/" class="u-url">Naming Is Hard</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Sef Kloninger
-            </span></p>
-            <p class="dateline">
-            <a href="naming/" rel="bookmark">
-            <time class="published dt-published" datetime="2025-09-23T22:00:00-07:00" itemprop="datePublished" title="2025-09-23 22:00">2025-09-23 22:00</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p><a href="https://en.wikipedia.org/wiki/Lenna"><img style="float:right" class="postimage" src="../f/lena.png" alt="Photo of Lena Forsén" width="40%"></a></p>
-<p>This is a story about how hard it is to come up with a good name.</p>
-<p>This was in 2013. I was part of a team building a <a href="201207on-line-education/">system for online
-education</a> at Stanford. We <a href="https://engineering.stanford.edu/news/stanford-launches-class2go-open-source-platform-online-classes">launched</a> a nice little site,
-Class2Go, with a small team in a few months. It worked well and
-supported the basic features of an online course: videos, assessments,
-auth, reporting. We decided to keep it going and worked on it for
-another year, expanding the covered use cases and taking on more
-classes.</p>
-<p>But even from the beginning the name <em>Class2Go</em> felt a bit off. Our
-original aim was to enable offline <a href="https://en.wikipedia.org/wiki/Massive_open_online_course">MOOC</a> students, people trying
-to take classes offline or in poorly-connected places But we ended
-up pivoting away from the offline use case to more standard
-hosted-course features. It became a little multi-tenant CMS with a
-small database for auth, assessment results, and some basic analytics.</p>
-<p>We decided to rebrand. Someone knew a naming consultant, presumably
-an alum, and soon enough we had an expert on board. They were really
-interesting to work with. After understanding the platform's goals
-and features, they generated hundreds of candidate names. Each was
-vetting for domain name availability and copyright conflicts. The
-consultant was good at their job, bringing us something like a hundred
-candidate names (I wish I still had that list).</p>
-<p>One name caught everyone's attention: <strong>Tindra</strong>. It's a Swedish
-word that means "sparkle" or "twinkle." It's evocative and easy to
-say. It also happens to be a woman's name, but not a particularly
-common one we were told. </p>
-<p>Surprisingly, <code>tindra.com</code> was available! In 2013 short and catchy
-domain names were getting hard to come The <a href="https://newgtldprogram.icann.org/">new gTLD program</a> had
-only just been approved in 2012, and <code>.com</code> and <code>.org</code> were pretty
-crowded.</p>
-<p>The problem was that if you Googled "tindra," the top result was a
-Swedish adult film actress! Not good. Maybe with enough SEO juice,
-over time, we would have overtaken that. But on launch day, that's
-not the association you want to have.</p>
-<p>We ended up punting on the problem and going with a generic name,
-<strong>Stanford Online</strong>. It got the job done, but felt like a missed
-opportunity. We later merged with edX and <a href="leaving-stanford/">I found another job</a>.
-Eventually the team re-branded the site with the name <strong><a href="https://online.stanford.edu/lagunita-learning-platform">Lagunita</a></strong>,
-the name of the lake on campus, which they're still using today. I
-like it.</p>
-<p>I admit I still have a thing for Tindra though. The name, not the actress.</p>
-<p>Postscript: <code>tindra.com</code> still doesn't seem to be used for anything
-today. It looks to just be parked by a German domain registrar.
-Google results don't seem to be a problem. Maybe it's available for
-something interesting?</p>
-<p><em>Thanks to Jane Manning for her review, she was there too.</em></p>
-    </div>
     </article>
 </div>
 
@@ -486,11 +480,10 @@ something interesting?</p>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
         captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
-    </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-30366531-1"></script><script>
+    </script><!-- Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-30366531-1"></script><script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-30366531-1');
 </script>
 </body>
