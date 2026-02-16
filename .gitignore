@@ -5,6 +5,7 @@ cache
 .doit.db.db
 .doit.db
 .DS_Store
+.claude
 *.swp
 # python virtual environment artifacts
 lib
