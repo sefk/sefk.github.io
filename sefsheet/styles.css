@@ -1,0 +1,379 @@
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #202124;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* ── Toolbar ── */
+#toolbar {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #dadce0;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.toolbar-group {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.toolbar-separator {
+  width: 1px;
+  height: 24px;
+  background: #dadce0;
+  margin: 0 4px;
+}
+
+.toolbar-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #444;
+}
+
+.toolbar-btn:hover {
+  background: #e8eaed;
+  border-color: #dadce0;
+}
+
+.toolbar-btn.active {
+  background: #d2e3fc;
+  border-color: #aecbfa;
+  color: #1967d2;
+}
+
+#font-family {
+  width: 120px;
+  height: 30px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  padding: 0 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#font-family:hover {
+  border-color: #dadce0;
+  background: #e8eaed;
+}
+
+#font-size {
+  width: 52px;
+  height: 30px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  padding: 0 4px;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#font-size:hover {
+  border-color: #dadce0;
+  background: #e8eaed;
+}
+
+/* Color pickers */
+.color-picker-label {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.color-picker-label:hover {
+  background: #e8eaed;
+  border-color: #dadce0;
+}
+
+.color-picker-label input[type="color"] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.color-indicator {
+  font-weight: bold;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid currentColor;
+}
+
+.bg-indicator {
+  border: 1px solid #999;
+  border-radius: 2px;
+  border-bottom: 3px solid #ffffff;
+}
+
+/* ── Formula Bar ── */
+#formula-bar {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  border-bottom: 1px solid #dadce0;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+#cell-reference {
+  width: 70px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: #444;
+  border-right: 1px solid #dadce0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+#formula-separator {
+  width: 0;
+}
+
+#fx-label {
+  padding: 0 8px;
+  color: #999;
+  font-style: italic;
+  font-size: 13px;
+  user-select: none;
+}
+
+#formula-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  padding: 0 4px;
+  height: 100%;
+}
+
+/* ── Grid ── */
+#grid-container {
+  flex: 1;
+  overflow: auto;
+  position: relative;
+}
+
+#grid {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* Column headers */
+#grid thead th {
+  background: #f8f9fa;
+  border: 1px solid #e2e2e2;
+  border-top: none;
+  font-weight: 500;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  padding: 0;
+  height: 24px;
+  min-width: 30px;
+  width: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  user-select: none;
+  cursor: pointer;
+  overflow: visible;
+}
+
+/* Column resize handle */
+.col-resize-handle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  cursor: col-resize;
+  z-index: 4;
+}
+
+.col-resize-handle:hover {
+  background: #1a73e8;
+  opacity: 0.4;
+}
+
+#grid thead th:first-child {
+  width: 46px;
+  min-width: 46px;
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  cursor: pointer;
+}
+
+/* Row number cells */
+#grid tbody td:first-child {
+  background: #f8f9fa;
+  border: 1px solid #e2e2e2;
+  font-weight: 500;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  padding: 0;
+  width: 46px;
+  min-width: 46px;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  user-select: none;
+  cursor: pointer;
+  overflow: visible;
+}
+
+/* Row resize handle */
+.row-resize-handle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  cursor: row-resize;
+  z-index: 4;
+}
+
+.row-resize-handle:hover {
+  background: #1a73e8;
+  opacity: 0.4;
+}
+
+/* Data cells */
+#grid tbody td.cell {
+  border: 1px solid #e2e2e2;
+  padding: 0 3px;
+  height: 24px;
+  min-width: 30px;
+  width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  cursor: cell;
+  position: relative;
+}
+
+/* Selection states */
+#grid tbody td.cell.selected {
+  outline: 2px solid #1a73e8;
+  outline-offset: -1px;
+  z-index: 1;
+}
+
+#grid tbody td.cell.in-selection {
+  background-color: #d2e3fc !important;
+}
+
+#grid thead th.col-selected {
+  background: #d2e3fc;
+  color: #1967d2;
+}
+
+#grid tbody td.row-header-selected {
+  background: #d2e3fc !important;
+  color: #1967d2;
+}
+
+/* Editing state */
+#grid tbody td.cell.editing {
+  outline: 2px solid #1a73e8;
+  outline-offset: -1px;
+  z-index: 1;
+  padding: 0;
+}
+
+#grid tbody td.cell.editing input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 3px;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+/* Error display */
+.cell-error {
+  color: #d93025;
+  font-size: 11px;
+}
+
+/* Resize guide line */
+.resize-guide {
+  position: absolute;
+  background: #1a73e8;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.resize-guide.col-guide {
+  width: 2px;
+  top: 0;
+  bottom: 0;
+}
+
+.resize-guide.row-guide {
+  height: 2px;
+  left: 0;
+  right: 0;
+}
+
+/* Prevent text selection while resizing */
+body.resizing-col, body.resizing-col * {
+  cursor: col-resize !important;
+  user-select: none !important;
+}
+
+body.resizing-row, body.resizing-row * {
+  cursor: row-resize !important;
+  user-select: none !important;
+}
