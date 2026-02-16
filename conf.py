@@ -906,13 +906,12 @@ INDEX_DISPLAY_POST_COUNT = 8
 
 # Google Analytics on every page
 BODY_END = """
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30366531-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-30366531-1');
 </script>
 """
