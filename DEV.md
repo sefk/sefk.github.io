@@ -3,9 +3,10 @@
 This repo the personal website of Sef Kloninger. It contains both the
 hand-edited files that are source content for the site as well as
 the compiled assets that get served. It is a static website using the
-[Nikola](https://getnikola.com/) framework.
+[Nikola](https://getnikola.com/) framework. The site is hosted via
+Github pages via a custom subdomain, https://sef.kloninger.com/.
 
-Repo layout
+Repository Layout
 
 - `conf.py` - main configuration
 - `posts/` - blog posts, generally in markdown. Each contains its
@@ -14,8 +15,12 @@ Repo layout
   and about pages.
 - `files/` - Assets, like images
 
-The `dev` branch is where work happens. Publishing is done using the `nikola
-github_deploy` command.
+Branching
+
+- `dev` - where work happens
+- `master` - the production version of the site. Includes both source
+  and compiled assets. `nikola github_deploy` orchestrates build, merge,
+  and push to production
 
 ## Constraints
 
