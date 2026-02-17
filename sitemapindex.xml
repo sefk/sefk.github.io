@@ -6,6 +6,10 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://sef.kloninger.com/categories/ai.xml</loc>
+  <lastmod>2026-02-17T00:56:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://sef.kloninger.com/categories/appreciation.xml</loc>
   <lastmod>2026-02-16T22:29:00Z</lastmod>
  </sitemap>
@@ -47,7 +51,7 @@
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/tech.xml</loc>
-  <lastmod>2026-02-16T22:29:00Z</lastmod>
+  <lastmod>2026-02-17T00:56:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/technology.xml</loc>
@@ -55,14 +59,14 @@
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/categories/war-stories.xml</loc>
-  <lastmod>2026-02-16T22:29:00Z</lastmod>
+  <lastmod>2026-02-17T00:56:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/rss.xml</loc>
-  <lastmod>2026-02-16T22:29:00Z</lastmod>
+  <lastmod>2026-02-17T00:56:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://sef.kloninger.com/sitemap.xml</loc>
-  <lastmod>2026-02-16T22:29:00Z</lastmod>
+  <lastmod>2026-02-17T00:56:00Z</lastmod>
  </sitemap>
 </sitemapindex>
