@@ -19,7 +19,7 @@ I hope you check it out.
 Consider showing counts of posts, or maybe sorting by that. -->
 
 <ul class="list-inline">
-    <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/AI/">AI</a></li>
+    <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/ai/">AI</a></li>
     <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/appreciation/">Appreciation</a></li>
     <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/civics/">Civics</a></li>
     <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/data/">Data</a></li>
