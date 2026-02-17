@@ -19,6 +19,7 @@ I hope you check it out.
 Consider showing counts of posts, or maybe sorting by that. -->
 
 <ul class="list-inline">
+    <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/AI/">AI</a></li>
     <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/appreciation/">Appreciation</a></li>
     <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/civics/">Civics</a></li>
     <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/data/">Data</a></li>
@@ -56,8 +57,8 @@ and the national <a href="https://www.nokings.org/">No Kings</a> movement.
 
 I'm also playing board games, video games, and learning bridge. But I keep
 coming back to tech projects. I got my first computer, an Apple //e, and spent a
-whole summer hand-coding a [robots game][] in 6502 assembly. I've always found
-that stuff *fun*.
+whole summer [hand-coding a robots game](posts/daleks). I've
+always found that stuff *fun*.
 
 If any of this interests you too, reach me via [email](mailto:sefklon@gmail.com)
 (preferred) or [@sefk](https://hachyderm.io/@sefk) on Mastodon.
@@ -66,4 +67,3 @@ For information about this site see my [tools page](tools).
 <br>
 
 [resume]: https://rawgithub.com/sefk/sef-resume/master/sef-kloninger-resume.html
-[robots game]: http://en.wikipedia.org/wiki/Robots_%28BSD_game%29
