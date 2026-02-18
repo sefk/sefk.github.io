@@ -8,10 +8,10 @@
 
 <img style="float:right" class="postimage" src="/f/gemini-claude-cleanup.png" alt="Claude Code on the left, Gemini on the right" width=60%>
 
-It's been nice having AI tools at the ready to take care of cleanup work. You
-know, those kind tasks that require a little program or script. Sure you can
-write it yourself, but it won't be fun, and it'll take some time, so instead you
-just don't bother and it doesn't get done.
+It's been nice having AI tools at the ready for cleanup work. You know, those
+tasks that require a little program or script. Sure you can write it yourself,
+but it won't be fun, and it'll take some time, so instead you just don't bother
+and it doesn't get done.
 
 Instead of just knocking this out I decided this would be a fun one to try with
 the two tools I'm using the most these days, **Gemini** and **Claude**. I can't
