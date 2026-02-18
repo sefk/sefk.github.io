@@ -1,5 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 17 Feb 2026 00:56:43 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Yeah, I Did Some Vibe Coding Too</title><link>https://sef.kloninger.com/posts/daleks/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;This is a story about my recent experience Vibe Coding. The work itself isn't
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 18 Feb 2026 19:40:29 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>AI Is Good At Janitorial Work</title><link>https://sef.kloninger.com/posts/gemini-claude-cleanup/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/gemini-claude-cleanup.png" alt="Claude Code on the left, Gemini on the right" width="60%"&gt;&lt;/p&gt;
+&lt;p&gt;It's been nice AI tools at the ready to do take care of cleanup tasks. You know
+those kind mini-projects that require a little program or script. Sure you can
+write it yourself, but it won't be fun, and it'll take some time, so instead you
+just don't bother and it doesn't get done.&lt;/p&gt;
+&lt;p&gt;Instead of just knocking this out I decided this would be a fun one to try with
+the two tools I'm using the most these days, &lt;strong&gt;Gemini&lt;/strong&gt; and &lt;strong&gt;Claude&lt;/strong&gt;. I can't
+really call this much of a contest, since it's just those two and it's not an
+especially hard task.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;And the results? Both did very well.&lt;/strong&gt; Gemini got it right on the first try;
+Claude had two bugs that were easy to find and fix. Claude was a little nicer to
+work with and produced a nicer description of the solution work. They both
+produced produced identical results.&lt;/p&gt;
+&lt;h3&gt;The Task&lt;/h3&gt;
+&lt;p&gt;I wanted to clean up the some of the old files backing this blog. I migrated the
+site from Wordpress to Nikola in 2013. Even back then I &lt;a href="https://sef.kloninger.com/posts/switching-to-static.md"&gt;complained
+about&lt;/a&gt; the crufty file format, but couldn't be
+bothered to fix it then.&lt;/p&gt;
+&lt;p&gt;The prompt describes in a fair bit of detail what I wanted done. Probably too
+much detail. It's down at the bottom of this post.&lt;/p&gt;
+&lt;p&gt;The best way to see what they did is to just look at the resulting commits:
+&lt;a href="https://github.com/sefk/sefk.github.io/commit/4a91a57dc965b1e77c05fafbc05fa14f1a293c7f"&gt;Gemini&lt;/a&gt; and &lt;a href="https://github.com/sefk/sefk.github.io/commit/78cee0789d98677c5298df543e895d7e2002ff72"&gt;Claude&lt;/a&gt;. They're pretty similar. I asked both to save
+their work in a &lt;code&gt;migration_scripts&lt;/code&gt; subdirectory, including a it's own summary
+of the work and full log.&lt;/p&gt;
+&lt;p&gt;I pay $20/month for "Pro" access, giving me Gemini 3 and Claude Sonnet 4.6, the
+best backends for each at this writing.&lt;/p&gt;
+&lt;h3&gt;Thoughts on Claude&lt;/h3&gt;
+&lt;p&gt;I didn't describe the problem as "Wordpress-style naming" but Claude sussed that
+out. Honestly I'd forgotten that was the source of the problem. Nice!&lt;/p&gt;
+&lt;p&gt;I like that Claude inserted comments in the configuration file without being
+asked to.&lt;/p&gt;
+&lt;p&gt;Despite being told to test, there were two bugs that I had to find.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Some of redirects broken. I pointed the problem out and it did more thorough
+  testing using &lt;code&gt;curl&lt;/code&gt; and found the problem. The new format was what Gemini
+  came up with in the first pass (luck? smarts?).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A missing newline between the metadata and the body caused the hero images
+  to be dropped.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="side by side view showing bug" src="https://sef.kloninger.com/f/cleanup-missing-hero.png"&gt;&lt;/p&gt;
+&lt;h3&gt;Thoughts on Gemini&lt;/h3&gt;
+&lt;p&gt;I haven't used the Gemini CLI as much by this point. It seems to have borrowed
+much of it's UI and flow from Claude code (slash commands, asking questions as
+it goes) so it's familiar. It's really nice to use, just a smidgen less mature
+and polished than Gemini.&lt;/p&gt;
+&lt;p&gt;I preferred Claude's writeup a little so I went with that one. But Gemini wins
+the prize for nailing the task on the first try!&lt;/p&gt;
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;I really liked how Claude shows how much of it's context window is used via the
+&lt;code&gt;/context&lt;/code&gt; command. I had a harder time getting this kind of thing out of
+Gemini, and even when I did it was harder to grok.&lt;/p&gt;
+&lt;p&gt;I couldn't tell with either if I'm getting close to any global usage limits. I
+should hope not, this wasn't a very big job.&lt;/p&gt;
+&lt;h5&gt;Claude &lt;code&gt;/context&lt;/code&gt; Output&lt;/h5&gt;
+&lt;p&gt;&lt;img alt="Claude context window usage" src="https://sef.kloninger.com/f/claude-context.png"&gt;&lt;/p&gt;
+&lt;h5&gt;Gemini &lt;code&gt;/stats model&lt;/code&gt; Output&lt;/h5&gt;
+&lt;p&gt;&lt;img alt='Gemini "stats for nerds"' src="https://sef.kloninger.com/f/gemini-context.png"&gt;&lt;/p&gt;
+&lt;h3&gt;Prompt&lt;/h3&gt;
+&lt;p&gt;Both started with this:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;First read DEV.md for context about this web site.
+
+In the posts subdirectory are many files that follow an old 
+naming convention.  Please convert them all to the new file
+naming convention.
+
+The old convention has files of the format YYYYMM&amp;lt;slug&amp;gt;.SUFFIX,
+where YYYY is the year, MM is the month, and SUFFIX is html or
+meta. &amp;lt;slug&amp;gt; is the short form of the the title, and should match
+the "slug" field in the metadata
+
+To convert to the new convention
+
+1. Drop the YYYYMM file prefix
+
+2. Combine the "html" and "meta" files into one markdown file
+   with a "md" suffix. The contents of "meta" are at the top of
+   the file as an HTML comment
+
+3. Add redirects so the old names can still be served. Add tuples
+   in the REDIRECTIONS of conf.py
+
+Use the `nikola build` and `nikola serve` commands to test your
+work. Make sure all old URL's still function. Make sure pages
+look the same. Make sure tags still work.
+
+Do not commit changes. Do not push to production.
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I also checked in a &lt;a href="https://github.com/sefk/sefk.github.io/blob/dev/DEV.md"&gt;&lt;code&gt;DEV.md&lt;/code&gt;&lt;/a&gt; file that described the purpose, directory
+layout, and some constraints. Again, maybe overkill, but I figured this isn't
+the last time I'll be asking one of these tools to help me futz with this site.&lt;/p&gt;</description><category>AI</category><category>Tech</category><guid>https://sef.kloninger.com/posts/gemini-claude-cleanup/</guid><pubDate>Wed, 18 Feb 2026 19:00:00 GMT</pubDate></item><item><title>Yeah, I Did Some Vibe Coding Too</title><link>https://sef.kloninger.com/posts/daleks/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;This is a story about my recent experience Vibe Coding. The work itself isn't
 impressive and this writeup isn't different than the many gee-whiz posts you see
 these days. I didn't do &lt;a href="https://mastodon.social/@stroughtonsmith/116014270900193494"&gt;three apps in a day&lt;/a&gt;. But I wanted to write up my
 experience, mostly to give me an excuse to tell an old tyme programming story
@@ -338,52 +432,4 @@ like it.&lt;/p&gt;
 today. It looks to just be parked by a German domain registrar.
 Google results don't seem to be a problem. Maybe it's available for
 something interesting?&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Thanks to Jane Manning for her review, she was there too.&lt;/em&gt;&lt;/p&gt;</description><category>Education</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/naming/</guid><pubDate>Wed, 24 Sep 2025 05:00:00 GMT</pubDate></item><item><title>Learn From Experiments</title><link>https://sef.kloninger.com/posts/experiments/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/experiment.jpeg" alt="Line art of an experiment" width="60%"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;What's the value of an experiment or a prototype?&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;There are all kinds of ways to have impact. A feature can improve user
-experience; a hardening project can reduce risk of a production outage;
-refactoring or test coverage can improve velocity or make software easier and
-safer to maintain. And good engineers care a lot about impact. While it's not
-the only thing that matters (the "how" is important too), if you start with
-impact, you'll generally do well.&lt;/p&gt;
-&lt;p&gt;An engineer's job to put ideas into practice, to make things. But sometimes
-we're not sure what to make. Or we think we know, but aren't sure it'll work.
-The best way to figure that out is often running a set of experiments, or maybe
-building a prototype (an n=1 experiment).&lt;/p&gt;
-&lt;p&gt;But crucially, an experiment doesn't have value itself. An experiment is
-successful only if we've learned something. The intent of the test rig or
-prototype isn't to live on. Indeed, knowing that we plan to throw it away is
-part of what makes it fast and cheap to build, and it shouldn't have all the
-trappings of production-quality software, like test coverage and code reviews.&lt;/p&gt;
-&lt;p&gt;So how do we ensure that value gets delivered? When you work in a team or a
-company people turn over. It's not just enough to do the experiment, you need to
-write it up and share your results. To produce a good writeup, you should:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Figure out the hypothesis(es)&lt;/strong&gt; you're testing. Often this is in the form
-   of one or more questions. For prototypes, it might be a boolean, i.e. we can
-   build X that will work. But even then, consider what "done" means. Stating
-   your hypothesis in terms of a metric is often easiest. NB I find the
-   goal/driver/guardrail framework from Thanks &lt;a href="https://research.google/people/author3770/?&amp;amp;type=google"&gt;Diane&lt;/a&gt;'s book helpful,
-   &lt;a href="https://www.google.com/books/edition/Trustworthy_Online_Controlled_Experiment/TFjPDwAAQBAJ?hl=en&amp;amp;gbpv=1"&gt;Trustworthy Online Controlled Experiments&lt;/a&gt;. &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;State your assumptions and method&lt;/strong&gt;. This is where you usually get the most
-   feedback. Note that this usually isn't a project plan, as your reviewers
-   usually don't care how long it takes or what happens when. &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Seek feedback&lt;/strong&gt; from your peers. Publish the doc stating the method to have
-   smart people poke holes in your plan and make sure what you're measuring will
-   actually address the hypothesis. And then when the experiment is done, get it
-   reviewed by someone senior to ensure that your work supports your conclusion.
-   This also spreads knowledge about this work (both that you're doing it, and
-   the results) so the overall organization benefits.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The artifact produced has many benefits. It's useful for you as you discuss
-follow-on work; it's useful come performance evaluation time. But most
-importantly, it benefits the organization. Contemporary and future peers can
-learn from this work. &lt;/p&gt;
-&lt;p&gt;You'll benefit from taking the time to write it up, the reviewers learn from
-reading, and it'll live on past your time with the team.&lt;/p&gt;</description><category>Data</category><category>Engineering</category><category>Management</category><guid>https://sef.kloninger.com/posts/experiments/</guid><pubDate>Tue, 23 Sep 2025 18:00:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;em&gt;Thanks to Jane Manning for her review, she was there too.&lt;/em&gt;&lt;/p&gt;</description><category>Education</category><category>Technology</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/naming/</guid><pubDate>Wed, 24 Sep 2025 05:00:00 GMT</pubDate></item></channel></rss>

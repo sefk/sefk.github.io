@@ -78,7 +78,114 @@ bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="daleks/" class="u-url">Yeah, I Did Some Vibe Coding Too</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="gemini-claude-cleanup/" class="u-url">AI Is Good At Janitorial Work</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="gemini-claude-cleanup/" rel="bookmark">
+            <time class="published dt-published" datetime="2026-02-18T11:00:00-08:00" itemprop="datePublished" title="2026-02-18 11:00">2026-02-18 11:00</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p><img style="float:right" class="postimage" src="../f/gemini-claude-cleanup.png" alt="Claude Code on the left, Gemini on the right" width="60%"></p>
+<p>It's been nice AI tools at the ready to do take care of cleanup tasks. You know
+those kind mini-projects that require a little program or script. Sure you can
+write it yourself, but it won't be fun, and it'll take some time, so instead you
+just don't bother and it doesn't get done.</p>
+<p>Instead of just knocking this out I decided this would be a fun one to try with
+the two tools I'm using the most these days, <strong>Gemini</strong> and <strong>Claude</strong>. I can't
+really call this much of a contest, since it's just those two and it's not an
+especially hard task.</p>
+<p><strong>And the results? Both did very well.</strong> Gemini got it right on the first try;
+Claude had two bugs that were easy to find and fix. Claude was a little nicer to
+work with and produced a nicer description of the solution work. They both
+produced produced identical results.</p>
+<h3>The Task</h3>
+<p>I wanted to clean up the some of the old files backing this blog. I migrated the
+site from Wordpress to Nikola in 2013. Even back then I <a href="switching-to-static.md">complained
+about</a> the crufty file format, but couldn't be
+bothered to fix it then.</p>
+<p>The prompt describes in a fair bit of detail what I wanted done. Probably too
+much detail. It's down at the bottom of this post.</p>
+<p>The best way to see what they did is to just look at the resulting commits:
+<a href="https://github.com/sefk/sefk.github.io/commit/4a91a57dc965b1e77c05fafbc05fa14f1a293c7f">Gemini</a> and <a href="https://github.com/sefk/sefk.github.io/commit/78cee0789d98677c5298df543e895d7e2002ff72">Claude</a>. They're pretty similar. I asked both to save
+their work in a <code>migration_scripts</code> subdirectory, including a it's own summary
+of the work and full log.</p>
+<p>I pay $20/month for "Pro" access, giving me Gemini 3 and Claude Sonnet 4.6, the
+best backends for each at this writing.</p>
+<h3>Thoughts on Claude</h3>
+<p>I didn't describe the problem as "Wordpress-style naming" but Claude sussed that
+out. Honestly I'd forgotten that was the source of the problem. Nice!</p>
+<p>I like that Claude inserted comments in the configuration file without being
+asked to.</p>
+<p>Despite being told to test, there were two bugs that I had to find.</p>
+<ul>
+<li>
+<p>Some of redirects broken. I pointed the problem out and it did more thorough
+  testing using <code>curl</code> and found the problem. The new format was what Gemini
+  came up with in the first pass (luck? smarts?).</p>
+</li>
+<li>
+<p>A missing newline between the metadata and the body caused the hero images
+  to be dropped.</p>
+</li>
+</ul>
+<p><img alt="side by side view showing bug" src="../f/cleanup-missing-hero.png"></p>
+<h3>Thoughts on Gemini</h3>
+<p>I haven't used the Gemini CLI as much by this point. It seems to have borrowed
+much of it's UI and flow from Claude code (slash commands, asking questions as
+it goes) so it's familiar. It's really nice to use, just a smidgen less mature
+and polished than Gemini.</p>
+<p>I preferred Claude's writeup a little so I went with that one. But Gemini wins
+the prize for nailing the task on the first try!</p>
+<h3>Usage</h3>
+<p>I really liked how Claude shows how much of it's context window is used via the
+<code>/context</code> command. I had a harder time getting this kind of thing out of
+Gemini, and even when I did it was harder to grok.</p>
+<p>I couldn't tell with either if I'm getting close to any global usage limits. I
+should hope not, this wasn't a very big job.</p>
+<h5>Claude <code>/context</code> Output</h5>
+<p><img alt="Claude context window usage" src="../f/claude-context.png"></p>
+<h5>Gemini <code>/stats model</code> Output</h5>
+<p><img alt='Gemini "stats for nerds"' src="../f/gemini-context.png"></p>
+<h3>Prompt</h3>
+<p>Both started with this:</p>
+<div class="code"><pre class="code literal-block">First read DEV.md for context about this web site.
+
+In the posts subdirectory are many files that follow an old 
+naming convention.  Please convert them all to the new file
+naming convention.
+
+The old convention has files of the format YYYYMM&lt;slug&gt;.SUFFIX,
+where YYYY is the year, MM is the month, and SUFFIX is html or
+meta. &lt;slug&gt; is the short form of the the title, and should match
+the "slug" field in the metadata
+
+To convert to the new convention
+
+1. Drop the YYYYMM file prefix
+
+2. Combine the "html" and "meta" files into one markdown file
+   with a "md" suffix. The contents of "meta" are at the top of
+   the file as an HTML comment
+
+3. Add redirects so the old names can still be served. Add tuples
+   in the REDIRECTIONS of conf.py
+
+Use the `nikola build` and `nikola serve` commands to test your
+work. Make sure all old URL's still function. Make sure pages
+look the same. Make sure tags still work.
+
+Do not commit changes. Do not push to production.
+</pre></div>
+
+<p>I also checked in a <a href="https://github.com/sefk/sefk.github.io/blob/dev/DEV.md"><code>DEV.md</code></a> file that described the purpose, directory
+layout, and some constraints. Again, maybe overkill, but I figured this isn't
+the last time I'll be asking one of these tools to help me futz with this site.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="daleks/" class="u-url">Yeah, I Did Some Vibe Coding Too</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Sef Kloninger
@@ -428,49 +535,6 @@ that I haven't been really working for six weeks now, I can confidently say
 that my mindset is positive and good.</p>
 <p>I'm excited about the next phase. I feel fortunate to have some time to focus on
 what's important.</p>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="interview-question/" class="u-url">A Good Interview Question</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Sef Kloninger
-            </span></p>
-            <p class="dateline">
-            <a href="interview-question/" rel="bookmark">
-            <time class="published dt-published" datetime="2025-10-07T15:00:00-07:00" itemprop="datePublished" title="2025-10-07 15:00">2025-10-07 15:00</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p><img style="float:right" class="postimage" src="../f/python.png" alt="Python language logo" width="25%"></p>
-<p>I liked the question that I got when interviewing at YouTube in 2015. At Google
-then we'd have an interview panel of four or five people, each assigned to cover
-a different area. <a href="https://www.linkedin.com/in/billy-biggs-7ab1023/">Billy Biggs</a> was the TL on my panel asked to evaluate
-"architecture." For a manager candidate that mostly meant evaluating technical
-cluefulness (someone else had me do some simple <a href="201205fizzbuzz-for-managers">programming</a>).</p>
-<p>Billy's question: <strong>Discuss what would cause a Python interpreter to crash. Not
-a <em>program written in Python</em>, but the interpreter itself.</strong></p>
-<p>I remember this leading to a fun, rambling, back-and-forth discussion of the
-<strong>ways computers can fail</strong>. There are so many! Every level of the stack can
-fail in interesting ways: storage, RAM, memory management, networking. How would
-a bit flip in a TLB manifest? How does TCP/IP detect and handle ordering?
-collisions?</p>
-<p>We also covered a bunch of <strong>engineering and process questions</strong>. How is the
-interpreter itself implemented, in what language and by whom? What would the
-quality processes be like for a product like that, especially given Python is
-presumably a really large open source project? How would you manage this? How
-important to quality is the role of the <a href="https://en.wikipedia.org/wiki/Benevolent_dictator_for_life">BDFL</a>? </p>
-<p>And then that lead to a some more interesting higher-level discussions about the
-actual <strong>costs and benefits of addressing failures</strong> like these in the field.
-When should programs hard-fail versus detect and recover? How would you staff an
-engineering team to find and chase down errors? What's the user impact to a
-failure like this?</p>
-<p>One of my favorite things about this question is most likely it was something
-they'd actually seen right in their backyard. In 2015 significant parts of
-YouTube was <a href="https://mail.python.org/pipermail/python-dev/2006-December/070323.html">written in Python</a> (that's likely not the case anymore, I don't
-know). Crashes like these must have come up in the field. Not only are
-real-world problems relatively easy to ask, but they have the added benefit of
-showing the candidate the kinds of issues that the team actually deals with. It's
-also a well-shaped question: open ended, no right/wrong answers.</p>
-<p>I got the job.</p>
     </div>
     </article>
 </div>
