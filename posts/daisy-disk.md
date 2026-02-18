@@ -62,5 +62,10 @@ After
 
 ![Disk utility showing disk back to normal](/f/daisy-disk-after.png)
 
+<hr>
+
+*Postscript*: Oleg put me on the [Daisy Disk media page], neat!
+
 [Daisy Disk]: https://daisydiskapp.com/
 [Oleg]: https://daisydiskapp.com/about/
+[Daisy Disk media page]: /f/daisy-disk-media.png
