@@ -1,47 +1,48 @@
 <!--
-.. title: AI Excels At Cleanup
+.. title: AI Is Good At Janitorial Work
 .. slug: gemini-claude-cleanup
-.. date: 2026-02-17 21:00:00 UTC-08:00
+.. date: 2026-02-18 11:00:00 UTC-08:00
 .. tags: AI,Tech
 .. type: text
 -->
 
 <img style="float:right" class="postimage" src="/f/gemini-claude-cleanup.png" alt="Claude Code on the left, Gemini on the right" width=60%>
 
-I really enjoy having AI take care of grungy cleanup work for me. You know those
-kind projects that necessitate a little program or script. Sure you can write it
-yourself but it's not fun and fulfilling, that's for sure, so it just doesn't
-get done.
+It's been nice having AI tools at the ready to take care of cleanup work. You
+know, those kind tasks that require a little program or script. Sure you can
+write it yourself, but it won't be fun, and it'll take some time, so instead you
+just don't bother and it doesn't get done.
 
-Instead of just knocking this out I decided this was a good opportunity to give
-the same task to **Gemini** and **Claude** (CLI interfaces both) to see how they
-do. Not really a bakeoff, since it's just those two and it's not an especially
-hard task.
+Instead of just knocking this out I decided this would be a fun one to try with
+the two tools I'm using the most these days, **Gemini** and **Claude**. I can't
+really call this a proper bakeoff, since it's just those two and it's not an
+especially hard task.
 
-**Results**: Both did very well! Gemini got it right on the first try; Claude
-had two bugs that I had to tell it to fix, but it did so itself. Claude was a
-little nicer to work with, and ended up with a nicer description of its work.
-They produced nearly identical results.
+**And the result? Both did well but Gemini did a little better.** Gemini got it
+right on the first try; Claude had two bugs that were easy to find and fix.
+Claude was a little nicer to work with and produced a nicer description of the
+solution. Aside from that, the end product was identical.
 
 ## The Task
 
 I wanted to clean up the some of the old files backing this blog. I migrated the
-site from Wordpress to Nikola in 2013. Even back then, as I complained about in
-[my post](/posts/switching-to-static.md), I didn't like the file layout, but
-couldn't be bothered to fix it.
+site from Wordpress to Nikola in 2013. Even back then I [complained
+about](/posts/switching-to-static.md) the crufty file format, but couldn't be
+bothered to fix it then.
 
-I put the [prompt](#prompt) at the bottom of this post. It's probably too long.
+The prompt describes in a fair bit of detail what I wanted done. Probably too
+much detail. It's down at the bottom of this post.
 
-The best way to see what they did is to just look at the commits: [Gemini][gc]
-and [Claude][cc]. Check out either, they're pretty similar. Pay attention to the
-`migration_scripts` subdirectory, that's where the conversion script(s) ended up
-as well as a each tool's description of what it did and a full log.
+The best way to see what they did is to just look at the resulting commits:
+[Gemini][gc] and [Claude][cc]. They're pretty similar. I asked both to save
+their work in a `migration_scripts` subdirectory, including a it's own summary
+of the work and full log.
 
 [gc]: https://github.com/sefk/sefk.github.io/commit/4a91a57dc965b1e77c05fafbc05fa14f1a293c7f
 [cc]: https://github.com/sefk/sefk.github.io/commit/78cee0789d98677c5298df543e895d7e2002ff72
 
-I pay $20/month for "Pro" access, giving me Gemini 3 and Claude Sonnet 4.6, the
-best backends for each at this writing.
+For both tools I pay the $20/month that gives me access to reasonable token
+limits and good production models -- Gemini 3 and Sonnet 4.6.
 
 ## Thoughts on Claude
 
@@ -60,17 +61,17 @@ Despite being told to test, there were two bugs that I had to find.
 * A missing newline between the metadata and the body caused the hero images
   to be dropped.
 
-![screenshot](/f/cleanup-missing-hero.png)
+![side by side view showing bug](/f/cleanup-missing-hero.png)
 
 ## Thoughts on Gemini
 
 I haven't used the Gemini CLI as much by this point. It seems to have borrowed
-much of it's UI and flow from Claude code (slash commands, asking questions
-as it goes) so it's familiar and done pretty well. Just a little less mature and
-polished, but that's OK.
+much of it's UI and flow from Claude code (slash commands, asking questions as
+it goes) so it's familiar. It's really nice to use, just a smidgen less mature
+and polished than Gemini.
 
-I think Claude did a little better writeup. But aside from that, Gemini nailed
-it on the first try.
+I preferred Claude's writeup a little so I went with that one. But Gemini wins
+the prize for nailing the task on the first try!
 
 ## Usage
 
@@ -81,17 +82,17 @@ Gemini, and even when I did it was harder to grok.
 I couldn't tell with either if I'm getting close to any global usage limits. I
 should hope not, this wasn't a very big job.
 
-### Claude
+#### Claude `/context` Output
 
 ![Claude context window usage](/f/claude-context.png)
 
-### Gemini
+#### Gemini `/stats model` Output
 
 ![Gemini "stats for nerds"](/f/gemini-context.png)
 
 ## Prompt
 
-I gave the same prompt to both:
+Both started with this:
 
 ```text
 First read DEV.md for context about this web site.
