@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Tech)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/tech.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 18 Feb 2026 19:40:29 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>AI Is Good At Janitorial Work</title><link>https://sef.kloninger.com/posts/gemini-claude-cleanup/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/gemini-claude-cleanup.png" alt="Claude Code on the left, Gemini on the right" width="60%"&gt;&lt;/p&gt;
-&lt;p&gt;It's been nice AI tools at the ready to do take care of cleanup tasks. You know
-those kind mini-projects that require a little program or script. Sure you can
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Tech)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/tech.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 18 Feb 2026 19:48:29 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>AI Is Good At Janitorial Work</title><link>https://sef.kloninger.com/posts/gemini-claude-cleanup/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/gemini-claude-cleanup.png" alt="Claude Code on the left, Gemini on the right" width="60%"&gt;&lt;/p&gt;
+&lt;p&gt;It's been nice having AI tools at the ready to take care of cleanup work. You
+know, those kind tasks that require a little program or script. Sure you can
 write it yourself, but it won't be fun, and it'll take some time, so instead you
 just don't bother and it doesn't get done.&lt;/p&gt;
 &lt;p&gt;Instead of just knocking this out I decided this would be a fun one to try with
 the two tools I'm using the most these days, &lt;strong&gt;Gemini&lt;/strong&gt; and &lt;strong&gt;Claude&lt;/strong&gt;. I can't
-really call this much of a contest, since it's just those two and it's not an
+really call this a proper bakeoff, since it's just those two and it's not an
 especially hard task.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;And the results? Both did very well.&lt;/strong&gt; Gemini got it right on the first try;
-Claude had two bugs that were easy to find and fix. Claude was a little nicer to
-work with and produced a nicer description of the solution work. They both
-produced produced identical results.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;And the result? Both did well but Gemini did a little better.&lt;/strong&gt; Gemini got it
+right on the first try; Claude had two bugs that were easy to find and fix.
+Claude was a little nicer to work with and produced a nicer description of the
+solution. Aside from that, the end product was identical.&lt;/p&gt;
 &lt;h3&gt;The Task&lt;/h3&gt;
 &lt;p&gt;I wanted to clean up the some of the old files backing this blog. I migrated the
 site from Wordpress to Nikola in 2013. Even back then I &lt;a href="https://sef.kloninger.com/posts/switching-to-static.md"&gt;complained
@@ -23,8 +23,8 @@ much detail. It's down at the bottom of this post.&lt;/p&gt;
 &lt;a href="https://github.com/sefk/sefk.github.io/commit/4a91a57dc965b1e77c05fafbc05fa14f1a293c7f"&gt;Gemini&lt;/a&gt; and &lt;a href="https://github.com/sefk/sefk.github.io/commit/78cee0789d98677c5298df543e895d7e2002ff72"&gt;Claude&lt;/a&gt;. They're pretty similar. I asked both to save
 their work in a &lt;code&gt;migration_scripts&lt;/code&gt; subdirectory, including a it's own summary
 of the work and full log.&lt;/p&gt;
-&lt;p&gt;I pay $20/month for "Pro" access, giving me Gemini 3 and Claude Sonnet 4.6, the
-best backends for each at this writing.&lt;/p&gt;
+&lt;p&gt;For both tools I pay the $20/month that gives me access to reasonable token
+limits and good production models -- Gemini 3 and Sonnet 4.6.&lt;/p&gt;
 &lt;h3&gt;Thoughts on Claude&lt;/h3&gt;
 &lt;p&gt;I didn't describe the problem as "Wordpress-style naming" but Claude sussed that
 out. Honestly I'd forgotten that was the source of the problem. Nice!&lt;/p&gt;
