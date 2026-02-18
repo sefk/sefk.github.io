@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 18 Feb 2026 19:48:29 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>AI Is Good At Janitorial Work</title><link>https://sef.kloninger.com/posts/gemini-claude-cleanup/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/gemini-claude-cleanup.png" alt="Claude Code on the left, Gemini on the right" width="60%"&gt;&lt;/p&gt;
-&lt;p&gt;It's been nice having AI tools at the ready to take care of cleanup work. You
-know, those kind tasks that require a little program or script. Sure you can
-write it yourself, but it won't be fun, and it'll take some time, so instead you
-just don't bother and it doesn't get done.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 18 Feb 2026 19:50:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>AI Is Good At Janitorial Work</title><link>https://sef.kloninger.com/posts/gemini-claude-cleanup/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/gemini-claude-cleanup.png" alt="Claude Code on the left, Gemini on the right" width="60%"&gt;&lt;/p&gt;
+&lt;p&gt;It's been nice having AI tools at the ready for cleanup work. You know, those
+tasks that require a little program or script. Sure you can write it yourself,
+but it won't be fun, and it'll take some time, so instead you just don't bother
+and it doesn't get done.&lt;/p&gt;
 &lt;p&gt;Instead of just knocking this out I decided this would be a fun one to try with
 the two tools I'm using the most these days, &lt;strong&gt;Gemini&lt;/strong&gt; and &lt;strong&gt;Claude&lt;/strong&gt;. I can't
 really call this a proper bakeoff, since it's just those two and it's not an
