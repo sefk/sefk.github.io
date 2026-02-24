@@ -60,4 +60,4 @@ And second, education is changing right now. Of the meetings I've had while <a 
 I look forward to doing something that will make even a little difference here. I'll blog about my experiences along the way.
 
 <p>
-PS - <a title="Peter Norvig @ TED" href="http://fm.schmoller.net/2012/07/peter-norvigs-ted-talk-about-the-ai-course.html" target="_blank">Peter Norvig's TED Talk</a> captured the reasons and potential nicely.  That seven minutes is worth your time.
+PS - <a title="Peter Norvig @ TED" href="https://www.ted.com/talks/peter_norvig_the_100_000_student_classroom" target="_blank">Peter Norvig's TED Talk</a> captured the reasons and potential nicely.  That seven minutes is worth your time.
