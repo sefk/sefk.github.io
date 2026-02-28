@@ -84,7 +84,115 @@ bg-dark
 
         </div>
     </header><div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/gemini-claude-cleanup/" class="u-url">AI Is Good At Janitorial Work</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/claude-dataviz/" class="u-url">"Hey Claude, What's Interesting In This Dataset?"</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="../../posts/claude-dataviz/" rel="bookmark">
+            <time class="published dt-published" datetime="2026-02-28T07:00:00-08:00" itemprop="datePublished" title="2026-02-28 07:00">2026-02-28 07:00</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p><span style="float:right; width:60%; display:block; margin: 0 0 1em 1em; outline: 1px solid #ddd; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"><img style="display:block; width:100%; padding:0;" class="postimage" src="../../f/tweetskb-dash.png" alt="TweetsKB EDA Dashboard"></span></p>
+<p>This week I used Claude as my pipeline engineer and data analyst. I had a ton of
+fun and figured I'd write about it.</p>
+<p>I've been taking a Data Visualization class at Stanford Continuing Studies (TECH
+26, Winter 2026). I needed a final project. There's this data set I've always
+wanted to play with, <a href="https://data.gesis.org/tweetskb/">TweetsKB</a>. Researchers took the Twitter Firehose
+data from 2013-23, back when it was <a href="https://www.reddit.com/r/DataHoarder/comments/10rj691/twitter_will_remove_free_access_to_the_twitter/">more available</a>, and ran it through entity extraction and sentiment analysis.
+They made the dataset available for others to work with. It's well documented
+and reasonable size, about 500GB. I figured there'd be something interesting in
+there.</p>
+<p>The cool part didn't turn out to be the analysis itself. I did find and graph
+some trends, like Wordle hitting the scene in Feb 2022 and then falling off;
+contrast that with K-Pop, which we all know has been much more durable. You can
+see those in the <a href="https://docs.google.com/presentation/d/1foF5n95BJadZ3fQEziQO697c3KwIVdSr7Vd2XcmAElg/edit">presentation</a> I did for the class, and I included some charts
+below.</p>
+<p>What was fun was my week of AI coding data analytics, a joyful week of AI data abalytics.</p>
+<h4>What I (We) Did</h4>
+<p>What I spent the week doing was chatting with Claude interspersed with running
+pipelines, bringing up and down jobs, etc. What it felt like though was having
+my own junior engineer working hard for me, doing whatever I asked, and doing it
+well and without complaint.</p>
+<p>This section is a bit of nuts and bolts of how that went, skippable if you don't
+want the blow-by-blow.</p>
+<p>We started with <strong>ETL pipelines</strong>. File format conversion, multiprocessing,
+scaling to fit RAM and processor limitations, progress bars and
+interruption/restart logic.</p>
+<p>Yikes, this is full of offensive stuff! I <a href="https://github.com/sefk/tweetskb-analysis/blob/main/session_prompts.md#14-2026-02-24-0130-utc">asked</a> for <strong>redaction</strong> with
+stable terms and it found and used a nice <a href="https://pypi.org/project/better-profanity/">off-the-shelf library</a>.</p>
+<p>When I didn't trust what I was seeing, I <a href="https://github.com/sefk/tweetskb-analysis/blob/main/session_prompts.md#64-2026-02-25-1158-utc">asked</a> for <strong>end-to-end data
+quality tests</strong>. Claude wrote them and then found and fixed a double counting
+bug. Nice!</p>
+<p>When I wanted to wander around in the data I <a href="https://github.com/sefk/tweetskb-analysis/blob/main/session_prompts.md#21-2026-02-24-1559-utc">asked</a> for an <strong>EDA
+dashboard</strong> and got one. EDA is the term of art I learned in class, "exploratory
+data analytics". The idea is something where you can click around, slice and
+scrub, looking for interesting things like correlations and trends.</p>
+<p>You can see this in the screenshot at the top of this post. Essentially I got
+the "Overview" and "Slice by Entity" tabs in one shot. How you do EDA with it?
+For example, the default view are two base ball teams. See the peaks when the
+Red Sox won championships in 2013 and 2018? But the Astros peak was higher in
+2017, presumably because of the <a href="https://en.wikipedia.org/wiki/Houston_Astros_sign_stealing_scandal">scandal</a>. Fun, right?</p>
+<p>I then iterated on that dashboard quite a bit. Instead of a normal notebook or
+colab-style workflow I was used to, instead I iterated around the dashboard. I'd
+ask Claude add or update charts in the dashboard ("annualize the last data
+point"), it'd reload, test and repeat. I did fall back to python or a notebook
+when I had to look at the raw data, but just in throwaway mode. I found this to
+be a really fast way to work.</p>
+<p>But I still had a hard time finding someting interesting in the dataset. So I
+just <a href="https://github.com/sefk/tweetskb-analysis/blob/main/session_prompts.md#110-2026-02-26-0009-utc">asked</a> an open-ended question, basically "<strong>find interesting stuff</strong>"
+and it produced <a href="https://github.com/sefk/tweetskb-analysis/tree/main/analysis">five analysis scripts</a>. Most of what's in the "Analysis" came
+from this one query, except for "Democrats vs. Republicans", which I did on my
+own and didn't prove too insightful.</p>
+<p>And yes, when I had ops issues Claude fixed those for me too, see screenshot
+below. Sure, I <em>could</em> tune workers vs. threads and manage PID files, but who
+wants to? And yes, when it came time to write the <a href="https://docs.google.com/presentation/d/1foF5n95BJadZ3fQEziQO697c3KwIVdSr7Vd2XcmAElg/edit">presentation</a>, Claude wrote
+that for me too. Well, most of it.</p>
+<p><strong>You can play with the <a href="http://home.kloninger.com:8050/?tab=analysis">dashboard</a> yourself.</strong> It's hosted on an
+underpowered server at my home, so if it doesn't work, try again later. All the
+code is <a href="https://github.com/sefk/tweetskb-analysis">in GitHub</a> and there are <a href="https://github.com/sefk/tweetskb-analysis/issues">known issues</a>.</p>
+<p>At some point I felt it was helpful to define "personas" to Claude to better
+describe the goals of each prompt. Then I started a prompt with "hey dashboard
+engineer, I'd like to...". I'm not sure how much that helped, it's tough to
+tell.</p>
+<h4>Some Thoughts</h4>
+<p>Let's not give AI too much credit. Pulling entity mentions out of tweets is
+something that data scientists and journalists have been doing for years. And
+this particular dataset probably has been around for a while and might very well
+have been used and written about, by undergrads. The story here might very well
+not be "gee whiz, looks at how smart AI is" and more "look at how AI has scooped
+up and repackaged years of everyone else's work."</p>
+<p>The speed of accomplishing these dev/debug tasks was remarkable. I felt like I
+had a coworker. And at remarkably low cost, too. This was all using the Claude
+$20/month plan. This past week was the time I poked above the token cap. I
+happily paid $5 more to keep on going.</p>
+<p>Is this programming? I think so, at least it felt that way when I was doing it.
+I was very much using the same parts of my brain as when I'm writing all the
+code myself. Indeed for years most of us have been "progamming" mostly via
+Google and Stack Overflow. It's like that but fast.</p>
+<h4>Charts</h4>
+<p>Here are three charts that fell out. Again, don't focus so much on the insights
+but how these came from a high-level, open ended prompt.</p>
+<p><img alt="Chart of COVID posts and sentiment" src="../../f/tweetskb-covid.png"></p>
+<p><img alt="Chart showing the Crypto bubble" src="../../f/tweetskb-crypto.png"></p>
+<p><img alt="Two charts showing pop culture moments" src="../../f/tweetskb-popculture.png"></p>
+<h4>Some Screenshots</h4>
+<p>Maybe some people would like to see what this looked like when I was doing it.
+Here's a screenshot during pipeline development. On the left is Claude adding
+some logging; the top right is <code>tail -f</code> on a log file, and the bottom right
+shows the progress bars churning through the data. </p>
+<p><img alt="Screenshot of pipeline development" src="../../f/tweetskb-pipeline.png"></p>
+<p>My modest Mac has 8 performance cores, hence 8 workers. </p>
+<p>And this screenshot is kind of fun. Look at how Claude explained a worker crash
+issue that I asked it to debug: "You already flagged it, the UI literally
+says..." 😀</p>
+<p><img alt="Screenshot of Claude debugging an ops problem" src="../../f/tweetskb-ops.png"></p>
+<p>Claude made the adjustment and saved its suggestions in a <a href="https://github.com/sefk/tweetskb-analysis/issues/2">Github Issue</a> to look
+if I want to look at it again later.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/gemini-claude-cleanup/" class="u-url">AI Is Good At Janitorial Work</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Sef Kloninger

@@ -1,5 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Tech)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/tech.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 18 Feb 2026 20:19:34 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>AI Is Good At Janitorial Work</title><link>https://sef.kloninger.com/posts/gemini-claude-cleanup/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/gemini-claude-cleanup.png" alt="Claude Code on the left, Gemini on the right" width="60%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Tech)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/tech.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 28 Feb 2026 16:24:06 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>"Hey Claude, What's Interesting In This Dataset?"</title><link>https://sef.kloninger.com/posts/claude-dataviz/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;span style="float:right; width:60%; display:block; margin: 0 0 1em 1em; outline: 1px solid #ddd; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"&gt;&lt;img style="display:block; width:100%; padding:0;" class="postimage" src="https://sef.kloninger.com/f/tweetskb-dash.png" alt="TweetsKB EDA Dashboard"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This week I used Claude as my pipeline engineer and data analyst. I had a ton of
+fun and figured I'd write about it.&lt;/p&gt;
+&lt;p&gt;I've been taking a Data Visualization class at Stanford Continuing Studies (TECH
+26, Winter 2026). I needed a final project. There's this data set I've always
+wanted to play with, &lt;a href="https://data.gesis.org/tweetskb/"&gt;TweetsKB&lt;/a&gt;. Researchers took the Twitter Firehose
+data from 2013-23, back when it was &lt;a href="https://www.reddit.com/r/DataHoarder/comments/10rj691/twitter_will_remove_free_access_to_the_twitter/"&gt;more available&lt;/a&gt;, and ran it through entity extraction and sentiment analysis.
+They made the dataset available for others to work with. It's well documented
+and reasonable size, about 500GB. I figured there'd be something interesting in
+there.&lt;/p&gt;
+&lt;p&gt;The cool part didn't turn out to be the analysis itself. I did find and graph
+some trends, like Wordle hitting the scene in Feb 2022 and then falling off;
+contrast that with K-Pop, which we all know has been much more durable. You can
+see those in the &lt;a href="https://docs.google.com/presentation/d/1foF5n95BJadZ3fQEziQO697c3KwIVdSr7Vd2XcmAElg/edit"&gt;presentation&lt;/a&gt; I did for the class, and I included some charts
+below.&lt;/p&gt;
+&lt;p&gt;What was fun was my week of AI coding data analytics, a joyful week of AI data abalytics.&lt;/p&gt;
+&lt;h4&gt;What I (We) Did&lt;/h4&gt;
+&lt;p&gt;What I spent the week doing was chatting with Claude interspersed with running
+pipelines, bringing up and down jobs, etc. What it felt like though was having
+my own junior engineer working hard for me, doing whatever I asked, and doing it
+well and without complaint.&lt;/p&gt;
+&lt;p&gt;This section is a bit of nuts and bolts of how that went, skippable if you don't
+want the blow-by-blow.&lt;/p&gt;
+&lt;p&gt;We started with &lt;strong&gt;ETL pipelines&lt;/strong&gt;. File format conversion, multiprocessing,
+scaling to fit RAM and processor limitations, progress bars and
+interruption/restart logic.&lt;/p&gt;
+&lt;p&gt;Yikes, this is full of offensive stuff! I &lt;a href="https://github.com/sefk/tweetskb-analysis/blob/main/session_prompts.md#14-2026-02-24-0130-utc"&gt;asked&lt;/a&gt; for &lt;strong&gt;redaction&lt;/strong&gt; with
+stable terms and it found and used a nice &lt;a href="https://pypi.org/project/better-profanity/"&gt;off-the-shelf library&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When I didn't trust what I was seeing, I &lt;a href="https://github.com/sefk/tweetskb-analysis/blob/main/session_prompts.md#64-2026-02-25-1158-utc"&gt;asked&lt;/a&gt; for &lt;strong&gt;end-to-end data
+quality tests&lt;/strong&gt;. Claude wrote them and then found and fixed a double counting
+bug. Nice!&lt;/p&gt;
+&lt;p&gt;When I wanted to wander around in the data I &lt;a href="https://github.com/sefk/tweetskb-analysis/blob/main/session_prompts.md#21-2026-02-24-1559-utc"&gt;asked&lt;/a&gt; for an &lt;strong&gt;EDA
+dashboard&lt;/strong&gt; and got one. EDA is the term of art I learned in class, "exploratory
+data analytics". The idea is something where you can click around, slice and
+scrub, looking for interesting things like correlations and trends.&lt;/p&gt;
+&lt;p&gt;You can see this in the screenshot at the top of this post. Essentially I got
+the "Overview" and "Slice by Entity" tabs in one shot. How you do EDA with it?
+For example, the default view are two base ball teams. See the peaks when the
+Red Sox won championships in 2013 and 2018? But the Astros peak was higher in
+2017, presumably because of the &lt;a href="https://en.wikipedia.org/wiki/Houston_Astros_sign_stealing_scandal"&gt;scandal&lt;/a&gt;. Fun, right?&lt;/p&gt;
+&lt;p&gt;I then iterated on that dashboard quite a bit. Instead of a normal notebook or
+colab-style workflow I was used to, instead I iterated around the dashboard. I'd
+ask Claude add or update charts in the dashboard ("annualize the last data
+point"), it'd reload, test and repeat. I did fall back to python or a notebook
+when I had to look at the raw data, but just in throwaway mode. I found this to
+be a really fast way to work.&lt;/p&gt;
+&lt;p&gt;But I still had a hard time finding someting interesting in the dataset. So I
+just &lt;a href="https://github.com/sefk/tweetskb-analysis/blob/main/session_prompts.md#110-2026-02-26-0009-utc"&gt;asked&lt;/a&gt; an open-ended question, basically "&lt;strong&gt;find interesting stuff&lt;/strong&gt;"
+and it produced &lt;a href="https://github.com/sefk/tweetskb-analysis/tree/main/analysis"&gt;five analysis scripts&lt;/a&gt;. Most of what's in the "Analysis" came
+from this one query, except for "Democrats vs. Republicans", which I did on my
+own and didn't prove too insightful.&lt;/p&gt;
+&lt;p&gt;And yes, when I had ops issues Claude fixed those for me too, see screenshot
+below. Sure, I &lt;em&gt;could&lt;/em&gt; tune workers vs. threads and manage PID files, but who
+wants to? And yes, when it came time to write the &lt;a href="https://docs.google.com/presentation/d/1foF5n95BJadZ3fQEziQO697c3KwIVdSr7Vd2XcmAElg/edit"&gt;presentation&lt;/a&gt;, Claude wrote
+that for me too. Well, most of it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You can play with the &lt;a href="http://home.kloninger.com:8050/?tab=analysis"&gt;dashboard&lt;/a&gt; yourself.&lt;/strong&gt; It's hosted on an
+underpowered server at my home, so if it doesn't work, try again later. All the
+code is &lt;a href="https://github.com/sefk/tweetskb-analysis"&gt;in GitHub&lt;/a&gt; and there are &lt;a href="https://github.com/sefk/tweetskb-analysis/issues"&gt;known issues&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At some point I felt it was helpful to define "personas" to Claude to better
+describe the goals of each prompt. Then I started a prompt with "hey dashboard
+engineer, I'd like to...". I'm not sure how much that helped, it's tough to
+tell.&lt;/p&gt;
+&lt;h4&gt;Some Thoughts&lt;/h4&gt;
+&lt;p&gt;Let's not give AI too much credit. Pulling entity mentions out of tweets is
+something that data scientists and journalists have been doing for years. And
+this particular dataset probably has been around for a while and might very well
+have been used and written about, by undergrads. The story here might very well
+not be "gee whiz, looks at how smart AI is" and more "look at how AI has scooped
+up and repackaged years of everyone else's work."&lt;/p&gt;
+&lt;p&gt;The speed of accomplishing these dev/debug tasks was remarkable. I felt like I
+had a coworker. And at remarkably low cost, too. This was all using the Claude
+$20/month plan. This past week was the time I poked above the token cap. I
+happily paid $5 more to keep on going.&lt;/p&gt;
+&lt;p&gt;Is this programming? I think so, at least it felt that way when I was doing it.
+I was very much using the same parts of my brain as when I'm writing all the
+code myself. Indeed for years most of us have been "progamming" mostly via
+Google and Stack Overflow. It's like that but fast.&lt;/p&gt;
+&lt;h4&gt;Charts&lt;/h4&gt;
+&lt;p&gt;Here are three charts that fell out. Again, don't focus so much on the insights
+but how these came from a high-level, open ended prompt.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Chart of COVID posts and sentiment" src="https://sef.kloninger.com/f/tweetskb-covid.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Chart showing the Crypto bubble" src="https://sef.kloninger.com/f/tweetskb-crypto.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Two charts showing pop culture moments" src="https://sef.kloninger.com/f/tweetskb-popculture.png"&gt;&lt;/p&gt;
+&lt;h4&gt;Some Screenshots&lt;/h4&gt;
+&lt;p&gt;Maybe some people would like to see what this looked like when I was doing it.
+Here's a screenshot during pipeline development. On the left is Claude adding
+some logging; the top right is &lt;code&gt;tail -f&lt;/code&gt; on a log file, and the bottom right
+shows the progress bars churning through the data. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Screenshot of pipeline development" src="https://sef.kloninger.com/f/tweetskb-pipeline.png"&gt;&lt;/p&gt;
+&lt;p&gt;My modest Mac has 8 performance cores, hence 8 workers. &lt;/p&gt;
+&lt;p&gt;And this screenshot is kind of fun. Look at how Claude explained a worker crash
+issue that I asked it to debug: "You already flagged it, the UI literally
+says..." 😀&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Screenshot of Claude debugging an ops problem" src="https://sef.kloninger.com/f/tweetskb-ops.png"&gt;&lt;/p&gt;
+&lt;p&gt;Claude made the adjustment and saved its suggestions in a &lt;a href="https://github.com/sefk/tweetskb-analysis/issues/2"&gt;Github Issue&lt;/a&gt; to look
+if I want to look at it again later.&lt;/p&gt;</description><category>AI</category><category>Tech</category><guid>https://sef.kloninger.com/posts/claude-dataviz/</guid><pubDate>Sat, 28 Feb 2026 15:00:00 GMT</pubDate></item><item><title>AI Is Good At Janitorial Work</title><link>https://sef.kloninger.com/posts/gemini-claude-cleanup/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/gemini-claude-cleanup.png" alt="Claude Code on the left, Gemini on the right" width="60%"&gt;&lt;/p&gt;
 &lt;p&gt;It's been nice having AI tools at the ready for cleanup work. You know, those
 tasks that require a little program or script. Sure you can write it yourself,
 but it won't be fun, and it'll take some time, so instead you just don't bother
