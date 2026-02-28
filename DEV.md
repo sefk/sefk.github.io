@@ -22,6 +22,18 @@ Branching
   and compiled assets. `nikola github_deploy` orchestrates build, merge,
   and push to production.
 
+## Posts and Stories
+
+All posts follow a similar layout.
+
+- Markdown text per Nikola
+- A header block at the top as HTML comments with Nikola metadata.
+- A hero image, right aligned that text can flow around. To get the
+  formatting right, this is done via an IMG tag instead of markdown
+- Images locally copied into the `/files/f` subdirectory so they can be
+  versioned and self-hosted.
+- H2 elements for section headers.
+
 ## Constraints
 
 Commits can be safely made to the "dev" branch and pushed to Github.
