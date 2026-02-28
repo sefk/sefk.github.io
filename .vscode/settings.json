@@ -1,4 +1,7 @@
 {
+    "cSpell.enabled": false,
+    "cSpell.checkOnlyEnabledFileTypes": true,
+    "cSpell.enabledFileTypes": [],
     "cSpell.ignorePaths": [
         "conf.py",
         "bin/**",
