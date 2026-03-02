@@ -14,11 +14,11 @@ fun and figured I'd write about it.
 
 I've been taking a Data Visualization class at Stanford Continuing Studies (TECH
 26, Winter 2026). I needed a final project. There's this data set I've always
-wanted to play with, [TweetsKB]. Researchers took the Twitter Firehose
-data from 2013-23, back when it was [more available], and ran it through entity extraction and sentiment analysis.
-They made the dataset available for others to work with. It's well documented
-and reasonable size, about 500GB. I figured there'd be something interesting in
-there.
+wanted to play with, [TweetsKB]. Researchers took the Twitter Firehose data from
+2013-23, back when it was [more available], and ran it through entity extraction
+and sentiment analysis. They made the dataset available for others to work with.
+It's well documented and reasonable size, about 500GB. I figured there'd be
+something interesting in there.
 
 The cool part didn't turn out to be the analysis itself. I did find and graph
 some trends, like Wordle hitting the scene in Feb 2022 and then falling off;
@@ -26,7 +26,7 @@ contrast that with K-Pop, which we all know has been much more durable. You can
 see those in the [presentation] I did for the class, and I included some charts
 below.
 
-What was fun was my week of AI coding data analytics, a joyful week of AI data abalytics.
+But the main thing is this was just plain **fun**.
 
 ### What I (We) Did
 
@@ -35,8 +35,8 @@ pipelines, bringing up and down jobs, etc. What it felt like though was having
 my own junior engineer working hard for me, doing whatever I asked, and doing it
 well and without complaint.
 
-This section is a bit of nuts and bolts of how that went, skippable if you don't
-want the blow-by-blow.
+This section is has more of the details of how it went. Consider skipping if you
+don't want to get in the weeds.
 
 We started with **ETL pipelines**. File format conversion, multiprocessing,
 scaling to fit RAM and processor limitations, progress bars and
@@ -78,14 +78,13 @@ below. Sure, I _could_ tune workers vs. threads and manage PID files, but who
 wants to? And yes, when it came time to write the [presentation], Claude wrote
 that for me too. Well, most of it.
 
-**You can play with the [dashboard][dash] yourself.** It's hosted on an
-underpowered server at my home, so if it doesn't work, try again later. All the
-code is [in GitHub] and there are [known issues].
+You can play with the [dashboard][dash] yourself. It's hosted on an underpowered
+server at my home, so if it doesn't work, let me know or try again later. All
+the code is [in GitHub] and there are [known issues].
 
-At some point I felt it was helpful to define "personas" to Claude to better
+At some point I felt it was helpful to define "personas" for Claude to better
 describe the goals of each prompt. Then I started a prompt with "hey dashboard
-engineer, I'd like to...". I'm not sure how much that helped, it's tough to
-tell.
+engineer, I'd like to...". Tough to tell how much that helped
 
 ### Some Thoughts
  
