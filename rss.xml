@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 28 Feb 2026 16:24:06 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>"Hey Claude, What's Interesting In This Dataset?"</title><link>https://sef.kloninger.com/posts/claude-dataviz/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;span style="float:right; width:60%; display:block; margin: 0 0 1em 1em; outline: 1px solid #ddd; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"&gt;&lt;img style="display:block; width:100%; padding:0;" class="postimage" src="https://sef.kloninger.com/f/tweetskb-dash.png" alt="TweetsKB EDA Dashboard"&gt;&lt;/span&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 02 Mar 2026 05:35:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>"Hey Claude, What's Interesting In This Dataset?"</title><link>https://sef.kloninger.com/posts/claude-dataviz/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;span style="float:right; width:60%; display:block; margin: 0 0 1em 1em; outline: 1px solid #ddd; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"&gt;&lt;img style="display:block; width:100%; padding:0;" class="postimage" src="https://sef.kloninger.com/f/tweetskb-dash.png" alt="TweetsKB EDA Dashboard"&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;This week I used Claude as my pipeline engineer and data analyst. I had a ton of
 fun and figured I'd write about it.&lt;/p&gt;
 &lt;p&gt;I've been taking a Data Visualization class at Stanford Continuing Studies (TECH
 26, Winter 2026). I needed a final project. There's this data set I've always
-wanted to play with, &lt;a href="https://data.gesis.org/tweetskb/"&gt;TweetsKB&lt;/a&gt;. Researchers took the Twitter Firehose
-data from 2013-23, back when it was &lt;a href="https://www.reddit.com/r/DataHoarder/comments/10rj691/twitter_will_remove_free_access_to_the_twitter/"&gt;more available&lt;/a&gt;, and ran it through entity extraction and sentiment analysis.
-They made the dataset available for others to work with. It's well documented
-and reasonable size, about 500GB. I figured there'd be something interesting in
-there.&lt;/p&gt;
+wanted to play with, &lt;a href="https://data.gesis.org/tweetskb/"&gt;TweetsKB&lt;/a&gt;. Researchers took the Twitter Firehose data from
+2013-23, back when it was &lt;a href="https://www.reddit.com/r/DataHoarder/comments/10rj691/twitter_will_remove_free_access_to_the_twitter/"&gt;more available&lt;/a&gt;, and ran it through entity extraction
+and sentiment analysis. They made the dataset available for others to work with.
+It's well documented and reasonable size, about 500GB. I figured there'd be
+something interesting in there.&lt;/p&gt;
 &lt;p&gt;The cool part didn't turn out to be the analysis itself. I did find and graph
 some trends, like Wordle hitting the scene in Feb 2022 and then falling off;
 contrast that with K-Pop, which we all know has been much more durable. You can
 see those in the &lt;a href="https://docs.google.com/presentation/d/1foF5n95BJadZ3fQEziQO697c3KwIVdSr7Vd2XcmAElg/edit"&gt;presentation&lt;/a&gt; I did for the class, and I included some charts
 below.&lt;/p&gt;
-&lt;p&gt;What was fun was my week of AI coding data analytics, a joyful week of AI data abalytics.&lt;/p&gt;
+&lt;p&gt;But the main thing is this was just plain &lt;strong&gt;fun&lt;/strong&gt;.&lt;/p&gt;
 &lt;h4&gt;What I (We) Did&lt;/h4&gt;
 &lt;p&gt;What I spent the week doing was chatting with Claude interspersed with running
 pipelines, bringing up and down jobs, etc. What it felt like though was having
 my own junior engineer working hard for me, doing whatever I asked, and doing it
 well and without complaint.&lt;/p&gt;
-&lt;p&gt;This section is a bit of nuts and bolts of how that went, skippable if you don't
-want the blow-by-blow.&lt;/p&gt;
+&lt;p&gt;This section is has more of the details of how it went. Consider skipping if you
+don't want to get in the weeds.&lt;/p&gt;
 &lt;p&gt;We started with &lt;strong&gt;ETL pipelines&lt;/strong&gt;. File format conversion, multiprocessing,
 scaling to fit RAM and processor limitations, progress bars and
 interruption/restart logic.&lt;/p&gt;
@@ -54,13 +54,12 @@ own and didn't prove too insightful.&lt;/p&gt;
 below. Sure, I &lt;em&gt;could&lt;/em&gt; tune workers vs. threads and manage PID files, but who
 wants to? And yes, when it came time to write the &lt;a href="https://docs.google.com/presentation/d/1foF5n95BJadZ3fQEziQO697c3KwIVdSr7Vd2XcmAElg/edit"&gt;presentation&lt;/a&gt;, Claude wrote
 that for me too. Well, most of it.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;You can play with the &lt;a href="http://home.kloninger.com:8050/?tab=analysis"&gt;dashboard&lt;/a&gt; yourself.&lt;/strong&gt; It's hosted on an
-underpowered server at my home, so if it doesn't work, try again later. All the
-code is &lt;a href="https://github.com/sefk/tweetskb-analysis"&gt;in GitHub&lt;/a&gt; and there are &lt;a href="https://github.com/sefk/tweetskb-analysis/issues"&gt;known issues&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;At some point I felt it was helpful to define "personas" to Claude to better
+&lt;p&gt;You can play with the &lt;a href="http://home.kloninger.com:8050/?tab=analysis"&gt;dashboard&lt;/a&gt; yourself. It's hosted on an underpowered
+server at my home, so if it doesn't work, let me know or try again later. All
+the code is &lt;a href="https://github.com/sefk/tweetskb-analysis"&gt;in GitHub&lt;/a&gt; and there are &lt;a href="https://github.com/sefk/tweetskb-analysis/issues"&gt;known issues&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At some point I felt it was helpful to define "personas" for Claude to better
 describe the goals of each prompt. Then I started a prompt with "hey dashboard
-engineer, I'd like to...". I'm not sure how much that helped, it's tough to
-tell.&lt;/p&gt;
+engineer, I'd like to...". Tough to tell how much that helped&lt;/p&gt;
 &lt;h4&gt;Some Thoughts&lt;/h4&gt;
 &lt;p&gt;Let's not give AI too much credit. Pulling entity mentions out of tweets is
 something that data scientists and journalists have been doing for years. And
