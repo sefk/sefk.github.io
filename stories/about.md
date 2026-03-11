@@ -4,8 +4,8 @@
 .. date: 2025/08/05
 -->
 
-I'm an engineer and Dad and tinkerer. I'm on break from years of software
-engineering management.
+I'm an engineer and Dad and tinkerer. I'm semi-retired from a
+thirty-year career as an engineering manager.
 
 <img src="/f/sef-squint.jpeg" 
      style="float:right; padding-left:40px;"
