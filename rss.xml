@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 25 Mar 2026 05:44:58 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>I Built This: Leafletter</title><link>https://sef.kloninger.com/posts/leafletter/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/leafletter-icon-large.png" alt="Leafletter app icon" width="50%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 25 Mar 2026 17:28:04 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>I Built This: Leafletter</title><link>https://sef.kloninger.com/posts/leafletter/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/leafletter-icon-large.png" alt="Leafletter app icon" width="50%"&gt;&lt;/p&gt;
 &lt;p&gt;I wrote an app and I wanted to write about it. Not so much the app itself, but
 how I made it and why.&lt;/p&gt;
 &lt;p&gt;You can try it out yourself. The web version is &lt;a href="https://leafletter.app/"&gt;Leafletter.app&lt;/a&gt;. And there's
@@ -12,41 +12,55 @@ so others don't double up their efforts.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Screenshot of Leafletter App's worker view" src="https://sef.kloninger.com/f/leafletter-worker-screenshot.png"&gt;&lt;/p&gt;
 &lt;h3&gt;Why?&lt;/h3&gt;
 &lt;p&gt;I built this app for a few reasons.&lt;/p&gt;
-&lt;p&gt;First was to help my wife Maren out who has been organizing leaflet distribution
-for &lt;a href="https://indivisiblemp.org/"&gt;Indivisible Mid-Peninsula&lt;/a&gt; here in the SF Bay Area. &lt;/p&gt;
-&lt;p&gt;There are existing apps out there for organizing campaigns like this, but they
-all cost money, and they all are much more heavyweight than what we need here.
-Most of them assume that you're hiring gig workers to do this work, so there's
-a lot of workflow around keeping track of inventory and tracking with GPS or
-photos — you wouldn't want all those flyers just in a trashcan somewhere.
-Most important to me was that the "worker" interface was simple to use and low
-friction. In particular I didn't want any sign-in or accounts. The honor system
-is fine.&lt;/p&gt;
+&lt;p&gt;First was to help my wife out who has been organizing leaflet distribution for
+&lt;a href="https://indivisiblemp.org/"&gt;Indivisible Mid-Peninsula&lt;/a&gt; here in the SF Bay Area.&lt;/p&gt;
+&lt;p&gt;There are existing apps out there for organizing campaigns, but they all cost
+money, and are much more heavyweight than what we need here. They seem to
+target people hiring and managing gig workers to do this work and they need
+workflow to keep track of inventory and tracking work (GPS, photos) — you
+wouldn't want all those flyers just in a trashcan somewhere. Most important to
+me was that the main interface was simple to use and low friction -- no
+accounts!&lt;/p&gt;
 &lt;p&gt;Second, this was the capstone project in the Vibe Coding class I took this
-quarter. I spent a few more weeks tweaking, and making more robust, and adding
-some features, but the basics were working in that week I spent on it in class. &lt;/p&gt;
-&lt;p&gt;Third, it was just plain fun to do. I learned a ton living in Claude Code. I
-recorded a two-minute &lt;a href="https://youtu.be/gyJbiEwGMoU"&gt;screencast&lt;/a&gt; showing the typical workflow. This was
-adding a little feature, &lt;a href="https://github.com/sefk/leafletter-app/issues/100"&gt;issue #100&lt;/a&gt; actually. This enabled panning the map
-when in trip-selection mode, a feature request from my sister actually.&lt;/p&gt;
-&lt;p&gt;But the overall experience was joyful and fun. While I'd like for this to get
-some use, the fun was in the making.&lt;/p&gt;
-&lt;h3&gt;What Was Hard?&lt;/h3&gt;
-&lt;p&gt;It actually wasn't very hard at all!&lt;/p&gt;
-&lt;p&gt;The only tricky part was managing the download of all this street information
-and stitching it together into something manageable to download to a mobile
-client. Since this required retries and long running operations this required a
-queue and a worker. Below you can see what that looks like through the interface
-an organizer would use to publish an event, and then the console up on Railway
-which I'm using for hosting.&lt;/p&gt;
+quarter. I spent a few more weeks tweaking it, making it more robust, and adding
+features, but the basics were working in that week I spent on it in class.&lt;/p&gt;
+&lt;p&gt;Third, it was just plain fun to do. I learned a ton living in Claude Code.  I
+liked managing things mostly through GitHub Issues. I have a nice workflow:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;File a bug describing what I wanted&lt;/li&gt;
+&lt;li&gt;"Let's fix issue #100"&lt;/li&gt;
+&lt;li&gt;Simple things just got coded up right then, harder things would go through
+   planning&lt;/li&gt;
+&lt;li&gt;Local testing&lt;/li&gt;
+&lt;li&gt;"Commit it and close the bug"&lt;/li&gt;
+&lt;li&gt;I do the git push&lt;/li&gt;
+&lt;li&gt;Infra notices and does its build and push&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I recorded a two-minute &lt;a href="https://youtu.be/gyJbiEwGMoU"&gt;screencast&lt;/a&gt; showing this in action, adding a &lt;a href="https://github.com/sefk/leafletter-app/issues/100"&gt;little
+feature&lt;/a&gt;. This one request came from my sister.&lt;/p&gt;
+&lt;p&gt;I also found it helpful to set up some personas that I could delegate tasks to.
+A &lt;em&gt;Developer&lt;/em&gt; to do most of the work, adhering to some rules I put in for good
+coding practices ("always run tests"). And then two others that were rarely
+used, on demand: a &lt;em&gt;Project Manager&lt;/em&gt; to debug GitHub and a &lt;em&gt;UX Engineer&lt;/em&gt; to
+review and make suggestions ("Great, please open bugs for all of those").&lt;/p&gt;
+&lt;p&gt;The overall experience was joyful. While I'd like for this to get some use, the fun
+was in the making.&lt;/p&gt;
+&lt;h3&gt;Was Anything Hard?&lt;/h3&gt;
+&lt;p&gt;The tricky part was managing the download of the street data and stitching it
+together into something manageable. It's a fair amount of data, and the backend
+its fetching from is not very reliable. Retries and long-running
+operations needed a queue and worker. The screenshots below show the organizer
+interface showing one event still being processed, and the ops console
+showing the different servers.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Leafletter list of campaigns" src="https://sef.kloninger.com/f/leafletter-campaigns.png"&gt;
 &lt;img alt="Leafletter ops console on railway" src="https://sef.kloninger.com/f/leafletter-railway.png"&gt;&lt;/p&gt;
-&lt;p&gt;I did all of this easily within my $20/month Claude Code token budget. Hosting
-costs so far haven't added up to much more than that. The biggest expense was
-the $100 fee to have the privilege of putting something up on Apple's App Store
-(boo).&lt;/p&gt;
+&lt;p&gt;I'm using Railway for hosting for the moment, which has been OK. Their storage
+setup is a bit wonky (&lt;a href="https://github.com/sefk/leafletter-app/issues/102"&gt;#102&lt;/a&gt;) and it might prove to be expensive, we'll see.&lt;/p&gt;
+&lt;p&gt;I did all of this easily within my $20/month Claude Code token budget. The
+biggest expense was the $100 fee to have the privilege of putting something up
+on Apple's App Store (boo).&lt;/p&gt;
 &lt;h3&gt;Future work&lt;/h3&gt;
-&lt;p&gt;Mobile still could use some work&lt;/p&gt;
+&lt;p&gt;Mobile still could use some work.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;I tried an iOS native interface for a while, but could never get it to perform
   well enough. But that'd still probably give a better experience&lt;/li&gt;

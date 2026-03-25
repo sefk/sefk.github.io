@@ -102,40 +102,54 @@ so others don't double up their efforts.</p>
 <p><img alt="Screenshot of Leafletter App's worker view" src="../f/leafletter-worker-screenshot.png"></p>
 <h3>Why?</h3>
 <p>I built this app for a few reasons.</p>
-<p>First was to help my wife Maren out who has been organizing leaflet distribution
-for <a href="https://indivisiblemp.org/">Indivisible Mid-Peninsula</a> here in the SF Bay Area. </p>
-<p>There are existing apps out there for organizing campaigns like this, but they
-all cost money, and they all are much more heavyweight than what we need here.
-Most of them assume that you're hiring gig workers to do this work, so there's
-a lot of workflow around keeping track of inventory and tracking with GPS or
-photos — you wouldn't want all those flyers just in a trashcan somewhere.
-Most important to me was that the "worker" interface was simple to use and low
-friction. In particular I didn't want any sign-in or accounts. The honor system
-is fine.</p>
+<p>First was to help my wife out who has been organizing leaflet distribution for
+<a href="https://indivisiblemp.org/">Indivisible Mid-Peninsula</a> here in the SF Bay Area.</p>
+<p>There are existing apps out there for organizing campaigns, but they all cost
+money, and are much more heavyweight than what we need here. They seem to
+target people hiring and managing gig workers to do this work and they need
+workflow to keep track of inventory and tracking work (GPS, photos) — you
+wouldn't want all those flyers just in a trashcan somewhere. Most important to
+me was that the main interface was simple to use and low friction -- no
+accounts!</p>
 <p>Second, this was the capstone project in the Vibe Coding class I took this
-quarter. I spent a few more weeks tweaking, and making more robust, and adding
-some features, but the basics were working in that week I spent on it in class. </p>
-<p>Third, it was just plain fun to do. I learned a ton living in Claude Code. I
-recorded a two-minute <a href="https://youtu.be/gyJbiEwGMoU">screencast</a> showing the typical workflow. This was
-adding a little feature, <a href="https://github.com/sefk/leafletter-app/issues/100">issue #100</a> actually. This enabled panning the map
-when in trip-selection mode, a feature request from my sister actually.</p>
-<p>But the overall experience was joyful and fun. While I'd like for this to get
-some use, the fun was in the making.</p>
-<h3>What Was Hard?</h3>
-<p>It actually wasn't very hard at all!</p>
-<p>The only tricky part was managing the download of all this street information
-and stitching it together into something manageable to download to a mobile
-client. Since this required retries and long running operations this required a
-queue and a worker. Below you can see what that looks like through the interface
-an organizer would use to publish an event, and then the console up on Railway
-which I'm using for hosting.</p>
+quarter. I spent a few more weeks tweaking it, making it more robust, and adding
+features, but the basics were working in that week I spent on it in class.</p>
+<p>Third, it was just plain fun to do. I learned a ton living in Claude Code.  I
+liked managing things mostly through GitHub Issues. I have a nice workflow:</p>
+<ol>
+<li>File a bug describing what I wanted</li>
+<li>"Let's fix issue #100"</li>
+<li>Simple things just got coded up right then, harder things would go through
+   planning</li>
+<li>Local testing</li>
+<li>"Commit it and close the bug"</li>
+<li>I do the git push</li>
+<li>Infra notices and does its build and push</li>
+</ol>
+<p>I recorded a two-minute <a href="https://youtu.be/gyJbiEwGMoU">screencast</a> showing this in action, adding a <a href="https://github.com/sefk/leafletter-app/issues/100">little
+feature</a>. This one request came from my sister.</p>
+<p>I also found it helpful to set up some personas that I could delegate tasks to.
+A <em>Developer</em> to do most of the work, adhering to some rules I put in for good
+coding practices ("always run tests"). And then two others that were rarely
+used, on demand: a <em>Project Manager</em> to debug GitHub and a <em>UX Engineer</em> to
+review and make suggestions ("Great, please open bugs for all of those").</p>
+<p>The overall experience was joyful. While I'd like for this to get some use, the fun
+was in the making.</p>
+<h3>Was Anything Hard?</h3>
+<p>The tricky part was managing the download of the street data and stitching it
+together into something manageable. It's a fair amount of data, and the backend
+its fetching from is not very reliable. Retries and long-running
+operations needed a queue and worker. The screenshots below show the organizer
+interface showing one event still being processed, and the ops console
+showing the different servers.</p>
 <p><img alt="Leafletter list of campaigns" src="../f/leafletter-campaigns.png"><img alt="Leafletter ops console on railway" src="../f/leafletter-railway.png"></p>
-<p>I did all of this easily within my $20/month Claude Code token budget. Hosting
-costs so far haven't added up to much more than that. The biggest expense was
-the $100 fee to have the privilege of putting something up on Apple's App Store
-(boo).</p>
+<p>I'm using Railway for hosting for the moment, which has been OK. Their storage
+setup is a bit wonky (<a href="https://github.com/sefk/leafletter-app/issues/102">#102</a>) and it might prove to be expensive, we'll see.</p>
+<p>I did all of this easily within my $20/month Claude Code token budget. The
+biggest expense was the $100 fee to have the privilege of putting something up
+on Apple's App Store (boo).</p>
 <h3>Future work</h3>
-<p>Mobile still could use some work</p>
+<p>Mobile still could use some work.</p>
 <ul>
 <li>I tried an iOS native interface for a while, but could never get it to perform
   well enough. But that'd still probably give a better experience</li>
