@@ -1,5 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 11 Mar 2026 17:45:05 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>"Hey Claude, What's Interesting In This Dataset?"</title><link>https://sef.kloninger.com/posts/claude-dataviz/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;span style="float:right; width:60%; display:block; margin: 0 0 1em 1em; outline: 1px solid #ddd; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"&gt;&lt;img style="display:block; width:100%; padding:0;" class="postimage" src="https://sef.kloninger.com/f/tweetskb-dash.png" alt="TweetsKB EDA Dashboard"&gt;&lt;/span&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 25 Mar 2026 05:44:58 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>I Built This: Leafletter</title><link>https://sef.kloninger.com/posts/leafletter/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/leafletter-icon-large.png" alt="Leafletter app icon" width="50%"&gt;&lt;/p&gt;
+&lt;p&gt;I wrote an app and I wanted to write about it. Not so much the app itself, but
+how I made it and why.&lt;/p&gt;
+&lt;p&gt;You can try it out yourself. The web version is &lt;a href="https://leafletter.app/"&gt;Leafletter.app&lt;/a&gt;. And there's
+an iPhone app available on the &lt;a href="https://apps.apple.com/us/app/leafletter/id6760505256"&gt;Apple App Store&lt;/a&gt;. The &lt;a href="https://leafletter.app/about/"&gt;about page&lt;/a&gt; has a
+bit of description, and there are a couple of test campaigns where you can log a
+trip. That's what those test campaigns are for!&lt;/p&gt;
+&lt;p&gt;The two main use cases are: volunteers who distribute these leaflets ("workers")
+need to know what neighborhoods have already been covered; workers can report in
+so others don't double up their efforts.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Screenshot of Leafletter App's worker view" src="https://sef.kloninger.com/f/leafletter-worker-screenshot.png"&gt;&lt;/p&gt;
+&lt;h3&gt;Why?&lt;/h3&gt;
+&lt;p&gt;I built this app for a few reasons.&lt;/p&gt;
+&lt;p&gt;First was to help my wife Maren out who has been organizing leaflet distribution
+for &lt;a href="https://indivisiblemp.org/"&gt;Indivisible Mid-Peninsula&lt;/a&gt; here in the SF Bay Area. &lt;/p&gt;
+&lt;p&gt;There are existing apps out there for organizing campaigns like this, but they
+all cost money, and they all are much more heavyweight than what we need here.
+Most of them assume that you're hiring gig workers to do this work, so there's
+a lot of workflow around keeping track of inventory and tracking with GPS or
+photos — you wouldn't want all those flyers just in a trashcan somewhere.
+Most important to me was that the "worker" interface was simple to use and low
+friction. In particular I didn't want any sign-in or accounts. The honor system
+is fine.&lt;/p&gt;
+&lt;p&gt;Second, this was the capstone project in the Vibe Coding class I took this
+quarter. I spent a few more weeks tweaking, and making more robust, and adding
+some features, but the basics were working in that week I spent on it in class. &lt;/p&gt;
+&lt;p&gt;Third, it was just plain fun to do. I learned a ton living in Claude Code. I
+recorded a two-minute &lt;a href="https://youtu.be/gyJbiEwGMoU"&gt;screencast&lt;/a&gt; showing the typical workflow. This was
+adding a little feature, &lt;a href="https://github.com/sefk/leafletter-app/issues/100"&gt;issue #100&lt;/a&gt; actually. This enabled panning the map
+when in trip-selection mode, a feature request from my sister actually.&lt;/p&gt;
+&lt;p&gt;But the overall experience was joyful and fun. While I'd like for this to get
+some use, the fun was in the making.&lt;/p&gt;
+&lt;h3&gt;What Was Hard?&lt;/h3&gt;
+&lt;p&gt;It actually wasn't very hard at all!&lt;/p&gt;
+&lt;p&gt;The only tricky part was managing the download of all this street information
+and stitching it together into something manageable to download to a mobile
+client. Since this required retries and long running operations this required a
+queue and a worker. Below you can see what that looks like through the interface
+an organizer would use to publish an event, and then the console up on Railway
+which I'm using for hosting.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Leafletter list of campaigns" src="https://sef.kloninger.com/f/leafletter-campaigns.png"&gt;
+&lt;img alt="Leafletter ops console on railway" src="https://sef.kloninger.com/f/leafletter-railway.png"&gt;&lt;/p&gt;
+&lt;p&gt;I did all of this easily within my $20/month Claude Code token budget. Hosting
+costs so far haven't added up to much more than that. The biggest expense was
+the $100 fee to have the privilege of putting something up on Apple's App Store
+(boo).&lt;/p&gt;
+&lt;h3&gt;Future work&lt;/h3&gt;
+&lt;p&gt;Mobile still could use some work&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I tried an iOS native interface for a while, but could never get it to perform
+  well enough. But that'd still probably give a better experience&lt;/li&gt;
+&lt;li&gt;I'd like to do an Android app too. I don't have a dev phone, but I imagine I
+  could buy one from a friend at some point.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And then a ton of features: organization views and ACL's, correlating streets
+with household demographics, better UX for selecting streets, etc. If you have
+feedback please &lt;a href="https://github.com/sefk/leafletter-app/issues"&gt;file a bug&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;I'm looking forward to getting this in the hands of some real users soon and
+getting some feedback.&lt;/p&gt;</description><category>AI</category><category>Engineering</category><guid>https://sef.kloninger.com/posts/leafletter/</guid><pubDate>Wed, 25 Mar 2026 05:00:00 GMT</pubDate></item><item><title>"Hey Claude, What's Interesting In This Dataset?"</title><link>https://sef.kloninger.com/posts/claude-dataviz/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;span style="float:right; width:60%; display:block; margin: 0 0 1em 1em; outline: 1px solid #ddd; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"&gt;&lt;img style="display:block; width:100%; padding:0;" class="postimage" src="https://sef.kloninger.com/f/tweetskb-dash.png" alt="TweetsKB EDA Dashboard"&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;This week I used Claude as my pipeline engineer and data analyst. I had a ton of
 fun and figured I'd write about it.&lt;/p&gt;
 &lt;p&gt;I've been taking a Data Visualization class at Stanford Continuing Studies (TECH
@@ -454,34 +512,4 @@ wonderful, mind-expanding time and a stress-fest is my own mindset. And now
 that I haven't been really working for six weeks now, I can confidently say
 that my mindset is positive and good.&lt;/p&gt;
 &lt;p&gt;I'm excited about the next phase. I feel fortunate to have some time to focus on
-what's important.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>https://sef.kloninger.com/posts/leaving-google/</guid><pubDate>Fri, 10 Oct 2025 05:00:00 GMT</pubDate></item><item><title>A Good Interview Question</title><link>https://sef.kloninger.com/posts/interview-question/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/python.png" alt="Python language logo" width="25%"&gt;&lt;/p&gt;
-&lt;p&gt;I liked the question that I got when interviewing at YouTube in 2015. At Google
-then we'd have an interview panel of four or five people, each assigned to cover
-a different area. &lt;a href="https://www.linkedin.com/in/billy-biggs-7ab1023/"&gt;Billy Biggs&lt;/a&gt; was the TL on my panel asked to evaluate
-"architecture." For a manager candidate that mostly meant evaluating technical
-cluefulness (someone else had me do some simple &lt;a href="https://sef.kloninger.com/posts/201205fizzbuzz-for-managers"&gt;programming&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;Billy's question: &lt;strong&gt;Discuss what would cause a Python interpreter to crash. Not
-a &lt;em&gt;program written in Python&lt;/em&gt;, but the interpreter itself.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I remember this leading to a fun, rambling, back-and-forth discussion of the
-&lt;strong&gt;ways computers can fail&lt;/strong&gt;. There are so many! Every level of the stack can
-fail in interesting ways: storage, RAM, memory management, networking. How would
-a bit flip in a TLB manifest? How does TCP/IP detect and handle ordering?
-collisions?&lt;/p&gt;
-&lt;p&gt;We also covered a bunch of &lt;strong&gt;engineering and process questions&lt;/strong&gt;. How is the
-interpreter itself implemented, in what language and by whom? What would the
-quality processes be like for a product like that, especially given Python is
-presumably a really large open source project? How would you manage this? How
-important to quality is the role of the &lt;a href="https://en.wikipedia.org/wiki/Benevolent_dictator_for_life"&gt;BDFL&lt;/a&gt;? &lt;/p&gt;
-&lt;p&gt;And then that lead to a some more interesting higher-level discussions about the
-actual &lt;strong&gt;costs and benefits of addressing failures&lt;/strong&gt; like these in the field.
-When should programs hard-fail versus detect and recover? How would you staff an
-engineering team to find and chase down errors? What's the user impact to a
-failure like this?&lt;/p&gt;
-&lt;p&gt;One of my favorite things about this question is most likely it was something
-they'd actually seen right in their backyard. In 2015 significant parts of
-YouTube was &lt;a href="https://mail.python.org/pipermail/python-dev/2006-December/070323.html"&gt;written in Python&lt;/a&gt; (that's likely not the case anymore, I don't
-know). Crashes like these must have come up in the field. Not only are
-real-world problems relatively easy to ask, but they have the added benefit of
-showing the candidate the kinds of issues that the team actually deals with. It's
-also a well-shaped question: open ended, no right/wrong answers.&lt;/p&gt;
-&lt;p&gt;I got the job.&lt;/p&gt;</description><category>Engineering</category><category>Management</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/interview-question/</guid><pubDate>Tue, 07 Oct 2025 22:00:00 GMT</pubDate></item></channel></rss>
+what's important.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>https://sef.kloninger.com/posts/leaving-google/</guid><pubDate>Fri, 10 Oct 2025 05:00:00 GMT</pubDate></item></channel></rss>
