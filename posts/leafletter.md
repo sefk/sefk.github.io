@@ -17,15 +17,20 @@ an iPhone app available on the [Apple App Store][a]. The [about page][] has a
 bit of description, and there are a couple of test campaigns where you can log a
 trip. That's what those test campaigns are for!
 
-The two main use cases are: volunteers who distribute these leaflets ("workers")
-need to know what neighborhoods have already been covered; workers can report in
-so others don't double up their efforts.
+The two main use cases are: volunteers who distribute these leaflets need to
+know what neighborhoods have already been covered; workers can report in so
+others don't double up their efforts.
+
+Most of the interaction is through a "worker view". By default you see a map
+showing what's already been done, and you can log your own trip. There's a
+web and iOS versions, although the iOS one is mostly just a webview.
+
+![Screenshot of Leafletter App's worker view](/f/leafletter-worker-screenshot.png)
 
 [l]: https://leafletter.app/
 [a]: https://apps.apple.com/us/app/leafletter/id6760505256
 [about page]: https://leafletter.app/about/
 
-![Screenshot of Leafletter App's worker view](/f/leafletter-worker-screenshot.png)
 
 ## Why?
 
@@ -77,11 +82,11 @@ was in the making.
 ## Was Anything Hard?
 
 The tricky part was managing the download of the street data and stitching it
-together into something manageable. It's a fair amount of data, and the backend
-its fetching from is not very reliable. Retries and long-running
-operations needed a queue and worker. The screenshots below show the organizer
-interface showing one event still being processed, and the ops console
-showing the different servers.
+together into something manageable. It's a fair amount of data, and the
+OpenStreetView backend isn't very reliable. Retries and long-running operations
+needed a queue and worker. The screenshots below show the organizer interface
+showing one event still being processed, and the ops console showing the
+different servers.
 
 ![Leafletter list of campaigns](/f/leafletter-campaigns.png)
 ![Leafletter ops console on railway](/f/leafletter-railway.png)
