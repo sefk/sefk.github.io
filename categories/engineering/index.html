@@ -97,35 +97,40 @@ bg-dark
         </div>
     </header><div class="e-content entry-content">
     <p><img style="float:right" class="postimage" src="../../f/leafletter-icon-large.png" alt="Leafletter app icon" width="50%"></p>
-<p>I wrote an app and I wanted to write about it. Not so much the app itself, but
+<p>I'd like to discuss an app I just wrote. Not so much the app itself, but
 how I made it and why.</p>
-<p>You can try it out yourself. The web version is <a href="https://leafletter.app/">Leafletter.app</a>. And there's
+<p>You can try it out yourself. The web version is <a href="https://leafletter.app/">Leafletter.app</a> and there's
 an iPhone app available on the <a href="https://apps.apple.com/us/app/leafletter/id6760505256">Apple App Store</a>. The <a href="https://leafletter.app/about/">about page</a> has a
-bit of description, and there are a couple of test campaigns where you can log a
-trip. That's what those test campaigns are for!</p>
+short description of what it does. There are a couple of test campaigns where
+you can log a pretend leaflet distribution trip. Give it a try, that's what
+those test campaigns are for!</p>
 <p>The two main use cases are: volunteers who distribute these leaflets need to
 know what neighborhoods have already been covered; workers can report in so
 others don't double up their efforts.</p>
-<p>Most of the interaction is through a "worker view". By default you see a map
-showing what's already been done, and you can log your own trip. There's a
-web and iOS versions, although the iOS one is mostly just a webview.</p>
+<p>Most of the interaction is through the "worker view". There you have a map
+showing what's already been done and a button for logging your own trip. There
+are web and iOS versions, although the iOS one is mostly just a webview.</p>
 <p><img alt="Screenshot of Leafletter App's worker view" src="../../f/leafletter-worker-screenshot.png"></p>
 <h3>Why?</h3>
 <p>I built this app for a few reasons.</p>
-<p>First was to help my wife out who has been organizing leaflet distribution for
-<a href="https://indivisiblemp.org/">Indivisible Mid-Peninsula</a> here in the SF Bay Area.</p>
+<p>First was to help my wife. She's been working with <a href="https://indivisiblemp.org/">Indivisible Mid-Peninsula</a>
+here in the SF Bay Area to organize <a href="https://nokings.org">No Kings</a> protests, and needed something
+like this.</p>
 <p>There are existing apps out there for organizing campaigns, but they all cost
-money, and are much more heavyweight than what we need here. They seem to
-target people hiring and managing gig workers to do this work and they need
-workflow to keep track of inventory and tracking work (GPS, photos) — you
-wouldn't want all those flyers just in a trashcan somewhere. Most important to
-me was that the main interface was simple to use and low friction -- no
-accounts!</p>
+money and are much more heavyweight than what we need here. Their target markets
+are people hiring and managing gig workers to distribute things, which means a
+lot of workflow to keep track of inventory and tracking work (GPS, photos). You
+wouldn't want all those flyers just in a trashcan somewhere. Instead, my goal
+was something simple, with a main interface that was simple to use and low
+friction -- no accounts!</p>
 <p>Second, this was the capstone project in the Vibe Coding class I took this
 quarter. I spent a few more weeks tweaking it, making it more robust, and adding
 features, but the basics were working in that week I spent on it in class.</p>
-<p>Third, it was just plain fun to do. I learned a ton living in Claude Code.  I
-liked managing things mostly through GitHub Issues. I have a nice workflow:</p>
+<p>Third, it was just plain fun to do. I learned a ton living in Claude Code. The
+overall experience was joyful. While I'd like for this to get some use, the fun
+was in the making.</p>
+<h3>What I Learned</h3>
+<p>I liked managing things mostly through GitHub Issues. I have a nice workflow:</p>
 <ol>
 <li>File a bug describing what I wanted</li>
 <li>"Let's fix issue #100"</li>
@@ -136,19 +141,19 @@ liked managing things mostly through GitHub Issues. I have a nice workflow:</p>
 <li>I do the git push</li>
 <li>Infra notices and does its build and push</li>
 </ol>
-<p>I recorded a two-minute <a href="https://youtu.be/gyJbiEwGMoU">screencast</a> showing this in action, adding a <a href="https://github.com/sefk/leafletter-app/issues/100">little
-feature</a>. This one request came from my sister.</p>
+<p>I did this for issues big and small -- at this writing that means [over 100
+issues]. The bugs were a good way to have Claude capture its plan, or a
+good place to capture work-in-progres for later.</p>
+<p>I recorded a two-minute <a href="https://youtu.be/gyJbiEwGMoU">screencast</a> showing my workflow in action. This one
+was adding a little navigation <a href="https://github.com/sefk/leafletter-app/issues/100">feature</a>, a request from my sister.</p>
 <p>I also found it helpful to set up some personas that I could delegate tasks to.
 A <em>Developer</em> to do most of the work, adhering to some rules I put in for good
 coding practices ("always run tests"). And then two others that were rarely
 used, on demand: a <em>Project Manager</em> to debug GitHub and a <em>UX Engineer</em> to
 review and make suggestions ("Great, please open bugs for all of those").</p>
-<p>The overall experience was joyful. While I'd like for this to get some use, the fun
-was in the making.</p>
-<h3>Was Anything Hard?</h3>
 <p>The tricky part was managing the download of the street data and stitching it
 together into something manageable. It's a fair amount of data, and the
-OpenStreetView backend isn't very reliable. Retries and long-running operations
+OpenStreetMap backend isn't very reliable. Retries and long-running operations
 needed a queue and worker. The screenshots below show the organizer interface
 showing one event still being processed, and the ops console showing the
 different servers.</p>
@@ -166,7 +171,7 @@ on Apple's App Store (boo).</p>
 <li>I'd like to do an Android app too. I don't have a dev phone, but I imagine I
   could buy one from a friend at some point.</li>
 </ul>
-<p>And then a ton of features: organization views and ACL's, correlating streets
+<p>And then a ton of features: organization views and ACLs, correlating streets
 with household demographics, better UX for selecting streets, etc. If you have
 feedback please <a href="https://github.com/sefk/leafletter-app/issues">file a bug</a>!</p>
 <p>I'm looking forward to getting this in the hands of some real users soon and
