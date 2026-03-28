@@ -7,7 +7,7 @@
 -->
 
 <img style="float:right" class="postimage" src="/f/leafletter-icon-large.png"
-alt="Leafletter app icon" width=50%>
+alt="Leafletter app icon" width=60%>
 
 I'd like to discuss an app I just wrote. Not so much the app itself, but
 how I made it and why.
