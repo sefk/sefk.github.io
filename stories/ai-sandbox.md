@@ -32,7 +32,7 @@ For more context on me you can look up https://sef.kloninger.com/, especially ht
 
 <span style="color: blue">[Gemini] Given your preference for Ghostty and CLI tools, you'll likely want to ensure the VM's SSH daemon is locked down to only accept keys from your host machine. This keeps the "unfettered" agent inside the box while giving you a seamless entry point.</span>
 
-## Plan and Questions
+## Questions
 
 Q: **Mac or Linux?** Generally I've been impressed with the MacOS native desktop and keyboard-video-mouse sharing, so likely that's the answer.
 
@@ -57,9 +57,11 @@ Q: **What's a good user name?** I'm thinking sefk-robot since that's what will s
 
 <span style="color: blue">[Gemini] `sefk-agent` is the most descriptive. However, `sefk-bot` is the industry standard for git commits and service accounts. One benefit of `sefk-bot` is that many CI/CD tools and GitHub actions have built-in logic to handle `[bot]` suffixes differently (e.g., excluding them from certain metrics or notifications).</span>
 
-Create <user>@gmail.com and log into chrome with that. Not part of the Google Family for file/cost sharing
+## Plan
 
-Create <user>@icloud.com and log into the VM with that. Not part of Apple Family
+Create <user>@gmail.com and log into Chrome with that. Not part of the Google Family for file/cost sharing
+
+Create <user>@icloud.com and log into the VM with that. Not part of Apple Family account.
 
 Create <user>@github.com with it's own ssh keypair. Explicitly add that to ACL's of private repos, there aren't that many.
 
