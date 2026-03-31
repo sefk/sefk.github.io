@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://sef.kloninger.com/</loc>
-  <lastmod>2026-01-04T23:15:00Z</lastmod>
+  <lastmod>2026-03-31T17:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/2012/03/those-little-utilities/</loc>
@@ -100,6 +100,10 @@
  <url>
   <loc>https://sef.kloninger.com/2013/12/airmail/</loc>
   <lastmod>2026-01-04T23:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/ai-sandbox/</loc>
+  <lastmod>2026-03-31T17:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/archive.html</loc>
