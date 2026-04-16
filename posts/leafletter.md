@@ -45,7 +45,7 @@ money and are much more heavyweight than what we need here. Their target markets
 are people hiring and managing gig workers to distribute things, which means a
 lot of workflow to keep track of inventory and tracking work (GPS, photos). You
 wouldn't want all those flyers just in a trashcan somewhere. Instead, my goal
-was something simple, with a main interface that was simple to use and low
+was something simple, with a main interface that was easy to use and low
 friction -- no accounts!
 
 Second, this was the capstone project in the Vibe Coding class I took this
@@ -74,7 +74,7 @@ I liked managing things mostly through GitHub Issues. I have a nice workflow:
 
 I did this for issues big and small -- at this writing that means [over 100
 issues]. The bugs were a good way to have Claude capture its plan, or a
-good place to capture work-in-progres for later.
+good place to capture work-in-progress for later.
 
 I recorded a two-minute [screencast][] showing my workflow in action. This one
 was adding a little navigation [feature], a request from my sister.
@@ -89,20 +89,20 @@ The tricky part was managing the download of the street data and stitching it
 together into something manageable. It's a fair amount of data, and the
 OpenStreetMap backend isn't very reliable. Retries and long-running operations
 needed a queue and worker. The screenshots below show the organizer interface
-showing one event still being processed, and the ops console showing the
+with one event still being processed, and the ops console showing the
 different servers.
 
 ![Leafletter list of campaigns](/f/leafletter-campaigns.png)
 ![Leafletter ops console on railway](/f/leafletter-railway.png)
 
 I'm using Railway for hosting for the moment, which has been OK. Their storage
-setup is a bit wonky ([#102]) and it might prove to be expensive, we'll see.
+setup is a bit wonky ([#102]) and it might prove to be expensive -- we'll see.
 
 I did all of this easily within my $20/month Claude Code token budget. The
 biggest expense was the $100 fee to have the privilege of putting something up
 on Apple's App Store (boo).
 
-[over 100 bugs]: https://github.com/sefk/leafletter-app/issues?q=is%3Aissue
+[over 100 issues]: https://github.com/sefk/leafletter-app/issues?q=is%3Aissue
 [screencast]: https://youtu.be/gyJbiEwGMoU
 [feature]: https://github.com/sefk/leafletter-app/issues/100
 [#102]: https://github.com/sefk/leafletter-app/issues/102
@@ -112,7 +112,7 @@ on Apple's App Store (boo).
 Mobile still could use some work.
 
 - I tried an iOS native interface for a while, but could never get it to perform
-  well enough. But that'd still probably give a better experience
+  well enough. But that'd still probably give a better experience.
 - I'd like to do an Android app too. I don't have a dev phone, but I imagine I
   could buy one from a friend at some point.
 
