@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 16 Apr 2026 15:44:49 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>"It's overwriting, not appending"</title><link>https://sef.kloninger.com/posts/ai-mediation/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;I like the command line. But more and more I find myself &lt;strong&gt;mediating those tasks through a chat&lt;/strong&gt;, which surprises me because I used to find chat frustrating. But Claude is just so darn helpful.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 16 Apr 2026 15:49:28 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>"It's overwriting, not appending"</title><link>https://sef.kloninger.com/posts/ai-mediation/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;I like the command line. But more and more I find myself &lt;strong&gt;mediating those tasks through a chat&lt;/strong&gt;, which surprises me because I used to find chat frustrating. But Claude is just so darn helpful.&lt;/p&gt;
 &lt;p&gt;Here's an example. I've been working on a typical scrape-and-loader for election data. It does one election cycle at a time to split up the work and give you a chance to inspect. After the first download, I verified the data which looked good. I asked Claude to get all the rest. It dutifully constructed a loop ("&lt;code&gt;for i in 2000, 2002&lt;/code&gt;") and started working down the list, which would take hours. Before heading to bed, I checked in.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Screenshot of a Claude chat finding a bug" src="https://sef.kloninger.com/f/claude-finds-a-bug.png"&gt;&lt;/p&gt;
 &lt;p&gt;Of course throwing away the data as we go isn't what I wanted.&lt;/p&gt;
@@ -28,7 +28,7 @@ money and are much more heavyweight than what we need here. Their target markets
 are people hiring and managing gig workers to distribute things, which means a
 lot of workflow to keep track of inventory and tracking work (GPS, photos). You
 wouldn't want all those flyers just in a trashcan somewhere. Instead, my goal
-was something simple, with a main interface that was simple to use and low
+was something simple, with a main interface that was easy to use and low
 friction -- no accounts!&lt;/p&gt;
 &lt;p&gt;Second, this was the capstone project in the Vibe Coding class I took this
 quarter. I spent a few more weeks tweaking it, making it more robust, and adding
@@ -48,9 +48,9 @@ was in the making.&lt;/p&gt;
 &lt;li&gt;I do the git push&lt;/li&gt;
 &lt;li&gt;Infra notices and does its build and push&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;I did this for issues big and small -- at this writing that means [over 100
-issues]. The bugs were a good way to have Claude capture its plan, or a
-good place to capture work-in-progres for later.&lt;/p&gt;
+&lt;p&gt;I did this for issues big and small -- at this writing that means &lt;a href="https://github.com/sefk/leafletter-app/issues?q=is%3Aissue"&gt;over 100
+issues&lt;/a&gt;. The bugs were a good way to have Claude capture its plan, or a
+good place to capture work-in-progress for later.&lt;/p&gt;
 &lt;p&gt;I recorded a two-minute &lt;a href="https://youtu.be/gyJbiEwGMoU"&gt;screencast&lt;/a&gt; showing my workflow in action. This one
 was adding a little navigation &lt;a href="https://github.com/sefk/leafletter-app/issues/100"&gt;feature&lt;/a&gt;, a request from my sister.&lt;/p&gt;
 &lt;p&gt;I also found it helpful to set up some personas that I could delegate tasks to.
@@ -62,12 +62,12 @@ review and make suggestions ("Great, please open bugs for all of those").&lt;/p&
 together into something manageable. It's a fair amount of data, and the
 OpenStreetMap backend isn't very reliable. Retries and long-running operations
 needed a queue and worker. The screenshots below show the organizer interface
-showing one event still being processed, and the ops console showing the
+with one event still being processed, and the ops console showing the
 different servers.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Leafletter list of campaigns" src="https://sef.kloninger.com/f/leafletter-campaigns.png"&gt;
 &lt;img alt="Leafletter ops console on railway" src="https://sef.kloninger.com/f/leafletter-railway.png"&gt;&lt;/p&gt;
 &lt;p&gt;I'm using Railway for hosting for the moment, which has been OK. Their storage
-setup is a bit wonky (&lt;a href="https://github.com/sefk/leafletter-app/issues/102"&gt;#102&lt;/a&gt;) and it might prove to be expensive, we'll see.&lt;/p&gt;
+setup is a bit wonky (&lt;a href="https://github.com/sefk/leafletter-app/issues/102"&gt;#102&lt;/a&gt;) and it might prove to be expensive -- we'll see.&lt;/p&gt;
 &lt;p&gt;I did all of this easily within my $20/month Claude Code token budget. The
 biggest expense was the $100 fee to have the privilege of putting something up
 on Apple's App Store (boo).&lt;/p&gt;
@@ -75,7 +75,7 @@ on Apple's App Store (boo).&lt;/p&gt;
 &lt;p&gt;Mobile still could use some work.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;I tried an iOS native interface for a while, but could never get it to perform
-  well enough. But that'd still probably give a better experience&lt;/li&gt;
+  well enough. But that'd still probably give a better experience.&lt;/li&gt;
 &lt;li&gt;I'd like to do an Android app too. I don't have a dev phone, but I imagine I
   could buy one from a friend at some point.&lt;/li&gt;
 &lt;/ul&gt;
