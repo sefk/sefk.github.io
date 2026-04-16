@@ -25,7 +25,7 @@ solution. Aside from that, the end product was identical.
 
 ## The Task
 
-I wanted to clean up the some of the old files backing this blog. I migrated the
+I wanted to clean up some of the old files backing this blog. I migrated the
 site from Wordpress to Nikola in 2013. Even back then I [complained
 about](/posts/switching-to-static.md) the crufty file format, but couldn't be
 bothered to fix it then.
@@ -35,7 +35,7 @@ much detail. It's down at the bottom of this post.
 
 The best way to see what they did is to just look at the resulting commits:
 [Gemini][gc] and [Claude][cc]. They're pretty similar. I asked both to save
-their work in a `migration_scripts` subdirectory, including a it's own summary
+their work in a `migration_scripts` subdirectory, including its own summary
 of the work and full log.
 
 [gc]: https://github.com/sefk/sefk.github.io/commit/4a91a57dc965b1e77c05fafbc05fa14f1a293c7f
@@ -54,7 +54,7 @@ asked to.
 
 Despite being told to test, there were two bugs that I had to find.
 
-* Some of redirects broken. I pointed the problem out and it did more thorough
+* Some of the redirects were broken. I pointed the problem out and it did more thorough
   testing using `curl` and found the problem. The new format was what Gemini
   came up with in the first pass (luck? smarts?).
   
@@ -66,16 +66,16 @@ Despite being told to test, there were two bugs that I had to find.
 ## Thoughts on Gemini
 
 I haven't used the Gemini CLI as much by this point. It seems to have borrowed
-much of it's UI and flow from Claude code (slash commands, asking questions as
+much of its UI and flow from Claude Code (slash commands, asking questions as
 it goes) so it's familiar. It's really nice to use, just a smidgen less mature
-and polished than Gemini.
+and polished than Claude Code.
 
 I preferred Claude's writeup a little so I went with that one. But Gemini wins
 the prize for nailing the task on the first try!
 
 ## Usage
 
-I really liked how Claude shows how much of it's context window is used via the
+I really liked how Claude shows how much of its context window is used via the
 `/context` command. I had a harder time getting this kind of thing out of
 Gemini, and even when I did it was harder to grok.
 
