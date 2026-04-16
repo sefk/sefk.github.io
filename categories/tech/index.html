@@ -84,7 +84,24 @@ bg-dark
 
         </div>
     </header><div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/claude-dataviz/" class="u-url">"Hey Claude, What's Interesting In This Dataset?"</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/ai-mediation/" class="u-url">"It's overwriting, not appending"</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Sef Kloninger
+            </span></p>
+            <p class="dateline">
+            <a href="../../posts/ai-mediation/" rel="bookmark">
+            <time class="published dt-published" datetime="2026-04-16T08:00:00-07:00" itemprop="datePublished" title="2026-04-16 08:00">2026-04-16 08:00</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>I like the command line. But more and more I find myself <strong>mediating those tasks through a chat</strong>, which surprises me because I used to find chat frustrating. But Claude is just so darn helpful.</p>
+<p>Here's an example. I've been working on a typical scrape-and-loader for election data. It does one election cycle at a time to split up the work and give you a chance to inspect. After the first download, I verified the data which looked good. I asked Claude to get all the rest. It dutifully constructed a loop ("<code>for i in 2000, 2002</code>") and started working down the list, which would take hours. Before heading to bed, I checked in.</p>
+<p><img alt="Screenshot of a Claude chat finding a bug" src="../../f/claude-finds-a-bug.png"></p>
+<p>Of course throwing away the data as we go isn't what I wanted.</p>
+<p>What's fascinating is that I didn't ask for this check. Claude checked to make sure the job <em>made sense</em> and warned me when it didn't. Delightful!</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="../../posts/claude-dataviz/" class="u-url">"Hey Claude, What's Interesting In This Dataset?"</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Sef Kloninger

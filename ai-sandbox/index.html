@@ -17,7 +17,7 @@
 <meta property="og:description" content="Goal
 I'd like to increase my velocity by creating a space where Claude Code could run unfettered, but safely. Initially this is for coding projects, but in the future I could imagine this being used f">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2026-03-31T10:32:28-07:00">
+<meta property="article:published_time" content="2026-03-31T10:37:31-07:00">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -99,7 +99,7 @@ bg-dark
 <p>I have a M1 Mac studio with 1TB disk and 64GB and two monitors that will lend itself nicely to this setup. It's my dev machine, running current Tahoe with xcode on it. Occasionally I work from a M3 Mac laptop. I am very comfortable with ssh and command line tools. I prefer console tools to IDE's, for example my standard setup is ghostty with Claude Code and neovim. Chrome is my browser of choice.</p>
 <p>For more context on me you can look up https://sef.kloninger.com/, especially https://sef.kloninger.com/tools</p>
 <p><span style="color: blue">[Gemini] Given your preference for Ghostty and CLI tools, you'll likely want to ensure the VM's SSH daemon is locked down to only accept keys from your host machine. This keeps the "unfettered" agent inside the box while giving you a seamless entry point.</span></p>
-<h3>Plan and Questions</h3>
+<h3>Questions</h3>
 <p>Q: <strong>Mac or Linux?</strong> Generally I've been impressed with the MacOS native desktop and keyboard-video-mouse sharing, so likely that's the answer.</p>
 <p><span style="color: orange">[Claude] Mac makes sense here — you already have Apple Silicon hardware and MacOS tooling (Xcode, Homebrew, Ghostty). The main tradeoff: macOS VMs on Apple Silicon require a macOS license per instance and are heavier (~30–40GB). Linux VMs are lighter, cheaper to snapshot/clone, and easier to script. If the primary use is headless coding with Claude Code, a Linux VM (Debian/Ubuntu arm64) would actually work fine — Claude Code runs great on Linux and most dev toolchains do too. Worth asking: do you actually need macOS-specific things (Keychain, macOS SDK) in the sandbox?</span></p>
 <p><span style="color: blue">[Gemini] If you plan to use Xcode or test macOS-specific apps, stay with macOS. However, if this is 90% "headless" terminal work, a Linux VM is significantly easier to "hardened" at the kernel level (using namespaces/cgroups) to prevent an agent from getting too creative with system resources. If you go macOS, look into the <code>Virtualization.framework</code> limits.</span></p>
@@ -114,8 +114,9 @@ bg-dark
 - not-sef</p>
 <p><span style="color: orange">[Claude] Of these, <code>sefk-bot</code> (not listed but worth considering) or <code>sefk-agent</code> reads as clearly automated and professional. <code>sefk-robot</code> is fine but a bit playful. <code>not-sef</code> is cute but ambiguous to outsiders. <code>sefk-delegate</code> undersells the AI-ness in a way that could confuse collaborators. My vote: <code>sefk-agent</code> — signals agentic AI, clearly yours, neutral tone.</span></p>
 <p><span style="color: blue">[Gemini] <code>sefk-agent</code> is the most descriptive. However, <code>sefk-bot</code> is the industry standard for git commits and service accounts. One benefit of <code>sefk-bot</code> is that many CI/CD tools and GitHub actions have built-in logic to handle <code>[bot]</code> suffixes differently (e.g., excluding them from certain metrics or notifications).</span></p>
-<p>Create <user>@gmail.com and log into chrome with that. Not part of the Google Family for file/cost sharing</user></p>
-<p>Create <user>@icloud.com and log into the VM with that. Not part of Apple Family</user></p>
+<h3>Plan</h3>
+<p>Create <user>@gmail.com and log into Chrome with that. Not part of the Google Family for file/cost sharing</user></p>
+<p>Create <user>@icloud.com and log into the VM with that. Not part of Apple Family account.</user></p>
 <p>Create <user>@github.com with it's own ssh keypair. Explicitly add that to ACL's of private repos, there aren't that many.</user></p>
 <p><span style="color: orange">[Claude] Solid isolation approach. A few additions worth considering: (1) For GitHub, also set up a fine-grained Personal Access Token scoped to specific repos rather than relying solely on SSH keys — gives you repo-level permission control and easy revocation. (2) Consider a separate Anthropic account or sub-account for the Claude Code token budget so usage is tracked separately and you can cap spend independently. (3) If/when this does email or calendar writes, the Gmail account being outside your Google Family is critical — good call to note that explicitly.</span></p>
 <p><span style="color: blue">[Gemini] This "Clean Room" identity approach is excellent. For the GitHub account, I strongly recommend enabling <strong>Commit Signoff</strong> or <strong>GPG signing</strong> for the bot account so you can cryptographically verify which commits were generated in the sandbox vs. your main machine. Also, ensure the GitHub account has <strong>2FA</strong> enabled but uses a separate TOTP seed (stored in your 1Password, but not the VM's) to prevent the agent from being able to reset its own credentials.</span></p>

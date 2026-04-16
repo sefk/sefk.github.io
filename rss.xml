@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 28 Mar 2026 18:57:39 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>I Built This: Leafletter</title><link>https://sef.kloninger.com/posts/leafletter/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/leafletter-icon-large.png" alt="Leafletter app icon" width="60%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>None</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 16 Apr 2026 15:44:49 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>"It's overwriting, not appending"</title><link>https://sef.kloninger.com/posts/ai-mediation/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;I like the command line. But more and more I find myself &lt;strong&gt;mediating those tasks through a chat&lt;/strong&gt;, which surprises me because I used to find chat frustrating. But Claude is just so darn helpful.&lt;/p&gt;
+&lt;p&gt;Here's an example. I've been working on a typical scrape-and-loader for election data. It does one election cycle at a time to split up the work and give you a chance to inspect. After the first download, I verified the data which looked good. I asked Claude to get all the rest. It dutifully constructed a loop ("&lt;code&gt;for i in 2000, 2002&lt;/code&gt;") and started working down the list, which would take hours. Before heading to bed, I checked in.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Screenshot of a Claude chat finding a bug" src="https://sef.kloninger.com/f/claude-finds-a-bug.png"&gt;&lt;/p&gt;
+&lt;p&gt;Of course throwing away the data as we go isn't what I wanted.&lt;/p&gt;
+&lt;p&gt;What's fascinating is that I didn't ask for this check. Claude checked to make sure the job &lt;em&gt;made sense&lt;/em&gt; and warned me when it didn't. Delightful!&lt;/p&gt;</description><category>AI</category><category>Tech</category><guid>https://sef.kloninger.com/posts/ai-mediation/</guid><pubDate>Thu, 16 Apr 2026 15:00:00 GMT</pubDate></item><item><title>I Built This: Leafletter</title><link>https://sef.kloninger.com/posts/leafletter/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/leafletter-icon-large.png" alt="Leafletter app icon" width="60%"&gt;&lt;/p&gt;
 &lt;p&gt;I'd like to discuss an app I just wrote. Not so much the app itself, but
 how I made it and why.&lt;/p&gt;
 &lt;p&gt;You can try it out yourself. The web version is &lt;a href="https://leafletter.app/"&gt;Leafletter.app&lt;/a&gt; and there's
@@ -507,31 +511,4 @@ lucky to have a lot of people I care about. I'm embarrassed that I haven't
 always been good about staying in touch, but I can fix that now. And fun stuff
 like &lt;a href="https://planet-bridge.org/index.php"&gt;bridge lessons&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Beyond that, I'm getting involved with a couple of small projects but nothing
-serious yet. When I find something interesting, I'll write about it here.&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/three-months/</guid><pubDate>Wed, 19 Nov 2025 22:00:00 GMT</pubDate></item><item><title>Leaving Google</title><link>https://sef.kloninger.com/posts/leaving-google/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/google-10year.jpeg" alt="Sef holding a framed certificate, Google ten years of service." width="60%"&gt;&lt;/p&gt;
-&lt;p&gt;An offer of a Voluntary Exit from Google HR landed in my mailbox right around my
-ten-year anniversary with the company, give or take. We'd had a couple of
-packages like this at Google before (&lt;a href="https://9to5google.com/2025/01/30/pixel-android-voluntary-exit-employees/"&gt;news&lt;/a&gt;), basically the same deal you'd
-get if you got laid off. But this was the first one put in front of those of us
-working in one of the revenue engines of the company — I worked on Search.&lt;/p&gt;
-&lt;p&gt;I wasn't aiming to leave. I liked the work, I had a good team and boss. But
-the package was enough to kickstart a discussion, "why &lt;em&gt;not&lt;/em&gt; now?". My wife and
-I ran numbers and discussed our futures. I clicked the button. My last day as a
-Googler was earlier this week, October 4th.&lt;/p&gt;
-&lt;p&gt;I have good feelings about my time at Google. It was nice that I saw a some
-different parts of the business: some consumer (three years at YouTube, four
-years at Search) and some enterprise (three years at Cloud). I got to play with
-big infrastructure and solve some hard problems. I saw behind the curtain. But
-the best part was the smart and interesting people I got to work with. I know
-it's a cliche, but it's the truth.&lt;/p&gt;
-&lt;p&gt;Not everything was great. I've decided to not use this space for dishy stories
-about how Google isn't all it claims to be. But I sure do love reminiscing and
-grousing as much as any engineer. If you want to share war stories over a beer,
-I'm always up for that.&lt;/p&gt;
-&lt;p&gt;What's next? I haven't decided if this is retirement, or a sabbatical, or
-something else. I've been off work for extended stretches twice before, once by
-choice and once not. Those two times taught me that the difference between a
-wonderful, mind-expanding time and a stress-fest is my own mindset. And now
-that I haven't been really working for six weeks now, I can confidently say
-that my mindset is positive and good.&lt;/p&gt;
-&lt;p&gt;I'm excited about the next phase. I feel fortunate to have some time to focus on
-what's important.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>https://sef.kloninger.com/posts/leaving-google/</guid><pubDate>Fri, 10 Oct 2025 05:00:00 GMT</pubDate></item></channel></rss>
+serious yet. When I find something interesting, I'll write about it here.&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/three-months/</guid><pubDate>Wed, 19 Nov 2025 22:00:00 GMT</pubDate></item></channel></rss>
