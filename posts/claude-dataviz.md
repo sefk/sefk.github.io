@@ -17,7 +17,7 @@ I've been taking a Data Visualization class at Stanford Continuing Studies (TECH
 wanted to play with, [TweetsKB]. Researchers took the Twitter Firehose data from
 2013-23, back when it was [more available], and ran it through entity extraction
 and sentiment analysis. They made the dataset available for others to work with.
-It's well documented and reasonable size, about 500GB. I figured there'd be
+It's well documented and a reasonable size, about 500GB. I figured there'd be
 something interesting in there.
 
 The cool part didn't turn out to be the analysis itself. I did find and graph
@@ -35,7 +35,7 @@ pipelines, bringing up and down jobs, etc. What it felt like though was having
 my own junior engineer working hard for me, doing whatever I asked, and doing it
 well and without complaint.
 
-This section is has more of the details of how it went. Consider skipping if you
+This section has more of the details of how it went. Consider skipping if you
 don't want to get in the weeds.
 
 We started with **ETL pipelines**. File format conversion, multiprocessing,
@@ -55,19 +55,19 @@ data analytics". The idea is something where you can click around, slice and
 scrub, looking for interesting things like correlations and trends.
 
 You can see this in the screenshot at the top of this post. Essentially I got
-the "Overview" and "Slice by Entity" tabs in one shot. How you do EDA with it?
-For example, the default view are two base ball teams. See the peaks when the
+the "Overview" and "Slice by Entity" tabs in one shot. How do you do EDA with it?
+For example, the default view is two baseball teams. See the peaks when the
 Red Sox won championships in 2013 and 2018? But the Astros peak was higher in
 2017, presumably because of the [scandal]. Fun, right?
 
 I then iterated on that dashboard quite a bit. Instead of a normal notebook or
-colab-style workflow I was used to, instead I iterated around the dashboard. I'd
-ask Claude add or update charts in the dashboard ("annualize the last data
+colab-style workflow I was used to, I iterated around the dashboard. I'd
+ask Claude to add or update charts in the dashboard ("annualize the last data
 point"), it'd reload, test and repeat. I did fall back to python or a notebook
 when I had to look at the raw data, but just in throwaway mode. I found this to
 be a really fast way to work.
 
-But I still had a hard time finding someting interesting in the dataset. So I
+But I still had a hard time finding something interesting in the dataset. So I
 just [asked][p4] an open-ended question, basically "**find interesting stuff**"
 and it produced [five analysis scripts]. Most of what's in the "Analysis" came
 from this one query, except for "Democrats vs. Republicans", which I did on my
@@ -84,7 +84,7 @@ the code is [in GitHub] and there are [known issues].
 
 At some point I felt it was helpful to define "personas" for Claude to better
 describe the goals of each prompt. Then I started a prompt with "hey dashboard
-engineer, I'd like to...". Tough to tell how much that helped
+engineer, I'd like to...". Tough to tell how much that helped.
 
 ### Some Thoughts
  
@@ -102,7 +102,7 @@ happily paid $5 more to keep on going.
 
 Is this programming? I think so, at least it felt that way when I was doing it.
 I was very much using the same parts of my brain as when I'm writing all the
-code myself. Indeed for years most of us have been "progamming" mostly via
+code myself. Indeed for years most of us have been "programming" mostly via
 Google and Stack Overflow. It's like that but fast.
 
 ### Charts
@@ -133,8 +133,8 @@ says..." 😀
 
 ![Screenshot of Claude debugging an ops problem](/f/tweetskb-ops.png)
 
-Claude made the adjustment and saved its suggestions in a [Github Issue] to look
-if I want to look at it again later.
+Claude made the adjustment and saved its suggestions in a [Github issue] in
+case I want to revisit it later.
 
 [p1]: https://github.com/sefk/tweetskb-analysis/blob/main/session_prompts.md#14-2026-02-24-0130-utc
 [p2]: https://github.com/sefk/tweetskb-analysis/blob/main/session_prompts.md#64-2026-02-25-1158-utc
