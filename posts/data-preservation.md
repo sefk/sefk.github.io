@@ -2,7 +2,7 @@
 .. title: Data Is Worth Preserving
 .. slug: data-preservation
 .. date: 2026-01-04 15:00:00 UTC-08:00
-.. tags: Life,Tech,Civics
+.. tags: Life,Tech,Civics,Data
 .. type: text
 -->
 
@@ -61,6 +61,14 @@ defense. Having a one-time snapshot isn't nearly as good as having the
 government actually do its job. Which is why we need to keep demanding better
 leadership and a return to effective government. Assert your rights and
 [protest]! &nbsp; ❌ 👑.
+
+-----
+
+### Post-Publish Updates
+
+I'll update this section from time to time with updates and press on this project.
+
+- [On Guerrilla Archives in the Disinformation Age](https://conversationalist.org/2026/04/10/guerrilla-archives-activism-protest-history-preservation-politics-marion-stokes-media/), The Conversationalist, 10-April-2026
 
 [public goods]: https://en.wikipedia.org/wiki/Public_good
 [Wikipedia page]: https://en.wikipedia.org/wiki/2025_United_States_government_online_resource_removals
