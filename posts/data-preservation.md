@@ -68,7 +68,9 @@ leadership and a return to effective government. Assert your rights and
 
 I'll update this section from time to time with updates and press on this project.
 
-- [On Guerrilla Archives in the Disinformation Age](https://conversationalist.org/2026/04/10/guerrilla-archives-activism-protest-history-preservation-politics-marion-stokes-media/), The Conversationalist, 10-April-2026
+- Data Rescue Project endorsed this project, I signed the petition as an individual: [Preservation of
+Government Information](https://publicinformationtrust.org/), 12-March-2026
+- Data Rescue Project mention, [On Guerrilla Archives in the Disinformation Age](https://conversationalist.org/2026/04/10/guerrilla-archives-activism-protest-history-preservation-politics-marion-stokes-media/), The Conversationalist, 10-April-2026
 
 [public goods]: https://en.wikipedia.org/wiki/Public_good
 [Wikipedia page]: https://en.wikipedia.org/wiki/2025_United_States_government_online_resource_removals
