@@ -70,6 +70,7 @@ I'll update this section from time to time with updates and press on this projec
 
 - Data Rescue Project endorsed this project, I signed the petition as an individual: [Preservation of
 Government Information](https://publicinformationtrust.org/), 12-March-2026
+- [What's next for HIFLD](https://www.datarescueproject.org/hifld-next/), 17-March-2026
 - Data Rescue Project mention, [On Guerrilla Archives in the Disinformation Age](https://conversationalist.org/2026/04/10/guerrilla-archives-activism-protest-history-preservation-politics-marion-stokes-media/), The Conversationalist, 10-April-2026
 
 [public goods]: https://en.wikipedia.org/wiki/Public_good
