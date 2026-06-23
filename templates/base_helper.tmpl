@@ -18,9 +18,11 @@ dir="rtl" \
 lang="${lang}">
     <head>
     <meta charset="utf-8">
-    %if description:
-    <meta name="description" content="${description|h}">
-    %endif
+       %if description:
+           <meta name="description" content="${description|h}">
+       %elif blog_description:
+               <meta name="description" content="${blog_description|h}">
+        %endif
     <meta name="viewport" content="width=device-width, initial-scale=1">
     %if title == blog_title:
         <title>${blog_title|h}</title>
@@ -60,6 +62,7 @@ lang="${lang}">
     %endif
 
     ${extra_head_data}
+           <link rel="alternate" hreflang="x-default" href="${abs_link('')}" />
 </%def>
 
 <%def name="late_load_js()">
@@ -120,7 +123,6 @@ lang="${lang}">
         <link href="/assets/css/ipython.min.css" rel="stylesheet" type="text/css">
         <link href="/assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
     % endif
-     <link href="/assets/css/custom.css" rel="stylesheet" type="text/css">
 </%def>
 
 <%def name="html_navigation_links()">
