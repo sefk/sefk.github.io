@@ -7,9 +7,9 @@
 I'm an engineer and dad and tinkerer. I'm semi-retired from a
 thirty-year career as an engineering manager.
 
-<img src="/f/sef-squint.jpeg" 
-     style="float:right; padding-left:40px;"
-     alt="Sef squinting in a baseball hat" width=280px>
+<img src="/f/sef-squint.webp"
+      style="float:right; padding-left:40px; width: 280px;"
+      alt="Sef squinting in a baseball hat" width=280 height=240 loading=lazy fetchpriority=high>
 
 I write an old-style blog. You can read posts [by date](posts) or browse one of
 the categories below. I hope you check it out.
