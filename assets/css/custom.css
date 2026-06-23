@@ -9,3 +9,10 @@ footer#footer p a {
     color: #0d47a1 !important;
     text-decoration: underline !important;
 }
+
+/* Navbar links — Bootstrap 4 navbar-dark uses rgba(255,255,255,.5) which fails WCAG AA (3.5:1).
+   Raise contrast to >= 4.5:1 against the dark background. */
+.navbar-dark .nav-link {
+    color: #fff !important;
+    text-decoration: underline !important;
+}
