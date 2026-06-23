@@ -1,0 +1,11 @@
+/* Lighthouse accessibility fixes */
+body a,
+.post-text a,
+.e-content a {
+    text-decoration: underline !important;
+}
+
+footer#footer p a {
+    color: #0d47a1 !important;
+    text-decoration: underline !important;
+}

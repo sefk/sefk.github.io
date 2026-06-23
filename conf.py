@@ -940,8 +940,7 @@ BODY_END = """
   gtag('config', 'UA-30366531-1');
 </script>
 """
-
-#EXTRA_HEAD_DATA = """
+# EXTRA_HEAD_DATA = """
 #<link rel="stylesheet" type="text/css" href="/assets/css/tipuesearch.css">
 #<div id="tipue_search_content" style="margin-left: auto; margin-right: auto; padding: 20px;"></div>
 #"""
