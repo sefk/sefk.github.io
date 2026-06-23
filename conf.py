@@ -32,7 +32,7 @@ SITE_URL = "https://sef.kloninger.com/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://sef.kloninger.com"
 BLOG_EMAIL = "sefklon@gmail.com"
-BLOG_DESCRIPTION = "None"
+BLOG_DESCRIPTION = "Sef Kloninger — engineer, engineering manager, and writer."
 
 # Nikola is multilingual!
 #

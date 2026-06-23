@@ -2,14 +2,18 @@
 .. title: Hi, I'm Sef
 .. slug: index
 .. date: 2025/08/05
+.. description: Sef Kloninger — engineer, engineering manager, and writer.
 -->
 
 I'm an engineer and dad and tinkerer. I'm semi-retired from a
 thirty-year career as an engineering manager.
 
-<img src="/f/sef-squint.webp"
-      style="float:right; padding-left:40px; width: 280px;"
-      alt="Sef squinting in a baseball hat" width=280 height=240 loading=lazy fetchpriority=high>
+<picture>
+       <source srcset="/f/sef-squint-480.webp 480w, /f/sef-squint.webp 600w" sizes="(max-width: 480px) 100vw, 280px">
+       <img src="/f/sef-squint.jpeg"
+            style="float:right; padding-left:40px; width: 280px;"
+            alt="Sef squinting in a baseball hat" width=280 height=240 loading=lazy fetchpriority=high>
+</picture>
 
 I write an old-style blog. You can read posts [by date](posts) or browse one of
 the categories below. I hope you check it out.
