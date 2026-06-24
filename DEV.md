@@ -34,6 +34,10 @@ All posts follow a similar layout.
   versioned and self-hosted.
 - H2 elements for section headers.
 
+I like good accessibility as measured by a 100% rating on Google
+Lighthouse.
+
+
 ## Constraints
 
 Commits can be safely made to the "dev" branch and pushed to Github.
