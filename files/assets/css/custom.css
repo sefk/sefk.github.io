@@ -33,3 +33,28 @@ img.postimage {
     padding: 0 30px;
 }
 
+/* ------------- Lighthouse accessibility fixes ------------- */
+
+/* Inline prose & table links. Two audits:
+   - color-contrast: Bootstrap's default #007bff is only 3.97:1 on white (fails AA);
+     darken to #0d47a1 (~8.6:1).
+   - link-in-text-block: distinguish links by more than color, so underline them.
+   Exclude .badge / .tag pills, which the theme styles white-on-grey by design. */
+.post-text a:not(.badge):not(.tag),
+.e-content a:not(.badge):not(.tag),
+td a:not(.badge):not(.tag) {
+    color: #0d47a1 !important;
+    text-decoration: underline !important;
+}
+
+footer#footer p a {
+    color: #0d47a1 !important;
+    text-decoration: underline !important;
+}
+
+/* Navbar links — Bootstrap 4 navbar-dark uses rgba(255,255,255,.5) (~4:1).
+   Raise to #fff (~11.5:1) against the dark background. */
+.navbar-dark .nav-link {
+    color: #fff !important;
+}
+
