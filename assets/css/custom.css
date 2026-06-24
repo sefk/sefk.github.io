@@ -33,6 +33,20 @@ img.postimage {
     padding: 0 30px;
 }
 
+/* Post & page titles in the site's blue. Titles are not links (see the
+   post_header/index template overrides), so no underline. #0d47a1 is ~8.6:1
+   on white, clearing the WCAG AA contrast threshold. */
+.entry-title {
+    color: #0d47a1;
+}
+
+/* Section headings (h2/h3) in post & page content, in the same blue.
+   Large text, so #0d47a1 (~8.6:1) clears the contrast threshold. */
+.post-text h2,
+.post-text h3 {
+    color: #0d47a1;
+}
+
 /* ------------- Lighthouse accessibility fixes ------------- */
 
 /* Inline prose & table links. Two audits:
@@ -52,9 +66,10 @@ footer#footer p a {
     text-decoration: underline !important;
 }
 
-/* Navbar links — Bootstrap 4 navbar-dark uses rgba(255,255,255,.5) (~4:1).
-   Raise to #fff (~11.5:1) against the dark background. */
+/* Navbar links — close to Bootstrap navbar-dark's muted rgba(255,255,255,.5)
+   default, but lifted to rgba(255,255,255,.75) (~6.7:1 on #343a40) so it clears
+   the WCAG AA contrast threshold. */
 .navbar-dark .nav-link {
-    color: #fff !important;
+    color: rgba(255, 255, 255, .75) !important;
 }
 
