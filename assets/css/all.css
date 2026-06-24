@@ -989,6 +989,12 @@ td a:not(.badge):not(.tag) {
     text-decoration: underline !important;
 }
 
+/* Footer copyright text — Bootstrap 3's muted #777 is only 4.47:1 on white
+   (fails AA); darken to #666 (~5.7:1). Links inside are overridden below. */
+footer#footer p {
+    color: #666 !important;
+}
+
 footer#footer p a {
     color: #0d47a1 !important;
     text-decoration: underline !important;
