@@ -952,7 +952,13 @@ BODY_END = ""
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-# EXTRA_HEAD_DATA = ""
+# Favicon set: .ico for legacy, scalable .svg for modern browsers (a bold
+# blue "S" on a white tile), and apple-touch-icon for iOS home screens.
+EXTRA_HEAD_DATA = """
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+"""
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
