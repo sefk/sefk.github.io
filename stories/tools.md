@@ -6,26 +6,30 @@
 
 ## This Site
 
-This is a static website generated using **[Nikola][]**. Static sites are great.
-I wrote a [blog post][static] about why the choice of this particular site
-generator a while back, but frankly any one will do and there are many to chose
-from. All the pieces I use are free.
+This is a static website generated using **[Nikola][]**. Static sites are
+great. I wrote a [blog post][static] about why the choice of this particular
+site generator a while back, but frankly any one will do and there are many to
+chose from. All the pieces I use are free.
 
-- **[GitHub Pages][]**. The [README][] describes the authoring/publish workflow.
-- **[CloudFlare][]** for Delivery.
-- **[Let's Encrypt][]** for self-signed TLS certificates.
-- **[Google Analytics][]**
+- [GitHub Pages][]. The [README][] describes the authoring/publish workflow.
+- [CloudFlare][] for Delivery.
+- [Let's Encrypt][] for self-signed TLS certificates.
 
-The source code is in a public [github repo].
+This site doesn't set any cookies and doesn't track you.
 
-[Nikola]:           https://getnikola.com/
-[static]:           /posts/switching-to-static/
-[Github Pages]:     https://pages.github.com/
-[CloudFlare]:       https://www.cloudflare.com/
-[Let's Encrypt]:    https://letsencrypt.org/
-[Google Analytics]: https://analytics.google.com/
-[README]:           https://github.com/sefk/sefk.github.io/blob/dev/README.md
-[github repo]:      https://github.com/sefk/sefk.github.io/tree/dev
+It meets all accessibility standards &mdash; 100% on [Google Lighthouse][]. If
+you run a website, consider doing this too.
+
+The source code is in a public [GitHub repo][].
+
+[Nikola]:            https://getnikola.com/
+[static]:            /posts/switching-to-static/
+[Github Pages]:      https://pages.github.com/
+[CloudFlare]:        https://www.cloudflare.com/
+[Let's Encrypt]:     https://letsencrypt.org/
+[Google Lighthouse]: https://developer.chrome.com/docs/lighthouse
+[README]:            https://github.com/sefk/sefk.github.io/blob/dev/README.md
+[GitHub repo]:       https://github.com/sefk/sefk.github.io/tree/dev
 
 ## My Resume
 

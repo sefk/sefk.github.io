@@ -929,17 +929,8 @@ INDEX_DISPLAY_POST_COUNT = 8
 #</script>
 #"""
 
-# Google Analytics on every page
-BODY_END = """
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-30366531-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-30366531-1');
-</script>
-"""
+# No third-party tracking. (Google Analytics removed.)
+BODY_END = ""
 # EXTRA_HEAD_DATA = """
 #<link rel="stylesheet" type="text/css" href="/assets/css/tipuesearch.css">
 #<div id="tipue_search_content" style="margin-left: auto; margin-right: auto; padding: 20px;"></div>
