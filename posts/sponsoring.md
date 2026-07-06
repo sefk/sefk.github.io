@@ -29,7 +29,7 @@ myself when debugging how some decision played out. It also helped me to think
 of it less judgmentally. Now I see it as being thoughtful and pragmatic about
 how decisions are made.
 
-So what it it? Sponsoring is similar to mentoring in that it's an investment in
+So what is it? Sponsoring is similar to mentoring in that it's an investment in
 someone, but the mechanism is different. Mentoring is a commitment to
 problem-solve issues as they come up, teach skills, and serve as a sounding
 board, amongst other things. Sponsoring is more strategic. The sponsor is

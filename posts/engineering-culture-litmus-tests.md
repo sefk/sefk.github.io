@@ -60,7 +60,7 @@ And now I understand that this is totally true. Places that value their people c
 
 <h2>Can people choose their own email addresses?</h2>
 
-Non-engineers sometimes don't appreciate how important an email address is. It's your identity on line. A strict naming convention (first name last initial, or worse, last name first initial) indicates place that values conformity over engineer happiness. Worse, its a great way to make their people feel like cogs or "human resources," not the cool individuals that they are.
+Non-engineers sometimes don't appreciate how important an email address is. It's your identity on line. A strict naming convention (first name last initial, or worse, last name first initial) indicates place that values conformity over engineer happiness. Worse, it's a great way to make their people feel like cogs or "human resources," not the cool individuals that they are.
 
 <p>
 (Aside: let's do away with the term Human Resources.  It's horrible.)

@@ -81,6 +81,6 @@ write like crazy over there. Be like my friend Dan Chu and major
 in history, but secretly take CS courses on the side. If you're
 super smart like him, and can manage getting both degrees, then
 you're awesome. But don't sacrifice the BA for the BS. I would
-**love** to talk to a candidate with with a History BA and a Computer
+**love** to talk to a candidate with a History BA and a Computer
 Science MS.
 

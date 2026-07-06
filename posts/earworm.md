@@ -10,8 +10,8 @@
 <p style="float:right; align:right; width:30%"><a href="http://en.wikipedia.org/wiki/File:Bowie_JohnDancing1.jpg#mediaviewer/File:Bowie_JohnDancing1.jpg"><img class="postimage" src="http://upload.wikimedia.org/wikipedia/en/b/bb/Bowie_JohnDancing1.jpg" alt="Bowie JohnDancing1.jpg"></a></p>
 
 I often wake up with a song going through my head. I don't know
-why this happens. The stranger thing the songs. Yesterday
-was good, I woke up to Led Zepplin's [Immigrant Song][led] &mdash;
+why this happens. The strangest thing about the songs. Yesterday
+was good, I woke up to Led Zeppelin's [Immigrant Song][led] &mdash;
 what a great way to start the day. But earlier in the week it was
 inexplicably the [Golden Girls Theme Song][gold]. Gah!
 

@@ -10,7 +10,7 @@
 
 I liked the question that I got when interviewing at YouTube in 2015. At Google
 then we'd have an interview panel of four or five people, each assigned to cover
-a different area. [Billy Biggs][] was the TL on my panel asked to evaluate
+a different area. [Billy Biggs][] was the TL on my panel, and he asked to evaluate
 "architecture." For a manager candidate that mostly meant evaluating technical
 cluefulness (someone else had me do some simple [programming][fb]).
 
@@ -29,7 +29,7 @@ quality processes be like for a product like that, especially given Python is
 presumably a really large open source project? How would you manage this? How
 important to quality is the role of the [BDFL][]? 
 
-And then that lead to a some more interesting higher-level discussions about the
+And then that led to some more interesting higher-level discussions about the
 actual **costs and benefits of addressing failures** like these in the field.
 When should programs hard-fail versus detect and recover? How would you staff an
 engineering team to find and chase down errors? What's the user impact to a

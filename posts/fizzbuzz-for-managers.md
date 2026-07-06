@@ -32,7 +32,7 @@ Instead of asking them how they would do something, just ask them to do that thi
 </ul>
 
 <p>
-If they have follow up questions, or dispute the premise, then play it out. Usually those end up being the most insightful and fun interviews. Also, one warning: questions like these can take you far down the rabbit hole and use up the whole hour if you're not careful.  Remember that its your time.  You should cut them off and switch to the next question, abruptly if need be, to get to everything you need to cover.
+If they have follow up questions, or dispute the premise, then play it out. Usually those end up being the most insightful and fun interviews. Also, one warning: questions like these can take you far down the rabbit hole and use up the whole hour if you're not careful.  Remember that it's your time.  You should cut them off and switch to the next question, abruptly if need be, to get to everything you need to cover.
 
 <h2>Nuts and Bolts</h2>
 

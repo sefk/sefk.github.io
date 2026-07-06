@@ -33,7 +33,7 @@ good occasion to take stock of how that's going. In a word, it's been **great**.
   hasn't gotten cleaned out; neither has the garage.
 
 My friend Rachel Grey has a three month head start leaving Google. Her
-writing this resonates with me. Especially this from recent LinkedIn post
+writing this resonates with me. Especially this from a recent LinkedIn post
 ([private, sorry][rg]): "one month off per year of service is a good rule of
 thumb; after six of them, I'm still feeling like a sailor who just barely
 managed to swim to shore." Maybe that's still where I'm at too.

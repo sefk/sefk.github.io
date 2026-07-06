@@ -17,7 +17,7 @@
 
 
 <p>
-<a href="http://sef.kloninger.com/2012/03/those-little-utilities/witch-ss/" rel="attachment wp-att-36"><img class="aligncenter size-medium wp-image-36" title="witch screenshot" src="/f/witch-ss-300x202.png" alt="WItch Screenshot" width="300" height="202"></a>
+<a href="http://sef.kloninger.com/2012/03/those-little-utilities/witch-ss/" rel="attachment wp-att-36"><img class="aligncenter size-medium wp-image-36" title="witch screenshot" src="/f/witch-ss-300x202.png" alt="Witch Screenshot" width="300" height="202"></a>
 </p>
 
 
@@ -33,7 +33,7 @@
 
 
 
-<p><a href="http://fluidapp.com/" target="_blank">Fluid</a> (free) - I like web apps I use a lot (gmail, Remember the Milk, Google Calendar) to function like real apps: own icon, startup and quit behavior distinct from other browser windows, etc.  I've now come to appreciate those as <a href="http://en.wikipedia.org/wiki/Site-specific_browser" target="_blank">Site Specific Browsers</a> (SSB's), and Fluid is the best way of doing those.  It's a little strange as that relies on Safari, and I use Chrome for everything else, so those SSB's don's share cookies or anything else, but that's not a big deal.  Fluid even has some nice little special cases, like adding unread mail badges to your gmail icon (neat!).
+<p><a href="http://fluidapp.com/" target="_blank">Fluid</a> (free) - I like web apps I use a lot (gmail, Remember the Milk, Google Calendar) to function like real apps: own icon, startup and quit behavior distinct from other browser windows, etc.  I've now come to appreciate those as <a href="http://en.wikipedia.org/wiki/Site-specific_browser" target="_blank">Site Specific Browsers</a> (SSBs), and Fluid is the best way of doing those.  It's a little strange as that relies on Safari, and I use Chrome for everything else, so those SSBs don't share cookies or anything else, but that's not a big deal.  Fluid even has some nice little special cases, like adding unread mail badges to your gmail icon (neat!).
 </p>
 
 

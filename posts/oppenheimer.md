@@ -19,7 +19,7 @@ into what a person is thinking and feeling. Especially for this
 movie, which is basically about this question: what would it be
 like to be the person who made these terrible weapons?  I understand
 he's complicated, and _it's_ complicated.  But instead of dialog,
-or even some outright explaining, this movie leans on of Cillian
+or even some outright explaining, this movie leans on Cillian
 Murphy staring into the distance or adjusting his hat.
 
 **Women**. There were plenty of interesting women they could have

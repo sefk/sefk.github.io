@@ -73,7 +73,7 @@ worth your time to do well.
 #### Notes
 <a name="note1"></a>
 
-1. Some people use the word "premortem" to describes more of a _process_ than a
+1. Some people use the word "premortem" to describe more of a _process_ than a
    document, like in [this article][].
    
 [this article]: https://hbr.org/2007/09/performing-a-project-premortem

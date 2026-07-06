@@ -14,7 +14,7 @@ seems like a reasonable thing to expect of a functioning government, right?
 I consider data a public good too. We all benefit from accurate maps,
 thorough measurements of the natural world, and trustworthy economic data.
 
-Which is why it was I was so upset when I heard how the the current US
+Which is why I was so upset when I heard how the current US
 administration has been on a tear to **actually remove data**. All through 2025,
 websites were taking down and datasets were taken offline. This [Wikipedia page]
 catalogs what's been happening, and this report by the [American Statistical

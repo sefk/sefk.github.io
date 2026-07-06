@@ -25,9 +25,9 @@
 <img style="float:right" class="postimage" src="/f/values-crowbar.png" alt="Crowbar with the word \"values\" written on the side" width=30%>
 
 Values are useful. 
-thirty years as an engineering manager has been in big companies, trying to
-get people to do things, and I've used values one of the quickest ways to
-do that. It gets peoples attention; it can bring an unruly or noncommital
+I've spent thirty years as an engineering manager in big companies, trying to
+get people to do things, and I've found values to be one of the quickest ways to
+do that. It gets people's attention; it can bring an unruly or noncommittal
 peer to heel.
 
 ### Example At A Big Company -- Google
@@ -73,7 +73,7 @@ a pleasant surprise was when the trial period ended, it fell back to the
 standard. The email I got from them is included below, with the key sentence
 highlighted in yellow.
 
-When was the last time you saw a service do this at then end of the free trial?
+When was the last time you saw a service do this at the end of the free trial?
 I can't remember one. It's great.
 
 What's so great about this is that it sends strong signal that **this company puts

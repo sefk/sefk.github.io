@@ -16,7 +16,7 @@ For years I've used [Daisy Disk] to debug space issues like this, it's great.
 In this case it showed the problem, but wasn't able to narrow down what the
 problem was nor remove it.
 
-Not have any success through the normal means ("Googling around"), I wrote the
+With no success through the normal means ("Googling around"), I wrote the
 developer of Daisy Disk, [Oleg]. They explained the problem and suggested a
 workaround. It worked like a champ! I included the explanation below and
 screenshots showing before and after.

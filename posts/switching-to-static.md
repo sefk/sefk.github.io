@@ -19,10 +19,10 @@ proud to write or operate myself.  Wordpress was overkill and
 not worth the trouble:
 
 - Wordpress is database driven for dynamic sites. My little blog isn't
-  dynamic at all. Once you buy into the static idea, lots of otehr
+  dynamic at all. Once you buy into the static idea, lots of other
   things fall into place.
 
-- Comments and account spam are still is a nuisance. The nice
+- Comments and account spam is still a nuisance. The nice
   people at [Akismet][a] have done a great job holding back the tide, 
   but I still get at least one bogus registration a day. I expect a 
   service like Disqus or Facebook or Google+ will be more likely
@@ -45,7 +45,7 @@ one that is good for blogs.  The big things I was looking for:
 static site generation, Markdown/ReST support, and ability
 to host on free services like Github Pages.
 
-In additon I wanted these things (in no particular order):
+In addition I wanted these things (in no particular order):
 
 - active development
 
@@ -64,7 +64,7 @@ I considered three options before settling on Nikola.  There are a
 ton of static site generators, even when you limit them to Python.
 But the only alternatives I seriously looked at were [Pelican][p] and
 [Hyde][h].  Of these Nikola seems to have the most active development
-and the richest set of features.  I ease especially drawn by their
+and the richest set of features.  I was especially drawn by their
 good documentation and theming.
 
 
@@ -129,7 +129,7 @@ but if you want to see the blow-by-blow, read on.
          <code>..</code>.  Github Pages wants things in the root.
 
 
-5. The final swich.  I moved my domain from Dreamhost over to
+5. The final switch.  I moved my domain from Dreamhost over to
    [Gandi][g], which is the registrar I like to use.  They throw in
    basic DNS with registration, which is sufficient for me.
    

@@ -15,11 +15,11 @@ If you've traveled internationally, likely you've used a SIM card
 for local data and calls. There is a nice ecosystem around SIMs
 with a wealth of easy and affordable Pay As You Go (PAYG) options.
 
-But the newer iPhones did away with the SIM slot if favor of some new
+But the newer iPhones did away with the SIM slot in favor of some new
 eSIM hotness. Apple has all kinds of [info][] claiming they have good
 international support, but I found reality falls short.
 
-*  Only a few carriers support eSIM's,
+*  Only a few carriers support eSIMs,
 *  The few that do require a contract. A tourist or student
    studying abroad is better served by a PAYG plan, and
 *  Even if you can stomach a contract, that would require a UK bank
@@ -33,8 +33,8 @@ Clearly the new models can be made to work well with it, since how
 they are sold in the UK.  If you're unlucky enough to have bought
 your recent iPhone in the US, you're out of luck. 
 
-I this is an example of Apple bad tendency sometimes choose form
-over function, "[courage][]" over usability.
+This is an example of Apple's bad tendency to sometimes choose
+form over function, "[courage][]" over usability.
 
 [info]: https://support.apple.com/en-gb/HT209096
 [a]: https://www.att.com/international/day-pass/

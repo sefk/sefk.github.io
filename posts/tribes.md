@@ -9,7 +9,7 @@
 
 There are a few personal technology tribes -- the main ones I can think of
 are Google's, Apple's, and Microsoft's (maybe there's an open-source one
-too?). For me, what's worked for a lon time has been be half in the Google
+too?). For me, what's worked for a long time has been to be half in the Google
 tribe, and half in Apple's.
 
 I have many **Apple Devices**: iPhone, Mac desktops and laptops, AppleTV,

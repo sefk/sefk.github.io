@@ -11,7 +11,7 @@
 
 
 <p>
-This year we had a sizable number of trick-or-treaters at our house in the Willows neighborhood of Menlo Park. The 303 we saw was down from our high last year, but abou the same as the year before that.
+This year we had a sizable number of trick-or-treaters at our house in the Willows neighborhood of Menlo Park. The 303 we saw was down from our high last year, but about the same as the year before that.
 
 
 

@@ -12,7 +12,7 @@ harder in one language vs. another. Having spent some time in NodeJS ...
 
 - asynch, callbacks, sure Twisted
 
-- built in web server vs. guniocorn and wsgi
+- built-in web server vs. gunicorn and WSGI
 
 - JIT vs cpython, sure PyPy
 

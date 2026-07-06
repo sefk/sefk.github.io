@@ -17,7 +17,7 @@ src="https://docs.google.com/spreadsheets/d/1w-7ftYzue_VQl4lt-QNFU_UfeDAROg47-1t
 Everything happened later this year. Our first trick-or-treater didn't show up until 6:30, and
 peak wasn't until 8:45. That's thirty minutes or more later than prior years. I speculate it's because
 it was a warm weekend night. Why not stay out a bit later, no school tomorrow. And with the fall-back
-DST change everyone would be looking foward to a "free" hour of sleep.
+DST change everyone would be looking forward to a "free" hour of sleep.
 
 As usual, the full story can be seen 
 <a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE">

@@ -103,7 +103,7 @@ naming convention.
  
 The old convention has files of the format YYYYMM<slug>.SUFFIX,
 where YYYY is the year, MM is the month, and SUFFIX is html or
-meta. <slug> is the short form of the the title, and should match
+meta. <slug> is the short form of the title, and should match
 the "slug" field in the metadata
  
 To convert to the new convention

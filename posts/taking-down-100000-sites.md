@@ -77,7 +77,7 @@ I learned four lessons:
 <ol>
 	<li><strong>Undo is your friend.</strong> The tooling or features to revert your change will take time, but you will be happy to have it if you ever need it.</li>
 	<li><strong>Make changes during the day.</strong> Resolving a hairy problem is hard if you don't have the right people, and when the people you do have are tired and foggy. This incident might have taken hours to resolve instead of minutes in the middle of the night.</li>
-	<li><strong>It's not over until it's over.</strong> Once in crisis mode, you're eager to be get out of it. Once the main problem is solved it is tempting to exhale, go to lunch, go back to bed, whatever. But aftereffects might take a while to show up, or may just be harder to find.</li>
+	<li><strong>It's not over until it's over.</strong> Once in crisis mode, you're eager to get out of it. Once the main problem is solved it is tempting to exhale, go to lunch, go back to bed, whatever. But aftereffects might take a while to show up, or may just be harder to find.</li>
 	<li><strong>Disproportionate effects.</strong> We all know that our complex systems nonlinear failure modes. Incidents like these are reminders that small changes have big effects. Said another way, even small things should be taken seriously.</li>
 </ol>
 

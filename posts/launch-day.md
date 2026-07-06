@@ -19,7 +19,7 @@ Today we turned on our first class on Stanford's instance the open-source <a hre
 
 
 <p>
-We have launched MOOC's for Stanford before: two in <a href="http://networking.class.stanford.edu/">Fall</a> <a href="http://solar.class.stanford.edu/">Quarter</a>, and one in <a href="http://db.class.stanford.edu/">Winter</a>. Even though the classes were huge success, but the launch days weren't so smooth. We had written that platform, <a href="http://class2go.stanford.edu/">Class2Go</a>, from the ground up with a small team in a dozen weeks in Fall; in the weeks before the Winter launch we ripped out the whole evaluation system, about one-third of the code, and replaced it with a whole new engine. In both cases most of our code was fresh off the presses.
+We have launched MOOC's for Stanford before: two in <a href="http://networking.class.stanford.edu/">Fall</a> <a href="http://solar.class.stanford.edu/">Quarter</a>, and one in <a href="http://db.class.stanford.edu/">Winter</a>. Even though the classes were huge successes, the launch days weren't so smooth. We had written that platform, <a href="http://class2go.stanford.edu/">Class2Go</a>, from the ground up with a small team in a dozen weeks in Fall; in the weeks before the Winter launch we ripped out the whole evaluation system, about one-third of the code, and replaced it with a whole new engine. In both cases most of our code was fresh off the presses.
 
 
 

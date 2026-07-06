@@ -88,5 +88,5 @@ to peers that come up at performance review time.
 
 Finally, find a way to **pay it forward**. Introduce mentors and
 mentees; volunteer in your company's matchmaking service; find
-people who appear to stranded and offer to help them out. Sending
+people who appear to be stranded and offer to help them out. Sending
 this post might be a fine icebreaker.

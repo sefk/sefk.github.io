@@ -24,7 +24,7 @@ classes.
 
 But even from the beginning the name *Class2Go* felt a bit off. Our
 original aim was to enable offline [MOOC] students, people trying
-to take classes offline or in poorly-connected places But we ended
+to take classes offline or in poorly-connected places. We ended
 up pivoting away from the offline use case to more standard
 hosted-course features. It became a little multi-tenant CMS with a
 small database for auth, assessment results, and some basic analytics.
@@ -43,7 +43,7 @@ say. It also happens to be a woman's name, but not a particularly
 common one we were told. 
 
 Surprisingly, `tindra.com` was available! In 2013 short and catchy
-domain names were getting hard to come The [new gTLD program][] had
+domain names were getting hard to come by. The [new gTLD program][] had
 only just been approved in 2012, and `.com` and `.org` were pretty
 crowded.
 

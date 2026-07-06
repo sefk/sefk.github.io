@@ -30,7 +30,7 @@ Using "ls", and relying on file and directory modification times, is a useful wa
 
 
 <p>
-As projects are finished I move them into a "done" folder. This gets them out of the way.  A useful side effect is the modification time of the done directly itself gets updated.
+As projects are finished I move them into a "done" folder. This gets them out of the way.  A useful side effect is the modification time of the done directory itself gets updated.
 
 
 

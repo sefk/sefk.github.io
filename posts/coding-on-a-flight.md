@@ -10,12 +10,12 @@
 <img class="alignright  wp-image-408" style="border: 0px;" alt="airplane" src="/f/airplane-300x126.png" width="240" height="101">
 
 <p>
-I'm surprised that that I like coding on flights. It's surprising because airplanes are generally hostile environments for most things, but I've found it a good place to code.
+I'm surprised that I like coding on flights. It's surprising because airplanes are generally hostile environments for most things, but I've found it a good place to code.
 
 
 
 <p>
-The obvious reason is the lack of interruptions and distractions. Usualy there is no wifi, or it is too spotty to count on. So no email or IRC or web. While I know that distractions kill flow, I never seem give myself license to unplug in normal life. I'm a manager, and being a manager means being interruptible.
+The obvious reason is the lack of interruptions and distractions. Usually there is no Wi-Fi, or it is too spotty to count on. So no email or IRC or web. While I know that distractions kill flow, I never seem to give myself permission to unplug in normal life. I'm a manager, and being a manager means being interruptible.
 
 
 
@@ -30,4 +30,4 @@ Also it just sounds cool to say you coded something up on the flight.
 
 
 <p>
-But thre real question is should simulate "airplane mode" when grounded.  Hmm.
+But the real question is whether I should simulate "airplane mode" when grounded.  Hmm.

@@ -74,7 +74,7 @@ Hiring and firing figures into this too. An under-staffed team can't do what it 
 <h2>Working On The Right Stuff</h2>
 
 <p>
-This is where the manager can have a more direct and immediate impact. You have to set up a few good processes (not too many) and enforce them.  Your goal is maximize useful work.  One way is to prevent work on stuff that will be wasted.  Another is to reduce thrashing by finishing one thing before starting another. This is where delivery comes in: it's one thing to be busy, but how much makes it into real customers' hands?
+This is where the manager can have a more direct and immediate impact. You have to set up a few good processes (not too many) and enforce them.  Your goal is to maximize useful work.  One way is to prevent work on stuff that will be wasted.  Another is to reduce thrashing by finishing one thing before starting another. This is where delivery comes in: it's one thing to be busy, but how much makes it into real customers' hands?
 </p>
 
 
@@ -84,7 +84,7 @@ Some of this sounds like product management, especially prioritization and produ
 
 
 <p>
-Much of my career has been in backend systems. Infrastructure projects to enable features are the exceptions. Most aim to improve reliability by doing things like removing bottlenecks (scaling) or bulletproofing systems. Unfortunately I think the only way to judge these projects qualitatively.  Measuring how often it <em>would</em> have broken is so hard. Just make sure you get a techie who you trust to evaluate projects impersonally and critically. And be careful of pet projects.
+Much of my career has been in backend systems. Infrastructure projects to enable features are the exceptions. Most aim to improve reliability by doing things like removing bottlenecks (scaling) or bulletproofing systems. Unfortunately I think the only way to judge these projects is qualitatively.  Measuring how often it <em>would</em> have broken is so hard. Just make sure you get a techie who you trust to evaluate projects impersonally and critically. And be careful of pet projects.
 </p>
 
 <h2>Doing It The Right Way</h2>

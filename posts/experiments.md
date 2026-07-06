@@ -17,7 +17,7 @@ safer to maintain. And good engineers care a lot about impact. While it's not
 the only thing that matters (the "how" is important too), if you start with
 impact, you'll generally do well.
 
-An engineer's job to put ideas into practice, to make things. But sometimes
+An engineer's job is to put ideas into practice, to make things. But sometimes
 we're not sure what to make. Or we think we know, but aren't sure it'll work.
 The best way to figure that out is often running a set of experiments, or maybe
 building a prototype (an n=1 experiment).

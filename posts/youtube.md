@@ -25,7 +25,7 @@ People vote with their feet, and I have a lot of friends who have opted
 for Google, and YouTube specifically. They tell me that it's a great place
 to work.
 
-YouTube is one of the worlds foremost platforms for social commentary,
+YouTube is one of the world's foremost platforms for social commentary,
 education, and free speech. And it's plenty of [entertainment][e] too. Sounds
 like fun.
 

@@ -44,4 +44,4 @@ So, product manager waiting on a feature. What to do if you're waiting on an eng
 
 
 <p>
-And finally, to you product managers and biz folks who push. You are right do do so. That's all that matters to the customers, all matters at the end of the day. Keep it up.
+And finally, to you product managers and biz folks who push. You are right to do so. That's all that matters to the customers, all matters at the end of the day. Keep it up.

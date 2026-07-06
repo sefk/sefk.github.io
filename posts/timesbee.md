@@ -12,12 +12,12 @@ precisely, how many combinations of seven letters can be used to build Bee-type
 puzzles?
 
 It turns out **7,742 different seven letter combinations** can be used to
-generate Bee-style puzzles. There are more puzzles themseves based on what
+generate Bee-style puzzles. There are more puzzles themselves based on what
 letter is chosen for the middle spot.
 
 The majority of letter choices, about 62%, have just one pangram. That's lower
 than I expected, actually. It's not that uncommon to have two or three pangrams,
-which happens about about 25% of the time, and nearly four out of ten puzzles
+which happens about 25% of the time, and nearly four out of ten puzzles
 will have more than one pangram. The full output is [here][], the output of this
 [program][].
 
@@ -39,7 +39,7 @@ example's is *amphibian*. Wikipedia cites [Frank Longo][] as the Bee's creator.
 
 [nytbee.com][] has more today's puzzle and some interesting stats about these
 puzzles in general. They don't seem to be affiliated with the NY Times but that
-seem to be OK and is's a nice site.
+seem to be OK and it's a nice site.
 
 [Frank Longo]: https://en.wikipedia.org/wiki/Frank_Longo
 [nytbee.com]: https://nytbee.com/

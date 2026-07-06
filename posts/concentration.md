@@ -13,7 +13,7 @@ I've lost my ability to concentrate. I knew this before I started <a href="http:
 <img class="alignright size-full wp-image-200" style="border-style: initial; border-color: initial; border-image: initial; border-width: 0px;" title="Mr. Scatterbrain" src="/f/MrScatterbrain.png" alt="" width="190" height="243">
 
 <p>
-Now that I'm on sabbatical and I really need to concentrate. The external distractions I can deal with: shut off email and IM, take the editor full screen. What has me concerned is even with those tricks I still have a hard time. It's me. My mind wanders. I think about of that other thing I was going to do; wonder what's going on with that news thing that has no immediate bearing on me.
+Now that I'm on sabbatical and I really need to concentrate. The external distractions I can deal with: shut off email and IM, take the editor full screen. What has me concerned is even with those tricks I still have a hard time. It's me. My mind wanders. I think about that other thing I was going to do; wonder what's going on with that news thing that has no immediate bearing on me.
 
 
 

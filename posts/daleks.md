@@ -9,7 +9,7 @@
 This is a story about my recent experience Vibe Coding. The work itself isn't
 impressive and this writeup isn't different than the many gee-whiz posts you see
 these days. I didn't do [three apps in a day]. But I wanted to write up my
-experience, mostly to give me an excuse to tell an old tyme programming story
+experience, mostly to give me an excuse to tell an old-time programming story
 from the 1900's.
 
 <a href="/daleks">
@@ -30,7 +30,7 @@ by this time next year this will probably just be called "coding" and I bet
 they're right.
 
 Anyway our week one assignment was to code up a game. **In about two hours and
-$10** I had a something up and running. I spent another couple of hours futzing
+$10** I had something up and running. I spent another couple of hours futzing
 with version control, documentation, and hosting. But that's it! 
 
 It's pretty basic, and not all that much fun, but you can [play it here]. It's
@@ -40,12 +40,12 @@ in [checked in].
 This was my first experience with [Replit]. It's impressive and fun. This was
 what was recommended for the class and the good folks at Replit were nice enough
 to give us all $30 in credits, which I had plenty to spare. Most of my comrades
-presented apps that were fancier than mind with 3d graphics, sound, and more
-interactive game play. some also said though that they ended up spending much
+presented apps that were fancier than mine with 3D graphics, sound, and more
+interactive gameplay. Some also said, though, that they ended up spending much
 more than I did, so YMMV on costs.
 
 One interesting part was dealing with integration. To get their code deployed
-onto my personal website site required wiring up a GitHub workflow, which I'd
+onto my personal website required wiring up a GitHub workflow, which I'd
 never done before. No problem, Replit took care of that too. Then I asked
 [Gemini] to get local hosting running. When I hit a permissions problem and a
 crash I had to resist the urge to copy paste the error messages into a search

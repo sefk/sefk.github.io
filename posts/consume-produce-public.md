@@ -23,7 +23,7 @@ or bookmarked or whatever, do that too.)
   [bh]: http://randsinrepose.com/archives/the-builders-high/
 
 I agree with pretty much everything he said in there. The good
-feeling that comes from actually making soemthing. How that's
+feeling that comes from actually making something. And that's
 especially true now in light of the constant crush of everyone
 else's creations (he called them "moments"). 
 

@@ -14,7 +14,7 @@ I am of two minds about <a title="Peter Reinhardt" href="http://rein.pk/online-e
 
 
 <p>
-I agree that retention rates are low. At Stanford we we just completed the Winter run of Jennifer Widom's <a title="Introduction to Databases" href="http://db.class2go.stanford.edu/" target="_blank">Database Class</a>, here are the course stats:
+I agree that retention rates are low. At Stanford we just completed the Winter run of Jennifer Widom's <a title="Introduction to Databases" href="http://db.class2go.stanford.edu/" target="_blank">Database Class</a>, here are the course stats:
 
 <p>
 <ul>
