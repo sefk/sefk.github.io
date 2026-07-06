@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>Sef Kloninger — engineer, engineering manager, and writer.</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 24 Jun 2026 23:20:33 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>"It's Overwriting, Not Appending"</title><link>https://sef.kloninger.com/posts/ai-mediation/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;I like the command line. But more and more I find myself &lt;strong&gt;mediating those tasks through a chat&lt;/strong&gt;, which surprises me because I used to find chat frustrating. But Claude is just so darn helpful.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>Sef Kloninger — engineer, engineering manager, and writer.</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 06 Jul 2026 22:42:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>"It's Overwriting, Not Appending"</title><link>https://sef.kloninger.com/posts/ai-mediation/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;I like the command line. But more and more I find myself &lt;strong&gt;mediating those tasks through a chat&lt;/strong&gt;, which surprises me because I used to find chat frustrating. But Claude is just so darn helpful.&lt;/p&gt;
 &lt;p&gt;Here's an example. I've been working on a typical scrape-and-loader for election data. It does one election cycle at a time to split up the work and give you a chance to inspect. After the first download, I verified the data which looked good. I asked Claude to get all the rest. It dutifully constructed a loop ("&lt;code&gt;for i in 2000, 2002&lt;/code&gt;...") and started working down the list, which would take hours. Before heading to bed, I checked in.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Screenshot of a Claude chat finding a bug" src="https://sef.kloninger.com/f/claude-finds-a-bug.png"&gt;&lt;/p&gt;
 &lt;p&gt;Of course throwing away the data as we go isn't what I wanted.&lt;/p&gt;
@@ -248,7 +248,7 @@ naming convention.
 
 The old convention has files of the format YYYYMM&amp;lt;slug&amp;gt;.SUFFIX,
 where YYYY is the year, MM is the month, and SUFFIX is html or
-meta. &amp;lt;slug&amp;gt; is the short form of the the title, and should match
+meta. &amp;lt;slug&amp;gt; is the short form of the title, and should match
 the "slug" field in the metadata
 
 To convert to the new convention
@@ -274,7 +274,7 @@ layout, and some constraints. Again, maybe overkill, but I figured this isn't
 the last time I'll be asking one of these tools to help me futz with this site.&lt;/p&gt;</description><category>AI</category><category>Tech</category><guid>https://sef.kloninger.com/posts/gemini-claude-cleanup/</guid><pubDate>Wed, 18 Feb 2026 19:00:00 GMT</pubDate></item><item><title>Yeah, I Did Some Vibe Coding Too</title><link>https://sef.kloninger.com/posts/daleks/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;This is a story about my recent experience Vibe Coding. The work itself isn't
 impressive and this writeup isn't different than the many gee-whiz posts you see
 these days. I didn't do &lt;a href="https://mastodon.social/@stroughtonsmith/116014270900193494"&gt;three apps in a day&lt;/a&gt;. But I wanted to write up my
-experience, mostly to give me an excuse to tell an old tyme programming story
+experience, mostly to give me an excuse to tell an old-time programming story
 from the 1900's.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://sef.kloninger.com/daleks"&gt;
 &lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/daleks-2026.png" alt="Screenshot of my recent Daleks game" width="50%"&gt;
@@ -289,7 +289,7 @@ to have stuck, for the time being at least. On &lt;a href="https://atp.fm/678"&g
 by this time next year this will probably just be called "coding" and I bet
 they're right.&lt;/p&gt;
 &lt;p&gt;Anyway our week one assignment was to code up a game. &lt;strong&gt;In about two hours and
-$10&lt;/strong&gt; I had a something up and running. I spent another couple of hours futzing
+$10&lt;/strong&gt; I had something up and running. I spent another couple of hours futzing
 with version control, documentation, and hosting. But that's it! &lt;/p&gt;
 &lt;p&gt;It's pretty basic, and not all that much fun, but you can &lt;a href="https://sef.kloninger.com/daleks"&gt;play it here&lt;/a&gt;. It's
 hosted on Github pages, just like this blog. The code and construction notes are
@@ -297,11 +297,11 @@ in &lt;a href="https://github.com/sefk/daleks"&gt;checked in&lt;/a&gt;.&lt;/p&gt
 &lt;p&gt;This was my first experience with &lt;a href="https://replit.com/"&gt;Replit&lt;/a&gt;. It's impressive and fun. This was
 what was recommended for the class and the good folks at Replit were nice enough
 to give us all $30 in credits, which I had plenty to spare. Most of my comrades
-presented apps that were fancier than mind with 3d graphics, sound, and more
-interactive game play. some also said though that they ended up spending much
+presented apps that were fancier than mine with 3D graphics, sound, and more
+interactive gameplay. Some also said, though, that they ended up spending much
 more than I did, so YMMV on costs.&lt;/p&gt;
 &lt;p&gt;One interesting part was dealing with integration. To get their code deployed
-onto my personal website site required wiring up a GitHub workflow, which I'd
+onto my personal website required wiring up a GitHub workflow, which I'd
 never done before. No problem, Replit took care of that too. Then I asked
 &lt;a href="https://geminicli.com/"&gt;Gemini&lt;/a&gt; to get local hosting running. When I hit a permissions problem and a
 crash I had to resist the urge to copy paste the error messages into a search
@@ -332,7 +332,7 @@ everyday M3 MacBook Air running the latest Tahoe 26.2.&lt;/p&gt;
 &lt;p&gt;For years I've used &lt;a href="https://daisydiskapp.com/"&gt;Daisy Disk&lt;/a&gt; to debug space issues like this, it's great.
 In this case it showed the problem, but wasn't able to narrow down what the
 problem was nor remove it.&lt;/p&gt;
-&lt;p&gt;Not have any success through the normal means ("Googling around"), I wrote the
+&lt;p&gt;With no success through the normal means ("Googling around"), I wrote the
 developer of Daisy Disk, &lt;a href="https://daisydiskapp.com/about/"&gt;Oleg&lt;/a&gt;. They explained the problem and suggested a
 workaround. It worked like a champ! I included the explanation below and
 screenshots showing before and after.&lt;/p&gt;
@@ -378,7 +378,7 @@ the list below.&lt;/p&gt;
 seems like a reasonable thing to expect of a functioning government, right?&lt;/p&gt;
 &lt;p&gt;I consider data a public good too. We all benefit from accurate maps,
 thorough measurements of the natural world, and trustworthy economic data.&lt;/p&gt;
-&lt;p&gt;Which is why it was I was so upset when I heard how the the current US
+&lt;p&gt;Which is why I was so upset when I heard how the current US
 administration has been on a tear to &lt;strong&gt;actually remove data&lt;/strong&gt;. All through 2025,
 websites were taking down and datasets were taken offline. This &lt;a href="https://en.wikipedia.org/wiki/2025_United_States_government_online_resource_removals"&gt;Wikipedia page&lt;/a&gt;
 catalogs what's been happening, and this report by the &lt;a href="https://www.amstat.org/policy-and-advocacy/the-nation's-data-at-risk-meeting-american's-information-needs-for-the-21st-century"&gt;American Statistical
@@ -511,7 +511,7 @@ good occasion to take stock of how that's going. In a word, it's been &lt;strong
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;My friend Rachel Grey has a three month head start leaving Google. Her
-writing this resonates with me. Especially this from recent LinkedIn post
+writing this resonates with me. Especially this from a recent LinkedIn post
 (&lt;a href="https://www.linkedin.com/posts/rachel-grey-b69319_after-six-months-out-of-tech-my-primary-ugcPost-7383907826374582272-yCCs"&gt;private, sorry&lt;/a&gt;): "one month off per year of service is a good rule of
 thumb; after six of them, I'm still feeling like a sailor who just barely
 managed to swim to shore." Maybe that's still where I'm at too.&lt;/p&gt;

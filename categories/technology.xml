@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Technology)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/technology.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 27 Feb 2026 22:12:11 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>No More Blog Comments</title><link>https://sef.kloninger.com/posts/enshittification/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div style="float:right; align:right; width:30%; font-size:150px"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Technology)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/technology.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 06 Jul 2026 22:42:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>No More Blog Comments</title><link>https://sef.kloninger.com/posts/enshittification/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;div style="float:right; align:right; width:30%; font-size:150px"&gt;
   &lt;p align="center"&gt;💩&lt;/p&gt;
 &lt;/div&gt;
 
@@ -49,7 +49,7 @@ another year, expanding the covered use cases and taking on more
 classes.&lt;/p&gt;
 &lt;p&gt;But even from the beginning the name &lt;em&gt;Class2Go&lt;/em&gt; felt a bit off. Our
 original aim was to enable offline &lt;a href="https://en.wikipedia.org/wiki/Massive_open_online_course"&gt;MOOC&lt;/a&gt; students, people trying
-to take classes offline or in poorly-connected places But we ended
+to take classes offline or in poorly-connected places. We ended
 up pivoting away from the offline use case to more standard
 hosted-course features. It became a little multi-tenant CMS with a
 small database for auth, assessment results, and some basic analytics.&lt;/p&gt;
@@ -65,7 +65,7 @@ word that means "sparkle" or "twinkle." It's evocative and easy to
 say. It also happens to be a woman's name, but not a particularly
 common one we were told. &lt;/p&gt;
 &lt;p&gt;Surprisingly, &lt;code&gt;tindra.com&lt;/code&gt; was available! In 2013 short and catchy
-domain names were getting hard to come The &lt;a href="https://newgtldprogram.icann.org/"&gt;new gTLD program&lt;/a&gt; had
+domain names were getting hard to come by. The &lt;a href="https://newgtldprogram.icann.org/"&gt;new gTLD program&lt;/a&gt; had
 only just been approved in 2012, and &lt;code&gt;.com&lt;/code&gt; and &lt;code&gt;.org&lt;/code&gt; were pretty
 crowded.&lt;/p&gt;
 &lt;p&gt;The problem was that if you Googled "tindra," the top result was a
@@ -172,11 +172,11 @@ stunned that you can get a 4 TB external SSD for under $300.&lt;/p&gt;
 &lt;p&gt;If you've traveled internationally, likely you've used a SIM card
 for local data and calls. There is a nice ecosystem around SIMs
 with a wealth of easy and affordable Pay As You Go (PAYG) options.&lt;/p&gt;
-&lt;p&gt;But the newer iPhones did away with the SIM slot if favor of some new
+&lt;p&gt;But the newer iPhones did away with the SIM slot in favor of some new
 eSIM hotness. Apple has all kinds of &lt;a href="https://support.apple.com/en-gb/HT209096"&gt;info&lt;/a&gt; claiming they have good
 international support, but I found reality falls short.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Only a few carriers support eSIM's,&lt;/li&gt;
+&lt;li&gt;Only a few carriers support eSIMs,&lt;/li&gt;
 &lt;li&gt;The few that do require a contract. A tourist or student
    studying abroad is better served by a PAYG plan, and&lt;/li&gt;
 &lt;li&gt;Even if you can stomach a contract, that would require a UK bank
@@ -188,8 +188,8 @@ is expensive.&lt;/p&gt;
 Clearly the new models can be made to work well with it, since how
 they are sold in the UK.  If you're unlucky enough to have bought
 your recent iPhone in the US, you're out of luck. &lt;/p&gt;
-&lt;p&gt;I this is an example of Apple bad tendency sometimes choose form
-over function, "&lt;a href="https://www.theringer.com/2016/9/7/16038622/why-did-apple-remove-the-headphone-jack-courage"&gt;courage&lt;/a&gt;" over usability.&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/esim/</guid><pubDate>Fri, 05 Jan 2024 10:34:49 GMT</pubDate></item><item><title>YouTube</title><link>https://sef.kloninger.com/posts/youtube/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/YouTube-icon-full_color.png" alt="YouTube" width="200px" height="148px"&gt;&lt;/p&gt;
+&lt;p&gt;This is an example of Apple's bad tendency to sometimes choose
+form over function, "&lt;a href="https://www.theringer.com/2016/9/7/16038622/why-did-apple-remove-the-headphone-jack-courage"&gt;courage&lt;/a&gt;" over usability.&lt;/p&gt;</description><category>Technology</category><guid>https://sef.kloninger.com/posts/esim/</guid><pubDate>Fri, 05 Jan 2024 10:34:49 GMT</pubDate></item><item><title>YouTube</title><link>https://sef.kloninger.com/posts/youtube/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/YouTube-icon-full_color.png" alt="YouTube" width="200px" height="148px"&gt;&lt;/p&gt;
 &lt;p&gt;I'm excited to start my new job at YouTube in a few weeks. I'll manage the
 engineering team building the data warehouse for usage metrics.&lt;/p&gt;
 &lt;p&gt;I like that YouTube is &lt;strong&gt;important&lt;/strong&gt;. It's firmly a part of our culture
@@ -200,7 +200,7 @@ Indeed that's the clincher for why I'm looking forward to working there.
 People vote with their feet, and I have a lot of friends who have opted
 for Google, and YouTube specifically. They tell me that it's a great place
 to work.&lt;/p&gt;
-&lt;p&gt;YouTube is one of the worlds foremost platforms for social commentary,
+&lt;p&gt;YouTube is one of the world's foremost platforms for social commentary,
 education, and free speech. And it's plenty of &lt;a href="https://www.youtube.com/watch?v=9bZkp7q19f0"&gt;entertainment&lt;/a&gt; too. Sounds
 like fun.&lt;/p&gt;</description><category>Life</category><category>Technology</category><guid>https://sef.kloninger.com/posts/youtube/</guid><pubDate>Wed, 26 Aug 2015 06:25:00 GMT</pubDate></item><item><title>Thick Apps Still Lose </title><link>https://sef.kloninger.com/posts/thick-apps/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/online-required.png" alt="Microsoft Excel 2016 Error Message" width="60%"&gt;&lt;/p&gt;
 &lt;p&gt;Thick apps won mobile. Fine. &lt;/p&gt;
@@ -214,13 +214,13 @@ to try Word). But it's disappointing to see how those fancy apps keep
 shooting themselves in the foot!&lt;/p&gt;
 &lt;p&gt;Take for example this Excel error message. Excel is whining that it
 can't verify my subscription the first time I ran Excel untethered
-(version 15.11.2, for what its worth). Sure you can click through the
+(version 15.11.2, for what it's worth). Sure you can click through the
 warning, but would a newbie know to do that? At best off-putting, at worst
 downright disorienting. Why warn me of this at all? And why in a modal
 that stops me dead in my tracks?&lt;/p&gt;
 &lt;p&gt;It seems thick apps should win. They rock the unplugged use case. An even
 better situation is flaky networks -- tethered, conference WiFi,
-travelling. UI's deal notoriously poorly with intermittent or partial
+travelling. UIs deal notoriously poorly with intermittent or partial
 outages. A thick client, relying on that connection only for hitting
 API's, can hide the network.&lt;/p&gt;
 &lt;p&gt;Another place they should shine is the UI itself. They should be fast,
@@ -240,7 +240,7 @@ control. I've never seen behind the Google curtain, but I bet there's no
 magic, just a lot of good engineering that leads to good software. Like:
 good design and code reviews, tons of test coverage across many scenarios,
 diverse and well-instrumented canaries, and thorough performance and
-resource use testing. If Google didn't all of that so well, then we
+resource use testing. If Google didn't do all of that so well, then we
 wouldn't accept frequent pushes. Without the frequent upgrade cycle,
 Chromes feature cycle would languish.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="https://www.getelectron.com/"&gt;Electron&lt;/a&gt;&lt;/strong&gt; is another bright spot. This is the framework that gives
@@ -403,5 +403,5 @@ write like crazy over there. Be like my friend Dan Chu and major
 in history, but secretly take CS courses on the side. If you're
 super smart like him, and can manage getting both degrees, then
 you're awesome. But don't sacrifice the BA for the BS. I would
-&lt;strong&gt;love&lt;/strong&gt; to talk to a candidate with with a History BA and a Computer
+&lt;strong&gt;love&lt;/strong&gt; to talk to a candidate with a History BA and a Computer
 Science MS.&lt;/p&gt;</description><category>Engineering</category><category>Technology</category><guid>https://sef.kloninger.com/posts/learn-to-write/</guid><pubDate>Sun, 26 Jan 2014 00:17:00 GMT</pubDate></item></channel></rss>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Education)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/education.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 27 Feb 2026 22:12:11 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Naming Is Hard</title><link>https://sef.kloninger.com/posts/naming/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Lenna"&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/lena.png" alt="Photo of Lena Forsén" width="40%"&gt;&lt;/a&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Education)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/education.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 06 Jul 2026 22:42:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Naming Is Hard</title><link>https://sef.kloninger.com/posts/naming/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Lenna"&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/lena.png" alt="Photo of Lena Forsén" width="40%"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This is a story about how hard it is to come up with a good name.&lt;/p&gt;
 &lt;p&gt;This was in 2013. I was part of a team building a &lt;a href="https://sef.kloninger.com/posts/201207on-line-education/"&gt;system for online
 education&lt;/a&gt; at Stanford. We &lt;a href="https://engineering.stanford.edu/news/stanford-launches-class2go-open-source-platform-online-classes"&gt;launched&lt;/a&gt; a nice little site,
@@ -10,7 +10,7 @@ another year, expanding the covered use cases and taking on more
 classes.&lt;/p&gt;
 &lt;p&gt;But even from the beginning the name &lt;em&gt;Class2Go&lt;/em&gt; felt a bit off. Our
 original aim was to enable offline &lt;a href="https://en.wikipedia.org/wiki/Massive_open_online_course"&gt;MOOC&lt;/a&gt; students, people trying
-to take classes offline or in poorly-connected places But we ended
+to take classes offline or in poorly-connected places. We ended
 up pivoting away from the offline use case to more standard
 hosted-course features. It became a little multi-tenant CMS with a
 small database for auth, assessment results, and some basic analytics.&lt;/p&gt;
@@ -26,7 +26,7 @@ word that means "sparkle" or "twinkle." It's evocative and easy to
 say. It also happens to be a woman's name, but not a particularly
 common one we were told. &lt;/p&gt;
 &lt;p&gt;Surprisingly, &lt;code&gt;tindra.com&lt;/code&gt; was available! In 2013 short and catchy
-domain names were getting hard to come The &lt;a href="https://newgtldprogram.icann.org/"&gt;new gTLD program&lt;/a&gt; had
+domain names were getting hard to come by. The &lt;a href="https://newgtldprogram.icann.org/"&gt;new gTLD program&lt;/a&gt; had
 only just been approved in 2012, and &lt;code&gt;.com&lt;/code&gt; and &lt;code&gt;.org&lt;/code&gt; were pretty
 crowded.&lt;/p&gt;
 &lt;p&gt;The problem was that if you Googled "tindra," the top result was a
@@ -83,7 +83,7 @@ content, so every course development online is a bet on a platform.  And
 we didn't want to be beholden to one platform vendor (still don't).  In
 2012 the technology that had powered the early MOOCs were becoming "platforms"
 and moving off-campus.  While we were happy with the success of Udacity,
-Coursera, and (a year later later) NovoEd, we were also a bit wary.  They were
+Coursera, and (a year later) NovoEd, we were also a bit wary.  They were
 going to have to repay their investors at some point.  The last thing we
 wanted was for online education to look like textbook publishing or academic
 journals.  We know what happened there.&lt;/p&gt;
@@ -176,7 +176,7 @@ Today we turned on our first class on Stanford's instance the open-source &lt;a 
 
 
 &lt;/p&gt;&lt;p&gt;
-We have launched MOOC's for Stanford before: two in &lt;a href="http://networking.class.stanford.edu/"&gt;Fall&lt;/a&gt; &lt;a href="http://solar.class.stanford.edu/"&gt;Quarter&lt;/a&gt;, and one in &lt;a href="http://db.class.stanford.edu/"&gt;Winter&lt;/a&gt;. Even though the classes were huge success, but the launch days weren't so smooth. We had written that platform, &lt;a href="http://class2go.stanford.edu/"&gt;Class2Go&lt;/a&gt;, from the ground up with a small team in a dozen weeks in Fall; in the weeks before the Winter launch we ripped out the whole evaluation system, about one-third of the code, and replaced it with a whole new engine. In both cases most of our code was fresh off the presses.
+We have launched MOOC's for Stanford before: two in &lt;a href="http://networking.class.stanford.edu/"&gt;Fall&lt;/a&gt; &lt;a href="http://solar.class.stanford.edu/"&gt;Quarter&lt;/a&gt;, and one in &lt;a href="http://db.class.stanford.edu/"&gt;Winter&lt;/a&gt;. Even though the classes were huge successes, the launch days weren't so smooth. We had written that platform, &lt;a href="http://class2go.stanford.edu/"&gt;Class2Go&lt;/a&gt;, from the ground up with a small team in a dozen weeks in Fall; in the weeks before the Winter launch we ripped out the whole evaluation system, about one-third of the code, and replaced it with a whole new engine. In both cases most of our code was fresh off the presses.
 
 
 
@@ -227,7 +227,7 @@ I am of two minds about &lt;a title="Peter Reinhardt" href="http://rein.pk/onlin
 
 
 &lt;/p&gt;&lt;p&gt;
-I agree that retention rates are low. At Stanford we we just completed the Winter run of Jennifer Widom's &lt;a title="Introduction to Databases" href="http://db.class2go.stanford.edu/" target="_blank"&gt;Database Class&lt;/a&gt;, here are the course stats:
+I agree that retention rates are low. At Stanford we just completed the Winter run of Jennifer Widom's &lt;a title="Introduction to Databases" href="http://db.class2go.stanford.edu/" target="_blank"&gt;Database Class&lt;/a&gt;, here are the course stats:
 
 &lt;/p&gt;&lt;p&gt;
 &lt;/p&gt;&lt;ul&gt;
@@ -268,7 +268,7 @@ We are building Class2Go, an application to put Stanford classes on line.  Envi
 The professors who have expressed interest so far are those who want to &lt;a title="Flip teaching page on wikipedia" href="http://en.wikipedia.org/wiki/Flip_teaching" target="_blank"&gt;flip their classrooms&lt;/a&gt; or host a &lt;a title="Massive open online course page on wikipedia" href="http://en.wikipedia.org/wiki/Massive_open_online_course" target="_blank"&gt;Massive Open On-Line Course&lt;/a&gt; (MOOC). Others have ideas on experimentation with the learning process itself. For example, do students learn better when they see slides, a talking head, or both? A large enough student population makes meaningful studies possible and cheap.
 
 &lt;/p&gt;&lt;p&gt;
-There are a bunch of features needed over and above basic basic video.  First, can we devise a good system for students to grade each others work? This is an absolute must to do anything in the humanities at large scale.  We have some ideas of how to do peer evaluation, but it's an area that needs much more experimentation. A second important feature is enabling off-line use from laptops and tablets.  When we think of disconnected students we typically think of commuters, but we've heard it's just as important (or maybe more so) for students in developing countries where bandwidth is precious.
+There are a bunch of features needed over and above basic video.  First, can we devise a good system for students to grade each others work? This is an absolute must to do anything in the humanities at large scale.  We have some ideas of how to do peer evaluation, but it's an area that needs much more experimentation. A second important feature is enabling off-line use from laptops and tablets.  When we think of disconnected students we typically think of commuters, but we've heard it's just as important (or maybe more so) for students in developing countries where bandwidth is precious.
 
 &lt;/p&gt;&lt;p&gt;
 While there are &lt;a title="Link to Coursera site" href="https://www.coursera.org/" target="_blank"&gt;commercial&lt;/a&gt; &lt;a title="Link to Udacity site" href="http://www.udacity.com/" target="_blank"&gt;offerings&lt;/a&gt; to do this, and even things from other established &lt;a title="Link to Ed X site" href="http://www.edxonline.org/" target="_blank"&gt;universities&lt;/a&gt;, Class2Go will be different in three important ways:
@@ -298,7 +298,7 @@ Two things brought me to education.
 Firstly, education is uniquely important. I challenge you to name another human pursuit that is as important, consumes so many resources (for good reason), and can be so transformative when done well.  The other two that come to mind are health and agriculture. But I'd say education is right up there.
 
 &lt;/p&gt;&lt;p&gt;
-And second, education is changing right now. Of the meetings I've had while &lt;a title="My Sabbatical" href="http://sef.kloninger.com/2012/04/my-sabbatical/" target="_blank"&gt;on sabbatical&lt;/a&gt;  some of the most interesting have been about education. Why can't information technology have as big an impact on how people learn as it has had on everything else? Technology could mean making it available to to many more students, in different places and of different means. Educators could spend less time lecturing (dry stuff, to be sure) and more time working with students. Better measurement and analysis and could give educators near-real-time feedback and students tailor-made homework. Those are just a few of the examples that I heard about that got me excited.
+And second, education is changing right now. Of the meetings I've had while &lt;a title="My Sabbatical" href="http://sef.kloninger.com/2012/04/my-sabbatical/" target="_blank"&gt;on sabbatical&lt;/a&gt;  some of the most interesting have been about education. Why can't information technology have as big an impact on how people learn as it has had on everything else? Technology could mean making it available to many more students, in different places and to people of different means. Educators could spend less time lecturing (dry stuff, to be sure) and more time working with students. Better measurement and analysis and could give educators near-real-time feedback and students tailor-made homework. Those are just a few of the examples that I heard about that got me excited.
 
 &lt;/p&gt;&lt;p&gt;
 I look forward to doing something that will make even a little difference here. I'll blog about my experiences along the way.

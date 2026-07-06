@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about AI)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/ai.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 24 Jun 2026 23:20:33 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>"It's Overwriting, Not Appending"</title><link>https://sef.kloninger.com/posts/ai-mediation/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;I like the command line. But more and more I find myself &lt;strong&gt;mediating those tasks through a chat&lt;/strong&gt;, which surprises me because I used to find chat frustrating. But Claude is just so darn helpful.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about AI)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/ai.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 06 Jul 2026 22:42:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>"It's Overwriting, Not Appending"</title><link>https://sef.kloninger.com/posts/ai-mediation/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;I like the command line. But more and more I find myself &lt;strong&gt;mediating those tasks through a chat&lt;/strong&gt;, which surprises me because I used to find chat frustrating. But Claude is just so darn helpful.&lt;/p&gt;
 &lt;p&gt;Here's an example. I've been working on a typical scrape-and-loader for election data. It does one election cycle at a time to split up the work and give you a chance to inspect. After the first download, I verified the data which looked good. I asked Claude to get all the rest. It dutifully constructed a loop ("&lt;code&gt;for i in 2000, 2002&lt;/code&gt;...") and started working down the list, which would take hours. Before heading to bed, I checked in.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Screenshot of a Claude chat finding a bug" src="https://sef.kloninger.com/f/claude-finds-a-bug.png"&gt;&lt;/p&gt;
 &lt;p&gt;Of course throwing away the data as we go isn't what I wanted.&lt;/p&gt;
@@ -248,7 +248,7 @@ naming convention.
 
 The old convention has files of the format YYYYMM&amp;lt;slug&amp;gt;.SUFFIX,
 where YYYY is the year, MM is the month, and SUFFIX is html or
-meta. &amp;lt;slug&amp;gt; is the short form of the the title, and should match
+meta. &amp;lt;slug&amp;gt; is the short form of the title, and should match
 the "slug" field in the metadata
 
 To convert to the new convention
@@ -274,7 +274,7 @@ layout, and some constraints. Again, maybe overkill, but I figured this isn't
 the last time I'll be asking one of these tools to help me futz with this site.&lt;/p&gt;</description><category>AI</category><category>Tech</category><guid>https://sef.kloninger.com/posts/gemini-claude-cleanup/</guid><pubDate>Wed, 18 Feb 2026 19:00:00 GMT</pubDate></item><item><title>Yeah, I Did Some Vibe Coding Too</title><link>https://sef.kloninger.com/posts/daleks/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;This is a story about my recent experience Vibe Coding. The work itself isn't
 impressive and this writeup isn't different than the many gee-whiz posts you see
 these days. I didn't do &lt;a href="https://mastodon.social/@stroughtonsmith/116014270900193494"&gt;three apps in a day&lt;/a&gt;. But I wanted to write up my
-experience, mostly to give me an excuse to tell an old tyme programming story
+experience, mostly to give me an excuse to tell an old-time programming story
 from the 1900's.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://sef.kloninger.com/daleks"&gt;
 &lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/daleks-2026.png" alt="Screenshot of my recent Daleks game" width="50%"&gt;
@@ -289,7 +289,7 @@ to have stuck, for the time being at least. On &lt;a href="https://atp.fm/678"&g
 by this time next year this will probably just be called "coding" and I bet
 they're right.&lt;/p&gt;
 &lt;p&gt;Anyway our week one assignment was to code up a game. &lt;strong&gt;In about two hours and
-$10&lt;/strong&gt; I had a something up and running. I spent another couple of hours futzing
+$10&lt;/strong&gt; I had something up and running. I spent another couple of hours futzing
 with version control, documentation, and hosting. But that's it! &lt;/p&gt;
 &lt;p&gt;It's pretty basic, and not all that much fun, but you can &lt;a href="https://sef.kloninger.com/daleks"&gt;play it here&lt;/a&gt;. It's
 hosted on Github pages, just like this blog. The code and construction notes are
@@ -297,11 +297,11 @@ in &lt;a href="https://github.com/sefk/daleks"&gt;checked in&lt;/a&gt;.&lt;/p&gt
 &lt;p&gt;This was my first experience with &lt;a href="https://replit.com/"&gt;Replit&lt;/a&gt;. It's impressive and fun. This was
 what was recommended for the class and the good folks at Replit were nice enough
 to give us all $30 in credits, which I had plenty to spare. Most of my comrades
-presented apps that were fancier than mind with 3d graphics, sound, and more
-interactive game play. some also said though that they ended up spending much
+presented apps that were fancier than mine with 3D graphics, sound, and more
+interactive gameplay. Some also said, though, that they ended up spending much
 more than I did, so YMMV on costs.&lt;/p&gt;
 &lt;p&gt;One interesting part was dealing with integration. To get their code deployed
-onto my personal website site required wiring up a GitHub workflow, which I'd
+onto my personal website required wiring up a GitHub workflow, which I'd
 never done before. No problem, Replit took care of that too. Then I asked
 &lt;a href="https://geminicli.com/"&gt;Gemini&lt;/a&gt; to get local hosting running. When I hit a permissions problem and a
 crash I had to resist the urge to copy paste the error messages into a search

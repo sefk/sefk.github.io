@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about War Stories)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/war-stories.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 17 Feb 2026 00:56:43 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Yeah, I Did Some Vibe Coding Too</title><link>https://sef.kloninger.com/posts/daleks/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;This is a story about my recent experience Vibe Coding. The work itself isn't
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about War Stories)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/war-stories.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 06 Jul 2026 22:42:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Yeah, I Did Some Vibe Coding Too</title><link>https://sef.kloninger.com/posts/daleks/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;This is a story about my recent experience Vibe Coding. The work itself isn't
 impressive and this writeup isn't different than the many gee-whiz posts you see
 these days. I didn't do &lt;a href="https://mastodon.social/@stroughtonsmith/116014270900193494"&gt;three apps in a day&lt;/a&gt;. But I wanted to write up my
-experience, mostly to give me an excuse to tell an old tyme programming story
+experience, mostly to give me an excuse to tell an old-time programming story
 from the 1900's.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://sef.kloninger.com/daleks"&gt;
 &lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/daleks-2026.png" alt="Screenshot of my recent Daleks game" width="50%"&gt;
@@ -17,7 +17,7 @@ to have stuck, for the time being at least. On &lt;a href="https://atp.fm/678"&g
 by this time next year this will probably just be called "coding" and I bet
 they're right.&lt;/p&gt;
 &lt;p&gt;Anyway our week one assignment was to code up a game. &lt;strong&gt;In about two hours and
-$10&lt;/strong&gt; I had a something up and running. I spent another couple of hours futzing
+$10&lt;/strong&gt; I had something up and running. I spent another couple of hours futzing
 with version control, documentation, and hosting. But that's it! &lt;/p&gt;
 &lt;p&gt;It's pretty basic, and not all that much fun, but you can &lt;a href="https://sef.kloninger.com/daleks"&gt;play it here&lt;/a&gt;. It's
 hosted on Github pages, just like this blog. The code and construction notes are
@@ -25,11 +25,11 @@ in &lt;a href="https://github.com/sefk/daleks"&gt;checked in&lt;/a&gt;.&lt;/p&gt
 &lt;p&gt;This was my first experience with &lt;a href="https://replit.com/"&gt;Replit&lt;/a&gt;. It's impressive and fun. This was
 what was recommended for the class and the good folks at Replit were nice enough
 to give us all $30 in credits, which I had plenty to spare. Most of my comrades
-presented apps that were fancier than mind with 3d graphics, sound, and more
-interactive game play. some also said though that they ended up spending much
+presented apps that were fancier than mine with 3D graphics, sound, and more
+interactive gameplay. Some also said, though, that they ended up spending much
 more than I did, so YMMV on costs.&lt;/p&gt;
 &lt;p&gt;One interesting part was dealing with integration. To get their code deployed
-onto my personal website site required wiring up a GitHub workflow, which I'd
+onto my personal website required wiring up a GitHub workflow, which I'd
 never done before. No problem, Replit took care of that too. Then I asked
 &lt;a href="https://geminicli.com/"&gt;Gemini&lt;/a&gt; to get local hosting running. When I hit a permissions problem and a
 crash I had to resist the urge to copy paste the error messages into a search
@@ -57,7 +57,7 @@ being in a flow state and I loved it. It was my first "real program" and began
 my lifelong love of computers.&lt;/p&gt;</description><category>AI</category><category>Tech</category><category>War Stories</category><guid>https://sef.kloninger.com/posts/daleks/</guid><pubDate>Tue, 17 Feb 2026 00:00:00 GMT</pubDate></item><item><title>A Good Interview Question</title><link>https://sef.kloninger.com/posts/interview-question/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/python.png" alt="Python language logo" width="25%"&gt;&lt;/p&gt;
 &lt;p&gt;I liked the question that I got when interviewing at YouTube in 2015. At Google
 then we'd have an interview panel of four or five people, each assigned to cover
-a different area. &lt;a href="https://www.linkedin.com/in/billy-biggs-7ab1023/"&gt;Billy Biggs&lt;/a&gt; was the TL on my panel asked to evaluate
+a different area. &lt;a href="https://www.linkedin.com/in/billy-biggs-7ab1023/"&gt;Billy Biggs&lt;/a&gt; was the TL on my panel, and he asked to evaluate
 "architecture." For a manager candidate that mostly meant evaluating technical
 cluefulness (someone else had me do some simple &lt;a href="https://sef.kloninger.com/posts/201205fizzbuzz-for-managers"&gt;programming&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;Billy's question: &lt;strong&gt;Discuss what would cause a Python interpreter to crash. Not
@@ -72,7 +72,7 @@ interpreter itself implemented, in what language and by whom? What would the
 quality processes be like for a product like that, especially given Python is
 presumably a really large open source project? How would you manage this? How
 important to quality is the role of the &lt;a href="https://en.wikipedia.org/wiki/Benevolent_dictator_for_life"&gt;BDFL&lt;/a&gt;? &lt;/p&gt;
-&lt;p&gt;And then that lead to a some more interesting higher-level discussions about the
+&lt;p&gt;And then that led to some more interesting higher-level discussions about the
 actual &lt;strong&gt;costs and benefits of addressing failures&lt;/strong&gt; like these in the field.
 When should programs hard-fail versus detect and recover? How would you staff an
 engineering team to find and chase down errors? What's the user impact to a
@@ -95,7 +95,7 @@ another year, expanding the covered use cases and taking on more
 classes.&lt;/p&gt;
 &lt;p&gt;But even from the beginning the name &lt;em&gt;Class2Go&lt;/em&gt; felt a bit off. Our
 original aim was to enable offline &lt;a href="https://en.wikipedia.org/wiki/Massive_open_online_course"&gt;MOOC&lt;/a&gt; students, people trying
-to take classes offline or in poorly-connected places But we ended
+to take classes offline or in poorly-connected places. We ended
 up pivoting away from the offline use case to more standard
 hosted-course features. It became a little multi-tenant CMS with a
 small database for auth, assessment results, and some basic analytics.&lt;/p&gt;
@@ -111,7 +111,7 @@ word that means "sparkle" or "twinkle." It's evocative and easy to
 say. It also happens to be a woman's name, but not a particularly
 common one we were told. &lt;/p&gt;
 &lt;p&gt;Surprisingly, &lt;code&gt;tindra.com&lt;/code&gt; was available! In 2013 short and catchy
-domain names were getting hard to come The &lt;a href="https://newgtldprogram.icann.org/"&gt;new gTLD program&lt;/a&gt; had
+domain names were getting hard to come by. The &lt;a href="https://newgtldprogram.icann.org/"&gt;new gTLD program&lt;/a&gt; had
 only just been approved in 2012, and &lt;code&gt;.com&lt;/code&gt; and &lt;code&gt;.org&lt;/code&gt; were pretty
 crowded.&lt;/p&gt;
 &lt;p&gt;The problem was that if you Googled "tindra," the top result was a
@@ -140,7 +140,7 @@ Today we turned on our first class on Stanford's instance the open-source &lt;a 
 
 
 &lt;/p&gt;&lt;p&gt;
-We have launched MOOC's for Stanford before: two in &lt;a href="http://networking.class.stanford.edu/"&gt;Fall&lt;/a&gt; &lt;a href="http://solar.class.stanford.edu/"&gt;Quarter&lt;/a&gt;, and one in &lt;a href="http://db.class.stanford.edu/"&gt;Winter&lt;/a&gt;. Even though the classes were huge success, but the launch days weren't so smooth. We had written that platform, &lt;a href="http://class2go.stanford.edu/"&gt;Class2Go&lt;/a&gt;, from the ground up with a small team in a dozen weeks in Fall; in the weeks before the Winter launch we ripped out the whole evaluation system, about one-third of the code, and replaced it with a whole new engine. In both cases most of our code was fresh off the presses.
+We have launched MOOC's for Stanford before: two in &lt;a href="http://networking.class.stanford.edu/"&gt;Fall&lt;/a&gt; &lt;a href="http://solar.class.stanford.edu/"&gt;Quarter&lt;/a&gt;, and one in &lt;a href="http://db.class.stanford.edu/"&gt;Winter&lt;/a&gt;. Even though the classes were huge successes, the launch days weren't so smooth. We had written that platform, &lt;a href="http://class2go.stanford.edu/"&gt;Class2Go&lt;/a&gt;, from the ground up with a small team in a dozen weeks in Fall; in the weeks before the Winter launch we ripped out the whole evaluation system, about one-third of the code, and replaced it with a whole new engine. In both cases most of our code was fresh off the presses.
 
 
 
@@ -253,7 +253,7 @@ I learned four lessons:
 &lt;/p&gt;&lt;ol&gt;
     &lt;li&gt;&lt;strong&gt;Undo is your friend.&lt;/strong&gt; The tooling or features to revert your change will take time, but you will be happy to have it if you ever need it.&lt;/li&gt;
     &lt;li&gt;&lt;strong&gt;Make changes during the day.&lt;/strong&gt; Resolving a hairy problem is hard if you don't have the right people, and when the people you do have are tired and foggy. This incident might have taken hours to resolve instead of minutes in the middle of the night.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;It's not over until it's over.&lt;/strong&gt; Once in crisis mode, you're eager to be get out of it. Once the main problem is solved it is tempting to exhale, go to lunch, go back to bed, whatever. But aftereffects might take a while to show up, or may just be harder to find.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;It's not over until it's over.&lt;/strong&gt; Once in crisis mode, you're eager to get out of it. Once the main problem is solved it is tempting to exhale, go to lunch, go back to bed, whatever. But aftereffects might take a while to show up, or may just be harder to find.&lt;/li&gt;
     &lt;li&gt;&lt;strong&gt;Disproportionate effects.&lt;/strong&gt; We all know that our complex systems nonlinear failure modes. Incidents like these are reminders that small changes have big effects. Said another way, even small things should be taken seriously.&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -311,7 +311,7 @@ And now I understand that this is totally true. Places that value their people c
 
 &lt;h3&gt;Can people choose their own email addresses?&lt;/h3&gt;
 
-Non-engineers sometimes don't appreciate how important an email address is. It's your identity on line. A strict naming convention (first name last initial, or worse, last name first initial) indicates place that values conformity over engineer happiness. Worse, its a great way to make their people feel like cogs or "human resources," not the cool individuals that they are.
+Non-engineers sometimes don't appreciate how important an email address is. It's your identity on line. A strict naming convention (first name last initial, or worse, last name first initial) indicates place that values conformity over engineer happiness. Worse, it's a great way to make their people feel like cogs or "human resources," not the cool individuals that they are.
 
 &lt;p&gt;
 (Aside: let's do away with the term Human Resources.  It's horrible.)

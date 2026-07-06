@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Data)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/data.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 24 Jun 2026 23:20:33 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Data Is Worth Preserving</title><link>https://sef.kloninger.com/posts/data-preservation/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/drp-logo.jpg" alt="Logo for the Data Rescue Project" width="30%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Data)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/data.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 06 Jul 2026 22:42:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Data Is Worth Preserving</title><link>https://sef.kloninger.com/posts/data-preservation/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/drp-logo.jpg" alt="Logo for the Data Rescue Project" width="30%"&gt;&lt;/p&gt;
 &lt;p&gt;Governments should produce &lt;a href="https://en.wikipedia.org/wiki/Public_good"&gt;public goods&lt;/a&gt;, like navigation aids and roads. That
 seems like a reasonable thing to expect of a functioning government, right?&lt;/p&gt;
 &lt;p&gt;I consider data a public good too. We all benefit from accurate maps,
 thorough measurements of the natural world, and trustworthy economic data.&lt;/p&gt;
-&lt;p&gt;Which is why it was I was so upset when I heard how the the current US
+&lt;p&gt;Which is why I was so upset when I heard how the current US
 administration has been on a tear to &lt;strong&gt;actually remove data&lt;/strong&gt;. All through 2025,
 websites were taking down and datasets were taken offline. This &lt;a href="https://en.wikipedia.org/wiki/2025_United_States_government_online_resource_removals"&gt;Wikipedia page&lt;/a&gt;
 catalogs what's been happening, and this report by the &lt;a href="https://www.amstat.org/policy-and-advocacy/the-nation's-data-at-risk-meeting-american's-information-needs-for-the-21st-century"&gt;American Statistical
@@ -59,7 +59,7 @@ refactoring or test coverage can improve velocity or make software easier and
 safer to maintain. And good engineers care a lot about impact. While it's not
 the only thing that matters (the "how" is important too), if you start with
 impact, you'll generally do well.&lt;/p&gt;
-&lt;p&gt;An engineer's job to put ideas into practice, to make things. But sometimes
+&lt;p&gt;An engineer's job is to put ideas into practice, to make things. But sometimes
 we're not sure what to make. Or we think we know, but aren't sure it'll work.
 The best way to figure that out is often running a set of experiments, or maybe
 building a prototype (an n=1 experiment).&lt;/p&gt;
@@ -107,7 +107,7 @@ peak. Maybe this is the new norm?&lt;/p&gt;
 &lt;p&gt;Everything happened later this year. Our first trick-or-treater didn't show up until 6:30, and
 peak wasn't until 8:45. That's thirty minutes or more later than prior years. I speculate it's because
 it was a warm weekend night. Why not stay out a bit later, no school tomorrow. And with the fall-back
-DST change everyone would be looking foward to a "free" hour of sleep.&lt;/p&gt;
+DST change everyone would be looking forward to a "free" hour of sleep.&lt;/p&gt;
 &lt;p&gt;As usual, the full story can be seen 
 &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;
 in the numbers&lt;/a&gt;. Check it out!&lt;/p&gt;</description><category>Data</category><guid>https://sef.kloninger.com/posts/halloween-2015/</guid><pubDate>Sun, 01 Nov 2015 08:15:00 GMT</pubDate></item><item><title>Fewer Trick or Treaters This Year</title><link>https://sef.kloninger.com/posts/halloween-2014/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;This year's Halloween tally was 208.  I don't know why we have 32%
@@ -170,7 +170,7 @@ story has been &lt;a href="http://www.snopes.com/business/genius/spacepen.asp"&g
 I think of it as Starcraft meets Minecraft.  I am so eager to play
 it when it lands.&lt;/p&gt;</description><category>Data</category><guid>https://sef.kloninger.com/posts/hand-tally/</guid><pubDate>Thu, 30 Oct 2014 16:20:00 GMT</pubDate></item><item><title>Halloween Down 20%, But Still Solid</title><link>https://sef.kloninger.com/posts/halloween-2013/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img class="alignright  wp-image-440" style="border: 0px;" alt="halloween2013-ticker" src="https://sef.kloninger.com/f/halloween2013-ticker-300x300.jpg" width="126" height="126"&gt;&lt;/p&gt;
 &lt;p&gt;
-This year we had a sizable number of trick-or-treaters at our house in the Willows neighborhood of Menlo Park. The 303 we saw was down from our high last year, but abou the same as the year before that.
+This year we had a sizable number of trick-or-treaters at our house in the Willows neighborhood of Menlo Park. The 303 we saw was down from our high last year, but about the same as the year before that.
 
 
 
