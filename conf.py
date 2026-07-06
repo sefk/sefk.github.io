@@ -676,10 +676,10 @@ LICENSE = ""
 # I recommend using the Creative Commons' wizard:
 # http://creativecommons.org/choose/
 LICENSE = """Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
-<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
-<img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
-<img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
-<img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" width="16" height="16" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+<img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" width="16" height="16" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+<img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" width="16" height="16" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+<img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" width="16" height="16" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 """
 
 
@@ -863,7 +863,10 @@ INDEX_DISPLAY_POST_COUNT = 8
 # RSS_LINK is a HTML fragment to link the RSS or Atom feeds. If set to None,
 # the base.tmpl will use the feed Nikola generates. However, you may want to
 # change it for a feedburner feed or something else.
-# RSS_LINK = None
+# Set explicitly so the feed autodiscovery link uses an absolute href: the
+# Nikola-generated one is relative (rss.xml), which Lighthouse flags as an
+# invalid hreflang. We also drop hreflang here — this is a single-language site.
+RSS_LINK = '<link rel="alternate" type="application/rss+xml" title="RSS" href="https://sef.kloninger.com/rss.xml">'
 
 # Show only teasers in the RSS feed? Default to True
 # RSS_TEASERS = True
@@ -949,7 +952,13 @@ BODY_END = ""
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-# EXTRA_HEAD_DATA = ""
+# Favicon set: .ico for legacy, scalable .svg for modern browsers (a bold
+# blue "S" on a white tile), and apple-touch-icon for iOS home screens.
+EXTRA_HEAD_DATA = """
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+"""
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
