@@ -1,1 +1,1 @@
-Read `./DEV.md` instead.
+@AGENTS.md
