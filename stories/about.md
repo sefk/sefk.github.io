@@ -26,6 +26,7 @@ the categories below. I hope you check it out.
     <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/education/">Education</a></li>
     <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/engineering/">Engineering</a></li>
     <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/family/">Family</a></li>
+    <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/journalism/">Journalism</a></li>
     <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/puzzling/">Puzzling</a></li>
     <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/life/">Life</a></li>
     <li class="list-inline-item"><a class="reference badge badge-secondary" href="categories/management/">Management</a></li>
