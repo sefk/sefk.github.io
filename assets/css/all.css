@@ -975,6 +975,25 @@ img.postimage {
     color: #0d47a1;
 }
 
+/* Blockquotes in post text: match body copy instead of Bootstrap's
+   larger .blockquote size, italicized with a left bar to mark quotes. */
+.post-text blockquote,
+.e-content blockquote {
+    font-style: italic;
+    border-left: 4px solid #ccc;
+    padding-left: 1rem;
+    margin-left: 0;
+}
+
+.post-text blockquote,
+.e-content blockquote,
+.post-text blockquote p,
+.e-content blockquote p {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
 /* ------------- Lighthouse accessibility fixes ------------- */
 
 /* Inline prose & table links. Two audits:
