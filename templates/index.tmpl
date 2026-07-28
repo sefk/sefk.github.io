@@ -1,9 +1,13 @@
 ## -*- coding: utf-8 -*-
 ## Override of the bootstrap4/base theme's index.tmpl.
-## Change from default: post titles in the index listing are plain text rather
-## than links. The permalink remains on the dateline below (rel="bookmark"),
-## which also carries the h-entry u-url microformat the title link used to hold.
+## Changes from default:
+##  1. Post titles in the index listing are plain text rather than links. The
+##     permalink remains on the dateline below (rel="bookmark"), which also
+##     carries the h-entry u-url microformat the title link used to hold.
+##  2. Tag badges are rendered under each post, matching the single-post page.
+##     Reuses post_helper.html_tags so the markup stays identical to post.tmpl.
 <%namespace name="helper" file="index_helper.tmpl"/>
+<%namespace name="posthelper" file="post_helper.tmpl"/>
 <%namespace name="math" file="math_helper.tmpl"/>
 <%namespace name="comments" file="comments_helper.tmpl"/>
 <%namespace name="pagination" file="pagination_helper.tmpl"/>
@@ -67,6 +71,11 @@
     ${post.text(teaser_only=False)}
     %endif
     </div>
+    <aside class="postpromonav">
+    <nav>
+    ${posthelper.html_tags(post)}
+    </nav>
+    </aside>
     </article>
 % endfor
 </div>
