@@ -1,19 +1,16 @@
 <!--
 .. title: We Built This: DataTalk V2
 .. slug: datatalk-v2
-.. date: 2026-08-22 13:00:00 UTC-07:00
+.. date: 2026-08-24 15:00:00 UTC-07:00
 .. tags: AI,Journalism
-.. category: 
-.. link: 
-.. description: 
 .. type: text
 -->
 
 <img style="float:right" class="postimage" src="/f/datatalk-v2.png" alt="Screenshot of DataTalk" width=60%>
 
-Since April I've been working with the [Big Local News] team at Stanford building DataTalk, a website where journalists can look for story leads in US federal campaign finance data using plain English. It's been a fun project and I'm proud of what we've built.
+Since April I've been working with the [Big Local News] team at Stanford building DataTalk, a website for journalists to look for story leads in US federal campaign finance data using plain English. It's been a fun project and I'm proud of what we've built.
 
-Before reading on, why not [try it out for yourself][datatalk]? You can select one of the four sample queries on the homepage. Or type your own query, something you're interested in, like "*show a list of all the donors who have donated to either AOC or Bernie Sanders this election cycle*". Ask follow-up questions to drill down, and then download your data in a spreadsheet alongside helpful context.
+Before reading on, why not [try it out for yourself][datatalk]? You can select one of the four sample queries on the homepage. Or type your own query, something you're interested in, like "*show a list of all the donors who have donated to either AOC or Bernie Sanders this election cycle*". Ask a follow-up question to drill down or click on one of the suggestions. Download your data in a spreadsheet alongside helpful context.
 
 We re-launched this at the annual Investigative Reporters and Editors conference ([IRE 2026]) in Washington DC in June. That was a lot of fun. Since then we've been polishing it up and improving quality. It's ready for this election cycle -- I hope it gets a lot of use to report on the messy world of election finance over the coming months.
 
@@ -23,23 +20,25 @@ We re-launched this at the annual Investigative Reporters and Editors conference
 
 ## How DataTalk V2 Came About
 
-V1 of the site had been built and launched by the [Open Virtual Assistant Lab (OVAL)][oval] at Stanford two years ago. V1 was developed as a showpiece for NL to SQL processing technology that OVAL had built, and did that just fine. Campaign finance was chosen as a showpiece dataset because it was complex enough that a query interface is helpful. The US FEC makes the dataset readily available. And when V1 was done, two years ago, it was an election year.
+V1 of the site had been built and launched by the [Open Virtual Assistant Lab (OVAL)][oval] at Stanford two years ago. V1 was developed as a showpiece for NL to SQL processing technology that OVAL had built, and did that just fine. Campaign finance was chosen as a showpiece dataset because it was complex enough that a query interface is helpful. The US FEC makes the dataset readily available. When V1 was under development it was an election year too.
 
-But there were a couple of places where DataTalk V1 fell short.
+Post 2024, DataTalk V1 left some room for improvement.
 
 * **The data had gotten stale**. Election reporting is seasonal. During election years it's interesting and then it's not. After the 2024 election season people stopped minding it and the loaders stopped loading.
 
 * **The site needed more domain expertise**. Part of DataTalk's value is to *bake in knowledge* about this particular dataset and domain. The FEC dataset is a bit quirky. The people who work with it have developed expertise in using this data well. There was a lot more we could do to encapsulate not just the schemas, but specific know-how too.
 
-It's an election year. When I found Cheryl and Big Local News in the spring ([prior post]), Stanford had to decide whether to make it better or take it down. DataTalk was still out there, prominent in search results.
+<img style="float:right" class="postimage" src="/f/fec-query-search-results.png" alt="Search results for the query term \"how can I query the FEC data with English\"" width=50%>
 
-![search results for the query term "how can I query FEC data with English"](/f/fec-query-search-results.png)
+2026 (now) is an election year. When I found Cheryl and Big Local News a few months back ([prior post]), Stanford was already trying to decide whether to make DataTalk better or take it down. I was looking for a project so I volunteered to take it on. Big Local News took over the code and responsibility from OVAL.
 
-I was looking for a project so I volunteered to take it on. Big Local News took over the code and responsibility from OVAL. I partnered up with two folks from Big Local News: [Gerald Rich], a strong journalist/engineer, and [Ryan Pitts], the team's engineering director. Even though this is just one of [Cheryl Phillips] BLN projects, she was pretty plugged in. Together we stood up a little project with sprints and demos and CI. Over ten weeks we fixed the loaders, rewired the LLM interface, and refreshed the UI. We got it into good enough shape to show off at IRE, and then spent the summer making it good.
+Most of my day-to-day was with two strong engineers from Big Local News: [Gerald Rich], a journalist/engineer and [Ryan Pitts], the engineering director. [Cheryl Phillips] runs all of Big Local News but managed to stay close to this project, participating in demos and giving product direction.
+
+Together we stood up a little project with sprints and demos and CI. Over ten weeks we fixed the loaders, rewired the LLM interface, and refreshed the UI. We got it into good enough shape to show off at IRE (more to say about that soon), and then spent the rest of the summer making it good.
 
 [oval]: https://oval.cs.stanford.edu/
 [prior post]: /posts/biglocalnews
-[Gerald Rich]: https://www.linkedin.com/in/geraldrich/
+[Gerald Rich]: https://www.linkedin.com/in/geraldrich
 [Ryan Pitts]: https://www.linkedin.com/in/ryanapitts
 [Cheryl Phillips]: https://journalism.stanford.edu/people/cheryl-phillips
 
@@ -51,7 +50,7 @@ What we got from V1 was the core NL to SQL engine. That has always worked really
 
 My main contribution to the product was driving the need for a formal eval system. From the start I identified this as a gap in V1.
 
-I'm using "eval" here in the way that we used it at Google Search: having humans rate search results and using that feedback to monitor and improve quality. Google has a whole set of tools and workflows to work with human raters. 
+I'm using "eval" here in the way that we used it at Google Search: having humans rate search results and using that feedback to monitor and improve quality. Google has a whole set of tools and workflows to work with human raters.
 
 We needed to do the same with DataTalk. I built a little workflow system that would put our answers in front of human raters and ask them how we did. We built up a set of test queries, about 100, and then asked raters to score our work on them. The methodology and rubric are right on the homepage of the eval site: [datatalk-eval.biglocalnews.org][eval], check it out there. You can even do a one-question eval yourself!
 
@@ -59,11 +58,11 @@ We needed to do the same with DataTalk. I built a little workflow system that wo
   <img src="/f/datatalk-eval.png" alt="Screenshot of the DataTalk eval system home page">
 </div>
 
-We engaged an expert in campaign finance data, [Derek Willis] from the University of Maryland. He brought a ton of experience with this quirky dataset to the product. He was also a pleasure to work with. We coded a bunch of his campaign-finance knowledge into our prompts. Derek also built up a corpus of eval questions, more than 100. Some are easy and some are hard; most are ones that have a correct answer that we score for, but some are ones where we shouldn't answer and for those we should politely refuse and explain why. As we've added features we've added questions.
+We engaged an expert in campaign finance data, [Derek Willis] from the University of Maryland. He has a ton of experience with this quirky dataset. He was also a pleasure to work with. We were able to condense a bunch of his campaign-finance knowledge into our prompts. Derek also built for us a corpus of eval questions, more than 100. Some are easy and some are hard; most are ones that have a correct answer that we score for, but some are ones where we shouldn't answer and for those we should politely refuse and explain why. As we've added features, we've added to the corpus of questions.
 
-We got some journalism students and ex-journalists to run through all our questions and do a complete quality pass. For the questions where we scored poorly we opened up bugs and chased them down. I also used AI raters (Fable from Anthropic, Sol from ChatGPT) to do their own assessment and compared their scores to the humans' -- not as good, but a helpful first pass.
+We got a handful of journalism students and ex-journalists to run through all our questions and do a complete quality eval pass. For the questions where we scored poorly we opened up bugs and chased them down. I also used AI raters (Fable from Anthropic, Sol from ChatGPT) to do their own assessment and compared their scores to the humans' -- not as good, but a helpful first pass.
 
-We also use cheaper AI rating (gemini-2.5-pro) to measure how we're doing as part of our engineering process. This has proven critical as our prompts change. I've seen a seemingly innocuous prompt change cause a regression in one of our benchmark queries that we would never have caught without doing automated evals in the development process. We do smoke tests with every pull request and can do full judged eval passes on request.
+As part of our normal engineering process we do a pre/post comparison run against the rubric on 20 benchmark questions. We judge using a cheaper model, `gemini-2.5-pro`, which works pretty well. This is really helpful when making prompt changes. I've seen a seemingly innocuous prompt change cause a regression in one of our benchmark queries that we would never have caught without judging every pull request as it happens.
 
 [eval]: https://datatalk-eval.biglocalnews.org
 [Derek Willis]: https://merrill.umd.edu/directory/derek-willis
@@ -74,7 +73,7 @@ This project makes heavy use of AI. It's the first project of any size where I'v
 
 - Our velocity has been good. We turn around features and fixes quickly. We use AI for production setup and debugging, so even with a small team we can have good engineering and ops practices (push to staging first...). That's not just more code, but it makes for a fun project to work on.
 
-- I've got a nice rhythm where I use my $100/month Anthropic/Claude Code plan for primary coding, but then use a $20/month OpenAI/Codex plan to review work before submitting a PR. 
+- I've got a nice rhythm where I use my $100/month Anthropic/Claude Code plan for primary coding, but then use a $20/month OpenAI/Codex plan to review work before submitting a PR.
 
 And then for the product itself, we make it very clear where we are using AI and where we are not. Journalists are a naturally skeptical bunch. We lean into that by making it clear that we only use AI in two ways: to convert the natural language input into SQL, and then to interpret the results we get into a narrative. We call out the narrative in a prominent yellow box to make it clear what is AI-generated, and remind people over and over to double-check.
 
@@ -103,11 +102,11 @@ Here's an example. This one was the result of a query asking for all people who 
 [DIME dataset]: https://dime.stanford.edu
 [artifact]: https://docs.google.com/spreadsheets/d/1PgtyhizvOpK5gQZ64khgGj91UZZ3hUl9j5eNcrrxCyQ/edit
 
-### Also: Running a Good Service
+### Also: It's a Well-Run Little Service
 
-I'd like to also mention that I'm proud of the ops side: it's a nicely-run little service. We have good monitoring and alerting in case a nightly loader looks weird or the site starts throwing errors. We have good dev tooling in place for local testing and qualification in staging before release. Releases are reliable and cheap.
+I'd like to mention that I'm proud of the ops side. We have good monitoring and alerting in case a nightly loader looks weird or the site starts throwing errors. We have good dev tooling in place for local testing and qualification in staging before release. Releases are frequent and drama-free.
 
-Costs aren't too bad. Cheap queries cost about $0.01 per query, and escalating to the fancier model costs about $0.04. The Google Cloud stack has been great for this. Cloud Run instances have great horizontal scaling. BigQuery is fast and reliable and cheap.
+Costs are low. Cheap queries cost about $0.01 per. For hard ones, we can escalate to the "pro" model which ups the per-query cost to $0.04, still not too bad. The Google Cloud stack has been great for this. Cloud Run instances have great horizontal scaling. BigQuery is fast and reliable and cheap.
 
 ## What's Next
 
@@ -122,9 +121,9 @@ We've started training sessions with journalists now. It's great to see it get s
 
 [Tipsheet]: https://docs.google.com/document/d/1nO3x9AREfmM9oGa05MI50UtT_Hl8Om4Ocuzkxxe01Ds/edit?tab=t.0#heading=h.nj23sjpj5u97
 
-[Follow the Money]: https://docs.google.com/presentation/d/1yA3rMRz01SE-Ym65tcxZLilYpBXMZtNtpNaaEZadoI8/edit?slide=id.g3f75e90ccd1_1_1505
+[Follow the Money]: https://docs.google.com/presentation/d/1ZsTkPgpCPOTBUDpbPLcYUFXy1x7GnMnQZyBQOPxakgk/edit
 
-We won't take it down after the election, but it won't be used much, and that's fine.
+We won't take DataTalk down after the election and I expect we'll continue to maintain it. But it won't be used much which is fine and to be expected.
 
 We may use this same approach for other datasets. The whole point of Big Local News is to arm local journalists with tools to do investigative journalism better, faster, cheaper. We don't want to use AI to write stories, but maybe we can use AI to *fish potential stories out of streams of data* all around us. And by doing that, hold more powerful people to account.
 
