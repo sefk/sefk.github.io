@@ -112,18 +112,7 @@ Costs are low. Cheap queries cost about $0.01 per. For hard ones, we can escalat
 
 While I'd love to keep improving DataTalk, we've kind of reached the pencils-down point now. Almost all of this product's use will come over the next eight weeks or so as we ramp up to the 2026 midterm elections in early November. So while I'd love to keep refining our prompts and benchmarking new models, we need to lock it down.
 
-We've started training sessions with journalists now. It's great to see it get some real use.
-
-- Training materials: [Product Overview] and [Tipsheet]
-- How to use for reporting: [Follow the Money] by Sarah Cohen -- veteran reporter, also now with Big Local News
-
-[Product Overview]: https://docs.google.com/presentation/d/1p1A4Bh7DiR_oRCiRNuS7qtTvEEyA1FlhFns6JLqfQGo/edit?slide=id.g3f648aa6935_2_53
-
-[Tipsheet]: https://docs.google.com/document/d/1nO3x9AREfmM9oGa05MI50UtT_Hl8Om4Ocuzkxxe01Ds/edit?tab=t.0#heading=h.nj23sjpj5u97
-
-[Follow the Money]: https://docs.google.com/presentation/d/1ZsTkPgpCPOTBUDpbPLcYUFXy1x7GnMnQZyBQOPxakgk/edit
-
-We won't take DataTalk down after the election and I expect we'll continue to maintain it. But it won't be used much which is fine and to be expected.
+We've started training sessions with journalists now. It's great to see it get some real use. We won't take DataTalk down after the election and I expect we'll continue to maintain it. But it won't be used much which is fine and to be expected.
 
 We may use this same approach for other datasets. The whole point of Big Local News is to arm local journalists with tools to do investigative journalism better, faster, cheaper. We don't want to use AI to write stories, but maybe we can use AI to *fish potential stories out of streams of data* all around us. And by doing that, hold more powerful people to account.
 
