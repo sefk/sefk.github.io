@@ -5,13 +5,13 @@
 <meta charset="utf-8">
 <meta name="description" content="Sef Kloninger — engineer, engineering manager, and writer.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Posts about Journalism | sef.kloninger.com</title>
+<title>We Built This: DataTalk V2 | sef.kloninger.com</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/custom.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="https://sef.kloninger.com/rss.xml">
-<link rel="canonical" href="https://sef.kloninger.com/categories/journalism/">
+<link rel="canonical" href="https://sef.kloninger.com/posts/datatalk-v2/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link rel="icon" href="../../favicon.ico" sizes="32x32">
 <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
@@ -21,7 +21,16 @@ code {
 }
 </style>
 <link rel="alternate" hreflang="x-default" href="https://sef.kloninger.com/">
-<link rel="alternate" type="application/rss+xml" title="RSS for tag Journalism" hreflang="en" href="../journalism.xml">
+<meta name="author" content="Sef Kloninger">
+<link rel="prev" href="../biglocalnews/" title="Big Local News" type="text/html">
+<meta property="og:site_name" content="sef.kloninger.com">
+<meta property="og:title" content="We Built This: DataTalk V2">
+<meta property="og:url" content="https://sef.kloninger.com/posts/datatalk-v2/">
+<meta property="og:description" content="Since April I've been working with the Big Local News team at Stanford building DataTalk, a website for journalists to look for story leads in US federal campaign finance data using plain English. It'">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-08-28T10:00:00-07:00">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="Journalism">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -44,7 +53,7 @@ bg-dark
         <div class="collapse navbar-collapse" id="bs-navbar">
             <ul class="navbar-nav mr-auto">
 <li class="nav-item">
-<a href="../../posts/index.html" class="nav-link">Blog</a>
+<a href="../index.html" class="nav-link">Blog</a>
                 </li>
 <li class="nav-item">
 <a href="mailto:sefklon@gmail.com" class="nav-link">Email</a>
@@ -81,31 +90,22 @@ bg-dark
         
         
         
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name">We Built This: DataTalk V2</h1>
 
-    <header><h1>Posts about Journalism</h1>
         <div class="metadata">
-            
-                <p class="feedlink">
-                        
-            <a href="../journalism.xml" hreflang="en" type="application/rss+xml">RSS feed</a>
-
-                </p>
-
-            
-
-        </div>
-    </header><div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title">We Built This: DataTalk V2</h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Sef Kloninger
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    Sef Kloninger
             </span></p>
             <p class="dateline">
-            <a href="../../posts/datatalk-v2/" rel="bookmark" class="u-url">
+            <a href="." rel="bookmark" class="u-url">
             <time class="published dt-published" datetime="2026-08-28T10:00:00-07:00" itemprop="datePublished" title="2026-08-28 10:00">2026-08-28 10:00</time></a>
             </p>
+            
+
         </div>
-    </header><div class="e-content entry-content">
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
     <p><img style="float:right" class="postimage" src="../../f/datatalk-v2.png" alt="Screenshot of DataTalk" width="60%"></p>
 <p>Since April I've been working with the <a href="https://biglocalnews.org">Big Local News</a> team at Stanford building DataTalk, a website for journalists to look for story leads in US federal campaign finance data using plain English. It's been a fun project and I'm proud of what we've built.</p>
 <p>Before reading on, why not <a href="https://datatalk.biglocalnews.org/">try it out for yourself</a>? You can select one of the four sample queries on the homepage. Or type your own query, something you're interested in, like "<em>show a list of all the donors who have donated to either AOC or Bernie Sanders this election cycle</em>". Ask a follow-up question to drill down or click on one of the suggestions. Download your data in a spreadsheet alongside helpful context.</p>
@@ -121,8 +121,8 @@ bg-dark
 <p><strong>The site needed more domain expertise</strong>. Part of DataTalk's value is to <em>bake in knowledge</em> about this particular dataset and domain. The FEC dataset is a bit quirky. The people who work with it have developed expertise in using this data well. There was a lot more we could do to encapsulate not just the schemas, but specific know-how too.</p>
 </li>
 </ul>
-<p><img style="float:right" class="postimage" src="../../f/fec-query-search-results.png" alt="Search results for the query term \" how can i query the fec data="../../posts/datatalk-v2/" with english\"" width="50%"></p>
-<p>2026 (now) is an election year. When I found Cheryl and Big Local News a few months back (<a href="../../posts/biglocalnews">prior post</a>), Stanford was already trying to decide whether to make DataTalk better or take it down. I was looking for a project so I volunteered to take it on. Big Local News took over the code and responsibility from OVAL.</p>
+<p><img style="float:right" class="postimage" src="../../f/fec-query-search-results.png" alt="Search results for the query term \" how can i query the fec data="." with english\"" width="50%"></p>
+<p>2026 (now) is an election year. When I found Cheryl and Big Local News a few months back (<a href="../biglocalnews">prior post</a>), Stanford was already trying to decide whether to make DataTalk better or take it down. I was looking for a project so I volunteered to take it on. Big Local News took over the code and responsibility from OVAL.</p>
 <p>Most of my day-to-day was with two strong engineers from Big Local News: <a href="https://www.linkedin.com/in/geraldrich">Gerald Rich</a>, journalist/engineer and <a href="https://www.linkedin.com/in/ryanapitts">Ryan Pitts</a>, managing director. <a href="https://journalism.stanford.edu/people/cheryl-phillips">Cheryl Phillips</a> runs all of Big Local News but managed to stay close to this project, participating in demos and adding product direction.</p>
 <p>Together we stood up a little project with sprints and demos and CI. Over ten weeks we fixed the loaders, rewired the LLM interface, and refreshed the UI. We got it into good enough shape to show off at IRE (more to say about that soon), and then spent the rest of the summer making it good.</p>
 <h3>What We Built and Why</h3>
@@ -179,65 +179,14 @@ bg-dark
 <p>We may use this same approach for other datasets. The whole point of Big Local News is to arm local journalists with tools to do investigative journalism better, faster, cheaper. We don't want to use AI to write stories, but maybe we can use AI to <em>fish potential stories out of streams of data</em> all around us. And by doing that, hold more powerful people to account.</p>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../ai/" rel="tag">AI</a></li>
-            <li><a class="tag p-category" href="." rel="tag">Journalism</a></li>
-        </ul></nav></aside></article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title">Big Local News</h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Sef Kloninger
-            </span></p>
-            <p class="dateline">
-            <a href="../../posts/biglocalnews/" rel="bookmark" class="u-url">
-            <time class="published dt-published" datetime="2026-07-27T20:00:00-07:00" itemprop="datePublished" title="2026-07-27 20:00">2026-07-27 20:00</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <p><img style="float:right" class="postimage" src="../../f/biglocalnews.png" alt="Big Local News" width="40%"></p>
-<p>Lately I've been a volunteer contributor to the <a href="https://biglocalnews.org/">Big Local News</a> project at Stanford. In my next post I'll describe what I've been doing — I think it's interesting. But this post is about the people and the project, which has been the best part.</p>
-<h3>Why Journalism? Why Journalists?</h3>
-<p>I didn't go looking to be part of journalism. It's not something I've ever done, not really even something I've aspired to. I didn't write for my high school paper. Intermittent posts to this blog are the most writing I've done in a long time. This blog is proof that I'm not much of a writer and I'm <em>certainly</em> not an investigator.</p>
-<p>What I've come to understand is that writing is only a part of the journalist's job, maybe not even the most important part. Sure, you have to know structure and grammar, and know how to present complex ideas in a cogent way. But look at how <a href="https://www.britannica.com/topic/journalism">Britannica</a> defines journalism:</p>
-<blockquote>
-<p>Journalism is the collection, preparation, and distribution of news and
-information to the public. Embedded in the idea of journalism is the notion
-that it exists to inform the public and hold the powerful to account.</p>
-</blockquote>
-<p>There are a lot of verbs in there, none of which are "writing" or "editing."</p>
-<p>These days the journalist's job seems to be as much about <em>data</em> as the traditional parts of the job: working the phones, cultivating sources, and shoe-leather chasing down leads. Journalists are now expected to know how to get data, evaluate it, and analyze it to pull out insights. Aside from the purely narrative stories, most stories are built on foundations of insightful data.</p>
-<p>Indeed, if you read the FAQ at the Stanford Master's in Journalism program page, when someone asks "I'm a writer but I don't know how to program, is this program a fit for me?" the answer is "we'll teach you." I think that's pretty common in the field these days. But it's also a tall order. Some journalists want to be data engineers too, but some don't.</p>
-<p>Back to the definition: "collection, preparation, and distribution" of news sounds like data science to me. But also read that second part, about "informing the public" and "holding the powerful to account." Good stuff, right? Journalists (at least the ones I've been working with lately) bring a sense of mission to the job. Sure, it's work, it's of civic importance, and there's pride in the craft. But what they seem to enjoy the most is speaking truth to power. They're troublemakers.</p>
-<h3>Big Local News</h3>
-<p>I found my way to the Big Local team through my friend <a href="https://www.linkedin.com/in/hannah-frost-8080696/">Hannah</a>. She's a librarian at Stanford. She introduced me to <a href="https://journalism.stanford.edu/people/cheryl-phillips">Cheryl Phillips</a>, the director and program founder, and we met over coffee. We hit it off.</p>
-<p>Two things impressed me. First, <strong>the mission</strong>. Big Local News uses technology to bend the cost curve for local journalism — make local news cheaper. I'll say a little more about why that resonates with me below. But I believe local news is worth fighting for, and I like how BLN is doing it. Trying to fix the demand side of the news business model feels really hard, swimming against a lot of currents — more readers! more exciting stuff! I think Big Local News, by taking on a supply-side fix, is taking a novel and more scalable approach.</p>
-<p>Second, I really liked <strong>the BLN team</strong>. They are muckrakers and do-gooders, exactly the kind of mission-driven people I described above. Sure, they also have good technical chops and I enjoy doing tech stuff with them. But first and foremost they're journalists. Most have worked a beat or spent time in a newsroom. They know the domain, and they know what problems local news organizations actually have. So I have some confidence that if we build this stuff, it'll reach the local news outlets that need it. It's also important that they are bright, nice people.</p>
-<p>After meeting the team and going to a <a href="https://www.eventbrite.com/e/2026-story-discovery-at-scale-tickets-1981909366266">conference</a> I got to work (more on the project coming soon). For the past three months I've worked as a member of the team. They've welcomed me into their meetings. I sit with them in the McClatchy building on the Stanford campus, I'm in the Slack, and I went to their year-end party. It's nice to be affiliated with these folks. I like having an excuse to hang out with some troublemakers.</p>
-<p>Last week I was proud to be added to the <a href="https://biglocalnews.org/content/about/">team "about" page</a> — scroll down to the "Collaborators" section. 😀</p>
-<h3>Motivation</h3>
-<p>I think everyone's aware of the decline of the business model behind local news over the past twenty-some years. It's gone from bad to worse. A couple of examples.</p>
-<p>In some places, like the Bay Area Peninsula where I live, local papers banded together as a nonprofit, <a href="https://www.embarcaderomediafoundation.org/">Embarcadero Media</a>, on the theory that they are a public good (which they are). Being a 501(c)(3) enables charitable giving to fill in gaps left when classified ads and subscriptions dried up. That's a fine solution to the problem — honest, and probably useful — but I think that might only work in wealthy places like here.</p>
-<p>Not so much for Fresno, where I'm from. My mom and dad still both live there (separately) and each gets the daily paper. Both bemoan the slow decline of the Fresno Bee: the print version that Mom wants is down to three days a week and upward of $500/year to have delivered to your door. That's just too much, so Dad takes the SF Chronicle, a good paper but not local. Without news about your community, is it any surprise that people feel less connected to and invested in where they live? And yes, the mundane things like weather and high school sports do matter.</p>
-<p>What's a place like Fresno to do? I recently came across <a href="https://fresnoland.org/">Fresnoland</a>, which looks to be doing some good reporting. They're structured as a nonprofit, like Embarcadero, and they've gotten <a href="https://fresnoland.org/our-donors/">good donors</a>. I hope that's keeping the lights on! I see two members on their staff for whom <a href="https://www.reportforamerica.org/about-us/">Report for America</a> pays half their salary — that seems like a cause worth supporting. Maybe it's presumptuous, but I imagine Fresnoland might need some help with the data science. They're exactly the kind of team that Big Local News is aiming to help.</p>
-<p>I think having better, shared news is one part of healing the divisions in this country. If I can help with a little bit of that, it's worth doing.</p>
-    </div>
-    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../ai/" rel="tag">AI</a></li>
-            <li><a class="tag p-category" href="../civics/" rel="tag">Civics</a></li>
-            <li><a class="tag p-category" href="../data/" rel="tag">Data</a></li>
-            <li><a class="tag p-category" href="." rel="tag">Journalism</a></li>
-        </ul></nav></aside></article>
-</div>
-
-
-
-    
-
-
-
-
-
-        <!--End of body content-->
-
-        <footer id="footer"><p align="center">Contents © 2026 <a href="mailto:sefklon@gmail.com">Sef Kloninger</a>       Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+<li><a class="tag p-category" href="../../categories/ai/" rel="tag">AI</a></li>
+            <li><a class="tag p-category" href="../../categories/journalism/" rel="tag">Journalism</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../biglocalnews/" rel="prev" title="Big Local News">Previous post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer"><p align="center">Contents © 2026 <a href="mailto:sefklon@gmail.com">Sef Kloninger</a>       Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" width="16" height="16" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" width="16" height="16" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" width="16" height="16" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" width="16" height="16" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
             
             
