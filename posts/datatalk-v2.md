@@ -1,7 +1,7 @@
 <!--
 .. title: We Built This: DataTalk V2
 .. slug: datatalk-v2
-.. date: 2026-08-24 15:00:00 UTC-07:00
+.. date: 2026-08-28 10:00:00 UTC-07:00
 .. tags: AI,Journalism
 .. type: text
 -->
@@ -32,7 +32,7 @@ Post 2024, DataTalk V1 left some room for improvement.
 
 2026 (now) is an election year. When I found Cheryl and Big Local News a few months back ([prior post]), Stanford was already trying to decide whether to make DataTalk better or take it down. I was looking for a project so I volunteered to take it on. Big Local News took over the code and responsibility from OVAL.
 
-Most of my day-to-day was with two strong engineers from Big Local News: [Gerald Rich], a journalist/engineer and [Ryan Pitts], the engineering director. [Cheryl Phillips] runs all of Big Local News but managed to stay close to this project, participating in demos and giving product direction.
+Most of my day-to-day was with two strong engineers from Big Local News: [Gerald Rich], journalist/engineer and [Ryan Pitts], managing director. [Cheryl Phillips] runs all of Big Local News but managed to stay close to this project, participating in demos and adding product direction.
 
 Together we stood up a little project with sprints and demos and CI. Over ten weeks we fixed the loaders, rewired the LLM interface, and refreshed the UI. We got it into good enough shape to show off at IRE (more to say about that soon), and then spent the rest of the summer making it good.
 
