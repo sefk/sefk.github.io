@@ -6,6 +6,12 @@
 .. type: text
 -->
 
+**October Update**: I wrote an [article] describing DataTalk, check that out.
+
+[article]: https://biglocalnews.org/content/news/2026/10/08/meet-datatalk-2026-edition.html
+
+-----
+
 <img style="float:right" class="postimage" src="/f/datatalk-v2.png" alt="Screenshot of DataTalk" width=60%>
 
 Since April I've been working with the [Big Local News] team at Stanford building DataTalk, a website for journalists to look for story leads in US federal campaign finance data using plain English. It's been a fun project and I'm proud of what we've built.
