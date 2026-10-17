@@ -5,8 +5,8 @@
 .. description: Sef Kloninger — engineer, engineering manager, and writer.
 -->
 
-I'm an engineer and dad and tinkerer. I'm semi-retired from a
-thirty-year career as an engineering manager.
+I'm an engineer and dad and tinkerer. I'm an early retiree from a thirty-year
+career in Tech.
 
 <picture>
        <source srcset="/f/sef-squint-480.webp 480w, /f/sef-squint.webp 600w" sizes="(max-width: 480px) 100vw, 280px">
@@ -46,10 +46,27 @@ was building an online education site for Stanford during the MOOC boom of
     <font size=10>❌ 👑</font>
 </td>
 <td>
-Lately I've become concerned by America's movement toward authoritarianism.
+<p>
+
+Lately I've been helping (in small ways) to protect Democracy here in America.
+
+I worked with another Stanford team to relaunch
+<a href="https://datatalk.biglocalnews.org/">DataTalk</a>,
+a tool to help investigative journalists use campaign finance data
+(<a href="/posts/datatalk-v2/">post</a>).
+
+And I wrote
+<a href="https://leafletter.app/about">Leafletter</a>,
+a little app for community organizing
+(<a href="/posts/leafletter/">post</a>).
+
+</p>
+<br>
+<p>
 I support the work being done by
 <a href="https://indivisiblemp.org/">my local Indivisible chapter</a>
 and the national <a href="https://www.nokings.org/">No Kings</a> movement.
+</p>
 </td>
 </tr>
 </table>
