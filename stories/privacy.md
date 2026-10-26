@@ -17,6 +17,25 @@ Nothing, directly. This site has no accounts, no sign-up forms, no comments, and
 no advertising. It does not use analytics or tracking scripts, and it does not
 set cookies of its own.
 
+## Sef Studio Desktop and Google user data
+
+Sef Studio Desktop is a personal application I wrote. If you authorize it, it
+uses Google's OAuth flow and the Gmail API to access your Google account data,
+such as email messages and metadata, only to provide the app's features to you.
+
+- **Storage:** data stays on your own computer. I don't send it to any server I
+  operate or to anyone else.
+- **Sharing:** I don't sell, share, or transfer Google user data to third
+  parties, and I don't use it for advertising.
+- **Human access:** nobody reads your data except as needed for security,
+  to comply with law, or with your explicit consent.
+- **Limited Use:** the app's use and transfer of information received from
+  Google APIs adheres to the [Google API Services User Data Policy][gdata],
+  including the Limited Use requirements.
+- **Revoking access:** you can revoke access at any time in your [Google
+  Account permissions][perms], and you can delete any locally stored data by
+  removing the app's data from your computer.
+
 ## Hosting
 
 The site is a static website hosted on [GitHub Pages][pages]. Like any web
@@ -49,6 +68,8 @@ If this policy changes, I'll update this page and the date above.
 
 Questions? Email me at [sefklon@gmail.com][email].
 
+[gdata]: https://developers.google.com/terms/api-services-user-data-policy
+[perms]: https://myaccount.google.com/permissions
 [pages]: https://pages.github.com/
 [ghprivacy]: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
 [email]: mailto:sefklon@gmail.com
