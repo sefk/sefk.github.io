@@ -18,9 +18,9 @@ The general workflow is:
    the way to get started.
 
 2. **Review**. Nikola has a nice feature to automatically rebuild your project
-   whenever something changes. workflow.  Command is ```nikola auto -p 8888```.
-   The extra port because the default, 8000, usually collides with my dev
-   environment or something similar.
+   whenever something changes. workflow.  Command is ```nikola auto```.
+   It serves on 8811 (set in `doit.cfg`) because the default, 8000, usually
+   collides with my dev environment; local-redirector knows it as `sefk-dev`.
 
 3. **Publish**.  Check the changes to the dev branch and push that branch. Then
    run the command ```nikola github_deploy``` to build and publish the build
