@@ -72,7 +72,7 @@ it when it lands.
   [Tony Cannon]:       https://twitter.com/Pond3r
   [Tom]:               https://twitter.com/ProtomCannon
   [evo]:               http://evo.shoryuken.com/
-  [tally counter]:     http://www.amazon.com/STEELMASTER-Counter-Inches-Silver-200100492/dp/B0089KJSFQ/ref=sr_1_3
+  [tally counter]:     https://www.uline.com/Product/Detail/H-7350/Measuring-Tools/4-Digit-Tally-Counter-Hand-Held
   [sheet]:             https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE
   [debunk]:            http://www.snopes.com/business/genius/spacepen.asp
   [ww]:                https://www.youtube.com/watch?v=LQy1DH38E5g
