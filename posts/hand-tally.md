@@ -51,6 +51,8 @@ like batteries and wireless connectivity.  So they still run this
 off of printouts and voice communications (cell phones/walkie-talkies)
 and periodic data dumps.
 
+<img style="float:right; padding-left:20px" src="/f/tally-counter.jpg" alt="Chrome hand-held tally counter with a four-digit display" width=200 height=200>
+
 And so, this year I'll be gathering my Halloween stats like I always
 have: clipboard, pen, and a hand-held [tally counter][].  The data
 will still be timely and accurate.
