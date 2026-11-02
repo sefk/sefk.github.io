@@ -2,7 +2,7 @@
 .. title: Halloween Down 20%, But Still Solid
 .. slug: halloween-2013
 .. date: 2013-11-02 22:25:17
-.. tags: Data
+.. tags: Life,Family,Data
 .. link: 
 .. description:
 -->
