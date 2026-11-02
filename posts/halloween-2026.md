@@ -36,11 +36,12 @@ and little "throwing pumpkins" interaction was fun.
 <img class="postimage" src="/f/halloween-2026-pumpkin-toss.gif" alt="Animation: jack-o-lanterns tossed onto the live page at 8pm on Halloween night, piling up at the bottom" width=45%>
 <img class="postimage" src="/f/halloween-2026-guestbook.png" alt="The live page later that night: trick-or-treaters each 15 minutes, and the guestbook" width=45%>
 
-There are a bunch of other charts up there too. I especially like the heat map,
-check that out.
+There are a bunch of other charts [up there][] too. I especially like the heat
+map, check that out.
 
 I don't plan on maintaining the old [Google Spreadsheet][] version anymore. It
 had a good run, but this is way more fun.
 
 [live page]: https://halloween.kloninger.com/live
+[up there]: https://halloween.kloninger.com/history/
 [Google Spreadsheet]: https://docs.google.com/spreadsheets/d/1w-7ftYzue_VQl4lt-QNFU_UfeDAROg47-1tlOzIw5Vk/edit?gid=15#gid=15
