@@ -1027,3 +1027,314 @@ footer#footer p a {
 }
 
 
+/* ------------- Dark mode -------------
+   Follow-system is the default. theme.js resolves the visitor's choice (light, dark,
+   or follow system) to html[data-theme="light"|"dark"]; everything below keys
+   off that attribute. Palette contrast on #121417: body #e4e6ea ~14:1,
+   links/headings #8ab4f8 ~9:1, muted #a0a7b0 ~7:1. */
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+html[data-theme="dark"] body {
+    background-color: #121417;
+    color: #e4e6ea;
+}
+
+html[data-theme="dark"] article {
+    border-bottom-color: #3a3f46;
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6 {
+    color: inherit;
+}
+
+html[data-theme="dark"] .entry-title,
+html[data-theme="dark"] .post-text h2,
+html[data-theme="dark"] .post-text h3 {
+    color: #8ab4f8;
+}
+
+html[data-theme="dark"] a,
+html[data-theme="dark"] .post-text a:not(.badge):not(.tag),
+html[data-theme="dark"] .e-content a:not(.badge):not(.tag),
+html[data-theme="dark"] td a:not(.badge):not(.tag),
+html[data-theme="dark"] footer#footer p a {
+    color: #8ab4f8 !important;
+}
+
+html[data-theme="dark"] a:hover {
+    color: #b6d0fb !important;
+}
+
+html[data-theme="dark"] a.tag,
+html[data-theme="dark"] a.badge {
+    color: #e4e6ea !important;
+}
+
+html[data-theme="dark"] .navbar-dark .nav-link:hover,
+html[data-theme="dark"] .navbar-dark .navbar-brand {
+    color: #fff !important;
+}
+
+html[data-theme="dark"] .navbar.bg-dark {
+    background-color: #1e2126 !important;
+    border-bottom: 1px solid #2c3036;
+}
+
+html[data-theme="dark"] footer#footer p,
+html[data-theme="dark"] .metadata,
+html[data-theme="dark"] .text-muted,
+html[data-theme="dark"] .byline,
+html[data-theme="dark"] .dateline {
+    color: #a0a7b0 !important;
+}
+
+html[data-theme="dark"] .post-text blockquote,
+html[data-theme="dark"] .e-content blockquote {
+    border-left-color: #4a505a;
+}
+
+html[data-theme="dark"] code {
+    color: #8fd18f;
+}
+
+html[data-theme="dark"] pre,
+html[data-theme="dark"] pre.code,
+html[data-theme="dark"] .highlight pre {
+    background: #1e2126;
+    color: #e4e6ea;
+    border-color: #3a3f46;
+}
+
+html[data-theme="dark"] pre code {
+    color: inherit;
+}
+
+html[data-theme="dark"] hr {
+    border-top-color: #3a3f46;
+}
+
+html[data-theme="dark"] table,
+html[data-theme="dark"] th,
+html[data-theme="dark"] td {
+    border-color: #3a3f46;
+    color: inherit;
+}
+
+html[data-theme="dark"] .badge-secondary,
+html[data-theme="dark"] a.tag {
+    background-color: #3a3f46;
+    color: #e4e6ea;
+}
+
+html[data-theme="dark"] .pagination .page-link,
+html[data-theme="dark"] .page-item.disabled .page-link {
+    background-color: #1e2126;
+    border-color: #3a3f46;
+}
+
+/* Transparent PNGs drawn for a white page (dark line art, cartoons, icons)
+   sit on a light card in dark mode instead of vanishing. Opt in with
+   class="light-card" on the img; screenshots and photos are left alone. */
+html[data-theme="dark"] img.light-card {
+    background-color: #f5f5f5;
+    background-clip: content-box;
+    border-radius: 4px;
+}
+
+/* Photos and screenshots: take the glare off a little. */
+html[data-theme="dark"] .post-text img:not(.light-card),
+html[data-theme="dark"] .e-content img:not(.light-card) {
+    filter: brightness(.92);
+}
+
+html[data-theme="dark"] mark {
+    background-color: #8a7a00;
+    color: #fff;
+}
+
+html[data-theme="dark"] .indented-box-margin {
+    border-color: #6b727c;
+}
+
+/* ai-sandbox transcript: speaker colors chosen for white pages. */
+html[data-theme="dark"] .post-text span[style*="color: orange"],
+html[data-theme="dark"] .e-content span[style*="color: orange"] {
+    color: #ffb454 !important;
+}
+
+html[data-theme="dark"] .post-text span[style*="color: blue"],
+html[data-theme="dark"] .e-content span[style*="color: blue"] {
+    color: #8ab4f8 !important;
+}
+
+/* Embedded third-party widgets render their own light theme; give them a
+   light frame rather than a glaring hole in a dark page. */
+html[data-theme="dark"] iframe {
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+/* ------------- Theme picker (navbar) ------------- */
+
+.theme-picker .nav-link {
+    display: flex;
+    align-items: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.theme-picker svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.theme-picker .dropdown-toggle::after {
+    display: none;
+}
+
+.theme-picker .dropdown-menu {
+    min-width: 9rem;
+}
+
+.theme-picker .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.theme-picker .dropdown-item[aria-checked="true"] {
+    font-weight: bold;
+}
+
+.theme-picker .dropdown-item[aria-checked="true"]::after {
+    content: "\2713";
+    margin-left: auto;
+}
+
+/* Only the icon for the current preference is shown on the toggle. */
+.theme-picker .nav-link .icon-light,
+.theme-picker .nav-link .icon-dark,
+.theme-picker .nav-link .icon-system {
+    display: none;
+}
+
+html[data-theme-pref="light"] .theme-picker .nav-link .icon-light,
+html[data-theme-pref="dark"] .theme-picker .nav-link .icon-dark,
+html[data-theme-pref="system"] .theme-picker .nav-link .icon-system {
+    display: block;
+}
+
+html[data-theme="dark"] .theme-picker .dropdown-menu {
+    background-color: #1e2126;
+    border-color: #3a3f46;
+}
+
+html[data-theme="dark"] .theme-picker .dropdown-item {
+    color: #e4e6ea !important;
+}
+
+html[data-theme="dark"] .theme-picker .dropdown-item:hover,
+html[data-theme="dark"] .theme-picker .dropdown-item:focus {
+    background-color: #2c3036;
+}
+
+/* Syntax highlighting for dark mode (pygments monokai, scoped). */
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+html[data-theme="dark"] pre.code .hll { background-color: #49483e }
+html[data-theme="dark"] pre.code { background: #272822; color: #F8F8F2 }
+html[data-theme="dark"] pre.code .c { color: #959077 } /* Comment */
+html[data-theme="dark"] pre.code .err { color: #ED007E; background-color: #1E0010 } /* Error */
+html[data-theme="dark"] pre.code .esc { color: #F8F8F2 } /* Escape */
+html[data-theme="dark"] pre.code .g { color: #F8F8F2 } /* Generic */
+html[data-theme="dark"] pre.code .k { color: #66D9EF } /* Keyword */
+html[data-theme="dark"] pre.code .l { color: #AE81FF } /* Literal */
+html[data-theme="dark"] pre.code .n { color: #F8F8F2 } /* Name */
+html[data-theme="dark"] pre.code .o { color: #FF4689 } /* Operator */
+html[data-theme="dark"] pre.code .x { color: #F8F8F2 } /* Other */
+html[data-theme="dark"] pre.code .p { color: #F8F8F2 } /* Punctuation */
+html[data-theme="dark"] pre.code .ch { color: #959077 } /* Comment.Hashbang */
+html[data-theme="dark"] pre.code .cm { color: #959077 } /* Comment.Multiline */
+html[data-theme="dark"] pre.code .cp { color: #959077 } /* Comment.Preproc */
+html[data-theme="dark"] pre.code .cpf { color: #959077 } /* Comment.PreprocFile */
+html[data-theme="dark"] pre.code .c1 { color: #959077 } /* Comment.Single */
+html[data-theme="dark"] pre.code .cs { color: #959077 } /* Comment.Special */
+html[data-theme="dark"] pre.code .gd { color: #FF4689 } /* Generic.Deleted */
+html[data-theme="dark"] pre.code .ge { color: #F8F8F2; font-style: italic } /* Generic.Emph */
+html[data-theme="dark"] pre.code .ges { color: #F8F8F2; font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+html[data-theme="dark"] pre.code .gr { color: #F8F8F2 } /* Generic.Error */
+html[data-theme="dark"] pre.code .gh { color: #F8F8F2 } /* Generic.Heading */
+html[data-theme="dark"] pre.code .gi { color: #A6E22E } /* Generic.Inserted */
+html[data-theme="dark"] pre.code .go { color: #66D9EF } /* Generic.Output */
+html[data-theme="dark"] pre.code .gp { color: #FF4689; font-weight: bold } /* Generic.Prompt */
+html[data-theme="dark"] pre.code .gs { color: #F8F8F2; font-weight: bold } /* Generic.Strong */
+html[data-theme="dark"] pre.code .gu { color: #959077 } /* Generic.Subheading */
+html[data-theme="dark"] pre.code .gt { color: #F8F8F2 } /* Generic.Traceback */
+html[data-theme="dark"] pre.code .kc { color: #66D9EF } /* Keyword.Constant */
+html[data-theme="dark"] pre.code .kd { color: #66D9EF } /* Keyword.Declaration */
+html[data-theme="dark"] pre.code .kn { color: #FF4689 } /* Keyword.Namespace */
+html[data-theme="dark"] pre.code .kp { color: #66D9EF } /* Keyword.Pseudo */
+html[data-theme="dark"] pre.code .kr { color: #66D9EF } /* Keyword.Reserved */
+html[data-theme="dark"] pre.code .kt { color: #66D9EF } /* Keyword.Type */
+html[data-theme="dark"] pre.code .ld { color: #E6DB74 } /* Literal.Date */
+html[data-theme="dark"] pre.code .m { color: #AE81FF } /* Literal.Number */
+html[data-theme="dark"] pre.code .s { color: #E6DB74 } /* Literal.String */
+html[data-theme="dark"] pre.code .na { color: #A6E22E } /* Name.Attribute */
+html[data-theme="dark"] pre.code .nb { color: #F8F8F2 } /* Name.Builtin */
+html[data-theme="dark"] pre.code .nc { color: #A6E22E } /* Name.Class */
+html[data-theme="dark"] pre.code .no { color: #66D9EF } /* Name.Constant */
+html[data-theme="dark"] pre.code .nd { color: #A6E22E } /* Name.Decorator */
+html[data-theme="dark"] pre.code .ni { color: #F8F8F2 } /* Name.Entity */
+html[data-theme="dark"] pre.code .ne { color: #A6E22E } /* Name.Exception */
+html[data-theme="dark"] pre.code .nf { color: #A6E22E } /* Name.Function */
+html[data-theme="dark"] pre.code .nl { color: #F8F8F2 } /* Name.Label */
+html[data-theme="dark"] pre.code .nn { color: #F8F8F2 } /* Name.Namespace */
+html[data-theme="dark"] pre.code .nx { color: #A6E22E } /* Name.Other */
+html[data-theme="dark"] pre.code .py { color: #F8F8F2 } /* Name.Property */
+html[data-theme="dark"] pre.code .nt { color: #FF4689 } /* Name.Tag */
+html[data-theme="dark"] pre.code .nv { color: #F8F8F2 } /* Name.Variable */
+html[data-theme="dark"] pre.code .ow { color: #FF4689 } /* Operator.Word */
+html[data-theme="dark"] pre.code .pm { color: #F8F8F2 } /* Punctuation.Marker */
+html[data-theme="dark"] pre.code .w { color: #F8F8F2 } /* Text.Whitespace */
+html[data-theme="dark"] pre.code .mb { color: #AE81FF } /* Literal.Number.Bin */
+html[data-theme="dark"] pre.code .mf { color: #AE81FF } /* Literal.Number.Float */
+html[data-theme="dark"] pre.code .mh { color: #AE81FF } /* Literal.Number.Hex */
+html[data-theme="dark"] pre.code .mi { color: #AE81FF } /* Literal.Number.Integer */
+html[data-theme="dark"] pre.code .mo { color: #AE81FF } /* Literal.Number.Oct */
+html[data-theme="dark"] pre.code .sa { color: #E6DB74 } /* Literal.String.Affix */
+html[data-theme="dark"] pre.code .sb { color: #E6DB74 } /* Literal.String.Backtick */
+html[data-theme="dark"] pre.code .sc { color: #E6DB74 } /* Literal.String.Char */
+html[data-theme="dark"] pre.code .dl { color: #E6DB74 } /* Literal.String.Delimiter */
+html[data-theme="dark"] pre.code .sd { color: #E6DB74 } /* Literal.String.Doc */
+html[data-theme="dark"] pre.code .s2 { color: #E6DB74 } /* Literal.String.Double */
+html[data-theme="dark"] pre.code .se { color: #AE81FF } /* Literal.String.Escape */
+html[data-theme="dark"] pre.code .sh { color: #E6DB74 } /* Literal.String.Heredoc */
+html[data-theme="dark"] pre.code .si { color: #E6DB74 } /* Literal.String.Interpol */
+html[data-theme="dark"] pre.code .sx { color: #E6DB74 } /* Literal.String.Other */
+html[data-theme="dark"] pre.code .sr { color: #E6DB74 } /* Literal.String.Regex */
+html[data-theme="dark"] pre.code .s1 { color: #E6DB74 } /* Literal.String.Single */
+html[data-theme="dark"] pre.code .ss { color: #E6DB74 } /* Literal.String.Symbol */
+html[data-theme="dark"] pre.code .bp { color: #F8F8F2 } /* Name.Builtin.Pseudo */
+html[data-theme="dark"] pre.code .fm { color: #A6E22E } /* Name.Function.Magic */
+html[data-theme="dark"] pre.code .vc { color: #F8F8F2 } /* Name.Variable.Class */
+html[data-theme="dark"] pre.code .vg { color: #F8F8F2 } /* Name.Variable.Global */
+html[data-theme="dark"] pre.code .vi { color: #F8F8F2 } /* Name.Variable.Instance */
+html[data-theme="dark"] pre.code .vm { color: #F8F8F2 } /* Name.Variable.Magic */
+html[data-theme="dark"] pre.code .il { color: #AE81FF } /* Literal.Number.Integer.Long */
+

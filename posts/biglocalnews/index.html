@@ -15,7 +15,17 @@
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link rel="icon" href="../../favicon.ico" sizes="32x32">
 <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
-<style>
+<script>
+/* Apply the saved light/dark/system choice before first paint (see assets/js/theme.js). */
+(function () {
+    var p = "system";
+    try { p = localStorage.getItem("theme") || "system"; } catch (e) {}
+    var d = p === "dark" || (p === "system" && window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches);
+    document.documentElement.setAttribute("data-theme", d ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme-pref", p === "light" || p === "dark" ? p : "system");
+})();
+</script><style>
 code {
     color: #1a5c1a;
 }
@@ -82,7 +92,20 @@ bg-dark
                 
             </li>
 </ul>
-<ul class="navbar-nav navbar-right"></ul>
+<ul class="navbar-nav navbar-right">
+<li class="nav-item dropdown theme-picker">
+                    <a href="#" class="nav-link dropdown-toggle" id="theme-picker-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-label="Color theme" title="Color theme">
+                        <svg class="icon-light" viewbox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><svg class="icon-dark" viewbox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg><svg class="icon-system" viewbox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg></a>
+                    <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="theme-picker-toggle">
+                        <a href="#" class="dropdown-item" role="menuitemradio" aria-checked="false" data-theme-choice="light">Light</a>
+                        <a href="#" class="dropdown-item" role="menuitemradio" aria-checked="false" data-theme-choice="dark">Dark</a>
+                        <a href="#" class="dropdown-item" role="menuitemradio" aria-checked="true" data-theme-choice="system">Follow system</a>
+                    </div>
+                </li>
+                
+                
+                
+            </ul>
 </div>
 <!-- /.navbar-collapse -->
     </div>
@@ -158,7 +181,7 @@ that it exists to inform the public and hold the powerful to account.</p>
 </div>
 
 
-        <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/luxon.min.js"></script><!-- fancy dates --><script>
+        <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/luxon.min.js"></script><script src="../../assets/js/theme.js"></script><!-- fancy dates --><script>
         luxon.Settings.defaultLocale = "en";
         fancydates(2, {"preset": false, "format": "yyyy-MM-dd HH:mm"});
         </script><!-- end fancy dates --><script>
