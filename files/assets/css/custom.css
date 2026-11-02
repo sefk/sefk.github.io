@@ -100,7 +100,7 @@ footer#footer p a {
 
 
 /* ------------- Dark mode -------------
-   Light is the default. theme.js resolves the visitor's choice (light, dark,
+   Follow-system is the default. theme.js resolves the visitor's choice (light, dark,
    or follow system) to html[data-theme="light"|"dark"]; everything below keys
    off that attribute. Palette contrast on #121417: body #e4e6ea ~14:1,
    links/headings #8ab4f8 ~9:1, muted #a0a7b0 ~7:1. */

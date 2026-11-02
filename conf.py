@@ -961,12 +961,12 @@ EXTRA_HEAD_DATA = """
 <script>
 /* Apply the saved light/dark/system choice before first paint (see assets/js/theme.js). */
 (function () {
-    var p = "light";
-    try { p = localStorage.getItem("theme") || "light"; } catch (e) {}
+    var p = "system";
+    try { p = localStorage.getItem("theme") || "system"; } catch (e) {}
     var d = p === "dark" || (p === "system" && window.matchMedia &&
             window.matchMedia("(prefers-color-scheme: dark)").matches);
     document.documentElement.setAttribute("data-theme", d ? "dark" : "light");
-    document.documentElement.setAttribute("data-theme-pref", p === "dark" || p === "system" ? p : "light");
+    document.documentElement.setAttribute("data-theme-pref", p === "light" || p === "dark" ? p : "system");
 })();
 </script>
 <style>

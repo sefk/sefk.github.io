@@ -31,7 +31,7 @@ The general workflow is:
 
 ## Dark mode
 
-The navbar has a theme picker (light, dark, or follow system; light is the
+The navbar has a theme picker (light, dark, or follow system, the
 default). `files/assets/js/theme.js` stores the choice in localStorage and sets
 `html[data-theme]`; the dark palette lives at the end of
 `files/assets/css/custom.css`, and `templates/base.tmpl` holds the picker markup.

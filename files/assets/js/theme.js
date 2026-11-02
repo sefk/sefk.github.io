@@ -1,4 +1,4 @@
-/* Theme picker: light (default), dark, or follow the system setting.
+/* Theme picker: light, dark, or follow the system setting (default).
    The preference lives in localStorage ("theme"); html[data-theme] holds the
    resolved value that custom.css keys off. The same resolve step runs inline in
    <head> (see EXTRA_HEAD_DATA in conf.py) to avoid a flash of the wrong theme. */
@@ -10,8 +10,8 @@
     function stored() {
         try {
             var v = localStorage.getItem(KEY);
-            return v === "dark" || v === "system" ? v : "light";
-        } catch (e) { return "light"; }
+            return v === "light" || v === "dark" ? v : "system";
+        } catch (e) { return "system"; }
     }
 
     function apply(pref) {
