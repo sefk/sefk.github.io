@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>Sef Kloninger — engineer, engineering manager, and writer.</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 31 Oct 2026 18:24:57 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>We Built This: DataTalk V2</title><link>https://sef.kloninger.com/posts/datatalk-v2/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;strong&gt;October Update&lt;/strong&gt;: I wrote an &lt;a href="https://biglocalnews.org/content/news/2026/10/08/meet-datatalk-2026-edition.html"&gt;article&lt;/a&gt; describing DataTalk, check that out.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com</title><link>https://sef.kloninger.com/</link><description>Sef Kloninger — engineer, engineering manager, and writer.</description><atom:link href="https://sef.kloninger.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 02 Nov 2026 23:17:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Spooky Consistency! 🎃🎃</title><link>https://sef.kloninger.com/posts/halloween-2026/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/halloween-post-covid.png" alt="Chart of Halloween trick-or-treaters after COVID" width="60%"&gt;&lt;/p&gt;
+&lt;p&gt;Halloween 2026 is in the books now. We had 186 trick-or-treaters on Saturday
+night. A very respectable showing and a lovely evening.&lt;/p&gt;
+&lt;p&gt;What's surprising to me, year over year, is how consistent our count is, at least
+for the past six years. It's not like it's always the same families, or that our
+neighborhood is stuck. We're seeing a ton of new young families in The Willows,
+which makes it all the more surprising that it doesn't move the numbers much.&lt;/p&gt;
+&lt;p&gt;Well, at least since COVID. We did have some banner years, including about 2x
+our current amount in the nutty year of 2012. That year was nuts. This is the
+whole history so far.&lt;/p&gt;
+&lt;p&gt;&lt;img class="postimage" src="https://sef.kloninger.com/f/halloween-all-years.png" alt="Chart of Halloween trick-or-treaters every year since 2009, averaging 214" width="100%"&gt;&lt;/p&gt;
+&lt;h3&gt;New This Year: Live Tracking!&lt;/h3&gt;
+&lt;p&gt;The big new thing this year was an app. You can try it out for yourself at
+&lt;a href="https://halloween.kloninger.com/"&gt;halloween.kloninger.com&lt;/a&gt;. What you see if you
+go there now are some charts showing trends, but during the night-of, when we
+were doing the count, the &lt;a href="https://halloween.kloninger.com/live"&gt;live page&lt;/a&gt; was up showing the current tally. People
+have been asking me for that for years.&lt;/p&gt;
+&lt;p&gt;Here are a couple of screenshots of what it looked like on mobile. The guestbook
+and little "throwing pumpkins" interaction was fun.&lt;/p&gt;
+&lt;p&gt;&lt;img class="postimage" src="https://sef.kloninger.com/f/halloween-2026-pumpkin-toss.gif" alt="Animation: jack-o-lanterns tossed onto the live page at 8pm on Halloween night, piling up at the bottom" width="45%"&gt;
+&lt;img class="postimage" src="https://sef.kloninger.com/f/halloween-2026-guestbook.png" alt="The live page later that night: trick-or-treaters each 15 minutes, and the guestbook" width="45%"&gt;&lt;/p&gt;
+&lt;p&gt;There are a bunch of other charts up there too. I especially like the heat map,
+check that out.&lt;/p&gt;
+&lt;p&gt;I don't plan on maintaining the old &lt;a href="https://docs.google.com/spreadsheets/d/1w-7ftYzue_VQl4lt-QNFU_UfeDAROg47-1tlOzIw5Vk/edit?gid=15#gid=15"&gt;Google Spreadsheet&lt;/a&gt; version anymore. It
+had a good run, but this is way more fun.&lt;/p&gt;</description><category>Data</category><category>Family</category><category>Life</category><guid>https://sef.kloninger.com/posts/halloween-2026/</guid><pubDate>Mon, 02 Nov 2026 23:00:00 GMT</pubDate></item><item><title>We Built This: DataTalk V2</title><link>https://sef.kloninger.com/posts/datatalk-v2/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;strong&gt;October Update&lt;/strong&gt;: I wrote an &lt;a href="https://biglocalnews.org/content/news/2026/10/08/meet-datatalk-2026-edition.html"&gt;article&lt;/a&gt; describing DataTalk, check that out.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/datatalk-v2.png" alt="Screenshot of DataTalk" width="60%"&gt;&lt;/p&gt;
 &lt;p&gt;Since April I've been working with the &lt;a href="https://biglocalnews.org"&gt;Big Local News&lt;/a&gt; team at Stanford building DataTalk, a website for journalists to look for story leads in US federal campaign finance data using plain English. It's been a fun project and I'm proud of what we've built.&lt;/p&gt;
@@ -522,48 +546,4 @@ leadership and a return to effective government. Assert your rights and
 Government Information&lt;/a&gt;, 12-March-2026&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.datarescueproject.org/hifld-next/"&gt;What's next for HIFLD&lt;/a&gt;, 17-March-2026&lt;/li&gt;
 &lt;li&gt;Data Rescue Project mention, &lt;a href="https://conversationalist.org/2026/04/10/guerrilla-archives-activism-protest-history-preservation-politics-marion-stokes-media/"&gt;On Guerrilla Archives in the Disinformation Age&lt;/a&gt;, The Conversationalist, 10-April-2026&lt;/li&gt;
-&lt;/ul&gt;</description><category>Civics</category><category>Data</category><category>Life</category><category>Tech</category><guid>https://sef.kloninger.com/posts/data-preservation/</guid><pubDate>Sun, 04 Jan 2026 23:00:00 GMT</pubDate></item><item><title>Rob Reiner: "Whatever you like to do, do a lot of it. Do it every day."</title><link>https://sef.kloninger.com/posts/rob-reiner/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/rob-reiner.jpg" alt="Photo of Rob Reiner from Wikipedia, source Neil Grabowsky / Montclair Film Festival" width="30%"&gt;&lt;/p&gt;
-&lt;p&gt;I was fortunate to have met and shared a meal with Rob Reiner some years back. I
-wanted to take a moment to share this story on the sad occasion of his death
-this week.&lt;/p&gt;
-&lt;p&gt;It was 2003 or so. I lived and worked for Akamai in Boston. I had been going
-back and forth to San Mateo office a fair bit that year, often taking a red eye
-home from San Jose. Back then the San Jose airport was smaller than it is now,
-and was especially quiet at the evenings. Not a lot of dinner options, so
-McDonald's it was.&lt;/p&gt;
-&lt;p&gt;That day I was surprised to recognize Rob Reiner in line right in front of me!
-He was traveling with some assistant-type person, patiently waiting. I tend to
-not bother celebrities in public, but I was moved to say something.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Sef&lt;/strong&gt;: Hello Mr. Reiner. Forgive me but I just wanted to say how much I enjoy
-your work. I'm a really big fan.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Rob Reiner&lt;/strong&gt; (big grin): Hi! What's your name? Thanks for introducing
-yourself. What have I done that you like?&lt;/p&gt;
-&lt;p&gt;I think he genuinely wanted to know. I knew his big films pretty well —
-&lt;em&gt;When Harry Met Sally&lt;/em&gt; was the most popular, &lt;em&gt;A Few Good Men&lt;/em&gt; had been up for
-Best Picture, &lt;em&gt;Spinal Tap&lt;/em&gt; is well, Spinal Tap. These are all really great
-films.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Sef&lt;/strong&gt;: &lt;em&gt;The Princess Bride&lt;/em&gt;, hands down. I love the story and I love what you
-did with it.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Rob Reiner&lt;/strong&gt;: I'm glad you said that. That's my favorite too.&lt;/p&gt;
-&lt;p&gt;Hearing that was more than I'd hoped for. I thanked him and begged off so he
-could order his burger and have dinner in peace. But no, in that New Yorker
-voice and with a big smile he said, "C'mon, let's have cheeseburgers!" The three
-of us all sat.&lt;/p&gt;
-&lt;p&gt;We had a nice talk over dinner. He asked questions and seemed genuinely
-interested in what I did -- work, family. But the highlight was toward the end.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Rob Reiner&lt;/strong&gt;: What else can I answer for you?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Sef&lt;/strong&gt;: What would you tell someone early in their career?&lt;/p&gt;
-&lt;p&gt;At this point I was about thirty years old, so hardly &lt;em&gt;that&lt;/em&gt; early in my own
-career, but I was asking in a genuine way. He answered straight away.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Rob Reiner&lt;/strong&gt;: &lt;mark&gt;Whatever you like to do, do a lot of it. Do it every
-day.&lt;/mark&gt; Me, I like writing so I try to do that of it every day if I can.
-That's how you get good.&lt;/p&gt;
-&lt;p&gt;He then told a few stories about people he'd met who don't do this. I guess when
-you're someone like him, people ask you frequently for jobs or if you'd produce
-their movie or whatnot. He said he asks what was the last thing they'd written,
-or what they were working on now, or what'd they'd written today. And he could
-tell if they did it often and did it for fun. If they didn't do it often, then
-how good a writer were they likely to be?&lt;/p&gt;
-&lt;p&gt;I was struck by what a nice and interesting, and interested, person Rob Reiner
-was. It was incredibly generous for him to spend time with a fanboy when he
-could be off duty and just enjoying his cheeseburger. What a gem.&lt;/p&gt;</description><category>Appreciation</category><category>Life</category><category>Media</category><guid>https://sef.kloninger.com/posts/rob-reiner/</guid><pubDate>Wed, 17 Dec 2025 07:00:00 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;</description><category>Civics</category><category>Data</category><category>Life</category><category>Tech</category><guid>https://sef.kloninger.com/posts/data-preservation/</guid><pubDate>Sun, 04 Jan 2026 23:00:00 GMT</pubDate></item></channel></rss>

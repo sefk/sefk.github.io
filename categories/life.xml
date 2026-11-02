@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Life)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/life.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 06 Jul 2026 22:42:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Data Is Worth Preserving</title><link>https://sef.kloninger.com/posts/data-preservation/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/drp-logo.jpg" alt="Logo for the Data Rescue Project" width="30%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Life)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/life.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 02 Nov 2026 23:17:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Spooky Consistency! 🎃🎃</title><link>https://sef.kloninger.com/posts/halloween-2026/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/halloween-post-covid.png" alt="Chart of Halloween trick-or-treaters after COVID" width="60%"&gt;&lt;/p&gt;
+&lt;p&gt;Halloween 2026 is in the books now. We had 186 trick-or-treaters on Saturday
+night. A very respectable showing and a lovely evening.&lt;/p&gt;
+&lt;p&gt;What's surprising to me, year over year, is how consistent our count is, at least
+for the past six years. It's not like it's always the same families, or that our
+neighborhood is stuck. We're seeing a ton of new young families in The Willows,
+which makes it all the more surprising that it doesn't move the numbers much.&lt;/p&gt;
+&lt;p&gt;Well, at least since COVID. We did have some banner years, including about 2x
+our current amount in the nutty year of 2012. That year was nuts. This is the
+whole history so far.&lt;/p&gt;
+&lt;p&gt;&lt;img class="postimage" src="https://sef.kloninger.com/f/halloween-all-years.png" alt="Chart of Halloween trick-or-treaters every year since 2009, averaging 214" width="100%"&gt;&lt;/p&gt;
+&lt;h3&gt;New This Year: Live Tracking!&lt;/h3&gt;
+&lt;p&gt;The big new thing this year was an app. You can try it out for yourself at
+&lt;a href="https://halloween.kloninger.com/"&gt;halloween.kloninger.com&lt;/a&gt;. What you see if you
+go there now are some charts showing trends, but during the night-of, when we
+were doing the count, the &lt;a href="https://halloween.kloninger.com/live"&gt;live page&lt;/a&gt; was up showing the current tally. People
+have been asking me for that for years.&lt;/p&gt;
+&lt;p&gt;Here are a couple of screenshots of what it looked like on mobile. The guestbook
+and little "throwing pumpkins" interaction was fun.&lt;/p&gt;
+&lt;p&gt;&lt;img class="postimage" src="https://sef.kloninger.com/f/halloween-2026-pumpkin-toss.gif" alt="Animation: jack-o-lanterns tossed onto the live page at 8pm on Halloween night, piling up at the bottom" width="45%"&gt;
+&lt;img class="postimage" src="https://sef.kloninger.com/f/halloween-2026-guestbook.png" alt="The live page later that night: trick-or-treaters each 15 minutes, and the guestbook" width="45%"&gt;&lt;/p&gt;
+&lt;p&gt;There are a bunch of other charts up there too. I especially like the heat map,
+check that out.&lt;/p&gt;
+&lt;p&gt;I don't plan on maintaining the old &lt;a href="https://docs.google.com/spreadsheets/d/1w-7ftYzue_VQl4lt-QNFU_UfeDAROg47-1tlOzIw5Vk/edit?gid=15#gid=15"&gt;Google Spreadsheet&lt;/a&gt; version anymore. It
+had a good run, but this is way more fun.&lt;/p&gt;</description><category>Data</category><category>Family</category><category>Life</category><guid>https://sef.kloninger.com/posts/halloween-2026/</guid><pubDate>Mon, 02 Nov 2026 23:00:00 GMT</pubDate></item><item><title>Data Is Worth Preserving</title><link>https://sef.kloninger.com/posts/data-preservation/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/drp-logo.jpg" alt="Logo for the Data Rescue Project" width="30%"&gt;&lt;/p&gt;
 &lt;p&gt;Governments should produce &lt;a href="https://en.wikipedia.org/wiki/Public_good"&gt;public goods&lt;/a&gt;, like navigation aids and roads. That
 seems like a reasonable thing to expect of a functioning government, right?&lt;/p&gt;
 &lt;p&gt;I consider data a public good too. We all benefit from accurate maps,
@@ -248,37 +272,4 @@ call. First, you get immediate feedback on how they took the news.
 If they're upset then you can do damage control straight away. And
 at least you know! And second, delivering bad news directly and
 respectfully is an important skill to develop. We can all use the
-practice. And it's never as bad as I think it will be.&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/saying-no/</guid><pubDate>Sat, 04 Apr 2015 01:08:00 GMT</pubDate></item><item><title>Arthroscopy Is Amazing</title><link>https://sef.kloninger.com/posts/arthroscopy/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/sef-left-knee.png" alt="My Left Knee" width="30%"&gt;&lt;/p&gt;
-&lt;p&gt;Three days ago I was hobbling around on a sore knee with a torn
-meniscus. But after just three days of icing and Ibuprofen and
-resting on the couch already my knee is almost better than it was
-before. This arthroscopic surgery stuff is amazing.&lt;/p&gt;
-&lt;p&gt;My knee had been getting progressively worse for the past few months.
-But the clincher was six weeks ago, when I was chasing around a dog that
-was loose in our front yard. A twist, pop, and I was down. The doctor
-I saw the next day confirmed that it wasn't anything "serious" like a
-torn ligament, but something was definitely wrong. When we went up to
-a week of family camping a few weeks back, I couldn't go on any hikes
-and could barely play ping pong. It was a real bummer.&lt;/p&gt;
-&lt;p&gt;So I met with a sports medicine doctor at Palo Alto Medical Foundation
-and got an MRI. He saw a few things wrong in there. A few days later, I
-was getting the procedure done. Viola. &lt;/p&gt;
-&lt;p&gt;Afterwards I was surprised that it didn't hurt. They did prescribe
-some pain medication (Hydrocodone plus Acetaminophen) that I've
-been taking when I go to bed, but haven't needed during the day.
-I've been using a &lt;a href="http://www.djoglobal.com/products/donjoy/donjoy-iceman-clear3"&gt;machine that pumps ice water through a pad&lt;/a&gt;
-around my knee all day to keep it cool, and that's worked really
-well. &lt;strong&gt;So much better&lt;/strong&gt; than ice packs. Totally recommend the ice
-machine.&lt;/p&gt;
-&lt;p&gt;Thanks to the good surgical team at &lt;a href="http://www.pamf.org/sports/"&gt;Palo Alto Medical Foundation&lt;/a&gt;
-especially &lt;a href="https://www.sutterhealth.org/find-provider/dr-colin-l-eakin-1046233844"&gt;Dr. Colin Eakin&lt;/a&gt;. Their surgery center on Willow Road
-made the whole experience smooth and reassuring. &lt;/p&gt;
-&lt;p&gt;But one pro tip for you out there considering this. Don't read the
-&lt;a href="http://en.wikipedia.org/wiki/General_anaesthesia"&gt;wikipedia article on General Anesthesia&lt;/a&gt; the night before
-surgery. It's crazy stuff. Especially the parts about how we're
-still not really sure how it works, or the part about how the level
-of anesthesia where it is safe to operate is right between "excitement"
-where you vomit and twitch, and "overdose" where you stop breathing.
-Don't read that part.&lt;/p&gt;
-&lt;p&gt;I'm back to work tomorrow, and I expect to be back on my bike by next
-week!&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/arthroscopy/</guid><pubDate>Tue, 19 Aug 2014 05:20:00 GMT</pubDate></item></channel></rss>
+practice. And it's never as bad as I think it will be.&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/saying-no/</guid><pubDate>Sat, 04 Apr 2015 01:08:00 GMT</pubDate></item></channel></rss>
