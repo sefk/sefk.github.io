@@ -7,7 +7,7 @@
 .. description:
 -->
 
-<img class="alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="/f/spaceshuttle-300x283.png" width="180" height="170">
+<img class="light-card alignright  wp-image-415" style="border: 0px;" alt="spaceshuttle" src="/f/spaceshuttle-300x283.png" width="180" height="170">
 
 <p>
 Today was launch day. It went really well.  I wanted to capture what a good launch feels like and contrast that with a more exciting launch, just five months ago.

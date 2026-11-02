@@ -7,7 +7,7 @@
 .. description:
 -->
 
-<a href="http://sef.kloninger.com/2012/04/measuring-an-engineering-manager/pointy-haired_boss/" rel="attachment wp-att-147"><img class="alignright size-full wp-image-147" style="border-style: initial; border-color: initial; border-image: initial; border-width: 0px;" title="Pointy-Haired-Boss" src="/f/Pointy-Haired_Boss.png" alt="Pointy Haired Boss" width="196" height="204"></a>
+<a href="http://sef.kloninger.com/2012/04/measuring-an-engineering-manager/pointy-haired_boss/" rel="attachment wp-att-147"><img class="light-card alignright size-full wp-image-147" style="border-style: initial; border-color: initial; border-image: initial; border-width: 0px;" title="Pointy-Haired-Boss" src="/f/Pointy-Haired_Boss.png" alt="Pointy Haired Boss" width="196" height="204"></a>
 
 <p>
 So now you're an engineering manager. How do you know if you're doing a good job?

@@ -29,6 +29,15 @@ The general workflow is:
 
 4. **Repeat**
 
+## Dark mode
+
+The navbar has a theme picker (light, dark, or follow system; light is the
+default). `files/assets/js/theme.js` stores the choice in localStorage and sets
+`html[data-theme]`; the dark palette lives at the end of
+`files/assets/css/custom.css`, and `templates/base.tmpl` holds the picker markup.
+A transparent PNG drawn for a white page (dark line art) should get
+`class="light-card"` so it sits on a light card in dark mode.
+
 ## Install Notes
 
 ### Python

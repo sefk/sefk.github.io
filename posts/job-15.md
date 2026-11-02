@@ -6,7 +6,7 @@
 .. type: text
 -->
 
-<img style="float:right" class="postimage" src="/f/snowflake.png"
+<img style="float:right" class="light-card postimage" src="/f/snowflake.png"
 alt="Snowflake" width=25%>
 
 I left [my last job][wf] a few weeks back and it's high time to look for a new

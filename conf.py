@@ -958,6 +958,17 @@ EXTRA_HEAD_DATA = """
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script>
+/* Apply the saved light/dark/system choice before first paint (see assets/js/theme.js). */
+(function () {
+    var p = "light";
+    try { p = localStorage.getItem("theme") || "light"; } catch (e) {}
+    var d = p === "dark" || (p === "system" && window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches);
+    document.documentElement.setAttribute("data-theme", d ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme-pref", p === "dark" || p === "system" ? p : "light");
+})();
+</script>
 <style>
 code {
     color: #1a5c1a;
