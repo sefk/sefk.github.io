@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Life)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/life.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 02 Nov 2026 23:27:21 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Spooky Consistency! 🎃🎃</title><link>https://sef.kloninger.com/posts/halloween-2026/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/halloween-post-covid.png" alt="Chart of Halloween trick-or-treaters after COVID" width="60%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Life)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/life.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 02 Nov 2026 23:57:52 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Spooky Consistency! 🎃🎃</title><link>https://sef.kloninger.com/posts/halloween-2026/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/halloween-post-covid.png" alt="Chart of Halloween trick-or-treaters after COVID" width="60%"&gt;&lt;/p&gt;
 &lt;p&gt;Halloween 2026 is in the books now. We had 186 trick-or-treaters on Saturday
 night. A very respectable showing and a lovely evening.&lt;/p&gt;
 &lt;p&gt;What's surprising to me, year over year, is how consistent our count is, at least
@@ -20,8 +20,8 @@ have been asking me for that for years.&lt;/p&gt;
 and little "throwing pumpkins" interaction was fun.&lt;/p&gt;
 &lt;p&gt;&lt;img class="postimage" src="https://sef.kloninger.com/f/halloween-2026-pumpkin-toss.gif" alt="Animation: jack-o-lanterns tossed onto the live page at 8pm on Halloween night, piling up at the bottom" width="45%"&gt;
 &lt;img class="postimage" src="https://sef.kloninger.com/f/halloween-2026-guestbook.png" alt="The live page later that night: trick-or-treaters each 15 minutes, and the guestbook" width="45%"&gt;&lt;/p&gt;
-&lt;p&gt;There are a bunch of other charts up there too. I especially like the heat map,
-check that out.&lt;/p&gt;
+&lt;p&gt;There are a bunch of other charts &lt;a href="https://halloween.kloninger.com/history/"&gt;up there&lt;/a&gt; too. I especially like the heat
+map, check that out.&lt;/p&gt;
 &lt;p&gt;I don't plan on maintaining the old &lt;a href="https://docs.google.com/spreadsheets/d/1w-7ftYzue_VQl4lt-QNFU_UfeDAROg47-1tlOzIw5Vk/edit?gid=15#gid=15"&gt;Google Spreadsheet&lt;/a&gt; version anymore. It
 had a good run, but this is way more fun.&lt;/p&gt;</description><category>Data</category><category>Family</category><category>Life</category><guid>https://sef.kloninger.com/posts/halloween-2026/</guid><pubDate>Mon, 02 Nov 2026 23:00:00 GMT</pubDate></item><item><title>Data Is Worth Preserving</title><link>https://sef.kloninger.com/posts/data-preservation/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/drp-logo.jpg" alt="Logo for the Data Rescue Project" width="30%"&gt;&lt;/p&gt;
 &lt;p&gt;Governments should produce &lt;a href="https://en.wikipedia.org/wiki/Public_good"&gt;public goods&lt;/a&gt;, like navigation aids and roads. That
@@ -208,7 +208,18 @@ and I watched a bit together.&lt;/p&gt;
 &lt;p&gt;Team Hachyderm (&lt;a href="https://hachyderm.io/@nova"&gt;@nova&lt;/a&gt; &lt;a href="https://hachyderm.io/@dma"&gt;@dma&lt;/a&gt; &lt;a href="https://hachyderm.io/@quintessence"&gt;@quintessence&lt;/a&gt; &lt;a href="https://hachyderm.io/@Taniwha"&gt;@Taniwha&lt;/a&gt;
 &lt;a href="https://hachyderm.io/@hazelweakly"&gt;@hazelweakly&lt;/a&gt; &lt;a href="https://hachyderm.io/@malte"&gt;@malte&lt;/a&gt;): thank you for running this service well.
 But also thank you for giving me something I'm proud to use and proud to
-show my kid.&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/working-in-the-open/</guid><pubDate>Sun, 04 Dec 2022 17:47:54 GMT</pubDate></item><item><title>YouTube</title><link>https://sef.kloninger.com/posts/youtube/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/YouTube-icon-full_color.png" alt="YouTube" width="200px" height="148px"&gt;&lt;/p&gt;
+show my kid.&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/working-in-the-open/</guid><pubDate>Sun, 04 Dec 2022 17:47:54 GMT</pubDate></item><item><title>Flat</title><link>https://sef.kloninger.com/posts/halloween-2015/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;Trick-or-treaters volume at our Menlo Park house this Halloween was basically flat compared to last
+year. Last year we had 208 trick-or-treaters, this year 211. We remain down quite a bit from our 2012
+peak. Maybe this is the new norm?&lt;/p&gt;
+&lt;iframe width="100%" height="400" frameborder="0" src="https://docs.google.com/spreadsheets/d/1w-7ftYzue_VQl4lt-QNFU_UfeDAROg47-1tlOzIw5Vk/pubchart?oid=17&amp;amp;format=interactive"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Everything happened later this year. Our first trick-or-treater didn't show up until 6:30, and
+peak wasn't until 8:45. That's thirty minutes or more later than prior years. I speculate it's because
+it was a warm weekend night. Why not stay out a bit later, no school tomorrow. And with the fall-back
+DST change everyone would be looking forward to a "free" hour of sleep.&lt;/p&gt;
+&lt;p&gt;As usual, the full story can be seen 
+&lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;
+in the numbers&lt;/a&gt;. Check it out!&lt;/p&gt;</description><category>Data</category><category>Family</category><category>Life</category><guid>https://sef.kloninger.com/posts/halloween-2015/</guid><pubDate>Sun, 01 Nov 2015 08:15:00 GMT</pubDate></item><item><title>YouTube</title><link>https://sef.kloninger.com/posts/youtube/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/YouTube-icon-full_color.png" alt="YouTube" width="200px" height="148px"&gt;&lt;/p&gt;
 &lt;p&gt;I'm excited to start my new job at YouTube in a few weeks. I'll manage the
 engineering team building the data warehouse for usage metrics.&lt;/p&gt;
 &lt;p&gt;I like that YouTube is &lt;strong&gt;important&lt;/strong&gt;. It's firmly a part of our culture
@@ -261,15 +272,4 @@ the sins of the status quo, some Swedes
 &lt;p&gt;Tear around town carrying gallons of incendiary liquid just inches
 beneath my beloved family? 
 In a mode of transport that &lt;a href="http://en.wikipedia.org/wiki/List_of_motor_vehicle_deaths_in_U.S._by_year"&gt;kills upwards of thirty thousand Americans every year&lt;/a&gt;? 
-Sure, that's fine.&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/petrol-car/</guid><pubDate>Wed, 06 May 2015 07:05:37 GMT</pubDate></item><item><title>Don't Say No By Email</title><link>https://sef.kloninger.com/posts/saying-no/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/frown.png" alt=":(" width="192" height="178"&gt;&lt;/p&gt;
-&lt;p&gt;When I have to tell someone no, I pick up the phone. I &lt;strong&gt;hate&lt;/strong&gt;
-talking on the phone, but I do it anyway.&lt;/p&gt;
-&lt;p&gt;When you're answering no to someone, you're disappointing them even
-if just a little bit. So you owe it to them to talk instead of
-sending an email. It's the polite thing to do.&lt;/p&gt;
-&lt;p&gt;But there are two other reasons, selfish reasons, for making the
-call. First, you get immediate feedback on how they took the news.
-If they're upset then you can do damage control straight away. And
-at least you know! And second, delivering bad news directly and
-respectfully is an important skill to develop. We can all use the
-practice. And it's never as bad as I think it will be.&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/saying-no/</guid><pubDate>Sat, 04 Apr 2015 01:08:00 GMT</pubDate></item></channel></rss>
+Sure, that's fine.&lt;/p&gt;</description><category>Life</category><guid>https://sef.kloninger.com/posts/petrol-car/</guid><pubDate>Wed, 06 May 2015 07:05:37 GMT</pubDate></item></channel></rss>

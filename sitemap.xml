@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://sef.kloninger.com/</loc>
-  <lastmod>2026-11-02T23:24:00Z</lastmod>
+  <lastmod>2026-11-02T23:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/2012/03/those-little-utilities/</loc>
@@ -107,7 +107,7 @@
  </url>
  <url>
   <loc>https://sef.kloninger.com/archive.html</loc>
-  <lastmod>2026-11-02T23:35:00Z</lastmod>
+  <lastmod>2026-11-02T23:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/</loc>
@@ -131,7 +131,7 @@
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/data/index-1.html</loc>
-  <lastmod>2026-11-02T23:35:00Z</lastmod>
+  <lastmod>2026-11-02T23:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/education/</loc>
@@ -155,15 +155,19 @@
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/life/</loc>
-  <lastmod>2026-06-23T20:24:00Z</lastmod>
+  <lastmod>2026-11-02T23:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/life/index-1.html</loc>
-  <lastmod>2026-11-02T23:35:00Z</lastmod>
+  <lastmod>2026-11-02T23:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/life/index-2.html</loc>
-  <lastmod>2026-11-02T23:35:00Z</lastmod>
+  <lastmod>2026-11-02T23:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sef.kloninger.com/categories/life/index-3.html</loc>
+  <lastmod>2026-11-02T23:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/categories/management/</loc>
@@ -431,19 +435,19 @@
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/index-2.html</loc>
-  <lastmod>2026-11-02T23:35:00Z</lastmod>
+  <lastmod>2026-11-02T23:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/index-3.html</loc>
-  <lastmod>2026-11-02T23:35:00Z</lastmod>
+  <lastmod>2026-11-02T23:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/index-4.html</loc>
-  <lastmod>2026-11-02T23:35:00Z</lastmod>
+  <lastmod>2026-11-02T23:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/index-5.html</loc>
-  <lastmod>2026-11-02T23:35:00Z</lastmod>
+  <lastmod>2026-11-02T23:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://sef.kloninger.com/posts/index-6.html</loc>

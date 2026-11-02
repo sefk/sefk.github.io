@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Family)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/family.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 02 Nov 2026 23:17:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Spooky Consistency! 🎃🎃</title><link>https://sef.kloninger.com/posts/halloween-2026/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/halloween-post-covid.png" alt="Chart of Halloween trick-or-treaters after COVID" width="60%"&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sef.kloninger.com (Posts about Family)</title><link>https://sef.kloninger.com/</link><description></description><atom:link href="https://sef.kloninger.com/categories/family.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 02 Nov 2026 23:57:52 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Spooky Consistency! 🎃🎃</title><link>https://sef.kloninger.com/posts/halloween-2026/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/halloween-post-covid.png" alt="Chart of Halloween trick-or-treaters after COVID" width="60%"&gt;&lt;/p&gt;
 &lt;p&gt;Halloween 2026 is in the books now. We had 186 trick-or-treaters on Saturday
 night. A very respectable showing and a lovely evening.&lt;/p&gt;
 &lt;p&gt;What's surprising to me, year over year, is how consistent our count is, at least
@@ -20,8 +20,8 @@ have been asking me for that for years.&lt;/p&gt;
 and little "throwing pumpkins" interaction was fun.&lt;/p&gt;
 &lt;p&gt;&lt;img class="postimage" src="https://sef.kloninger.com/f/halloween-2026-pumpkin-toss.gif" alt="Animation: jack-o-lanterns tossed onto the live page at 8pm on Halloween night, piling up at the bottom" width="45%"&gt;
 &lt;img class="postimage" src="https://sef.kloninger.com/f/halloween-2026-guestbook.png" alt="The live page later that night: trick-or-treaters each 15 minutes, and the guestbook" width="45%"&gt;&lt;/p&gt;
-&lt;p&gt;There are a bunch of other charts up there too. I especially like the heat map,
-check that out.&lt;/p&gt;
+&lt;p&gt;There are a bunch of other charts &lt;a href="https://halloween.kloninger.com/history/"&gt;up there&lt;/a&gt; too. I especially like the heat
+map, check that out.&lt;/p&gt;
 &lt;p&gt;I don't plan on maintaining the old &lt;a href="https://docs.google.com/spreadsheets/d/1w-7ftYzue_VQl4lt-QNFU_UfeDAROg47-1tlOzIw5Vk/edit?gid=15#gid=15"&gt;Google Spreadsheet&lt;/a&gt; version anymore. It
 had a good run, but this is way more fun.&lt;/p&gt;</description><category>Data</category><category>Family</category><category>Life</category><guid>https://sef.kloninger.com/posts/halloween-2026/</guid><pubDate>Mon, 02 Nov 2026 23:00:00 GMT</pubDate></item><item><title>The NY Times Bee Puzzle</title><link>https://sef.kloninger.com/posts/timesbee/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;How many different New York Times Spelling Bee puzzles are there? Or more
 precisely, how many combinations of seven letters can be used to build Bee-type
@@ -45,7 +45,77 @@ puzzle has at least one &lt;strong&gt;pangram&lt;/strong&gt;, a word that uses a
 example's is &lt;em&gt;amphibian&lt;/em&gt;. Wikipedia cites &lt;a href="https://en.wikipedia.org/wiki/Frank_Longo"&gt;Frank Longo&lt;/a&gt; as the Bee's creator.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://nytbee.com/"&gt;nytbee.com&lt;/a&gt; has more today's puzzle and some interesting stats about these
 puzzles in general. They don't seem to be affiliated with the NY Times but that
-seem to be OK and it's a nice site.&lt;/p&gt;</description><category>Family</category><category>Puzzling</category><guid>https://sef.kloninger.com/posts/timesbee/</guid><pubDate>Sat, 23 May 2020 22:00:00 GMT</pubDate></item><item><title>Chicken Soup</title><link>https://sef.kloninger.com/posts/chicken_soup/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/chicken-noodle-soup.jpg" alt="Yummy Bowl of Chicken Noodle Soup" width="40%"&gt;&lt;/p&gt;
+seem to be OK and it's a nice site.&lt;/p&gt;</description><category>Family</category><category>Puzzling</category><guid>https://sef.kloninger.com/posts/timesbee/</guid><pubDate>Sat, 23 May 2020 22:00:00 GMT</pubDate></item><item><title>Flat</title><link>https://sef.kloninger.com/posts/halloween-2015/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;Trick-or-treaters volume at our Menlo Park house this Halloween was basically flat compared to last
+year. Last year we had 208 trick-or-treaters, this year 211. We remain down quite a bit from our 2012
+peak. Maybe this is the new norm?&lt;/p&gt;
+&lt;iframe width="100%" height="400" frameborder="0" src="https://docs.google.com/spreadsheets/d/1w-7ftYzue_VQl4lt-QNFU_UfeDAROg47-1tlOzIw5Vk/pubchart?oid=17&amp;amp;format=interactive"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Everything happened later this year. Our first trick-or-treater didn't show up until 6:30, and
+peak wasn't until 8:45. That's thirty minutes or more later than prior years. I speculate it's because
+it was a warm weekend night. Why not stay out a bit later, no school tomorrow. And with the fall-back
+DST change everyone would be looking forward to a "free" hour of sleep.&lt;/p&gt;
+&lt;p&gt;As usual, the full story can be seen 
+&lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;
+in the numbers&lt;/a&gt;. Check it out!&lt;/p&gt;</description><category>Data</category><category>Family</category><category>Life</category><guid>https://sef.kloninger.com/posts/halloween-2015/</guid><pubDate>Sun, 01 Nov 2015 08:15:00 GMT</pubDate></item><item><title>Fewer Trick or Treaters This Year</title><link>https://sef.kloninger.com/posts/halloween-2014/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;This year's Halloween tally was 208.  I don't know why we have 32%
+fewer trick-or-treaters than we had last year, which was down 20%
+from the year before that.  Maybe the rain earlier in the day kept
+people home.  Maybe because it was Friday people opted for parties
+instead of going door to door.  I don't know.&lt;/p&gt;
+&lt;script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"&gt;
+{"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE&amp;transpose=1&amp;headers=0&amp;range=C20%3AH21&amp;gid=9&amp;pub=1","options":{"titleTextStyle":{"bold":true,"color":"#000","fontSize":"24"},"series":{"0":{"color":"#b45f06"}},"animation":{"duration":500},"width":600,"hAxis":{"useFormatFromData":true,"title":"","minValue":null,"viewWindowMode":null,"textStyle":{"bold":true,"color":"#222","fontSize":"20"},"viewWindow":null,"maxValue":null},"vAxes":[{"useFormatFromData":true,"title":"","minValue":0,"viewWindowMode":"explicit","textStyle":{"bold":true,"color":"#222","fontSize":"20"},"logScale":false,"viewWindow":{"min":0,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"logScale":false,"viewWindow":{"min":null,"max":null},"maxValue":null}],"booleanRole":"certainty","title":"Trick or Treaters, Menlo Park, CA","height":240,"legend":"none","useFirstColumnAsDomain":true,"isStacked":false,"tooltip":{}},"state":{},"view":{},"isDefaultVisualization":false,"chartType":"ColumnChart","chartName":"Chart 4"}
+&lt;/script&gt;
+
+&lt;p&gt;Thanks to my friend Stuart for being on this year's data gathering
+crew.  As usual, the full story is 
+&lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;in the numbers&lt;/a&gt;.&lt;/p&gt;</description><category>Data</category><category>Family</category><category>Life</category><guid>https://sef.kloninger.com/posts/halloween-2014/</guid><pubDate>Sat, 01 Nov 2014 09:30:00 GMT</pubDate></item><item><title>In Praise of the Hand Tally</title><link>https://sef.kloninger.com/posts/hand-tally/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/tallies.jpg" alt="Tally Marks" width="height=174"&gt;&lt;/p&gt;
+&lt;p&gt;For the past five years I've gathered statistics on how many
+trick-or-treaters have come by on Halloween.  If you want to read
+about that, check out posts from &lt;a href="https://sef.kloninger.com/posts/201311halloween-2013.html"&gt;last year&lt;/a&gt; or &lt;a href="https://sef.kloninger.com/posts/201210halloween-candy-data.html"&gt;the year before&lt;/a&gt;.
+This post is about &lt;strong&gt;how&lt;/strong&gt; I track those stats, and how I don't.&lt;/p&gt;
+&lt;p&gt;Every year I'm tempted to build some fancy system to collect and
+manage these statistics.  Wouldn't it be fun, say, to wire up some
+Raspberry Pi sensor that automatically counts and tweets running
+totals?  It wouldn't be &lt;em&gt;that&lt;/em&gt; hard and sounds like fun.&lt;/p&gt;
+&lt;p&gt;The problem is making something like that reliable.  You'd have to
+do all the un-fun stuff, like testing and contingency planning.  If
+your baseline is a clipboard, paper, and a ball point pen, your bar
+for failure is basically "never".  Even if I did build something
+fancy I'd still end up doing backup tallies by hand.  At this human
+scale, the tech ends up being a fun gimmick, not required.&lt;/p&gt;
+&lt;p&gt;It reminds me of a story from friend [Tony].  Tony
+and his brother &lt;a href="https://twitter.com/ProtomCannon"&gt;Tom&lt;/a&gt; run a giant gaming convention every year,
+the &lt;a href="http://evo.shoryuken.com/"&gt;Evolution Championship Series&lt;/a&gt; (Evo for short).  It's a
+multi-day convention in Las Vegas that attracts something like ten
+thousand participants.  They run the whole thing with their two
+other founders and some friends — I'm sure they have some
+paid help now, but the four guys are the main ones.  It's impressive.&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;img src="http://evo.shoryuken.com/wp-content/uploads/2014/02/9450177474_3d2e293e9d_b.jpg" style="padding-top:20px; padding-bottom:20px"&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Given that Tony and Tom are strong engineers, I figured this would
+be a slick high-tech operation.  Not so.&lt;/p&gt;
+&lt;p&gt;Tony said they've tried tech at various points and it wasn't worth
+it.  It's easy to see why that is tempting: they have multiple
+mobile coordinators that need access to changing, shared information,
+like brackets and schedules.  But what they've tried has let them
+down.  Usually it's not the hard parts that fail, but the basics,
+like batteries and wireless connectivity.  So they still run this
+off of printouts and voice communications (cell phones/walkie-talkies)
+and periodic data dumps.&lt;/p&gt;
+&lt;p&gt;&lt;img style="float:right; padding-left:20px" src="https://sef.kloninger.com/f/tally-counter.jpg" alt="Chrome hand-held tally counter with a four-digit display" width="200" height="200"&gt;&lt;/p&gt;
+&lt;p&gt;And so, this year I'll be gathering my Halloween stats like I always
+have: clipboard, pen, and a hand-held &lt;a href="https://www.uline.com/Product/Detail/H-7350/Measuring-Tools/4-Digit-Tally-Counter-Hand-Held"&gt;tally counter&lt;/a&gt;.  The data
+will still be timely and accurate.&lt;/p&gt;
+&lt;p&gt;For the curious few, check out my &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;Halloween Traffic Spreadsheet&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Two postscripts.  First, Please stop spreading that
+&lt;a href="https://www.youtube.com/watch?v=LQy1DH38E5g"&gt;NASA Space Pen story&lt;/a&gt;.  I'm sure you've heard it: how do you write in zero G?
+the wasteful Americans commissioned a multi-million dollar space
+pen project; the scrappy can-do Russians used pencils.  Well, this
+story has been &lt;a href="http://www.snopes.com/business/genius/spacepen.asp"&gt;debunked by the good people at Snopes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And second, I'd like to plug Tony and Tom's "day job", &lt;a href="http://stonehearth.net/"&gt;Stonehearth&lt;/a&gt;.
+I think of it as Starcraft meets Minecraft.  I am so eager to play
+it when it lands.&lt;/p&gt;</description><category>Data</category><category>Family</category><category>Life</category><guid>https://sef.kloninger.com/posts/hand-tally/</guid><pubDate>Thu, 30 Oct 2014 16:20:00 GMT</pubDate></item><item><title>Chicken Soup</title><link>https://sef.kloninger.com/posts/chicken_soup/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img style="float:right" class="postimage" src="https://sef.kloninger.com/f/chicken-noodle-soup.jpg" alt="Yummy Bowl of Chicken Noodle Soup" width="40%"&gt;&lt;/p&gt;
 
 &lt;p&gt;My family hasn't avoided the colds that are going around now. My
 way of fighting back is making chicken noodle soup.  It's not too
@@ -53,4 +123,88 @@ hard, it's satisfying, and it tastes great. &lt;a href="https://sef.kloninger.co
 to &lt;a href="http://peninsulaschool.org/"&gt;Peninsula School&lt;/a&gt; and gets used at our annual Craft Fair.
 It's benefited from years of refinement.&lt;/p&gt;
 &lt;p&gt;I add more salt. I don't do peas. I've tried with rice but it
-got starchy and weird, stick with egg noodles.&lt;/p&gt;</description><category>Family</category><category>Life</category><guid>https://sef.kloninger.com/posts/chicken_soup/</guid><pubDate>Tue, 21 Jan 2014 01:16:00 GMT</pubDate></item></channel></rss>
+got starchy and weird, stick with egg noodles.&lt;/p&gt;</description><category>Family</category><category>Life</category><guid>https://sef.kloninger.com/posts/chicken_soup/</guid><pubDate>Tue, 21 Jan 2014 01:16:00 GMT</pubDate></item><item><title>Halloween Down 20%, But Still Solid</title><link>https://sef.kloninger.com/posts/halloween-2013/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;&lt;img class="alignright  wp-image-440" style="border: 0px;" alt="halloween2013-ticker" src="https://sef.kloninger.com/f/halloween2013-ticker-300x300.jpg" width="126" height="126"&gt;&lt;/p&gt;
+&lt;p&gt;
+This year we had a sizable number of trick-or-treaters at our house in the Willows neighborhood of Menlo Park. The 303 we saw was down from our high last year, but about the same as the year before that.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+So here are the totals:
+
+
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;img class="size-medium wp-image-441 alignnone" style="border: 0px;" alt="halloween2013-total" src="https://sef.kloninger.com/f/halloween2013-total-300x184.png" width="300" height="184"&gt;
+
+
+
+&lt;/p&gt;&lt;p&gt;
+The rate at peak was comparable to last year.
+
+
+&lt;/p&gt;&lt;div class="row-fluid"&gt;
+&lt;div class="span2" align="center"&gt;
+&lt;img class="size-medium wp-image-443 alignnone" style="border: 0px;" alt="halloween2013-rate" src="https://sef.kloninger.com/f/halloween2013-rate-300x160.png" width="300" height="160"&gt; 
+       
+&lt;img class="size-medium wp-image-442 alignnone" style="border: 0px;" alt="halloween2013-cumulative" src="https://sef.kloninger.com/f/halloween2013-cumulative-300x158.png" width="300" height="158"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+I don't have an explanation why we are down a bit. The weather was beautiful, indeed a little better than last year since rain started at 8:30 last year. Maybe the forecast rain coming last year got people out earlier who might have missed altogether?
+
+
+
+&lt;/p&gt;&lt;p&gt;
+It was outstanding having my friend &lt;a href="https://twitter.com/amylameyer"&gt;Amy LaMeyer&lt;/a&gt; helping out. She operated the clicker that was new this year, and so kept me company, which was a ton of fun.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+As always, the Google Spreadsheet with the graphs and raw data is publicly available &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;here&lt;/a&gt;. Check it out!&lt;/p&gt;</description><category>Data</category><category>Family</category><category>Life</category><guid>https://sef.kloninger.com/posts/halloween-2013/</guid><pubDate>Sun, 03 Nov 2013 05:25:17 GMT</pubDate></item><item><title>Halloween Candy Data</title><link>https://sef.kloninger.com/posts/halloween-candy-data/</link><dc:creator>Sef Kloninger</dc:creator><description>&lt;p&gt;Update with actuals from Halloween 2012:  It was a banner year.
+
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;img class="alignnone size-large wp-image-391" alt="halloween-2012" src="https://sef.kloninger.com/f/halloween-2012-1024x433.png" width="584" height="246"&gt;
+
+&lt;/p&gt;&lt;hr&gt;
+
+&lt;p&gt;
+You may be giving out candy later today. What can you expect? Let's look at some data.  This post summarizes the past three Halloweens.
+
+
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;img class="alignnone  wp-image-378" style="border: 0px;" title="cumulative" alt="Cumulative Trick or Treaters" src="https://sef.kloninger.com/f/cumulative-1024x441.png" width="584" height="251"&gt;
+
+
+
+&lt;/p&gt;&lt;p&gt;
+As you can see we live in a pretty popular neighborhood.  Each year has its own story.
+
+&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;2009&lt;/strong&gt; - our first year in our new neighborhood. We had no idea that this was such a popular trick-or-treating spot. I ran out of candy at 8:00, turned out the lights, and hid in the back of the house. Shameful.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;2010&lt;/strong&gt; - a fine year.  No complaints.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;2011&lt;/strong&gt; - we moved to a new house just around the corner.  I figured the quieter street would mean fewer kids -- not so! What I didn't appreciate was the attractive power of my next door neighbor's &lt;em&gt;insane&lt;/em&gt; decorations. Luckily my wife came back with emergency supplies just in time.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+And how busy do things get?  Darn busy.
+
+
+
+&lt;/p&gt;&lt;p align="center"&gt;
+&lt;img class="alignnone  wp-image-379" style="border: 0px;" title="rates" alt="Average and Max Trick or Treaters per Minute" src="https://sef.kloninger.com/f/rates-1024x412.png" width="584" height="234"&gt;
+
+
+
+&lt;/p&gt;&lt;p&gt;
+During the busiest 15 minute period last year I was serving a kid every twenty seconds or so.  When bursting this is close to my max current candy-dispensing throughput.
+
+
+
+&lt;/p&gt;&lt;p&gt;
+If you come by my house this year you'll see me again, handing out candy with one hand and scribbling hash marks with the other.   I'll update the data in my &lt;a href="https://docs.google.com/spreadsheet/ccc?key=0AnpKmkglpRs5dDh3dWRmRlFVaG0yc08xU0lhTzF1NUE"&gt;public spreadsheet&lt;/a&gt;.&lt;/p&gt;</description><category>Data</category><category>Family</category><category>Life</category><guid>https://sef.kloninger.com/posts/halloween-candy-data/</guid><pubDate>Wed, 31 Oct 2012 07:19:35 GMT</pubDate></item></channel></rss>
